@@ -1,0 +1,2 @@
+[console_scripts]
+bioshed = bioshed:bioshed_cli_entrypoint
