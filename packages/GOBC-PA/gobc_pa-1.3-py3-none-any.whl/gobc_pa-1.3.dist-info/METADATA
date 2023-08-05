@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: GOBC_PA
+Version: 1.3
+Summary: A new unconstrained global optimization method based on clustering and parabolic approximation
+Author-email: Ihsan Pence <ihsanpence@mehmetakif.edu.tr>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+## Table of contents
+* [General Info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [How to use](#how-to-use)
+* [Example](#Example)
+* [Example 2](#Example2)
+* [Cite](#Cite)
+
+## General Info
+GOBC-PA: A new unconstrained global optimization method based on clustering and parabolic approximation
+ (GOBC-PA) is proposed. Although the proposed method is basically similar to other
+ evolutionary and stochastic methods, it represents a significant advancement of global optimization
+ technology for four important reasons. First, it is orders of magnitude faster than existing optimization
+ methods for global optimization of unconstrained problems. Second, it has significantly better repeatability,
+ numerical stability, and robustness than current methods in dealing with high dimensionally
+ and many local minima functions. Third, it can easily and faster find the local minimums using the
+ parabolic approximation instead of gradient descent or crossover operations. Fourth, it can easily
+ adapted to any theoretical or industrial systems which are using the heuristic methods as an intelligent
+ system. In this study, we assume that the best cluster center gives the
+ position of the possible global optimum. The usage of clustering and curve fitting techniques brings
+ multi-start and local search properties to the proposed method. The experimental studies show that
+ the proposed methodology is simple, faster and, it demonstrates a superior performance
+ when compared with some state of the art methods.
+
+Arguments: (input)
+* func         - objective function
+* rang         - range of search space
+* target       - target function value. That value used for measuring error.
+* N            - dimension number of objective function
+* ite          - Maximum iteration
+* pop_size     - population size
+ 
+ 
+Arguments: (output)
+* Best_point   - Global minimum points
+* Best_result  - Global minimum value on global minimum points
+* perf         - errors list
+* broken_epoch - epoch number of code break
+* performance  - best points and their objective value on each epoch
+	
+## Technologies
+Project is created with:
+* Python 3.7
+	
+## Setup
+To run this project, install it locally using pip:
+
+```
+$ pip install GOBC-PA
+```
+
+## How to use
+
+```
+from GOBC_PA.GOBC_PA import GOBC_PA
+Best_point, Best_result, perf, broken_epoch, performance = GOBC_PA(func,rang,target,N,ite,pop_size)
+ 
+```
+
+## Example
+
+```
+import numpy as np
+from GOBC_PA.GOBC_PA import GOBC_PA
+def func(x):   Rastrigin function
+    y= x[0]**2+x[1]**2-np.cos(18*x[0])-np.cos(18*x[1])
+    return y
+# min range values for each dimension are in the first row, max range values for each dimension are in the second row
+rang = np.array([[-1,-1],[1, 1]])
+target = -2
+N,ite,pop_size = 2,1000,60
+Best_point, Best_result, perf, broken_epoch, performance = GOBC_PA(func,rang,target,N,ite,pop_size)
+ 
+```
+
+## Example2
+
+You can make an example like below to see how it sorts files in console output.
+
+```
+import numpy as np
+from GOBC_PA.GOBC_PA import GOBC_PA
+def func2(x):  # Goldstein-Price's Function
+    y = (1 + ((x[0] + x[1] + 1) ** 2) * (
+                19 - 14 * x[0] + 3 * x[0] ** 2 - 14 * x[1] + 6 * x[0] * x[1] + 3 * x[1] ** 2)) * (
+                    30 + ((2 * x[0] - 3 * x[1]) ** 2) * (
+                        18 - 32 * x[0] + 12 * x[0] ** 2 + 48 * x[1] - 36 * x[0] * x[1] + 27 * x[1] ** 2))
+    return y
+
+rang2 = np.array([[-2,-2],[2, 2]])
+target2=3
+N,ite,pop_size = 2,1000,60
+Best_point, Best_result, perf, broken_epoch, performance = GOBC_PA(func2,rang2,target2,N,ite,pop_size)
+ 
+```
+
+## Cite
+
+Pence, I., Cesmeli, M. S., Senel, F. A., & Cetisli, B. (2016). A new unconstrained global optimization method based on clustering and parabolic approximation. Expert Systems with Applications, 55, 493-507.
