@@ -1,0 +1,12 @@
+sla/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sla/classifier.py,sha256=tgBJZPMGAK-Nlxw-XOL8pZSkQ-GU_Fe5pe8HHALmH_Y,8779
+sla/cloud_shadow_mask.py,sha256=92bCrM7GUZAt3gcW_bGf7azUOV9n_N-AKu9cy18Xa1o,4040
+sla/hill_shadow.py,sha256=7slodhaIkHNWMp4yp5_fV3qOTgFuL_uZe7koD5DDMBY,887
+sla/main_patches.py,sha256=3DKn_oVUOtdlWrjjmI0kXLYHcusChpn2a-kcm4fwzms,9378
+sla/prep.py,sha256=mgFmcAJka04bNsUW0xlgRilFpF2Q49pE6D75S0alzms,15442
+sla/settings.py,sha256=mAZlUtjgwjg78Jj54YW8w_OYKJl-0C6mnGoshRKB4EY,418
+sla/utils.py,sha256=vWWafDt6ap7SghVHMNdCEbtCnQbyQXBFnz2oK-DSC-M,548
+sla_sca-0.1.0.dist-info/LICENSE,sha256=Qjz0G_IVMDfyGbfIXnUi51cBnqgHf5gBkuWqQe5K404,1075
+sla_sca-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+sla_sca-0.1.0.dist-info/METADATA,sha256=r3hfpM4PQ3h21xibTKu5QoA3So2tBEbRnNcZvEyVt2k,630
+sla_sca-0.1.0.dist-info/RECORD,,
