@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: simplepylogg3r
+Version: 1.2.0
+Summary: Simple Python Logger package to easily manage custom loggers in Python projects.
+Home-page: https://github.com/M4RC0Sx/SimplePyLogger
+Author: M4RC0Sx
+Project-URL: Source, https://github.com/M4RC0Sx/SimplePyLogger
+Project-URL: Tracker, https://github.com/M4RC0Sx/SimplePyLogger/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+License-File: LICENSE
+
+# SimplePyLogger
+
+Simple Python Logger package to easily manage custom loggers in Python projects.
