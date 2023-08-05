@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: jfd
+Version: 0.0.0
+Provides-Extra: examples
+Requires-Dist: matplotlib ; extra == 'examples'
+
