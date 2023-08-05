@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: torncoder
+Version: 0.2.0
+Summary: Basic tornado-based python utilities.
+Home-page: https://github.com/eulersIDcrisis/torncoder
+License: Apache-2.0
+Author: Aaron Gibson
+Author-email: eulersidcrisis@yahoo.com
+Requires-Python: >=3.8,<3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiofile[aio] (>=3.8.1,<4.0.0)
+Requires-Dist: aiofiles[threaded] (>=22.1.0,<23.0.0)
+Requires-Dist: tornado (>=6.0,<7.0)
+Project-URL: Repository, https://github.com/eulersIDcrisis/torncoder
+Description-Content-Type: text/markdown
+
+# Torncoder
+
+Tornado Utility Library for various features.
+
+This library contains a few common classes and helpers that:
+ - Make file serving easier.
+ - Make file uploads easier.
+
+TBD --> Explain the Interface and the CLI tool.
+
