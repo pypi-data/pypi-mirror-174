@@ -1,0 +1,12 @@
+cffconvert~=2.0
+PyYAML
+
+[:python_version < "3.11"]
+tomli
+
+[development]
+build
+flake8-black
+mypy
+pytest
+types-PyYAML

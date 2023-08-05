@@ -1,0 +1,2 @@
+[console_scripts]
+cff-from-621 = cff_from_621.cli:cli

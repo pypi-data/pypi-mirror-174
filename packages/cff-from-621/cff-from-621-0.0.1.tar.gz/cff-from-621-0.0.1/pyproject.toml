@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cff-from-621"
+description = "Generates metadata in the Citation File Format for Python projects from their PEP-621 compliant package definition. Includes a CLI."
+keywords = ["PEP-621", "CFF", "conversion"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development"
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "cffconvert ~= 2.0",
+    "PyYAML",
+    "tomli; python_version < '3.11'",
+]
+authors = [
+    {name = "Frank Sachsenheim"}
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+development = [
+    "build",
+    "flake8-black",
+    "mypy",
+    "pytest",
+    "types-PyYAML"
+]
+
+[project.scripts]
+cff-from-621 = "cff_from_621.cli:cli"
+
+[project.urls]
+Homepage = "https://pypi.org/project/cff-from-621/"
+Repository = "https://github.com/delb-xml/cff-from-621"
+"Issue tracker" = "https://github.com/delb-xml/cff-from-621/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "cff_from_621.version.VERSION"}
