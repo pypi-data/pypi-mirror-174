@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+python/__init__.py
+pythonista.egg-info/PKG-INFO
+pythonista.egg-info/SOURCES.txt
+pythonista.egg-info/dependency_links.txt
+pythonista.egg-info/entry_points.txt
+pythonista.egg-info/top_level.txt
