@@ -1,0 +1,18 @@
+plum-dispatch
+typer
+pytest
+
+[:python_version < "3.11"]
+typing_extensions
+
+[sim]
+matplotlib
+numpy
+pandas
+scipy
+
+[sim:python_version < "3.9"]
+cached_property
+
+[test]
+simbio[sim]
