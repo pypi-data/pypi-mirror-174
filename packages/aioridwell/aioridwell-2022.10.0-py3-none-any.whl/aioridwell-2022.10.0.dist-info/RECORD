@@ -1,0 +1,11 @@
+aioridwell/__init__.py,sha256=XzsgWU_KD4Rrvo8m7_u7D4P89-2N7-3SaXT5wYxDHak,83
+aioridwell/client.py,sha256=XiCYliSKC1Mhyh6iPyTI0rs3oDcRbRH777kNiWU3QeU,6773
+aioridwell/const.py,sha256=9SVwtsu3UAaxyJxcKtIN2GGXsQdgXaSLZdOQMreVk3A,88
+aioridwell/errors.py,sha256=j0yDJC-NLS_vaK_vIWMLr69vQ1NcNeSjp9L2z6p9RBU,1212
+aioridwell/model.py,sha256=ll-L3GayAZ9JGCyroc4AyN2MVVbO2rlV6q0Ilk_9IoU,7853
+aioridwell/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioridwell/query.py,sha256=HbUaE6RpJfTUvNyi-spa9YdSzFGMt2xw_p9Sngwfby0,1384
+aioridwell-2022.10.0.dist-info/LICENSE,sha256=CyDAMHe39L82TpfkOACYmWLK0t3ssxpk0rWWx7Gxj_0,1072
+aioridwell-2022.10.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aioridwell-2022.10.0.dist-info/METADATA,sha256=jaLrY_AAluSHf0F5yyggyQ1_PgHDpqmeeOxRtSd5b9E,7618
+aioridwell-2022.10.0.dist-info/RECORD,,
