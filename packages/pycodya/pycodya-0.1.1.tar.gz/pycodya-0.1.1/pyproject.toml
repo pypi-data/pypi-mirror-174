@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "pycodya"
+description = "The best way test your entire code automatically"
+authors = [{name = "Swrd06bp", email = "boris@codya.tech"}]
+readme = "README.md"
+version = "0.1.1"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+classifiers = [
+"Programming Language :: Python :: 3",
+"License :: OSI Approved :: Apache Software License"
+]
+
+[project.urls]
+repository = "https://github.com/swrd06bp/pycodya"
+"Bug Tracker" = "https://github.com/swrd06bp/pycodya/issues"
+
+[project.scripts]
+pycodya = "pycodya.main:main"

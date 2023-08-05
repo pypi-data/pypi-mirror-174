@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/pycodya/__init__.py
+src/pycodya/codya.py
+src/pycodya/config.py
+src/pycodya/main.py
+src/pycodya/run_tests.py
+src/pycodya.egg-info/PKG-INFO
+src/pycodya.egg-info/SOURCES.txt
+src/pycodya.egg-info/dependency_links.txt
+src/pycodya.egg-info/entry_points.txt
+src/pycodya.egg-info/top_level.txt
+src/pycodya/helpers/__init__.py
+src/pycodya/helpers/tools.py
