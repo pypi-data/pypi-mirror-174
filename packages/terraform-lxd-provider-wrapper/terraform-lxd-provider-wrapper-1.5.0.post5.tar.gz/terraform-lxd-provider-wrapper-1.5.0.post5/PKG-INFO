@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: terraform-lxd-provider-wrapper
+Version: 1.5.0.post5
+Summary: Python wrapper for Terraform Lxd Provider
+Home-page: https://github.com/imanazari70/terraform-lxd-provider-wrapper
+Author: Iman Azari
+Author-email: azari@mahsan.co
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
