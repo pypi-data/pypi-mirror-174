@@ -1,0 +1,10 @@
+datalake_utils.py,sha256=yr9MGKX8WDOH8tpvCzX_c8GJA8CO3R10Q00iRDVTlgA,4630
+datalake_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datalake_utils/datalake_utils.py,sha256=yr9MGKX8WDOH8tpvCzX_c8GJA8CO3R10Q00iRDVTlgA,4630
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_datalake_utils.py,sha256=9SeIlT-RYMPTRJL_C3aCHEzFbX4-GaM80VEsZgM_OMA,784
+datalake_utils-1.0.1.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+datalake_utils-1.0.1.dist-info/METADATA,sha256=_yzitNR5envZGRt0znCFHs9cAmQbmkt1IS8oQeHvLwo,916
+datalake_utils-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datalake_utils-1.0.1.dist-info/top_level.txt,sha256=W7kSSbMvq0CDqDpA1HFn_oLe0JM892e8Xf3exdkDTIo,21
+datalake_utils-1.0.1.dist-info/RECORD,,
