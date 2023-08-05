@@ -1,0 +1,16 @@
+bs4==0.0.1
+fake-useragent
+hy==0.20.0
+requests==2.25.1
+retry
+lxml
+ratelimit
+publicsuffix2
+dnspython==2.0.0
+python-whois
+ipwhois==1.2.0
+validators
+event-bus
+qqwry-py3
+Jinja2
+sqlite-utils
