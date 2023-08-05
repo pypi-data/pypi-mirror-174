@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+assembly_ai_plus/__init__.py
+assembly_ai_plus/_modidx.py
+assembly_ai_plus/assemblyai.py
+assembly_ai_plus.egg-info/PKG-INFO
+assembly_ai_plus.egg-info/SOURCES.txt
+assembly_ai_plus.egg-info/dependency_links.txt
+assembly_ai_plus.egg-info/entry_points.txt
+assembly_ai_plus.egg-info/not-zip-safe
+assembly_ai_plus.egg-info/requires.txt
+assembly_ai_plus.egg-info/top_level.txt
