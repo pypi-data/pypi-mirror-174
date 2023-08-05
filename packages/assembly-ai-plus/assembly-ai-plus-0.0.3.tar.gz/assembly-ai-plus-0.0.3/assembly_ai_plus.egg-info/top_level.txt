@@ -1,0 +1,2 @@
+afiz_speech_text
+assembly_ai_plus
