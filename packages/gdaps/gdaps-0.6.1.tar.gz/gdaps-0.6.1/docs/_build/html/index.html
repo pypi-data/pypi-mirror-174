@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GDAPS - Generic Django Apps Plugin System &mdash; GDAPS  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> GDAPS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">GDAPS template support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APIs.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">GDAPS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>GDAPS - Generic Django Apps Plugin System</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gdaps-generic-django-apps-plugin-system">
+<h1>GDAPS - Generic Django Apps Plugin System<a class="headerlink" href="#gdaps-generic-django-apps-plugin-system" title="Permalink to this heading"></a></h1>
+<p>Welcome to the GDAPS documentation!</p>
+<p>GDAPS is a plugin system that can be added to Django, <strong>to create applications that can be extended via plugins later</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>While this software is tested, it is not guaranteed to be bug-free. It is in in an early development state.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>As I completely abandoned Vue, Svelte, and other Javascript frontend frameworks in favour of other frameworks like <a class="reference external" href="https://tetraframework.com">Tetra</a> (or <a class="reference external" href="https://django-unicorn.com">Unicorn</a>, <a class="reference external" href="https://turbo-django.readthedocs.io">Turbo-Django</a> etc.), <strong>gdaps-frontend support for Vue is deprecated and will be dropped in near future</strong>.</p>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#gdaps-working-modes">GDAPS working modes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#url-handling">URL handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#logging">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#frontend-support">Frontend support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#final-step">Final step</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#creating-plugins">Creating plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#the-plugin-appconfig">The plugin AppConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#interfaces">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#implementations">Implementations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#using-implementations">Using Implementations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#extending-django-s-url-patterns">Extending Django’s URL patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#drf-api-routers">DRF API Routers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#per-plugin-settings">Per-plugin Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#admin-site">Admin site</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">GDAPS template support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APIs.html">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="APIs.html#interfaces-implementations">Interfaces/Implementations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="APIs.html#plugin-configuration-and-metadata">Plugin configuration and metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="APIs.html#module-gdaps.pluginmanager">PluginManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="APIs.html#helper-functions">Helper functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#code-style">Code style</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="license">
+<h1>License<a class="headerlink" href="#license" title="Permalink to this heading"></a></h1>
+<p>I’d like to give back what I received from many Open Source software packages, and keep this
+library as open as possible, and it should stay this way.
+GDAPS is licensed under the <a class="reference external" href="https://www.gnu.org/licenses/gpl-3.0-standalone.html">General Public License, version 3</a>.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019-2021, Christian González.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

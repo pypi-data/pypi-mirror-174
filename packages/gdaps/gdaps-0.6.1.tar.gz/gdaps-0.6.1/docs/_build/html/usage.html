@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usage &mdash; GDAPS  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="GDAPS template support" href="templates.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> GDAPS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-plugins">Creating plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Static plugins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Dynamic plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#the-plugin-appconfig">The plugin AppConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaces">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implementations">Implementations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-implementations">Using Implementations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extending-django-s-url-patterns">Extending Django’s URL patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#drf-api-routers">DRF API Routers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#per-plugin-settings">Per-plugin Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#admin-site">Admin site</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#frontend-plugins">Frontend plugins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#signals">Signals</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">GDAPS template support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APIs.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GDAPS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Usage</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="templates.html" class="btn btn-neutral float-right" title="GDAPS template support" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h1>
+<section id="creating-plugins">
+<h2>Creating plugins<a class="headerlink" href="#creating-plugins" title="Permalink to this heading"></a></h2>
+<p>If you use git in your project, install the <code class="docutils literal notranslate"><span class="pre">gitpython</span></code> module (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">gitpython</span></code>). <code class="docutils literal notranslate"><span class="pre">startplugin</span></code> will determine your git user/email automatically and use it.</p>
+<p>Create a plugin using a Django management command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./manage.py startplugin fooplugin
+</pre></div>
+</div>
+<p>This command asks a few questions, creates a basic Django app in the plugin path chosen in <code class="docutils literal notranslate"><span class="pre">PluginManager.find_plugins()</span></code>. It provides useful defaults as well as a setup.py/setup.cfg file.</p>
+<p>You now have two choices for this plugin:</p>
+<ul class="simple">
+<li><p>add it statically to <code class="docutils literal notranslate"><span class="pre">INSTALLED_APPS</span></code>: see <a class="reference external" href="#static-plugins">Static plugins</a>.</p></li>
+<li><p>make use of the dynamic loading feature: see <a class="reference external" href="#dynamic-plugins">Dynamic plugins</a>.</p></li>
+</ul>
+<section id="id1">
+<h3>Static plugins<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p>In most of the cases, you will ship your application with a few
+“standard” plugins that are statically installed. These plugins must be
+loaded <em>after</em> the <code class="docutils literal notranslate"><span class="pre">gdaps</span></code> app.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># ...</span>
+
+<span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># ... standard Django apps and GDAPS</span>
+    <span class="s2">&quot;gdaps&quot;</span><span class="p">,</span>
+
+    <span class="c1"># put &quot;static&quot; plugins here too:</span>
+    <span class="s2">&quot;myproject.plugins.fooplugin&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>This plugin app is loaded as usual, but your GDAPS enhanced Django application
+can make use of it’s GDAPS features.</p>
+</section>
+<section id="id2">
+<h3>Dynamic plugins<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<p>By installing a plugin with pip, you can make your application
+aware of that plugin too:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -e myproject/plugins/fooplugin
+</pre></div>
+</div>
+<p>This installs the plugin as python module into the site-packages and
+makes it discoverable using setuptools. From this moment on it should be
+already registered and loaded after a Django server restart. Of course
+this also works when plugins are installed from PyPi, they don’t have to
+be in the project’s <code class="docutils literal notranslate"><span class="pre">plugins</span></code> folder. You can conveniently start
+developing plugins in there, and later move them to the PyPi repository.</p>
+</section>
+</section>
+<section id="the-plugin-appconfig">
+<h2>The plugin AppConfig<a class="headerlink" href="#the-plugin-appconfig" title="Permalink to this heading"></a></h2>
+<p>Plugins’ AppConfigs must provide an inner class named <code class="docutils literal notranslate"><span class="pre">PluginMeta</span></code>, or a so named attribute pointing to an external class. For more information see <code class="xref py py-class docutils literal notranslate"><span class="pre">gdaps.apps.PluginMeta</span></code>.</p>
+</section>
+<section id="interfaces">
+<span id="id3"></span><h2>Interfaces<a class="headerlink" href="#interfaces" title="Permalink to this heading"></a></h2>
+<p>Plugins can define interfaces, which can then be implemented by other
+plugins. The cookiecutter template contains a <code class="docutils literal notranslate"><span class="pre">&lt;app_name&gt;/api/interfaces.py</span></code> file automatically.
+It’s not obligatory to put all Interface definitions in <code class="docutils literal notranslate"><span class="pre">api.interfaces</span></code>, but it is a recommended coding style for GDAPS plugins:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">gdaps</span> <span class="kn">import</span> <span class="n">Interface</span>
+
+<span class="nd">@Interface</span>
+<span class="k">class</span> <span class="nc">ITextRenderer</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Documentation of the interface&quot;&quot;&quot;</span>
+
+    <span class="n">__service__</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># is the default</span>
+    <span class="n">text_type</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Predefined attributes are:</p>
+<dl id="service">
+<dt>__service__</dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">__service__</span> <span class="pre">=</span> <span class="pre">True</span></code> is set (which is the default), then all implementations are
+instantiated directly at loading time, having a full class instance
+available. Iterations over Interfaces return <strong>instances</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">plugin</span> <span class="ow">in</span> <span class="n">ITextRenderer</span><span class="p">:</span>
+    <span class="n">compiled_text</span> <span class="o">=</span> <span class="n">plugin</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<blockquote>
+<div><p>If you use <code class="docutils literal notranslate"><span class="pre">__service__</span> <span class="pre">=</span> <span class="pre">False</span></code>, the plugins are not instantiated, and
+iterations over Instances will return <strong>classes</strong>, not instances.
+This may be desired for reducing memory footprint, for data classes, or classes that
+just contain static or class methods.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">plugin</span> <span class="ow">in</span> <span class="n">INonServiceInterface</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">plugin</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>  <span class="c1"># class attribute</span>
+    <span class="n">plugin</span><span class="o">.</span><span class="n">some_classmethod</span><span class="p">()</span>
+
+    <span class="c1"># if you need instances, you have to instantiate the plugin here.</span>
+    <span class="c1"># this is not recommended.</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">plugin</span><span class="p">()</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">do_something</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="implementations">
+<span id="id4"></span><h2>Implementations<a class="headerlink" href="#implementations" title="Permalink to this heading"></a></h2>
+<p>You can then easily implement this interface in any other file (in this
+plugin or in another plugin) by subclassing the interface:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">myproject.plugins.fooplugin.api.interfaces</span> <span class="kn">import</span> <span class="n">IFooInterface</span>
+
+<span class="k">class</span> <span class="nc">OtherPluginClass</span><span class="p">(</span><span class="n">IFooInterface</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">do_something</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I did something!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="using-implementations">
+<h2>Using Implementations<a class="headerlink" href="#using-implementations" title="Permalink to this heading"></a></h2>
+<p>You can straight-forwardly use implementations that are bound to an interface by iterating over that interface,
+anywhere in your code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">myproject.plugins.fooplugin.api.interfaces</span> <span class="kn">import</span> <span class="n">IFooInterface</span>
+
+<span class="k">class</span> <span class="nc">MyPlugin</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">foo_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">plugin</span> <span class="ow">in</span> <span class="n">IFooInterface</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="n">plugin</span><span class="o">.</span><span class="n">do_domething</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Depending on the <a class="reference external" href="#service">__service__</a> Meta flag, iterating over an Interface
+returns either a <strong>class</strong> (<code class="docutils literal notranslate"><span class="pre">__service__</span> <span class="pre">=</span> <span class="pre">False</span></code>) or an <strong>instance</strong> (<code class="docutils literal notranslate"><span class="pre">__service__</span> <span class="pre">=</span> <span class="pre">True</span></code>), which is the default.</p>
+</section>
+<section id="extending-django-s-url-patterns">
+<h2>Extending Django’s URL patterns<a class="headerlink" href="#extending-django-s-url-patterns" title="Permalink to this heading"></a></h2>
+<p>To let your plugin define some URLs that are automatically detected by your Django application, you
+have to add a code fragment to your global urls.py file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">gdaps.pluginmanager</span> <span class="kn">import</span> <span class="n">PluginManager</span>
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">PluginManager</span><span class="o">.</span><span class="n">urlpatterns</span><span class="p">()</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># add your fixed, non-plugin paths here.</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>GDAPS then loads and imports all available plugins’ <em>urls.py</em>  files,
+collects their <code class="docutils literal notranslate"><span class="pre">urlpatterns</span></code> variables and includes them into merges them into the global urlpattern, using the <code class="docutils literal notranslate"><span class="pre">app_name</span></code> namespace defined in the plugin’s urls.py:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.views</span> <span class="kn">import</span> <span class="n">MyUrlView</span><span class="p">,</span> <span class="n">SomeViewSet</span>
+<span class="kn">from</span> <span class="nn">django.views.generic</span> <span class="kn">import</span> <span class="n">TemplateView</span>
+<span class="c1"># fooplugin/urls.py</span>
+
+<span class="n">app_name</span> <span class="o">=</span> <span class="s2">&quot;fooplugin&quot;</span>
+
+<span class="c1"># This will be merged into the &quot;fooplugin/&quot; namespace</span>
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">TemplateView</span><span class="p">(</span><span class="s2">&quot;foo/index.html&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">),</span>
+    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;detail/&quot;</span><span class="p">,</span> <span class="n">MyUrlView</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;detail&quot;</span><span class="p">),</span>
+
+    <span class="c1"># ...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>GDAPS also lets your plugin create global, root URLs (not namespaced) by using <code class="docutils literal notranslate"><span class="pre">root_urlpatterns</span></code>. This is because some plugins need to create global (e.g. API) URLS for frameworks like DRF, etc.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This will be merged into the global urlpattern</span>
+<span class="n">root_urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;api/foo/&quot;</span><span class="p">,</span> <span class="n">SomeViewSet</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;api&quot;</span><span class="p">)</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Beware:</dt><dd><p>Plugins are responsible for their URLs and namespaces, and that they don’t collide with others.</p>
+</dd>
+</dl>
+</section>
+<section id="drf-api-routers">
+<span id="routers"></span><h2>DRF API Routers<a class="headerlink" href="#drf-api-routers" title="Permalink to this heading"></a></h2>
+<p>DRF offers great router classes, but implementations always assume that your main urls.py knows about all of your apps. GDAPS lets you define one <cite>SimpleRouter</cite> for each of your apps, and automatically collects them into one global <cite>DefaultRouter</cite>.</p>
+<p>In your global <cite>urls.py</cite> add:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">router</span> <span class="o">=</span> <span class="n">PluginManager</span><span class="o">.</span><span class="n">router</span><span class="p">()</span>
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># ...</span>
+    <span class="n">path</span><span class="p">(</span><span class="s2">&quot;api/&quot;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="n">router</span><span class="o">.</span><span class="n">urls</span><span class="p">)),</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>In your apps’ urls.py, similar to urlpatterns, create a <cite>router</cite> variable:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">rest_framework.routers</span> <span class="kn">import</span> <span class="n">SimpleRouter</span>
+
+<span class="n">router</span> <span class="o">=</span> <span class="n">SimpleRouter</span><span class="p">()</span>
+<span class="n">router</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;app&quot;</span><span class="p">,</span> <span class="n">AppListViewSet</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>…where AppListViewSet is your DRF ViewSet. That’s all, GDAPS takes care of the merging.</p>
+</section>
+<section id="per-plugin-settings">
+<span id="settings"></span><h2>Per-plugin Settings<a class="headerlink" href="#per-plugin-settings" title="Permalink to this heading"></a></h2>
+<p>GDAPS allows your application to have own settings for each plugin
+easily, which provide defaults, and can be overridden in the global
+<code class="docutils literal notranslate"><span class="pre">settings.py</span></code> file. Look at the example conf.py file (created by
+<code class="docutils literal notranslate"><span class="pre">./manage.py</span> <span class="pre">startplugin</span> <span class="pre">fooplugin</span></code>), and adapt to your needs:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.test.signals</span> <span class="kn">import</span> <span class="n">setting_changed</span>
+<span class="kn">from</span> <span class="nn">gdaps.conf</span> <span class="kn">import</span> <span class="n">PluginSettings</span>
+
+<span class="n">NAMESPACE</span> <span class="o">=</span> <span class="s2">&quot;FOOPLUGIN&quot;</span>
+
+<span class="c1"># Optional defaults. Leave empty if not needed.</span>
+<span class="n">DEFAULTS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;MY_SETTING&quot;</span><span class="p">:</span> <span class="s2">&quot;somevalue&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;FOO_PATH&quot;</span><span class="p">:</span> <span class="s2">&quot;django.blah.foo&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BAR&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;baz&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;buh&quot;</span><span class="p">,</span>
+    <span class="p">],</span>
+<span class="p">}</span>
+
+<span class="c1"># Optional list of settings that are allowed to be in &quot;string import&quot; notation. Leave empty if not needed.</span>
+<span class="n">IMPORT_STRINGS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;FOO_PATH&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Optional list of settings that have been removed. Leave empty if not needed.</span>
+<span class="n">REMOVED_SETTINGS</span> <span class="o">=</span> <span class="p">(</span> <span class="s2">&quot;FOO_SETTING&quot;</span> <span class="p">)</span>
+
+
+<span class="n">fooplugin_settings</span> <span class="o">=</span> <span class="n">PluginSettings</span><span class="p">(</span><span class="s2">&quot;FOOPLUGIN&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">DEFAULTS</span><span class="p">,</span> <span class="n">IMPORT_STRINGS</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Detailed explanation:</p>
+<dl>
+<dt>DEFAULTS</dt><dd><p>The <code class="docutils literal notranslate"><span class="pre">DEFAULTS</span></code> are, as the name says, a default array of settings. If
+<code class="docutils literal notranslate"><span class="pre">fooplugin_setting.BLAH</span></code> is not set by the user in settings.py, this
+default value is used.</p>
+</dd>
+<dt>IMPORT_STRINGS</dt><dd><p>Settings in a <em>dotted</em> notation are evaluated, they return not the
+string, but the object they point to. If it does not exist, an
+<code class="docutils literal notranslate"><span class="pre">ImportError</span></code> is raised.</p>
+</dd>
+<dt>REMOVED_SETTINGS</dt><dd><p>A list of settings that are forbidden to use. If accessed, an
+<code class="docutils literal notranslate"><span class="pre">RuntimeError</span></code> is raised.</p>
+<p>This allows very flexible settings - as dependant plugins can easily
+import the <code class="docutils literal notranslate"><span class="pre">fooplugin_settings</span></code> from your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.</p>
+<p>However, the created conf.py file is not needed, so if you don’t use
+custom settings at all, just delete the file.</p>
+</dd>
+</dl>
+</section>
+<section id="admin-site">
+<h2>Admin site<a class="headerlink" href="#admin-site" title="Permalink to this heading"></a></h2>
+<p>GDAPS provides support for the Django admin site. The built-in <code class="docutils literal notranslate"><span class="pre">GdapsPlugin</span></code> model automatically
+are added to Django’s admin site, and can be administered there.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As GdapsPlugin database entries must not be edited directly, they are shown read-only in the admin.
+<strong>Please use the ‘syncplugins’ management command to
+update the fields from the file system.</strong>
+However, you can enable/disable or hide/show plugins via the admin interface.</p>
+</div>
+<p>If you want to disable the built-in admin site for GDAPS, or provide a custom GDAPS ModelAdmin, you can do this using:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">GDAPS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;ADMIN&quot;</span><span class="p">:</span> <span class="kc">False</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<section id="frontend-plugins">
+<span id="usage-frontend-support"></span><h3>Frontend plugins<a class="headerlink" href="#frontend-plugins" title="Permalink to this heading"></a></h3>
+<p>The GDAPS frontend module can be extended via plugins, each providing a pluggable frontend for your Django application. See</p>
+</section>
+<section id="signals">
+<h3>Signals<a class="headerlink" href="#signals" title="Permalink to this heading"></a></h3>
+<p>If you are using Django signals in your plugin, we recommend to put them into a <code class="docutils literal notranslate"><span class="pre">signals</span></code> submodule. Import it then from the <code class="docutils literal notranslate"><span class="pre">AppConfig.ready()</span></code> method.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ready</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># Import signals if necessary:</span>
+    <span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">signals</span>  <span class="c1"># NOQA</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Don’t overuse the <code class="docutils literal notranslate"><span class="pre">ready</span></code> method. Have a look at the <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/applications/#django.apps.AppConfig.ready">Django documentation of ready()</a>.</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="templates.html" class="btn btn-neutral float-right" title="GDAPS template support" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019-2021, Christian González.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
