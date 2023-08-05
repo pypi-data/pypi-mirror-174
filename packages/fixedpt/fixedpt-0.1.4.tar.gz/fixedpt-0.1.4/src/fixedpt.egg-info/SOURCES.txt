@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/fixedpt/__init__.py
+src/fixedpt/fixedpt.py
+src/fixedpt.egg-info/PKG-INFO
+src/fixedpt.egg-info/SOURCES.txt
+src/fixedpt.egg-info/dependency_links.txt
+src/fixedpt.egg-info/top_level.txt
