@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyquokka
+Version: 0.1.2
+Summary: Quokka
+Author: Tony Wang
+Author-email: zihengw@stanford.edu
+License: http://www.apache.org/licenses/LICENSE-2.0
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+
+Dope way to do cloud analytics
+
+Check out https://github.com/marsupialtail/quokka
+
+or https://marsupialtail.github.io/quokka/
+
+
+
