@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: captcha.rip
+Version: 1.0.0
+Summary: A Python Library that UNOFFICIALLY wraps the captcha solving service, captcharip.
+Home-page: https://github.com/skidghoul/CaptchaRipWrapper
+Author: sillyrayman
+Author-email: fanboys@fbi.ac
+License: MIT License
+Description: UNKNOWN
+Keywords: captcha.rip rest api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10

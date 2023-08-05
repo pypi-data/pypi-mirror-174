@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+captcha.rip.egg-info/PKG-INFO
+captcha.rip.egg-info/SOURCES.txt
+captcha.rip.egg-info/dependency_links.txt
+captcha.rip.egg-info/top_level.txt
+captcharip/__init__.py
+captcharip/http.py
+captcharip/variables.py
