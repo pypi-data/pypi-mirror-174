@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pycowsay-rich
+Version: 0.1.3
+Summary: A rich verion of pycowsay!
+Home-page: https://codeberg.org/KybernetikJo/pycowsay-rich
+Author: Johannes Kaisinger
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: rich (>=11.0.0)
+Description-Content-Type: text/markdown
+
+# pycowsay
+
+A talking cow! A rich version of [pycowsay](https://github.com/cs01/pycowsay).
+
+## Run
+
+Use [pipx](https://pypa.github.io/pipx/) to run without permanently installing
+
+```bash
+pipx run pycowsay-rich mooo
+```
+
+## Install
+
+Use [pipx](https://pypa.github.io/pipx/) to install to isolated enviroment.
+
+```bash
+pipx install pycowsay-rich
+```
+
+Use pip to install to python enviroment.
+
+```bash
+pip install pycowsay-rich
+```
+
+

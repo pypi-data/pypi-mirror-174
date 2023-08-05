@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pycowsay-rich"
+homepage = "https://codeberg.org/KybernetikJo/pycowsay-rich"
+version = "0.1.3"
+description = "A rich verion of pycowsay!"
+authors = ["Johannes Kaisinger"]
+readme = "README.md"
+packages = [{include = "pycowsay_rich", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+rich = ">=11.0.0"
+
+[tool.poetry.group.dev.dependencies]
+tox = "^3.27.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pycowsay-rich = 'pycowsay_rich.talk:say'
+
+[tool.poetry.plugins."pipx.run"]
+pycowsay-rich = 'pycowsay_rich.talk:say'
