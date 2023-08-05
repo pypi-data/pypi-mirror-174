@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: datalake_utils
+Version: 1.0.2
+Summary: Manipulate data on Amazon S3 using Apache Hadoop filesystem compability
+Author: Luis Roberto de Oliveira Moro
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+DataLakeUtils
+    This class instanciates an object to handle read/write operations on an 
+    specific bucket on Amazon S3 working as a Data Lake, with folders splitted
+    into the following hierarchy, compatible to Apache Hadoop filesystem:
+    - schema/
+        - table/
+            - partition[0]/
+                - partition[1]/
+                    ...
+                        - partition[n]/
+                            - object
