@@ -1,0 +1,182 @@
+# ~~~
+# SPDX-FileCopyrightText: Michael Popoloski
+# SPDX-License-Identifier: MIT
+# ~~~
+
+# -------- Generate code
+
+# Generate diagnostic headers
+add_custom_command(
+  COMMAND
+    ${Python_EXECUTABLE} ${SCRIPTS_DIR}/diagnostic_gen.py --outDir
+    ${CMAKE_CURRENT_BINARY_DIR} --srcDir ${CMAKE_CURRENT_SOURCE_DIR} --incDir
+    ${CMAKE_CURRENT_SOURCE_DIR}/../include/slang
+  OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/slang/diagnostics/AllDiags.h
+         ${CMAKE_CURRENT_BINARY_DIR}/DiagCode.cpp
+  DEPENDS ${SCRIPTS_DIR}/diagnostic_gen.py ${SCRIPTS_DIR}/diagnostics.txt
+  COMMENT "Generating diagnostics")
+
+# Generate syntax headers and sources
+add_custom_command(
+  COMMAND ${Python_EXECUTABLE} ${SCRIPTS_DIR}/syntax_gen.py --dir
+          ${CMAKE_CURRENT_BINARY_DIR}
+  OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/slang/syntax/AllSyntax.h
+         ${CMAKE_CURRENT_BINARY_DIR}/AllSyntax.cpp
+         ${CMAKE_CURRENT_BINARY_DIR}/SyntaxClone.cpp
+         ${CMAKE_CURRENT_BINARY_DIR}/slang/syntax/SyntaxKind.h
+         ${CMAKE_CURRENT_BINARY_DIR}/slang/syntax/SyntaxFwd.h
+         ${CMAKE_CURRENT_BINARY_DIR}/slang/parsing/TokenKind.h
+         ${CMAKE_CURRENT_BINARY_DIR}/TokenKind.cpp
+  DEPENDS ${SCRIPTS_DIR}/syntax_gen.py ${SCRIPTS_DIR}/syntax.txt
+          ${SCRIPTS_DIR}/triviakinds.txt ${SCRIPTS_DIR}/tokenkinds.txt
+  COMMENT "Generating syntax")
+
+# Generate version header
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/util/Version.cpp.in
+               ${CMAKE_CURRENT_BINARY_DIR}/Version.cpp @ONLY)
+
+# -------- Primary library target
+add_library(
+  slang_slang
+  ${CMAKE_CURRENT_BINARY_DIR}/AllSyntax.cpp
+  ${CMAKE_CURRENT_BINARY_DIR}/SyntaxClone.cpp
+  ${CMAKE_CURRENT_BINARY_DIR}/DiagCode.cpp
+  ${CMAKE_CURRENT_BINARY_DIR}/TokenKind.cpp
+  ${CMAKE_CURRENT_BINARY_DIR}/Version.cpp
+  ${CMAKE_CURRENT_BINARY_DIR}/slang/diagnostics/AllDiags.h
+  diagnostics/DiagnosticClient.cpp
+  diagnostics/DiagnosticEngine.cpp
+  diagnostics/Diagnostics.cpp
+  diagnostics/TextDiagnosticClient.cpp
+  driver/Driver.cpp
+  numeric/ConstantValue.cpp
+  numeric/SVInt.cpp
+  numeric/Time.cpp
+  parsing/Lexer.cpp
+  parsing/LexerFacts.cpp
+  parsing/NumberParser.cpp
+  parsing/Parser.cpp
+  parsing/Parser_expressions.cpp
+  parsing/Parser_members.cpp
+  parsing/Parser_statements.cpp
+  parsing/ParserBase.cpp
+  parsing/ParserMetadata.cpp
+  parsing/Preprocessor.cpp
+  parsing/Preprocessor_macros.cpp
+  parsing/Preprocessor_pragmas.cpp
+  parsing/Token.cpp
+  syntax/SyntaxFacts.cpp
+  syntax/SyntaxNode.cpp
+  syntax/SyntaxPrinter.cpp
+  syntax/SyntaxTree.cpp
+  syntax/SyntaxVisitor.cpp
+  text/CharInfo.cpp
+  text/Json.cpp
+  text/SFormat.cpp
+  text/SourceLocation.cpp
+  text/SourceManager.cpp
+  util/Assert.cpp
+  util/BumpAllocator.cpp
+  util/CommandLine.cpp
+  util/OS.cpp
+  util/SmallVector.cpp
+  util/String.cpp
+  util/TimeTrace.cpp)
+
+add_subdirectory(ast)
+
+add_library(slang::slang ALIAS slang_slang)
+set_target_properties(
+  slang_slang
+  PROPERTIES CXX_VISIBILITY_PRESET hidden
+             VISIBILITY_INLINES_HIDDEN YES
+             VERSION ${PROJECT_VERSION}
+             SOVERSION ${PROJECT_VERSION_MAJOR}
+             EXPORT_NAME slang
+             OUTPUT_NAME slang)
+
+# Compile options
+target_compile_options(slang_slang PRIVATE ${SLANG_WARN_FLAGS})
+target_compile_definitions(slang_slang PUBLIC $<$<CONFIG:Debug>:DEBUG>)
+
+# Include directories
+target_include_directories(
+  slang_slang
+  PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../include/>"
+         "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>"
+         "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>")
+target_include_directories(
+  slang_slang SYSTEM
+  PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../external/>")
+
+# Link libraries
+find_package(Threads)
+target_link_libraries(slang_slang PRIVATE ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(slang_slang PRIVATE fmt::fmt)
+target_link_libraries(slang_slang PUBLIC unordered_dense::unordered_dense)
+
+# If building the Python library we'll end up with a shared lib no matter what,
+# so make sure we always build with PIC.
+if(SLANG_INCLUDE_PYLIB)
+  set_target_properties(slang_slang PROPERTIES POSITION_INDEPENDENT_CODE ON)
+endif()
+
+# Run clang-tidy if desired. This is a separate project-specific variable so
+# that it can apply just to the project itself and not any dependencies.
+if(SLANG_CLANG_TIDY)
+  set_target_properties(slang_slang PROPERTIES CXX_CLANG_TIDY
+                                               ${SLANG_CLANG_TIDY})
+endif()
+
+# Set the magic _STATIC_DEFINE definition to assist with building combo static
+# and shared libs in the same build.
+if(NOT BUILD_SHARED_LIBS)
+  target_compile_definitions(slang_slang PUBLIC SLANG_STATIC_DEFINE)
+endif()
+
+# For the generated export header, suppress annoying warnings
+set(suppress_export_warnings
+    "
+#if defined(_MSC_VER) && !defined(__ICL)
+  #pragma warning(disable:4251)
+  #pragma warning(disable:4275)
+#elif defined(__GNUC__) && !defined(__clang__)
+  #pragma GCC diagnostic ignored \"-Wattributes\"
+#endif
+")
+
+include(GenerateExportHeader)
+generate_export_header(
+  slang_slang
+  BASE_NAME
+  slang
+  EXPORT_FILE_NAME
+  ${CMAKE_CURRENT_BINARY_DIR}/slang/slang_export.h
+  CUSTOM_CONTENT_FROM_VARIABLE
+  suppress_export_warnings)
+
+# Installation rules for headers.
+if(SLANG_INCLUDE_INSTALL)
+  install(
+    DIRECTORY ../include/
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+    COMPONENT slang_Development)
+  install(
+    DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/slang/diagnostics/
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/slang/diagnostics
+    COMPONENT slang_Development)
+  install(
+    FILES ${CMAKE_CURRENT_BINARY_DIR}/slang/syntax/AllSyntax.h
+          ${CMAKE_CURRENT_BINARY_DIR}/slang/syntax/SyntaxKind.h
+          ${CMAKE_CURRENT_BINARY_DIR}/slang/syntax/SyntaxFwd.h
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/slang/syntax/
+    COMPONENT slang_Development)
+  install(
+    FILES ${CMAKE_CURRENT_BINARY_DIR}/slang/parsing/TokenKind.h
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/slang/parsing/
+    COMPONENT slang_Development)
+  install(
+    FILES ${CMAKE_CURRENT_BINARY_DIR}/slang/slang_export.h
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/slang/
+    COMPONENT slang_Development)
+endif()
