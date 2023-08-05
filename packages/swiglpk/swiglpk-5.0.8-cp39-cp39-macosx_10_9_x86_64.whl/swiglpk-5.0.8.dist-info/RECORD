@@ -1,0 +1,10 @@
+swiglpk-5.0.8.dist-info/RECORD,,
+swiglpk-5.0.8.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+swiglpk-5.0.8.dist-info/WHEEL,sha256=pfjXB0CCNW4PSSqQc2t4Up6p3o0jxBnHy_2o38FQkyE,109
+swiglpk-5.0.8.dist-info/top_level.txt,sha256=n12gVJhzQcaqqxYVshejLOHVrwTDnFpG2y1ySFXGlno,8
+swiglpk-5.0.8.dist-info/METADATA,sha256=R22UfRHWRaHJ7317VxoqPLvIaK9ytznFClRYdaganAo,5532
+swiglpk/swiglpk.py,sha256=puyFQ_XaW0ZYBPPBhe5cvhTM3EhuKkRj9JByeq757GU,37453
+swiglpk/_swiglpk.cpython-39-darwin.so,sha256=rfKOGkdUmzmHlcB0NtrpyHo7aWAcbtM-hxnHuV6Jbu4,380688
+swiglpk/__init__.py,sha256=LFptBGmxPxxLcPSfi3jPU845D0qWnsHDX4Hp_KeE8KE,23
+swiglpk/.dylibs/libglpk.40.dylib,sha256=0IDdGdjeOIwhcaTR8H_xYROSYC85-0j1J0QXWbpGxtc,1260816
+swiglpk/.dylibs/libgmp.10.dylib,sha256=lCtLE20ZxW9qOHh5JckqhoGXV0IfJrq-ue9_kareCro,706752
