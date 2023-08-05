@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: zut
+Version: 0.4.1
+Summary: Reusable Python, Django and PostgreSql utilities.
+Author-email: Ipamo <dev@ipamo.net>
+Project-URL: Homepage, https://github.com/ipamo/zut
+Project-URL: Bug Tracker, https://github.com/ipamo/zut/issues
+Keywords: reusable,util,utils,common,commons
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Provides-Extra: all
+Requires-Dist: tabulate (>=0.8.10) ; extra == 'all'
+Requires-Dist: django (>=4.0.4) ; extra == 'all'
+Requires-Dist: djangorestframework (>=3.13.1) ; extra == 'all'
+Requires-Dist: psycopg2-binary (>=2.9.3) ; extra == 'all'
+Requires-Dist: cmarkgfm (>=0.8.0) ; extra == 'all'
+Requires-Dist: python-dotenv (>=0.20.0) ; extra == 'all'
+Requires-Dist: pywin32 (>=304) ; (sys_platform == "win32") and extra == 'all'
+Requires-Dist: keyring (>=23.7.0) ; (sys_platform == "win32") and extra == 'all'
+Provides-Extra: dev
+Requires-Dist: twine (>=4.0.1) ; extra == 'dev'
+
+Zut
+===
+
+Reusable Python, Django and PostgreSql utilities.
+
+## Install
+
+From PyPI:
+
+    pip install zut
+
+From Git, last version:
+
+    pip install git+https://gitlab.com/ipamo/zut.git@main
+
+Use SSH instead of HTTPS url:
+
+    pip install git+ssh://git@gitlab.com/ipamo/zut.git@main
+
+Specific version, including extra dependencies:
+
+    pip install git+https://gitlab.com/ipamo/zut.git@v0.3.1#egg=zut[extra]
+
+In a `requirements.txt` file, including extra dependencies:
+
+    zut[extra] @ git+https://gitlab.com/ipamo/zut.git@v0.3.1#egg=zut[extra]
+
+
+## Dev quick start
+
+Install Python, its packet manager (`pip`) and PostgreSql.
+Under Linux, also install password manager `pass` (used as _credentials manager_).
+
+Windows pre-requisites:
+
+- Download [Python](https://www.python.org/downloads/) and install it.
+- Download [PostgreSql](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads), install it, and add binaries (`C:\Program Files\PostgreSQL\14\bin`) to PATH.
+
+Linux (Debian) pre-requisites:
+
+    sudo apt install python3-venv python3-pip postgresql pass
+
+Create Python virtual environment (example for Windows):
+
+    python -m venv .venv      # Debian: python3 -m venv .venv
+    .\.venv\Scripts\activate  # Linux: source .venv/bin/activate
+    pip install .[all,dev]
+
+Create test database (cf. parameters in `tests/settings.py`). Example:
+
+    sudo -u postgres psql -c "create database test_zut encoding 'utf8' template 'template0'"
+    
+For Linux, configure password manager `pass`. Example:
+
+    # Import your GPG key, show key identifier and mark key as trusted
+    gpg --import my-private-gpg-key.asc
+    gpg --list-secret-keys
+    gpg --edit-key mykey@example.org
+    trust
+    5
+    o
+    q
+
+    # Initialize "pass" with your GPG key
+    pass init mykey@example.org
+
+Run tests:
+
+    python -m unittest
+
+Run commands :
+
+    python -m zut --help
+
+
+## Publish library
+
+Configure `~/.pypirc` (see [example](doc/pypirc-example.conf)).
+
+Build and upload distribution:
+
+    # $env:HTTPS_PROXY="..."                         # if necessary
+    # $env:TWINE_CERT="C:\...\ca-certificates.crt"   # if necessary
+    python tools.py build --upload
