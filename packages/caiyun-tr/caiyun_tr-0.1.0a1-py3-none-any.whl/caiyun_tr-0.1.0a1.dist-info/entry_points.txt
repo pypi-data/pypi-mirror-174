@@ -1,0 +1,3 @@
+[console_scripts]
+caiyun-tr=caiyun_tr.__main__:app
+
