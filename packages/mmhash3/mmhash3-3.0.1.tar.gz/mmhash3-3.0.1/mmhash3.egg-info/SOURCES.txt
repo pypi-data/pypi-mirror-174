@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+MurmurHash3.cpp
+MurmurHash3.h
+README.md
+mmh3module.cpp
+setup.py
+mmhash3.egg-info/PKG-INFO
+mmhash3.egg-info/SOURCES.txt
+mmhash3.egg-info/dependency_links.txt
+mmhash3.egg-info/top_level.txt
