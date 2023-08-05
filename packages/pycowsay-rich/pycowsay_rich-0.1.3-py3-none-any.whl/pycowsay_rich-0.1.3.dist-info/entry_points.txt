@@ -1,0 +1,6 @@
+[console_scripts]
+pycowsay-rich=pycowsay_rich.talk:say
+
+[pipx.run]
+pycowsay-rich=pycowsay_rich.talk:say
+
