@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "declara"
+authors = [{name = "Tobias Sijtsma", email = "tobias@leanslate.nl"}]
+readme = "README.md"
+dynamic = ["version", "description"]
+requires-python = ">=3.10"
+dependencies = [
+    "pypdf2 >=2.11, <3",
+    "reportlab >=3.6, <4",
+    "requests >=2.28, <3",
+    "yagmail[all] >=0.15, <1",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Home = "https://leanslate.nl/"
+
+[tool.flit.external-data]
+directory = "declara"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
