@@ -1,0 +1,11 @@
+.env
+.tox
+near_api_py.egg-info
+lzr_near_api_py.egg-info
+__pycache__
+.vscode
+.idea
+build/
+*.py[cod]
+.DS_Store
+dist/
