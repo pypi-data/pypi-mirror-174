@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bitops
+Version: 0.0.1
+Summary: Simple bit manipulations for personal projects
+Home-page: https://github.com/vitalij555/binary-operations
+Author: Vitalij Gotovskij
+Author-email: vitalij@cdeveloper.eu
+License: MIT
+Keywords: BINARY,OPERATIONS,BITWISE,MATH,BITS,BYTES
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![Upload Python Package](https://github.com/vitalij555/bitops/workflows/Upload%20Python%20Package/badge.svg)
+[![PyPi version](https://img.shields.io/pypi/v/bitops.svg?style=flat-square) ](https://pypi.python.org/pypi/bitops) [![Supported Python versions](https://img.shields.io/pypi/pyversions/bitops.svg?style=flat-square) ](https://pypi.org/project/bitops) [![License](https://img.shields.io/pypi/l/bitops.svg?style=flat-square) ](https://choosealicense.com/licenses) [![Downloads](https://pepy.tech/badge/bitops)](https://pepy.tech/project/bitops) [![codecov](https://codecov.io/gh/vitalij555/bitops/branch/master/graph/badge.svg)](https://codecov.io/gh/vitalij555/bitops)
+
+
+
+# Simple module for bit operations in a byte (get, set, etc..)

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+bitops/BinaryOperations.py
+bitops/__init__.py
+bitops.egg-info/PKG-INFO
+bitops.egg-info/SOURCES.txt
+bitops.egg-info/dependency_links.txt
+bitops.egg-info/top_level.txt
