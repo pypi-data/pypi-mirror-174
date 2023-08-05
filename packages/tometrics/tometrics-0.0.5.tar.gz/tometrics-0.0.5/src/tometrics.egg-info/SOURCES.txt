@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tometrics/__init__.py
+src/tometrics/tometrics.py
+src/tometrics.egg-info/PKG-INFO
+src/tometrics.egg-info/SOURCES.txt
+src/tometrics.egg-info/dependency_links.txt
+src/tometrics.egg-info/requires.txt
+src/tometrics.egg-info/top_level.txt
+src/tometrics/lib/__init__.py
+src/tometrics/lib/generic_interface.py
+src/tometrics/lib/influxdb.py
+src/tometrics/lib/metric.py
