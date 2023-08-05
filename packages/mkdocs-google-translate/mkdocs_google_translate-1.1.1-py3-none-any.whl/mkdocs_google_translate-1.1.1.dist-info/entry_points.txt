@@ -1,0 +1,2 @@
+[console_scripts]
+my-google-translate = mkdocs_google_translate.plugin:GoogleTranslatePlugin
