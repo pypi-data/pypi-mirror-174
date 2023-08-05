@@ -1,0 +1,2 @@
+[console_scripts]
+vnv.cli = vnv:main
