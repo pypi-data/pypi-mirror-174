@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: peltak-pypi
+Version: 0.0.2
+Summary: 
+Home-page: https://novopl.github.io/peltak-pypi
+License: Proprietary
+Author: Mateusz Klos
+Author-email: novopl@gmail.com
+Requires-Python: >=3.7.2,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Documentation, https://novopl.github.io/peltak-pypi
+Project-URL: Repository, https://github.com/novopl/peltak-pypi
