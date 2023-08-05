@@ -1,0 +1,7 @@
+thonnycontrib/thonny_codegrinder_plugin/__init__.py,sha256=YacHtX-4nMqwO53YTOP0_zja2WVQfp9u1UNbZeYe8Gw,50826
+thonnycontrib/thonny_codegrinder_plugin/tkhtmlview/__init__.py,sha256=FBuP3NicDfunXWT9mMo_q-d5DCTVlsVIsXntVRcuWY0,4557
+thonnycontrib/thonny_codegrinder_plugin/tkhtmlview/html_parser.py,sha256=lHQy9zKns97cuQqdyd5fXbm323WZTtXXVR6bu_YME4I,26123
+thonny_codegrinder_plugin-2.6.15.dist-info/METADATA,sha256=lAAGgYqKbyL_wLUfXqI9BNJpAUNNwmZZDYpm4C96JVo,1089
+thonny_codegrinder_plugin-2.6.15.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+thonny_codegrinder_plugin-2.6.15.dist-info/top_level.txt,sha256=thF9WQtY_lcNKOOR4SQeeWLAVWb4i8XhdGC7pEMAOHY,14
+thonny_codegrinder_plugin-2.6.15.dist-info/RECORD,,
