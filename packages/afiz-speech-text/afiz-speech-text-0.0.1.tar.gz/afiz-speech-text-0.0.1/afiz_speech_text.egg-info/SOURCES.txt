@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+afiz_speech_text/__init__.py
+afiz_speech_text/_modidx.py
+afiz_speech_text/assemblyai.py
+afiz_speech_text.egg-info/PKG-INFO
+afiz_speech_text.egg-info/SOURCES.txt
+afiz_speech_text.egg-info/dependency_links.txt
+afiz_speech_text.egg-info/entry_points.txt
+afiz_speech_text.egg-info/not-zip-safe
+afiz_speech_text.egg-info/requires.txt
+afiz_speech_text.egg-info/top_level.txt
