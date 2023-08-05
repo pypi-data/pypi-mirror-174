@@ -1,0 +1,181 @@
+[build-system]
+requires = [
+  'lockup',  # Package from PyPI is for development support.
+  'packaging',
+  'setuptools>=61.0.0',  # Has 'pyproject.toml' support!
+  'tomli',  # TODO: Use standard library 'tomllib' once Python 3.11 is baseline.
+  'tomli-w',
+  'wheel',
+]
+# Explicit build backend, in case we use frontend other than Pip or Pip default changes.
+build-backend = 'setuptools.build_meta'
+
+[project]
+# https://www.python.org/dev/peps/pep-0621
+# https://packaging.python.org/en/latest/specifications/core-metadata
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata
+dynamic = [ 'readme' ]
+name = 'lockup'
+version = '2.1.1' # TODO: should be dynamic
+description = 'Immutable and concealed attributes for classes, modules, and namespaces.'
+license = { text = 'Apache-2.0' }
+keywords = [ 'api', 'attribute', 'concealment', 'immutability', 'namespace' ]
+classifiers = [ # https://pypi.org/classifiers
+  'Development Status :: 5 - Production/Stable',
+  'Intended Audience :: Developers',
+  'License :: OSI Approved :: Apache Software License',
+  'Programming Language :: Python :: 3 :: Only',
+  'Programming Language :: Python :: 3.7',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: Implementation :: CPython',
+  'Programming Language :: Python :: Implementation :: PyPy',
+  'Topic :: Software Development',
+]
+requires-python = '>= 3.7'
+[[project.authors]]
+name = 'Eric McDonald'
+email = 'python-lockup@googlegroups.com'
+[project.urls]
+# 'url' -> 'Homepage' and 'download-url' -> 'Download'
+#   https://github.com/pypi/warehouse/blob/a3d6221d4c692569e2290f6d75a75b4db747335b/tests/unit/packaging/test_models.py#L185-L327
+#   https://discuss.python.org/t/help-testing-experimental-features-in-setuptools/13821/16
+'Homepage' = 'https://github.com/emcd/python-lockup'
+'Documentation' = 'https://emcd.github.io/python-lockup'
+'Source Code' = 'https://github.com/emcd/python-lockup'
+'Download' = 'https://pypi.org/project/lockup/#files'
+'Issue Tracker' = 'https://github.com/emcd/python-lockup/issues'
+'Google Group' = 'https://groups.google.com/g/python-lockup'
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+# https://setuptools.pypa.io/en/latest/references/keywords.html
+[tool.setuptools.dynamic.readme]
+file = [ 'README.rst', 'CHANGELOG.rst' ]
+content-type = 'text/x-rst'
+# https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+[tool.setuptools.packages.find]
+where = [ 'sources/python3' ]
+[tool.setuptools.package-dir]
+'' = 'sources/python3'
+[tool.SELF]
+year-of-origin = 2021
+
+[tool.coverage.run]
+branch = true
+command_line = '-m pytest'
+data_file = '.local/caches/pytest/coverage.sqlite3'
+parallel = true
+[tool.coverage.report]
+exclude_lines = [
+  '#.*\spragma: no cover(\s.*|$)',
+  'raise\s+InvalidState',
+]
+precision = 2
+[tool.coverage.html]
+directory = '.local/artifacts/coverage-pytest'
+[tool.coverage.xml]
+output = '.local/artifacts/coverage-pytest/coverage.xml'
+
+[tool.mypy]
+cache_dir = '.local/caches/mypy'
+show_traceback = true
+show_error_codes = true
+#disable_error_code = [ 'misc' ]
+
+[tool.pylint.MASTER]
+ignore = []
+# Warning: Parallelizing causes diagnostic output to be interleaved
+#          and also messes with similarities detection and dependency grouping.
+jobs = 1
+load-plugins = [
+  "pylint.extensions.check_elif",
+  # "pylint.extensions.consider_ternary_expression",
+  "pylint.extensions.eq_without_hash",
+  "pylint.extensions.for_any_all",
+  "pylint.extensions.mccabe",
+  "pylint.extensions.no_self_use",
+  "pylint.extensions.overlapping_exceptions",
+  "pylint.extensions.private_import",
+  "pylint.extensions.redefined_loop_name",
+  # "pylint.extensions.set_membership",
+  # "pylint.extensions.while_used",
+]
+[tool.pylint.'MESSAGES CONTROL']
+disable = [
+  "consider-using-f-string",
+  "duplicate-code",  # TODO: Re-enable after heuristic is fixed.
+  "fixme",
+  "f-string-without-interpolation",
+  "import-outside-toplevel",
+  "multiple-statements",
+  "reimported",
+  "too-few-public-methods",
+  "ungrouped-imports",
+  "wrong-import-order",
+  "wrong-import-position",
+]
+[tool.pylint.REPORTS]
+output-format = "colorized"
+reports = true
+msg-template = "{path} {line:3d},{column:2d} [{symbol}] {msg}"
+[tool.pylint.TYPECHECK]
+ignore-mixin-members = false
+[tool.pylint.BASIC]
+good-names = [ "_", "__" ]
+include-naming-hint = true
+const-rgx = '([A-Za-z_][A-Za-z0-9_]{2,30}|(__.*__))$'
+[tool.pylint.FORMAT]
+max-line-length = 79
+ignore-long-lines = '''^(\s*<?https?://\S+>?|([^'"]*\s+)?#.*)$'''
+[tool.pylint.VARIABLES]
+dummy-variables-rgx = '_$'
+callbacks = []
+[tool.pylint.DESIGN]
+max-statements = 30
+max-parents = 3
+min-public-methods = 1
+[tool.pylint.CLASSES]
+defining-attr-methods = ["__init__", "__new__"]
+valid-classmethod-first-arg = ["kind", "class_"]
+valid-metaclass-classmethod-first-arg = ["maker", "factory"]
+exclude-protected = []
+[tool.pylint.EXCEPTIONS]
+overgeneral-exceptions = ["BaseException", "Exception"]
+[tool.pylint.SIMILARITIES]
+min-similarity-lines = 5
+ignore-imports = true
+
+[tool.pytest.ini_options]
+minversion = '6.1'
+addopts = '--exitfirst -rA --doctest-modules --doctest-glob="*.rst"'
+testpaths = ['tests/python3', 'sources/python3', 'sources/sphinx']
+python_files = ['*.py']
+python_functions = ['test_[0-9][0-9][0-9]_*']
+cache_dir = '.local/caches/pytest'
+
+[tool.yapf]
+# https://github.com/google/yapf
+allow_multiline_dictionary_keys = true
+allow_multiline_lambdas = true
+blank_lines_between_top_level_imports_and_variables = 2
+blank_line_before_module_docstring = true
+blank_line_before_nested_class_or_def = true
+coalesce_brackets = true
+#continuation_align_style = 'SPACE'
+dedent_closing_brackets = true
+disable_ending_comma_heuristic = true
+each_dict_entry_on_separate_line = false
+indent_dictionary_value = true
+spaces_around_default_or_named_assign = true
+spaces_around_dict_delimiters = true
+spaces_around_list_delimiters = true
+spaces_around_power_operator = true
+spaces_around_subscript_colon = true
+spaces_around_tuple_delimiters = true
+space_inside_brackets = true
+split_arguments_when_comma_terminated = true
+split_before_arithmetic_operator = true
+split_before_dot = false
+split_before_expression_after_opening_paren = true
+#split_before_named_assigns = true
