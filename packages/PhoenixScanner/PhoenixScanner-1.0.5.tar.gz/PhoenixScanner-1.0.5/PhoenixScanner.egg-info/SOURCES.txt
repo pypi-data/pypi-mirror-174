@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+PhoenixScanner/__init__.py
+PhoenixScanner/scanner.py
+PhoenixScanner.egg-info/PKG-INFO
+PhoenixScanner.egg-info/SOURCES.txt
+PhoenixScanner.egg-info/dependency_links.txt
+PhoenixScanner.egg-info/requires.txt
+PhoenixScanner.egg-info/top_level.txt
+test/test.py
