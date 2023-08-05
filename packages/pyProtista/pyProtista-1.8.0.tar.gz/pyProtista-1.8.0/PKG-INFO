@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyProtista
+Version: 1.8.0
+Summary: PROTeomIcs reSulTs harmonizAtion
+Home-page: https://github.com/computational-ms/pyProtista
+Author: tba
+Author-email: christian@fufezan.net
+License: tba
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Provides-Extra: docs
+License-File: LICENSE
+License-File: AUTHORS.TXT
+
+Unify idents and quant from bottom up proteomics search and quant engines
