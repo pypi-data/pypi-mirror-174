@@ -1,0 +1,9 @@
+pvmodule/__init__.py,sha256=CDRAhdJ4rt0aHX5-trnCSaZrZToZs8YJxizdfcZ1lts,110
+pvmodule/location.py,sha256=tR_6Kg0obnJSZ6n6lU7NbwDhxAi6fBXmcM6M4K5xQeg,3328
+pvmodule/pvgis.py,sha256=HI9sW7maT8Lt-lOIXOlxD4Wywu4ZNnvjVAP7VzgucVE,26528
+pvmodule/system.py,sha256=8jY_sZaYqsZWz6hUZFmgrhHUoEC8y2HiGPaOXpHnNHo,22264
+pvmodule-0.0.17.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pvmodule-0.0.17.dist-info/METADATA,sha256=jawL-4GlFTWzmZg08pbqTtv8KF7GcCyS-M5NRLWMlVY,9697
+pvmodule-0.0.17.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pvmodule-0.0.17.dist-info/top_level.txt,sha256=xLUHHqxQ4JWIpmDoUrWZxaDcTRzMhQOLhKKJfDr2A_M,9
+pvmodule-0.0.17.dist-info/RECORD,,
