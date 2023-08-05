@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sphinx-collapsible-autodoc
+Version: 0.0.1
+Summary: A Sphinx extension to make collapsible members for autodoc
+Author-email: WANG Hailin <hailin.wang@connect.polyu.hk>
+Project-URL: Homepage, https://github.com/haiiliin/sphinx-collapsible-autodoc/
+Project-URL: Documentation, https://sphinx-collapsible-autodoc.readthedocs.io/
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sphinx-collapsible-autodoc
+
+`sphinx-collapsible-autodoc` is a `Sphinx` extension that allows you to 
+make collapsible members for autodoc.
+
+- GitHub: https://github.com/haiiliin/sphinx-collapsible-autodoc/
+- Documentation: https://sphinx-collapsible-autodoc.readthedocs.io/en/latest/
+- PyPI: https://pypi.org/project/sphinx-collapsible-autodoc/
+- Read the Docs: https://readthedocs.org/projects/sphinx-collapsible-autodoc/
