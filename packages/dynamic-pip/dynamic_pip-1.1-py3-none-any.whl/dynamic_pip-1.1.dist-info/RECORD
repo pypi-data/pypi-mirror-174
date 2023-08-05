@@ -1,0 +1,14 @@
+dynamicPip/__init__.py,sha256=0542fozuvEnOJGtyIM9R48ZmkmzaBCYCf6O6VqbFftU,178
+dynamicPip/__main__.py,sha256=fWa8Y-EV2plHXL1SdFBNu3xGRRkITg5ISGG_VzvLnGk,1658
+dynamicPip/dync_pip.py,sha256=ysJ5tIOTOfOKFTYrrZ91AT8wNtUkv2jrFTi7hQzGTFg,11861
+dynamicPip/mirror_manager.py,sha256=vPYyqvMRwjylXCjLJxKJZwU6E-cIrXbtwBmVItALSHQ,4333
+dynamicPip/static_resources.py,sha256=rkfiPEgefFTtwnmyJl6tkO6ENJ8ZNl-O0o29aU4drQ4,576
+dynamicPip/utility/__init__.py,sha256=DloCk-MODw7NpOzok7dGWLmE2J9ZPf6ra2eQVsy_oJM,290
+dynamicPip/utility/meta_data_reader.py,sha256=Y92PupC5dMKQqCQcdiUMgSq9lXlXGjnT1tqQDY6T7Yw,6566
+dynamicPip/utility/toolkits.py,sha256=o7wiuPdj4LPZGOq78BXWC1Eb9MC_KuQzqwz3uC6JKKg,3971
+dynamic_pip-1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dynamic_pip-1.1.dist-info/METADATA,sha256=Yr2bh-3gCBjaZSaF80BSgCllFkP-ldBFInUkjRSacAs,4581
+dynamic_pip-1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dynamic_pip-1.1.dist-info/entry_points.txt,sha256=76TWPmA1Ff_RekNtKlGKx2il54culFrsTNWSvD0CGNs,52
+dynamic_pip-1.1.dist-info/top_level.txt,sha256=f4dofLweKA09q-FzsKoSVEfQ6kOh6_JjvKseqqJZNUw,11
+dynamic_pip-1.1.dist-info/RECORD,,
