@@ -1,0 +1,9 @@
+README.md
+setup.py
+docxprinter/__init__.py
+docxprinter/generator.py
+resources/__init__.py
+songpy_docx_printer.egg-info/PKG-INFO
+songpy_docx_printer.egg-info/SOURCES.txt
+songpy_docx_printer.egg-info/dependency_links.txt
+songpy_docx_printer.egg-info/top_level.txt
