@@ -1,0 +1,4 @@
+[console_scripts]
+pcolrm = pcolrm.pcolrm:main
+qaws = qaws.qaws:cli
+webhook = webhook.webhook:main
