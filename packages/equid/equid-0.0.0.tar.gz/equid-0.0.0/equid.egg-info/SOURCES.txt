@@ -1,0 +1,9 @@
+README.md
+setup.py
+equid/__init__.py
+equid/test.py
+equid.egg-info/PKG-INFO
+equid.egg-info/SOURCES.txt
+equid.egg-info/dependency_links.txt
+equid.egg-info/requires.txt
+equid.egg-info/top_level.txt
