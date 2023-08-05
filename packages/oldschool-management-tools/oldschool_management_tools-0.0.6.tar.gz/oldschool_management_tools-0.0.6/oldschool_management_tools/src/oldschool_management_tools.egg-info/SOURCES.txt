@@ -1,0 +1,14 @@
+README.md
+setup.py
+oldschool_management_tools/src/oldschool_management_tools.egg-info/PKG-INFO
+oldschool_management_tools/src/oldschool_management_tools.egg-info/SOURCES.txt
+oldschool_management_tools/src/oldschool_management_tools.egg-info/dependency_links.txt
+oldschool_management_tools/src/oldschool_management_tools.egg-info/requires.txt
+oldschool_management_tools/src/oldschool_management_tools.egg-info/top_level.txt
+oldschool_management_tools/src/mgmt_tools_cmd.py
+oldschool_management_tools/src/oldschool_management_tools.py
+oldschool_management_tools/src/oldschool_management_tools.egg-info/PKG-INFO
+oldschool_management_tools/src/oldschool_management_tools.egg-info/SOURCES.txt
+oldschool_management_tools/src/oldschool_management_tools.egg-info/dependency_links.txt
+oldschool_management_tools/src/oldschool_management_tools.egg-info/requires.txt
+oldschool_management_tools/src/oldschool_management_tools.egg-info/top_level.txt
