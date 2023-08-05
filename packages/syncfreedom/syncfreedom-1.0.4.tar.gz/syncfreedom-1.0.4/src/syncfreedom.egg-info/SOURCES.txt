@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/syncfreedom/__init__.py
+src/syncfreedom/client.py
+src/syncfreedom/session.py
+src/syncfreedom.egg-info/PKG-INFO
+src/syncfreedom.egg-info/SOURCES.txt
+src/syncfreedom.egg-info/dependency_links.txt
+src/syncfreedom.egg-info/requires.txt
+src/syncfreedom.egg-info/top_level.txt
