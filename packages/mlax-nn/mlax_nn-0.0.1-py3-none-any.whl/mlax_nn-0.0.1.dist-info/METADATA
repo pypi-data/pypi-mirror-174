@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mlax-nn
+Version: 0.0.1
+Summary: A pure functional machine library build on top of Google JAX.
+Home-page: https://github.com/zongyf02/mlax
+Author: Yifan Zong
+Author-email: y22zong@uwaterloo.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: jax (>=0.3.24)
+Provides-Extra: dev
+
+UNKNOWN
+
+
