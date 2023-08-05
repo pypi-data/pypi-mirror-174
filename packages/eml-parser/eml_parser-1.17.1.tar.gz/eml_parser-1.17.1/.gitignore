@@ -1,0 +1,14 @@
+*.eml
+*.pyc
+
+build
+dist
+eml_parser.egg-info
+.coverage
+.idea
+.tox
+.cache
+.mypy_cache
+.pytest_cache
+venv
+.vscode
