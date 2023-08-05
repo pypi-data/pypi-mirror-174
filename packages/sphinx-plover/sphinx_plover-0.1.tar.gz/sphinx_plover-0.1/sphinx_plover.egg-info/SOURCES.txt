@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+sphinx_plover.py
+sphinx_plover.egg-info/PKG-INFO
+sphinx_plover.egg-info/SOURCES.txt
+sphinx_plover.egg-info/dependency_links.txt
+sphinx_plover.egg-info/top_level.txt

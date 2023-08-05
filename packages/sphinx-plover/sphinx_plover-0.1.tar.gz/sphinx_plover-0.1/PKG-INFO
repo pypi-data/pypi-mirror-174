@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sphinx_plover
+Version: 0.1
+Summary: Plover domain for Sphinx
+Home-page: https://github.com/sammdot/sphinx-plover
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# sphinx-plover
+
+Provides the Plover (`:plover:`) domain for the Sphinx documentation generator.
