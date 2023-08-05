@@ -1,0 +1,2 @@
+[console_scripts]
+waylonwalker = waylonwalker.__main__:main
