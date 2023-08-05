@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: R-perceptron
+Version: 1.1
+Summary: Library of making perceptron easily
+Home-page: https://blog.naver.com/homeworkuse
+Author: Ryu_Geonhee
+Author-email: arthur0125@naver.com
+License: MIT
+Requires-Python: >=3
+
