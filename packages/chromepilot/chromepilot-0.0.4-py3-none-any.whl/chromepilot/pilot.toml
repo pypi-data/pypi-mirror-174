@@ -1,0 +1,52 @@
+#
+# chromedriver config
+#
+
+
+# webdriver.chrome.service.Service(...)
+[ service ]
+
+port = 0
+log_path = ''
+service_args = []
+
+
+# webdriver.ChromeOptions().add_argument(...)
+[ add_argument ]
+
+disable-extensions = false
+auto-open-devtools-for-tabs = false
+start-maximized = false
+disable-windows10-custom-titlebar = false
+incognito = false
+
+
+# webdriver.ChromeOptions().add_experimental_option(...)
+[ add_experimental_option ]
+
+excludeSwitches = [
+#    'disable-popup-blocking',
+    'enable-logging',
+]
+
+
+[ implicitly_wait ]
+value = 2
+
+
+#
+#  Shortcuts
+#
+
+[ import.as ]
+#'selenium.webdriver' = 'suchdriver'
+
+
+[ from.import ]
+'selenium.common.exceptions' = 'WebDriverException'
+'selenium.webdriver.common.by' = 'By'
+'selenium.webdriver.common.keys' = 'Keys'
+
+
+[ from.import.as ]
+#'selenium.webdriver.common.by' = ['By', 'other']
