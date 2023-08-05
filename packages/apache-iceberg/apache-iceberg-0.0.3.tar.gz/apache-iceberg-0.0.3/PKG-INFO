@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: apache-iceberg
+Version: 0.0.3
+Summary: Iceberg is a high-performance format for huge analytic tables.
+Home-page: https://github.com/apache/iceberg
+Author: Apache Software Foundation
+Author-email: dev@iceberg.apache.org
