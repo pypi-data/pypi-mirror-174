@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyqt_windows_os_light_dark_theme_window/__init__.py
+pyqt_windows_os_light_dark_theme_window/c.py
+pyqt_windows_os_light_dark_theme_window/main.py
+pyqt_windows_os_light_dark_theme_window.egg-info/PKG-INFO
+pyqt_windows_os_light_dark_theme_window.egg-info/SOURCES.txt
+pyqt_windows_os_light_dark_theme_window.egg-info/dependency_links.txt
+pyqt_windows_os_light_dark_theme_window.egg-info/requires.txt
+pyqt_windows_os_light_dark_theme_window.egg-info/top_level.txt
