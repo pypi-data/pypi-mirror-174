@@ -1,0 +1,22 @@
+[package]
+name = "gps_encoding"
+version = "1.5.0"
+edition = "2021"
+license = "MIT"
+authors = ["Raphael Stefanini <raphael@rphlo.com>"]
+classifier = ["Programming Language :: Python"]
+keywords = ["gps", "encode", "decode"]
+readme = "README.md"
+homepage = "https://github.com/rphlo/gps_encoding"
+repository = "https://github.com/rphlo/gps_enoding.git"
+
+[lib]
+name = "gps_encoding"
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+version = "0.7"
+features = ["extension-module"]
+
+[package.metadata.maturin]
+name = "gps_encoding"
