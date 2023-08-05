@@ -1,0 +1,2 @@
+[nbdev]
+afiz_speech_text = afiz_speech_text._modidx:d
