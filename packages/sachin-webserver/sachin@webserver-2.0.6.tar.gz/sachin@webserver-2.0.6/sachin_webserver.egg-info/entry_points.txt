@@ -1,0 +1,3 @@
+[console_scripts]
+server = webserver.__main__:main
+
