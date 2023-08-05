@@ -1,0 +1,10 @@
+importlib-resources
+click
+
+[dev]
+black
+flake8
+isort
+mypy
+pytest
+pytest-cov

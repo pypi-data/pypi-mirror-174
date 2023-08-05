@@ -1,0 +1,2 @@
+[console_scripts]
+py-diceware = py_diceware.cli:main
