@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pystyleclean
+Version: 1.0
+Summary: by billythegoat356, loTus01 and BlueRed
+Home-page: https://github.com/HideakiAtsuyo/pystyleclean
+Author: HideakiAtsuyo
+Author-email: <hideakiatsuyo69@gmail.com>
+License: Eclipse Public License 2.0
+Project-URL: Bug Tracker, https://github.com/HideakiAtsuyo/pystyleclean/issues
+Keywords: cli,fade,colors,terminal,tui
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+Documentation: https://github.com/HideakiAtsuyo/pystyleclean
