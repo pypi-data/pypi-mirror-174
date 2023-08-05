@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/flwave/__init__.py
+src/flwave/flwaveapi.py
+src/flwave.egg-info/PKG-INFO
+src/flwave.egg-info/SOURCES.txt
+src/flwave.egg-info/dependency_links.txt
+src/flwave.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name="flwave"
+version="1.00"
+authors=[{name="Okechukwu Joshua Ifeanyi",email="joshoke111@gmail.com"}]
+maintainers=[{name="Okechukwu Joshua Ifeanyi",email="joshoke111@gmail.com"},{name="Okamkpa Tobechukwu Gamaliel",email="tobechukwuokamkpa@gmail.com"}]
+keywords=['flutterwave','payment','django','flask','flutter']
+description="A Python Package that enables easy integration of Flutterwave Payment Platform into a new or already existing python project"
+readme="README.md"
+requires-python= ">=3.7"
+classifiers=["Programming Language :: Python :: 3","License :: OSI Approved :: MIT License","Operating System :: OS Independent"]
+[project.urls]
+"Flutterwave API official Docs"= "https://developer.flutterwave.com"
+"Homepage"= "https://github.com/josh2297/flutterapi"
+"Bug Tracker"= "https://github.com/josh2297/flutterapi/issues"
