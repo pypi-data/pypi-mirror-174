@@ -1,0 +1,16 @@
+shapely
+numpy
+sqlitedict
+cachetools
+sqlitedict
+icosphere
+nptyping
+pickle5
+plotly
+jax
+jaxlib
+nlopt
+scikit-image
+matplotlib
+scipy
+gmsh
