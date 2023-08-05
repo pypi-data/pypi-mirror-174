@@ -1,0 +1,4 @@
+[console_scripts]
+glosbevocabscraper = glosbevocabscraper.main:main
+gvs = glosbevocabscraper.main:main
+
