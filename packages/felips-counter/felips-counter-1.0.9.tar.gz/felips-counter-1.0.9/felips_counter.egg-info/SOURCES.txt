@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+felips_counter/__init__.py
+felips_counter/__main__.py
+felips_counter.egg-info/PKG-INFO
+felips_counter.egg-info/SOURCES.txt
+felips_counter.egg-info/dependency_links.txt
+felips_counter.egg-info/entry_points.txt
+felips_counter.egg-info/top_level.txt
+felips_counter/src/__init__.py
+felips_counter/src/reader.py
+felips_counter/src/writer.py
+felips_counter/tests/__init__.py
+felips_counter/tests/__main__.py
