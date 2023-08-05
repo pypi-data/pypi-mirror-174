@@ -1,0 +1,4 @@
+include a_pandas_ex_bs4df/requirements.txt
+include a_pandas_ex_bs4df/thirdparty.json
+include a_pandas_ex_bs4df/README.MD
+include a_pandas_ex_bs4df/LICENSE

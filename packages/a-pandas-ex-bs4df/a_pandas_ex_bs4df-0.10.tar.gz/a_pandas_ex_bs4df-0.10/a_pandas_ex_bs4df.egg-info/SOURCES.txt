@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a_pandas_ex_bs4df/LICENSE
+a_pandas_ex_bs4df/README.MD
+a_pandas_ex_bs4df/__init__.py
+a_pandas_ex_bs4df/requirements.txt
+a_pandas_ex_bs4df/thirdparty.json
+a_pandas_ex_bs4df.egg-info/PKG-INFO
+a_pandas_ex_bs4df.egg-info/SOURCES.txt
+a_pandas_ex_bs4df.egg-info/dependency_links.txt
+a_pandas_ex_bs4df.egg-info/requires.txt
+a_pandas_ex_bs4df.egg-info/top_level.txt
