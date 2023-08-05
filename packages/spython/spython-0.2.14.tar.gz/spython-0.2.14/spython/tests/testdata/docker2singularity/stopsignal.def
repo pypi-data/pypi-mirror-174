@@ -1,0 +1,10 @@
+Bootstrap: docker
+From: busybox:latest
+Stage: spython-base
+
+%post
+# STOPSIGNAL SIGINT
+%runscript
+exec /bin/bash "$@"
+%startscript
+exec /bin/bash "$@"
