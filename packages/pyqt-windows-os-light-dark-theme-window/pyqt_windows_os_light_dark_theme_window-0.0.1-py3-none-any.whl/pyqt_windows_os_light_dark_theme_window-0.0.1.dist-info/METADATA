@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyqt-windows-os-light-dark-theme-window
+Version: 0.0.1
+Summary: PyQt windows which detects Windows dark/light theme settings and changes the theme dynamically
+Home-page: https://github.com/yjg30737/pyside-database-chart-example.git
+Author: Jung Gyu Yoon
+Author-email: yjg30737@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: PyQt5
+
