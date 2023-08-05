@@ -1,0 +1,4 @@
+loguru
+pyyaml
+aiohttp[speedups]
+aiohttp-jinja2
