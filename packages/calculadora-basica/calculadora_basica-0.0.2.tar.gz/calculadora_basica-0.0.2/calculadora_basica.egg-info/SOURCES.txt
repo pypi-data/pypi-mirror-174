@@ -1,0 +1,9 @@
+README.md
+setup.py
+calculadora_basica/__init__.py
+calculadora_basica/__main__.py
+calculadora_basica/calculadora_basica.py
+calculadora_basica.egg-info/PKG-INFO
+calculadora_basica.egg-info/SOURCES.txt
+calculadora_basica.egg-info/dependency_links.txt
+calculadora_basica.egg-info/top_level.txt
