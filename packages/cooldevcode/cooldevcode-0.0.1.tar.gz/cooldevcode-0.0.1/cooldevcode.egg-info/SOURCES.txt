@@ -1,0 +1,8 @@
+setup.py
+cooldevcode/__init__.py
+cooldevcode/cooldevcode.py
+cooldevcode.egg-info/PKG-INFO
+cooldevcode.egg-info/SOURCES.txt
+cooldevcode.egg-info/dependency_links.txt
+cooldevcode.egg-info/requires.txt
+cooldevcode.egg-info/top_level.txt
