@@ -1,0 +1,9 @@
+setup.py
+python3_captchaai/__init__.py
+python3_captchaai/control.py
+python3_captchaai.egg-info/PKG-INFO
+python3_captchaai.egg-info/SOURCES.txt
+python3_captchaai.egg-info/dependency_links.txt
+python3_captchaai.egg-info/not-zip-safe
+python3_captchaai.egg-info/requires.txt
+python3_captchaai.egg-info/top_level.txt
