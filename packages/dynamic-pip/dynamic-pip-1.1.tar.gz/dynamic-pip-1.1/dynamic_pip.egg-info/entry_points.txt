@@ -1,0 +1,3 @@
+[console_scripts]
+dypip = dynamicPip.__main__:main
+
