@@ -1,0 +1,10 @@
+coshiota/__init__.py,sha256=5a_r-0D1Rlr4W1MhJrIslF6uwWppx1rF5Y1tdkoSSxc,263
+coshiota/certificate.py,sha256=Zjv0ra5SiHg83AHuQN-Cy2F8XqfpcrlXJrhYcCb5mow,5337
+coshiota/csv_tools.py,sha256=4igc_D-nWAFAjbzuESHLZP7I8FzIP7rMnEgSb5V8iMw,578
+coshiota/linux_kernel.py,sha256=JaAjRR8Z0zAAze9qCSeDkyLnJ70Lz7cxbJEcbSJVLIc,398
+coshiota/serial_number.py,sha256=pzCLxhznvXET4XMuImtZqw6B5B35B_eg6E_USP7J4ho,3158
+coshiota/tools.py,sha256=Qwx9TS9KgnNlqfpWhK1gTJcXjeFFPNX2Er2ukH9IEn8,3902
+coshiota-0.0.3.dist-info/COPYING.txt,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+coshiota-0.0.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+coshiota-0.0.3.dist-info/METADATA,sha256=tbCuX5zhx9Jt9jRqIMvIxjEj3jcamyy07rM2g9KEQ6w,527
+coshiota-0.0.3.dist-info/RECORD,,
