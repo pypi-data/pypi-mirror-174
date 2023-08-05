@@ -1,0 +1,3 @@
+[console_scripts]
+hdlg=hdlg.hdlg:main
+
