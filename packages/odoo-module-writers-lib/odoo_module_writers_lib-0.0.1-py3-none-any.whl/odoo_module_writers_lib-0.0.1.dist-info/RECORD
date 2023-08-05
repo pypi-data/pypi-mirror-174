@@ -1,0 +1,14 @@
+odoo_module_writers_lib/__init__.py,sha256=YNmsfk2kPunb9e1pfjq7F5gr_M8kh5xOf-iL1KvQS2k,394
+odoo_module_writers_lib/api.py,sha256=KCQz_ir5kbfOa68SbNOTcOTGebbCHXIv9ynjB3WRDdI,2105
+odoo_module_writers_lib/dates.py,sha256=WJcaQKPkj4Gy1RZqtuXNsFMYDe7xoLBXIOPDl70NlQE,4392
+odoo_module_writers_lib/debug.py,sha256=VEEqYDi0iLWzkmkI_a_wwK5s07xUD9i4SDHCBw8ovMk,3101
+odoo_module_writers_lib/domain.py,sha256=_PusDP_DUnoRPqC-Jf_Bwd8nPbTTZHzppaicGbuPjVg,6435
+odoo_module_writers_lib/lowlevel.py,sha256=_VDhasXj3qeQjznLy0TNv8pCc38Dpl8xX6CMZbplfFc,5674
+odoo_module_writers_lib/models.py,sha256=j6Z3Wp2L8Mekx-ouD9hQEr1HXFnDRwgwomzXrg5hfWk,3209
+odoo_module_writers_lib/testing.py,sha256=qBBa1XCu00DQD7ffh3Wh7HhCFDLw0KCjqhXkqxP8aqE,3278
+odoo_module_writers_lib/util.py,sha256=Jy-ndVgx4_ZwVUHPGfagFA0JdA5tRzRL2bqRYQICNWQ,3299
+odoo_module_writers_lib/webui.py,sha256=EaqbHzJNjKH_WONee45-_uyJ3BD42Rwj88i1yOr0nQk,5450
+odoo_module_writers_lib-0.0.1.dist-info/METADATA,sha256=wFykOfqRB_pWPYlsxywF94DTn6yGjXxB3kqUMHjkK7k,612
+odoo_module_writers_lib-0.0.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+odoo_module_writers_lib-0.0.1.dist-info/licenses/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+odoo_module_writers_lib-0.0.1.dist-info/RECORD,,

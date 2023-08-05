@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: odoo_module_writers_lib
+Version: 0.0.1
+Summary: An auxilliary library for writing Odoo modules.
+Project-URL: Homepage, https://github.com/joao-jeronimo/PythonLibs
+Project-URL: Bug Tracker, https://github.com/joao-jeronimo/PythonLibs/issues
+Author-email: João Jerónimo <joao.jeronimo.pro@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
