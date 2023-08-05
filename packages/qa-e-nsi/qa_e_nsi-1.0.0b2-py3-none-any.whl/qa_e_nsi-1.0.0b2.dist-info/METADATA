@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: qa-e-nsi
+Version: 1.0.0b2
+Summary: Assurance qualité sur e-nsi
+Home-page: https://forge.aeif.fr/e-nsi/outils
+Author: Vincent-Xavier Jumel
+Author-email: vincent-xavier.jumel@ac-paris.fr
+Project-URL: Bug Reports, https://forge.aeif.fr/e-nsi/outils/-/issues
+Project-URL: Source, https://forge.aeif.fr/e-nsi/outils/
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education :: Testing
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+
+# Assurance qualité sur les productions e-nsi
+
+Comme nous sommes très assurés à la qualité des exercices produits par le group de travail `e-nsi`, nous avons souhaité développer un outil pour automatiser un certain nombre de vérification.
