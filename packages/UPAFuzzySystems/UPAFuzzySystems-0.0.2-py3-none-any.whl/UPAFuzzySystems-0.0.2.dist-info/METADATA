@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: UPAFuzzySystems
+Version: 0.0.2
+Summary: UPAFuzzySystems package for definition and simulation of Fuzzy Inference Systems for general and control applications.
+Home-page: UNKNOWN
+Author: Dr. Martin Montes Rivera (Universidad Politécnica de Aguascalientes)
+Author-email: <martin.montes@upa.edu.mx>
+License: UNKNOWN
+Keywords: python,fuzzy logic,fuzzy control,fuzzy inference systems,artificial intelligence
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: control
+Requires-Dist: scikit-fuzzy
+
+UPAFuzzySystems library allows defining Fuzzy Inference Systems for different applications with continuous and discrete universes, it also deploys structures for simulation of fuzzy control with transfer funtions and state space models.
+
+
