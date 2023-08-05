@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+TestPackage/__init__.py
+TimeShut.egg-info/PKG-INFO
+TimeShut.egg-info/SOURCES.txt
+TimeShut.egg-info/dependency_links.txt
+TimeShut.egg-info/top_level.txt
