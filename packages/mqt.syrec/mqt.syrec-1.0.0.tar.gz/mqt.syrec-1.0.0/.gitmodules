@@ -1,0 +1,5 @@
+[submodule "extern/qfr"]
+	path = extern/qfr
+	url = https://github.com/cda-tum/qfr
+	branch = main
+	shallow = true
