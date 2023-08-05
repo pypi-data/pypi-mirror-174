@@ -1,0 +1,12 @@
+setup.py,sha256=qkuKS-kcLeUpCgfiAhLAJ_6R8vRZMs5jR0v6je2NTOI,1632
+data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/conf.py,sha256=OukEDS1_21Bo1O1KPIuIO3d6R2FsUo23VizhhrkZVYg,962
+src/getcf/__init__.py,sha256=clN3TnyYyt5T_wUJLVBmutS2kYLLBET4JFB2QXnRm2Q,21
+src/getcf/exception.py,sha256=O44qpflUcbq3PT2eOVCGNn_TnCeXlr4boKCHR2ahLdQ,1329
+src/getcf/main.py,sha256=3pUD_kvq15iHEqq3-T7n20Aqh_a0TzW6i_aOD-e5n8o,1345
+src/getcf/reverse.py,sha256=tM3l0SSALVvTlhtz_gqYNWVVWFNrhylMj7GXNK5ylEk,1424
+src/getcf/runner.py,sha256=7jH_SizuVXJJWKdK6JEFWN7zA2aRDPdF7zvTBhMl4FM,6394
+getyourcf-1.0.0.dist-info/METADATA,sha256=8HawZTG32N-kiAboqUhNKBV0WEHXcANaCHxr64AIiEE,1375
+getyourcf-1.0.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+getyourcf-1.0.0.dist-info/licenses/LICENSE,sha256=wVbkRS3p9vxGejMewE0FT8MGY9MNXwtwH5ConPoKzjk,480
+getyourcf-1.0.0.dist-info/RECORD,,
