@@ -1,0 +1,10 @@
+jack_alsa_ctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jack_alsa_ctl/_version.py,sha256=q8_5C0f-8mHWNb6mMw02zlYPnEGXBqvOmP3z0CEwZKM,22
+jack_alsa_ctl/cli.py,sha256=QYPPAJFpF2nXyqk3FxX0jmPw80J5s52FuCgBu8USWn4,4181
+jack_alsa_ctl/lib.py,sha256=VWQc5GAdlqp1J53jnqbviE19bvEYoMcd-uSm4tx25Lk,3392
+jack_alsa_ctl-1.1.1.data/scripts/jack-alsa-ctl,sha256=A_QkxTWQXKZ2jhafg31GPIrDyzHP1eOIghfBaO1TdX8,53
+jack_alsa_ctl-1.1.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+jack_alsa_ctl-1.1.1.dist-info/METADATA,sha256=F2WppHlEZhip_LXZPcmq1RBxEKZ88yhDJLSDQb8NnPM,2150
+jack_alsa_ctl-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jack_alsa_ctl-1.1.1.dist-info/top_level.txt,sha256=XRoMZZXiD6rQM54pcM_l8VulckSj5xlmzojVqQPksCs,14
+jack_alsa_ctl-1.1.1.dist-info/RECORD,,
