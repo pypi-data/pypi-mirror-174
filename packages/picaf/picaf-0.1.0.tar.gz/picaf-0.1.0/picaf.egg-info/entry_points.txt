@@ -1,0 +1,3 @@
+[console_scripts]
+picaf = picaf.main:main
+
