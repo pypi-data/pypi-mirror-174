@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+nyb.egg-info/PKG-INFO
+nyb.egg-info/SOURCES.txt
+nyb.egg-info/dependency_links.txt
+nyb.egg-info/requires.txt
+nyb.egg-info/top_level.txt

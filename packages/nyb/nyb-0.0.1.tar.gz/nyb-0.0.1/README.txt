@@ -1,0 +1,1 @@
+A simplifer for pygame
