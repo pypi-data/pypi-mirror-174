@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+slack_messenger/__init__.py
+slack_messenger/slack_messenger.py
+slack_messenger.egg-info/PKG-INFO
+slack_messenger.egg-info/SOURCES.txt
+slack_messenger.egg-info/dependency_links.txt
+slack_messenger.egg-info/requires.txt
+slack_messenger.egg-info/top_level.txt
