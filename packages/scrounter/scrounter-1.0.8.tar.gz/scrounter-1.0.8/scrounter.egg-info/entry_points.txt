@@ -1,0 +1,2 @@
+[console_scripts]
+scrounter = scrounter.__main__:main
