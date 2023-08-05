@@ -1,0 +1,5 @@
+src/ example_package_akyepitsme/example.py,sha256=jQxgMu2wujV5-EV7SIHDYnIfEhmJAzxyn2XKqYliCB0,43
+example_package_akyepitsme-0.0.1.dist-info/METADATA,sha256=5SNlRsMer6a4crjrPuDv0UXRIfxrLC33kFz8r8jhWZA,2869
+example_package_akyepitsme-0.0.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+example_package_akyepitsme-0.0.1.dist-info/licenses/LICENSE,sha256=D72xJ9pcTctkuIV4MReKqzr1hY6XZw8evur7J_mGmOE,1068
+example_package_akyepitsme-0.0.1.dist-info/RECORD,,
