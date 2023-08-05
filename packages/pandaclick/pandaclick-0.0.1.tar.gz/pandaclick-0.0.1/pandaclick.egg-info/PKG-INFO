@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pandaclick
+Version: 0.0.1
+Summary: pandas to clickhouse write
+Author: Ned
+Author-email: Bedretdinov Nader <bedretdinoff@mail.ru>
+License: BSD 2-clause
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE

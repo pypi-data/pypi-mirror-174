@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pandaclick/__init__.py
+pandaclick/client.py
+pandaclick.egg-info/PKG-INFO
+pandaclick.egg-info/SOURCES.txt
+pandaclick.egg-info/dependency_links.txt
+pandaclick.egg-info/requires.txt
+pandaclick.egg-info/top_level.txt
