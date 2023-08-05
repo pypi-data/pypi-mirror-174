@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+onedrive_sharepoint/__init__.py
+onedrive_sharepoint/main.py
+onedrive_sharepoint.egg-info/PKG-INFO
+onedrive_sharepoint.egg-info/SOURCES.txt
+onedrive_sharepoint.egg-info/dependency_links.txt
+onedrive_sharepoint.egg-info/top_level.txt
