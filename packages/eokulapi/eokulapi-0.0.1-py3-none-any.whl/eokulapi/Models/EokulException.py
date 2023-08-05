@@ -1,0 +1,2 @@
+class EokulException(Exception):
+    pass

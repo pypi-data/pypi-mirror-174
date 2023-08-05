@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: eokulapi
+Version: 0.0.1
+Summary: eokul vbs api
+Author: insanolanbiri
+Project-URL: Homepage, https://github.com/insanolanbiri/eokulapi
+Project-URL: Bug Tracker, https://github.com/insanolanbiri/eokulapi/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.28.1)
+
+# eokulapi
+eokul vbs api
+
+## yükleme
+`pip install eokulapi`
+
+## basit kullanım
+```python
+from eokulapi.eokulapi import EokulAPI
+
+user=EokulAPI(uid=...)
+user.update_student_list()
+st=user.students[0]
+user.update_student_data(st)
+```
