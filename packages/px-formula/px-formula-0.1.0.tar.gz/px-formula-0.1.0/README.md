@@ -1,0 +1,74 @@
+# Formula
+
+Simple formula-like expression solver.
+
+Parses formula into a reverse polish notation. Evaluates parsed to get result.
+
+## Installation
+
+```sh
+pip install px-formula
+```
+
+## Usage
+
+Uou can calculate formulas with different operators, and function calls. But it's not a python code, that executes - only simple maths expressions.
+
+```python
+from px_formula import Formula, defaults
+
+
+formula = Formula(
+  # Can change operators:
+  operators=defaults.operators,
+  # And available functions:
+  functions=defaults.functions,
+)
+
+parsed = formula.parse('2/8+45*6+var1')
+# > ['2', '8', '/', '45', '6', '*', '+', 'var1', '+']
+
+# You can evaluate any formula you have/stored easily:
+formula.evaluate(parsed, {'var1': 5})
+# > 275.25
+
+# Or in one shot:
+formula('2/8+abs(45*6)+var1', {'var1': 5})
+# > 275.25
+```
+
+### Supported
+
+Operators:
+
+- **`~`** - Inverse
+- **`!`** - Not
+- **`**`** - Pow
+- **`*`** - Multiply
+- **`/`** - Divide
+- **`//`** - Floor divide
+- **`%`** - Modulo
+- **`+`** - Plus
+- **`-`** - Minus
+- **`|`** - Bitwise Or
+- **`&`** - Bitwise And
+- **`^`** - Bitwise Xor
+- **`<=`** - LTE
+- **`>=`** - GTE
+- **`==`** - Equals
+- **`<`** - LT
+- **`>`** - GT
+
+Functions:
+
+- **`abs`** - operator.abs
+- **`sin`** - math.sin
+- **`cos`** - math.cos
+- **`tan`** - math.tan
+- **`exp`** - math.exp
+- **`abs`** - abs
+- **`trunc`** - Removes decimal part
+- **`round`** - round
+- **`hypot`** - math.hypot
+- **`all`** - all(True, False, True) -> False
+- **`any`** - any(True, False, False) -> True
