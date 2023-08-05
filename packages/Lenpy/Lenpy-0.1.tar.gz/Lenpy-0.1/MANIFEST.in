@@ -1,0 +1,17 @@
+include examples/**/.png
+include examples/button_example/*.fla
+include examples/button_example/*.xml
+include examples/button_example/*.png
+
+include examples/fonts/*.ttf
+
+include examples/multiple_images_example
+
+include examples/xml_sprite_example/*.fla
+include examples/xml_sprite_example/*.xml
+include examples/xml_sprite_example/*.png
+
+include examples/*.txt
+include examples/*.py
+include art/*.psd
+include art/*.png
