@@ -1,0 +1,5 @@
+
+VERSION = 0.4
+POSTER_WIDTH = 160
+DATE_FORMAT = r'%Y-%m-%d'
+CACHE_DAYS = 1
