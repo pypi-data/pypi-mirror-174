@@ -1,0 +1,21 @@
+# The action updater settings file allows for finer control
+# over settings. For most people, you shouldn't need to change these defaults
+
+# config editor
+config_editor: vim
+
+# Line length to save to (unset uses default)
+line_length: null
+
+# GitHub api
+github_api: https://api.github.com
+
+# Code theme to use for diff (from Pygments) https://pygments.org/docs/styles/#builtin-styles
+code_theme: "vim"
+
+updaters:
+  version:
+    # Repository orgs to allow a major version (and not commit)
+    major_orgs:
+      - actions
+      - docker
