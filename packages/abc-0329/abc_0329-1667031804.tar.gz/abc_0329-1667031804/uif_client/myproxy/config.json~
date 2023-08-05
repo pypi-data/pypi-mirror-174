@@ -1,0 +1,59 @@
+{
+  "inbounds": {
+    "http_inbound": {
+      "protocol": "http",
+      "setting": {
+        "address": "0.0.0.0",
+        "port": 10809
+      },
+      "inStream": "tcp",
+      "route": "proxy"
+    },
+    "trojan_inboud": {
+      "protocol": "trojan",
+      "setting": {
+        "address": "0.0.0.0",
+        "port": 10800,
+        "tunnelAddress": "1",
+        "tunnelPort": 1,
+        "password": "abc"
+      },
+      "inStream": "ws",
+      "route": "freedom"
+    }
+  },
+  "outbounds": {
+    "trojan": {
+      "protocol": "trojan",
+      "setting": {
+        "address": "normal.uif02.xyz",
+        "port": 443,
+        "password": "password2"
+      },
+      "outStream": "tls_ws"
+    },
+  },
+  "routes": {
+    "proxy": {
+      "rules": [{
+        "outbound": ["trojan"]
+      }]
+    },
+    "freedom": {
+      "rules": [{
+        "outbound": ["freedom"]
+      }]
+    }
+  },
+  "outStream": {
+    "tls_ws": {
+      "protocol": "ws",
+      "tls": {
+        "enabled": true
+      },
+      "setting": {
+        "path": "uif_trojan"
+      }
+    }
+  }
+}
