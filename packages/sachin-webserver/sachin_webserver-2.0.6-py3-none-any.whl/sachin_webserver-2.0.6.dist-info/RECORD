@@ -1,0 +1,12 @@
+webserver/Liscence.md,sha256=6IW_xlmg-eRRSH3f7-yxz9T27SXgfTjn-CNBE-y6dNM,142
+webserver/README.md,sha256=CvISXb4LiZHuINsoaSNrFniHddHHYzvk5pWtxYnMQl0,566
+webserver/__init__.py,sha256=oNlC2LZUuHFjRkBNBstad5A94a4pm1MbVvR2LeGgtN8,189
+webserver/__main__.py,sha256=MigXIT7A1M9YZuH2MyjKReSziFwzbZX2boVYsLosR6s,22
+webserver/main.py,sha256=_tI6Xz7qaIRfKP1l2yFDfpnEIGER1o2Z9YzmSk2fmJs,8275
+webserver/php-cli-server.ini,sha256=oc4hzEj0zTUQr1xO-xsL37GdzRyTz-CFLhyk26XMDPU,21
+webserver/settings.json,sha256=O7ITztWaskXxqD7lGMu96Tg4mkkaK7GPedffuBjl8yk,108
+sachin_webserver-2.0.6.dist-info/METADATA,sha256=TtQctG5zjZmzwkie-GlYHg-vEG0v5lbkGWEWIbFziHY,2612
+sachin_webserver-2.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sachin_webserver-2.0.6.dist-info/entry_points.txt,sha256=kw4fe7w1aabhqGJgOjgT7JN0yAgoifDT4kVNlcMiJ_A,52
+sachin_webserver-2.0.6.dist-info/top_level.txt,sha256=8jIEF0xw_wOp781sLf1tK4692Ltmk2BDNB5yhDih8Oo,10
+sachin_webserver-2.0.6.dist-info/RECORD,,
