@@ -1,0 +1,13 @@
+pyarrow
+redis
+boto3
+pandas
+numpy
+protobuf==3.20.*
+ray
+psutil
+h5py
+polars==0.14.*
+s3fs
+sqlglot
+graphviz
