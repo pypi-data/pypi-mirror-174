@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: mkdocstrings-pac
+Version: 1.0.1
+Summary: PAC's LUA handler for mkdocstrings.
+Author-email: Kolja Lubitz <kolja@portaldogs.com>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Project-URL: Homepage, https://gitlab.com/pac4/mkdocstrings-pac
+Description-Content-Type: text/markdown
+
+MkDocs for PAC
+====================
+
+This Package is a MkDocs plugin for the PAC (Point and Click) game engine.
+It's generates the LUA docs from lua.cpp.
+
+Build
+-----
+
+```bash
+python3 -m pip install --upgrade build
+python3 -m build
+```
+
+Install
+-------
+
+```bash
+py -m pip install dist/mkdocstrings_pac-0.0.0-py3-none-any.whl --force-reinstall
+```
+
+For development
+---------------
+
+```bash
+python3 -m build && py -m pip install dist/mkdocstrings_pac-0.0.0-py3-none-any.whl --force-reinstall
+```
+
+More docs
+---------
+
+<https://packaging.python.org/en/latest/tutorials/packaging-projects/>
+

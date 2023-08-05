@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
+
+[project]
+name = "mkdocstrings-pac"
+version = "1.0.1"
+description = "PAC's LUA handler for mkdocstrings."
+readme = "README.md"
+authors = [
+    { name = "Kolja Lubitz", email = "kolja@portaldogs.com" },
+]
+requires-python = ">=3.7"
+dynamic = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mkdocstrings>=0.19",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/pac4/mkdocstrings-pac"
+
+[tool.pdm]
+includes = [
+    "src/mkdocstrings_handlers",
+]
+editable-backend = "editables"
+
+[tool.pdm.version]
+use_scm = true
