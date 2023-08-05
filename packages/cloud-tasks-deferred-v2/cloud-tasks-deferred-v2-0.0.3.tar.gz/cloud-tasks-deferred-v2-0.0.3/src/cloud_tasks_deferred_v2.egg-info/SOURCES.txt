@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tox.ini
+src/cloud_tasks_deferred_v2/__init__.py
+src/cloud_tasks_deferred_v2/deferred.py
+src/cloud_tasks_deferred_v2/flask.py
+src/cloud_tasks_deferred_v2/wsgi.py
+src/cloud_tasks_deferred_v2.egg-info/PKG-INFO
+src/cloud_tasks_deferred_v2.egg-info/SOURCES.txt
+src/cloud_tasks_deferred_v2.egg-info/dependency_links.txt
+src/cloud_tasks_deferred_v2.egg-info/requires.txt
+src/cloud_tasks_deferred_v2.egg-info/top_level.txt
