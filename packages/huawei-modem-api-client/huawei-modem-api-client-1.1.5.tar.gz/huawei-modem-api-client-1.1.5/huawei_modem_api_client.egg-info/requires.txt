@@ -1,0 +1,17 @@
+requests>=2.25.1
+six>=1.15.0
+typing>=3.7.4.3
+
+[linting]
+flake8
+flake8-isort
+flake8-quotes
+
+[testing]
+nose
+mock
+faker
+pytest
+pytest-cov
+codecov
+coverage
