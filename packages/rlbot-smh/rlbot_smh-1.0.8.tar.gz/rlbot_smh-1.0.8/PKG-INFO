@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rlbot_smh
+Version: 1.0.8
+Summary: Start match helpers for RLBot
+Author-email: VirxEC <virx@virxcase.dev>
+Project-URL: Homepage, https://github.com/VirxEC/rlbot_smh
+Project-URL: Bug Tracker, https://github.com/VirxEC/rlbot_smh/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# RLBot SMH
+
+Stands for "RLBot Start Match Helpers"
+
+This was created for the Rust port of the RLBot GUI.
