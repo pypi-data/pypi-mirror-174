@@ -1,0 +1,2 @@
+[console_scripts]
+pyRSC = pyRSC.cli:main
