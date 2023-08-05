@@ -1,0 +1,3 @@
+[console_scripts]
+test_algorithm = test.setup:algorithm
+test_bin_gray = test.setup:bin_gray
