@@ -1,0 +1,9 @@
+.gitignore
+LICENSE
+README.md
+achievements.py
+setup.py
+achievements.egg-info/PKG-INFO
+achievements.egg-info/SOURCES.txt
+achievements.egg-info/dependency_links.txt
+achievements.egg-info/top_level.txt
