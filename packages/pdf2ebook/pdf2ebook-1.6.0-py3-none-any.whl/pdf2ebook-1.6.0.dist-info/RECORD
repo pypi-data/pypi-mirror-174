@@ -1,0 +1,15 @@
+pdf2ebook/__init__.py,sha256=DWm0KSbc1Y7I_bsIfQNAMWkd8zQeXfG-uYRYyNEIjGw,37
+pdf2ebook/constants.py,sha256=jy896_SQRaNJyHQOOw-jPtBdWbCZRqD8IUlDmolHct4,146
+pdf2ebook/logging.py,sha256=f9nPtIAy_9hk1GhkcobJSxMaYohMlrFdjmB6JyMDOE0,1413
+pdf2ebook/page.py,sha256=dEnHMXiJG3KRhT3MrEExKD_dxAbItiiDBiHr9m4g9G4,3995
+pdf2ebook/pages.py,sha256=CeLH6I1F2ut5Ah08Kbu3cH5Yworo2N82CYu4solL_GY,474
+pdf2ebook/pdf.py,sha256=hcP8DdAg8XK2UUSUT7RB7d_6uoG1YzwbajSMydPx6UI,4575
+pdf2ebook/utils.py,sha256=26bvfyEDIEU4Y8uwRvHkvASmpfONsbWmOFXeoN-oqzE,523
+pdf2ebook/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf2ebook/bin/convert.py,sha256=hpIOk9k8IdO92BpQkTzkcLrF3PUe34QB7jGwA2gzgPM,405
+pdf2ebook-1.6.0.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+pdf2ebook-1.6.0.dist-info/METADATA,sha256=_BH38TDrXxky0cO7fMcXFREhAKQxvuBB807We4ooYTQ,331
+pdf2ebook-1.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pdf2ebook-1.6.0.dist-info/entry_points.txt,sha256=Pk2m3owjCcFpYkYb_hsl-jLk-XSgxat9sGUKqMDWd_M,56
+pdf2ebook-1.6.0.dist-info/top_level.txt,sha256=VBdWwZX-vS8fwp9LNyQHid6koUsf5INCPIApBN--7C8,10
+pdf2ebook-1.6.0.dist-info/RECORD,,
