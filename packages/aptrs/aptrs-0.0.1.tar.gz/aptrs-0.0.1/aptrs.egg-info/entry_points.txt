@@ -1,0 +1,2 @@
+[console_scripts]
+aptrs = APTRS.__main__:main
