@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "freewheel4py"
+version = "0.4"
+authors = [
+  { name="dylan marsella", email="dylanmarsella1@gmail.com" },
+]
+description = "create placements and update them easily."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dmars12345/freewheel4py"
+

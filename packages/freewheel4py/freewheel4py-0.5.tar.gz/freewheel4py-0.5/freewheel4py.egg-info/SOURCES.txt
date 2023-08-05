@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+freewheel4py.egg-info/PKG-INFO
+freewheel4py.egg-info/SOURCES.txt
+freewheel4py.egg-info/dependency_links.txt
+freewheel4py.egg-info/top_level.txt
