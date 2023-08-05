@@ -1,0 +1,12 @@
+bums/__init__.py,sha256=sDQtVBSeAXr7o4u2inFWHASlkOGb5ditU9O2xkmNVus,592
+bums/chain.py,sha256=Oarg0M047rp_XwdYOKRyu0uuIT2x2AZ0HJwzqmESGXc,444
+bums/const.py,sha256=WOb2Ic4zm4uKxw-rZI73a46ONX0UAMs_t5gtRrWb-jk,249
+bums/dates.py,sha256=nhRi_cbOGcGKZjeI57XPCIyusMfDle9iQ41egsdKV5A,5051
+bums/exc.py,sha256=qjIhWmWyHO6FQok7MEvI19a60Tm3NHTxn8_G_5umHLo,1498
+bums/logic.py,sha256=QJwZdacxUmqWNSvdWQpo5ZdzJToEJHcVoIaKMy-j1f8,117
+bums/structs.py,sha256=gk3-S0crl99JQBcqJI8fkXjbCPJzfF2EC4JDycmidIQ,2834
+bums/version.py,sha256=iwDi0TUz45SMYIlshEAh-UPerqIe7nxUavbLYwEgSR8,25
+bums-1.0.0rc1.dist-info/METADATA,sha256=e2SehGFWRkquuTqt-QrRbs2mw_kagmAhbQVPy7RYdGk,658
+bums-1.0.0rc1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bums-1.0.0rc1.dist-info/top_level.txt,sha256=86pjloIGqar8UcsjowZd5cs22T9dt83VRBqilGlOjTM,5
+bums-1.0.0rc1.dist-info/RECORD,,
