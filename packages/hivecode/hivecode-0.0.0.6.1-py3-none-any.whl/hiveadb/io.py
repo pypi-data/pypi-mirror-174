@@ -1,0 +1,329 @@
+from .functions import get_spark, get_dbutils, data_convert
+
+from databricks.koalas import read_excel as koalas_read_excel, read_delta as koalas_read_delta, read_table as koalas_read_table,\
+read_json as koalas_read_json, read_csv as koalas_read_csv, read_parquet as koalas_read_parquet, read_orc as koalas_read_orc,\
+read_sql as koalas_read_sql
+from pandas import DataFrame, ExcelWriter, read_csv as pandas_read_csv, read_json as pandas_read_json, read_parquet as pandas_read_parquet,\
+read_excel as pandas_read_excel
+from os import system, path as ospath
+from py4j.protocol import Py4JJavaError
+
+spark   = get_spark()
+dbutils = get_dbutils()
+
+from multiprocessing.pool import ThreadPool
+from threading import Thread
+from queue import Queue
+from typing import Union, List
+
+
+def read_table(table_name: str, db: str = "default", as_type: str = "koalas", index: Union[str, List[str], None] = None, threads: int = 2):
+    def read_table_f(table_name: str, db: str = "default", as_type: str = "koalas", index: Union[str, List[str], None] = None):
+            return data_convert(koalas_read_table(f"{db}.{table_name}", index_col = index), as_type=as_type)
+    if isinstance(table_name, list):
+        pool = ThreadPool(threads)
+        return list(map(lambda table: pool.apply_async(read_table_f, kwds={"table_name": table, "db": db, "as_type": as_type, "index": index}).get(), table_name))
+    elif isinstance(table_name, str):
+        return read_table_f(table_name, db, as_type)
+
+
+def write_table(df, table_name, db: str = "default", delta_path = "/FileStore/tables/", mode: str = "overwrite", partitions: Union[str, List[str], None] = None, index: Union[str, List[str], None] = None, threads: int = 2):
+    # We pack items in a list to be able to use them in he threads process.
+    if not isinstance(df, list):
+        df = [df]
+    if not isinstance(table_name, list):
+        table_name = [table_name]
+        
+    # This is the normal definition that will create a single table.
+    def write_table_f(df, table_name, db: str = "default", delta_path = "/FileStore/tables/", mode: str = "overwrite", partitions: Union[str, List[str], None] = None, index: Union[str, List[str], None] = None) -> None:
+        # Write .delta file in datalake
+        delta_path = f'{delta_path}/{db}/{table_name}/'.replace('//', '/')
+        data_convert(df, as_type="koalas").to_delta(delta_path, mode=mode, partition_cols = partitions, index_col = index)
+        # Create DB if not exist
+        spark.sql(f"CREATE DATABASE IF NOT EXISTS {db}")
+        # Create Table
+        ddl_query = f"CREATE TABLE IF NOT EXISTS {db}.{table_name} USING DELTA LOCATION '{delta_path}'"
+        spark.sql(ddl_query)
+    
+    # Create a queue
+    q = Queue()
+
+    # Define the amount of threads
+    worker_count = threads
+
+    # Organize args into queue
+    for _df, table in zip(df, table_name):
+        kwargs = locals()
+        args = dict()
+        args["table_name"] = table
+        args["df"] = _df
+        args["db"] = kwargs.get("db")
+        args["delta_path"] = kwargs.get("delta_path")
+        args["mode"] = kwargs.get("mode")
+        args["partitions"] = kwargs.get("partitions")
+        args["index"] = kwargs.get("index")
+        q.put(args)
+
+    # Wrapper to run tasks
+    def run_tasks(function, q):
+        while not q.empty():
+            kwargs = q.get()
+            df = kwargs.get("df")
+            table_name = kwargs.get("table_name")
+            db = kwargs.get("db")
+            delta_path = kwargs.get("delta_path")
+            mode = kwargs.get("mode")
+            function(df = df, table_name = table_name, db = db, delta_path = delta_path, mode = mode)
+            q.task_done()
+
+    # Run tasks in threads
+    for i in range(worker_count):
+        t=Thread(target=run_tasks, args=(write_table_f, q))
+        t.daemon = True
+        t.start()
+    # Finish process
+    return q.join()
+
+
+def read_csv(file_name: str, path: str, header: bool = 0, source: str = "dbfs", as_type: str = "koalas", engine: str = "koalas", threads: int = 2):
+    def read_csv_f(file_name: str, path: str, header: bool = 0, source: str = "dbfs", as_type: str = "koalas", engine: str = "koalas"):
+        if engine == "koalas":
+            if header and isinstance(header, bool):
+                header = 'infer'
+            elif not header and isinstance(header, bool):
+                header = None
+            if isinstance(header, int): 
+                header_index = header
+                header = False
+
+            df = koalas_read_csv(f"{source}:{path}/{file_name}", header = header)
+
+            if header_index:
+                for df_column in df.columns:
+                    df = df.rename(columns = {df_column: f"{df.loc[header_index][df_column]}"})
+                df = df.loc[header_index:]
+        elif engine == "pandas":
+            if header and isinstance(header, bool):
+                header = 'infer'
+            elif not header and isinstance(header, bool):
+                header = None
+            else:
+                header = header
+
+            df = pandas_read_csv(f"/{source}{path}/{file_name}", header = header)
+        elif engine == "spark":
+            if isinstance(header, int): 
+                header_index = header
+                header = False
+            else:
+                header_index = False
+
+            df = spark.read.format("csv")\
+                           .option("header", header)\
+                           .load(f"{source}:{path}/{file_name}")
+
+            if isinstance(header_index, int):
+                for df_column in df.columns:
+                    df = df.withColumnRenamed(df_column, df.limit(header_index + 1).tail(1)[0][df_column])
+                    df = df.join(df.limit(header_index + 1), df.columns, how = "leftanti")
+            else:
+                if not header:
+                    for df_column in df.columns:
+                        df = df.withColumnRenamed(df_column, df_column.replace("_c", ""))
+        return data_convert(df, as_type=as_type)
+    if isinstance(file_name, list):
+        pool = ThreadPool(threads)
+        return list(map(lambda file: pool.apply_async(read_csv_f, kwds={'file_name': file, 'path': path, 'header': header, 'source': source, 'as_type': as_type, 'engine': engine}).get(), file_name))
+    elif isinstance(file_name, str):
+        return read_csv_f(file_name, path, header, source, as_type, engine)
+
+
+def read_parquet(file_name: str, path: str, source: str = "dbfs", as_type: str = "koalas", engine: str = "koalas", threads: int = 2) -> Union[DataFrame, List[DataFrame]]:
+    """Reads one or multiple JSON files at the same time.
+
+    Args:
+        file_name (str): Name of the files.
+        path (str): _description_
+        source (str, optional): _description_. Defaults to "dbfs".
+        as_type (str, optional): _description_. Defaults to "koalas".
+        engine (str, optional): _description_. Defaults to "koalas".
+        threads (int, optional): _description_. Defaults to 2.
+
+    Returns:
+        Union[DataFrame, List[DataFrame]]: _description_
+    """
+    def read_parquet_f(file_name: str, path: str, source: str = "dbfs", as_type: str = "koalas", engine: str = "koalas"):
+        if engine.lower() == "koalas":
+            return data_convert(koalas_read_parquet(f"{source}:{path}/{file_name}"), as_type=as_type)
+        elif engine.lower() == "spark":
+            try:
+                return data_convert(spark.read.format("parquet").load(f"{source}:{path}/{file_name}"), as_type=as_type)
+            except:
+                try:
+                    return data_convert(spark.read.format("parquet").load(f"{source}:{path}/{file_name}/"), as_type=as_type)
+                except:
+                    raise
+        elif engine.lower() == "pandas":
+            # Pandas has an engine option that can be pyarrow or fastparquet. Defaults to pyarrow.
+            return data_convert(pandas_read_parquet(f"/{source}/{path}/{file_name}"), as_type=as_type)
+        
+    if isinstance(file_name, list):
+        pool = ThreadPool(threads)
+        return list(map(lambda file: pool.apply_async(read_parquet_f, kwds={"file_name": file, "path": path, "source": source, "as_type": as_type, "engine": engine}).get(), file_name))
+    elif isinstance(file_name, str):
+        if not file_name.endswith(".parquet"):
+            file_name = f"{file_name}.parquet"
+        return read_parquet_f(file_name, path, source, as_type, engine)
+
+
+def read_json(file_name: str, path: str, source: str = "dbfs", as_type: str = "koalas", engine: str = "koalas", threads: int = 2):
+    def read_json_f(file_name: str, path: str, source: str = "dbfs", as_type: str = "koalas", engine: str = "koalas"):
+        if engine == "koalas":
+            try:
+                return data_convert(koalas_read_json(f"{source}:{path}/{file_name}", lines = True), as_type=as_type)
+            except:
+                try:
+                    return data_convert(koalas_read_json(f"{source}:{path}/{file_name}", lines = False), as_type=as_type)
+                except:
+                    raise
+        elif engine == "spark":
+            try:
+                return data_convert(spark.read.format("json").load(f"{source}:{path}/{file_name}"), as_type=as_type)
+            except:
+                try:
+                    return data_convert(spark.read.format("json").load(f"{source}:{path}/{file_name}/"), as_type=as_type)
+                except:
+                    raise
+        elif engine == "pandas":
+            try:
+                return data_convert(pandas_read_json(f"/{source}/{path}/{file_name}", lines = True), as_type=as_type)
+            except:
+                try:
+                    return data_convert(pandas_read_json(f"/{source}/{path}/{file_name}", lines = False), as_type=as_type)
+                except:
+                    raise
+        
+    if isinstance(file_name, list):
+        pool = ThreadPool(threads)
+        return list(map(lambda file: pool.apply_async(read_json_f, kwds={"file_name": file, "path": path, "source": source, "as_type": as_type, "engine": engine}).get(), file_name))
+    elif isinstance(file_name, str):
+        if not file_name.endswith(".json"):
+            file_name = f"{file_name}.json"
+        return read_json_f(file_name, path, source, as_type, engine)
+
+
+def read_excel(file_name: str, path: str, source: str = "dbfs", as_type: str = "koalas", header = False, engine: str = "koalas", threads: int = 2):
+    def read_excel_f(file_name: str, path: str, source: str = "dbfs", as_type: str = "koalas", header = False, engine: str = "koalas"):
+        if engine == "koalas":
+            return data_convert(koalas_read_excel(f"{source}:{path}/{file_name}"), as_type=as_type)
+        elif engine == "spark":
+            try:
+                return data_convert(spark.read.format("com.crealytics.spark.excel").option("location", f"{path}/{file_name}").option("useHeader", header).option("inferSchema", True).load(f"{path}/{file_name}"), as_type=as_type)
+            except:
+                try:
+                    return data_convert(spark.read.format("com.crealytics.spark.excel").option("location", f"{path}/{file_name}").option("useHeader", header).option("inferSchema", True).load(f"{path}/{file_name}"), as_type=as_type)
+                except Py4JJavaError as e:
+                    if "java.lang.ClassNotFoundException:" in str(e):
+                        raise Exception("Maven dependency not installed in cluster. Install com.crealytics.spark.excel.")
+        elif engine == "pandas":
+            return data_convert(pandas_read_excel(f"/{source}/{path}/{file_name}"), as_type=as_type)
+        
+    if isinstance(file_name, list):
+        pool = ThreadPool(threads)
+        return list(map(lambda file: pool.apply_async(read_excel_f, kwds={"file": file, "path": path, "source": source, "as_type": as_type, "header": header, "engine": engine}).get(), file_name))
+    elif isinstance(file_name, str):
+        try:
+            if not file_name.endswith(".xlsx"):
+                file_name = f"{file_name}.xlsx"
+            return read_excel_f(file_name, path, source, as_type, header, engine)
+        except:
+            try:
+                if not file_name.endswith(".xltx"):
+                    file_name = f"{file_name}.xltx"
+                return read_excel_f(file_name, path, source, as_type, header, engine)
+                
+            except:
+                try:
+                    if not file_name.endswith(".xlsm"):
+                        file_name = f"{file_name}.xlsm"
+                    return read_excel_f(file_name, path, source, as_type, header, engine)
+                except:
+                    try:
+                        if not file_name.endswith(".xltm"):
+                            file_name = f"{file_name}.xltm"
+                        return read_excel_f(file_name, path, source, as_type, header, engine)
+                    except:
+                        raise
+
+
+def write_json(df, file_name: str, path: str, num_files: int = 1):
+    _temp = f"temp_{file_name.split('.')[0]}"
+    data_convert(df, as_type="koalas").to_json(path=fr'{path}/{_temp}/', num_files=num_files)
+    files = [file.name for file in dbutils.fs.ls(f"{path}/{_temp}/") if not file.name.startswith("_")]
+    i = 0
+    for file in files:
+        if len(files)>1:
+            f_name = f"{file_name.split('.')[0]}_{str(i)}{file_name.split('.')[1]}"
+            i += 1
+        else:
+            f_name = file_name
+        if not file_name.endswith(".json"):
+            file_name = f"{f_name}.json"
+        dbutils.fs.mv(f"{path}/{_temp}/{file}", f"{path}/{f_name}")
+        dbutils.fs.rm(f"{path}/{_temp}", True)
+
+##### TO UPGRADE
+
+def write_csv(df, 
+           file_name: str, 
+           path: str, sep: str = ',', 
+           nas: str = '', header: bool = True, 
+           mode: str = 'overwrite', 
+           num_files: int = 1):
+    data_convert(df, as_type="koalas").to_csv(path=fr'{path}/{file_name}', sep = sep, na_rep = nas, header = header, mode = mode, num_files= num_files)
+
+
+def write_excel(dfs, file_name: str, path: str, source: str = "dbfs", sheet_name = list()):
+    """
+    
+    Note: This operation write data into the driver local file system. 
+    If not enough storage is given, the operation will fail.
+    
+    """
+    if not isinstance(dfs, list):
+        dfs = [dfs]
+    
+    sheet_name = sheet_name + [f'Sheet_{i}' for i in range(1, len(dfs) - len(sheet_name) + 1)]
+    sheet_pos = 0
+    
+    try:
+        with ExcelWriter(fr"{file_name}") as writer:
+            for df in dfs:
+                data_convert(df, as_type = "koalas").to_excel(writer, sheet_name=sheet_name[sheet_pos])
+                sheet_pos = sheet_pos + 1
+
+        system(fr"mv /databricks/driver/{file_name} /{source}/{path}/{file_name}")
+    except:
+        if not ospath.isdir(fr"/databricks/driver/{file_name}"):
+            system(fr"rm /databricks/driver/{file_name}")
+
+
+def write_parquet(df, file_name: str, path: str, mode: str = "overwrite"):
+    data_convert(df, as_type="koalas").to_parquet(path=fr'{path}/{file_name}', mode = mode)
+
+
+def write_delta(df, file_name: str, delta_path: str, mode = "overwrite"):
+    delta_path = f'{delta_path}/{file_name}/'.replace('//', '/')
+    data_convert(df, as_type="koalas").to_delta(delta_path, mode=mode)
+
+
+def write_orc(df, file_name: str, path: str, mode: str = "overwrite"):
+    data_convert(df, as_type="koalas").to_orc(path=fr'{path}/{file_name}', mode = mode)
+
+
+def read_sql(table_name: str, db: str, sql_type: str = "sqlite", as_type: str = "koalas"):
+    return data_convert(koalas_read_sql(table_name, con=f"jdbc:{sql_type}:{db}"), as_type=as_type)
+
+
+def write_sql(df, table_name: str, db: str, sql_type: str = "sqlite", mode: str = "append"):
+    data_convert(df, as_type="koalas").to_spark_io(format="jdbc", mode=mode, dbtable=table_name, url=f"jdbc:{sql_type}:{db}")
