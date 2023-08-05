@@ -1,0 +1,11 @@
+README.md
+setup.py
+face_picture_comparator/__init__.py
+face_picture_comparator/comparation.py
+face_picture_comparator/load_img.py
+face_picture_comparator/plot.py
+face_picture_comparator.egg-info/PKG-INFO
+face_picture_comparator.egg-info/SOURCES.txt
+face_picture_comparator.egg-info/dependency_links.txt
+face_picture_comparator.egg-info/requires.txt
+face_picture_comparator.egg-info/top_level.txt
