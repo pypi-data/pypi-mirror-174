@@ -1,0 +1,37 @@
+name: "Pip"
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+env:
+  QISKIT_PARALLEL: false
+
+jobs:
+  build:
+    name: Build with Pip
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [windows-latest, macos-latest, ubuntu-latest]
+        python-version: ["3.7", "3.10"]
+
+    runs-on: ${{ matrix.platform }}
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+
+    - uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Build and install
+      run: pip install --verbose -r requirements.txt .[test]
+
+    - name: Test
+      run: pytest

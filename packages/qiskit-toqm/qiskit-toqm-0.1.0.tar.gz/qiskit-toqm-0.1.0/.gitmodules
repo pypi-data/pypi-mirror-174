@@ -1,0 +1,3 @@
+[submodule "libtoqm"]
+	path = libtoqm
+	url = git@github.com:qiskit-toqm/libtoqm.git

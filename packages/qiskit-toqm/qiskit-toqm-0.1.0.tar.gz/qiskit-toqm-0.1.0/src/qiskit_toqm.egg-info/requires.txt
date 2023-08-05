@@ -1,0 +1,5 @@
+qiskit-terra>=0.22.0
+numpy>=1.17
+
+[test]
+pytest
