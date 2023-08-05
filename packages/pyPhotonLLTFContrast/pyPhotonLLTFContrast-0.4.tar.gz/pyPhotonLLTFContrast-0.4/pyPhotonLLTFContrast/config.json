@@ -1,0 +1,15 @@
+{
+    "device_file": "p",
+    "ramp": {
+        "ramp_numb_steps": 7,
+        "ramp_repeat": 2,
+        "ramp_reset": 1,
+        "ramp_reverse": false,
+        "ramp_send_initial_trigger": true,
+        "ramp_send_trigger": true,
+        "ramp_step_size": 1.0,
+        "ramp_wait_1": 0.5,
+        "ramp_wait_2": 0.5
+    },
+    "step_size": 100.0
+}

@@ -1,0 +1,3 @@
+[console_scripts]
+pyPhotonLLTFContrast = pyPhotonLLTFContrast.main:main
+
