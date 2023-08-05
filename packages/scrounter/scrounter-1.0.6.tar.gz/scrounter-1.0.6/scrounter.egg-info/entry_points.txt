@@ -1,0 +1,2 @@
+[console_scripts]
+scrounter = counter.__main__:run
