@@ -1,0 +1,6 @@
+setup.py
+simpledata/__init__.py
+simpledata.egg-info/PKG-INFO
+simpledata.egg-info/SOURCES.txt
+simpledata.egg-info/dependency_links.txt
+simpledata.egg-info/top_level.txt

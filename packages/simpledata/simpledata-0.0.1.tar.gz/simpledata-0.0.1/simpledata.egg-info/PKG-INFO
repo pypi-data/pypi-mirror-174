@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simpledata
+Version: 0.0.1
+Summary: Load and write json and pickle files or strings, the simple way.
+Home-page: UNKNOWN
+Author: DimJimm
+Author-email: <appleneticyt@gmail.com>
+License: UNKNOWN
+Keywords: python,files,file,io,json,pickle,data,load,parse,create,write,simple,easy,straightforward,fs,filesystem
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that makes the reading, writing, creating and parsing of files/strings very simple and straightforward
+
