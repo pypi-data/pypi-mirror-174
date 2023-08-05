@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: face-picture-comparator
+Version: 0.0.1
+Summary: Two face comparison pack
+Home-page: https://github.com/Ronaldo-Nunes/Cursos/tree/main/Geracao-Tech-Unimed-BH-Ciencia-Dados/compare-faces-package
+Author: Ronaldo Nunes
+Author-email: projetoftnunes@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# compare_faces
+
+## Description. 
+
+The package compare_faces is used to:
+
+	- Delimit face
+	- Confront faces
+	- Plot image
+	- Plot result
+	- Get image file
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install compare_faces
+
+```bash
+pip install compare_faces
+```
+
+## Usage
+
+```python
+from compare_faces import load_img
+
+image = load_img.get_image_file("my_image.jpg")
+image = load_img.delimit_face(image)
+
+# delimit_face returns an image with a rectangle delimiting the first face detected in the input image
+```
+
+```python
+from compare_faces import load_img
+from compare_faces import comparation
+from compare_faces import plot
+
+image = load_img.get_image_file("my_image.jpg")
+image_compare = load_img.get_image_file("other_image.jpg")
+result_message = comparation.confront_faces(image, image_compare)
+
+# confront_image returns a string informing whether or not the faces belong to the same person and the distance between them
+
+plot.plot_result(image, image_compare, result_message)
+
+# plot_result displays the images and the massage using matplotlib library
+```
+
+```python
+from compare_faces import load_img
+from compare_faces import plot
+image = load_img.get_image_file("my_image.jpg")
+plot.plot_image(image)
+
+# plot_image displays the image using matplotlib library
+```
+
+## Author
+Ronaldo Nunes
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
