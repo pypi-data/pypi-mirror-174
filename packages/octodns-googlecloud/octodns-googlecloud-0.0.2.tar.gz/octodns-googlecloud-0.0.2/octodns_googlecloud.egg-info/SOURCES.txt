@@ -1,0 +1,8 @@
+README.md
+setup.py
+octodns_googlecloud/__init__.py
+octodns_googlecloud.egg-info/PKG-INFO
+octodns_googlecloud.egg-info/SOURCES.txt
+octodns_googlecloud.egg-info/dependency_links.txt
+octodns_googlecloud.egg-info/requires.txt
+octodns_googlecloud.egg-info/top_level.txt
