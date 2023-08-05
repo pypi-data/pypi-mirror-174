@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ydl-ipc
+Version: 0.1.0
+Summary: Simple inter-process communication
+Home-page: https://github.com/pioneers/ydl
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+Read the README at https://github.com/pioneers/ydl

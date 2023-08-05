@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ydl/__init__.py
+ydl/__main__.py
+ydl/_core.py
+ydl/_header.py
+ydl_ipc.egg-info/PKG-INFO
+ydl_ipc.egg-info/SOURCES.txt
+ydl_ipc.egg-info/dependency_links.txt
+ydl_ipc.egg-info/requires.txt
+ydl_ipc.egg-info/top_level.txt
