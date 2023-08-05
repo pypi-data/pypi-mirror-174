@@ -1,0 +1,16 @@
+aas_core3.0rc02-1.0.0rc1.data/data/LICENSE,sha256=MNeO2HT6TucjNR8BR862EpLqxZrJfn52zG0_x_36a-c,1092
+aas_core3.0rc02-1.0.0rc1.data/data/README.rst,sha256=3q9Sh8rBKzhU8v2awTFapHbO4uhDnwLyki_empKq-44,1555
+aas_core3_rc02/__init__.py,sha256=m26xB3WSed1Kr-Ji4-CqOxj9GuuHdUbZ54P4H-aVglc,382
+aas_core3_rc02/common.py,sha256=1C8gz1BI_p7Zd76Sr_Peo4W7Z2Fmp_R-vmgK0KHCxro,597
+aas_core3_rc02/constants.py,sha256=hLlWd5P2IWdS0F7MO3TK5AB_w6Lyu1XREX-NxD6JnzE,7081
+aas_core3_rc02/jsonization.py,sha256=FWwXJuGPVHSzupqeAHDdQvjfOpOBOSkdT_y5GKSa90M,355593
+aas_core3_rc02/py.typed,sha256=khpbcpOVE7E_NRCoQIpjYweIJllq-X09OHpKq1CaCjA,64
+aas_core3_rc02/stringification.py,sha256=SIKVaEp__r-AuEryseatNV65YMenuf78j_g3SGhciYE,14641
+aas_core3_rc02/types.py,sha256=eKYC8EQG_8aUeCf9a2UhyPYbLXMr4MA1pKkYSkGVfXQ,261970
+aas_core3_rc02/verification.py,sha256=F37ubISpSKW5LtPbbErdI1vxNVTj84aDGiXDWiKuepA,236641
+aas_core3_rc02/xmlization.py,sha256=Wnp3sGlB5JFVJjn6Xjw26LxHwvihpArfjqP3Wimd1mo,937999
+aas_core3.0rc02-1.0.0rc1.dist-info/LICENSE,sha256=MNeO2HT6TucjNR8BR862EpLqxZrJfn52zG0_x_36a-c,1092
+aas_core3.0rc02-1.0.0rc1.dist-info/METADATA,sha256=e9iUtkPzbDoM-tSkIbi2x_HYyoZbF0Wr90hpUGGNSxU,2363
+aas_core3.0rc02-1.0.0rc1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aas_core3.0rc02-1.0.0rc1.dist-info/top_level.txt,sha256=SSUadcCeGV3jl9kpPakHbHIX3MZDtjXoUZBMpJ0isaA,15
+aas_core3.0rc02-1.0.0rc1.dist-info/RECORD,,
