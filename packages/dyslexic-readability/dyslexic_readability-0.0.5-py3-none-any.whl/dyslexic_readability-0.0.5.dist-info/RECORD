@@ -1,0 +1,13 @@
+.DS_Store,sha256=IYoBxsUdHNb2eVQpCgHxPTflGCGXQWKQ3KnBnXZsS_w,6148
+dyslexic_readability/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dyslexic_readability/dyslexic_scores.py,sha256=mGosY5Ng96cHPhfyikwvz5-fP6O1SDMLZk1jeC4lRkk,7924
+dyslexic_readability/example.py,sha256=PaD68_slp1An6mHNVZwNTncrG6tZBKfyVLHw_keoJAo,2669
+dyslexic_readability/readability_scores.py,sha256=F72tVi_JGgmRGmVCnnehH4cJp1pdnf3StZxUUN6pQlk,3986
+dyslexic_readability/utils.py,sha256=ulsBFupQ-nqR101g_2kbF6gIXcO8TjtdtEHD81IECXg,1130
+dyslexic_readability/syllable/__init__.py,sha256=ddoA1a0mAbIW5oVE9IArHmgj97cBXtOneVvuXfGhHl8,31
+dyslexic_readability/syllable/syllable.py,sha256=oIMSXo0khGsEXlUrDS4SLTJT03apQYelCDCv3oylOjs,6406
+dyslexic_readability-0.0.5.dist-info/LICENSE,sha256=HDbMJ7oItmxTn3jVtZFi6jUFAHovset5jzAPUderjOc,1073
+dyslexic_readability-0.0.5.dist-info/METADATA,sha256=2oVch-V_fnd7KBjrUb9ogq94g-AmvHkfyIV3FgXde-k,2929
+dyslexic_readability-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dyslexic_readability-0.0.5.dist-info/top_level.txt,sha256=2Xc1rdf6ADNgE-1BxnOj-jg0o7ObH1e7u-sBbps11ns,21
+dyslexic_readability-0.0.5.dist-info/RECORD,,
