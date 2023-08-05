@@ -1,0 +1,1 @@
+{"test": {"vcpu": 1, "mem": 1000}, "fastqc": {"vcpu": 2, "mem": 4000}}
