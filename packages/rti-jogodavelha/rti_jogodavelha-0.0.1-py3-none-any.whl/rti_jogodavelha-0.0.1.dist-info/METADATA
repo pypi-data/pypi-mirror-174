@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: rti-jogodavelha
+Version: 0.0.1
+Summary: Exemplo de jogo da velha em python
+Home-page: https://github.com/robson-tazinaffo/ciencia-dados-python/tree/main/modulo2/Desafio2
+Author: Mauro Robson Tazinaffo
+Author-email: robsontazinaffo@hotmail.com
+License: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Bootcamp GeraÃ§Ã£o Tech Unimed-BH - CiÃªncia de Dados
+
+
+
+## Links Ãšteis
+
+[Site da Dio](https://dio.me/)
+
+[Sintaxe BÃ¡sica Markdown](https://www.markdownguide.org/basic-syntax/)
+
+[Download do git](https://git-scm.com/downloads)
+
+[Registrar no Pypi](https://pypi.org/account/register/)
+
+[Registrar no Test Pypi]([https://test.pypi.org/account/register]))
+
+
+
+
+
+https://pypi.org/account/register/
+
+
+
+## Tecnologias utilizadas nos projetos
+
+<div style="display: inline_block">
+<img align="center" alt="git" height="70" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"/>
+<img align="center" alt="GitHub" height="70" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+<img  align="center" alt="Python" height="70" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />              
+</div>
+
+
+## Desafio criaÃ§Ã£o de pacote no pypi
+
+
+
+```
+Objetivo: 
+
+Neste projeto aprenderemos a criar um pacote de exemplo de um jogo da velha em Python e disponibilizÃ¡-lo no repositÃ³rio Pypi.
+```
+

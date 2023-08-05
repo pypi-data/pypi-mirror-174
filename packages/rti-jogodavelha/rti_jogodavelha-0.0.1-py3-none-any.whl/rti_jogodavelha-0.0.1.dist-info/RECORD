@@ -1,0 +1,10 @@
+rti_jogo_da_velha/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rti_jogo_da_velha/gui.py,sha256=kTNzGp8mTyT7mdpSstP2JnDpUfBiH5IzqFnDjES2aLA,2160
+rti_jogo_da_velha/jogo_da_velha.py,sha256=ikNNz31eqFdOfzcM0saoduwuIqf4lLWQjBVCDpZslQ8,1746
+rti_jogo_da_velha/main.py,sha256=Gvxz2ig5myqxmmJWI0qclrTTsq6CrZytvGvSzfYpikM,896
+rti_jogo_da_velha/minimax.py,sha256=6LGOX-xRTfJ7dYpkJzIh6vQ40M7aE8ilrXmGPDP84fE,1896
+rti_jogodavelha-0.0.1.dist-info/LICENSE,sha256=dl4xArYGQpkS6ZDuTq83M2HC3SwLZeTzKEaXxVVJZCE,1073
+rti_jogodavelha-0.0.1.dist-info/METADATA,sha256=tVPzZmCegtcy19FxRhFUFPNJVUKZ_ltWTFU9kLkmbUc,1533
+rti_jogodavelha-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rti_jogodavelha-0.0.1.dist-info/top_level.txt,sha256=PJPRzl4QoiSvZ5cMuOGa-sJvMyC3wDNR81599UJ-6fM,18
+rti_jogodavelha-0.0.1.dist-info/RECORD,,
