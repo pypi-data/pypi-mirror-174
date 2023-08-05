@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: joker-cast
+Version: 0.5.2
+Summary: Type conversions
+Home-page: https://github.com/frozflame/joker-cast
+Author: frozflame
+Author-email: frozflame@outlook.com
+License: GNU General Public License (GPL)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
+
+joker-cast
+==========
+
+Type conversion, iteration and containers.
+
+
+
+
