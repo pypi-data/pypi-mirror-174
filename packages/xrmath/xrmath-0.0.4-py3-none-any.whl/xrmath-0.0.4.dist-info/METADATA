@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: xrmath
+Version: 0.0.4
+Summary: A math tool by Xinre.
+Home-page: http://ahqo.xyz
+Author: Xinre
+License: MIT
+Requires-Python: >=3.6.0
+License-File: license
+
