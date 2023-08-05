@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: qiskit-toqm
+Version: 0.1.0
+Summary: Qiskit transpiler passes for the TOQM algorithm
+Home-page: https://github.com/qiskit-toqm/qiskit-toqm
+Author: Qiskit Development Team
+Author-email: hello@qiskit.org
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/qiskit-toqm/qiskit-toqm/issues
+Project-URL: Documentation, https://github.com/qiskit-toqm/qiskit-toqm
+Project-URL: Source Code, https://github.com/qiskit-toqm/qiskit-toqm
+Keywords: qiskit sdk quantum toqm
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE_pybind11
+Requires-Dist: qiskit-terra (>=0.22.0)
+Requires-Dist: numpy (>=1.17)
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+Qiskit TOQM
+===========
+
+|      CI              | status |
+|----------------------|--------|
+| pip builds           | [![Pip Actions Status][actions-pip-badge]][actions-pip-link] |
+| wheels               | [![Wheels Actions Status][actions-wheels-badge]][actions-wheels-link] |
+
+
+[Qiskit Terra](https://github.com/qiskit/qiskit-terra) transpiler passes for the [Time-Optimal Qubit Mapping](https://doi.org/10.1145/3445814.3446706) (TOQM) algorithm.
+
+[actions-badge]:           https://github.com/qiskit-toqm/qiskit-toqm/workflows/Tests/badge.svg
+[actions-pip-link]:        https://github.com/qiskit-toqm/qiskit-toqm/actions?query=workflow%3APip
+[actions-pip-badge]:       https://github.com/qiskit-toqm/qiskit-toqm/workflows/Pip/badge.svg
+[actions-wheels-link]:     https://github.com/qiskit-toqm/qiskit-toqm/actions?query=workflow%3AWheels
+[actions-wheels-badge]:    https://github.com/qiskit-toqm/qiskit-toqm/workflows/Wheels/badge.svg
+
+Installation
+------------
+
+This package is available on PyPI as `qiskit-toqm`.
+
+To install it, run:
+
+```sh
+pip install qiskit-toqm
+```
+
+Alternatively,
+
+1. Clone this repository recursively.
+2. Install it from source: `pip install .`
+
+
+Licenses
+--------
+
+qiskit-toqm is provided under the Apache 2.0 license that can be found in
+the LICENSE file.
+
+pybind11 is provided under a BSD-style license that can be found in the LICENSE_pybind11
+file.
+
+By using, distributing, or contributing to this project, you agree to the
+terms and conditions of both licenses.
