@@ -1,0 +1,134 @@
+# template: https://gitlab.com/jlecomte/projects/python/reference-files
+#
+# Project metadata guidelines:
+#   https://peps.python.org/pep-0621/
+#
+[build-system]
+requires = ["pip", "setuptools", "wheel"]
+# May be required by tox, but breaks twine:
+# build-backend = "setuptools.build_meta"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.black]
+line-length = 120
+target_version = ['py36']
+
+[tool.nbqa.addopts]
+pyupgrade = ["--py36-plus"]
+
+[tool.isort]
+# https://pycqa.github.io/isort/docs/configuration/options.html
+profile = "black"
+line_length = 120
+atomic = true
+include_trailing_comma = true
+skip_gitignore = true
+use_parentheses = true
+known_local_folder = "tests"
+
+[tool.coverage]
+# https://coverage.readthedocs.io/en/latest/config.html
+
+[tool.codespell]
+# https://github.com/codespell-project/codespell/blob/master/README.rst
+#
+# Dictionary is updated when codespell is updated, nevertheless, it can
+# be found here: .venv/lib/python3.*/site-packages/codespell_lib/data/dictionary.txt
+skip = ".git,.tox,.venv,*.pyc,public"
+builtin = "clear,informal,rare,names"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "docs/*",
+  "tests/*",
+]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = [
+  "pragma: no cover",
+  "if __name__ == .__main__.:",
+  "raise NotImplemented",
+  "raise NotImplementedError",
+  "return NotImplemented",
+  "if False",
+  "@abc.abstractmethod",
+  "@abc.abstractproperty",
+  "except ImportError",
+  "lambda: None",
+  "_typeshed",
+  "t.TYPE_CHECKING",
+]
+
+[tool.pylint.main]
+
+[tool.pylint.reports]
+# Activate the evaluation score.
+score = false
+
+[tool.pylint."messages control"]
+# Disable the message, report, category or checker with the given id(s). You can
+# either give multiple identifiers separated by comma (,) or put this option
+# multiple times (only on the command line, not in the configuration file where
+# it should appear only once). You can also use "--disable=all" to disable
+# everything first and then re-enable specific checks. For example, if you want
+# to run only the similarities checker, you can use "--disable=all
+# --enable=similarities". If you want to run only the classes checker, but have
+# no Warning level messages displayed, use "--disable=all --enable=classes
+# --disable=W".
+disable = [
+  "raw-checker-failed",
+  "bad-inline-option",
+  "locally-disabled",
+  "file-ignored",
+  "suppressed-message",
+  "useless-suppression",
+  "deprecated-pragma",
+  "use-symbolic-message-instead",
+  # defaults above, custom below
+  "duplicate-code",              # disabled, false positives
+  "fixme",                       # disabled, can be properly handled manually
+  "line-too-long",               # disabled, we use black so lines over 120 are intended
+  "missing-class-docstring",     # disabled, only relevant with sphinx
+  "missing-function-docstring",  # disabled, only relevant with sphinx
+  "missing-module-docstring",    # disabled, only relevant with sphinx
+  "too-few-public-methods",      # disabled, human knows best
+]
+
+# Enable the message, report, category or checker with the given id(s). You can
+# either give multiple identifier separated by comma (,) or put this option
+# multiple time (only on the command line, not in the configuration file where it
+# should appear only once). See also the "--disable" option for examples.
+enable = ["c-extension-no-member"]
+
+[tool.pylint.basic]
+bad-names = [
+  "foo",
+  "bar",
+  "baz",
+  "toto",
+  "tutu",
+  "tata",
+  # defaults above, custom below
+  "file_",
+  "foobar",
+]
+
+# If variable isn't whitelisted here, it'll trigger an 'invalid-name' error
+good-names = [
+  "i",
+  "j",
+  "k",
+  "ex",
+  "Run",
+  "_",
+  # defaults above, custom below
+  "fd", # file descriptor
+  "fn", # function (reserved word)
+  "v",  # as in `for k, v in {}.items()`
+  "x",  # frequently used in lambdas, more precise than i, j
+]
