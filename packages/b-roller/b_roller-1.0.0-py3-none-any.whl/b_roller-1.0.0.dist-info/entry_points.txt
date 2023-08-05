@@ -1,0 +1,3 @@
+[console_scripts]
+broll=b_roller.__main__:app
+
