@@ -1,0 +1,2 @@
+recursive-include datalake_utils *.py
+recursive-include tests *.py
