@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: DescomplicandoACriacaoDePacotes
+Version: 0.0.1
+Summary: DIO Project
+Home-page: https://github.com/CarlVAC1980/DescomplicandoACriacaoDePacotesEmPython
+Author: Carlos Valenca
+Author-email: cavac10@yahoo.com.br
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# image_processing
+
+Description. 
+The package image_processing is used to:
+	Processing:
+		- Histogram matching 
+		- Structural similkarity
+		- Resize image
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install image_processing
+```
+
+## Author
+Carlos ValenÃ§a
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
