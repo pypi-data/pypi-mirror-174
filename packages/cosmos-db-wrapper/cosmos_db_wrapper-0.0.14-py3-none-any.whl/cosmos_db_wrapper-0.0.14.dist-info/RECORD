@@ -1,0 +1,8 @@
+cosmos_db_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cosmos_db_wrapper/aio.py,sha256=s4ZDw-Q4cWXUaDqy9vUlcq7mNPolXAsPmpLZKZ5D1dg,3541
+cosmos_db_wrapper/io.py,sha256=XP-qNAtfRBLtEuLC-Vm3jcdpdRvR0Xysn_pu96eoFSw,3788
+cosmos_db_wrapper-0.0.14.dist-info/LICENSE,sha256=un75rAoLe7xgAkS4AboHVHXhIkbQQ1dQazFHQP8X7k0,1073
+cosmos_db_wrapper-0.0.14.dist-info/METADATA,sha256=5niG6IFqYkXa_ZxEh7hbRUOZI-uaAWHGghDx7gp_sTY,746
+cosmos_db_wrapper-0.0.14.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cosmos_db_wrapper-0.0.14.dist-info/top_level.txt,sha256=LZfqTdWvfC6v0hkc_SvkgkHE3cuHOMHpqYWGLyjH5Ww,18
+cosmos_db_wrapper-0.0.14.dist-info/RECORD,,
