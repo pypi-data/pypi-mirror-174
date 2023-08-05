@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: web3cli
+Version: 0.1.1
+Summary: Interact with blockchains and smart contracts using the command line
+License: MIT
+Keywords: web3,cli,blockchain,ethereum,evm
+Author-email: coccoinomane <coccoinomane@gmail.com>
+Requires-Python: >=3.10,<4
+Requires-Dist: cement[jinja2]>=3.0.8
+Requires-Dist: web3client>=0.3.4
+Project-URL: homepage, https://github.com/coccoinomane/web3cli
+Project-URL: repository, https://github.com/coccoinomane/web3cli
+Description-Content-Type: text/markdown
+
+Interact with blockchains and smart contracts using the command line
+
