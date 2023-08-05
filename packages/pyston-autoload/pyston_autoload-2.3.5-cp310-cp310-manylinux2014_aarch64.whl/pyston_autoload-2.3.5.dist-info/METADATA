@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyston-autoload
+Version: 2.3.5
+Summary: Automatically loads and enables pyston
+Home-page: https://www.github.com/pyston/pyston
+Author: The Pyston Team
+Description-Content-Type: text/markdown
+Requires-Dist: pyston (==2.3.5)
+
+pyston_autoload is a small package that simply imports and enables
+[pyston](https://pypi.org/project/pyston/) on python startup. It is possible
+to use pyston without this autoload package, but it is generally
+recommended to install the autoloader to automatically get the performance
+benefits
