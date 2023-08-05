@@ -1,0 +1,2 @@
+[console_scripts]
+felips_counter = scrounter.__main__:main
