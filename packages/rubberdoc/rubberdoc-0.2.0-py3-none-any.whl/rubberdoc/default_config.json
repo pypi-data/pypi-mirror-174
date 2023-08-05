@@ -1,0 +1,20 @@
+{
+    "input": {
+        "include": [
+            "\\.py$",
+            "\\.md$"
+        ],
+        "exclude": [
+            
+        ]
+    },
+    "output": {
+        "custom_doc_handler_filepath": "",
+        "custom_doc_handler_class_name": "",
+        "no_docstring_default": "_No docstring_",
+        "include_source_code": true,
+        "rename": {
+            "__init__": "index"
+        }
+    }
+}
