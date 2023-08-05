@@ -1,0 +1,3 @@
+[console_scripts]
+qxlicense=license_manager.main:main
+
