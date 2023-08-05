@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: contentfetch
+Version: 0.0.1
+Summary: Extracting the content from the webpage
+Home-page: UNKNOWN
+Author: aidotio
+Author-email: neneranadheer@gmail.com
+License: UNKNOWN
+Keywords: webpage,scrape,crawl
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: news-please
+Requires-Dist: newspaper3k
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: selenium
+
+
+# content-fetch
+
