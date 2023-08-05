@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: save-excel
+Version: 0.1.0
+Summary: python module for quickly saving styled excel files using openpyxl.
+Author: Daniel Galván
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: openpyxl (>=2.6.0)
+Requires-Dist: pandas (>=1.2.0)
+Requires-Dist: xlrd (>=2.0.0)
+Requires-Dist: schema (>=0.7)
+Requires-Dist: numpy (>=1.19)
+
+UNKNOWN
+
