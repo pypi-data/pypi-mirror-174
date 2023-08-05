@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+pystyleclean/__init__.py
+pystyleclean.egg-info/PKG-INFO
+pystyleclean.egg-info/SOURCES.txt
+pystyleclean.egg-info/dependency_links.txt
+pystyleclean.egg-info/top_level.txt
