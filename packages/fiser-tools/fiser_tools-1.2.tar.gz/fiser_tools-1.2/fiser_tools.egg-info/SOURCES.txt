@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+fiser_tools/__init__.py
+fiser_tools/analytics.py
+fiser_tools/dataclean.py
+fiser_tools/graphics.py
+fiser_tools/machine.py
+fiser_tools/misc.py
+fiser_tools/transform.py
+fiser_tools.egg-info/PKG-INFO
+fiser_tools.egg-info/SOURCES.txt
+fiser_tools.egg-info/dependency_links.txt
+fiser_tools.egg-info/requires.txt
+fiser_tools.egg-info/top_level.txt
