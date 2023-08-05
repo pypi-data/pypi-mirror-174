@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: wast
+Version: 0.0.1
+Summary: Wolphin AST
+Home-page: https://gitlab.com/qwolphin/wast
+Author: Wolphin
+Author-email: q@wolph.in
+Classifier: Typing :: Typed
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Here will be WAST
