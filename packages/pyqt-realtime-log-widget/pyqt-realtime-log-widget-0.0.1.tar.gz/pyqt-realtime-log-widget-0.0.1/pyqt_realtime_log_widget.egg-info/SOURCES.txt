@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyqt_realtime_log_widget/__init__.py
+pyqt_realtime_log_widget/example.py
+pyqt_realtime_log_widget/logWidget.py
+pyqt_realtime_log_widget.egg-info/PKG-INFO
+pyqt_realtime_log_widget.egg-info/SOURCES.txt
+pyqt_realtime_log_widget.egg-info/dependency_links.txt
+pyqt_realtime_log_widget.egg-info/requires.txt
+pyqt_realtime_log_widget.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+from .logWidget import LogWidget, LogDialog
