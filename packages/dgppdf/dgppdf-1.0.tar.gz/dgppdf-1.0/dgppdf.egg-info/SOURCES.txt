@@ -1,0 +1,9 @@
+README.md
+setup.py
+dgppdf/__init__.py
+dgppdf/pdf2image.py
+dgppdf/pdf2text.py
+dgppdf.egg-info/PKG-INFO
+dgppdf.egg-info/SOURCES.txt
+dgppdf.egg-info/dependency_links.txt
+dgppdf.egg-info/top_level.txt
