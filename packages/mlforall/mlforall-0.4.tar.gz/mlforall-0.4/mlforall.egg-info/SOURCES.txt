@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mlforall/DataModeler.py
+mlforall/DataReader.py
+mlforall/DataScaler.py
+mlforall/__init__.py
+mlforall/__main__.py
+mlforall.egg-info/PKG-INFO
+mlforall.egg-info/SOURCES.txt
+mlforall.egg-info/dependency_links.txt
+mlforall.egg-info/requires.txt
+mlforall.egg-info/top_level.txt
