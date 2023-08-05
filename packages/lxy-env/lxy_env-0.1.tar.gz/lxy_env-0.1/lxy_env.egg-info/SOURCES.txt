@@ -1,0 +1,7 @@
+README.md
+setup.py
+lxy_env.egg-info/PKG-INFO
+lxy_env.egg-info/SOURCES.txt
+lxy_env.egg-info/dependency_links.txt
+lxy_env.egg-info/requires.txt
+lxy_env.egg-info/top_level.txt

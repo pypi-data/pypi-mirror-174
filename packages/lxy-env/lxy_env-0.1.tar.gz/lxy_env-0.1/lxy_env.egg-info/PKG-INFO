@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: lxy-env
+Version: 0.1
+Summary: A OpenAI Gym Env for lxy
+Description-Content-Type: text/markdown
