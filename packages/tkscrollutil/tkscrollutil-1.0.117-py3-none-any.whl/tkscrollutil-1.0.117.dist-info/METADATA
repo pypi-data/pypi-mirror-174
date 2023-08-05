@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: tkscrollutil
+Version: 1.0.117
+Summary: tkinter scroll extra
+Author: XiangQinxi
+Author-email: XiangQinxi@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# tkscrollutil
+
+[文档](https://www.nemethi.de/scrollutil/index.html) [主页](https://www.nemethi.de/)
+
+---
+
+## ScrolllArea
+可以快速地为水平滚动、垂直滚动组件设置滚动条
+
+### 属性
+`autohidescrollbars` 设置组件是否自动隐藏滚动条。布尔数值。默认`False`。也就是说，当你把鼠标指针放到滚动条上时，滚动条才会显示。 
+
+`lockinterval` 设置组件滚动条地锁定间隔。整数数值。默认`300`.
+
+`respectheader` 仅当将嵌入到组件内地`tablelist`版本为6.5及以上版本时才能使用，后续等开发出`tablelist`的扩展库时补充
+
+`respecttitlecolumns` 仅当将嵌入到组件内地`tablelist`版本为6.5及以上版本时才能使用，后续等开发出`tablelist`的扩展库时补充
+
+`xscrollbarmode` 设置水平滚动条的模式。可选值为`static` `dynamic` `none`。默认`none`。`static`为常驻滚动条；`dynamic`为自动滚动条；`none`为没有滚动条
+
+`yscrollbarmode` 设置垂直滚动条的模式。可选值为`static` `dynamic` `none`。默认`static`。`static`为常驻滚动条；`dynamic`为自动滚动条；`none`为没有滚动条
+
+
+### 示例
+```python
+from tkinter import Tk, Listbox
+from tkscrollutil import ScrollArea
+
+Window = Tk()
+
+Area = ScrollArea(Window)
+List = Listbox(Area)
+for Item in range(50):
+    List.insert(Item+1, Item+1)
+Area.setwidget(List)
+Area.pack(fill="both", expand="yes")
+
+Window.mainloop()
+```
+
+## ttkScrollArea
+见上方。与`ScrollArea`不同的是，`ttkScrollArea`具有ttk组件的属性，并且`ScrollArea`和`ttkScrollArea`不能同时使用。
+
+### 示例
+```python
+from tkinter import Tk, Listbox
+from tkscrollutil import ttkScrollArea
+
+Window = Tk()
+
+Area = ttkScrollArea(Window)
+List = Listbox(Area)
+for Item in range(50):
+    List.insert(Item+1, Item+1)
+Area.setwidget(List)
+Area.pack(fill="both", expand="yes")
+
+Window.mainloop()
+```
