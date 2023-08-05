@@ -1,0 +1,8 @@
+README.md
+setup.py
+counter/__init__.py
+scrounter.egg-info/PKG-INFO
+scrounter.egg-info/SOURCES.txt
+scrounter.egg-info/dependency_links.txt
+scrounter.egg-info/entry_points.txt
+scrounter.egg-info/top_level.txt
