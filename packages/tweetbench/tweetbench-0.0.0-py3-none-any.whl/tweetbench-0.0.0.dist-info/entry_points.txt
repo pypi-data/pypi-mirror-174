@@ -1,0 +1,3 @@
+[console_scripts]
+tweetbench=tweetbench.__main__:main
+
