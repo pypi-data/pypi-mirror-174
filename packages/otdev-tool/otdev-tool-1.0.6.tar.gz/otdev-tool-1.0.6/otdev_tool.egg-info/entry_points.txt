@@ -1,0 +1,3 @@
+[console_scripts]
+otdev-tool = OntimDevTool.main:main
+
