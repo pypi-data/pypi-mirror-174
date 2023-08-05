@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tennga/__init__.py
+tennga/__main__.py
+tennga/srcmake.py
+tennga/tennga.py
+tennga.egg-info/PKG-INFO
+tennga.egg-info/SOURCES.txt
+tennga.egg-info/dependency_links.txt
+tennga.egg-info/requires.txt
+tennga.egg-info/top_level.txt
