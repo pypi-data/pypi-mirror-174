@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: slitflow
+Version: 0.0.1
+Summary: A Python framework for single-molecule trajectory and localization analysis
+Author: Yuma Ito
+Author-email: yitou@bio.titech.ac.jp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy (>=1.23.4)
+Requires-Dist: pandas (>=1.5.1)
+Requires-Dist: tqdm (>=4.64.1)
+Requires-Dist: psutil (>=5.9.3)
+
+# Slitflow
+
+A Python framework for single-molecule trajectory and localization
+analysis.
+
+## Installation
+**Slitflow** can be installed from PyPI.
+
+```bash
+pip install slitflow
+```
+
+## How to use
+
+```Python
+import slitflow as sf
+
+D = sf.tbl.create.Index()
+D.run([],{"type": "trajectory", "index_counts": [1, 2], "split_depth": 0})
+print(D.data[0])
+```
+
+## Licence
+**Slitflow** is distributed under the BSD 3-Clause License. 
+

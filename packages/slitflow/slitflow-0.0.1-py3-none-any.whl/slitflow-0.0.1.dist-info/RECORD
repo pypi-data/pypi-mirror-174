@@ -1,0 +1,13 @@
+slitflow/__init__.py,sha256=9el79u-3WXzQTz1WPH9GY7N22QZhYdjA9LO-NH-ahcI,149
+slitflow/data.py,sha256=ayqmBNrIIt9RHWqtw4tQF9je5LlTPHLQpWUwdK6Y0E4,2863
+slitflow/info.py,sha256=ObOF3jrZM6HkgGEdgGETUwIwETFXt5_IhvRTJGUv2x4,13982
+slitflow/name.py,sha256=ciU8IIYgwt98PexF_QKkPsw3TVRjdvMJv7Wx8v42tJg,4660
+slitflow/setindex.py,sha256=29EdTADXKAF3KD4URUiZQ7RN7CDsfDbQSXl8EfIqtYk,447
+slitflow/tbl/__init__.py,sha256=RScvLbPSV3lPxGyijs7RVJei32fQVUMEGygRW4BXypo,72
+slitflow/tbl/create.py,sha256=tBxozQjDmcoIzPNw7_Absk4O52Hyb4vimu4doFa-KAE,2365
+slitflow/tbl/table.py,sha256=fTDL8W-LGmBBQ89tZ0EqIFt4SpHQzwq8TebPy_3EplQ,1042
+slitflow-0.0.1.dist-info/LICENCE,sha256=ZR6zUgl89qeaC6Wz-l5yQLT_FVpWr9jjRHM30JR5sgE,1538
+slitflow-0.0.1.dist-info/METADATA,sha256=W6vwlcJhYHmVZlHfu_EBtSjAxcBMJT3dPtcHFDKbQb4,1024
+slitflow-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+slitflow-0.0.1.dist-info/top_level.txt,sha256=zbsAk8boMqIxl2mbZZCGsbn-t9_o72xad1NmCoxMW1U,9
+slitflow-0.0.1.dist-info/RECORD,,
