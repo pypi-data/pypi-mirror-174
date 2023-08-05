@@ -1,0 +1,14 @@
+py_diceware/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+py_diceware/__main__.py,sha256=JhMCWHqSTc8bTJVaI0MyVXzopKPmtYlEcQLJqZfQWPs,72
+py_diceware/cli.py,sha256=BBLpW_pyzlqkXasT2gl691tgnugsi-xNI2KoTdOy11Q,2382
+py_diceware/config.py,sha256=82r65C4nNY95gbLaIsYqMwWixXZIYZGlRSNg3GIGjeU,357
+py_diceware/passphrase.py,sha256=o9yQmuYWZIAWbIy_bJTHHGbVX9nVrFbTqnbPhMrPoKY,1324
+py_diceware/roll_dice.py,sha256=5_qSET9gsDRF1G7puWWH34HIEI7BCyP6xqHxo9mUcG4,1517
+py_diceware/wordlist.py,sha256=7gyfUn4frjxGA1x6a8FbBj36eC3nTHrbeujHPgQaJ_s,190
+py_diceware/wordlists/diceware.wordlist.asc,sha256=PNYWSpnpU4H4YgrseCqTNUW81YM_ozHSZ6aCn2ZlJW4,87757
+py_diceware-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+py_diceware-0.1.0.dist-info/METADATA,sha256=_wSHWyE5Gddx2QWBsOJSGbJs7fkGtV3FJ5E75x8TetM,8644
+py_diceware-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py_diceware-0.1.0.dist-info/entry_points.txt,sha256=8nDgBNfQDJjlJf5g7flEDH50TJJ9Xnv75yNxTS-PBG4,53
+py_diceware-0.1.0.dist-info/top_level.txt,sha256=UODo1CpGhVTh7NyEsSSDRIxGQiCaeCotdzuUv0ABKt8,12
+py_diceware-0.1.0.dist-info/RECORD,,
