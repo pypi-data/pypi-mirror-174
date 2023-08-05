@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: bums
+Version: 1.0.0rc1
+Summary: 好用的Python函数集合
+Home-page: https://gitee.com/cheerxiong/bums
+Author: cheer
+Author-email: cheerxiong0823@163.com
+License: UNKNOWN
+Description: README.md
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
