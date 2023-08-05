@@ -1,0 +1,34 @@
+[package]
+authors = ["Nathan Papapietro <npapapietro95@gmail.com>"]
+description = "Sympy Lie Algebra extensions powered by rust."
+documentation = "https://npapapietro.github.io/liesym"
+edition = "2021"
+license-file = "LICENSE"
+name = "liesym"
+readme = "README.md"
+repository = "https://github.com/npapapietro/liesym"
+version = "0.7.0"
+
+[lib]
+crate-type = ["cdylib"]
+name = "liesym"
+
+[dependencies]
+itertools = ">= 0.10.1"
+num = ">= 0.4.0"
+num-traits = ">= 0.2.14"
+numpy = ">= 0.17.2"
+
+[workspaces]
+members = ["rootsystem"]
+
+[dependencies.rootsystem]
+path = "local_dependencies/rootsystem"
+
+[dependencies.ndarray]
+features = ["approx", "rayon"]
+version = ">= 0.15.3"
+
+[dependencies.pyo3]
+features = ["extension-module"]
+version = ">= 0.17.2"

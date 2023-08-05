@@ -1,0 +1,18 @@
+[package]
+authors = ["Nathan Papapietro <npapapietro95@gmail.com>"]
+edition = "2021"
+name = "rootsystem"
+version = "0.7.0"
+
+[lib]
+name = "rootsystem"
+
+[dependencies]
+itertools = ">= 0.10.1"
+num = ">= 0.4.0"
+num-traits = ">= 0.2.14"
+numpy = ">= 0.17.2"
+
+[dependencies.ndarray]
+features = ["approx", "rayon"]
+version = ">= 0.15.3"
