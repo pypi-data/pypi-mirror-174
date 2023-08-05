@@ -1,0 +1,17 @@
+pipelib
+jsonschema
+ruamel.yaml
+rich
+pyyaml
+requests
+packaging
+
+[all]
+pipelib
+jsonschema
+ruamel.yaml
+rich
+pyyaml
+requests
+packaging
+pytest>=4.6.2

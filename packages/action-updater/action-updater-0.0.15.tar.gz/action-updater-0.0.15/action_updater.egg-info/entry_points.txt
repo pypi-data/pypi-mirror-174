@@ -1,0 +1,2 @@
+[console_scripts]
+action-updater = action_updater.client:run_action_updater
