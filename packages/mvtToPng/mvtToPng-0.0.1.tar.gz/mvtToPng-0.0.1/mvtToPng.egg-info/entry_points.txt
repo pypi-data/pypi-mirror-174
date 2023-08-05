@@ -1,0 +1,3 @@
+[console_scripts]
+mvtToPng = mvtToPng.__main__:main
+
