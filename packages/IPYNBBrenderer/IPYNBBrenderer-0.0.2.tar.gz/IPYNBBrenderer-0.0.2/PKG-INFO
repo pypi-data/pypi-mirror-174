@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: IPYNBBrenderer
+Version: 0.0.2
+Summary: A small python package
+Home-page: https://github.com/SHIVAN KUMAR/IPYNBrenderer
+Author: SHIVAN KUMAR
+Author-email: kshivan848@gmail.com
+License: "Apache"
+Project-URL: Bug Tracker, https://github.com/SHIVAN KUMAR/IPYNBrenderer/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Provides-Extra: testing
+License-File: LICENSE
+
+# IPYNB renderer python package
+
+1. Run your template file
+2. Run your bash init_setup.sh
+3. tox
