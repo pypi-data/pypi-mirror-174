@@ -1,0 +1,5 @@
+cattrs==22.1.0
+
+[tests]
+noseOfYeti==2.3.1
+pytest==7.1.2
