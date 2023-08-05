@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: bioshed
+Version: 0.1.10
+Summary: BioShed Cloud Bioinformatics Tookit
+Requires-Python: >=3.0
+License-File: LICENSE.txt
+Requires-Dist: boto3
+Requires-Dist: pyyaml
+
