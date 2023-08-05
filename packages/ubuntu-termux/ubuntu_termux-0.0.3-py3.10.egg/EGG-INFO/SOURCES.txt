@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ubuntu_termux/__init__.py
+ubuntu_termux/install.py
+ubuntu_termux/start.py
+ubuntu_termux.egg-info/PKG-INFO
+ubuntu_termux.egg-info/SOURCES.txt
+ubuntu_termux.egg-info/dependency_links.txt
+ubuntu_termux.egg-info/entry_points.txt
+ubuntu_termux.egg-info/requires.txt
+ubuntu_termux.egg-info/top_level.txt
