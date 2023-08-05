@@ -1,0 +1,68 @@
+[tool.bandit]
+skips = ["B101", "B311"]
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+docstring-convention = "google"
+extend-ignore = ["E203","E501"]
+max-complexity = 5
+max-line-length = 88
+per-file-ignores = [
+	"conf.py: A001,E800",
+    "test_utils.py: S101,S311",
+	"test_simple.py: S101,DAR101,DAR201",
+	"test_trendlist.py: S101",
+	"test_Trend.py: S101,DAR101,DAR201",
+	"test_TrendList.py: S101",
+	"test_package.py: S101",
+	"trendlist.py: S311",
+]
+
+[tool.mypy]
+exclude = "source/conf.py"
+explicit_package_bases = true
+namespace_packages = true
+show_error_codes = true
+
+[tool.poetry]
+name = "trendlist"
+version = "0.1.13"
+description = "Define, manipulate and study lists of Trends."
+authors = ["Jeffrey S. Haemer <jeffrey.haemer@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+blessed = "^1.19.1"
+myst-parser = "^0.18.1"
+sphinx = "^4.3.0"
+sphinx-autobuild = "^2021.3.14"
+sphinx-rtd-theme = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.4"
+black = "^22.10.0"
+darglint = "^1.8.1"
+flake8-bugbear = "^22.3.23"
+flake8-builtins = "^2.0.0"
+flake8-docstrings = "^1.6.0"
+flake8-eradicate = "^1.4.0"
+flake8-mutable = "^1.2.0"
+flake8-pyproject = "^1.1.0"
+flake8-pytest-style = "^1.6.0"
+flake8="^5.0.1"
+ipython = "^8.5.0"
+isort = "^5.10.1"
+mutmut = "^2.4.0"
+mypy = "^0.982"
+parso = "^0.8.3"
+pep8-naming = "^0.13.2"
+pytest = "^7.1.1"
+pytest-cov = "^4.0.0"
+pytest-random-order = "^1.0.4"
+safety = "^2.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
