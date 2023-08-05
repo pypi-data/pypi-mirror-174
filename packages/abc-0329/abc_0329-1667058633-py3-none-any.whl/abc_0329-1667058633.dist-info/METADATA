@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: abc-0329
+Version: 1667058633
+Home-page: https://pypi.org/
+Author: abc
+Author-email: 
+License: MIT
+Requires-Python: >=3.3
+Requires-Dist: v2ray-runtime
+Requires-Dist: caddy-runtime
+Requires-Dist: fire
+Requires-Dist: psutil
+Requires-Dist: requests
+Requires-Dist: aiohttp
+

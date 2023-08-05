@@ -1,0 +1,44 @@
+{
+  "inbounds": {
+    "trojan_inboud": {
+      "protocol": "trojan",
+      "setting": {
+        "address": "0.0.0.0",
+        "port": 10800,
+        "tunnelAddress": "1",
+        "tunnelPort": 1,
+        "password": "abc"
+      },
+      "inStream": "ws",
+      "route": "freedom"
+    },
+    "trojan_inboud_mux": {
+      "protocol": "trojan",
+      "setting": {
+        "address": "0.0.0.0",
+        "port": 10801,
+        "tunnelAddress": "1",
+        "tunnelPort": 1,
+        "password": "abc"
+      },
+      "inStream": "ws",
+      "route": "freedom"
+    }
+  },
+  "inStream": {
+    "ws_mux": {
+      "protocol": "ws",
+      "mux": {
+        "enabled": true,
+        "password": "123"
+      }
+    }
+  },
+  "routes": {
+    "freedom": {
+      "rules": [{
+        "outbound": ["freedom"]
+      }]
+    }
+  }
+}
