@@ -1,0 +1,13 @@
+pythonRSC/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pythonRSC/cli.py,sha256=jFUbLtWPs2c0heH3o2HN8WzP6wZJfbqNu3PBPZeoEto,1400
+pythonRSC/example.py,sha256=DNF-LY0h_kPQvloICWGOFDGj_NIQtlIOmMUHcKtClxc,239
+pythonRSC/pyRSC.py,sha256=-JVuj4IQ4pLPIfgLHxcjX-8wjOJy7uqTFzNIck2oZXM,3637
+pythonRSC/pyRSC_assembler.py,sha256=QzzBRcUqOE0y0FvszdPcmyCUfTkGVufXcXMWhkDsZdQ,5243
+pythonRSC/pyRSC_def.py,sha256=VjX0RU4mYS_LClEdVcxejXiDXYs_BGle4Pn4XsmT8XQ,4757
+pythonRSC/pyRSC_mem.py,sha256=JVUU6lduZ_Q3CNt-jN8b_iLk7VeLXar_rJQ34Faxfbw,5289
+pythonRSC-0.1.3.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+pythonRSC-0.1.3.dist-info/METADATA,sha256=NZ0H5SLhNLGR5aDqXgc3sgrqin1iW5XBvFFKQNak7EM,2279
+pythonRSC-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pythonRSC-0.1.3.dist-info/entry_points.txt,sha256=qcM13BxZaU7qRkN-S6sDaNrugCtfkvnhYV1O6o0taGQ,49
+pythonRSC-0.1.3.dist-info/top_level.txt,sha256=vGy_uXqS6nzgehKH0YkHfEeVNCAKozPJxfpSFjf0fNY,10
+pythonRSC-0.1.3.dist-info/RECORD,,
