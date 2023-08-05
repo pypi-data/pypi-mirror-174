@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: django-quant-candles
+Version: 0.1.0
+Summary: Django Quant Candles downloads and aggregate candlesticks from tick data
+Home-page: https://github.com/globophobe/django-quant-candles
+License: MIT
+Keywords: django,cryptocurrency,candlesticks,quant,trading
+Author: Alex
+Author-email: globophobe@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: django-filter
+Requires-Dist: django-storages
+Requires-Dist: djangorestframework
+Requires-Dist: httpx
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: randomname
+Project-URL: Repository, https://github.com/globophobe/django-quant-candles
+Description-Content-Type: text/markdown
+
+
