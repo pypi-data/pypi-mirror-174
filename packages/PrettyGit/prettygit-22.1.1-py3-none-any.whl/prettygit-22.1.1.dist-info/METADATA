@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: PrettyGit
+Version: 22.1.1
+Summary: very simple and user friendly interface for git
+Project-URL: Homepage, https://github.com/gmankab/PrettyGit
+Project-URL: Bug Tracker, https://github.com/gmankab/PrettyGit/issues
+Project-URL: Documentation, https://github.com/gmankab/PrettyGit
+Author-email: gmanka <gmankab@gmail.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: betterdata
+Requires-Dist: easyselect
+Requires-Dist: hatchling
+Requires-Dist: rich
+Requires-Dist: twine
+Description-Content-Type: text/markdown
+
+# PrettyGit
+
+very simple and user friendly interface for git
+
+author:  
+[t.me/gmanka](https://t.me/gmanka)
+
+## license
+
+[gnu gpl 3](https://gnu.org/licenses/gpl-3.0.en.html)
