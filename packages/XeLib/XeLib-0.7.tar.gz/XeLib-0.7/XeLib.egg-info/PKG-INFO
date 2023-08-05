@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: XeLib
+Version: 0.7
+Summary: Xemulated's QOL Library
+Home-page: https://github.com/xemulat
+Download-URL: https://github.com/xemulat/XeLib/archive/refs/tags/0.7.tar.gz
+Author: Xemulated
+Author-email: xemulated@tuta.io
+License: mit
+Keywords: QOL,xemulated,downloader
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
