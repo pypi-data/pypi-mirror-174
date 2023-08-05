@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: easy-gaming
+Version: 1.1.0
+Summary: A gaming automation library
+Home-page: 
+Author: Luke Cheney
+Author-email: thestarfinder8@gmail.com
+License: MIT
+Keywords: gaming
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This library will have a few functions to help automate gaming 
+
+Change log
+==========
+
+0.0.1 (28/10/2022)
+------------------
+- First Release
+
+0.0.2 (29/10/2022)
+------------------
+- auto-chat added
+
+0.0.3 (29/10/2022)
+------------------
+- major bug fix
+
+0.0.4 (29/10/2022)
+------------------
+- delay added to auto-clicker module
+
+1.0.0 (20/10/2022)
+------------------
+- full release/save file added
+
+1.0.1 (20/10/2022)
+------------------
+- bug fix
+
+1.0.2 (20/10/2022)
+------------------
+- bug fix
+
+1.0.3 (20/10/2022)
+------------------
+- bug fix
+
+1.0.4 (20/10/2022)
+------------------
+- bug fix
+
+1.0.5 (20/10/2022)
+------------------
+- bug fix
+
+1.0.6 (20/10/2022)
+------------------
+- bug fix
+
+1.0.7 (20/10/2022)
+------------------
+- bug fix
+
+1.0.8 (20/10/2022)
+------------------
+- bug fix
+
+1.0.9 (20/10/2022)
+------------------
+- bug fix
+
+1.1.0 (20/10/2022)
+------------------
+- file rework
+- bug fix
+
