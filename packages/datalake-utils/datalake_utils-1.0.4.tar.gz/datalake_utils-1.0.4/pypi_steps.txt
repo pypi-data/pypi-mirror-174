@@ -1,0 +1,14 @@
+https://medium.com/theleanprogrammer/publish-your-first-python-package-on-pypi-3079d409792f
+
+python3 setup.py sdist
+tar tzf dist/package-name.tar.gz
+check-manifest -c
+python3 setup.py bdist_wheel sdist
+
+* criar conta no PyPi
+* criar token
+
+`twine upload dist/*`
+    username: __token__
+    password: <token here>
+
