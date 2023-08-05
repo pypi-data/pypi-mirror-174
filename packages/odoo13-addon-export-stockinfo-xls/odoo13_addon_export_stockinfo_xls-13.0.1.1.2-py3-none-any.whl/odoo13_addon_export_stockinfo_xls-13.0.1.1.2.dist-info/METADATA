@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: odoo13-addon-export-stockinfo-xls
+Version: 13.0.1.1.2
+Summary: Current Stock Report for all Products in each Warehouse
+Home-page: https://www.cybrosys.com
+Author: Cybrosys Techno Solutions
+License: AGPL-3
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 13.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.5
+Requires-Dist: odoo (<13.1dev,>=13.0a)
+
+Export Product Stock in Excel v13
+=================================
+This module helps you to take current stock report for all products in each warehouse.
+
+Configuration
+=============
+* No additional configurations needed
+
+Company
+-------
+* `Cybrosys Techno Solutions <https://cybrosys.com/>`__
+
+Credits
+-------
+* Developers: 	Cybrosys Techno Solutions odoo@cybrosys.com
+
+Contacts
+--------
+* Mail Contact : odoo@cybrosys.com
+* Website : https://cybrosys.com
+
+Bug Tracker
+-----------
+Bugs are tracked on GitHub Issues. In case of trouble, please check there if your issue has already been reported.
+
+Maintainer
+==========
+.. image:: https://cybrosys.com/images/logo.png
+   :target: https://cybrosys.com
+
+This module is maintained by Cybrosys Technologies.
+
+For support and more information, please visit `Our Website <https://cybrosys.com/>`__
+
+Further information
+===================
+HTML Description: `<static/description/index.html>`__
+
+
