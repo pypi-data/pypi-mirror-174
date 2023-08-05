@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "glyf"
+version = "0.0.1"
+authors = [
+  { name="Stepan Goryachev", email="glyfo@icloud.com" },
+]
+description = "A library for easy plotting of multiple images and graphs"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3.8",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Visualization"
+]
+
+dependencies = [
+    "numpy",
+    "matplotlib"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cdtn/glyf"
+"Bug Tracker" = "https://github.com/cdtn/glyf/issues"

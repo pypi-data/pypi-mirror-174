@@ -1,0 +1,20 @@
+[DESIGN]
+max-line-length=120
+max-attributes=20
+max-public-methods=20
+min-public-methods=0
+max-locals=50
+max-args=20
+max-returns=5
+max-module-lines=1500
+max-statements=150
+max-nested-blocks=10
+docstring-min-length=3
+
+[MESSAGE CONTROL]
+no-docstring-rgx=^(_|forward)
+disable=too-many-branches, too-many-lines, import-error
+
+[BASIC]
+class-rgx=[A-Z_][a-zA-Z0-9_]+$
+good-names=a,b,e,x,y,lr,ax,ha,va,plot

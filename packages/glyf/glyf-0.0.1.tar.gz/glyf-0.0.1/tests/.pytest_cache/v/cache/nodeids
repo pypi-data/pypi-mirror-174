@@ -1,0 +1,10 @@
+[
+  "tutorials_test.py::test_run_notebooks[filename0]",
+  "tutorials_test.py::test_tutorials[../tutorials/01_image.ipynb]",
+  "tutorials_test.py::test_tutorials[../tutorials/02_histogram.ipynb]",
+  "tutorials_test.py::test_tutorials[../tutorials/03_curve.ipynb]",
+  "tutorials_test.py::test_tutorials[../tutorials/04_loss.ipynb]",
+  "tutorials_test.py::test_tutorials[../tutorials/Untitled.ipynb]",
+  "tutorials_test.py::test_tutorials[filename0]",
+  "tutorials_test.py::test_tutorials[path0]"
+]
