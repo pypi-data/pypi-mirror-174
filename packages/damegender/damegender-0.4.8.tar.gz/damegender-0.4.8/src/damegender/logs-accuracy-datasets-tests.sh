@@ -1,0 +1,1 @@
+python3 accuracy.py --api=damegender --measure=accuracy --dataset_guess=files/names/names_tests/gender_JMLA.interguessed.dta.csv --dataset_guess_row_name=0 --dataset_guess_row_gender=1 --dataset_test=files/names/names_tests/gender_JMLA.dta.csv --dataset_test_row_name=1 --dataset_test_row_gender=2 --dataset_test_row_gender_chars="female,male"
