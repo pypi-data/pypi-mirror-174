@@ -1,0 +1,17 @@
+fancyprint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fancyprint/printer.py,sha256=9SoidTwjPuZA5iZUCjpVE7BSnpsjubw2WFHQFErINUA,31165
+fancyprint/ftypes/__init__.py,sha256=FuHBOU0UX_6z2sCzze5lH3Lpf0C4ECeK75bVUR8RU-w,165
+fancyprint/ftypes/align.py,sha256=TDc92RPwdD8iBl4mEIl4X25gHZad9DgcRC04U9rCApI,245
+fancyprint/ftypes/color.py,sha256=pzfBn1xzWo-72wvl66JdcNc1lVlXqJmgBp7TnMykHH0,1337
+fancyprint/ftypes/preset.py,sha256=XmqNmqqimp4J1NsHcpea9rvYVG6EU-MvoNynlP-mb6A,520
+fancyprint/ftypes/printer_preset.py,sha256=qwnD2AJFJs0k2YumzZGKZ_lKnDNWlyoIu390A7u_YA4,569
+fancyprint/ftypes/separator_preset.py,sha256=ZcfGZZtXA7-TFdoTft3rW1hQJrtd2B_zZVeGFVPeuG8,633
+fancyprint/helpers/__init__.py,sha256=WMvFdccAfapLpw7nvocguJ-UBNvaTHEzcL-qkIDJmvE,45
+fancyprint/helpers/constants.py,sha256=T5txnatkJw1suUSC3GzTP-jtOL6T2uyf_6p11B_vcNw,1288
+fancyprint/helpers/types.py,sha256=s2tDSVVjtH8k6COV1SzTFicfQPG0EppD-XE09zpsUgQ,2145
+fancyprint/presets/__init__.py,sha256=X27IBEOQHPAwqHHIoIJ_3op8186HTGDlZWi-STtmfI8,813
+fancyprint/presets/ascii/__init__.py,sha256=X27IBEOQHPAwqHHIoIJ_3op8186HTGDlZWi-STtmfI8,813
+fancyprint/presets/unicode/__init__.py,sha256=X27IBEOQHPAwqHHIoIJ_3op8186HTGDlZWi-STtmfI8,813
+fancyprint-0.1.1.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+fancyprint-0.1.1.1.dist-info/METADATA,sha256=b9oZZLWJ7e2po-aXObdLe3LV6TKCZ7AkihkxVgjR_Hk,2639
+fancyprint-0.1.1.1.dist-info/RECORD,,
