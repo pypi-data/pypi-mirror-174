@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: faba
+Version: 0.0.4
+Author-email: Lindasy Zhou <i@lin.moe>
+License: Affero General Public License GPL v3 (AGPLv3)
+Project-URL: Homepage, https://git.sr.ht/~lindsay/faba
+Keywords: arguments parse
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# faba  
+A simple cli parser inspire by cobra  
+
+Basic Example:
+```python
+#!/bin/env python3
+  import faba
+  from typing import List
+
+  def hello(cmd: faba.Command, args: List[str]):
+	  print('hello', ','.join(args))
+
+  helloCmd = faba.Command(
+	  use = 'hello [flags]',
+	  short = 'hello to everyone',
+	  run = hello,
+  )
+
+  if __name__ == '__main__':
+	  helloCmd.execute()
+```
+
+More Detail: https://io.lin.moe/n/prjs/faba.html
