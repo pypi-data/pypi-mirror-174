@@ -1,0 +1,37 @@
+defaults:
+  - generation: alphabet-inclusions
+  - help/retranslate@hydra.help
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+  - _self_
+
+hydra:
+  # verbose: cai_garland
+  run:
+    dir: .
+  output_subdir: ~
+
+model:
+  hf_model_name: facebook/nllb-200-distilled-600M
+  cuda: false
+  max_length: 200
+
+generation:
+  alphabet: ~
+
+  num_beams: 10
+
+  generator_kwargs:
+    repetition_penalty: 1.4
+    no_repeat_ngram_size: 3
+  
+  word_exclusion_list: ~
+
+input_glob: translations/*.en
+
+output:
+  list_language_codes: false
+  target_language_code: zho_Hans
+  # output_extension: it
+
+  output_dir: translations
