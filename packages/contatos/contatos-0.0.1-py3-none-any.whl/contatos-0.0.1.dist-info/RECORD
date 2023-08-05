@@ -1,0 +1,16 @@
+contatos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+contatos/conexao.py,sha256=k4_E45M6-wais1ma0ZxWV9Hhv84HyFAn-NLuz00msjY,629
+contatos/contato.py,sha256=CdwlE7v9om56iwUHktjersUVj1OfH-sogrrwehHXybg,1689
+contatos/main.py,sha256=L5cwjM_TmQar7C6AkQgY41FEhWaqUd9twS2MwsnLr1U,315
+contatos/pessoa.py,sha256=7VniByPtSXzLqMhz3ysyAJyfDCCNncL-_JcARNip3Cc,883
+contatos/sistema.py,sha256=Tm3F1DkjThoSLwO2nwGN_bBzdVmpujO8Hlb9-ajn9J8,2932
+models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+models/conexao.py,sha256=k4_E45M6-wais1ma0ZxWV9Hhv84HyFAn-NLuz00msjY,629
+models/contato.py,sha256=CdwlE7v9om56iwUHktjersUVj1OfH-sogrrwehHXybg,1689
+models/main.py,sha256=L5cwjM_TmQar7C6AkQgY41FEhWaqUd9twS2MwsnLr1U,315
+models/pessoa.py,sha256=7VniByPtSXzLqMhz3ysyAJyfDCCNncL-_JcARNip3Cc,883
+models/sistema.py,sha256=Tm3F1DkjThoSLwO2nwGN_bBzdVmpujO8Hlb9-ajn9J8,2932
+contatos-0.0.1.dist-info/METADATA,sha256=ANUPA179D85I0SsNZRdVLsYUGqEofhIUMgRtU0CtBtE,686
+contatos-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+contatos-0.0.1.dist-info/top_level.txt,sha256=1iiFj3L0fG-aFwaotK707O8sUqbzlcq2EeV78HLvcVs,9
+contatos-0.0.1.dist-info/RECORD,,
