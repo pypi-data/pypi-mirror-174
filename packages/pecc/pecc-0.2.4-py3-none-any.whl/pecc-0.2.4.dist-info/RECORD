@@ -1,0 +1,15 @@
+pecc/__init__.py,sha256=Qq9itXoDL1PVI3xzVakpSg8_XatXkIlV-NxRdkEAVfo,157
+pecc/_unexpected_alleles.py,sha256=1FyYzK6WAvQr2Ja3c6T7Cw1mtxJnxGuyOwE7huyCj_U,2237
+pecc/data/A.csv,sha256=MK77JVYkyT884_wfijOuXxSkBjg6y3OlOMnIi_AUvpk,121989
+pecc/data/B.csv,sha256=PoidhFK0OIyTFVdFcgNxBGGpKeSujs745DWcGhcCYI8,175811
+pecc/data/C.csv,sha256=qdifRk_8hAeCK57rNm_qh_5hgsg3YHZOFVIjHbxHqZQ,53261
+pecc/data/DP.csv,sha256=aJ4V6WOWLE8CKCrjaSZkSJDs1q8oYd0dlElAQOugQo0,80820
+pecc/data/DQ.csv,sha256=2CjnxFszh5xVnf9DVjZZGNv68Ea09jWDOvzsGN91ar8,21858
+pecc/data/DR.csv,sha256=drboQH5927e4-1XsZxPOldlb76qWZgW0pXpoECNPZho,169376
+pecc/data/ep_data.csv,sha256=lwDlok0odUbyJhJrNA_LYhE6P7JYoH0c7bwBOfUvy04,8672
+pecc/epitope_comparison.py,sha256=QPeiMOE-IASOR6WigmrVCjU9AqSqAm7ZUgJhm44Et2I,6810
+pecc/epitope_comparison_aux.py,sha256=HUEBb6mzL3tB0LSJGPTsUssEVo3TsfRfYAQL-BbBP_M,5212
+pecc/output_type.py,sha256=sZTd_kMko7LHH3C6ylhl7HHqzgcCX0_bf5M8DBPrDhs,146
+pecc-0.2.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pecc-0.2.4.dist-info/METADATA,sha256=fRraRQLu531dRDRjAERkPWlqR0wICoEJMsSUyLHOnIg,5496
+pecc-0.2.4.dist-info/RECORD,,
