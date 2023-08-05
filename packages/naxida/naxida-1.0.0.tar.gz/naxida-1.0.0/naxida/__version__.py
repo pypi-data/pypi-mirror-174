@@ -1,0 +1,6 @@
+__title__ = "naxida"
+__version__ = "1.0.0"
+__description__ = "naxida"
+__url__ = ""
+__author__ = "mrhblfx"
+__author_email__ = "mrhblfx@gmail.com"

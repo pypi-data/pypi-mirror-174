@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: naxida
+Version: 1.0.0
+Summary: naxida bot
+Home-page: https://github.com/mrhblfx/naxida
+Author: mrhblfx
+Author-email: mrhblfx@gmail.com
+Maintainer: mrhblfx
+Maintainer-email: 
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8.10
