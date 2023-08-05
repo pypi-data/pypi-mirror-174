@@ -1,0 +1,8 @@
+license.txt
+setup.py
+Test-Pypi-GYW/__init__.py
+Test-Pypi-GYW/add_num.py
+Test_Pypi_GYW.egg-info/PKG-INFO
+Test_Pypi_GYW.egg-info/SOURCES.txt
+Test_Pypi_GYW.egg-info/dependency_links.txt
+Test_Pypi_GYW.egg-info/top_level.txt
