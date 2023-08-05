@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mojangles
+Version: 1.0.0
+Summary: Mojang API wrapper with Microsoft Authentication.
+Project-URL: Homepage, https://github.com/enderc00kiez/mojang.py
+Project-URL: Bug Tracker, https://github.com/enderc00kiez/mojang.py/issues
+Author-email: EnderC00kiez <enderc00kiez@enderc00kiez.xyz>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# mojangles
+
+A simple mojang API wrapper made in python. Supports Microsoft Auth.
