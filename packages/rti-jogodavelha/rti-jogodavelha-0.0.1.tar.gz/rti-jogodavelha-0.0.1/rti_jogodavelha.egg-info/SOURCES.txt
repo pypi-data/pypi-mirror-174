@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rti_jogo_da_velha/__init__.py
+rti_jogo_da_velha/gui.py
+rti_jogo_da_velha/jogo_da_velha.py
+rti_jogo_da_velha/main.py
+rti_jogo_da_velha/minimax.py
+rti_jogodavelha.egg-info/PKG-INFO
+rti_jogodavelha.egg-info/SOURCES.txt
+rti_jogodavelha.egg-info/dependency_links.txt
+rti_jogodavelha.egg-info/top_level.txt
