@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: miller
+Version: 0.1.3
+Summary: introspection tools using consistent, accessible syntax
+Author: Corey Rayburn Yung
+Author-email: coreyrayburnyung@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: amos (>=0.1.5,<0.2.0)
