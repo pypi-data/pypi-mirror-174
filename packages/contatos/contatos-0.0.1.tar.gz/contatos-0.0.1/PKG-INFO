@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: contatos
+Version: 0.0.1
+Summary: sistema de contato
+Home-page: https://github.com/ubiratantavares/projeto_sistema_contato
+Author: Ubiratan Tavares
+Author-email: ust1973@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package models is used to:
+	- criar uma conexÃ£o
+	- criar um contato
+	- utilizar o sistema CRUD para contato
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install contatos
+```
+
+## Author
+Ubiratan da S. Tavares
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
