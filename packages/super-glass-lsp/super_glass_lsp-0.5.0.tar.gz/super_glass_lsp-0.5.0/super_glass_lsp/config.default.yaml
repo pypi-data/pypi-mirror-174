@@ -1,0 +1,62 @@
+version: 2
+
+defaults: &defaults
+  enabled: false
+
+configs:
+  markdownlint:
+    <<: *defaults
+    lsp_feature: diagnostic
+    language_id: markdown
+    command: markdownlint --stdin
+    parsing:
+      formats:
+        - "stdin:{line:d}:{col:d} {msg}"
+        - "stdin:{line:d} {msg}"
+        - "stdin {msg}"
+      line_offset: -1
+      col_offset: -1
+
+  jqlint:
+    <<: *defaults
+    lsp_feature: diagnostic
+    language_id: json
+    command: "jq ."
+    parsing:
+      formats:
+        - "{msg} at line {line:d}, column {col:d}"
+
+  mypy:
+    <<: *defaults
+    lsp_feature: diagnostic
+    language_id: python
+    # `--follow-imports=silent` means that Mypy _does_ check the entire codebase, but _doesn't_ output
+    # errors outside the current file.
+    command: |
+      mypy \
+        --no-color-output \
+        --no-error-summary \
+        --follow-imports=silent \
+        {file}
+    piped: false
+    stdout: true
+    timeout: 15
+    parsing:
+      formats:
+        - "{}:{line:d}: {severity}: {msg}"
+        - "{}: {severity}: {msg}"
+      line_offset: -1
+
+  python_black_formatter:
+    <<: *defaults
+    lsp_feature: formatter
+    language_id: python
+    command: "black -"
+
+  fuzzy_buffer_tokens:
+    <<: *defaults
+    lsp_feature: completion
+    language_id: markdown
+    # TODO: Include this in main docs:
+    #   `{cursor_line}` and `{cursor_row}` should also be available
+    command: "tr -cs '[:alnum:]' '\n' | fzf --filter='{word}' | uniq"
