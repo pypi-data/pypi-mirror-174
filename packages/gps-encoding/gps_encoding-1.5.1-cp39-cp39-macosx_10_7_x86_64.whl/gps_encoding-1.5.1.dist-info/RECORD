@@ -1,0 +1,5 @@
+gps_encoding-1.5.1.dist-info/METADATA,sha256=qLCSOnYEPz5_yNxt5rj4Ykb4R1yEmGQMbspX9CJqEKM,888
+gps_encoding-1.5.1.dist-info/WHEEL,sha256=HwQVoePJmJeq7b_egqyYm2sK7ZhPrqIr1fSbK5I5EKk,104
+gps_encoding/__init__.py,sha256=MZ_I7K_CtvRSJ5-_HrdZO6UkTRtkzPUctYcGfhyo0oM,131
+gps_encoding/gps_encoding.cpython-39-darwin.so,sha256=PFvELAXC7M7nsgaT1-4Qz0F7tdDvUAknEIwXEH8jZ1A,490096
+gps_encoding-1.5.1.dist-info/RECORD,,
