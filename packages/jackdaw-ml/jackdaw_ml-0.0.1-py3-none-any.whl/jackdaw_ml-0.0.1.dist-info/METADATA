@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: jackdaw-ml
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: LGPL-3.0-or-later
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+Requires-Dist: joblib
+Requires-Dist: artefactlink (==0.2.0)
+Requires-Dist: pyarrow (==9.0.0)
+Requires-Dist: torch (~=1.12.0)
+Requires-Dist: gitpython
+Requires-Dist: pytest (~=7.1.2)
+Requires-Dist: scikit-learn (~=1.1.1)
+Requires-Dist: urllib3 (~=1.26.9)
+Requires-Dist: setuptools (~=60.2.0)
+Provides-Extra: all
+Requires-Dist: joblib ; extra == 'all'
+Requires-Dist: artefactlink (==0.2.0) ; extra == 'all'
+Requires-Dist: pyarrow (==9.0.0) ; extra == 'all'
+Requires-Dist: torch (~=1.12.0) ; extra == 'all'
+Requires-Dist: gitpython ; extra == 'all'
+Requires-Dist: pytest (~=7.1.2) ; extra == 'all'
+Requires-Dist: scikit-learn (~=1.1.1) ; extra == 'all'
+Requires-Dist: urllib3 (~=1.26.9) ; extra == 'all'
+Requires-Dist: setuptools (~=60.2.0) ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: black ; extra == 'all'
+Requires-Dist: mypy ; extra == 'all'
+Requires-Dist: pytest-env ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-asyncio ; extra == 'all'
+Requires-Dist: coverage ; extra == 'all'
+Requires-Dist: scikit-learn ; extra == 'all'
+Requires-Dist: torchvision ; extra == 'all'
+Requires-Dist: torch-geometric ; extra == 'all'
+Requires-Dist: pytorch-lightning ; extra == 'all'
+Requires-Dist: torch-sparse ; extra == 'all'
+Requires-Dist: torch-scatter ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest-env ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: scikit-learn ; extra == 'dev'
+Requires-Dist: torchvision ; extra == 'dev'
+Requires-Dist: torch-geometric ; extra == 'dev'
+Requires-Dist: pytorch-lightning ; extra == 'dev'
+Requires-Dist: torch-sparse ; extra == 'dev'
+Requires-Dist: torch-scatter ; extra == 'dev'
+Requires-Dist: joblib ; extra == 'dev'
+Requires-Dist: artefactlink (==0.2.0) ; extra == 'dev'
+Requires-Dist: pyarrow (==9.0.0) ; extra == 'dev'
+Requires-Dist: torch (~=1.12.0) ; extra == 'dev'
+Requires-Dist: gitpython ; extra == 'dev'
+Requires-Dist: pytest (~=7.1.2) ; extra == 'dev'
+Requires-Dist: scikit-learn (~=1.1.1) ; extra == 'dev'
+Requires-Dist: urllib3 (~=1.26.9) ; extra == 'dev'
+Requires-Dist: setuptools (~=60.2.0) ; extra == 'dev'
+
+UNKNOWN
+
