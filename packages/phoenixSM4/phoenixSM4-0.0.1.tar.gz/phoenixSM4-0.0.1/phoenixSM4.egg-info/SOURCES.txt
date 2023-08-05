@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+phoenixSM4/__init__.py
+phoenixSM4.egg-info/PKG-INFO
+phoenixSM4.egg-info/SOURCES.txt
+phoenixSM4.egg-info/dependency_links.txt
+phoenixSM4.egg-info/top_level.txt
