@@ -1,0 +1,11 @@
+stfu_tg/__init__.py,sha256=ezqTlL5fgUdpd0BjSb2CXkqQx8W0sJefIyZvY6pbwlU,474
+stfu_tg/base.py,sha256=kbXYFgrD96Sn-aQyRzMPF7sP5Du0JcvldKyS5V59NNE,509
+stfu_tg/extras.py,sha256=IuPjvmB2kEFe-CV08NyoK5pGHgj0A-1jqgkyneNUStE,926
+stfu_tg/formatting.py,sha256=aYUKLExg-loGr6qFeSYScuJHprQvWEsrPiBmKuTOqIo,1566
+stfu_tg/sections.py,sha256=r-Zi_1NCIO4a45-fC0K8_ehHKXiwGXHfDf6t4ISAZNo,2564
+stfu_tg/special.py,sha256=5KhLKLTsNecEUBCGRNAFxzMwKrId45y8-I1vJ2AKvC0,114
+stfu_tg/telegram.py,sha256=67N382g_MU9WYSAGRmIW502aDSqS0vndpYt0T8aLAjU,187
+stfu_tg-1.4.dist-info/LICENSE.md,sha256=TfPDBt3ar0uv_f9cqCDMZ5rIzW3CY8anRRd4PkL6ejs,34522
+stfu_tg-1.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+stfu_tg-1.4.dist-info/METADATA,sha256=FC_milgPxdDX4u2qAS9arHf5cnTJUc-g0yue7OJjONI,639
+stfu_tg-1.4.dist-info/RECORD,,
