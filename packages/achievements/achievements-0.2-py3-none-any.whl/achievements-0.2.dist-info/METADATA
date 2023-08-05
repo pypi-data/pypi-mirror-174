@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: achievements
+Version: 0.2
+Summary: A lightweight achievements framework.
+Home-page: https://github.com/benmoran56/achievements
+Download-URL: https://github.com/benmoran56/achievements/releases
+Author: Benjamin Moran
+Author-email: benmoran@protonmail.com
+License: MIT
+Keywords: gamedev,game
+Platform: POSIX
+Platform: Windows
+Platform: MacOS X
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+# achievements
