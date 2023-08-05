@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tometrics
+Version: 0.0.5
+Summary: Simple metrics abstraction
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+
+# Python
+
+## Setup
+sudo pip3 install build twine
+sudo apt install python3.8-venv
+
+update setup.cfg version number
+run build.sh
+run upload.sh
