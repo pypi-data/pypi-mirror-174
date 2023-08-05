@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/gquote/__init__.py
+src/gquote/__main__.py
+src/gquote.egg-info/PKG-INFO
+src/gquote.egg-info/SOURCES.txt
+src/gquote.egg-info/dependency_links.txt
+src/gquote.egg-info/requires.txt
+src/gquote.egg-info/top_level.txt
+src/gquote.egg-info/zip-safe
+src/gquote/fonts/Barkentina.ttf
+src/gquote/fonts/Ubuntu-Italic.ttf
