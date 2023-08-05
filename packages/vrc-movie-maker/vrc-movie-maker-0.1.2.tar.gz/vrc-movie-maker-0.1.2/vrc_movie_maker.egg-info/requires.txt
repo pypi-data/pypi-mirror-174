@@ -1,0 +1,8 @@
+Jinja2>=2.11.3
+moviepy>=1.0.3
+selenium>=4.5.0
+webdriver-manager>=3.8.4
+source-converter>=0.1.8
+
+[develop]
+pytest
