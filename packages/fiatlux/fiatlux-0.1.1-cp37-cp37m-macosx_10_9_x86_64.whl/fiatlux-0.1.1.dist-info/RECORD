@@ -1,0 +1,12 @@
+fiatlux/__init__.py,sha256=DXkN_9uoMLsD61zG4kVNF8hkueO4ZJBfEDZSMLFSdn4,40
+fiatlux/_core.cpython-37m-darwin.so,sha256=2oH553fpIgWbfvOBt-DwD2bAY3UI5rAiw-viaIzrcSM,264816
+fiatlux/.dylibs/libgfortran.5.dylib,sha256=3Ad01JontRIRS2lbE80nSaPRYBh6l3EEOfUSnS4e0_Q,3451168
+fiatlux/.dylibs/libquadmath.0.dylib,sha256=ev4B_x-HOTQru8OXGdoIP45gQrUNxWSTfXlxKrbQVYI,386352
+fiatlux/.dylibs/libgcc_s.1.1.dylib,sha256=3_lkjuGFbbNcu95DzzL-fyxe7aGH0hHTdh6L2o6NsJI,186720
+fiatlux/share/fiatlux/CrossSectionsOnly_SplinesWithVariableKnots.dat,sha256=xeVi7EPz87p2eijchatQ9QlRKZca-CmRCcIH0f_rLB0,202494
+fiatlux/share/fiatlux/CrossSectionsAndPolarized_SplinesWithVariableKnots.dat,sha256=EluyuQ9mZA25v9YvW_oZ9Zn02qIRZF_wNXkltBOQZhc,269484
+fiatlux-0.1.1.dist-info/RECORD,,
+fiatlux-0.1.1.dist-info/LICENSE,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+fiatlux-0.1.1.dist-info/WHEEL,sha256=sd5G8C5L9cUJU7mNEjY9RR9vZrZR60rEUEQv38zw530,104
+fiatlux-0.1.1.dist-info/top_level.txt,sha256=vZLqQ5ySa_Ed3lm3WkalN3Nci9AVBFT6DKkHUGFs934,8
+fiatlux-0.1.1.dist-info/METADATA,sha256=FOKzc9an744DEKGxXY9ozYIc0eYcrgo320JeHaTs1KU,2757
