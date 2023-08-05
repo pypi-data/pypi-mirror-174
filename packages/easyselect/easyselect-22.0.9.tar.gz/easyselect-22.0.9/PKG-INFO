@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: easyselect
+Version: 22.0.9
+Summary: simple and pretty tool for selecting items by keyboard in terminal
+Project-URL: Homepage, https://github.com/gmankab/easyselect
+Project-URL: Bug Tracker, https://github.com/gmankab/easyselect/issues
+Project-URL: Documentation, https://github.com/gmankab/easyselect
+Author-email: gmanka <gmankab@gmail.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: rich
+Requires-Dist: windows-curses; platform_system == 'Windows'
+Description-Content-Type: text/markdown
+
+# easyselect by gmanka
+
+simple and pretty tool for selecting items by keyboard in terminal
+
+## navigation
+
+- [installation](#installation)
+- [usage](#usage)
+- [rich styles support](#rich-styles-support)
+- [long items list support](#long-items-list-support)
+- [page size](#page-size)
+- [supported buttons](#supported-buttons)
+
+### installation[^](#navigation)
+
+```sh
+pip install easyselect
+```
+
+### usage[^](#navigation)
+
+```py
+from easyselect import Sel
+
+yes_or_no = Sel(
+    items = [
+        'yes',
+        'no',
+    ]
+)
+
+answer = yes_or_no.choose()
+print(answer)
+```
+
+### rich styles support[^](#navigation)
+
+[documentation](https://rich.readthedocs.io/en/stable/style.html)
+
+```py
+yes_or_no = Sel(
+    items = [
+        'yes',
+        'no',
+    ],
+    styles = [
+        'green',
+        'red'
+    ]
+)
+```
+
+### long items list support[^](#navigation)
+
+```py
+nums = Sel(
+    items = list(range(50))
+)
+answer = nums.choose()
+print(answer)
+```
+
+### page size[^](#navigation)
+
+page_size arg allows to specify how much lines will be rendered on screen
+default value is 15
+
+```py
+nums = Sel(
+    items = list(range(50)),
+    page_size = 3
+)
+answer = nums.choose()
+print(answer)
+```
+
+### supported buttons[^](#navigation)
+
+- up, down, left, right
+- w, a, s, d
+- home, end
+- page up, page down
