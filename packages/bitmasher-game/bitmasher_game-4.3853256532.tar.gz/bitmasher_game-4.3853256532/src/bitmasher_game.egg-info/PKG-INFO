@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: bitmasher-game
+Version: 4.3853256532
+Summary: BitMasher, a text adventure game where you act as an antivirus attempting to rid a computer of a RANSOMWARE attack.
+Home-page: https://github.com/ona-li-toki-e-jan-Epiphany-tawa-mi/BitMasher
+Download-URL: https://github.com/ona-li-toki-e-jan-Epiphany-tawa-mi/BitMasher/releases
+Author: ona li toki e jan Epiphany tawa mi
+License: MIT
+Keywords: BitMasher,text-adventure-based game,cli,game,fast-paced,text-game
+Platform: Windows
+Platform: POSIX
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment :: Arcade
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+```text
+ ______  __________________ _______  _______  _______           _______  _______ 
+(  ___ \ \__   __/\__   __/(       )(  ___  )(  ____ \|\     /|(  ____ \(  ____ )
+| (   ) )   ) (      ) (   | () () || (   ) || (    \/| )   ( || (    \/| (    )|
+| (__/ /    | |      | |   | || || || (___) || (_____ | (___) || (__    | (____)|
+|  __ (     | |      | |   | |(_)| ||  ___  |(_____  )|  ___  ||  __)   |     __)
+| (  \ \    | |      | |   | |   | || (   ) |      ) || (   ) || (      | (\ (   
+| )___) )___) (___   | |   | )   ( || )   ( |/\____) || )   ( || (____/\| ) \ \__
+|/ \___/ \_______/   )_(   |/     \||/     \|\_______)|/     \|(_______/|/   \__/
+```
+
+# BitMasher
+
+BitMasher, a text adventure game where you act as an antivirus attempting to rid a computer of a RANSOMWARE attack.
+
+## Controls
+
+Each option you can select will be shown by a single character in paranthesis. Typing that character and hitting ENTER will select that option.
+
+## How to Play
+
+You are an antivirus trying to rid a computer of a RANSOMWARE before it takes over the system. There is a finite amount of time before the system is fully infected.
+
+In order to defeat it, you must find all items before you find the RANSOMWARE. If you do not, you will not be able to EXTRACT it and you will lose.
+
+Each system (room) contains an item, which you can move to; UP, DOWN, LEFT, AND RIGHT. Keep in mind that the map is NOT 2D; Moving RIGHT, UP, LEFT, and DOWN will lead to a different room than the one you started in. The map is "Spiky" so-to-speak.
+
+You have a SCANner to aid in figuring out which rooms contain items and which have RANSOMWARE. Using the SCANner will reveal what the surronding rooms contain, and the room you are currently in will be automatically SCANned for you. But beware: SCANning takes time. Also, occasionaly a SCAN will fail and need to be repeated.
+
+## Configuration
+
+There is a section at the top of the program file ([TextBasedGame.py](src/bitmasher_game/TextBasedGame.py "BitMasher program file")) containing configuration options. All config options bear a description detailing what they modify and what values they accept.
+
+## Installation
+
+BitMasher is avalible on PyPi, and can be installed by running the following command(s):
+
+```console
+pip install bitmasher_game
+```
+
+Alternatively, you can download the latest package from [Releases,](https://github.com/ona-li-toki-e-jan-Epiphany-tawa-mi/BitMasher/releases "BitMasher releases.") or build from source, and install it using the following command(s):
+
+```console
+pip install <package name goes here>
+```
+
+BitMasher can also be ran directly as a simple script without installation. See [How to Run](README.md#how-to-run "How to run section.")
+
+## How to run
+
+If installed, run the following command(s):
+
+```console
+bitmasher
+```
+
+BitMasher is, itself, a stand-alone script ([TextBasedGame.py](src/bitmasher_game/TextBasedGame.py "TextBasedGame.py")), and can be ran without installation by running one of the following command(s) in the project directory:
+
+```console
+python3 src/bitmasher_game/TextBasedGame.py
+./src/bitmasher_game/TextBasedGame.py
+```
+
+## How to build
+
+Run the following commands in the project directory:
+
+```console
+python3 -m build
+```
+
+The built packages will appear in [dist/.](dist "Distributables folder.")
+
+## Dependencies
+
+The only dependency is [Python 3.](https://www.python.org "Python homepage")
+
+## Links
+
+Demonstration:<br>
+https://www.youtube.com/watch?v=zxC5pLrn6N8
+# Change Log
+
+- Initial release ;)
+
+## [Unreleased]
+
+- Nothing...
+MIT License
+
+Copyright (c) 2022 ona-li-toki-e-jan-Epiphany-tawa-mi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

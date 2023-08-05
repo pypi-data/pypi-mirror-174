@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/bitmasher_game/TextBasedGame.py
+src/bitmasher_game/__init__.py
+src/bitmasher_game.egg-info/PKG-INFO
+src/bitmasher_game.egg-info/SOURCES.txt
+src/bitmasher_game.egg-info/dependency_links.txt
+src/bitmasher_game.egg-info/entry_points.txt
+src/bitmasher_game.egg-info/top_level.txt

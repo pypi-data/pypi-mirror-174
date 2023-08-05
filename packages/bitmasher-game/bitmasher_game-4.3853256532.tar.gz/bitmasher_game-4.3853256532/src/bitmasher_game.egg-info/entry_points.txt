@@ -1,0 +1,2 @@
+[console_scripts]
+bitmasher = bitmasher_game.TextBasedGame:main
