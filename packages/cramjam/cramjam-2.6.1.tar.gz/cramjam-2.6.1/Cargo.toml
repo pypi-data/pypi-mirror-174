@@ -1,0 +1,37 @@
+[package]
+name = "cramjam"
+version = "2.6.1"
+authors = ["Miles Granger <miles59923@gmail.com>"]
+edition = "2018"
+license-file = "LICENSE"
+description = "Thin Python bindings to de/compression algorithms in Rust"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = ["mimallocator", "extension-module"]
+mimallocator = ["mimalloc"]
+extension-module = ["pyo3/extension-module"]
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+opt-level = 3
+
+[dependencies]
+pyo3 = { version = "0.16", default-features = false, features = ["macros"] }
+snap = "^1"
+brotli = { version = "^3", default-features = false, features = ["std"] }
+bzip2 = "^0.4"
+lz4 = "^1"
+flate2 = "^1"
+zstd = "0.11.1+zstd.1.5.2"
+numpy = "0.16"
+
+[dependencies.mimalloc]
+version = "0.1.24"
+default-features = false
+optional = true
