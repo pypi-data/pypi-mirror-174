@@ -1,0 +1,23 @@
+{
+  "inbounds": {
+    "trojan_inboud": {
+      "protocol": "trojan",
+      "setting": {
+        "address": "0.0.0.0",
+        "port": 10800,
+        "tunnelAddress": "1",
+        "tunnelPort": 1,
+        "password": "abc"
+      },
+      "inStream": "ws",
+      "route": "freedom"
+    }
+  },
+  "routes": {
+    "freedom": {
+      "rules": [{
+        "outbound": ["freedom"]
+      }]
+    }
+  }
+}
