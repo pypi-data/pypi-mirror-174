@@ -1,0 +1,8 @@
+tech/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/plugin/ds/coco/__init__.py,sha256=eUxDFo36llXFFpaWeNFeicxuzulCCY2tRTRsvUYP1bM,2404
+byzer_cocodataset-0.1.0.dist-info/METADATA,sha256=T5RfyVe3yudTBu0Gwa8a4r6FodVaZRNmbzBF-W267AU,792
+byzer_cocodataset-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+byzer_cocodataset-0.1.0.dist-info/top_level.txt,sha256=wWIyTjCg-fGhEjOvcdurcjtSh-sAi8Sy4iEdDAIkIAU,5
+byzer_cocodataset-0.1.0.dist-info/RECORD,,
