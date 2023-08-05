@@ -1,0 +1,3 @@
+[console_scripts]
+super-glass-lsp=super_glass_lsp.main:main
+
