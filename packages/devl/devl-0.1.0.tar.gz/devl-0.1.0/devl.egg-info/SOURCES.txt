@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+devl/__init__.py
+devl/main.py
+devl.egg-info/PKG-INFO
+devl.egg-info/SOURCES.txt
+devl.egg-info/dependency_links.txt
+devl.egg-info/top_level.txt
