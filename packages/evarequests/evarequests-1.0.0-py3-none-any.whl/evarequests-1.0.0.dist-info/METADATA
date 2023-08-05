@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: evarequests
+Version: 1.0.0
+Summary: Asynchronous HTTP Client for Python.
+Home-page: https://github.com/shizhao-git/evarequests
+Author: shizhao
+Author-email: shizhao@mail.nwpu.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# EvaRequests
+
+**EvaRequests** is Asynchronous HTTP Client for Python.
+
+## Example Usage
+
+```python
+from evarequests import r, EvaRequests
+
+evaRequests = EvaRequests()
+
+
+def callback(future):
+    res = future.result()
+    print(res)
+
+
+r.get(url='http://www.baidu.com')
+evaRequests.get(callback, url='http://www.baidu.com')
+```
+
+## Installing EvaRequests
+
+EvaRequests is available on PyPI:
+
+```console
+$ python -m pip install evarequests
+```
+
+## API Reference
+
+EvaRequests is developed based on Requests, Requests API Reference and User Guide available on [Requests Docs](https://requests.readthedocs.io)
+
+
