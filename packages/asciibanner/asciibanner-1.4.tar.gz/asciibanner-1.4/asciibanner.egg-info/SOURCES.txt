@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+asciibanner/__init__.py
+asciibanner/arial.ttf
+asciibanner/asciibanner.py
+asciibanner.egg-info/PKG-INFO
+asciibanner.egg-info/SOURCES.txt
+asciibanner.egg-info/dependency_links.txt
+asciibanner.egg-info/requires.txt
+asciibanner.egg-info/top_level.txt
