@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+biblib/__init__.py
+biblib/algo.py
+biblib/bib.py
+biblib/messages.py
+biblib/test.py
+biblib_simple.egg-info/PKG-INFO
+biblib_simple.egg-info/SOURCES.txt
+biblib_simple.egg-info/dependency_links.txt
+biblib_simple.egg-info/top_level.txt
