@@ -1,0 +1,6 @@
+SQLAlchemy>=1.0
+six
+arrow
+
+[:python_version < "3.5"]
+typing
