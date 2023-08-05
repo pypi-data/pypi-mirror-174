@@ -1,0 +1,8 @@
+phenaki_pytorch/__init__.py,sha256=1jgMnYbv5h1liIYefZLuQhn7TpmxtsvYPAVjPR7qmm8,130
+phenaki_pytorch/phenaki_pytorch.py,sha256=AajC7rgs5IwSfyjpu27C0UcOsmCRU8szyaqPWINSxWI,35207
+phenaki_pytorch/t5.py,sha256=AbY_kMzsMCXw_DTopzJWHy9GZGqWWfr9DZr0nqJIO5A,2388
+phenaki_pytorch-0.0.9.dist-info/LICENSE,sha256=xZDkKtpHE2TPCAeqKe1fjdpKernl1YW-d01j_1ltkAU,1066
+phenaki_pytorch-0.0.9.dist-info/METADATA,sha256=aKJboo8VG3Dc35dOG6P1H1cE_MhRtcr5H30P-KR7cYw,833
+phenaki_pytorch-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+phenaki_pytorch-0.0.9.dist-info/top_level.txt,sha256=q8uC3AVdqbJiSqMii6p7c9RopdNDSe0291TphknrfQ0,16
+phenaki_pytorch-0.0.9.dist-info/RECORD,,
