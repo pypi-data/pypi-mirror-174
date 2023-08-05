@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bin/jack-alsa-ctl
+jack_alsa_ctl/__init__.py
+jack_alsa_ctl/_version.py
+jack_alsa_ctl/cli.py
+jack_alsa_ctl/lib.py
+jack_alsa_ctl.egg-info/PKG-INFO
+jack_alsa_ctl.egg-info/SOURCES.txt
+jack_alsa_ctl.egg-info/dependency_links.txt
+jack_alsa_ctl.egg-info/top_level.txt
+jack_alsa_ctl/completion/_jack-alsa-ctl
