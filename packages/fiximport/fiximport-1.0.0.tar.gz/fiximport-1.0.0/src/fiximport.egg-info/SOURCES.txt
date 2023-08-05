@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/fiximport/__init__.py
+src/fiximport/fiximport.py
+src/fiximport.egg-info/PKG-INFO
+src/fiximport.egg-info/SOURCES.txt
+src/fiximport.egg-info/dependency_links.txt
+src/fiximport.egg-info/requires.txt
+src/fiximport.egg-info/top_level.txt
+tests/test_fiximport.py
