@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pycounts_ugo"
+version = "0.1.0"
+description = "Calculate word counts in a text file !"
+authors = ["Ugochukwu Onyebuchi"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+matplotlib = "^3.6.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+jupyter = "^1.0.0"
+myst-nb = {version = "^0.17.1", python = "^3.9"}
+sphinx-autoapi = "^2.0.0"
+sphinx-rtd-theme = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
