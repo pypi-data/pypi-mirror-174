@@ -1,0 +1,2 @@
+[console_scripts]
+pypdm-db = builder:build
