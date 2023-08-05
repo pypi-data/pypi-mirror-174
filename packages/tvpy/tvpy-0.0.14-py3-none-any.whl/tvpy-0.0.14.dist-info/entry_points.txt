@@ -1,0 +1,10 @@
+[console_scripts]
+tv-down=tvpy.main:tv_down
+tv-html=tvpy.main:tv_html
+tv-info=tvpy.main:tv_info
+tv-json=tvpy.main:tv_json
+tv-klyn=tvpy.main:tv_klyn
+tv-renm=tvpy.main:tv_renm
+tv-subs=tvpy.main:tv_subs
+tvpy=tvpy.main:tvpy
+
