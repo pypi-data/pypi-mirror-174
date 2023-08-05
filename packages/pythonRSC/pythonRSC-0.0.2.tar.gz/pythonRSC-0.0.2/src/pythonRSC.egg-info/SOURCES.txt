@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyRSC/__init__.py
+src/pyRSC/example.py
+src/pyRSC/pyRSC.py
+src/pyRSC/pyRSC_assembler.py
+src/pyRSC/pyRSC_def.py
+src/pyRSC/pyRSC_mem.py
+src/pythonRSC.egg-info/PKG-INFO
+src/pythonRSC.egg-info/SOURCES.txt
+src/pythonRSC.egg-info/dependency_links.txt
+src/pythonRSC.egg-info/entry_points.txt
+src/pythonRSC.egg-info/top_level.txt
