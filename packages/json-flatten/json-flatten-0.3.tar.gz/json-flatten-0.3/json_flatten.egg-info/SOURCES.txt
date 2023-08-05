@@ -1,0 +1,8 @@
+README.md
+json_flatten.py
+setup.py
+json_flatten.egg-info/PKG-INFO
+json_flatten.egg-info/SOURCES.txt
+json_flatten.egg-info/dependency_links.txt
+json_flatten.egg-info/requires.txt
+json_flatten.egg-info/top_level.txt
