@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: liquidbase
+Version: 0.1.2
+Summary: 
+Author: Mikkel Vilstrup
+Author-email: mikkel@vilstrup.dk
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pympler (>=1.0.1,<2.0.0)
+Requires-Dist: SQLAlchemy (>=1.4.42,<2.0.0)
+Requires-Dist: asciitree (>=0.3.3,<0.4.0)
+Requires-Dist: dill (>=0.3.6,<0.4.0)
+Requires-Dist: numpy (>=1.23.4,<2.0.0)
+Requires-Dist: orjson (>=3.8.1,<4.0.0)
+Requires-Dist: pandas (>=1.5.1,<2.0.0)
