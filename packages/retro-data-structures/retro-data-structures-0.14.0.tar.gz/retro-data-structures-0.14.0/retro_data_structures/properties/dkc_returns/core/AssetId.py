@@ -1,0 +1,1 @@
+AssetId = int
