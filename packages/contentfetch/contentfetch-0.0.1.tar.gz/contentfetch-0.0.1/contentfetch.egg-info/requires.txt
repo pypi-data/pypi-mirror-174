@@ -1,0 +1,6 @@
+beautifulsoup4
+news-please
+newspaper3k
+pandas
+requests
+selenium
