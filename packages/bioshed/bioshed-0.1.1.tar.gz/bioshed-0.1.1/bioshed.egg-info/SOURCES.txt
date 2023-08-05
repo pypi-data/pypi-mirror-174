@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+bioshed.egg-info/PKG-INFO
+bioshed.egg-info/SOURCES.txt
+bioshed.egg-info/dependency_links.txt
+bioshed.egg-info/entry_points.txt
+bioshed.egg-info/requires.txt
+bioshed.egg-info/top_level.txt
