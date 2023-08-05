@@ -1,0 +1,4 @@
+include configs/lrw_snv05x_tcn1x.json
+include labels/5WordsSortedList.txt
+include models/lrw_snv05x_tcn1x.pth
+
