@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: perceptron-linear-classifier
+Version: 0.0.2
+Summary: A basic Perceptron Linear Classifier algorithm
+Author: Prabhav Khera
+Author-email: prabhavkhera@hotmail.com
+Keywords: python,perceptron,linear classifier,classifier
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+
+# Perceptron-Linear-Classifier
+A Python library to implement the perceptron algorithm and possibly visualize it. 
+
+## Usage
+
+## Examples of How To Use 
+
+Creating An Object
+
+```python
+from perceptron_linear_classifier import Perceptron
+
+perceptron = Perceptron(data=data_train, labels=labels_train, data_test=data_test, labels_test=labels_test)
+
+# train the perceptron classifier to find the respective values of theta and theta_0
+perceptron.fit()
+
+# returns the score for the perceptron classifier
+perceptron.eval_classifier()
+
+# perform 1 step of the perceptron classifier to check if the value of theta and theta0 changes
+perceptron.singleStep()
+
+# perform 1 iteration of passing the entire data to the classifier 
+perceptron.singleIteration()
+```
+
+## Contributing
+
+Please read the CONTRIBUTIN.md file for more information about it. 
+
+## Issues
+
+Report to Prabhav Khera. 
