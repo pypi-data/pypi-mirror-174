@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+ji_auth/__init__.py
+ji_auth/__main__.py
+ji_auth/canvas.py
+ji_auth/joj.py
+ji_auth/login.py
+ji_auth.egg-info/PKG-INFO
+ji_auth.egg-info/SOURCES.txt
+ji_auth.egg-info/dependency_links.txt
+ji_auth.egg-info/entry_points.txt
+ji_auth.egg-info/requires.txt
+ji_auth.egg-info/top_level.txt
