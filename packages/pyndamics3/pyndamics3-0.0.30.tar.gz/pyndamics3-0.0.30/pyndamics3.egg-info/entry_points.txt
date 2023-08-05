@@ -1,0 +1,2 @@
+[nbdev]
+pyndamics3 = pyndamics3._modidx:d
