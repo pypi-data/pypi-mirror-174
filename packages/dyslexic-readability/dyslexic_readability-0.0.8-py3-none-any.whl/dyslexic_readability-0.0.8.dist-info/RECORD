@@ -1,0 +1,12 @@
+dyslexic_readability/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dyslexic_readability/dyslexic_scores.py,sha256=3GIxas8iw9H-0sklo7Hs2nhsZIpxEpaKd8W-uaPIWz8,7978
+dyslexic_readability/example.py,sha256=e8ri2iS8DCN8fMuGkCCWcFukW1k3M5_EiLohitWN0Jg,2689
+dyslexic_readability/readability_scores.py,sha256=lGmI-EDAB8uPKwfOxBdVjo6PRrrGdbU2F1qhYh_CSzw,3907
+dyslexic_readability/utils.py,sha256=d2wB7hE9VddYZrKaJaiX48Mf1A4FUDPYs3c9yeIzCVs,1135
+dyslexic_readability/syllable/__init__.py,sha256=ddoA1a0mAbIW5oVE9IArHmgj97cBXtOneVvuXfGhHl8,31
+dyslexic_readability/syllable/syllable.py,sha256=oIMSXo0khGsEXlUrDS4SLTJT03apQYelCDCv3oylOjs,6406
+dyslexic_readability-0.0.8.dist-info/LICENSE,sha256=HDbMJ7oItmxTn3jVtZFi6jUFAHovset5jzAPUderjOc,1073
+dyslexic_readability-0.0.8.dist-info/METADATA,sha256=7fq4i4WoXlNvMi5kebLQyhDtLHIaEnF0tEfVP2D_hKs,2929
+dyslexic_readability-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dyslexic_readability-0.0.8.dist-info/top_level.txt,sha256=2Xc1rdf6ADNgE-1BxnOj-jg0o7ObH1e7u-sBbps11ns,21
+dyslexic_readability-0.0.8.dist-info/RECORD,,
