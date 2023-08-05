@@ -1,0 +1,14 @@
+hagi/__init__.py,sha256=fpMsK-YiSA7nq8G9FVBtiYhn-L6YR8UFPjY_DiNcDs8,103
+hagi/_version.py,sha256=REVKpzwVuFn6P6Tz3YLc89LvGNG1k42JofRD6DBaJEA,100
+hagi/cmd.py,sha256=pBSX8tJAGZX4FZHqnMLEdsrM8C4jiOTVJrsS92LcwwA,703
+hagi/context.py,sha256=_8Q5jcHSvVjhWyG1n8dG7rfUo5aXC1a1xl2W--QFJwE,3247
+hagi/process.py,sha256=lkbhQRGzK9mSOqY3MkWn-A2vOlgwdT8qbcxvUij95Z4,11483
+hagi/program.py,sha256=HkXz7XEVjLysc1ksSR3ARDxBi7t1DFzszQUiLtaTU_4,2739
+hagi/task.py,sha256=__7z7NZ9z1flAtjydch-V2SbMTdYJJYszbgMWwB_RTs,2278
+hagi/watcher.py,sha256=7Mu0lJPBBA__cRR9kS4Ix9-4C35dBV9d8rJBxDNh4Jk,1595
+hagi-0.0.3.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+hagi-0.0.3.dist-info/METADATA,sha256=H56FirV88Vtx_YIa7lu8cZiPMq8b9mQcYRZbRwo8jHI,983
+hagi-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hagi-0.0.3.dist-info/entry_points.txt,sha256=_YKlbk570VgAAO6aMkPVoD06YApwkTjQoergSJtnA50,39
+hagi-0.0.3.dist-info/top_level.txt,sha256=eIepjz8BPXvNCzby0Dk375k8Szg1HXwNSnQTVkGYGvs,5
+hagi-0.0.3.dist-info/RECORD,,

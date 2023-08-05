@@ -1,0 +1,2 @@
+[console_scripts]
+hagi = hagi.cmd:main
