@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: daggerml-cli
+Version: 0.0.1
+Summary: DaggerML command line tool
+Author-email: DaggerML <engineering@daggerml.com>
+Project-URL: Homepage, https://daggerml.com
+Project-URL: Documentation, https://daggerml.com/docs
+Project-URL: Issues, https://github.com/daggerml/daggerml-cli/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# DaggerML Command Line Tool
