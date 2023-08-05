@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+ClassA/__init__.py
+ClassA/claseA.py
+Test_Pypi_GYW.egg-info/PKG-INFO
+Test_Pypi_GYW.egg-info/SOURCES.txt
+Test_Pypi_GYW.egg-info/dependency_links.txt
+Test_Pypi_GYW.egg-info/top_level.txt
+classA/class.txt
