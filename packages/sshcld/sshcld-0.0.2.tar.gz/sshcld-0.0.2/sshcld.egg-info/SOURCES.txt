@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sshcld/__init__.py
+sshcld/cli.py
+sshcld/errors.py
+sshcld/sshcld.yaml
+sshcld.egg-info/PKG-INFO
+sshcld.egg-info/SOURCES.txt
+sshcld.egg-info/dependency_links.txt
+sshcld.egg-info/entry_points.txt
+sshcld.egg-info/not-zip-safe
+sshcld.egg-info/requires.txt
+sshcld.egg-info/top_level.txt
+sshcld/plugins/__init__.py
+sshcld/plugins/aws.py
