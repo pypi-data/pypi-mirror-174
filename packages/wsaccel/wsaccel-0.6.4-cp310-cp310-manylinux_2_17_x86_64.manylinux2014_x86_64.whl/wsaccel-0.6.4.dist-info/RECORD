@@ -1,0 +1,8 @@
+wsaccel-0.6.4.dist-info/WHEEL,sha256=AENPUwuTc6qB95Mrn5JB5boXegWw6oDhuwuuX0q_ONg,152
+wsaccel-0.6.4.dist-info/RECORD,,
+wsaccel-0.6.4.dist-info/LICENSE,sha256=tpgpdMuDi5hbVLZj0XgNKAc1CGJJwuKAFfJd1FXfJdo,583
+wsaccel-0.6.4.dist-info/top_level.txt,sha256=7BkPoar4LKAb4h_MpAS6OCzTwGLwrfHPzoeE7tffpsw,8
+wsaccel-0.6.4.dist-info/METADATA,sha256=yBvs5HK_dmWJ16hLstXs3gS_u19NChgh2X1wyylHEno,1695
+wsaccel/__init__.py,sha256=ivdjJjleJgLKimKXwYEoya6Y0MqQeKIr49S6w2Kjd4k,854
+wsaccel/utf8validator.cpython-310-x86_64-linux-gnu.so,sha256=2bytwbB8p86Gs-BUdgWrrMiuEOWTmdT8GZN1XV_GvNE,1337568
+wsaccel/xormask.cpython-310-x86_64-linux-gnu.so,sha256=RLP7U5SRTHkHD4qEwiiEdFXvArpYbUn7FIFAwihCt0E,1403520
