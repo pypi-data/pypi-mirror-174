@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+setup.py
+mplshared/__init__.py
+mplshared/geometry.py
+mplshared/slopes.py
+mplshared/step.py
+mplshared.egg-info/PKG-INFO
+mplshared.egg-info/SOURCES.txt
+mplshared.egg-info/dependency_links.txt
+mplshared.egg-info/requires.txt
+mplshared.egg-info/top_level.txt
+tests/__init__.py
+tests/test_geometry.py
+tests/test_slopes.py
+tests/test_step.py
