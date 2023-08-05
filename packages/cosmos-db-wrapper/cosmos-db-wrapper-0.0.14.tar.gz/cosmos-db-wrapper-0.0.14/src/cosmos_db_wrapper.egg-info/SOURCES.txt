@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cosmos_db_wrapper/__init__.py
+src/cosmos_db_wrapper/aio.py
+src/cosmos_db_wrapper/io.py
+src/cosmos_db_wrapper.egg-info/PKG-INFO
+src/cosmos_db_wrapper.egg-info/SOURCES.txt
+src/cosmos_db_wrapper.egg-info/dependency_links.txt
+src/cosmos_db_wrapper.egg-info/top_level.txt
