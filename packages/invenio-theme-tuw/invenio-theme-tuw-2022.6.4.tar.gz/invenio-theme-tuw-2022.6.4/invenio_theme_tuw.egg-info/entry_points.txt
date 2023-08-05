@@ -1,0 +1,14 @@
+[invenio_assets.webpack]
+invenio_theme_tuw_theme = invenio_theme_tuw.webpack:theme
+
+[invenio_base.api_blueprints]
+invenio_theme_tuw_hacks = invenio_theme_tuw.startup:blueprint
+
+[invenio_base.apps]
+invenio_theme_tuw = invenio_theme_tuw:InvenioThemeTUW
+
+[invenio_base.blueprints]
+invenio_theme_tuw_hacks = invenio_theme_tuw.startup:blueprint
+
+[invenio_config.module]
+invenio_theme_tuw = invenio_theme_tuw.config
