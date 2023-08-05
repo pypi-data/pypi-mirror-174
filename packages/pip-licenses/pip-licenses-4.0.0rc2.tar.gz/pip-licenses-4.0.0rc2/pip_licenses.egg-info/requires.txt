@@ -1,0 +1,7 @@
+prettytable
+
+[test]
+docutils
+pytest-cov
+pytest-pycodestyle
+pytest-runner
