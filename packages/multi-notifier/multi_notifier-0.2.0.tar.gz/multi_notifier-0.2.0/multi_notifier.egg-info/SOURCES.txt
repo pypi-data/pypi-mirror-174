@@ -1,0 +1,16 @@
+LICENSE
+setup.py
+multi_notifier/__init__.py
+multi_notifier/__version__.py
+multi_notifier/exceptions.py
+multi_notifier/send_handler.py
+multi_notifier.egg-info/PKG-INFO
+multi_notifier.egg-info/SOURCES.txt
+multi_notifier.egg-info/dependency_links.txt
+multi_notifier.egg-info/requires.txt
+multi_notifier.egg-info/top_level.txt
+multi_notifier/connectors/__init__.py
+multi_notifier/connectors/connector_mail.py
+multi_notifier/connectors/connector_telegram.py
+multi_notifier/connectors/exceptions.py
+multi_notifier/connectors/interface.py
