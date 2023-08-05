@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: streamlit-scrollable-textbox
+Version: 0.0.1
+Summary: Scrollable textbox for Streamlit.
+Home-page: UNKNOWN
+Author: Roberto Frias Nerio
+Author-email: robertofnerio@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
