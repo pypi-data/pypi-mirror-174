@@ -1,0 +1,2 @@
+[console_scripts]
+sshcld = sshcld.cli:show_instances
