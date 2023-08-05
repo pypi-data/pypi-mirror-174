@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; GDAPS  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Usage" href="usage.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> GDAPS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#url-handling">URL handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#logging">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frontend-support">Frontend support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#frontend-dir"><code class="docutils literal notranslate"><span class="pre">FRONTEND_DIR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#frontend-engine"><code class="docutils literal notranslate"><span class="pre">FRONTEND_ENGINE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#frontend-pkg-manager"><code class="docutils literal notranslate"><span class="pre">FRONTEND_PKG_MANAGER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-title"><code class="docutils literal notranslate"><span class="pre">PROJECT_TITLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#admin"><code class="docutils literal notranslate"><span class="pre">ADMIN</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#final-step">Final step</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">GDAPS template support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APIs.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GDAPS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
+<p>Install GDAPS in your Python virtual environment. If you want to create plugins, install cookiecutter too.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install gdaps cookiecutter
+</pre></div>
+</div>
+<p>Create a Django application as usual: <code class="docutils literal notranslate"><span class="pre">django-admin</span> <span class="pre">startproject</span> <span class="pre">myproject</span></code>.</p>
+<p>First, set a variable named <code class="docutils literal notranslate"><span class="pre">PROJECT_NAME</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PROJECT_NAME</span> <span class="o">=</span> <span class="s2">&quot;myproject&quot;</span>
+</pre></div>
+</div>
+<p>This is a (machine) name for your project. Django itself does not provide such a name. It will be used in various places. Must be a valid python identifier.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">PROJECT_NAME</span></code> is roughly what Django means with <code class="docutils literal notranslate"><span class="pre">ROOT_URLCONF[0]</span></code>, but GDAPS requires it to be set explicitly.</p>
+</div>
+<p>Now add “gdaps” to the <code class="docutils literal notranslate"><span class="pre">INSTALLED_APPS</span></code> section, and add a special line below it:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">gdaps.pluginmanager</span> <span class="kn">import</span> <span class="n">PluginManager</span>
+
+<span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># ... standard Django apps and GDAPS</span>
+    <span class="s2">&quot;gdaps&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="c1"># The following line is important: It loads all plugins from setuptools</span>
+<span class="c1"># entry points and from the directory named &#39;myproject.plugins&#39;:</span>
+<span class="n">INSTALLED_APPS</span> <span class="o">+=</span> <span class="n">PluginManager</span><span class="o">.</span><span class="n">find_plugins</span><span class="p">(</span><span class="n">PROJECT_NAME</span> <span class="o">+</span> <span class="s2">&quot;.plugins&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can use whatever you want for your plugin path, but we recommend that you use “<strong>&lt;PROJECT_NAME&gt;.plugins</strong>” here to make things easier. Basically, this is all you really need so far, for a minimal working GDAPS-enabled Django application. See <a class="reference internal" href="usage.html"><span class="doc">Usage</span></a> for how to use GDAPS.</p>
+<section id="url-handling">
+<h2>URL handling<a class="headerlink" href="#url-handling" title="Permalink to this heading"></a></h2>
+<p>Now add the URL path for GDAPS, so it can add plugins’ URLs automatically to the global urlpattern.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># urls.py</span>
+<span class="kn">from</span> <span class="nn">gdaps.pluginmanager</span> <span class="kn">import</span> <span class="n">PluginManager</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">PluginManager</span><span class="o">.</span><span class="n">urlpatterns</span><span class="p">()</span> <span class="o">+</span> <span class="p">[</span>
+    <span class="c1"># ... add your fixed URL patterns here, like &quot;admin/&quot;, etc.</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>This way each plugin can have an <cite>urlpatterns</cite> variable in <cite>urls.py</cite>, and all are merged together. However, by now, the plugin order is not determined, so urlpatterns too are not in a deterministically determined order. This could lead to problems, depending on your application design, so keep that in mind when designing plugins.</p>
+</section>
+<section id="logging">
+<h2>Logging<a class="headerlink" href="#logging" title="Permalink to this heading"></a></h2>
+<p>Django does not write loggings to the command line automatically. GDAPS uses various levels of logging. It is recommended that you create a LOGGING section in settings.py for GDAPS:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">LOGGING</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;disable_existing_loggers&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">&quot;handlers&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;logging.StreamHandler&quot;</span><span class="p">}},</span>
+    <span class="s2">&quot;loggers&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;gdaps&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;handlers&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;console&quot;</span><span class="p">],</span> <span class="s2">&quot;level&quot;</span><span class="p">:</span> <span class="s2">&quot;INFO&quot;</span><span class="p">,</span> <span class="s2">&quot;propagate&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This will output all GDAPS log messages to the console.</p>
+</section>
+<section id="frontend-support">
+<h2>Frontend support<a class="headerlink" href="#frontend-support" title="Permalink to this heading"></a></h2>
+<p>If you want to add frontend support to your project, you need to add <code class="docutils literal notranslate"><span class="pre">gdaps.frontend</span></code> (before  <code class="docutils literal notranslate"><span class="pre">gdaps</span></code>!), and <code class="docutils literal notranslate"><span class="pre">webpack_loader</span></code> to Django.</p>
+<p>Frontend engines are packed in plugin eggs. You can easily install them using pip, e.g.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install gdaps-frontend-vue
+</pre></div>
+</div>
+<p>Then you have to tell Django which engine to use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">GDAPS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;FRONTEND_ENGINE&quot;</span><span class="p">:</span> <span class="s2">&quot;vue&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Further configuration may be necessary depending on your frontend plugin.
+Available plugins ATM:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://gdaps-frontend-vue.readthedocs.io">Vue</a></p></li>
+<li><p>PySide (currently only stub)</p></li>
+</ul>
+<p>There are some keys in this section to configure:</p>
+<section id="frontend-dir">
+<h3><code class="docutils literal notranslate"><span class="pre">FRONTEND_DIR</span></code><a class="headerlink" href="#frontend-dir" title="Permalink to this heading"></a></h3>
+<p>This is the directory for the frontend, relative to DJANGO_ROOT.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">frontend</span></code></p>
+</section>
+<section id="frontend-engine">
+<h3><code class="docutils literal notranslate"><span class="pre">FRONTEND_ENGINE</span></code><a class="headerlink" href="#frontend-engine" title="Permalink to this heading"></a></h3>
+<p>The engine which is used for setting up a frontend. ATM it can only be “vue”. In future, maybe other engines are supported (Angular, React, etc.). PRs welcome.</p>
+</section>
+<section id="frontend-pkg-manager">
+<h3><code class="docutils literal notranslate"><span class="pre">FRONTEND_PKG_MANAGER</span></code><a class="headerlink" href="#frontend-pkg-manager" title="Permalink to this heading"></a></h3>
+<p>This is the package manager used to init/install packages. It depends on your frontend which are available.</p>
+</section>
+<section id="project-title">
+<h3><code class="docutils literal notranslate"><span class="pre">PROJECT_TITLE</span></code><a class="headerlink" href="#project-title" title="Permalink to this heading"></a></h3>
+<p>A title for your project. If left empty, PROJECT_NAME is taken (without hyphens/underlines and capitalized).</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">PROJECT_NAME</span></code>, without underlines and capitalized.</p>
+</section>
+<section id="admin">
+<h3><code class="docutils literal notranslate"><span class="pre">ADMIN</span></code><a class="headerlink" href="#admin" title="Permalink to this heading"></a></h3>
+<p>True if your app should add the GDAPS specific parts to the Django admin panel. You can e.g. see the installed plugins there.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">True</span></code></p>
+</section>
+</section>
+<section id="final-step">
+<h2>Final step<a class="headerlink" href="#final-step" title="Permalink to this heading"></a></h2>
+<p>Now you can initialize the frontend with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./manage.py initfrontend
+</pre></div>
+</div>
+<p>This creates a basic boilerplate frontend, depending on which engine is installed.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019-2021, Christian González.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
