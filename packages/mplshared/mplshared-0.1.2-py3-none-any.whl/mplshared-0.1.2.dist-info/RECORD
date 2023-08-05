@@ -1,0 +1,13 @@
+mplshared/__init__.py,sha256=yO1nQhPa1yVjW84I8loSJpj98CwWBx19mDoD4spk6_U,89
+mplshared/geometry.py,sha256=AUGjhm3fi-mZK-hrDmk8S-Qu1cLVAasBGZXLr7vcp_U,6093
+mplshared/slopes.py,sha256=KKmORb0pXncLhmUz_mOSKP8j2atGf4QSBzsc3p662-8,1824
+mplshared/step.py,sha256=1K-RqIIyDv7-FIveuB0COkrq2t1XrNh_FCfFnb15XLY,5813
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_geometry.py,sha256=GZUOxyT_uNGRtdFvw4S5LVjgrpm6Kewd6eZCoyisEek,2454
+tests/test_slopes.py,sha256=edv3HBZEVDORwR2BaC11mObHw7nL7telMV_ePjZMmlw,1732
+tests/test_step.py,sha256=pb3AzmQrOH6qXfsk39yXZM8m-V-6siNgYDJZhKbrAmk,2097
+mplshared-0.1.2.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+mplshared-0.1.2.dist-info/METADATA,sha256=A4QbeiRK2hYFQznaTxBqSxfc5Lip7t0jhfaiOg6xCnE,2226
+mplshared-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mplshared-0.1.2.dist-info/top_level.txt,sha256=BfySGQ75bZ86msxSWW-lcQzRvsQb27nQO0vk1Em88PU,16
+mplshared-0.1.2.dist-info/RECORD,,
