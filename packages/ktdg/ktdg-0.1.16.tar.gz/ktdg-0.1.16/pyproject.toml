@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "ktdg"
+version = "0.1.16"
+description = "Library to simulate knowledge tracing datasets"
+authors = ["Antoine Lefebvre-Brossard <antoinelb@protonmail.com>"]
+homepage = "https://gitlab.com/antoinelb/ktdg"
+repository = "https://gitlab.com/antoinelb/ktdg"
+readme = "README.md"
+keywords = ["knowledge-tracing", "research", "synthetic-data"]
+packages = [
+  { include = "ktdg", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.23.0"
+pydantic = "^1.9.1"
+"ruamel.yaml" = "^0.17.21"
+typer = "^0.6.1"
+tqdm = "^4.64.0"
+
+[tool.poetry.dev-dependencies]
+bandit = "*"
+black = "*"
+flake8 = "*"
+flake8-annotations = "*"
+flake8-blind-except = "*"
+flake8-bugbear = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+pytest-rerunfailures = "*"
+
+[tool.poetry.scripts]
+ktdg = "ktdg.cli:run_cli"
+
+[tool.black]
+line_length = 79
+target-version = ['py310']
+
+[tool.coverage.paths]
+source = ["src"]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.isort]
+profile = "black"
+src_paths = ["src", "tests"]
+honor_noqa = true
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+  "ignore::DeprecationWarning",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
