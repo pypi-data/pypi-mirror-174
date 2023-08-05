@@ -1,0 +1,14 @@
+pyndamics3/__init__.py,sha256=hCoP8XTj6KN3zYzqQJ0qXbalxsNPCAvjpIEjXp87Y8Q,84
+pyndamics3/_modidx.py,sha256=K_YHbC4KXjT6OTOYMQAew8j5YtQJ3jxX2kUtBjTv_AA,25878
+pyndamics3/_nbdev.py,sha256=apXQOL7hRzAtrruh3ygja69qqoZ6WJWWV__nIe0hM_A,2927
+pyndamics3/chem.py,sha256=pJTQkIX2BimcZGWveSZeo6CEbH8lSxLgAjzV9kk-Yyk,2335
+pyndamics3/core.py,sha256=YUprrF5Fz0B_6FEDwi5dEVQh7csO_UcECyd27d-PJkI,62507
+pyndamics3/fit.py,sha256=JL-JSLdkl4-FugkGX7l9Ep8RiR9Zc85IJRaV3oc8Xa0,2723
+pyndamics3/mcmc.py,sha256=nLsAw4Su-y8FgYPJxaOlCg5M19E_XQZuFtQw1BXb3aU,31041
+pyndamics3/testit.py,sha256=gSwCaK90aLrOqbrNTxdYq6cSQEK2krzYTTVOLavfvt8,203
+pyndamics3-0.0.30.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyndamics3-0.0.30.dist-info/METADATA,sha256=NApZx7qSlKl4zIGjmhQizbkCPVk5A_3j5q85-y-fGPI,1508
+pyndamics3-0.0.30.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyndamics3-0.0.30.dist-info/entry_points.txt,sha256=GuKBBwpUMUTjNpZkQ68zumaJjoAACBLCuT1bFAy14qY,42
+pyndamics3-0.0.30.dist-info/top_level.txt,sha256=0hSo8qFkiD0y0kAOkv7wAYdCFYYkUjSpm3jX5hg3yKU,11
+pyndamics3-0.0.30.dist-info/RECORD,,
