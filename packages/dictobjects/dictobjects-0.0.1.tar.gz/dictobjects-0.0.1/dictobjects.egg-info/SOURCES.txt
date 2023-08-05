@@ -1,0 +1,7 @@
+setup.py
+dictobjects/__init__.py
+dictobjects.egg-info/PKG-INFO
+dictobjects.egg-info/SOURCES.txt
+dictobjects.egg-info/dependency_links.txt
+dictobjects.egg-info/requires.txt
+dictobjects.egg-info/top_level.txt

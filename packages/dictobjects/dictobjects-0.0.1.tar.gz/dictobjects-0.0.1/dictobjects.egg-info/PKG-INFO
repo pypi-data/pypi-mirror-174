@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dictobjects
+Version: 0.0.1
+Summary: Convert dictionaries to objects 
+Home-page: UNKNOWN
+Author: DimJimm
+Author-email: <appleneticyt@gmail.com>
+License: UNKNOWN
+Keywords: python,dict,dictionary,obj,objects,object,dictionaries,dicts,convert,conversion,attributes,keys,values
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that converts a dictionaries to python objects with the keys as attributes.
+
