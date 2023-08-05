@@ -1,0 +1,2 @@
+[console_scripts]
+verifier_sujet = verifier_sujet:main

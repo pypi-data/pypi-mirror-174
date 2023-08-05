@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/qa_e_nsi.egg-info/PKG-INFO
+src/qa_e_nsi.egg-info/SOURCES.txt
+src/qa_e_nsi.egg-info/dependency_links.txt
+src/qa_e_nsi.egg-info/entry_points.txt
+src/qa_e_nsi.egg-info/top_level.txt
+src/verifier_sujet/__init__.py
+src/verifier_sujet/__main__.py
