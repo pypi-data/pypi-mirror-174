@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: scrounter
+Version: 1.0.8
+Summary: Count your project lines easily!
+Home-page: https://github.com/Blackoutseeker/Felips-Counter-Python
+Author: Blackoutseeker (Felipe Pereira)
+Author-email: felipsdev@gmail.com
+Keywords: felips,counter
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Felips-Counter
+
+### Count your project lines easily!
