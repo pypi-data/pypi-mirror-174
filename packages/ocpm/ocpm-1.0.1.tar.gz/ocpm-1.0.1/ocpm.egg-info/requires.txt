@@ -1,0 +1,6 @@
+setuptools
+hypy_utils
+ruamel.yaml
+requests
+tqdm
+packaging

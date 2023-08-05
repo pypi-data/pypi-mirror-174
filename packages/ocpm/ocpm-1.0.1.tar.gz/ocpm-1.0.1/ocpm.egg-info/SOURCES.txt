@@ -1,0 +1,17 @@
+.gitignore
+MANIFEST.in
+README.md
+debug.py
+deploy.sh
+setup.py
+ocpm/__init__.py
+ocpm/interaction.py
+ocpm/main.py
+ocpm/models.py
+ocpm.egg-info/PKG-INFO
+ocpm.egg-info/SOURCES.txt
+ocpm.egg-info/dependency_links.txt
+ocpm.egg-info/entry_points.txt
+ocpm.egg-info/requires.txt
+ocpm.egg-info/top_level.txt
+ocpm/data/OCKextRepos.yml
