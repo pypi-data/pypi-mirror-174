@@ -1,0 +1,9 @@
+pymatching/__init__.py,sha256=gfFYDmgWH5NQvWVeiyXbchRNCeSpkSNzAp08POqZD1w,773
+pymatching/_cpp_pymatching.cpython-311-darwin.so,sha256=aM8vuS8BpQIOPwmj76JFR6PSJkVLi52DKjWiF0vchuc,1885880
+pymatching/_version.py,sha256=IlBagrxyjr0w7rSrj4S9PV6lOK9byTEDzmsNs0tMbdg,43
+pymatching/matching.py,sha256=sYWmWFWlDeUsQcWM3laLjaqxQ--ui91sQM_3XRFTJOY,79167
+PyMatching-2.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+PyMatching-2.0.1.dist-info/METADATA,sha256=-Bnl1_iUBLviXYbWCIz8W6dleUp_d_fGsPmjzt4YyIs,14956
+PyMatching-2.0.1.dist-info/WHEEL,sha256=xerKGduXbvjUZQo96fysMq1k5Tt3LYrJ3lYbZjl_1aQ,116
+PyMatching-2.0.1.dist-info/top_level.txt,sha256=Bwoj_tdrVKgNF3MVQ1IdXkFwSRIXkVHiNDk3dGKbTWI,11
+PyMatching-2.0.1.dist-info/RECORD,,
