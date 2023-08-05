@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+hdr_random/__init__.py
+hdr_random/_modidx.py
+hdr_random/core.py
+hdr_random.egg-info/PKG-INFO
+hdr_random.egg-info/SOURCES.txt
+hdr_random.egg-info/dependency_links.txt
+hdr_random.egg-info/entry_points.txt
+hdr_random.egg-info/not-zip-safe
+hdr_random.egg-info/requires.txt
+hdr_random.egg-info/top_level.txt
