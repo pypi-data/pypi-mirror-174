@@ -1,0 +1,4 @@
+[console_scripts]
+di = doubaninfo.main:main
+doubaninfo = doubaninfo.main:main
+
