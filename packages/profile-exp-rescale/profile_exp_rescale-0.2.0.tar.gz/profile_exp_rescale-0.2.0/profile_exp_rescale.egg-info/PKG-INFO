@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: profile-exp-rescale
+Version: 0.2.0
+Home-page: https://github.com/wingechr/profile-exp-rescale
+Author: Christian Winger
+Author-email: c@wingechr.de
+License: Public Domain
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+License-File: LICENSE
