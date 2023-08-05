@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: python3-captchaai
+Version: 0.0.3
+Summary: Python 3.6+ CaptchaAI library with AIO module.
+Home-page: https://github.com/AndreiDrang/python3-captchaai.git
+Author: AndreiDrang
+Author-email: python-captcha@pm.me
+License: MIT
+Keywords: captcha
+				2captcha
+				recaptcha
+				geetest
+				hcaptcha
+				capypuzzle
+				tiktok
+				rotatecaptcha
+				funcaptcha
+				keycaptcha
+				python3
+				recaptcha
+				captcha
+				security
+				tiktok
+				python-library
+				captcha.ai
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: AsyncIO
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: aiohttp (>=3.7.4)
+Requires-Dist: pydantic (==1.*)
+Requires-Dist: tenacity (==8.*)
+
+
+# python3-captchaai
+
+[![PyPI version](https://badge.fury.io/py/python3-captchaai.svg)](https://badge.fury.io/py/python3-captchaai)
+[![Python versions](https://img.shields.io/pypi/pyversions/python3-captchaai.svg?logo=python&logoColor=FBE072)](https://badge.fury.io/py/python3-captchaai)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3431fd3fe71baf7eb9da/maintainability)](https://codeclimate.com/github/AndreiDrang/python3-captchaai/maintainability)
+
+The library is intended for software developers and serves to facilitate work with the CaptchaAI service API.
+
+***
+If you have any questions, please write to [Telegram](https://t.me/pythoncaptcha) chat. 
+Or to [email](python-captcha@pm.me).
+
+## How to install?
+
+### pip
+
+```bash
+pip install python3-captchaai
+```
+
+### Source
+```bash
+git clone https://github.com/AndreiDrang/python3-captchaai.git
+cd python3-captchaai
+python setup.py install
+```
+
+### Changelog
+
+v.0.0.1 - First release with basic methods and logic.
+
+***
+
+### Additional info
+1. [All examples of working with the library](src/examples)
+2. [CaptchaAI errors list](https://captchaai.atlassian.net/wiki/spaces/CAPTCHAAI/pages/426145/errorCode+full+list+of+errors)
+
+
+### Get API Key to work with the library
+1. On the page - https://dashboard.captchaai.io/overview/user-center
+2. Find it: ![img.png](files/img.png)
