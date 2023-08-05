@@ -1,0 +1,2 @@
+[console_scripts]
+ji-auth = ji_auth:main
