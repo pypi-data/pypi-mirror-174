@@ -1,0 +1,8 @@
+glyf/__init__.py,sha256=A-obBuT_Ef6ZKP3J9YZKt0rRdaTQIcEU-uQKz66UDd8,63
+glyf/cmaps.py,sha256=Q3plviEwQYrPkzUoNa7ItV0tIlVDh58DMLM7Gc7VmvU,194
+glyf/plot.py,sha256=iiA-056oeSdhvN32UzrSmlmGqYs2R9f0EGHxqH-tVZw,65674
+glyf/utils.py,sha256=arBOGQge93WM9-ILiONbfUb8X_qSdcSDu1QzvuDultE,10620
+glyf-0.0.1.dist-info/METADATA,sha256=aL92qS_4u2UdoQDIOLpVKsJgAV_TXIEnDYTc9YQx3CE,1923
+glyf-0.0.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+glyf-0.0.1.dist-info/licenses/LICENSE,sha256=lcUFJTtsoQ1LaWYe9k_dNVryXl0yUaof0l_iUqLcI5o,11385
+glyf-0.0.1.dist-info/RECORD,,
