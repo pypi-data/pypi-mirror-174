@@ -1,0 +1,20 @@
+/cmake-build-debug/
+/cmake-build-release/
+/CMakeFiles/
+/binding_python_version/
+/venv/
+/Vivid3d.egg-info/
+/temp-debug changes/
+/dist/
+/build/
+/_skbuild/
+/src/vivid3d.egg-info/
+/lib/SurfacingAlgorithms/huji-rich-Elad3DFast/CMakeFiles/
+vivid
+vivid_main
+/docs/build/
+**/__init__.py
+!/src/vivid3d
+!/src/vivid3d/viewer
+!/pybind11/pybind11/__init__.py
+.vscode/
