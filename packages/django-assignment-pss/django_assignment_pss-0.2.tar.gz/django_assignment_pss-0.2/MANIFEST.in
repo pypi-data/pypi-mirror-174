@@ -1,0 +1,5 @@
+include LICENSE
+include README.rst
+recursive-include todo_app/static *
+recursive-include todo_app/templates *
+recursive-include docs *
