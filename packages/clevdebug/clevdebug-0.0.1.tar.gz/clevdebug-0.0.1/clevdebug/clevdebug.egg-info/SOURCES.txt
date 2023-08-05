@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+clevdebug/clevdebug.egg-info/PKG-INFO
+clevdebug/clevdebug.egg-info/SOURCES.txt
+clevdebug/clevdebug.egg-info/dependency_links.txt
+clevdebug/clevdebug.egg-info/top_level.txt
