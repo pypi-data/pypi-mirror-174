@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: edawesome
+Version: 0.1.2
+Summary: 
+Author: Timofei Ryko
+Author-email: timofei.ryko@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ipython (>=8.5.0,<9.0.0)
+Requires-Dist: kaggle (>=1.5.12,<2.0.0)
+Requires-Dist: scipy (>=1.9.3,<2.0.0)
+Requires-Dist: seaborn (>=0.12.1,<0.13.0)
+Requires-Dist: transitions (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+
