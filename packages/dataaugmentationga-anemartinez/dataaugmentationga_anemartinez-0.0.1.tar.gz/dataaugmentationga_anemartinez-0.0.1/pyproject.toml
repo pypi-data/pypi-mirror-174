@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dataaugmentationga_anemartinez"
+version = "0.0.1"
+authors = [
+  { name="Elene Astondoa and Ane Martínez", email="anemartinezorellana@outlook.com" },
+]
+description = "This is a library that makes data augmentation based on SDV library using a single objective algorithm to get the distributions of the variables."
+readme = "README.md"
+install_requires = ['pandas', 'opencv-python', 'random', 'matplotlib', 'python-time', 'sdv', 'scikit-learn']
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/anemartinez1/pypi_project"
+"Bug Tracker" = "https://github.com/anemartinez1/pypi_project/issues"
