@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Mensajes/__init__.py
+Mensajes/adios/__init__.py
+Mensajes/adios/despedidas.py
+Mensajes/hola/__init__.py
+Mensajes/hola/saludos.py
+Mensajes_rdiaz.egg-info/PKG-INFO
+Mensajes_rdiaz.egg-info/SOURCES.txt
+Mensajes_rdiaz.egg-info/dependency_links.txt
+Mensajes_rdiaz.egg-info/requires.txt
+Mensajes_rdiaz.egg-info/top_level.txt
+tests/__init__.py
+tests/test_hola.py
