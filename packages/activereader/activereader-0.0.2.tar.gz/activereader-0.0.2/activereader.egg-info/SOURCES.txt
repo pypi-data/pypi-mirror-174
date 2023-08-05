@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+activereader/__init__.py
+activereader/base.py
+activereader/gpx.py
+activereader/tcx.py
+activereader/util.py
+activereader.egg-info/PKG-INFO
+activereader.egg-info/SOURCES.txt
+activereader.egg-info/dependency_links.txt
+activereader.egg-info/requires.txt
+activereader.egg-info/top_level.txt
