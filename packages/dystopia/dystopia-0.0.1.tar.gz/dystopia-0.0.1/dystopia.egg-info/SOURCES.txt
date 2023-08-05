@@ -1,0 +1,15 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+_upload.txt
+requirements.txt
+setup.py
+_manifesto/Manifesto.md
+dystopia/__init__.py
+dystopia/__main__.py
+dystopia.egg-info/PKG-INFO
+dystopia.egg-info/SOURCES.txt
+dystopia.egg-info/dependency_links.txt
+dystopia.egg-info/top_level.txt
+dystopia/misc/__init__.py
+dystopia/misc/_meta.py
