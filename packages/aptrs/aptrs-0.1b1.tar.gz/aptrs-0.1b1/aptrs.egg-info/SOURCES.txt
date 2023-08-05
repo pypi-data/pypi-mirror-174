@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aptrs.egg-info/PKG-INFO
+aptrs.egg-info/SOURCES.txt
+aptrs.egg-info/dependency_links.txt
+aptrs.egg-info/entry_points.txt
+aptrs.egg-info/requires.txt
+aptrs.egg-info/top_level.txt
