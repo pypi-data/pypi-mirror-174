@@ -1,0 +1,32 @@
+[tool.isort]
+profile = 'black'
+skip = ['docs']
+
+[tool.poetry]
+name = "sla-sca"
+packages = [
+    { include = "sla" },
+]
+version = "0.1.0"
+description = "Snow Line Altitude (SLA) monitoring for glaciers in Argentina."
+authors = ["Gurupratap Matharu <gurupratap.matharu@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+earthengine-api = "^0.1.316"
+ipython = "^8.4.0"
+black = "^22.6.0"
+typing-extensions = "^4.3.0"
+geemap = "^0.15.4"
+sphinx = "^5.3.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+bandit = "^1.7.4"
+safety = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
