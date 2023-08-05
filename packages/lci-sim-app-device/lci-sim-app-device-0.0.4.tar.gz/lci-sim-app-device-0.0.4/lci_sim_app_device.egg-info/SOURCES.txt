@@ -1,0 +1,16 @@
+setup.py
+lci-sim-app-device/__init__.py
+lci-sim-app-device/__main__.py
+lci-sim-app-device/run-old-method.py
+lci-sim-app-device/App/APN.py
+lci-sim-app-device/App/Device.py
+lci-sim-app-device/App/LaunchArguments.py
+lci-sim-app-device/App/Reader.py
+lci-sim-app-device/App/SQL.py
+lci-sim-app-device/App/SocketClient.py
+lci-sim-app-device/App/Web.py
+lci-sim-app-device/App/__init__.py
+lci_sim_app_device.egg-info/PKG-INFO
+lci_sim_app_device.egg-info/SOURCES.txt
+lci_sim_app_device.egg-info/dependency_links.txt
+lci_sim_app_device.egg-info/top_level.txt
