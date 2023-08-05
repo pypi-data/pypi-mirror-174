@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: logger2telegram
+Version: 1.0.1
+Summary: Telegram bot logger that sends strings to telegram chat
+Home-page: https://github.com/bauyrzhanospan/telegram_logger
+Author: Bauyrzhan Ospan, CEO "Cleverest Technologies LLP"
+Author-email: main@cleverest.tech
+License: MIT
+Platform: Any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Overview
+
+[![PyPI Version][pypi-image]][pypi-url]
+
+This package includes simple pure python telegram bot that sends logs to chat.
+
+## Algorithm
+
+```python
+from logger2telegram import Logger2tlg
+
+
+tlg = Logger2tlg(chat_id="123456789", bot_id="123456789:ABCDEF1234567890ABCDEF1234567890ABC")
+tlg.log("Hello world!")
+```
+
+1. Create bot via bot_father bot in telegram
+2. Insert bot token to class
+3. Insert chat id to class: https://stackoverflow.com/a/32572159/9142932
+4. Create instance of logger via `tlg = Logger2tlg(chat_id = "-123456789", bot_id = "BOT TOKEN FROM BOT FATHER")`
+5. Send urgent logs via `tlg.log("This is message")`
+6. You may create multiple loggers to different chats or bots.
+
+## Installation
+
+`pip install logger2tlg`
+
+<!-- Badges -->
+[pypi-image]: https://img.shields.io/pypi/v/logger2telegram
+[pypi-url]: https://pypi.org/project/logger2telegram
+

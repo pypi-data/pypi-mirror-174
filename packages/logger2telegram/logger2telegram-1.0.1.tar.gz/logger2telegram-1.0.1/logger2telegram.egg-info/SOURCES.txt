@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+logger2telegram/__init__.py
+logger2telegram/logger2tlg.py
+logger2telegram.egg-info/PKG-INFO
+logger2telegram.egg-info/SOURCES.txt
+logger2telegram.egg-info/dependency_links.txt
+logger2telegram.egg-info/top_level.txt
