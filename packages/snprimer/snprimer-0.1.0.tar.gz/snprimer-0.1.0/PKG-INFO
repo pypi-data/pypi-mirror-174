@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: snprimer
+Version: 0.1.0
+Summary: Small python library to search snp in primer by position or by sequence.
+Home-page: https://github.com/Benoitdw/SNPrimer
+Author: Benoitdw
+Author-email: bw@oncodna.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bump2version (>=1.0.1,<2.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: gget (>=0.3.11,<0.4.0)
+Requires-Dist: myvariant (>=1.0.0,<2.0.0)
+Requires-Dist: pre-commit (>=2.20.0,<3.0.0)
+Project-URL: Repository, https://github.com/Benoitdw/SNPrimer
+Description-Content-Type: text/markdown
+
+# SNPrimer
+
+Small python library to search snp in primer by position or by sequence.
+
+## Installation
+
+## Usage
+
+### 🎯 By position 🎯
+
+```python
+from SNPrimer import PositionRange
+
+position = PositionRange("chr8",19818430, 19818440)
+print(position)
+# PositionRange(chr='chr8', start=19818430, end=19818440, strand=None, snp=[SNP(id='chr8:g.19818436C>G', rsid='rs316', vaf=0.15300000000000002), SNP(id='chr8:g.19818436C>T', rsid='rs316', vaf=0.15300000000000002)])
+for snp in position.get_snp(max_vaf=0.05):
+    print(snp)
+#SNP(id='chr8:g.19818436C>G', rsid='rs316', vaf=0.15300000000000002)
+#SNP(id='chr8:g.19818436C>T', rsid='rs316', vaf=0.15300000000000002)
+```
+
+### 🔤 By sequence 🔤
+```python
+from SNPrimer import Primer
+
+primer = Primer("CACACAGATCAGAGGGCCAAC")
+print(primer)
+#Primer(seq='CACACAGATCAGAGGGCCAAC', position_ranges=[PositionRange(chr='chr1', start=26774827, end=26774847, strand='+', snp=[SNP(id='chr1:g.26774827G>A', rsid='rs2075289787', vaf=0), SNP(id='chr1:g.26774830A>G', rsid='rs986550282', vaf=0.0), SNP(id='chr1:g.26774842T>C', rsid='rs1440652363', vaf=0.0)])])
+primer.infos(max_vaf=0)
+#CACACAGATCAGAGGGCCAAC has snp with vaf > 0 : [SNP(id='chr1:g.26774827G>A', rsid='rs2075289787', vaf=0), SNP(id='chr1:g.26774830A>G', rsid='rs986550282', vaf=0.0), SNP(id='chr1:g.26774842T>C', rsid='rs1440652363', vaf=0.0)]
+```
+
