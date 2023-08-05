@@ -1,0 +1,80 @@
+# CND IO
+Python lib to import/export content from/into different type of provider : filesystem, git etc...
+
+
+# Usage
+
+## Declare a provider
+
+First you need declare a provider, in this sample only one provider is available : FileSystem
+
+For a more simple use of error message, this lib can use CndPrint
+
+```
+import cndprint
+import cnd_io
+
+_print = cndprint.CndPrint(level="Info")
+provider = cnd_io.CndProviderLocalfile(print=_print)
+```
+
+## Use the provider local file system into cnd_io
+
+```
+import cndprint
+import cnd_io
+
+_print = cndprint.CndPrint(level="Info")
+provider = cnd_io.CndProviderLocalfile(print=_print)
+cnd_io = cnd_io.CndIO(provider, print=_print)
+```
+
+## Use the provider gitlab into cnd_io
+
+```
+import cndprint
+import cnd_io
+
+_print = cndprint.CndPrint(level="Info")
+provider = cnd_io.CndProviderGitlab(creds={'private_token': 'my-private-token', host="https://gitlab.com/api/v4/"}, print=_print)
+cnd_io = cnd_io.CndIO(provider, print=_print)
+```
+
+## Get Content
+with file system provider
+
+```
+cnd_io.pull_file('source_name', 'path/myfile.txt')
+```
+with gitlab provider
+
+```
+cnd_io.pull_file('source_name', 'path/myfile.txt', branch="main")
+```
+
+## Send on file
+
+```
+cnd_io.push_file('source_name', 'path/myfile.txt', 'content_to_push')
+```
+
+
+## Get YAML Content
+
+```
+cnd_io.pull_yaml_file('source_name', 'path/myfile.txt')
+```
+
+## Send one YAML file
+
+```
+cnd_io.push_yaml_file('source_name', 'path/myfile.txt', 'content_to_push')
+```
+
+## Send multiple file in the same time (one text file + 1 yaml file)
+
+```
+cnd_io.commit_file('source_name', 'path/myfile1.txt', content_to_push1)
+cnd_io.commit_yaml_file('source_name', 'path/myfile2.txt', content_to_push2)
+cnd_io.push_files('source_name')
+```

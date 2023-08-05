@@ -1,0 +1,15 @@
+README.md
+setup.py
+CndIO.egg-info/PKG-INFO
+CndIO.egg-info/SOURCES.txt
+CndIO.egg-info/dependency_links.txt
+CndIO.egg-info/not-zip-safe
+CndIO.egg-info/requires.txt
+CndIO.egg-info/top_level.txt
+cnd_io/VERSION
+cnd_io/__init__.py
+cnd_io/__version__.py
+cnd_io/cnd_io.py
+cnd_io/cnd_provider.py
+cnd_io/cnd_provider_gitlab.py
+cnd_io/cnd_provider_localfile.py
