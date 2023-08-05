@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: flask-providers-oidc
+Version: 1.2.1
+Summary: Fork version flask oidc
+Author: benbenbang
+Author-email: bn@benbenbang.io
+Maintainer: benbenbang
+Maintainer-email: bn@benbenbang.io
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: PyJWT (>=2.6.0,<3.0.0)
+Requires-Dist: oauth2client (>=4.1.3,<5.0.0)
+Description-Content-Type: text/markdown
+
+# flask-oidc
+
+## Forked Version
+
+[![image](https://img.shields.io/pypi/v/flask-providers-oidc.svg?style=flat)](https://pypi.python.org/pypi/flask-providers-oidc)![https://github.com/benbenbang/flask-oidc/actions/workflows/wf-ci.yml/badge.svg&flat](https://github.com/benbenbang/flask-oidc/actions/workflows/wf-ci.yml/badge.svg) ![https://img.shields.io/pypi/pyversions/flask-providers-oidc](https://img.shields.io/pypi/pyversions/flask-providers-oidc) ![https://img.shields.io/pypi/format/flask-providers-oidc&flat](https://img.shields.io/pypi/format/flask-providers-oidc) ![https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white&flat)
+
+This project is forked from [flask-oidc](https://github.com/puiterwijk/flask-oidc), and is now renamed **flask-providers-oidc**
+
+This version uses `pyjwt` instead of `isdangerous`.
+
+No need to change the import:
+
+```python
+from oidc import OpenIDConnect
+...
+```
+
+## Description
+
+[OpenID Connect](https://openid.net/connect/) support for [Flask](http://flask.pocoo.org/).
+
+This library should work with any standards-compliant OpenID Connect provider.
+
+It has been tested with:
+
+-   [Google+ Login](https://developers.google.com/accounts/docs/OAuth2Login)
+-   [Ipsilon](https://ipsilon-project.org/)
+
