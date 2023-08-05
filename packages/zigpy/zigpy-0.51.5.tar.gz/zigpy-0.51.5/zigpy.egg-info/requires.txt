@@ -1,0 +1,12 @@
+aiohttp
+aiosqlite>=0.16.0
+crccheck
+cryptography
+voluptuous
+yarl
+
+[:platform_system != "Windows"]
+pyserial-asyncio
+
+[:platform_system == "Windows"]
+pyserial-asyncio!=0.5
