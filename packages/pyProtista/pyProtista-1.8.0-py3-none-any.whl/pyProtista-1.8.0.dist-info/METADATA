@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pyProtista
+Version: 1.8.0
+Summary: PROTeomIcs reSulTs harmonizAtion
+Home-page: https://github.com/computational-ms/pyProtista
+Author: tba
+Author-email: christian@fufezan.net
+License: tba
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+License-File: LICENSE
+License-File: AUTHORS.TXT
+Requires-Dist: unimod-mapper (~=0.6.6)
+Requires-Dist: peptide-mapper (~=0.4.3)
+Requires-Dist: chemical-composition (~=1.0.6)
+Requires-Dist: pyahocorasick (~=1.4.4)
+Requires-Dist: pandas (~=1.4.3)
+Requires-Dist: numpy (>=1.22.0)
+Requires-Dist: loguru (~=0.6.0)
+Requires-Dist: tqdm (~=4.64.0)
+Requires-Dist: regex (~=2022.7.25)
+Requires-Dist: uparma (~=0.9.8)
+Requires-Dist: lxml (~=4.9.1)
+Requires-Dist: IsoSpecPy (~=2.2.0)
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+
+Unify idents and quant from bottom up proteomics search and quant engines
