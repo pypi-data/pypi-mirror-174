@@ -1,0 +1,13 @@
+google-api-python-client
+google-apitools
+google-cloud-aiplatform
+google-cloud-storage
+apache_beam
+pandas
+tensorflow>=2.10.0
+pillow
+pypng
+pydicom
+tf-models-official>=2.10.0
+protobuf
+typing-extensions
