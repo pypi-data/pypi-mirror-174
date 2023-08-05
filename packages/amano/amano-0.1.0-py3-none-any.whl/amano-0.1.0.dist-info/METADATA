@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: amano
+Version: 0.1.0
+Summary: Abstraction Layer for Amazon DynamoDB
+License: MIT
+Author: Dawid Kraczkowski
+Author-email: dawid.kraczkowski@kaizenreporting.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto (>=2.49.0,<3.0.0)
+Requires-Dist: boto3 (>=1.24.57,<2.0.0)
+Requires-Dist: botocore (>=1.27.57,<2.0.0)
+Requires-Dist: chili (>=1.7.0,<2.0.0)
+Requires-Dist: gid (>=1.0.1,<2.0.0)
+Requires-Dist: mypy-boto3-dynamodb (>=1.24.36,<2.0.0)
