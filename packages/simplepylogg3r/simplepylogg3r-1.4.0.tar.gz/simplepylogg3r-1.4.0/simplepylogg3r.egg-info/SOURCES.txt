@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+simplepylogg3r.egg-info/PKG-INFO
+simplepylogg3r.egg-info/SOURCES.txt
+simplepylogg3r.egg-info/dependency_links.txt
+simplepylogg3r.egg-info/top_level.txt
+splogger/__init__.py
+splogger/loggers.py
