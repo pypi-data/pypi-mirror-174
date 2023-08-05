@@ -1,0 +1,6 @@
+pypipr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypipr/features.py,sha256=OnsSSuJz5alJQnfviHLgqqUMFrkGTnGD8ckNODnXlQQ,2585
+pypipr/pypipr.py,sha256=cGfdtgfxHr--PgqLXsq8xmQ4P9qBGvOVVx-QUdz4Zrg,6672
+pypipr-0.1.25.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pypipr-0.1.25.dist-info/METADATA,sha256=ChlWExc7L8gRTdKCnHMDGC5Z1Usf5dy1-hi4yyZXPcE,4456
+pypipr-0.1.25.dist-info/RECORD,,
