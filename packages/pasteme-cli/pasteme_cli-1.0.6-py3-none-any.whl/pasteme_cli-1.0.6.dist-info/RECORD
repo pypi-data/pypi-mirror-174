@@ -1,0 +1,16 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pasteme_cli/__init__.py,sha256=iNeZ6LZ9iCV_ugsqAh5K1fFqbKkfU8o3NbLYBWI3m1I,22
+pasteme_cli/__main__.py,sha256=umGnekiGBoY1N1FFPQDapHxt7cD5fZea0PlZbjxDyu8,359
+pasteme_cli/cli.py,sha256=Us3lYXnGhDp527mU6Y_JEzZv_G-----xLzanj1YccFQ,3495
+pasteme_cli/constants.py,sha256=8HFyTwI11dFsqBZF1OTWJAY-cIBzpgndsi90MXFwvTk,1945
+pasteme_cli/shapes.py,sha256=VpgCWKlZAsdYvRf5LxuLbq76BJNGUYSrTEK7C8SyTNc,283
+pasteme_cli/sdk/__init__.py,sha256=0AZapT5P_8ly_oGy0VNrqrTVs7aGoJy-EXC5Tascdjg,59
+pasteme_cli/sdk/pasteme.py,sha256=OrBf7qiIIEVbRQswvAa5bYODIu8MK5OtO7gXcpJPI9w,1206
+pasteme_cli/sdk/types.py,sha256=Qy7rwqju_ChFJSBxwPGhQxUk5sowPsaISfthK_p7kzU,226
+pasteme_cli-1.0.6.dist-info/AUTHORS.rst,sha256=X4jcon3-1a-jbhANM6cda6CCX3n4tIRrh5J3pGNcG9M,57
+pasteme_cli-1.0.6.dist-info/LICENSE,sha256=T04J6gQHAGkzkN2UQNTwImP68R1pRgwRR_pmCE3VGZs,1104
+pasteme_cli-1.0.6.dist-info/METADATA,sha256=IqeUeyVTROXvrDRowfT8h0KhtcspqAaSTDx8NYwMTO8,4109
+pasteme_cli-1.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pasteme_cli-1.0.6.dist-info/entry_points.txt,sha256=4Ic71IX8gJv5UKHWgSB0H0rL2Kua3xBOTyva38uJb60,49
+pasteme_cli-1.0.6.dist-info/top_level.txt,sha256=HL_XbnnFn6v6PAx6Nxd7Y-IYtXAQIlgXZkCCR3eZL_I,21
+pasteme_cli-1.0.6.dist-info/RECORD,,
