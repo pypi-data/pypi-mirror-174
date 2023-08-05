@@ -1,0 +1,8 @@
+wsaccel/__init__.py,sha256=ivdjJjleJgLKimKXwYEoya6Y0MqQeKIr49S6w2Kjd4k,854
+wsaccel/utf8validator.cpython-310-darwin.so,sha256=6ulRujzt-V8BnBTjKlK_MkGm66ZIVSkDINfZX1e-9UE,185456
+wsaccel/xormask.cpython-310-darwin.so,sha256=JsPtraeVT_GqrRTCp0giQiz8wAbTdmSzhveSbon7SaI,189456
+wsaccel-0.6.4.dist-info/LICENSE,sha256=tpgpdMuDi5hbVLZj0XgNKAc1CGJJwuKAFfJd1FXfJdo,583
+wsaccel-0.6.4.dist-info/METADATA,sha256=yBvs5HK_dmWJ16hLstXs3gS_u19NChgh2X1wyylHEno,1695
+wsaccel-0.6.4.dist-info/WHEEL,sha256=wHXPjcF1PbvralrZAZffaBRfMW8u_7d-L-q3slIS7Go,111
+wsaccel-0.6.4.dist-info/top_level.txt,sha256=7BkPoar4LKAb4h_MpAS6OCzTwGLwrfHPzoeE7tffpsw,8
+wsaccel-0.6.4.dist-info/RECORD,,
