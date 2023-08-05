@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "uos-hardware"
+version = "0.4.0"
+description = "A hardware abstraction layer for microcontrollers running UOS compliant firmware."
+authors = ["nulltek <steve.public@nulltek.xyz>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/CreatingNull/UOS-Hardware"
+documentation = "https://uos-hardware.nulltek.xyz"
+packages = [
+    { include = "uoshardware" }
+]
+
+[tool.poetry.dependencies]
+# Note if changing project python versions considerations should be made for github workflow version.
+python = "^3.10"
+pyserial = "^3.5"
+
+[tool.poetry.group.dev.dependencies]
+coverage = {extras = ["toml"], version = "^6.4.4"}
+pytest = "^7.1.3"
+pre-commit = "^2.20.0"
+pylint = "^2.15.3"
+tox = "^3.26.0"
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "^5.1.1"
+sphinx-rtd-theme = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+branch = true
+omit = ["*/tests/*"]
+command_line = "-m pytest tests/"
