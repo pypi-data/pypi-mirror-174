@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mkdocstrings-pac
+Version: 1.0.0
+Summary: PAC's LUA handler for mkdocstrings.
+Author-email: Kolja Lubitz <kolja@portaldogs.com>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: mkdocstrings>=0.19
+Project-URL: Homepage, https://gitlab.com/pac4/mkdocstrings-pac

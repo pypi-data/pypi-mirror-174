@@ -1,0 +1,15 @@
+{{ log.debug() }}
+<dl>
+  {% for doc_obj in doc_objs %}
+    <dt id="{{doc_obj.name}}">
+      <h5>
+        {{doc_obj.returns}} <b>{{doc_obj.name}}</b>(<small>{{doc_obj.parameters}}</small>)
+        <button onclick="navigator.clipboard.writeText('{{doc_obj.name}}({{doc_obj.copy_parameters}})')">Copy</button>
+        <a class="headerlink" href="#{{doc_obj.name}}" title="{{doc_obj.name}}">¶</a>
+      </h5>
+    </dt>
+    <dd>
+      {{doc_obj.docs}}
+    </dd>
+  {% endfor %}
+</dl>
