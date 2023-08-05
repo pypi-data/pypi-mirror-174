@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+lib/sphinxter/__init__.py
+lib/sphinxter/document.py
+lib/sphinxter/reader.py
+lib/sphinxter/unittest.py
+lib/sphinxter/writer.py
+lib/sphinxter.egg-info/PKG-INFO
+lib/sphinxter.egg-info/SOURCES.txt
+lib/sphinxter.egg-info/dependency_links.txt
+lib/sphinxter.egg-info/requires.txt
+lib/sphinxter.egg-info/top_level.txt
+test/test_code.py
