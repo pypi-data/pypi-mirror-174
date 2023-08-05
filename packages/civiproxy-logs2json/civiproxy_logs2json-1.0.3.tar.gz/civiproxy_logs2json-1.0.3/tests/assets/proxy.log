@@ -1,0 +1,13 @@
+
+REQUEST FROM 127.0.0.1 ON 2022-10-26 11:34:23 -- Array
+(
+    [id] => contribute/images/uploads/static/test.png
+)
+REQUEST FROM 127.0.0.1 ON 2022-10-26 13:32:26 -- Array
+(
+    [json] => {"project_id":"twxxxxxxxxxxxxx","trx_id":"XXXXXXX","parent_trx_id":null,"confirmed_at":"20221026131623","purpose":"Allgemeine Spende","amount":800,"currency":"EUR","user_email":"john.doe@example.com","user_country":"DE","user_language":"de","payment_method":"paypal","donation_rhythm":"one_time","is_anonymous":0,"newsletter":0,"postinfo":0,"donation_receipt":0,"user_title":null,"user_firstname":"John","user_lastname":"Doe","user_street":null,"user_postal_code":null,"user_city":null,"user_telephone":null,"user_company":null,"user_extrafield":null,"custom_fields":{"event":""}}
+    [entity] => TwingleDonation
+    [action] => submit
+    [api_key] => Xxxx...
+    [key] => xxxx...
+)

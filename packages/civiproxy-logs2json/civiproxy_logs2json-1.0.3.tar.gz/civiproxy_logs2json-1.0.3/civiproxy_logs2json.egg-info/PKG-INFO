@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: civiproxy-logs2json
+Version: 1.0.3
+Summary: Translate a CiviProxy logfile into JSON format.
+Home-page: https://github.com/MarcMichalsky/civiproxy_logs2json
+Author: Marc Michalsky
+Author-email: michalsky@forumZFD.de
+License: MIT
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CiviProxy_Logs2Json
+
+Translate a [CiviProxy](https://github.com/systopia/CiviProxy) logfile into JSON format.
+
+## Installation
+```bash
+python3 -m pip install civiproxy_logs2json --user
+```
+
+## Example Usage
+
+Pass logfile as positional argument:
+```bash
+cpl2j /var/www/proxy_logs/proxy.log
+```
+
+Pipe logfile into program:
+```bash
+cat proxy.log | cpl2j 
+```
+
+Set JSON indentation to two spaces:
+```bash
+cat proxy.log | cpl2j -s 2 
+```
+
+### Tip
+Use [VisiData](https://github.com/saulpw/visidata) to explore the data in a very comfortable way:
+/var/www/proxy_logs/proxy.log
+```bash
+cpl2j /var/www/proxy_logs/proxy.log | vd -f json
+```
