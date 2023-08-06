@@ -1,0 +1,6 @@
+bioshed
+bioshed/src/
+bioshed/src/bioshed_atlas
+bioshed/src/bioshed_atlas/bioshed_utils
+bioshed/src/bioshed_atlas/files
+bioshed/src/bioshed_utils
