@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bearing-new-1
+Version: 0.1
+Summary: My first Python package
+Home-page: UNKNOWN
+Author: Supriya
+Author-email: <supriyasuhas058@email.com>
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: paho-mqtt
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+
+My first Python package with a slightly longer description
+
