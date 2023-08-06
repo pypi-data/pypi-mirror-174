@@ -1,0 +1,6 @@
+trytond_account_credit_limit<6.7,>=6.6
+trytond_sale<6.7,>=6.6
+trytond_currency<6.7,>=6.6
+trytond_account_invoice<6.7,>=6.6
+trytond_company<6.7,>=6.6
+trytond<6.7,>=6.6
