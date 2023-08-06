@@ -1,0 +1,11 @@
+from invenio_records_resources.services.records.schema import BaseRecordSchema as InvenioBaseRecordSchema
+from marshmallow import ValidationError
+from marshmallow import validates as ma_validates
+
+{% for b in schema_bases %}
+from {{ b|package_name }} import {{ b|base_name }}
+{% endfor %}
+
+{% include "imports" %}
+
+{{ settings.python.invenio_record_schema_extra_code }}
