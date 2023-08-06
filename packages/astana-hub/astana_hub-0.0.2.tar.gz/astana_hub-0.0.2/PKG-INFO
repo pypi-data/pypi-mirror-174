@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: astana_hub
+Version: 0.0.2
+Summary: Get Networking cards from https://astanahub.com/ with ease!
+Home-page: https://github.com/vladzen13/astana_hub
+Author: Vladislav Zenin
+Author-email: vladzen13@yandex.ru
+Project-URL: Bug Reports, https://github.com/vladzen13/astana_hub/issues
+Project-URL: Source, https://github.com/vladzen13/astana_hub/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# Installation
+
+pip install astana-hub
+
+# Features
+
+- Get company list from https://astanahub.com/account/company/
+    - Optional filter by tags: ('tag_startup', 'tag_it_company', 'tag_corp_partner', 'tag_techpark', 'tag_ts_member')
+- Get user list from https://astanahub.com/account/company/
+    - Optional filter by tags: ('tag_intern', 'tag_it_specialist', 'tag_investor', 'tag_international_agent')
+- Async by aiohttp
+- HTML parsing with bs4+lxml
+
+# Usage
+
+```
+import asyncio
+import astana_hub
+
+async def main():
+    async with astana_hub.Parser.create() as p:
+        company_list_page1 = await p.get_company_page()
+        print(company_list_page1)
+        
+        user_list_page1 = await p.get_user_page()
+        print(user_list_page1)
+
+        all_users = await p.parse_all(page_type='user')
+        print(all_users)
+
+        all_startups = await p.parse_all(page_type='company', tag='tag_startup')
+        print(all_startups)
+
+asyncio.run(main())
+```
