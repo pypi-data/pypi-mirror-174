@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: reverse-type
+Version: 0.1.1
+Summary: Embeds argument text in Unicode Right-To-Left and reverses it
+License: GPL
+Author: Johnny Wezel
+Author-email: j@wezel.name
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+reverse-type
+============
+
+Reverses the text given as command line arguments and embeds it in Unicode right-to-left marks
+such that in Unicode-aware environments it displays as specified.
+
+You might use this in environments that do auto-censoring.
+
