@@ -1,0 +1,2 @@
+panther_sdk>=0.0.19
+panther_utils>=0.2.0
