@@ -1,0 +1,13 @@
+setuptools
+wheel
+psutil
+
+[:platform_system == "Windows"]
+pywin32
+
+[:platform_system == "linux-x86_64"]
+re
+subprocess
+
+[:platform_system == "win-amd64"]
+pywin32
