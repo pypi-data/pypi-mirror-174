@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: wofryshadow
+Version: 1.0.4
+Summary: WOFRY (Wave Optics FRamework in pYthon) for SHADOW
+Home-page: https://github.com/srio/wofryshadow
+Download-URL: https://github.com/srio/wofryshadow
+Author: Manuel Sanchez del Rio, Luca Rebuffi
+Author-email: srio@esrf.eu
+Maintainer: Manuel Sanchez del Rio
+Maintainer-email: srio@esrf.eu
+License: GPLv3
+Keywords: dictionary,glossary,synchrotronsimulation
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+License-File: LICENSE
+
+# wofryshadow
+WOFRY implementation for SHADOW
