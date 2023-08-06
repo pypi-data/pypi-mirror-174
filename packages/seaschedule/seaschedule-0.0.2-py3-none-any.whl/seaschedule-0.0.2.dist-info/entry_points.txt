@@ -1,0 +1,3 @@
+[console_scripts]
+ss=seaschedule.__main__:main
+
