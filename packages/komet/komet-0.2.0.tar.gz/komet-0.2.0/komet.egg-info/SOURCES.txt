@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+komet/__init__.py
+komet/singleton.py
+komet/tail.py
+komet/version.py
+komet.egg-info/PKG-INFO
+komet.egg-info/SOURCES.txt
+komet.egg-info/dependency_links.txt
+komet.egg-info/top_level.txt
+tests/__init__.py
+tests/instances.py
+tests/test_singleton.py
