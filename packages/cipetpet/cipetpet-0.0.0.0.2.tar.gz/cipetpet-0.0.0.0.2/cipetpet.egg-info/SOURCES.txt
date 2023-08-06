@@ -1,0 +1,8 @@
+README.md
+setup.py
+cipetpet/__init__.py
+cipetpet/greet.py
+cipetpet.egg-info/PKG-INFO
+cipetpet.egg-info/SOURCES.txt
+cipetpet.egg-info/dependency_links.txt
+cipetpet.egg-info/top_level.txt
