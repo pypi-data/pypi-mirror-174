@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: spiderYdb
+Version: 0.1.4
+Summary: My first ORM for work with YDB
+Home-page: UNKNOWN
+Author: Vyacheslav Linnik
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: ydb (==2.10.0)
+Requires-Dist: shortuuid (==1.0.9)
+
+UNKNOWN
+
