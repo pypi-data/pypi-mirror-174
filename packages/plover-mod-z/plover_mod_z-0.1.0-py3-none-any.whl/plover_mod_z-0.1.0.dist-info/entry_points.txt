@@ -1,0 +1,2 @@
+[plover.system]
+Plover Mod-Z = plover_mod_z.system
