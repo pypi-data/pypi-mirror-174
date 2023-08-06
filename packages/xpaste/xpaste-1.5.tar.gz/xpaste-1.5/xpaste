@@ -1,0 +1,595 @@
+#!/usr/bin/env python
+# xpaste - paste text into X11 windows that don't work with selections
+# Copyright (C) 2016,2018,2020,2022  Walter Doekes, OSSO B.V.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+#
+# xpaste takes input from stdin and "pastes" it by sending keypress
+# events to the window of your choosing. This works around the fact
+# that some applications don't accept selection/clipboard pastes.
+#
+# On X11/Xorg, it uses the X protocol. On Wayland it uses /dev/uinput.
+#
+# See README.rst or xpaste.1x for more info. See LICENSE for license.
+#
+# Sample code borrowed from:
+# - http://www.shallowsky.com/software/crikey/pykey-0.1 (GPLv2+, 2008)
+#   by Akkana Peck
+# Similar applications:
+# - xdotool, almost works, but lacks the ability to choose the right
+#   window. If we got that right, we could do:
+#   "xdotool type --window WIN --file - <<EOF"
+#
+from __future__ import print_function
+
+from collections import namedtuple
+import os
+import sys
+import time
+
+if os.environ.get('XDG_SESSION_TYPE') == 'wayland':
+    import fcntl
+    import select
+    import struct
+    import termios
+
+    MODE = 'wayland'
+    KEY_NO_SYMBOL = None
+else:
+    import Xlib.display
+    import Xlib.X
+    import Xlib.XK
+    import Xlib.protocol.event
+
+    MODE = 'x11'
+    KEY_NO_SYMBOL = Xlib.X.NoSymbol
+
+
+# Display-aware keyboard symbol.
+Keystate = namedtuple('Keystate', 'mod code')
+
+
+class TextToUsbKeys(object):
+    KEY_SPACE = 57
+    KEY_LSHIFT = 42
+    LEV1 = '  1234567890-= \tqwertyuiop[]\n asdfghjkl;\'` \\zxcvbnm,./'
+    LEV2 = '  !@#$%^&*()_+  QWERTYUIOP{}  ASDFGHJKL:"` |ZXCVBNM<>?'
+    IGNORE_CHARS = '\r'
+
+    def __init__(self):
+        used = set([self.KEY_SPACE, self.KEY_LSHIFT])
+        combos = {' ': (self.KEY_SPACE,)}
+        for keycode, ch in enumerate(self.LEV1):
+            if ch != ' ':
+                combos[ch] = (keycode,)
+                used.add(keycode)
+        for keycode, ch in enumerate(self.LEV2):
+            if ch != ' ':
+                combos[ch] = (self.KEY_LSHIFT, keycode)
+                used.add(keycode)
+        self.char_to_combos = combos
+        self.used_keycodes = tuple(sorted(used))
+
+    def __call__(self, text):
+        ret = []
+        missing = set()
+        for ch in text:
+            try:
+                ret.append(self.char_to_combos[ch])
+            except KeyError:
+                if ch not in self.IGNORE_CHARS:
+                    missing.add(ch)
+        if missing:
+            raise ValueError('no translation for', missing)
+        return ret
+
+
+class TextToKeysyms(object):
+    special_X_keysyms = {
+        # This dict is collapsed into fewer lines to make a
+        # BetterCodeHub false positive go away.
+        ' ': 'space', '\t': 'Tab',
+        # Keyboard Enter maps to Return, which is usually translated to
+        # LF when typing, so in the reverse we do that too.
+        '\n': 'Return',
+        # Mark this bad so we don't paste it accidentally.
+        '\r': KEY_NO_SYMBOL,
+        '\x1b': 'Escape', '!': 'exclam', '#': 'numbersign',
+        '%': 'percent', '$': 'dollar', '&': 'ampersand', '"': 'quotedbl',
+        "'": 'apostrophe', '(': 'parenleft', ')': 'parenright',
+        '*': 'asterisk', '=': 'equal', '+': 'plus', ',': 'comma',
+        '-': 'minus', '.': 'period', '/': 'slash', ':': 'colon',
+        ';': 'semicolon',
+        '<': 'less', '>': 'greater', '?': 'question', '@': 'at',
+        '[': 'bracketleft', ']': 'bracketright', '\\': 'backslash',
+        '^': 'asciicircum', '_': 'underscore', '`': 'grave',
+        '{': 'braceleft', '|': 'bar', '}': 'braceright', '~': 'asciitilde'
+    }
+
+    def __call__(self, text):
+        return [self.to_keysym(ch) for ch in text]
+
+    def to_keysym(self, ch):
+        "The X-keysymbol for this character."
+        # Example: ch in ('A', 'b', '%', '\n')
+        keysym = self.special_X_keysyms.get(ch, ch)
+        # Example: keysym in ('A', 'b', 'percent', 'Return')
+        ret = Xlib.XK.string_to_keysym(keysym)
+        # Example: ret in (65, 98, 37, 65293)  [not always equal to ord(ch)]
+        return ret
+
+
+# A functor as text-to-keys converter.
+text_to_keysyms = TextToKeysyms()
+text_to_usbkeys = TextToUsbKeys()
+
+
+class RawTerminalInput(object):
+    @staticmethod
+    def cfmakeraw(iflag, oflag, cflag, lflag, ispeed, ospeed, cc):
+        iflag &= ~(
+            termios.IGNBRK | termios.BRKINT | termios.PARMRK | termios.ISTRIP |
+            termios.INLCR | termios.IGNCR | termios.ICRNL | termios.IXON)
+        oflag &= ~termios.OPOST
+        cflag &= ~(termios.CSIZE | termios.PARENB)
+        lflag &= ~(
+            termios.ECHO | termios.ECHONL | termios.ICANON | termios.ISIG |
+            termios.IEXTEN)
+        return [iflag, oflag, cflag, lflag, ispeed, ospeed, cc]
+
+    def __enter__(self):
+        try:
+            self.open()
+        except Exception:
+            self.close(can_raise=False)
+            raise
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.close(can_raise=(exc_type is None))
+
+    def open(self):
+        assert not hasattr(self, '_fd')
+        self._fd = os.open('/dev/tty', os.O_RDONLY)
+        self._orig_attr = self._make_raw(self._fd)
+
+    def close(self, can_raise=True):
+        try:
+            termios.tcsetattr(self._fd, termios.TCSADRAIN, self._orig_attr)
+        except AttributeError:
+            pass
+        except Exception:
+            if can_raise:
+                raise
+        else:
+            del self._orig_attr
+        finally:
+            try:
+                os.close(self._fd)
+            except AttributeError:
+                pass
+            except Exception:
+                if can_raise:
+                    raise
+            else:
+                del self._fd
+
+    def _make_raw(self, fd):
+        orig_attr = termios.tcgetattr(fd)
+        try:
+            new_attr = self.cfmakeraw(*termios.tcgetattr(fd))
+            termios.tcsetattr(fd, termios.TCSADRAIN, new_attr)
+        except Exception:
+            try:
+                termios.tcsetattr(fd, termios.TCSADRAIN, orig_attr)
+            except Exception:
+                pass
+            raise
+        return orig_attr
+
+    def fileno(self):
+        return self._fd
+
+    def getc(self):
+        return ord(os.read(self._fd, 1))
+
+
+class KeysToKeystates(object):
+    def __init__(self, display):
+        self.display = display
+
+    def __call__(self, keys):
+        return [self.to_keystate(key) for key in keys]
+
+    def to_keystate(self, symbol):
+        # Example: [(38, 1), (38, 3)]  # for 65 ('A')
+        # Example: [(56, 0), (56, 2)]  # for 98 ('b')
+        # Example: [(14, 1), (14, 3)]  # for 37 ('%')
+        # Example: [(36, 0), (36, 2)]  # for 65293 (Return)
+        codes = list(self.display.keysym_to_keycodes(symbol))
+        assert codes, 'cannot map %r (got: %r)' % (symbol, codes)
+        code, mod = codes[0]
+        assert mod in (0, Xlib.X.ShiftMask), codes
+        return Keystate(mod, code)
+
+
+class X11EventGenerator(object):
+    def __init__(self, display, window):
+        self.display = display
+        self.window = window
+        self.root = display.screen().root
+        self.keys_to_keystates = KeysToKeystates(display)
+        self.auto_time = Xlib.X.CurrentTime
+        self.rshift_code = self.display.keysym_to_keycode(Xlib.XK.XK_Shift_R)
+
+    def from_keysyms(self, keysyms):
+        for symbol in keysyms:
+            keystate = self.keys_to_keystates.to_keystate(symbol)
+            for event in self.keypress(keystate):
+                yield event
+
+    def keypress(self, keystate):
+        # Some applications (*) have trouble with the 187/188
+        # parenleft/parenright:
+        # $ xmodmap -pke | grep dollar
+        # keycode  13 = 4 dollar 4 dollar
+        # $ xmodmap -pke | grep paren
+        # keycode  18 = 9 parenleft 9 parenleft
+        # keycode  19 = 0 parenright 0 parenright
+        # keycode 187 = parenleft NoSymbol parenleft
+        # keycode 188 = parenright NoSymbol parenright
+        if keystate.mod == 0 and keystate.code in (187, 188):
+            keystate = Keystate(Xlib.X.ShiftMask, keystate.code - 169)
+
+        # Some applications (*) explicitly need the SHIFT key pressed as well.
+        if keystate.mod & Xlib.X.ShiftMask:
+            yield self._new_press(state=0, detail=self.rshift_code)
+
+        yield self._new_press(state=keystate.mod, detail=keystate.code)
+        yield self._new_release(state=keystate.mod, detail=keystate.code)
+
+        if keystate.mod & Xlib.X.ShiftMask:
+            yield self._new_release(
+                state=Xlib.X.ShiftMask, detail=self.rshift_code)
+
+        # (*) Java iKVM Viewer
+
+    def _new_press(self, state, detail):
+        return self._new_event(Xlib.protocol.event.KeyPress, state, detail)
+
+    def _new_release(self, state, detail):
+        return self._new_event(Xlib.protocol.event.KeyRelease, state, detail)
+
+    def _new_event(self, event, state, detail):
+        return event(
+            # Time should be client-send-time (since X-server startup?) or
+            # CurrentTime to use current server time. Since we'll be sleeping
+            # below, the current time should be perfect for our needs.
+            time=self.auto_time,
+            # We absolutely need window. Unsure about root, display,
+            # same_screen, child.
+            window=self.window, root=self.root, display=self.display,
+            same_screen=True, child=Xlib.X.NONE,
+            # Where the event was raised. For keypress this doesn't matter.
+            root_x=0, root_y=0, event_x=0, event_y=0,
+            # The important bits: key code and key modifier.
+            state=state, detail=detail)
+
+
+class X11Paste(object):
+    @staticmethod
+    def get_display():
+        """Wrapper around Xlib.display.Display() to silence debug-print bug.
+
+        Display() prints "<class ...>" to stdout.
+        URL: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=566172
+        This is fixed in 0.14+20091101-4. Work around it by temporarily
+        setting stdout to /dev/null.
+        """
+        with open('/dev/null', 'w') as tmp_stdout:
+            orig_stdout, sys.stdout = sys.stdout, tmp_stdout
+            display = Xlib.display.Display()
+            sys.stdout = orig_stdout
+        return display
+
+    def __init__(self):
+        self.display = self.get_display()
+
+        # Quickly check that this will work.
+        if not hasattr(self.display.get_input_focus().focus, 'send_event'):
+            if os.environ.get('XDG_SESSION_TYPE') == 'wayland':
+                # Because we cannot just peek/poke in other windows on
+                # Wayland.
+                raise RuntimeError(
+                    'xpaste(1) does not work on Wayland, try starting an '
+                    'Xwayland X compatibility terminal first, by running '
+                    'WAYLAND_DISPLAY= gnome-terminal; and then fire up '
+                    'both applications from there.')
+            raise RuntimeError('No send_event on window objects? {0!r}'.format(
+                self.display.get_input_focus().focus))
+
+    def get_current_window(self):
+        "Return currently focused window."
+        return self.display.get_input_focus().focus
+
+    def wait_for_keypress(self):
+        "Stall until 'Enter' is pressed."
+        enter_keystates = KeysToKeystates(self.display)([
+            Xlib.XK.XK_Return, Xlib.XK.XK_KP_Enter])
+
+        self._grab_release(enter_keystates, release=False)
+        try:
+            self._wait_for_keyrelease_event(enter_keystates)
+        finally:
+            self._grab_release(enter_keystates, release=True)
+
+    def _grab_release(self, keystates, release=False):
+        "Grab or release the listening for keypress events."
+        root = self.display.screen().root
+
+        # Through testing, it appears that using ORed modifiers does
+        # not yield grab_key events if not *all* of the modifiers are
+        # used. Instead, we'll grab_key() all of the sane combinations.
+        #
+        # Also, using Xlib.X.AnyModifier gives us a BadAccess error,
+        # possibly because the main window manager also traps that?
+        # > If some other client has issued a XGrabKey() with the same
+        # > key combination on the same window, a BadAccess error
+        # > results. When using AnyModifier or AnyKey, the request fails
+        # > completely, and a BadAccess error results (no grabs are
+        # > established) if there is a conflicting grab for any
+        # > combination.
+        extra_mods = (
+            # All combinations of caps- and num-lock.
+            0, Xlib.X.Mod2Mask, Xlib.X.LockMask,
+            Xlib.X.Mod2Mask | Xlib.X.LockMask)
+
+        if release:
+            # Stop listening for the specified key.
+            for extra_mod in extra_mods:
+                for keystate in keystates:
+                    root.ungrab_key(keystate.code, keystate.mod | extra_mod)
+        else:
+            # Listen for the specified key.
+            for extra_mod in extra_mods:
+                for keystate in keystates:
+                    root.grab_key(
+                        keystate.code, keystate.mod | extra_mod,
+                        True, Xlib.X.GrabModeAsync, Xlib.X.GrabModeAsync)
+
+    def _wait_for_keyrelease_event(self, keystates):
+        "After the grab, wait for the expected keypresses."
+        codes = [keystate.code for keystate in keystates]
+        while True:
+            event = self.display.next_event()
+            if event.type == Xlib.X.KeyRelease and event.detail in codes:
+                # Ignore event.window and event.child. They are not the
+                # input windows we're after.
+                break
+
+    def set_buffer(self, text):
+        self._buffer = text_to_keysyms(text)
+
+    def paste_into(self, window):
+        "Paste the text into window by faking key presses."
+        # print('paste into', window)
+        for event in X11EventGenerator(self.display, window).from_text(
+                self._buffer):
+            # I'm not entirely sure how much we want to sleep here. But
+            # with enough sleep and window.display.flush() we can
+            # transfer all data.
+            # On my test machine, 4ms was too little and 10ms was enough.
+            # So 20ms per lowercase and 40ms for uppercase, an average of 30ms
+            # per letter: about 33 letters per second.
+            time.sleep(0.010)  # 10ms between keypresses/keyreleases
+            window.send_event(event)
+            window.display.flush()
+        self.display.sync()
+
+    def close(self):
+        pass
+
+
+class UInputPaste(object):
+    # asm-generic/ioctl.h
+    _IOC = (lambda d, t, n, s: d << 30 | t << 8 | n | s << 16)
+    # linux/input.h
+    BUS_USB = 0x03
+    input_event = namedtuple('input_event', ' '.join([
+        'tv_sec',   # struct timeval __u64
+        'tv_usec',  # struct timeval __u64
+        'type',     # struct input_event __u16
+        'code',     # struct input_event __u16
+        'value',    # struct input_event __s32
+    ]))
+    input_event.sizeof = 1234
+    input_event.pack_fmt = 'QQHHi'
+    input_event.pack = (lambda self: struct.pack(self.pack_fmt, *self))
+    # linux/uinput.h
+    uinput_setup = namedtuple('uinput_setup', ' '.join([
+        'bustype',  # struct input_id __u16
+        'vendor',   # struct input_id __u16
+        'product',  # struct input_id __u16
+        'version',  # struct input_id __u16
+        'name',     # struct uinput_setup char[UINPUT_MAX_NAME_SIZE]
+        'ff_effects_max',  # struct uinput_setup __u32
+    ]))
+    uinput_setup.sizeof = 92
+    uinput_setup.pack_fmt = 'HHHH80sI'
+    uinput_setup.pack = (lambda self: struct.pack(self.pack_fmt, *self))
+    UINPUT_IOCTL_BASE = ord('U')
+    UINPUT_MAX_NAME_SIZE = 80
+    UI_DEV_CREATE = _IOC(0, UINPUT_IOCTL_BASE, 1, 0)    # _,,,_
+    UI_DEV_DESTROY = _IOC(0, UINPUT_IOCTL_BASE, 2, 0)   # _,,,_
+    UI_DEV_SETUP = _IOC(1, UINPUT_IOCTL_BASE, 3, uinput_setup.sizeof)
+    UI_SET_EVBIT = _IOC(1, UINPUT_IOCTL_BASE, 100, 4)   # W,,,int
+    UI_SET_KEYBIT = _IOC(1, UINPUT_IOCTL_BASE, 101, 4)  # W,,,int
+    # linux/input-event-codes.h
+    EV_SYN = 0x00
+    EV_KEY = 0x01
+    KEY_SPACE = 57
+    SYN_REPORT = 0
+
+    def __init__(self):
+        self._open()
+
+    def _open(self):
+        fd = os.open('/dev/uinput', os.O_WRONLY | os.O_NONBLOCK)
+        fcntl.ioctl(fd, self.UI_SET_EVBIT, self.EV_KEY)
+        for keycode in text_to_usbkeys.used_keycodes:
+            fcntl.ioctl(fd, self.UI_SET_KEYBIT, keycode)
+
+        usetup = self.uinput_setup(
+            bustype=self.BUS_USB,
+            vendor=0x1234,
+            product=0x5678,
+            version=0,
+            name=b'XPaste Virtual Keyboard',
+            ff_effects_max=0,
+        )
+        fcntl.ioctl(fd, self.UI_DEV_SETUP, usetup.pack())
+        fcntl.ioctl(fd, self.UI_DEV_CREATE)
+
+        # Here we may need to sleep a while for the new "keyboard" to settle.
+        # But the user will probable wait a bit too. Record the time so
+        # we can sleep later if needed.
+        self._inited = time.time()
+
+        self._fd = fd
+        self._events = []
+
+    def _settle(self):
+        # Poor man's settle, by waiting
+        twaited = (time.time() - self._inited)
+        if twaited < 1:
+            time.sleep(1 - twaited)
+
+    def _emit(self, type, code, value):
+        ievent = self.input_event(
+            type=type, code=code, value=value,
+            # timestamp values below are ignored
+            tv_sec=0, tv_usec=0)
+        os.write(self._fd, ievent.pack())
+
+    def emit_key_event(self, keycode, pressed):
+        self._emit(self.EV_KEY, keycode, (0, 1)[pressed])
+        self._emit(self.EV_SYN, self.SYN_REPORT, 0)
+
+    def wait_for_a_while(self):
+        """
+        Re-open tty to be able to ask the user to raise/lower the
+        timeout and then wait for the specified timeout.
+        """
+
+        with RawTerminalInput() as fp:
+            fd = fp.fileno()
+            t0 = time.time()
+            tn = t0 + 20
+            while tn > t0:
+                sys.stderr.write(
+                    '\x1b[2K\r(pasting in {:.1f} seconds)'
+                    .format((tn - t0)))
+                sys.stderr.flush()
+                rev, wev, xev = select.select([fd], [], [fd], 0.1)
+                assert not xev, (rev, wev, xev)
+                if rev:
+                    if fp.getc() == 0x03:
+                        raise KeyboardInterrupt
+                    tn = max(tn - 3, time.time() + 4)
+                t0 = time.time()
+        sys.stderr.write('\x1b[2K\r')
+        sys.stderr.flush()
+
+    def set_buffer(self, text):
+        self._buffer = text_to_usbkeys(text)
+
+    @staticmethod
+    def _keycodes_to_presses(buffer):
+        for keycodes in buffer:
+            assert isinstance(keycodes, tuple), keycodes
+            for keycode in keycodes:
+                yield keycode, True     # press
+            for keycode in reversed(keycodes):
+                yield keycode, False    # release
+
+    def paste(self):
+        "Paste the text by faking key presses."
+        self._settle()
+
+        for keycode, pressed in self._keycodes_to_presses(self._buffer):
+            # I'm not entirely sure if we want to sleep here at all.
+            time.sleep(0.010)  # 10ms between keypresses/keyreleases
+            self.emit_key_event(keycode, pressed)
+        self._events = []
+
+    def close(self):
+        fcntl.ioctl(self._fd, self.UI_DEV_DESTROY)
+        os.close(self._fd)
+        self._fd = None
+
+
+# def example_paste_into_focused():
+#     xpaste = X11Paste()
+#     xpaste.paste_into(xpaste.get_current_window(), 'Hi there!')
+#
+# def example_paste_into_keypressed():
+#     xpaste = X11Paste()
+#     xpaste.wait_for_keypress()
+#     xpaste.paste_into(xpaste.get_current_window(), 'Hi there!')
+
+def main():
+    # Open display immediately, so user gets error if there is no valid
+    # DISPLAY.
+    if MODE == 'wayland':
+        xpaste = UInputPaste()
+    else:
+        xpaste = X11Paste()
+
+    if sys.stdin.isatty():
+        print(
+            '| xpaste allows you to paste text into windows that fail to\n'
+            '| work with the X11 selection buffers, like some Java apps.\n'
+            '|\n'
+            '| Example invocation: xsel -b | xpaste\n'
+            '| Go to misbehaving application: <press enter>\n'
+            '|\n'
+            '| Please type text to paste on stdin; end with [CTRL+D]')
+    text = sys.stdin.read().replace('\r', '')
+
+    if sys.stdin.isatty():
+        print('|')
+
+    if MODE == 'wayland':
+        # We cannot detect keypresses from the other window in Wayland.
+        print(
+            '| Focus on the destination window before the countdown is\n'
+            '| done. Press keys in this window to reduce the seconds to 4\n'
+            '| or abort with [CTRL+C].')
+    else:
+        print(
+            '| Focus on the destination window to paste into and press\n'
+            '| [Enter] or abort with [CTRL+C].')
+
+    if not text.endswith('\n'):
+        print(
+            '|\n'
+            '| NOTE: The input does not end with a line feed. You may need\n'
+            '| to press [Enter] afterwards too.')
+
+    xpaste.set_buffer(text)
+    if MODE == 'wayland':
+        xpaste.wait_for_a_while()
+        xpaste.paste()
+    else:
+        xpaste.wait_for_keypress()
+        xpaste.paste_into(xpaste.get_current_window())
+
+    xpaste.close()
+
+
+if __name__ == '__main__':
+    main()
