@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: aibuilder
+Version: 0.0.54
+Summary: Python SDK to register ML model with AI Builder
+Home-page: UNKNOWN
+Author: Microsoft Corporation
+License: MIT
+Keywords: azure,powerapps,connectors,aibuilder,connection
+Platform: UNKNOWN
+Requires-Python: >=3.8,<3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pytest (==6.1.2)
+Requires-Dist: msal (==1.15.0)
+Requires-Dist: requests (==2.25.0)
+Requires-Dist: prance (==0.18.2)
+Requires-Dist: openapi-spec-validator (==0.3.0)
+Requires-Dist: PyJWT (==2.4.0)
+Requires-Dist: azureml-sdk (==1.38.0)
+Requires-Dist: polling2 (==0.4.7)
+
+### Project description
+# AI Builder SDK
+
+AI Builder is a Microsoft Power Platform capability that provides AI models that are designed to optimize your business
+processes. AI Builder enables your business to use AI to automate processes and glean insights from your data
+in [Power Apps](https://docs.microsoft.com/en-us/ai-builder/use-in-powerapps-overview) and [Power Automate](https://docs.microsoft.com/en-us/ai-builder/use-in-flow-overview).
+
+This SDK allows registration of model endpoints as AI Models with power platform to be leveraged in flows and power
+apps.
+
+## Installing
+
+1. Install Python 3.6+ from the link [here](https://www.python.org/downloads). Click the 'Download' link on any version of Python greater than Python 3.6. For Linux and Mac OS please follow the appropriate link on the page. You can also install using an OS specific package manager of your choice.
+2. Run the installer to begin installation and be sure to check the box 'Add Python X.X to PATH'.
+3. Make sure the installation path is in the PATH variable by running:
+
+   ```
+   python --version
+   ```
+4. After python is installed, install aibuilder by running:
+
+   ```
+   pip install -f https://test.pypi.org/simple/ aibuilder
+
+   ```
+
+## Capabilities
+### Get an Environment
+An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves
+as a container to separate apps that might have different roles, security requirements, or target audiences. How you 
+choose to use environments depends on your organization and the apps you're trying to build. Each environment is created
+under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. 
+When you create an app in an environment, that app is only permitted to connect to the data sources that are also 
+deployed in that same environment, including connections, gateways, flows, and Dataverse databases. The AI Builder SDK 
+allows you to programmatically retrieve an existing environment where you want to register your machine learning model.
+Click [here](https://docs.microsoft.com/en-us/power-platform/admin/environments-overview) to know more about 
+environments in Power Platform.
+### Registering a model
+Once you have your machine learning model hosted on an endpoint, you can then create a scoring script to run the hosted 
+machine learning model. This script which now represents the machine learning model is required to be registered with
+AI Builder in order to use prediction.
+## Usage and Examples
+Letâ€™s say you have a machine learning model deployed on an endpoint and you are able to
+[deploy](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=azcli) the model
+successfully on an Azure Container Instance. Here is an example use case in AI Builder
+
+```python
+      from azureml.core.webservice import AciWebservice, Webservice, Workspace
+      from azureml.exceptions import WebserviceException
+
+      from aibuilder.core.environment import Environment
+      from aibuilder.models.constants import ModelClientResponseStatus
+
+      # The name of the Power Platform environment where you are registering the model
+      environment_name = 'environment_name'
+      # The name of the model endpoint to be created in AzureML
+      aci_service_name = 'service_name'
+      # The name of the model as it will appear in AI Builder
+      model_name = "name_of_model_to_be_registered"
+
+      ws = Workspace.get(name='your_workspace_name', subscription_id='your_subscription_id', resource_group='your_resource_group')
+      # Get the ACI service based on what you deployed (otherwise, create one if service is not found)
+      try:
+         service = Webservice(ws, name=aci_service_name)
+      except WebserviceException as e:
+         print(f"Service not found: {aci_service_name}")
+      print(service.state) # Should be displayed as healthy
+
+      # Get the Environment
+      env = Environment.get(environment_name= environment_name)
+      # Register your machine learning model to AI Builder
+      response = env.register_model(model_name= model_name, connection=service)
+
+      if response != ModelClientResponseStatus.success:
+         raise Exception('Model registration failed')
+      print(f"Registered AI Builder model {model_name}")
+
+```
+
+## License
+```
+AI Builder SDK
+
+Copyright (c) Microsoft Corporation
+All rights reserved.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+documentation files (the ""Software""), to deal in the Software without restriction, including without limitation the 
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit 
+persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the 
+Software.
+
+THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+
