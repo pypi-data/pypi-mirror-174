@@ -1,0 +1,7 @@
+setup.py
+bequests/__init__.py
+bequests.egg-info/PKG-INFO
+bequests.egg-info/SOURCES.txt
+bequests.egg-info/dependency_links.txt
+bequests.egg-info/requires.txt
+bequests.egg-info/top_level.txt
