@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+src/bearing/__init__.py
+src/bearing/__version__.py
+src/bearing.egg-info/PKG-INFO
+src/bearing.egg-info/SOURCES.txt
+src/bearing.egg-info/dependency_links.txt
+src/bearing.egg-info/top_level.txt
+src/bearing.egg-info/zip-safe
+src/bearing/geometry/__init__.py
+src/bearing/geometry/point.py
+src/bearing/geospatial/__init__.py
