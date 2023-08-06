@@ -1,0 +1,9 @@
+stitch2d/__init__.py,sha256=MpT_I2eY65CuRpdLaBVzOYsLf2Dr9JrbKvnI-N-34H4,302
+stitch2d/__main__.py,sha256=zoVLKXpF02R-Bgtq_mi7vTHWNxuivj_i8PluuvDy2oU,5081
+stitch2d/mosaic.py,sha256=TwZrLLub9Gjv5sxnTorGLeXgYeiRNiMI2O29G328IEo,39964
+stitch2d/tile.py,sha256=N2t7iI_FXmhvT3rRUA4WZcLNKYZechFpaI3tFZZ4aSk,34044
+stitch2d-1.2.dist-info/METADATA,sha256=uf2LJNstC3islj8nU5mDlOHA_y94L5Nv-sIMnBe_tkY,1403
+stitch2d-1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stitch2d-1.2.dist-info/entry_points.txt,sha256=rQr3HL8Z8OqtiX3PP9-BVfJt9LzZXQFPabpWEMol0HI,53
+stitch2d-1.2.dist-info/top_level.txt,sha256=z2fF0xyDJLzZOq_mMcTtol50SHtTvBaU_SJ3KXptv1Q,9
+stitch2d-1.2.dist-info/RECORD,,
