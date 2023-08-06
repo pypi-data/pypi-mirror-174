@@ -1,0 +1,10 @@
+aws_cdk/aws_dynamodb/__init__.py,sha256=KoB2OLPfEVXS3aZY70-__G77XOWg9wbSP1mzI-COckM,597961
+aws_cdk/aws_dynamodb/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_dynamodb/_jsii/__init__.py,sha256=TRdFJM0K3feIhYtKRh8x1TuLB967HUoH4NlEFh7cog4,654
+aws_cdk/aws_dynamodb/_jsii/aws-dynamodb@1.180.0.jsii.tgz,sha256=GTa2KUIKkS_m6jFyCGmCPSTofKs_gE_jpo9zlnx0-Xg,229789
+aws_cdk.aws_dynamodb-1.180.0.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_dynamodb-1.180.0.dist-info/METADATA,sha256=h0wmGoU3PUzL9GorjTpp7f5xTi4NaVyOWKdAbfIruO0,8936
+aws_cdk.aws_dynamodb-1.180.0.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_dynamodb-1.180.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_dynamodb-1.180.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_dynamodb-1.180.0.dist-info/RECORD,,
