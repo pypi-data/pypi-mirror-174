@@ -1,0 +1,7 @@
+text_patch/__init__.py,sha256=RIUPiW620XrJyQ6XS7a2rwsua_uprS0ZxTf0FYz6phA,59
+text_patch/dict/no_change.example.dict.txt,sha256=tJgePKKapJg9UjQ3CfswkvNRZBbFQJc6M3ONhuAub28,22
+text_patch/dict/normailze.example.dict.txt,sha256=peeptI_HFCx0x7W-jBCT-S9Mzll2Li3hfy2LupOuBuc,40
+text_patch/processor.py,sha256=4t2IVIqlkLFs78v-6PVT9AQUbmJPNivd5x6PsAmZEe8,3318
+text_patch-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+text_patch-0.1.0.dist-info/METADATA,sha256=0_oUfinxfzCpevQM5heHiXhbozRVX73HLWsMZuZFGzs,392
+text_patch-0.1.0.dist-info/RECORD,,
