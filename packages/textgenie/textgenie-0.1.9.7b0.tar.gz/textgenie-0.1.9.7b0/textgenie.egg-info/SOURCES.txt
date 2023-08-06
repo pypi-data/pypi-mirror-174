@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+logo.png
+sentences_aug.txt
+setup.cfg
+setup.py
+examples/basic.py
+examples/examples.ipynb
+textgenie/__init__.py
+textgenie/grammar_utils.py
+textgenie/textgenie.py
+textgenie.egg-info/PKG-INFO
+textgenie.egg-info/SOURCES.txt
+textgenie.egg-info/dependency_links.txt
+textgenie.egg-info/requires.txt
+textgenie.egg-info/top_level.txt
