@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "lois"
+version = "0.0.4"
+description = "the fastest and easy way to get insight of your dataset"
+authors = ["Charles TCHANAKE <datadevfernolf@gmail.com>"]
+readme = "README.md"
+license="MIT"
+homepage="https://github.com/charleslf2/lois.git"
+repository="https://github.com/charleslf2/lois.git"
+
+keywords=["EDA", "Data analysis", "Charles TCHANAKE", "Automation"]
+
+classifiers=[
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.23.4"
+pandas = "^1.5.1"
+matplotlib = "^3.6.1"
+rich = "^12.6.0"
+seaborn = "0.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
