@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+setup.py
+firebotpy/Firebot.py
+firebotpy/__init__.py
+firebotpy.egg-info/PKG-INFO
+firebotpy.egg-info/SOURCES.txt
+firebotpy.egg-info/dependency_links.txt
+firebotpy.egg-info/requires.txt
+firebotpy.egg-info/top_level.txt
