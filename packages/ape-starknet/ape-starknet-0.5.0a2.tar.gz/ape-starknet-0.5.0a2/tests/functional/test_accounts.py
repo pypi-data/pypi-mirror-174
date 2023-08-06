@@ -1,0 +1,188 @@
+import pytest
+from ape.api.networks import LOCAL_NETWORK_NAME
+from click.testing import CliRunner
+from starkware.cairo.lang.vm.cairo_runner import pedersen_hash
+
+from ape_starknet.utils import is_hex_address
+
+
+@pytest.fixture
+def give_input():
+    def fn(msg):
+        return CliRunner().isolation(input=msg)
+
+    return fn
+
+
+@pytest.fixture
+def devnet_keyfile_account(account_container, account):
+    account_container.import_account(
+        "__DEV_AS_KEYFILE_ACCOUNT__",
+        "testnet",
+        account.address,
+        private_key=account.private_key,
+        passphrase="123",
+    )
+    return account_container.load("__DEV_AS_KEYFILE_ACCOUNT__")
+
+
+def test_public_key(key_file_account, public_key):
+    actual = key_file_account.public_key
+    assert actual == public_key
+
+
+def test_sign_message_using_key_file_account(key_file_account, password):
+    assert key_file_account.sign_message(5, passphrase=password)
+
+
+def test_address(account):
+    assert is_hex_address(account.address)
+
+
+def test_sign_message_and_check_signature(account):
+    data = 500
+    signature = account.sign_message(data)
+    data_hash = pedersen_hash(data, 0)
+    result = account.check_signature(data_hash, signature)
+    assert result, "Failed to validate signature"
+
+
+def test_sign_message_and_check_signature_using_deployed_account(ephemeral_account):
+    data = 500
+    signature = ephemeral_account.sign_message(data)
+    data_hash = pedersen_hash(data, 0)
+    result = ephemeral_account.check_signature(data_hash, signature)
+    assert result, "Failed to validate signature"
+
+
+def test_account_container_contains(account, second_account, key_file_account, account_container):
+    assert account.address in account_container
+    assert second_account.address in account_container
+    assert key_file_account.address in account_container
+
+
+CASE_NAME_TO_LAMBDA = {
+    "address_str": lambda a, _: a.address,
+    "address_int": lambda a, e: e.encode_address(a.address),
+    "public_key_str": lambda a, _: a.public_key,
+    "public_key_int": lambda a, e: e.encode_address(a.public_key),
+}
+
+
+@pytest.mark.parametrize("case", [x for x in CASE_NAME_TO_LAMBDA.keys()])
+def test_access_account_by_str_address(account, account_container, ecosystem, case):
+    get_address = CASE_NAME_TO_LAMBDA[case]
+    address = get_address(account, ecosystem)
+    assert account_container[address] == account
+    assert address in account_container
+
+
+def test_balance(account, ephemeral_account, tokens):
+    balance = account.balance
+    assert isinstance(balance, int)
+    assert balance > 0
+
+    balance = ephemeral_account.balance
+    assert isinstance(balance, int)
+    assert balance > 0
+
+    # Clear caches and make sure still works (uses RPC)
+    del tokens.local_balance_cache[account.address]
+    del tokens.local_balance_cache[ephemeral_account.address]
+
+    balance = account.balance
+    assert isinstance(balance, int)
+    assert balance > 0
+
+    balance = ephemeral_account.balance
+    assert isinstance(balance, int)
+    assert balance > 0
+
+
+def test_can_access_devnet_accounts(account, second_account, chain):
+    assert chain.contracts[account.address] == account.contract_type
+    assert chain.contracts[second_account.address] == second_account.contract_type
+
+
+def test_import_with_passphrase(account_container, account):
+    alias = "__TEST_IMPORT_WITH_PASSPHRASE__"
+    account_container.import_account(
+        alias,
+        LOCAL_NETWORK_NAME,
+        account.address,
+        account.private_key,
+        passphrase="p@55W0rd",
+    )
+    new_account = account_container.load(alias)
+    assert new_account.address == account.address
+
+
+def test_transfer(account, second_account):
+    initial_account_balance = account.balance
+    initial_second_account_balance = second_account.balance
+    receipt = account.transfer(second_account, 10)
+    total_cost = receipt.total_fees_paid + 10
+    assert second_account.balance == initial_second_account_balance + 10
+    assert account.balance == initial_account_balance - total_cost
+
+
+def test_unlock_with_passphrase_and_sign_message(give_input, devnet_keyfile_account):
+    devnet_keyfile_account.unlock(passphrase="123")
+
+    with give_input("y\n"):
+        devnet_keyfile_account.sign_message([1, 2, 3])
+
+
+def test_unlock_from_prompt_and_sign_message(give_input, devnet_keyfile_account):
+    with give_input("123\n"):
+        devnet_keyfile_account.unlock()
+
+    with give_input("y\n"):
+        devnet_keyfile_account.sign_message([1, 2, 3])
+
+
+def test_unlock_with_passphrase_and_sign_transaction(give_input, devnet_keyfile_account, contract):
+    devnet_keyfile_account.unlock(passphrase="123")
+
+    with give_input("y\n"):
+        contract.increase_balance(devnet_keyfile_account, 100, sender=devnet_keyfile_account)
+
+
+def test_unlock_from_prompt_and_sign_transaction(give_input, devnet_keyfile_account, contract):
+    with give_input("123\n"):
+        devnet_keyfile_account.unlock()
+
+    with give_input("y\n"):
+        contract.increase_balance(devnet_keyfile_account, 100, sender=devnet_keyfile_account)
+
+
+def test_set_autosign(give_input, devnet_keyfile_account, contract):
+    with give_input("123\n"):
+        devnet_keyfile_account.set_autosign(True)
+
+    contract.increase_balance(devnet_keyfile_account, 100, sender=devnet_keyfile_account)
+
+    # Disable and verify we have to sign again
+    devnet_keyfile_account.set_autosign(False)
+    with give_input("123\ny\n"):
+        contract.increase_balance(devnet_keyfile_account, 100, sender=devnet_keyfile_account)
+
+
+def test_set_autosign_and_provide_passphrase(give_input, devnet_keyfile_account, contract):
+    devnet_keyfile_account.set_autosign(True, passphrase="123")
+    contract.increase_balance(devnet_keyfile_account, 100, sender=devnet_keyfile_account)
+
+    # Disable and verify we have to sign again
+    devnet_keyfile_account.set_autosign(False)
+    with give_input("123\ny\n"):
+        contract.increase_balance(devnet_keyfile_account, 100, sender=devnet_keyfile_account)
+
+
+def test_accounts_returns_empty_list_when_connected_to_ethereum(accounts, networks):
+    container = accounts.containers["starknet"]
+    assert container.test_accounts
+
+    with networks.ethereum.local.use_provider("test"):
+        assert not container.test_accounts
+
+    assert container.test_accounts
