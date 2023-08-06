@@ -1,0 +1,41 @@
+connection
+**********
+
+
+Description
+===========
+
+Represents the metadata description of a connection used by
+deployments in the same compartment.
+
+
+Available Commands
+==================
+
+* change-compartment
+
+* create-goldengate-connection
+
+* create-kafka-connection
+
+* create-mysql-connection
+
+* create-object-storage-connection
+
+* create-oracle-connection
+
+* delete
+
+* get
+
+* list
+
+* update-goldengate-connection
+
+* update-kafka-connection
+
+* update-mysql-connection
+
+* update-object-storage-connection
+
+* update-oracle-connection
