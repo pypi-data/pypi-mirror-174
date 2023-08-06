@@ -1,0 +1,5 @@
+numpy
+osometweet
+requests-oauthlib
+sklearn
+textblob
