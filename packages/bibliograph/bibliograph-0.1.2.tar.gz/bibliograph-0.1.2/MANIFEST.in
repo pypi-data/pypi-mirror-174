@@ -1,0 +1,2 @@
+recursive-include bibliograph/resources
+recursive-include bibliograph/test_data
