@@ -1,0 +1,5 @@
+chem_scripts
+chem_scripts/chem_handler
+chem_scripts/mol_handler
+chem_scripts/rxn_handler
+chem_scripts/rxn_template
