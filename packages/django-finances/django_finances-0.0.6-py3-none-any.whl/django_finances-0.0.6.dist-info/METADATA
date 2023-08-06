@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: django-finances
+Version: 0.0.6
+Summary: Financial transactions and payments for Django.
+Home-page: https://github.com/DanielHuisman/django-finances
+License: MIT
+Keywords: django,transaction,payment,finance
+Author: Daniel Huisman
+Author-email: daniel@huisman.me
+Maintainer: Daniel Huisman
+Maintainer-email: daniel@huisman.me
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: django (>=4.0,<5.0)
+Requires-Dist: lxml (>=4.9.0,<5.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Project-URL: Repository, https://github.com/DanielHuisman/django-finances
+Description-Content-Type: text/markdown
+
+# Django Finances
+
+Financial transactions and payments for Django.
+
+**NOTE: This library is still under development and mostly undocumented. It is currently not recommended for use in (production) applications.**
+
+## Features
+
+This library consists of two modules: transactions and payments. The two modules were designed to be used together, but they can also be used separately.
+
+### Transactions
+Transactions are TODO
+
+### Payments
+Payments are TODO
+
+#### Payment providers
+- Invoice
+- [Mollie](https://www.mollie.com)
+- [SEPA Direct Debit](https://www.europeanpaymentscouncil.eu/what-we-do/sepa-direct-debit)
+
+## Documentation
+The documentation is available [here](docs/index.md).
+
+## Contributing
+See the [development documentation](docs/development.md). In the future more specific guidelines for contributing will be drafted. 
+
+## License
+This project is available under the [MIT license](LICENSE.md). Note that some dependencies have different licenses.
+
