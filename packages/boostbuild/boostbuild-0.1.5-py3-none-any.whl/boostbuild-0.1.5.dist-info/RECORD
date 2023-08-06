@@ -1,0 +1,13 @@
+boostbuild/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boostbuild/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boostbuild/cmd/delete.py,sha256=CnCWYQYyMN32J06SPaIr1fsFhct-lekYhArQcVAFn-M,679
+boostbuild/cmd/print.py,sha256=JkaVbRJmVkNqIbgZIHwia6CcjiI0yERGNpidn4-xITs,416
+boostbuild/cmd/pwd.py,sha256=jAo0Dam2I0xGeFTVrRFjy3nW6Q5I7wnDsUM8qqHSrYg,453
+boostbuild/cmd/unkown.py,sha256=i-0y0h9jZS7zrCBwekoewnw7A69DrUC8OEJM41C6Y8w,1425
+boostbuild/main.py,sha256=FV7eazuy0ABDC31UYOLdE7xD9BA6UGVzt7LLF0F5ASY,4813
+boostbuild/validation.py,sha256=zWkXOyKU1yeBZvEVBDneN--Yythz33bNiJScXwe46LM,2755
+boostbuild-0.1.5.dist-info/entry_points.txt,sha256=SKAT0Q99cFcIdzQdydJEKC9cMz1lMWRHc8VpSqsJR9s,46
+boostbuild-0.1.5.dist-info/LICENSE,sha256=BsVU8XCN5wOgYYdQYRVgSlqwdE2dmqQjSeZQYFytB9A,11341
+boostbuild-0.1.5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+boostbuild-0.1.5.dist-info/METADATA,sha256=L5mzI85MQvE7uk9j7O8aaRsVjEJekYq51bPKSUsowv4,2654
+boostbuild-0.1.5.dist-info/RECORD,,
