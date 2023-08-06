@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pdf2ebook
+Version: 1.12.0
+Summary: PDF to ebook
+Home-page: https://github.com/RobertLucey/pdf2ebook
+Author: Robert Lucey
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: isbnlib
+Requires-Dist: pdf2text
+Requires-Dist: ebooklib
+Requires-Dist: bs4
+Requires-Dist: langdetect
+Requires-Dist: cached-property
+Requires-Dist: boltons
+
+PDF to ebook
