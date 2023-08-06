@@ -1,0 +1,7 @@
+LICENSE
+generator.py
+setup.py
+Digo_generator.egg-info/PKG-INFO
+Digo_generator.egg-info/SOURCES.txt
+Digo_generator.egg-info/dependency_links.txt
+Digo_generator.egg-info/top_level.txt

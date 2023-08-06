@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Digo_generator
+Version: 0.0.2
+Summary: It is a random text generator.
+Author: Richard Alphonse
+Requires-Python: >=3.6
+License-File: LICENSE
