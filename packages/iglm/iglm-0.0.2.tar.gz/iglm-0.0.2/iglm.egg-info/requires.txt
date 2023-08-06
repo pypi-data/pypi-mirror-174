@@ -1,0 +1,6 @@
+biopython>=1.79
+numpy>=1.21.2
+tokenizers>=0.10.2
+torch>=1.11.0
+tqdm>=4.64.0
+transformers>=4.6.1
