@@ -1,0 +1,6 @@
+numpy
+click
+
+[hdf5]
+matplotlib
+h5py
