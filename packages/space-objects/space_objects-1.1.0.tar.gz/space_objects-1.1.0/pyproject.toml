@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "space-objects"
+version = "1.1.0"
+description = "wrapper lib around the skyfield package"
+authors = ["larrieu <larrieuolivierad@gmail.com>"]
+readme = "README.md"
+packages = [{include = "space_objects"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+skyfield = "^1.45"
+tabulate = "^0.9.0"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.5.0"
+pytest = "^7.2.0"
+black = "^22.10.0"
+ipykernel = "^6.16.2"
+matplotlib = "^3.6.1"
+pre-commit = "^2.20.0"
+flake8 = "^5.0.4"
+isort = "^5.10.1"
+coverage = "^6.5.0"
+genbadge = {extras = ["coverage"], version = "^1.1.0"}
+ipdb = "^0.13.9"
+
+[tool.black]
+line-length = 79
+target-version = ['py310']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.coverage]
+disable_warnings = ["no-data-collected"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+py_version = 39
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
