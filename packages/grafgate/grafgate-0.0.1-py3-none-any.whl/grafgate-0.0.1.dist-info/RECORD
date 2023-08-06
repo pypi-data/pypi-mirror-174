@@ -1,0 +1,7 @@
+grafgate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grafgate/grafgate.py,sha256=Wme41BKh8N-60HJdMHKRrPbVASvm-qe8S759DPybqNo,4740
+grafgate/schemas.py,sha256=1511t86yXI4f9gEMvQCsBAe_4hhUJGmZKL5hybcoUpA,743
+grafgate-0.0.1.dist-info/METADATA,sha256=9EzwP43U-tpMsKl53n9REvzQQ2uQF6VxOHMWjbFwfMQ,977
+grafgate-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+grafgate-0.0.1.dist-info/top_level.txt,sha256=KrYy7El_RrJE6GMuEQ0sIlUdEO_N87i1UUFyNWEW7hA,9
+grafgate-0.0.1.dist-info/RECORD,,
