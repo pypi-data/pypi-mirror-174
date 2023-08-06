@@ -1,0 +1,3 @@
+[console_scripts]
+amarna = amarna.command_line:main
+
