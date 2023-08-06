@@ -1,0 +1,4 @@
+ecdsa
+cryptography>=38.0.3
+requests
+importlib_metadata
