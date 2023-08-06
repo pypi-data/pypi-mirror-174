@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: neolab-ci
+Version: 0.0.1
+Summary: Command Line Tool for Neolab  CI service written in Python
+Home-page: 
+Author: @Neolab Vietnam
+Author-email: phuong.nv@neo-lab.vn
+Keywords: setuptools development neolab-ci
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
