@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PivotGauss
+Version: 1.0.2
+Summary: The Gauss Elimination Methods.
+Home-page: https://github.com/JamorMoussa/PivotGuass.git
+Author: Moussa JAMOR
+Author-email: moussajamorsup@gmail.com
+License: MIT
+Keywords: Pivot Gauss,Elimination,Linear system,inverse of matrix
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt.
+Requires-Dist: numpy
+
+This Librarie is provide the Gauss Elimination method to find the 
+solution of a linear system and inverse of matrix if it's exists.
+
+
+
