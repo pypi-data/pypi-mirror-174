@@ -1,0 +1,10 @@
+README.md
+setup.py
+PyZelectrode/DataExplorer.py
+PyZelectrode/GuiDataExplorer_v2.ui
+PyZelectrode/Helper.py
+PyZelectrode/__init__.py
+PyZelectrode.egg-info/PKG-INFO
+PyZelectrode.egg-info/SOURCES.txt
+PyZelectrode.egg-info/dependency_links.txt
+PyZelectrode.egg-info/top_level.txt
