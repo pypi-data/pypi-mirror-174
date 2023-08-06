@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "comp3900_ttt_arena_helpers"
+version = "0.0.1"
+authors = [
+    { name="Kevin Zhong", email="z5207993@unsw.edu.au" },
+]
+readme = "README.md"
+description = "Helper classes for ttt arena users"
+requires-python = ">=3.10"
+
+

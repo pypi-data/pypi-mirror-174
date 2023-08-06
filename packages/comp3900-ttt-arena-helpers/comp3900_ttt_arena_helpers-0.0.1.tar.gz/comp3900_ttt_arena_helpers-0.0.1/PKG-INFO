@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: comp3900_ttt_arena_helpers
+Version: 0.0.1
+Summary: Helper classes for ttt arena users
+Author-email: Kevin Zhong <z5207993@unsw.edu.au>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+This is a sample README
