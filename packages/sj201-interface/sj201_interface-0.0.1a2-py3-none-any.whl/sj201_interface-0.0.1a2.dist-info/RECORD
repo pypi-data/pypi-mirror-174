@@ -1,0 +1,16 @@
+sj201_interface/__init__.py,sha256=UDwbScPcnqA05m_zQmXnY6YeoL5j6NS_TaLj0mQdU_8,1831
+sj201_interface/cli.py,sha256=iyKb_enZ3HBhcWJCAf_3UQwrNlrvlUmgB93-YGaivDA,3291
+sj201_interface/fan.py,sha256=lLheJMmX4Oaes8WGtlJtc9uYstAxpK-oS0YnGRRipYQ,8154
+sj201_interface/revisions.py,sha256=t8Nu4zfEAug_f1BUdLQFwKX4sXWQYoecFW2Mg1ZvX10,2881
+sj201_interface/switches.py,sha256=xGphg-YrPd_EyCvQC0Bnk-xQIgMvhykOKxHclOlCQys,7345
+sj201_interface/version.py,sha256=PUdEgENQYPzsnaTRYbRLWOhuAKHQ7yfKqnu8j2HyAQU,1856
+sj201_interface/led/__init__.py,sha256=BmaEKUFAdiTDb701X353EFjFurpYcI6bf9Fk-uP4fHE,13339
+sj201_interface/led/animations.py,sha256=l-Bk5QHZRCfYvUdphFr4gA-94SzIwlcla9OM-4mrJ2A,5129
+sj201_interface/util/__init__.py,sha256=UDwbScPcnqA05m_zQmXnY6YeoL5j6NS_TaLj0mQdU_8,1831
+sj201_interface/util/tas5806.py,sha256=g5ZZhItcShcnwnj6PgeV1srjTX9ubaYQ3KAPvVNNT-c,7038
+sj201_interface-0.0.1a2.dist-info/LICENSE.md,sha256=gxKa3HnxC7fSIlGFpLAiSAhQS22pIyVEyXmPQR2KlXM,1634
+sj201_interface-0.0.1a2.dist-info/METADATA,sha256=sICeSx0QkM8cOi-dutb_uwaIVDwy-hCL6GRH_SrSmW0,1451
+sj201_interface-0.0.1a2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sj201_interface-0.0.1a2.dist-info/entry_points.txt,sha256=2ws0xV0adHjXLlcrsPe0780ewmDE39F4G1Qa4hshkG8,57
+sj201_interface-0.0.1a2.dist-info/top_level.txt,sha256=fZTrymfpnuk7mKDEja6zHXYD9EVz6qufxcfmKL4TZ6o,16
+sj201_interface-0.0.1a2.dist-info/RECORD,,
