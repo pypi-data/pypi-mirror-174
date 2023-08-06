@@ -1,0 +1,11 @@
+deephaven/plugin/__init__.py,sha256=aQvKMxmo87DKwzwqLcmNzGZ_gyvBConm0PZckIGR_Po,2632
+deephaven/plugin/content.py,sha256=SdiZWK9KPAwuzKgBOe0eLMNc9AXw1q6C3Oqah29sGcY,647
+deephaven/plugin/js.py,sha256=8CFO25BB1TTaRiK5vhFU2GtJdbTvtc72tON3SvGLFlo,423
+deephaven/plugin/object.py,sha256=xlqY8Js_9r9x_NeYdpug5e0LWhEPiLqYiA1Jdylwyuo,2477
+deephaven/plugin/object/__init__.py,sha256=muV3gBgi0qNyFGrlNb04kJK1qx4PkItSXB8DH6I1VZc,1658
+deephaven_plugin-0.4.0.dev0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+deephaven_plugin-0.4.0.dev0.dist-info/METADATA,sha256=aPWDXtFSAdnSTVeL9kB1wZmXkF0M-Da7bgRy0Loo53s,1105
+deephaven_plugin-0.4.0.dev0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deephaven_plugin-0.4.0.dev0.dist-info/entry_points.txt,sha256=9mClwV7CR-vSTZz2O7n6pE17vLyF0wx_JJ48JlSpwMU,170
+deephaven_plugin-0.4.0.dev0.dist-info/top_level.txt,sha256=lOQLipCMwmvTe9Ezpb8YCd5P0DN7eeS6pnIDrdz4Dzg,10
+deephaven_plugin-0.4.0.dev0.dist-info/RECORD,,
