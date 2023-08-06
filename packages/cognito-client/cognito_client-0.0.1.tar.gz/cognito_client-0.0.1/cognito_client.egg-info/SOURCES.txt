@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cognito_client/__init__.py
+cognito_client/cognito_client.py
+cognito_client.egg-info/PKG-INFO
+cognito_client.egg-info/SOURCES.txt
+cognito_client.egg-info/dependency_links.txt
+cognito_client.egg-info/not-zip-safe
+cognito_client.egg-info/requires.txt
+cognito_client.egg-info/top_level.txt
