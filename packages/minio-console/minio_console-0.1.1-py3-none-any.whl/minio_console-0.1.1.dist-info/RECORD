@@ -1,0 +1,10 @@
+minio_console/__init__.py,sha256=KqR_ZtiIcPxGVNAwjNb9OszigIr3R7jv_QCBArUg7j4,113
+minio_console/buckets.py,sha256=08dTuqACQqgMFx3lOFW3j0ZXSuCQT4SVUAMrKrOjers,595
+minio_console/client.py,sha256=UmD-_06myZUS-SoYhazRu0aQsPwAz03Lebez5xY6DL0,1629
+minio_console/policies.py,sha256=Kfc0iC5gYuOeQ2I33M9DYXnbxltpePCM-7rAaCZ2OVw,641
+minio_console/users.py,sha256=wesvoz_11rl_bIq-9UN66oRqFTorAVddMWlUxZbSLKc,1064
+minio_console-0.1.1.dist-info/LICENSE,sha256=ZYDApbp_LaKTmoD46ug1y1GbmaUSTYNSwsYEf5nAZqM,1079
+minio_console-0.1.1.dist-info/METADATA,sha256=tMGxfbtg6M8fgkWTfBF1VSu2ci75bN23fatEaXEgoDU,747
+minio_console-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+minio_console-0.1.1.dist-info/top_level.txt,sha256=js6PHe_gMr0vAbmfioIcs0OiVPiRCJnLHYAv2oa_E_0,14
+minio_console-0.1.1.dist-info/RECORD,,
