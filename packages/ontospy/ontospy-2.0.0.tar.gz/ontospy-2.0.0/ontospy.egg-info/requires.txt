@@ -1,0 +1,14 @@
+rdflib
+SPARQLWrapper
+html5lib
+requests
+pyfiglet
+click
+colorama
+pyparsing
+jinja2
+jinja2-time
+pygments
+
+[SHELL]
+readline
