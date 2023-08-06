@@ -1,0 +1,12 @@
+umbitlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umbitlib/constants.py,sha256=ufnuuLm52zjinqeJet1AxpPP6Xd_-WfosXsMer7FBIY,1371
+umbitlib/dates.py,sha256=bBAZ3I5t25UywxxFjfOl08OwRB5Q5CcejlRVLXEKTVQ,3262
+umbitlib/graphs.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umbitlib/helpers.py,sha256=blOwzeUx6tjxMiKx-m7a8-0ubxbuqXBstKPxFdG9D1o,17982
+umbitlib/queries.py,sha256=LYNqpeVKb8dCYzZqoONyiNrZkUX3f8E-h6jA-5UtcUk,20399
+umbitlib/science.py,sha256=hv3M4mjUQlYcnCP1cyOzSO2UWskbzp7qKXvJzmorn3Q,6542
+umbitlib-0.0.38.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+umbitlib-0.0.38.dist-info/METADATA,sha256=ccik8Y0mE2FM_WdVqLFZQKWSo4Yqtc5kaLyGxHtmilE,1341
+umbitlib-0.0.38.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+umbitlib-0.0.38.dist-info/top_level.txt,sha256=BrofIKGMEb_PktfmIOeXBXmB5fvMxt0txZiBO3sc-ow,9
+umbitlib-0.0.38.dist-info/RECORD,,
