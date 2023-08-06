@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: spanet
+Version: 2.0.0
+Summary: Symmetry Preserving Attention Networks
+Home-page: https://github.com/Alexanders101/SPANet
+Author: Alexander Shmakov
+Author-email: Alexanders101@gmail.com
+License: BSD-3-Clause
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.3
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.6
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Typing :: Typed
+License-File: LICENSE
