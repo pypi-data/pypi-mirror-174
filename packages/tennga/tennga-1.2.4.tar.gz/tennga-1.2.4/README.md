@@ -1,0 +1,120 @@
+# Tennga
+ 一个简单的源管理器
+
+## 用法：
+
+```python
+from tennga import tennga
+tennga.init() #在文件夹下初始化源srcf
+tennga.listsrc() #打印所有源
+tennga.add(url) #添加源
+tennga.remove(url或者数字) #移除list出来的源
+tennga.update() #更新与使用源 下载所有源文件到srcs下面
+tennga.find(文件夹，文件名，uuid) #从srcs的源中查找文件
+tennga.install(文件夹，文件名) #从源搜索并下载文件，携带一个aop。自动将文件下载到srcf/内容1中。
+tennga.uninstall(文件夹，文件名)
+tennga.freeze(文件夹) #freeze会返回已经安装的所有文件信息
+tennga.getfile(文件夹，文件名) #获得文件目录
+tennga.getfiles(文件夹) #获得虚文件下所有文件目录
+```
+
+
+
+## 源格式 utf-8 json
+
+```json
+{
+    "目录1":[
+        {"name":"文件1",
+         "urls":["http://www.baidu.com",
+                "block://块名1/文件名"
+               ]
+         "uuid" : "f0645603-2fc6-4007-82e6-b731b8920b5b"
+        },
+    ],
+    "目录2":[
+        
+    ],
+    "blocks":[
+        {
+            "name":"块名1",
+            "url":"http://www.baidu.com/xx.block",
+        }
+    ]
+}
+```
+
+
+
+## 结构
+
+### 1. 文件存储
+
+源文件存储在: srcf/srcs/全部源文件
+
+文件存储在虚目录下: srcf/目录1/文件1/文件内容.txt
+
+block存储在: srcf/blocks/xx.block
+
+### 2. 特殊文件
+
+#### uuid.lock
+
+所有已经安装的文件下面会有
+
+这不仅仅是文件的特殊标记，也存储了所有文件的下载顺序，包括文件顺序，block文件顺序，以及文件综合顺序。这其实是个json。需要文件顺序的，比如小说软件，需要知道多个文件的顺序，则可以读取这个文件。
+
+## block文件
+
+以tar归档的文件。不能包含文件夹，是多个文件被裸归档的。
+
+扩展名为:*.block
+
+block链接：block://block名/文件名.扩展名，可以直接访问block中的文件。
+
+其中，程序会先从blocks目录中查找block块，如果没有，会尝试从源中下载对应block。然后再从block中获取文件。通常用于应对过于散碎的批量文件，比如一个源中全是图片，下载很多次不如一次下完。
+
+因为程序会主动检查本地是否存在对应block,所以不会重新下载block。如果压缩错了重新修改上传了，也不会被重新下载。因此建议如果修改，请使用新的block，并修改源中的链接，等待用户自己下次更新源以及更新文件
+
+## 源制作器
+
+```python
+from tennga import srcmake
+srcmake.openSourceFile(name)
+srcmake.addFile(srcfile, floder, filename)
+srcmake.addLink(srcfile, floder, filename, link)
+srcmake.addKV(srcfile, floder, filename, key, value)
+srcmake.addBlock(srcfile, blockname)
+srcmake.addBlockLink(srcfile, blockname, link)
+srcmake.save(name,srcfile)
+```
+
+## 小说源制作方案
+
+可以将对应网站的小说对应页面作为源，下载。
+
+分为：
+
+xx.yaml 中存储xpath，用于分解页面
+
+其他的全是 xx.html，都是小说网站的页面
+
+方案：
+
+小说阅读器通过yaml中xpath解析对应离线的html页面，就成了小说。并且可以离线使用。
+
+## 预计功能（v2.0.0）
+
+提供一个源管理器和制作器的UI
+
+使用：
+
+python -m tennga
+
+可以导出两个文件:
+
+tennga.html #这是tennga管理器页面，放在static目录下即可
+
+tennga.py #这是flask的蓝图，可以直接注册使用
+
+可以使用iframe导入tennga集成到flask软件中使用。
