@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+binomial_test/Binomialdistribution.py
+binomial_test/Gaussiandistribution.py
+binomial_test/Generaldistribution.py
+binomial_test/__init__.py
+binomial_test.egg-info/PKG-INFO
+binomial_test.egg-info/SOURCES.txt
+binomial_test.egg-info/dependency_links.txt
+binomial_test.egg-info/not-zip-safe
+binomial_test.egg-info/top_level.txt
