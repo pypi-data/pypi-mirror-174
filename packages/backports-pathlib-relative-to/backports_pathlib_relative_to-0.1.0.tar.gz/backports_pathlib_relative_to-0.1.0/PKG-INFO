@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: backports-pathlib-relative-to
+Version: 0.1.0
+Summary: Backports pathlib.Path().relative_to method from python 3.12
+Project-URL: Source code, https://github.com/zeehio/backports-pathlib-relative-to
+Author: Domenico Ragusa
+Author-email: Sergio Oller <sergioller@gmail.com>
+Keywords: backports,pathlib,relative_to,walk_up
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# backports-pathlib-relative-to
+
+Backports the `relative_to` method with its `walk_up`
+argument from python 3.12 back to 3.7.
+
+## Installation
+
+```
+python -m pip install backports-pathlib-relative-to
+```
+
+## Usage
+
+```python
+from backports.pathlib import pathlib
+
+p = pathlib.Path("/a")
+p.relative_to("/c", walk_up=True)
+```
