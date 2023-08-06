@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: butler-connect
+Version: 0.0.2
+Summary: First tag!
+Author-email: Oliver Birkholz <info@aibutler.de>
+Project-URL: Homepage, http://aibutler.de/
+Keywords: feed,reader,tutorial
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: sseclient
+Requires-Dist: requests (>=2.28.0<3.0)
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+ask Oliver Birkholz
