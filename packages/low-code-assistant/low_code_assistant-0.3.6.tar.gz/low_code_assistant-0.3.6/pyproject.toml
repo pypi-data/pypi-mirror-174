@@ -1,0 +1,71 @@
+[build-system]
+requires = ["hatchling >=0.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "low-code-assistant"
+authors = [
+    {name = "Maarten A. Breddels", email = "maartenbreddels@gmail.com"},
+    {name = "Mario Buikhuizen", email = "mariobuikhuizen@gmail.com"}]
+# license = {file = "LICENSE"}
+# classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "reacton~=0.14.0",
+    "solara[assets]~=0.12.1",
+    "ipyvue",
+    "ipyvuetify",
+    "ipywidgets<8",
+    "pandas",
+    "plotly>=5.5",
+    "dominodatalab; python_version >= '3.8'",
+    "humanize",
+    "pydantic",
+    "nbformat>=4.5",  # to support cell ids
+    "notebook>=4.6",  # to support cell ids
+    "openpyxl",
+    "xlrd",
+]
+
+[tool.hatch.version]
+path = "low_code_assistant/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["dominocode", "low_code_assistant"]
+
+[tool.hatch.build.targets.sdist]
+packages = ["dominocode", "low_code_assistant"]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"prefix/share" = "share"
+"prefix/etc" = "etc"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pytest-timeout",
+    "pytest-playwright",
+    "pre-commit",
+    "types-requests",
+    "flake8",
+    "black",
+    "snowflake-connector-python",
+    "redshift-connector",
+    "playwright==1.19.0",
+    "bump2version",
+    "dominodatalab-data",
+]
+
+[project.urls]
+Home = "https://github.com/dominodatalab/low-code-assistant"
+
+[tool.black]
+line-length = 160
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = "--disable-warnings"
+timeout = 50
