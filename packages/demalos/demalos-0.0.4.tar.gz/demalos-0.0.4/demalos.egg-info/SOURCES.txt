@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+demalos/__init__.py
+demalos/demalos.py
+demalos.egg-info/PKG-INFO
+demalos.egg-info/SOURCES.txt
+demalos.egg-info/dependency_links.txt
+demalos.egg-info/not-zip-safe
+demalos.egg-info/requires.txt
+demalos.egg-info/top_level.txt
