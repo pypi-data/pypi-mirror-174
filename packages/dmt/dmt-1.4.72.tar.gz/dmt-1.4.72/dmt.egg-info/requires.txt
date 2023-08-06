@@ -1,0 +1,6 @@
+prompt_toolkit<3.1.0,>=2.0.0
+tqdm
+halo
+pyyaml
+requests
+transformers
