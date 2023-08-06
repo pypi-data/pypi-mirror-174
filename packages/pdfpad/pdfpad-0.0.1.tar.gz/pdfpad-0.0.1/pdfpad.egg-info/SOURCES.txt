@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pdfpad/__init__.py
+pdfpad/__version__.py
+pdfpad/entrypoint.py
+pdfpad/interface.py
+pdfpad.egg-info/PKG-INFO
+pdfpad.egg-info/SOURCES.txt
+pdfpad.egg-info/dependency_links.txt
+pdfpad.egg-info/entry_points.txt
+pdfpad.egg-info/requires.txt
+pdfpad.egg-info/top_level.txt
