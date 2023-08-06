@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+src/AutoDD/AutoDD.py
+src/AutoDD/__init__.py
+src/AutoDD/__main__.py
+src/AutoDD/fast_yahoo.py
+src/AutoDD/shared.py
+src/AutoDD.egg-info/PKG-INFO
+src/AutoDD.egg-info/SOURCES.txt
+src/AutoDD.egg-info/dependency_links.txt
+src/AutoDD.egg-info/entry_points.txt
+src/AutoDD.egg-info/requires.txt
+src/AutoDD.egg-info/top_level.txt
