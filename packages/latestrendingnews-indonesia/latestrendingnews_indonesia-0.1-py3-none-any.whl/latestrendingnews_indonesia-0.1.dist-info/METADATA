@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: latestrendingnews-indonesia
+Version: 0.1
+Summary: This package will display the latest trending news data taken from detik.com
+Home-page: https://github.com/Reinz-Stuff/latest-trending-news
+Author: Fauzi Kurniawan
+Author-email: fauzik354313@gmail.com
+Project-URL: Github, https://github.com/Reinz-Stuff
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# latest trending news
+This package will display the latest trending news data taken from detik.com
+## HOW IT WORK?
+This package will scrape data from [detikcom](https://www.detik.com) to display the latest most popular news in Indonesia. This package use BeautifulSoup4 and request to  produce output in the form of JSON which is ready to be used in web and mobile applications
+
+## HOW TO USE
+```
+import beritapopuler
+
+if __name__ == "__main__":
+    print('Main Application')
+    result = beritapopuler.ektraksi_data()
+    beritapopuler.tampilkan_data(result)
+```
+
+## Author
+Fauzi Kurniawan
