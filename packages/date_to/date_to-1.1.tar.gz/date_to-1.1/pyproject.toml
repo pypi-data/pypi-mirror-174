@@ -1,0 +1,30 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "date_to"
+authors = [{name = "Arnaud van Haaster", email = "dont@me.please"}]
+dynamic = ["version", "description"]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Development Status :: 5 - Production/Stable",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "dateparser>=1.1.2",
+]
+requires-python = ">=3.10"
+
+[project.urls]
+Source = "https://github.com/ahaaster/date-to/blob/master/date_to.py"
+Home = "https://github.com/ahaaster/date-to"
+Documentation = "https://github.com/ahaaster/date-to/blob/master/README.md"
