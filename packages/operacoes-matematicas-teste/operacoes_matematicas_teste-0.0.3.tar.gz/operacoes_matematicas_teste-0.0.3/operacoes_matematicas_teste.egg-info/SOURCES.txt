@@ -1,0 +1,9 @@
+README.md
+setup.py
+operacoes_matematicas/__init__.py
+operacoes_matematicas/multiplicacao_e_divisao.py
+operacoes_matematicas/soma_e_subtrai.py
+operacoes_matematicas_teste.egg-info/PKG-INFO
+operacoes_matematicas_teste.egg-info/SOURCES.txt
+operacoes_matematicas_teste.egg-info/dependency_links.txt
+operacoes_matematicas_teste.egg-info/top_level.txt

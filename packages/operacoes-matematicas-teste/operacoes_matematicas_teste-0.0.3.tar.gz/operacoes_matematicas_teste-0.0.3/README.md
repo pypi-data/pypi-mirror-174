@@ -1,0 +1,36 @@
+# operacoes_matematicas
+
+Description. 
+The package operacoes_matematicas is used to:
+	- sum, subtraction;
+	- multiplication, division.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install -i https://test.pypi.org/simple/ operacoes-matematicas
+
+```
+
+## Usage
+
+```python
+from operacoes_matematicas import multiplicacao_e_divisao
+
+ex:
+
+multiplicacao_e_divisao.multiplica_dois_numeros(2,7)
+
+or
+ 
+multiplicacao_e_divisao.divide_dois_numeros(5, 2)
+
+```
+
+## Author
+Ricardo Duarte
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
