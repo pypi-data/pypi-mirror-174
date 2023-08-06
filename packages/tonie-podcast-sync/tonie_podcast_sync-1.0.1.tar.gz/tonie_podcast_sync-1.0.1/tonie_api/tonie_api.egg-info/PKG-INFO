@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tonie-api
+Version: 0.1
+Summary: Python library to access the API of the toniecloud. NOT associated with Boxine (tonies.de) in any way.
+Home-page: https://github.com/moritzj29/tonie_api
+Author: Moritz Jung
+Author-email: 18733473+moritzj29@users.noreply.github.com
+License: MIT
+License-File: LICENSE
