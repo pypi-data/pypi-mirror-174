@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+kimbo/__init__.py
+kimbo.egg-info/PKG-INFO
+kimbo.egg-info/SOURCES.txt
+kimbo.egg-info/dependency_links.txt
+kimbo.egg-info/top_level.txt
