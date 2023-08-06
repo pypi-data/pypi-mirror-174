@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "doi2pdf"
+version = "0.1.1"
+description = "Retrieve research paper PDF from DOI, name or URL of the research paper"
+authors = ["croumegous <cyril.roumegous@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.28.1"
+beautifulsoup4 = "^4.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+doi2pdf = "doi2pdf.main:main"
