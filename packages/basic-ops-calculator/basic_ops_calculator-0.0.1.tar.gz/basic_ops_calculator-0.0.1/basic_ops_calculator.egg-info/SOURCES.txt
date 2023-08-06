@@ -1,0 +1,10 @@
+README.md
+setup.py
+basic_ops_calculator/__init__.py
+basic_ops_calculator.egg-info/PKG-INFO
+basic_ops_calculator.egg-info/SOURCES.txt
+basic_ops_calculator.egg-info/dependency_links.txt
+basic_ops_calculator.egg-info/top_level.txt
+basic_ops_calculator/operations/__init__.py
+basic_ops_calculator/operations/advanced.py
+basic_ops_calculator/operations/basic.py

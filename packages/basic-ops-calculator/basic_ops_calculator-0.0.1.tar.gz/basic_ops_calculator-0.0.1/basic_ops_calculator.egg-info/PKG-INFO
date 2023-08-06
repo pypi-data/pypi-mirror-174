@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: basic-ops-calculator
+Version: 0.0.1
+Summary: A basic calculator, to test the package creation
+Home-page: https://github.com/Marcelo-L-Valerio/DIO-DataScience-Bootcamp/tree/main/02-Criacao-de-pacotes
+Author: Marcelo L Valerio
+Author-email: mar.valerio@hotmail.com.br
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package basic ops Calculator is used to:
+	Operations 
+		-Basic
+			-sum, subtractions, division, multiplication, raise a number and make n square of a number
+		-Advanced
+			-logarithm, natural logarithm exponential e base
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install basic_ops_calculator
+
+```bash
+pip install basic_ops_calculator
+```
+
+## Usage
+
+```python
+from basic_ops_calculator.operations import basic
+basic.make_sum(a, b)
+```
+
+## Author
+Marcelo L Valerio
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
