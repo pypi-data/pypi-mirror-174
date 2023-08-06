@@ -1,0 +1,6 @@
+README.md
+setup.py
+cikitest.egg-info/PKG-INFO
+cikitest.egg-info/SOURCES.txt
+cikitest.egg-info/dependency_links.txt
+cikitest.egg-info/top_level.txt
