@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "aracnid-logger"
+version = "1.0.1"
+description = "Customization of the Python Logging System"
+authors = ["Jason Romano <aracnid@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/aracnid/aracnid-logger"
+keywords = ["python", "logger"]
+packages = [{include = "aracnid_logger"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+slack-bolt = "~1.14"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15"
+pytest = "^7.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-p no:warnings"
+log_cli = true
+log_cli_level = "DEBUG"
