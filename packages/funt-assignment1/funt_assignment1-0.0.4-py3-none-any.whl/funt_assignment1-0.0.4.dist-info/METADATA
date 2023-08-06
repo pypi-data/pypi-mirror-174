@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: funt-assignment1
+Version: 0.0.4
+Summary: The application for managing university votes
+Home-page: https://pypi.org/project/funt-assignment1
+Author: FUNT Team
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database :: Database Engines/Servers
+License-File: LICENSE
+Requires-Dist: flask
+
