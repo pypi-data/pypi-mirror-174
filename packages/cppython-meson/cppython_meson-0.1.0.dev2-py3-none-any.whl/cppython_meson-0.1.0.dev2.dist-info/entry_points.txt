@@ -1,0 +1,3 @@
+[cppython.generator]
+meson=cppython_meson.plugin:MesonGenerator
+

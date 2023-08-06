@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cppython-meson
+Version: 0.1.0.dev2
+Summary: A plugin for CPPython that enables a Meson generator for C++ projects
+License: MIT
+Author-email: Synodic Software <contact@synodic.software>
+Requires-Python: >=3.11
+Requires-Dist: cppython-core>=0.3.3.dev0
+Requires-Dist: meson>=0.63.3
+Project-URL: homepage, https://github.com/Synodic-Software/CPPython-Meson
+Project-URL: repository, https://github.com/Synodic-Software/CPPython-Meson
+Description-Content-Type: text/markdown
+
+# CPPython-Meson
+
+A plugin for CPPython that implements a Meson generator for C++ projects.
+
+
