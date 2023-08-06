@@ -1,0 +1,31 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zebepy"
+version = "1.0.0"
+description = "The first Zebedee python API Wrapper !"
+readme = "README.md"
+authors = [{ name = "vodkarm", email = "vodkarm@protonmail.com" }]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["bitcoin", "sats", "zebedee", "satoshis", "lightning", "wallet", "zbd"]
+dependencies = [
+    "requests"
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["vodkarm"]
+
+[project.urls]
+Homepage = "https://github.com/vodkarm/zebepy"
+
+[project.scripts]
+realpython = "reader.__main__:main"

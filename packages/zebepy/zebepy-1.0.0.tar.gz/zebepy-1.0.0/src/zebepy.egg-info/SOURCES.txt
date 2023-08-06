@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/zebepy.egg-info/PKG-INFO
+src/zebepy.egg-info/SOURCES.txt
+src/zebepy.egg-info/dependency_links.txt
+src/zebepy.egg-info/entry_points.txt
+src/zebepy.egg-info/requires.txt
+src/zebepy.egg-info/top_level.txt
