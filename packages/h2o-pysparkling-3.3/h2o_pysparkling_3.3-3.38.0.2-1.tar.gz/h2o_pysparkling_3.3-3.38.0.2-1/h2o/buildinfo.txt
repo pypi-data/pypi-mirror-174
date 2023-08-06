@@ -1,0 +1,1 @@
+versionFromGradle='3.38.0',projectVersion='3.38.0.2',branch='rel-zygmund',lastCommitHash='60105fb386ab8a72e5625ba0d3277ea5ef22c076',gitDescribe='jenkins-3.38.0.1-73-g60105fb',compiledOn='2022-10-27 15:59:05',compiledBy='jenkins'
