@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+eventos_euskadi/__init__.py
+eventos_euskadi/eventos_euskadi.py
+eventos_euskadi.egg-info/PKG-INFO
+eventos_euskadi.egg-info/SOURCES.txt
+eventos_euskadi.egg-info/dependency_links.txt
+eventos_euskadi.egg-info/requires.txt
+eventos_euskadi.egg-info/top_level.txt

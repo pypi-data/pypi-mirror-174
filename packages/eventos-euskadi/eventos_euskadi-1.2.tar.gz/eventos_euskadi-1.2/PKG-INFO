@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: eventos_euskadi
+Version: 1.2
+Summary: Paquete para interpretación de datos de Eventos en Euskadi
+Home-page: https://github.com/naroabarrutia/eventos_euskadi
+Author: Mikel Madariaga & Naroa Barrutia
+Author-email: naroa.barrutia@alumni.mondragon.edu
+License: MIT
+Download-URL: https://github.com/naroabarrutia/eventos_euskadi/archive/refs/tags/v_1.2.tar.gz
+Keywords: Eventos,Euskadi,Opendata
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# ImplementaciÃ³n y publicaciÃ³n de librerÃ­a en PyPi
+### ObtenciÃ³n de datos de eventos mediante api
+
+La librerÃ­a se ha desarrollado en base a los datos de eventos facilitados mediante la api de Open Data Euskadi. Se han creado diversas funciones con el fin de facilitar a los usuarios la interpretaciÃ³n de los datos. Las variables con las que se ha trabajado son las siguientes: 
+
+-	Tipo de evento
+-	Nombre de evento
+-	Municipio
+-	Establecimiento
+-	Horario
+-	Precio
+-	Url
+
+## Funciones 
+Se han creado diversas funciones con el fin de facilitar a los usuarios la interpretaciÃ³n de los datos. 
+
+| FunciÃ³n | DescripciÃ³n | Inputs |
+| ------ | ------ | ------ |
+| datos_api | Utilizada por el resto de las funciones para descargar los datos deseados de la nube | Url de la api |
+| info_eventos | Obtiene los datos sobre los eventos de Euskadi en un mes determinado | Mes, aÃ±o e idioma (euskera o castellano)  |
+| datos_aÃ±o | Muestra dos grÃ¡ficos de barras | Un aÃ±o y un valor booleano (verdadero o falso)|
+| descargar | Descarga los datos | Mes, aÃ±o y un formato (csv o json) |
+
+## Estructura de archivos 
+```sh
+ejemplos 
+    datos_aÃ±o.JPG
+```
+
+```sh
+eventos_euskadi
+    eventos_euskadi.py
+    __init__.py
+```
+
+```sh
+LICENSE.txt
+```
+
+```sh
+README.md
+```
+
+```sh
+setup.cfg
+```
+
+```sh
+setup.py
+```
+## Dependencias 
+- [Pandas] - Proporciona herramientas que permiten trabajar datos en diferentes formatos.
+- [Matplotlib] - CreaciÃ³n de grÃ¡ficos en dos dimensiones.
+- [Request] - Obtener respuestas que se realizan en el protocolo HTTP de una plataforma web que se haya establecido con anterioridad con una API.
+- [Seaborn] - Visualizaciones de datos.
+
+## Uso
+```python
+import eventos_euskadi as ev
+
+# Se obtiene informaciÃ³n sobre eventos en un mes
+ev.info_eventos(2021, 1, 'eus')
+
+# Se descargan datos de eventos en un mes
+ev.descargar(2021, 5, 'es', 'csv')
+
+# Se muestran dos grÃ¡ficos con informaciÃ³n sobre eventos en un aÃ±o 
+ev.datos_aÃ±o(2021, True)
+```
+
+![Alt text](https://github.com/naroabarrutia/eventos_euskadi/blob/main/ejemplos/datos_aÃ±o.JPG?raw=true)
+
+## Licencia
+[MIT]
+
+## Autores 
+>Mikel Madariaga & Naroa Barrutia 
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen)
+
+[Pandas]: <https://pandas.pydata.org/>
+[Matplotlib]: <https://matplotlib.org/>
+[Request]: <https://pypi.org/project/requests/>
+[Seaborn]: <https://seaborn.pydata.org/>
+[MIT]: <https://choosealicense.com/licenses/mit/>
+
