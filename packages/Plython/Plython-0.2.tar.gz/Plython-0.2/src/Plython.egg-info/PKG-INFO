@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Plython
+Version: 0.2
+Summary: A little thing to make python just a bit better.
+Author-email: robotkid828 <nicetrybutnottoday@gmail.com>
+Project-URL: Github, https://github.com/robotkid828/Plython
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+So I noticed that searching nested dictionaries were hard, and that exiting silently for me (at least on replit) hard. So I just created this. Enjoy!

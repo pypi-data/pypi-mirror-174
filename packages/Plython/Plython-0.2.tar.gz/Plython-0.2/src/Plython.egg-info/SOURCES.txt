@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/Plython/__init__.py
+src/Plython/module.py
+src/Plython.egg-info/PKG-INFO
+src/Plython.egg-info/SOURCES.txt
+src/Plython.egg-info/dependency_links.txt
+src/Plython.egg-info/top_level.txt
