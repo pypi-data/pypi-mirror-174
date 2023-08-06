@@ -1,0 +1,4 @@
+[console_scripts]
+msc=moralis_streams_client.cli:cli
+webhook=moralis_streams_client.webhook_cli:webhook
+
