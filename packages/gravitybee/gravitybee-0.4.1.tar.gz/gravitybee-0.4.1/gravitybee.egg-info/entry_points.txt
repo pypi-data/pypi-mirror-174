@@ -1,0 +1,2 @@
+[console_scripts]
+gravitybee = gravitybee.cli:main
