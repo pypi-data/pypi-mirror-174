@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: typedcols
+Version: 0.1.15
+Summary: Python library providing typed collections.
+Author: Pavel Kacha
+Author-email: pavel.kacha@cesnet.cz
+License: ISC
+Project-URL: Documentation, https://709.gitlab-pages.cesnet.cz/warden/typedcols/master/html/manual.html
+Project-URL: Source, https://gitlab.cesnet.cz/709/warden/typedcols
+Project-URL: Tracker, https://gitlab.cesnet.cz/709/warden/typedcols/-/issues
+Keywords: library
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Programming Language :: Python
+License-File: LICENSE
+
+typedcols - README
+================================================================================
+
+.. warning::
+
+    Although production code is based on this library, it should still be considered
+    as work in progress.
+
+
+Introduction
+--------------------------------------------------------------------------------
+
+Python 2 and 3 compatible library providing typed collections.
+
+This README file is work in progress, sorry about that.
+
+
+Copyright
+--------------------------------------------------------------------------------
+
+| Copyright (c) since 2016, CESNET, z. s. p. o.
+| Author: Pavel Kácha <pavel.kacha@cesnet.cz>
+| Use of this package is governed by the ISC license, see LICENSE file.
+|
+
+
+Changelog
+--------------------------------------------------------------------------------
+
+
+Version 0.1.15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Released 2022-11-02
+
+-   Allowed adding files from previous versions using Gitlab CI/CD.
+
+Version 0.1.14
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Released 2022-06-27
+
+-   Added a config file for GitLab CI/CD.
+-   Fixed deprecation warnings for Python 3.7+ regarding ``collections.abc``
+-   Updated the repository information.
+-   Updated packages versions.
