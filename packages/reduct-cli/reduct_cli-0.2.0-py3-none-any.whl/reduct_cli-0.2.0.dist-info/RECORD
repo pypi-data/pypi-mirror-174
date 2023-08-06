@@ -1,0 +1,16 @@
+reduct_cli/__init__.py,sha256=_s6_dFFKicuOSI1_BSqSD2__ruOv-4g9-mKWrZEH9KM,194
+reduct_cli/__main__.py,sha256=Qwate2TRFFKApbdw-qcWG3QLmZSmG3OaokDC4p1skFY,85
+reduct_cli/alias.py,sha256=GQxFfnGj9kUshrxMDiiHWeMODVyGrOV03lFBXY4jNyI,2339
+reduct_cli/bucket.py,sha256=ZofllYa-tuiS3gz6eKGhkGpKUqymVr-JNcsPcuYHmoQ,9402
+reduct_cli/cli.py,sha256=uzSldeEhc7SuAa2BMO4r7skGeczwVRr1Iqkclh9Cpik,928
+reduct_cli/config.py,sha256=bBhCXg6Sh9P0GCgdmMOR07HjU5ObeEJRCGzgFc3jYZA,745
+reduct_cli/consoles.py,sha256=0Lywaaz1433HiwE1DK2q3rnTh5rYzQw5uht0IErH8TI,129
+reduct_cli/error.py,sha256=BnWMJfyrmrlRniJS8gZpHOYQTsK5EpPj72Af7Wdf3GU,361
+reduct_cli/humanize.py,sha256=l467-Eny7J6c-BZMlXJjR1GEqplsDVBfiQS_iDHiD50,2244
+reduct_cli/server.py,sha256=0GYre56c2AMoQF3QMM0mb-Y_pYt8W-BAPvuIN-0jG2Y,996
+reduct_cli-0.2.0.dist-info/LICENSE,sha256=O1HCoKgNDYQKUfRoqGeq40ojije0oDmDwj5Lal-Isxk,1069
+reduct_cli-0.2.0.dist-info/METADATA,sha256=c9aWO8eNkYflYot8Yp02f7XNdrMarcI9iNcPxqfOeNA,4063
+reduct_cli-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+reduct_cli-0.2.0.dist-info/entry_points.txt,sha256=9zHHpM86oEazPp1EEAhj3MeX6ZpH6uttvs7XQRBihJo,70
+reduct_cli-0.2.0.dist-info/top_level.txt,sha256=QvO4hFrAvOXNrZk5hYcJY-Bf3LVOYgpLyAnKuAq9pH8,11
+reduct_cli-0.2.0.dist-info/RECORD,,
