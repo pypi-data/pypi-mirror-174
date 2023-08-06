@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyMixtComp
+Version: 2.0.1
+Summary: Mixture models with heterogeneous data sets and partially missing data management.
+Home-page: https://www.bain.com/vector-digital/advanced-analytics/
+Author: Mostafa Abdelrashied
+Author-email: Mostafa.Abdelrashied@Bain.com
+Keywords: clustering,mixture model,heterogeneous,missing data
+Platform: macos
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
