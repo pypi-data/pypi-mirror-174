@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/jupyter_summarytools.egg-info/PKG-INFO
+src/jupyter_summarytools.egg-info/SOURCES.txt
+src/jupyter_summarytools.egg-info/dependency_links.txt
+src/jupyter_summarytools.egg-info/requires.txt
+src/jupyter_summarytools.egg-info/top_level.txt
+src/summarytools/__init__.py
+src/summarytools/htmlwidgets.py
+src/summarytools/summarytools.py
