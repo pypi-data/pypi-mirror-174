@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mutwo.mmml.egg-info/PKG-INFO
+mutwo.mmml.egg-info/SOURCES.txt
+mutwo.mmml.egg-info/dependency_links.txt
+mutwo.mmml.egg-info/requires.txt
+mutwo.mmml.egg-info/top_level.txt
+mutwo/mmml_converters/__init__.py
+mutwo/mmml_converters/configurations.py
+mutwo/mmml_converters/mmml.py
+mutwo/mmml_version/__init__.py
