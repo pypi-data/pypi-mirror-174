@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: GeoOpPackage
+Version: 0.0.3
+Summary: Geometric operations package
+Home-page: https://github.com/sherinnn/Geometric-Shapes-Package
+Author: Sherin Thomas
+Author-email: tsherin140@gmail.com
+License: MIT
+License-File: license.txt
+
+This is a python library that includes operations on all 1D, 2D and 3D Geometric shapes
