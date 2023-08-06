@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "maxsetup"
+version = "0.1.0"
+description = ""
+authors = ["Max Ludden <dev@maxludden.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^12.6.0"
+loguru = "^0.6.0"
+typer = {extras = ["all"], version = "^0.6.1"}
+pyaml = "^21.10.1"
+ujson = "^5.5.0"
+alive-progress = "^2.4.1"
+requests = "^2.28.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+ipython = "^8.5.0"
+ipywidgets = "^8.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
