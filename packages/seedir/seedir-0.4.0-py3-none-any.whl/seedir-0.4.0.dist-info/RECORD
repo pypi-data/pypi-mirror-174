@@ -1,0 +1,14 @@
+seedir/__init__.py,sha256=hrvXyi1CJutrKaq_3AN41pSZltYOALKT_BGb2_H_cfA,944
+seedir/command_line.py,sha256=t-cB_mbGawR8xjU_n0HTOhJYCrdWf77SzSdNuQ248ZI,3291
+seedir/errors.py,sha256=0RtZICaNO96ewJINM3qZbUEcqOwYmUozNXkcDYflicE,303
+seedir/fakedir.py,sha256=7DjiCHQNydTEYCE1qILCOQuJXnlMZjMj2nW4iOuibGo,48602
+seedir/folderstructure.py,sha256=DxezGxc4wtuMWPq0GbR-Wr6V-4_vf_cGr-teyA2sSNw,21430
+seedir/printing.py,sha256=7ZlED0gXmF036YIQdAUAZZIfv_iP1LxHN0_1PYnPuhQ,4881
+seedir/realdir.py,sha256=GvcDcSPbDCi9wyXQ4eXNWdvnCPU8DHztWvB8qMgRyFI,12560
+seedir/words.txt,sha256=SDZC44LUpr5GwtZQV1WaheWa2atUGp9FJpi8wPLg0_8,209785
+seedir-0.4.0.dist-info/LICENSE,sha256=qPTuIP98_f2y7pz1mqYT7qyEHcu462mEN_2D4nB_2VU,1068
+seedir-0.4.0.dist-info/METADATA,sha256=-mRFCKWzqgawrYbu3JFelI-WeWHI4Wq_n_rCnPEmy0g,1626
+seedir-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+seedir-0.4.0.dist-info/entry_points.txt,sha256=Wl_qMdyjoQ3cHvK0l4tgzCDdvLihaDAcLmJvAKifVqk,52
+seedir-0.4.0.dist-info/top_level.txt,sha256=jMzOLpAcQhrZJ9XGboL9CBLBB5FCoSMynBj_9WYGzks,7
+seedir-0.4.0.dist-info/RECORD,,
