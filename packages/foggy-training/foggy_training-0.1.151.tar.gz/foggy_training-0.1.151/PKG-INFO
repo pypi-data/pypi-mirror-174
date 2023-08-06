@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: foggy-training
+Version: 0.1.151
+Summary: 
+Author: JanDiers
+Author-email: jan.diers@uni-jena.de
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: attrs (>=22.1.0,<23.0.0)
