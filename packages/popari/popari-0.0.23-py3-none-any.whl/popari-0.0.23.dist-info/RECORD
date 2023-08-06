@@ -1,0 +1,16 @@
+spicemix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spicemix/analysis.py,sha256=SGyc_BwXLXbjkPQnF2tUpqgug0Vd4_OZUWcMNMUQcgU,25295
+spicemix/components.py,sha256=RGauAEAqHeX-2voY57WTuGs7dUDn8MvAaJY4Os4czJc,72626
+spicemix/estimate_parameters.py,sha256=LaBv6zGtm7PfFarThu5MBnZYzL6TinB2As3dKbKrmok,12370
+spicemix/estimate_weights.py,sha256=eKWOB6qtTzBi5mw3LaleakC9TpOT7dUHdfqrcNAZpRc,16360
+spicemix/initialization.py,sha256=GWqZZAnE1ieatZnRRdRHOtghagH8CRzIYNVFnOu2VzI,4482
+spicemix/io.py,sha256=6ZzGfDRjhmTnQvDXjAlEDGUO5VlrRMLRE51wnd-G62o,8605
+spicemix/main.py,sha256=eeYOWNoPUlpuiIoXvLvOZmXp3Nkv2A8sxZ-qZk6buHc,5074
+spicemix/model.py,sha256=9j0W4kPqmjNdWZD34ImDSDmKyajTvHKffu7nDvo0Hk8,28440
+spicemix/sample_for_integral.py,sha256=4aFoU5d1a_AtHtomf1gLyjKS2y7VMKckY9-4JtmfvNc,2969
+spicemix/simulation_framework.py,sha256=Ejtcdg5FUYgbl4ZJQLEXPi4AHULSl1bjnoEpnVNFzUU,24346
+spicemix/util.py,sha256=zi4lUyplEs6JlKOtqwos2BGb3NxmMjyT8Gp7iaHTfts,18275
+popari-0.0.23.dist-info/METADATA,sha256=Zb3ssX6dFlq5VHMsvO95x1cJDVJkfBt34F9FNgyGL8s,5206
+popari-0.0.23.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+popari-0.0.23.dist-info/licenses/LICENSE,sha256=0Ea2tt9VZ-PhjACdDhVPjvJBp-0tm2P_ajCuYAVcv1Q,1070
+popari-0.0.23.dist-info/RECORD,,
