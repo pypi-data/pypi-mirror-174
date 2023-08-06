@@ -1,0 +1,122 @@
+{
+    "name": "FAT Long Filename Examiner",
+    "description": "Examines Long Filename structures in FAT file systems",
+    "ntrprtr": [
+        {
+            "name": "sequenceNumber",
+            "description": "Sequence Number & Allocation State",
+            "start": 0,
+            "end": 0,
+            "action": [
+                {
+                    "type": "equals",
+                    "endianess": "big",
+                    "noMatch": "Allocated",
+                    "cmp": [
+                        {
+                            "value": "E5",
+                            "description": "Not allocated!"
+                        },
+                        {
+                            "value": "00",
+                            "description": "Not allocated!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "name15Unicode",
+            "description": "Filename Characters 1 - 5  (Unicode)",
+            "start": 1,
+            "end": 10,
+            "action": [
+                {
+                    "type": "ascii",
+                    "nonAsciiPlaceholder": "."
+                }
+            ]
+        },
+        {
+            "name": "fileAttr",
+            "description": "File Attributes",
+            "start": 11,
+            "end": 11,
+            "action": [
+                {
+                    "type": "bitequals",
+                    "endianess": "big",
+                    "noMatch": "No attributes found!",
+                    "cmp": [
+                        {
+                            "value": "00000001",
+                            "description": "Read Only"
+                        },
+                        {
+                            "value": "00000010",
+                            "description": "Hidden File"
+                        },
+                        {
+                            "value": "00000100",
+                            "description": "Windows System File"
+                        },
+                        {
+                            "value": "00001000",
+                            "description": "FAT Volume Label"
+                        },
+                        {
+                            "value": "00010000",
+                            "description": "Directory"
+                        },
+                        {
+                            "value": "00100000",
+                            "description": "Archive"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "reserved1",
+            "description": "Reserved",
+            "start": 12,
+            "end": 12
+        },
+        {
+            "name": "checksumValue",
+            "description": "Checksum Value",
+            "start": 13,
+            "end": 13
+        },
+        {
+            "name": "name611Unicode",
+            "description": "Filename Characters 6 - 11  (Unicode)",
+            "start": 14,
+            "end": 25,
+            "action": [
+                {
+                    "type": "ascii",
+                    "nonAsciiPlaceholder": "."
+                }
+            ]
+        },
+        {
+            "name": "reserved2",
+            "description": "Reserved",
+            "start": 26,
+            "end": 27
+        },
+        {
+            "name": "name611Unicode",
+            "description": "Filename Characters 6 - 11  (Unicode)",
+            "start": 28,
+            "end": 31,
+            "action": [
+                {
+                    "type": "ascii",
+                    "nonAsciiPlaceholder": "."
+                }
+            ]
+        }
+    ]
+}
