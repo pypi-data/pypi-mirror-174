@@ -1,0 +1,8 @@
+mvc_flask/__init__.py,sha256=MAuvVlKsTV0hUKPYxXFG6Gw-y_k55DvRT-UYXDeVcGo,1995
+mvc_flask/__version__.py,sha256=fMbNgIJqxiZEaSBLadLBt4rZpCHqarzb4Okt-aWsp2E,22
+mvc_flask/namespace.py,sha256=E04zCE7Hm2jpbLATkTZyixeXe4-6k1UTdGPuD5IehGQ,1816
+mvc_flask/router.py,sha256=6Zc8qv8PD3FbOBVwJPytdpLpN_XaF5zkNlojNTVtPWY,2674
+mvc_flask-2.5.0.dist-info/LICENSE,sha256=sizd1LT7h16XLn-b1_PfECmfByTkQgebgkqwyPXwx_0,1071
+mvc_flask-2.5.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+mvc_flask-2.5.0.dist-info/METADATA,sha256=NUpUeBGEeV_CSoouMz4ebNlFAlqQdTiWp8wwkVqrN7s,5867
+mvc_flask-2.5.0.dist-info/RECORD,,
