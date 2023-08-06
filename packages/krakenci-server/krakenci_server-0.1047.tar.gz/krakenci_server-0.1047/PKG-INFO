@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: krakenci-server
+Version: 0.1047
+Summary: Kraken CI server.
+Home-page: https://kraken.ci/
+License: Apache-2.0
+Keywords: building,testing,continuous-integration,ci,cd,cicd
+Author: Michal Nowikowski
+Author-email: godfryd@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: Authlib (>=1.1.0,<2.0.0)
+Requires-Dist: Flask (>=1.1.4,<2.0.0)
+Requires-Dist: Flask-SQLAlchemy (>=2.5.1,<3.0.0)
+Requires-Dist: MarkupSafe (==2.0.1)
+Requires-Dist: RestrictedPython (==5.0)
+Requires-Dist: SQLAlchemy (>=1.4.25,<2.0.0)
+Requires-Dist: alembic (>=1.7.3,<2.0.0)
+Requires-Dist: apscheduler (>=3.8.0,<4.0.0)
+Requires-Dist: azure-identity (>=1.6.1,<2.0.0)
+Requires-Dist: azure-mgmt-compute (>=23.0.0,<24.0.0)
+Requires-Dist: azure-mgmt-monitor (>=2.0.0,<3.0.0)
+Requires-Dist: azure-mgmt-network (>=19.0.0,<20.0.0)
+Requires-Dist: azure-mgmt-resource (>=19.0.0,<20.0.0)
+Requires-Dist: azure-mgmt-storage (>=18.0.0,<19.0.0)
+Requires-Dist: azure-mgmt-subscription (>=1.0.0,<2.0.0)
+Requires-Dist: boto3 (>=1.18.52,<2.0.0)
+Requires-Dist: casbin (>=1.17.1,<2.0.0)
+Requires-Dist: clickhouse-driver (>=0.2.2,<0.3.0)
+Requires-Dist: connexion (>=2.13.1,<3.0.0)
+Requires-Dist: giturlparse (>=0.10.0,<0.11.0)
+Requires-Dist: gunicorn (>=20.1.0,<21.0.0)
+Requires-Dist: jsonschema (>=4.5.0,<5.0.0)
+Requires-Dist: kubernetes (>=20.13.0,<21.0.0)
+Requires-Dist: minio (>=7.1.0,<8.0.0)
+Requires-Dist: passlib (>=1.7.4,<2.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.1,<3.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: python-ldap (>=3.4.3,<4.0.0)
+Requires-Dist: pytimeparse (>=1.1.8,<2.0.0)
+Requires-Dist: redis (>=3.5.3,<4.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: rq (>=1.10.0,<2.0.0)
+Requires-Dist: sentry-sdk[flask] (>=1.5.0,<2.0.0)
+Requires-Dist: swagger-ui-bundle (>=0.0.9,<0.0.10)
+Requires-Dist: tzlocal (==2.1)
+Project-URL: Documentation, https://kraken.ci/docs
+Project-URL: Repository, https://github.com/kraken-ci/kraken
