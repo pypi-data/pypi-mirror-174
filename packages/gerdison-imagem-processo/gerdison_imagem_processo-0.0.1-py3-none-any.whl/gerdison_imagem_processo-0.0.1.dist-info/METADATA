@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: gerdison-imagem-processo
+Version: 0.0.1
+Summary: Pacote de Processamento de imagens
+Author: Gerdison
+Author-email: gerdison.dona@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scikit-image (>=0.16.1)
+Requires-Dist: matplotlib
+
+ RepositÃ³rio com desenvolvimento dos cÃ³digos, e arquivos, para entrega do Projeto do Curso de Python para Cientistas de dados: CriaÃ§Ã£o de Pacotes de Processamento de Imagens; da plataforma [DIO - Digital Innovation One](https://web.dio.me/).  
+#
+# Processamento de Imagens
+
+DescriÃ§Ã£o: 
+
+O pacote '**processamento_de_imagem**' pode ser usado para:
+
+	Processamento:
+		- CorrespondÃªncia de Histograma;
+		- Similaridade Estrutural;
+		- Redimensionamento de Tamanhos
+	
+	UtilitÃ¡rios:
+		- Leitor de Imagem;
+		- Salvador de Imagem;
+		- Exibidor de Imagens;
+		- Exibidor de Resultados;
+		- Exibidor de Histograma
+
+## InstalaÃ§Ã£o:
+
+Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalaÃ§Ã£o do pacote '**processamento_de_imagem**':
+
+```bash
+pip install processamento_de_imagens
+```
+
+## Uso:
+
+```python
+from package_name.module1_name import file1_name
+file1_name.my_function()
+```
+ RepositÃ³rio com desenvolvimento dos cÃ³digos, e arquivos, para entrega do Projeto do Curso de Python para Cientistas de dados: CriaÃ§Ã£o de Pacotes de Processamento de Imagens; da plataforma [DIO - Digital Innovation One](https://web.dio.me/).  
+#
+# Processamento de Imagens
+
+DescriÃ§Ã£o: 
+
+O pacote '**processamento_de_imagem**' pode ser usado para:
+
+	Processamento:
+		- CorrespondÃªncia de Histograma;
+		- Similaridade Estrutural;
+		- Redimensionamento de Tamanhos
+	
+	UtilitÃ¡rios:
+		- Leitor de Imagem;
+		- Salvador de Imagem;
+		- Exibidor de Imagens;
+		- Exibidor de Resultados;
+		- Exibidor de Histograma
+
+## InstalaÃ§Ã£o:
+
+Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalaÃ§Ã£o do pacote '**processamento_de_imagem**':
+
+```bash
+pip install processamento_de_imagens
+```
+
+## Uso:
+
+```python
+from package_name.module1_name import file1_name
+file1_name.my_function()
+```
+
+## Autor:
+Esse Projeto: Gerdison
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
