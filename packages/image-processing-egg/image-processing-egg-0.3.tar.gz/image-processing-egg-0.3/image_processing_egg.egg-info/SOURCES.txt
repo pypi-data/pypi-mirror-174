@@ -1,0 +1,12 @@
+MIT-LICENSE
+README.md
+pyproject.toml
+setup.cfg
+image_processing/__init__.py
+image_processing/image_processing.py
+image_processing/vips_processor.py
+image_processing_egg.egg-info/PKG-INFO
+image_processing_egg.egg-info/SOURCES.txt
+image_processing_egg.egg-info/dependency_links.txt
+image_processing_egg.egg-info/requires.txt
+image_processing_egg.egg-info/top_level.txt
