@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: my-first-test-package
+Version: 0.1.0
+Summary: Example package description
+Home-page: https://godatadriven.com/blog/a-practical-guide-to-setuptools-and-pyproject-toml
+Author: Razzle Dazzle
+Author-email: razzle_dazzle@gmail.com
+License: BSD 3-Clause License
+Keywords: example,setuptools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
