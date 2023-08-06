@@ -1,0 +1,17 @@
+listen/__init__.py,sha256=J4CRnpR3v72FGOMp8gqSua_XWZpAfXuqgVWiQFB-gTY,22
+listen/__main__.py,sha256=v0ABH6dojr50OLbaz2ocUv1RGukWePK93BoLwvCPCuM,98
+listen/main.py,sha256=j51Nt2JoQIbgGzSKLP3qbAmCLv2p44X_a276lpGYBbE,4806
+listen/mic.py,sha256=0uVgZwRa91WzM3Gas4HjZA280Las2bIugC-vgWvmo_g,10061
+listen/STT/__init__.py,sha256=YpZp7lBEfgYQV1J7SS_uW2WeZo-IrmtZ_YsLf9ikDOc,359
+listen/STT/as_client.py,sha256=U1QHr9sIOVExb6IVB_iw3M6cu7Vqa6itsqOVQaDt010,745
+listen/STT/as_service.py,sha256=8Xzfe5PU2oZqX_s5wYFTQtWFF-fFbCrhJ42eMv3lSgE,2162
+listen/STT/audio.py,sha256=inkRBJQ4SfXqC2Na9r4LlYEq2SpcsXd_HM2dnds-GqA,6892
+listen/STT/engine.py,sha256=zwFJMXw0JA4xGqB0yu5WSSgqungcpZP2W2g8N7ZxuTo,3519
+listen/STT/exception.py,sha256=4DWSNm7PayQmtLq9HExZQELKLriHb0ldsZMm4-0hizs,303
+listen/STT/utils.py,sha256=zoMDIfzYBihxMec-NbD3peDiA8QPbvdmEi2mFdaxRT8,7851
+stt_listen-2.3.2.dist-info/LICENSE,sha256=LgfS0dbG46Mo9qHH35RSbsJ3NGDpE2r2C7deAe1B1FA,35118
+stt_listen-2.3.2.dist-info/METADATA,sha256=TlcJdUlO2Nnz-tcWTD_7P8_C6kRwhIhhOxJtJDqrIag,5410
+stt_listen-2.3.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stt_listen-2.3.2.dist-info/entry_points.txt,sha256=i0GopMOGAVAzSk8e1uWwIcyhnx3ZgCcHQHsgMn3Oz1A,44
+stt_listen-2.3.2.dist-info/top_level.txt,sha256=N_XBpky3w_jWswhT-TUkCLwRQTXWTM_zRigDC6pCI2Q,7
+stt_listen-2.3.2.dist-info/RECORD,,
