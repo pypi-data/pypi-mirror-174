@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: aiocryptopay
+Version: 0.1.0
+Summary: @cryptobot api asynchronous python wrapper
+Home-page: https://github.com/layerqa/aiocryptopay
+License: MIT
+Keywords: aiocryptopay,cryptobot,cryptopay,cryptopay api,cryptobot api
+Author: layerqa
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Requires-Dist: certifi (>=2022.9.14,<2023.0.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Project-URL: Documentation, https://help.crypt.bot/crypto-pay-api
+Project-URL: Repository, https://github.com/layerqa/aiocryptopay
+Description-Content-Type: text/markdown
+
+## **[@cryptobot](https://t.me/CryptoBot) asynchronous api wrapper**
+**Docs:** https://help.crypt.bot/crypto-pay-api
+
+ - MainNet - [@CryptoBot](http://t.me/CryptoBot)
+ - TestNet - [@CryptoTestnetBot](http://t.me/CryptoTestnetBot)
+
+
+**Basic methods**
+``` python
+from aiocryptopay import AioCryptoPay, Networks
+
+api = AioCryptoPay(token='1337:JHigdsaASq', network=Networks.MAIN_NET)
+
+profile = await api.get_me()
+currencies = await api.get_currencies()
+balance = await api.get_balance()
+rates = await api.get_exchange_rates()
+
+print(profile, currencies, balance, rates, sep='\n')
+```
+
+**Create and get invoice methods**
+``` python
+from aiocryptopay import AioCryptoPay, Networks
+
+api = AioCryptoPay(token='1337:JHigdsaASq', network=Networks.MAIN_NET)
+
+invoice = await api.create_invoice(asset='TON', amount=1.5)
+print(invoice.pay_url)
+
+invoices = await api.get_invoices(invoice_ids=invoice.invoice_id)
+print(invoices.status)
+```
