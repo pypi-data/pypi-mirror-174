@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: xdyna
+Version: 0.0.3
+Summary: Xsuite dynamics package
+Home-page: https://github.com/xsuite/xdyna
+License: Apache 2.0
+Author: Frederik F. Van der Veken
+Author-email: frederik@cern.ch
+Requires-Python: >=3.8
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/xsuite/xdyna
+Description-Content-Type: text/markdown
+
+# xdyna
+Tools to study beam dynamics in xtrack simulations, like dynamic aperture calculations, PYTHIA integration, dynamic indicators, ...
+
