@@ -1,0 +1,11 @@
+carto_auth/__init__.py,sha256=skeJ3FIsADY7xf70zCHGkNoONLZk9R2hP520BFjyUGw,204
+carto_auth/_version.py,sha256=suFpM5j-B5n-Xa5YDOoed9OAFnxSOkZoW7IF_Id5Q3o,24
+carto_auth/auth.py,sha256=IotbySxENEzSebHImqgVIcjM8zRPVAPVPpF7U_NQfsc,9170
+carto_auth/errors.py,sha256=pnR9m7XdZGR_xvKfy9KFEjcHXDycxpKXU1qp1ygXLN4,44
+carto_auth/pkce.py,sha256=0CTzoQ0sR1P1EUiiN2z9Q2SdYFUtYSLfC9Yy8qL2aYc,8737
+carto_auth/utils.py,sha256=XL_c2Xyl4TFmpwOPSH-fIgVswMh-ZDrMIQfG2VHsqIc,3542
+carto_auth-0.1.0b5.dist-info/LICENSE,sha256=Y-wdV_jbSysRN4LinKrCozL08kFlSL12kVjemDzI1Tw,1512
+carto_auth-0.1.0b5.dist-info/METADATA,sha256=b6UKpWiM6PRSX4rAl1bYHrYhXNpaSfqlIoqvqFuy_Ek,2505
+carto_auth-0.1.0b5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+carto_auth-0.1.0b5.dist-info/top_level.txt,sha256=XjXWykMK81K0oTetBX74vc-_bntTl7jk9vf3vKzS5ZE,11
+carto_auth-0.1.0b5.dist-info/RECORD,,
