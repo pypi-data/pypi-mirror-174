@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: pylirecouleur
+Version: 0.0.4
+Summary: Parse french texts into phonemes and syllables
+Author-email: Marie-Pierre Brungard <lirecouleur@arkaline.fr>
+Project-URL: Homepage, https://framagit.org/arkaline/pylirecouleur
+Project-URL: Bug Tracker, https://framagit.org/arkaline/pylirecouleur/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Education
+Classifier: Natural Language :: French
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+
+<style>
+red { color: red }
+yellow { color: yellow }
+green { color: green }
+blue { color: blue }
+</style>
+
+# PyLireCouleur
+
+Novembre 2022
+
+## Préambule
+
+PyLireCouleur fait partie du projet LireCouleur dont le but est de fournir un ensemble d’outils destiné à aider les lecteurs débutants ou en difficulté à décoder les mots en utilisant les principes de la lecture en couleur. Ces outils peuvent également servir aux élèves dyslexiques et aux personnes apprenant le français comme langue étrangère.
+
+Le principe de l’outil est de mettre en évidence les sons et les syllabes de différentes manières. L’utilisateur peut ainsi choisir la présentation qui lui convient le mieux pour simplifier et accélérer le décodage.
+
+## Utilisation
+
+PyLireCouleur apporte le moteur de décomposition de mots ou de textes en phonèmes ou en syllabes.
+
+### Traitement de mots isolés
+
+Les mots isolés sont traités en important <blue>lirecouleur.word</blue> .
+
+#### Décodage en phonèmes
+
+La fonction **phonemes** produit un tableau des différents phonèmes décodés dans le mot. Un phonème est un tuple (<blue>id phonème</blue>, <blue>lettres composant le phonème<blue>).
+
+```python
+import lirecouleur.word
+lirecouleur.word.phonemes('éléphant')
+> [('e', 'é'), ('l', 'l'), ('e', 'é'), ('f_ph', 'ph'), ('a~', 'an'), ('#', 't')]
+```
+
+#### Décodage en syllabes
+
+La fonction **syllables** produit un tableau des syllabes décodées dans le mot.
+
+```python
+import lirecouleur.word
+lirecouleur.word.syllables('éléphant')
+> ['é', 'lé', 'phant']
+```
+
+### Traitement de textes
+
+Les textes sont traités en important <blue>lirecouleur.text</blue>. Les fonctions de décodage des phonèmes et des syllabes sont identiques aux exemples donnés ci-dessus.
+ 
+```python
+import lirecouleur.text
+lirecouleur.text.phonemes('Les livres sont bien rangés')
+> [[('l', 'L'), ('e_comp', 'es')], ' ', [('l', 'l'), ('i', 'i'), ('v', 'v'), ('r'
+* 'r'), ('q_caduc', 'e'), ('#', 's')], ' ', [('s', 's'), ('o~', 'on'), ('#', 't')], ' ', [('b', 'b'), ('j_e~', 'ien')], ' ', [('r', 'r'), ('a~', 'an'), ('z^_g', 'g'), ('e', 'é'), ('#', 's')]]
+
+lirecouleur.text.syllables('Les livres sont bien rangés')
+> [['Les'], ' ', ['li', 'vres'], ' ', ['sont'], ' ', ['bien'], ' ', ['ran', 'gés']]
+```
+
+Les résultats sont des tableaux de mots décodés ou de portions de texte non décodé (ex. : ponctuation, espaces, nombres, etc.)
+
+## Liste des phonèmes décodés
+
+* <green>verb_3p</green> : terminaison des verbes en <blue>ent</blue>
+* <green>#</green> : phonème muet -- blon<blue>d</blue>
+* <green>q_caduc</green> : [e] caduc -- pilot<blue>e</blue>
+* <green>a</green> : [a] -- ch<blue>a</blue>t
+* <green>q</green> : [e] -- ch<blue>e</blue>val
+* <green>i</green> : [i] -- l<blue>i</blue>t
+* <green>o</green> : [o] écrit avec un **o** -- gr<blue>o</blue>s
+* <green>o_comp</green> : [o] écrit avec **au**, **eau**, etc. -- b<blue>eau</blue>
+* <green>o_ouvert</green> : [o] ouvert -- car<blue>o</blue>sse
+* <green>u</green> : [ou] -- l<blue>ou</blue>p
+* <green>y</green> : [u] -- b<blue>u</blue>lle
+* <green>e</green> : [é] écrit **é** -- bl<blue>é</blue>
+* <green>e_comp</green> : [é] écrit **ez**, **er**, etc. -- n<blue>ez</blue>
+* <green>w</green> : [w]
+* <green>wa</green> : [oi] -- b<blue>oi</blue>s
+* <green>w5</green> : [oin] -- l<blue>oin</blue>
+* <green>e^</green> : [è] écrit **è** ou **ê** -- ch<blue>ê</blue>vre
+* <green>e^_comp</green> : [è] écrit **ei**, **ait**, etc. -- ch<blue>ai</blue>se
+* <green>a~</green> : [an] -- ch<blue>an</blue>te
+* <green>e~</green> : [in] -- v<blue>in</blue>, gr<blue>ain</blue>
+* <green>x~</green> : [un] -- <blue>un</blue>, br<blue>un</blue>
+* <green>o~</green> : [on] -- gr<blue>on</blue>de, b<blue>om</blue>be
+* <green>x</green> : [eu] ouvert -- n<blue>eu</blue>ve
+* <green>x^</green> : [eu] fermé -- d<blue>eu</blue>x, bl<blue>eu</blue>
+* <green>p</green> : [p] -- <blue>p</blue>a<blue>p</blue>a
+* <green>t</green> : [t] -- <blue>t</blue>ê<blue>t</blue>u
+* <green>k</green> : [k] écrit avec **k** ou **c** -- <blue>c</blue>o<blue>q</blue>
+* <green>k_qu</green> : [k] écrit avec **qu** -- co<blue>qu</blue>e
+* <green>b</green> : [b] -- <blue>b</blue>ille
+* <green>d</green> : [d] -- <blue>d</blue>os
+* <green>g</green> : [g] -- <blue>g</blue>omme
+* <green>g_u</green> : [gu] écrit avec **gu** -- lon<blue>gu</blue>e
+* <green>f</green> : [f] écrit avec **f** -- <blue>f</blue>icelle
+* <green>f_ph</green> : [f] écrit avec **ph** -- <blue>ph</blue>asme
+* <green>s</green> : [s] -- vi<blue>ss</blue>er
+* <green>s_c</green> : [s] écrit avec **c** -- <blue>c</blue>il
+* <green>s_t</green> : [s] écrit avec **t** -- quan<blue>t</blue>ien
+* <green>s_x</green> : [s] écrit avec **x**
+* <green>s^</green> : [ch] -- <blue>ch</blue>at
+* <green>v</green> : [v] -- <blue>v</blue>ache
+* <green>z</green> : [z] écrit avec **z** -- <blue>z</blue>éro
+* <green>z_s</green> : [z] écrit avec la lettre **s** -- bali<blue>s</blue>e
+* <green>z^</green> : [ge] écrit avec **j** -- <blue>j</blue>oli
+* <green>z^_g</green> : [ge] -- allon<blue>g</blue>é
+* <green>m</green> : [m] -- <blue>m</blue>a<blue>m</blue>an
+* <green>n</green> : [n] -- <blue>n</blue>ul
+* <green>l</green> : [l] -- <blue>l</blue>i<blue>l</blue>as
+* <green>r</green> : [r] -- <blue>r</blue>at
+* <green>ks</green> : [ks] -- e<blue>x</blue>quise
+* <green>gz</green> : [gz] -- e<blue>x</blue>ercice
+* <green>j</green> : [ill] -- b<blue>ill</blue>e
+* <green>n~</green> : [gn] -- poi<blue>gn</blue>ant
+* <green>g~</green> : [ng] -- planni<blue>ng</blue>
+
+## Paramètres de décodage
+
+### Fonction <blue>phonemes</blue>
+
+**novice_reader** : 0 / 1
+* 1 : considère **i**+voyelle (ex. : <green>piano</green>) comme deux phonèmes distincts  
+* 0 : considère **i**+voyelle (ex. : <green>piano</green>) comme des semi-voyelles
+
+**mode** : SYLLABES_ECRITES / SYLLABES_ORALES
+* SYLLABES_ECRITES : les [e] caducs en fin de mot sont considérés comme prononcés et sont transformés en phonème <green>q</green>   
+* SYLLABES_ORALES : les [e] caducs en fin de mot sont conservés en l'état   
+
+### Fonction <blue>syllables</blue>
+
+**novice_reader** : 0 / 1
+* 1 : considère **i**+voyelle (ex. : <green>piano</green>) comme deux phonèmes distincts  
+* 0 : considère **i**+voyelle (ex. : <green>piano</green>) comme des semi-voyelles
+
+**mode** : **(** SYLLABES_STD / SYLLABES_LC **,** SYLLABES_ECRITES / SYLLABES_ORALES **)**
+* SYLLABES_STD : segmentation des syllabes entre 2 consonnes identiques successives - ex. : /som/me/
+* SYLLABES_LC : segmentation des syllabes après 2 consonnes identiques successives - ex. : /so/mme/
+* SYLLABES_ECRITES : les [e] caducs en fin de mot sont considérés comme prononcés et sont transformés en phonème <green>q</green>   
+* SYLLABES_ORALES : les [e] caducs en fin de mot sont conservés en l'état   
