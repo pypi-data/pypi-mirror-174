@@ -1,0 +1,59 @@
+name: CI
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  unittest:
+    name: Unit tests - ${{ matrix.PYTHON_VERSION }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        PYTHON_VERSION: ["3.8", "3.9", "3.10"]
+    services:
+      postgres:
+        image: postgres:11
+        env:
+          POSTGRES_DB: minimalkv_test
+          POSTGRES_PASSWORD: minimalkv_test
+          POSTGRES_USER: minimalkv_test
+    env:
+      SIMPLEKV_CI: 1
+    steps:
+      - uses: actions/checkout@v2
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          miniforge-variant: Mambaforge
+          use-mamba: true
+          python-version: ${{ matrix.PYTHON_VERSION }}
+          environment-file: environment.yml
+      - name: Run the unittests
+        shell: bash -x -l {0}
+        run: |
+          pip install --no-deps .
+          docker-compose up -d
+          while ! docker exec mysql mysqladmin status -h 127.0.0.1 -u minimalkv_test --password=minimalkv_test; \
+            do sleep 3; done
+          pytest -n auto --dist loadfile -rs --cov=minimalkv --cov-report=xml
+          python -m build
+      - name: Publish package
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags') && matrix.PYTHON_VERSION == '3.10'
+        uses: pypa/gh-action-pypi-publish@v1.3.1
+        with:
+          user: __token__
+          password: ${{ secrets.pypi_password }}
+      - uses: codecov/codecov-action@v1
+        with:
+          file: ./coverage.xml
+
+  pre-commit-checks:
+    name: "Pre-commit checks - Python 3.8"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2.1.0
+      - name: Install Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Run pre-commit checks
+        uses: pre-commit/action@v2.0.0
