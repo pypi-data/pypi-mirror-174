@@ -1,0 +1,5 @@
+[napari.manifest]
+napari-denoiseg = napari_denoiseg:napari.yaml
+
+[napari.plugin]
+napari-denoiseg_2 = napari_denoiseg.utils.denoiseg_utils
