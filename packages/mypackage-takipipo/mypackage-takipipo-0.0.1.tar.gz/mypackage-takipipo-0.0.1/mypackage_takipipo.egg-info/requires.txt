@@ -1,0 +1,7 @@
+pandas
+
+[array]
+numpy
+
+[fetch]
+requests

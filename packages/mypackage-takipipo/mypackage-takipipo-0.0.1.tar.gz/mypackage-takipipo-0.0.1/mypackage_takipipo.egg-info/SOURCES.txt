@@ -1,0 +1,9 @@
+setup.py
+mypackage_takipipo/__init__.py
+mypackage_takipipo/module.py
+mypackage_takipipo.egg-info/PKG-INFO
+mypackage_takipipo.egg-info/SOURCES.txt
+mypackage_takipipo.egg-info/dependency_links.txt
+mypackage_takipipo.egg-info/not-zip-safe
+mypackage_takipipo.egg-info/requires.txt
+mypackage_takipipo.egg-info/top_level.txt

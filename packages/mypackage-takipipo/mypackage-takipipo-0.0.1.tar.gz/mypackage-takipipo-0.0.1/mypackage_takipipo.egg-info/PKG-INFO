@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mypackage-takipipo
+Version: 0.0.1
+Summary: Test Python Packaging
+Home-page: https://github.com/takipipo/explore-sentiment-analysis
+Author: takipipo
+Author-email: ktphap.ncu@gmail.com
+License: Apache Software License 2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: fetch
+Provides-Extra: array
+
+
+# Hello Python Package
