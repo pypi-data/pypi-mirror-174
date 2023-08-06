@@ -1,0 +1,13 @@
+spotify_dl/__init__.py,sha256=Ji2IcLCBZP4FQxQ3cHPLls85rdf4Ni7hAk8UoAAtNAE,350
+spotify_dl/constants.py,sha256=keYQdclL5UfHvpanwWre9GZO814PaGC5MaIde3oKMrU,279
+spotify_dl/scaffold.py,sha256=RkwYfr4YsiBOTOFSsOPnZX5CZtj4MtGFiGeNNEeeMQ4,1708
+spotify_dl/spotify.py,sha256=k4TMSiZvU-l1dAp4bkW5NsNZ3SQC8IEegkw0QkHk3HY,10293
+spotify_dl/spotify_dl.py,sha256=HR3-IQqX7yXphdRl-fODDbk-7gklmKip9h18sVjI9GY,6196
+spotify_dl/utils.py,sha256=iPWCceIqeiGy-kaAPbhhgx8rhVRDLGCms9tOPfVyLlE,389
+spotify_dl/youtube.py,sha256=cQ3hTxnosqjLwwISesCVHnaTfZoP7psXB5P_PrmSc8k,9917
+spotify_dl-8.5.0.dist-info/LICENSE,sha256=DF0m3D11GMu2W6P0Hu2ds1rpaMkGHN_ytZFVV2ICLL8,1074
+spotify_dl-8.5.0.dist-info/METADATA,sha256=3vXOWyG-H9dUldJbFErAkrGjjMM5fAUR4Gb2hQE3h60,4455
+spotify_dl-8.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spotify_dl-8.5.0.dist-info/entry_points.txt,sha256=CH1CQlAJS7-E8fZO6vJfzjOwP77x_97_3oppr6vZFRk,64
+spotify_dl-8.5.0.dist-info/top_level.txt,sha256=RqcUMPUq8mO0xC_Glhy242YiAhKXFiNX2ofgtRw2PeA,11
+spotify_dl-8.5.0.dist-info/RECORD,,
