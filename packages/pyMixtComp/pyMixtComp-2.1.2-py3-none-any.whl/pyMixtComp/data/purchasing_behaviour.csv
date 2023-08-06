@@ -1,0 +1,2001 @@
+ID,Sex,Marital status,Age,Education,Income,Occupation,Settlement size
+100000001,Male,Single,67,University,124670,Employee,Large
+100000002,Female,Non-Single,22,High School,150773,Employee,Large
+100000003,Male,Single,49,High School,89210,Unemployed,Small
+100000004,Male,Single,45,High School,171565,Employee,Medium
+100000005,Male,Single,53,High School,149031,Employee,Medium
+100000006,Male,Single,35,High School,144848,Unemployed,Small
+100000007,Male,Single,53,High School,156495,Employee,Medium
+100000008,Male,Single,35,High School,193621,Self-Employed,Medium
+100000009,Male,Non-Single,61,University,151591,Unemployed,Small
+100000010,Male,Non-Single,28,High School,174646,Self-Employed,Small
+100000011,Female,Non-Single,25,High School,108469,Employee,Small
+100000012,Female,Non-Single,24,High School,127596,Employee,Small
+100000013,Female,Non-Single,22,High School,108687,Employee,Large
+100000014,Male,Single,60,University,89374,Unemployed,Small
+100000015,Female,Non-Single,28,High School,102899,Employee,Medium
+100000016,Female,Non-Single,32,High School,88428,Unemployed,Small
+100000017,Male,Single,53,High School,125550,Employee,Small
+100000018,Male,Single,25,Other,157434,Employee,Large
+100000019,Female,Non-Single,44,University,261952,Self-Employed,Large
+100000020,Male,Single,31,Other,144657,Employee,Medium
+100000021,Male,Single,48,High School,118777,Employee,Medium
+100000022,Male,Single,44,High School,147511,Employee,Medium
+100000023,Male,Single,48,High School,89804,Unemployed,Small
+100000024,Male,Single,44,High School,134918,Employee,Large
+100000025,Male,Non-Single,26,High School,103667,Employee,Large
+100000026,Male,Single,36,High School,71909,Unemployed,Small
+100000027,Male,Non-Single,39,High School,68264,Unemployed,Small
+100000028,Female,Non-Single,42,University,163025,Employee,Medium
+100000029,Male,Single,34,High School,119307,Employee,Medium
+100000030,Male,Single,63,University,175882,Employee,Small
+100000031,Male,Non-Single,36,High School,159646,Employee,Medium
+100000032,Male,Single,27,Other,120131,Employee,Medium
+100000033,Male,Single,30,Other,162745,Employee,Large
+100000034,Male,Single,57,University,87605,Unemployed,Small
+100000035,Female,Non-Single,33,High School,155569,Self-Employed,Medium
+100000036,Male,Single,25,Other,104505,Unemployed,Small
+100000037,Male,Single,31,Other,143385,Employee,Large
+100000038,Male,Single,37,High School,127676,Employee,Medium
+100000039,Male,Single,37,High School,119276,Employee,Medium
+100000040,Male,Single,24,Other,92542,Employee,Medium
+100000041,Male,Single,30,Other,163329,Self-Employed,Medium
+100000042,Male,Non-Single,26,High School,130921,Employee,Small
+100000043,Male,Single,44,High School,133658,Unemployed,Small
+100000044,Male,Non-Single,24,High School,155104,Employee,Medium
+100000045,Female,Non-Single,58,University,142335,Unemployed,Medium
+100000046,Female,Non-Single,35,High School,138387,Self-Employed,Medium
+100000047,Male,Single,39,High School,140182,Employee,Small
+100000048,Female,Non-Single,23,High School,65421,Unemployed,Small
+100000049,Male,Single,39,High School,130500,Unemployed,Small
+100000050,Female,Non-Single,28,High School,122831,Employee,Small
+100000051,Male,Single,29,Other,84531,Unemployed,Small
+100000052,Male,Single,30,Other,180196,Self-Employed,Large
+100000053,Male,Single,25,Other,92058,Employee,Large
+100000054,Male,Single,31,Other,117158,Employee,Small
+100000055,Male,Single,57,University,135830,Employee,Medium
+100000056,Male,Single,26,Other,58258,Unemployed,Small
+100000057,Male,Single,52,High School,202575,Self-Employed,Large
+100000058,Female,Non-Single,31,High School,183657,Employee,Medium
+100000059,Female,Non-Single,23,High School,152267,Self-Employed,Medium
+100000060,Female,Non-Single,23,High School,115240,Unemployed,Small
+100000061,Male,Non-Single,27,High School,106955,Employee,Large
+100000062,Male,Single,50,High School,123641,Employee,Medium
+100000063,Male,Single,61,University,166410,Self-Employed,Medium
+100000064,Male,Single,25,Other,227385,Employee,Large
+100000065,Female,Non-Single,26,High School,118372,Employee,Medium
+100000066,Male,Single,48,High School,148115,Employee,Medium
+100000067,Female,Non-Single,29,High School,111069,Employee,Small
+100000068,Male,Non-Single,22,High School,139780,Employee,Small
+100000069,Male,Single,37,High School,106978,Employee,Large
+100000070,Female,Non-Single,25,High School,110019,Employee,Large
+100000071,Female,Non-Single,30,High School,169102,Employee,Medium
+100000072,Male,Single,46,High School,73703,Unemployed,Small
+100000073,Male,Single,51,High School,141858,Self-Employed,Large
+100000074,Female,Non-Single,41,University,135959,Unemployed,Small
+100000075,Male,Single,40,High School,140888,Self-Employed,Large
+100000076,Male,Single,66,University,157299,Self-Employed,Large
+100000077,Male,Single,34,High School,125187,Employee,Medium
+100000078,Male,Single,51,High School,155486,Employee,Large
+100000079,Male,Single,39,High School,151697,Unemployed,Small
+100000080,Male,Non-Single,22,High School,126400,Employee,Medium
+100000081,Female,Non-Single,44,University,159246,Employee,Large
+100000082,Male,Single,47,High School,136138,Employee,Medium
+100000083,Female,Non-Single,24,High School,84792,Unemployed,Small
+100000084,Female,Non-Single,58,University,100210,Unemployed,Small
+100000085,Male,Single,52,High School,93706,Unemployed,Small
+100000086,Female,Non-Single,29,High School,133783,Self-Employed,Medium
+100000087,Female,Non-Single,27,High School,110064,Employee,Large
+100000088,Male,Single,47,High School,241068,Employee,Medium
+100000089,Male,Single,30,Other,149022,Self-Employed,Large
+100000090,Male,Single,28,Other,92973,Employee,Large
+100000091,Male,Single,56,High School,110605,Employee,Medium
+100000092,Male,Single,54,High School,116604,Employee,Medium
+100000093,Female,Non-Single,33,High School,71070,Unemployed,Small
+100000094,Male,Single,20,Other,128678,Employee,Medium
+100000095,Male,Single,54,High School,165230,Employee,Large
+100000096,Male,Single,58,University,268340,Employee,Medium
+100000097,Female,Non-Single,61,University,135070,Employee,Medium
+100000098,Male,Single,34,High School,134794,Employee,Large
+100000099,Male,Single,36,High School,120153,Employee,Medium
+100000100,Male,Single,36,High School,195465,Self-Employed,Large
+100000101,Male,Non-Single,41,High School,93372,Unemployed,Small
+100000102,Male,Single,24,Other,110446,Employee,Small
+100000103,Female,Non-Single,24,High School,95186,Employee,Medium
+100000104,Male,Single,35,High School,115343,Employee,Medium
+100000105,Male,Non-Single,26,High School,107276,Employee,Medium
+100000106,Male,Single,39,High School,244716,Self-Employed,Large
+100000107,Male,Single,39,High School,183108,Self-Employed,Large
+100000108,Male,Single,32,Other,152876,Employee,Large
+100000109,Female,Non-Single,30,High School,165147,Employee,Small
+100000110,Male,Non-Single,35,High School,140520,Employee,Small
+100000111,Male,Non-Single,31,High School,124203,Employee,Medium
+100000112,Female,Non-Single,23,High School,107205,Employee,Medium
+100000113,Male,Single,28,Other,121432,Unemployed,Large
+100000114,Female,Non-Single,25,High School,162445,Employee,Small
+100000115,Male,Non-Single,35,High School,134112,Employee,Medium
+100000116,Male,Single,47,High School,131842,Employee,Medium
+100000117,Female,Non-Single,30,High School,189896,Self-Employed,Small
+100000118,Female,Non-Single,27,High School,109099,Employee,Large
+100000119,Female,Non-Single,23,High School,153539,Employee,Medium
+100000120,Male,Non-Single,36,High School,180495,Self-Employed,Medium
+100000121,Female,Non-Single,25,High School,104653,Employee,Large
+100000122,Female,Non-Single,41,University,166933,Self-Employed,Large
+100000123,Male,Single,24,Other,66118,Unemployed,Small
+100000124,Male,Single,63,University,135754,Employee,Small
+100000125,Female,Non-Single,27,High School,116103,Employee,Large
+100000126,Male,Single,30,Other,104293,Employee,Medium
+100000127,Male,Non-Single,40,High School,71702,Unemployed,Small
+100000128,Male,Single,30,Other,99066,Employee,Large
+100000129,Male,Single,34,High School,143979,Self-Employed,Large
+100000130,Female,Non-Single,29,High School,123818,Employee,Small
+100000131,Female,Non-Single,24,High School,176714,Employee,Large
+100000132,Male,Single,29,Other,149249,Employee,Large
+100000133,Male,Single,27,Other,77535,Unemployed,Small
+100000134,Male,Single,47,High School,116540,Employee,Medium
+100000135,Female,Non-Single,21,High School,194728,Employee,Small
+100000136,Female,Non-Single,38,High School,109311,Employee,Large
+100000137,Male,Single,27,Other,204723,Employee,Large
+100000138,Male,Single,66,University,126003,Unemployed,Small
+100000139,Male,Single,35,High School,123109,Employee,Medium
+100000140,Female,Non-Single,44,University,108251,Unemployed,Small
+100000141,Male,Non-Single,27,High School,89908,Unemployed,Small
+100000142,Female,Non-Single,30,High School,176057,Self-Employed,Medium
+100000143,Male,Single,27,Other,144332,Self-Employed,Large
+100000144,Male,Single,22,Other,101185,Employee,Medium
+100000145,Female,Non-Single,23,High School,107406,Employee,Large
+100000146,Male,Single,30,Other,140665,Employee,Medium
+100000147,Female,Non-Single,39,University,106461,Employee,Small
+100000148,Female,Non-Single,51,University,127825,Employee,Small
+100000149,Male,Single,28,Other,133898,Employee,Medium
+100000150,Male,Single,46,High School,152383,Employee,Large
+100000151,Male,Single,42,High School,119926,Employee,Small
+100000152,Male,Single,38,High School,108784,Employee,Large
+100000153,Male,Single,24,Other,153286,Employee,Medium
+100000154,Female,Non-Single,29,High School,214204,Employee,Large
+100000155,Male,Single,36,High School,208101,Self-Employed,Large
+100000156,Female,Non-Single,20,High School,95355,Employee,Medium
+100000157,Male,Single,48,High School,124156,Employee,Medium
+100000158,Male,Non-Single,45,University,72215,Unemployed,Small
+100000159,Male,Single,38,High School,146529,Employee,Large
+100000160,Male,Single,34,High School,75343,Unemployed,Small
+100000161,Male,Single,36,High School,129789,Employee,Medium
+100000162,Female,Non-Single,30,High School,101153,Employee,Medium
+100000163,Male,Single,36,High School,127833,Employee,Large
+100000164,Male,Single,70,University,224998,Self-Employed,Large
+100000165,Male,Single,36,High School,124445,Employee,Large
+100000166,Male,Single,32,Other,141116,Employee,Medium
+100000167,Female,Non-Single,33,High School,104276,Employee,Large
+100000168,Female,Non-Single,20,High School,147687,Employee,Large
+100000169,Female,Non-Single,25,High School,125168,Employee,Medium
+100000170,Male,Non-Single,31,High School,115369,Employee,Large
+100000171,Male,Single,33,High School,95445,Employee,Small
+100000172,Female,Non-Single,26,High School,95159,Employee,Medium
+100000173,Female,Non-Single,34,High School,153031,Self-Employed,Large
+100000174,Male,Single,33,High School,108899,Employee,Small
+100000175,Male,Single,26,Other,113515,Employee,Medium
+100000176,Female,Non-Single,53,University,211229,Self-Employed,Small
+100000177,Male,Non-Single,42,University,121307,Employee,Small
+100000178,Male,Single,52,High School,131727,Employee,Large
+100000179,Male,Single,31,Other,133574,Self-Employed,Medium
+100000180,Male,Single,65,University,117334,Employee,Small
+100000181,Male,Non-Single,28,High School,177291,Employee,Large
+100000182,Male,Non-Single,30,High School,168763,Self-Employed,Medium
+100000183,Male,Single,40,High School,77720,Unemployed,Small
+100000184,Male,Single,50,High School,176645,Employee,Large
+100000185,Male,Single,36,High School,106205,Employee,Medium
+100000186,Male,Single,31,Other,97785,Employee,Medium
+100000187,Female,Non-Single,74,Graduate School,214364,Self-Employed,Medium
+100000188,Male,Single,68,University,74525,Unemployed,Small
+100000189,Male,Non-Single,20,High School,98988,Employee,Small
+100000190,Female,Non-Single,33,High School,133561,Employee,Medium
+100000191,Male,Single,54,High School,217651,Self-Employed,Large
+100000192,Male,Single,34,High School,116525,Unemployed,Small
+100000193,Male,Single,36,High School,135302,Employee,Large
+100000194,Male,Non-Single,29,High School,106434,Employee,Medium
+100000195,Male,Single,21,Other,128350,Employee,Large
+100000196,Female,Non-Single,34,High School,147626,Self-Employed,Large
+100000197,Female,Non-Single,28,High School,102697,Employee,Small
+100000198,Female,Non-Single,27,High School,120262,Employee,Small
+100000199,Male,Single,36,High School,124214,Employee,Large
+100000200,Male,Non-Single,40,High School,175223,Self-Employed,Medium
+100000201,Male,Single,52,High School,137467,Employee,Small
+100000202,Male,Non-Single,27,High School,65815,Unemployed,Small
+100000203,Male,Single,26,Other,129864,Employee,Medium
+100000204,Male,Non-Single,21,High School,88475,Employee,Medium
+100000205,Male,Single,38,High School,74666,Unemployed,Small
+100000206,Male,Single,38,High School,222294,Self-Employed,Large
+100000207,Male,Single,43,High School,112878,Employee,Small
+100000208,Male,Single,26,Other,103411,Employee,Large
+100000209,Male,Non-Single,21,High School,112868,Unemployed,Small
+100000210,Male,Single,55,High School,157940,Employee,Large
+100000211,Male,Single,33,High School,115835,Employee,Large
+100000212,Female,Non-Single,45,University,109807,Unemployed,Small
+100000213,Male,Single,50,High School,150699,Employee,Medium
+100000214,Male,Single,66,University,178967,Self-Employed,Small
+100000215,Male,Single,51,High School,132767,Employee,Small
+100000216,Female,Non-Single,39,University,86152,Unemployed,Small
+100000217,Male,Single,31,Other,114528,Employee,Large
+100000218,Male,Single,23,Other,133912,Employee,Medium
+100000219,Male,Non-Single,24,High School,81210,Unemployed,Small
+100000220,Female,Non-Single,64,Graduate School,131242,Employee,Small
+100000221,Male,Non-Single,26,High School,68804,Unemployed,Small
+100000222,Female,Non-Single,23,High School,96961,Employee,Medium
+100000223,Male,Single,30,Other,90719,Employee,Large
+100000224,Male,Single,32,Other,114116,Employee,Medium
+100000225,Male,Single,30,Other,128639,Employee,Medium
+100000226,Male,Single,27,Other,106623,Employee,Medium
+100000227,Male,Single,27,Other,236264,Employee,Medium
+100000228,Male,Single,53,High School,207783,Self-Employed,Medium
+100000229,Male,Single,22,Other,91739,Employee,Medium
+100000230,Male,Single,22,Other,107780,Employee,Large
+100000231,Male,Single,26,Other,139157,Employee,Large
+100000232,Male,Single,51,High School,121751,Unemployed,Small
+100000233,Male,Single,35,High School,121974,Employee,Small
+100000234,Male,Non-Single,25,High School,70320,Unemployed,Small
+100000235,Male,Single,42,High School,78327,Unemployed,Small
+100000236,Male,Single,30,Other,131433,Self-Employed,Small
+100000237,Male,Single,23,Other,167076,Unemployed,Large
+100000238,Male,Non-Single,61,University,130788,Unemployed,Small
+100000239,Female,Non-Single,35,High School,107408,Employee,Medium
+100000240,Male,Single,39,High School,115323,Employee,Medium
+100000241,Female,Non-Single,29,High School,99012,Employee,Small
+100000242,Male,Single,51,High School,115996,Employee,Medium
+100000243,Male,Single,24,Other,123353,Employee,Medium
+100000244,Female,Non-Single,27,High School,100008,Employee,Small
+100000245,Female,Non-Single,35,High School,125105,Unemployed,Small
+100000246,Male,Single,25,Other,92020,Employee,Large
+100000247,Male,Single,52,High School,108365,Employee,Large
+100000248,Male,Single,35,High School,112979,Employee,Small
+100000249,Male,Single,26,Other,117221,Employee,Medium
+100000250,Female,Non-Single,22,High School,88800,Employee,Large
+100000251,Female,Non-Single,39,University,115099,Unemployed,Small
+100000252,Female,Non-Single,46,University,113399,Unemployed,Small
+100000253,Female,Non-Single,24,High School,115879,Employee,Medium
+100000254,Male,Single,35,High School,141270,Employee,Large
+100000255,Male,Single,24,Other,107633,Employee,Medium
+100000256,Male,Single,27,Other,131751,Unemployed,Small
+100000257,Male,Single,35,High School,83687,Unemployed,Small
+100000258,Male,Non-Single,29,High School,106828,Employee,Large
+100000259,Female,Non-Single,23,High School,135537,Employee,Medium
+100000260,Female,Non-Single,57,University,107142,Unemployed,Small
+100000261,Male,Single,27,Other,97446,Employee,Medium
+100000262,Female,Non-Single,55,University,126357,Employee,Large
+100000263,Male,Single,36,High School,169617,Self-Employed,Medium
+100000264,Female,Non-Single,57,University,108945,Unemployed,Small
+100000265,Male,Single,32,Other,67345,Unemployed,Small
+100000266,Male,Single,37,High School,106215,Employee,Small
+100000267,Male,Single,36,High School,149237,Employee,Small
+100000268,Female,Non-Single,38,High School,112124,Employee,Small
+100000269,Male,Non-Single,45,University,215150,Self-Employed,Large
+100000270,Male,Single,25,Other,89534,Employee,Medium
+100000271,Male,Single,32,Other,111082,Employee,Large
+100000272,Female,Non-Single,37,High School,137069,Employee,Medium
+100000273,Male,Single,36,High School,244541,Self-Employed,Large
+100000274,Male,Single,28,Other,120712,Employee,Medium
+100000275,Male,Non-Single,34,High School,175367,Unemployed,Small
+100000276,Male,Single,32,Other,111418,Employee,Medium
+100000277,Female,Non-Single,26,High School,110913,Employee,Small
+100000278,Male,Non-Single,49,University,84267,Unemployed,Small
+100000279,Female,Non-Single,32,High School,136886,Employee,Large
+100000280,Male,Single,29,Other,144884,Self-Employed,Large
+100000281,Male,Single,23,Other,151180,Employee,Medium
+100000282,Male,Single,50,High School,114997,Employee,Medium
+100000283,Male,Single,49,High School,100961,Unemployed,Small
+100000284,Male,Single,63,University,124849,Employee,Large
+100000285,Male,Non-Single,37,High School,152308,Employee,Large
+100000286,Female,Non-Single,35,High School,167945,Unemployed,Medium
+100000287,Male,Single,26,Other,126706,Employee,Large
+100000288,Male,Single,31,Other,210017,Self-Employed,Large
+100000289,Female,Non-Single,49,University,125665,Employee,Medium
+100000290,Male,Non-Single,48,University,111184,Employee,Medium
+100000291,Male,Non-Single,26,High School,94134,Employee,Small
+100000292,Male,Non-Single,28,High School,214620,Self-Employed,Medium
+100000293,Female,Non-Single,44,University,193816,Self-Employed,Medium
+100000294,Male,Single,56,High School,168714,Employee,Medium
+100000295,Male,Non-Single,46,University,202997,Self-Employed,Medium
+100000296,Female,Non-Single,26,High School,192451,Employee,Large
+100000297,Female,Non-Single,20,High School,127928,Employee,Large
+100000298,Male,Single,45,High School,78253,Unemployed,Small
+100000299,Male,Single,43,High School,118446,Employee,Medium
+100000300,Male,Single,32,Other,161379,Employee,Large
+100000301,Female,Non-Single,54,University,56622,Unemployed,Small
+100000302,Female,Non-Single,42,University,146117,Employee,Medium
+100000303,Male,Single,37,High School,90418,Unemployed,Small
+100000304,Male,Single,49,High School,109053,Employee,Small
+100000305,Male,Single,44,High School,219319,Employee,Small
+100000306,Male,Non-Single,33,High School,144701,Employee,Medium
+100000307,Female,Non-Single,24,High School,102425,Unemployed,Small
+100000308,Male,Non-Single,33,High School,79867,Unemployed,Small
+100000309,Female,Non-Single,24,High School,107114,Employee,Large
+100000310,Male,Non-Single,22,High School,62263,Unemployed,Small
+100000311,Male,Single,40,High School,92567,Unemployed,Small
+100000312,Male,Single,25,Other,146349,Employee,Small
+100000313,Female,Non-Single,26,High School,141825,Employee,Medium
+100000314,Male,Non-Single,25,High School,68582,Unemployed,Small
+100000315,Male,Single,29,Other,85476,Unemployed,Small
+100000316,Male,Single,31,Other,111091,Employee,Large
+100000317,Male,Single,38,High School,67110,Unemployed,Small
+100000318,Female,Non-Single,48,University,126154,Unemployed,Small
+100000319,Male,Single,32,Other,92257,Employee,Large
+100000320,Female,Non-Single,27,High School,93605,Unemployed,Small
+100000321,Male,Non-Single,28,High School,165190,Self-Employed,Small
+100000322,Male,Non-Single,32,High School,107195,Employee,Small
+100000323,Male,Single,34,High School,145059,Self-Employed,Small
+100000324,Male,Single,28,Other,148363,Employee,Small
+100000325,Female,Non-Single,36,High School,105681,Employee,Large
+100000326,Male,Single,39,High School,93732,Unemployed,Small
+100000327,Male,Single,49,High School,154778,Employee,Large
+100000328,Female,Non-Single,34,High School,149356,Employee,Large
+100000329,Male,Single,31,Other,145670,Employee,Medium
+100000330,Male,Single,28,Other,101589,Employee,Large
+100000331,Male,Single,75,University,213333,Self-Employed,Medium
+100000332,Female,Non-Single,30,High School,122420,Employee,Small
+100000333,Female,Non-Single,24,High School,209856,Self-Employed,Medium
+100000334,Female,Non-Single,24,High School,181003,Unemployed,Small
+100000335,Male,Single,23,Other,117804,Employee,Medium
+100000336,Male,Non-Single,44,University,160650,Self-Employed,Medium
+100000337,Female,Non-Single,23,High School,84611,Unemployed,Small
+100000338,Female,Non-Single,24,High School,98479,Employee,Large
+100000339,Male,Single,28,Other,122359,Employee,Large
+100000340,Male,Non-Single,31,High School,81394,Unemployed,Small
+100000341,Female,Non-Single,24,High School,150372,Employee,Medium
+100000342,Female,Non-Single,26,High School,92385,Unemployed,Small
+100000343,Male,Non-Single,25,High School,149851,Employee,Large
+100000344,Male,Single,33,High School,167939,Self-Employed,Medium
+100000345,Male,Single,37,High School,115426,Unemployed,Small
+100000346,Female,Non-Single,43,University,85402,Unemployed,Small
+100000347,Male,Single,23,Other,95815,Employee,Large
+100000348,Female,Non-Single,23,High School,97518,Unemployed,Small
+100000349,Male,Single,34,High School,87355,Unemployed,Small
+100000350,Male,Single,32,Other,145933,Employee,Medium
+100000351,Female,Non-Single,23,High School,97307,Employee,Small
+100000352,Female,Non-Single,29,High School,108434,Employee,Large
+100000353,Male,Single,38,High School,151312,Self-Employed,Medium
+100000354,Male,Single,28,Other,141847,Employee,Medium
+100000355,Male,Single,46,High School,130675,Employee,Large
+100000356,Male,Single,23,Other,69309,Unemployed,Small
+100000357,Male,Single,49,High School,121466,Employee,Large
+100000358,Male,Single,26,Other,153586,Self-Employed,Large
+100000359,Male,Non-Single,28,High School,92849,Employee,Small
+100000360,Female,Non-Single,23,High School,108539,Employee,Large
+100000361,Male,Single,61,University,129556,Employee,Large
+100000362,Male,Single,37,High School,170146,Self-Employed,Small
+100000363,Female,Non-Single,36,High School,135383,Employee,Medium
+100000364,Male,Non-Single,21,High School,96769,Employee,Large
+100000365,Male,Single,25,Other,43684,Unemployed,Small
+100000366,Male,Single,36,High School,103521,Employee,Small
+100000367,Male,Single,27,Other,118499,Employee,Medium
+100000368,Female,Non-Single,22,High School,119684,Employee,Large
+100000369,Male,Single,42,High School,126586,Employee,Medium
+100000370,Female,Non-Single,40,University,136812,Employee,Large
+100000371,Male,Single,36,High School,118277,Employee,Medium
+100000372,Male,Single,33,High School,144597,Employee,Medium
+100000373,Female,Non-Single,23,High School,106043,Employee,Small
+100000374,Male,Single,63,University,272314,Self-Employed,Large
+100000375,Female,Non-Single,60,University,309364,Self-Employed,Large
+100000376,Female,Non-Single,37,High School,170386,Employee,Medium
+100000377,Male,Non-Single,34,High School,112458,Employee,Small
+100000378,Male,Single,36,High School,96840,Employee,Medium
+100000379,Male,Single,57,University,281923,Self-Employed,Medium
+100000380,Female,Non-Single,52,University,95551,Unemployed,Small
+100000381,Male,Single,39,High School,112347,Employee,Large
+100000382,Female,Non-Single,38,High School,260977,Self-Employed,Large
+100000383,Female,Non-Single,25,High School,99354,Employee,Small
+100000384,Male,Single,26,Other,111509,Employee,Large
+100000385,Male,Single,26,Other,105252,Unemployed,Small
+100000386,Female,Non-Single,25,High School,108522,Employee,Small
+100000387,Female,Non-Single,21,High School,94655,Employee,Medium
+100000388,Male,Single,40,High School,201699,Self-Employed,Medium
+100000389,Male,Single,27,Other,139868,Employee,Large
+100000390,Female,Non-Single,27,High School,102543,Employee,Medium
+100000391,Male,Non-Single,30,High School,134467,Self-Employed,Large
+100000392,Female,Non-Single,19,High School,111187,Unemployed,Small
+100000393,Male,Single,39,High School,152302,Self-Employed,Medium
+100000394,Female,Non-Single,31,High School,110610,Employee,Large
+100000395,Male,Single,31,Other,137827,Self-Employed,Large
+100000396,Male,Single,32,Other,220923,Employee,Large
+100000397,Female,Non-Single,55,University,165717,Self-Employed,Large
+100000398,Male,Non-Single,46,University,122299,Employee,Small
+100000399,Male,Non-Single,46,University,120499,Employee,Small
+100000400,Female,Non-Single,43,University,126449,Unemployed,Small
+100000401,Male,Non-Single,39,High School,108315,Employee,Large
+100000402,Male,Non-Single,28,High School,112515,Employee,Medium
+100000403,Male,Single,27,Other,164559,Employee,Medium
+100000404,Male,Single,27,Other,59238,Unemployed,Small
+100000405,Male,Single,43,High School,131133,Employee,Small
+100000406,Male,Non-Single,22,High School,109188,Employee,Small
+100000407,Male,Single,43,High School,115393,Employee,Medium
+100000408,Male,Non-Single,27,High School,94711,Employee,Large
+100000409,Male,Non-Single,26,High School,171860,Self-Employed,Small
+100000410,Male,Non-Single,28,High School,139414,Employee,Large
+100000411,Female,Non-Single,20,High School,110931,Employee,Medium
+100000412,Male,Single,35,High School,187549,Self-Employed,Large
+100000413,Male,Single,42,High School,145508,Self-Employed,Small
+100000414,Male,Single,40,High School,104240,Unemployed,Small
+100000415,Female,Non-Single,35,High School,108272,Employee,Medium
+100000416,Male,Single,35,High School,144004,Employee,Large
+100000417,Male,Single,33,High School,81083,Unemployed,Small
+100000418,Female,Non-Single,23,High School,166763,Employee,Medium
+100000419,Female,Non-Single,31,High School,175530,Self-Employed,Medium
+100000420,Female,Non-Single,33,High School,112422,Employee,Medium
+100000421,Female,Non-Single,20,High School,154134,Employee,Large
+100000422,Male,Single,30,Other,112401,Employee,Medium
+100000423,Male,Single,47,High School,85690,Unemployed,Small
+100000424,Male,Single,34,High School,145896,Self-Employed,Large
+100000425,Female,Non-Single,25,High School,122552,Employee,Large
+100000426,Male,Non-Single,21,High School,115494,Employee,Large
+100000427,Male,Single,29,Other,109467,Employee,Small
+100000428,Male,Single,46,High School,148226,Employee,Large
+100000429,Male,Single,20,Other,88559,Employee,Medium
+100000430,Female,Non-Single,55,University,62393,Unemployed,Small
+100000431,Male,Single,74,University,122133,Unemployed,Small
+100000432,Male,Single,29,Other,230883,Self-Employed,Large
+100000433,Male,Single,36,High School,136689,Self-Employed,Large
+100000434,Male,Non-Single,33,High School,109145,Employee,Small
+100000435,Male,Single,25,Other,100449,Employee,Large
+100000436,Male,Non-Single,25,High School,106253,Employee,Small
+100000437,Male,Non-Single,23,High School,84747,Unemployed,Small
+100000438,Female,Non-Single,37,High School,149465,Employee,Medium
+100000439,Male,Single,65,University,84435,Unemployed,Small
+100000440,Female,Non-Single,26,High School,51681,Unemployed,Small
+100000441,Male,Single,39,High School,139198,Self-Employed,Medium
+100000442,Female,Non-Single,30,High School,106577,Employee,Medium
+100000443,Male,Single,29,Other,117372,Employee,Large
+100000444,Male,Single,41,High School,69609,Unemployed,Small
+100000445,Female,Non-Single,30,High School,178947,Self-Employed,Large
+100000446,Female,Non-Single,41,University,81743,Unemployed,Small
+100000447,Female,Non-Single,34,High School,111900,Employee,Medium
+100000448,Male,Single,35,High School,121650,Employee,Small
+100000449,Female,Non-Single,55,University,172639,Self-Employed,Large
+100000450,Male,Non-Single,61,University,175740,Employee,Medium
+100000451,Male,Single,30,Other,220050,Self-Employed,Large
+100000452,Female,Non-Single,29,High School,95200,Employee,Medium
+100000453,Male,Single,34,High School,113609,Employee,Medium
+100000454,Male,Single,35,High School,143552,Self-Employed,Large
+100000455,Male,Single,31,Other,130973,Employee,Large
+100000456,Female,Non-Single,29,High School,145946,Self-Employed,Large
+100000457,Male,Single,36,High School,126206,Employee,Medium
+100000458,Male,Single,35,High School,120426,Employee,Small
+100000459,Female,Non-Single,27,High School,91925,Employee,Large
+100000460,Male,Single,32,Other,129630,Employee,Large
+100000461,Male,Single,37,High School,124268,Employee,Large
+100000462,Male,Single,36,High School,105240,Employee,Medium
+100000463,Female,Non-Single,34,High School,162180,Self-Employed,Small
+100000464,Male,Single,38,High School,106552,Employee,Large
+100000465,Male,Single,34,High School,105843,Employee,Large
+100000466,Male,Single,63,University,138327,Employee,Medium
+100000467,Female,Non-Single,29,High School,76154,Unemployed,Small
+100000468,Male,Single,32,Other,155012,Employee,Medium
+100000469,Female,Non-Single,26,High School,114369,Employee,Medium
+100000470,Male,Single,35,High School,102839,Unemployed,Small
+100000471,Male,Non-Single,22,High School,132796,Employee,Small
+100000472,Female,Non-Single,23,High School,89742,Employee,Large
+100000473,Male,Single,28,Other,58615,Unemployed,Small
+100000474,Male,Single,36,High School,130603,Self-Employed,Large
+100000475,Male,Non-Single,33,High School,110340,Employee,Small
+100000476,Female,Non-Single,26,High School,117729,Employee,Large
+100000477,Male,Single,24,Other,130808,Employee,Small
+100000478,Male,Single,25,Other,147402,Employee,Large
+100000479,Male,Single,39,High School,93567,Unemployed,Small
+100000480,Male,Single,44,High School,109289,Employee,Medium
+100000481,Female,Non-Single,23,High School,98742,Unemployed,Small
+100000482,Male,Single,26,Other,101270,Employee,Small
+100000483,Female,Non-Single,57,University,187835,Employee,Medium
+100000484,Female,Non-Single,30,High School,140741,Employee,Small
+100000485,Male,Single,44,High School,133265,Employee,Large
+100000486,Male,Single,47,High School,148100,Self-Employed,Large
+100000487,Male,Single,52,High School,131021,Employee,Large
+100000488,Female,Non-Single,62,University,152620,Employee,Large
+100000489,Male,Single,35,High School,85033,Unemployed,Small
+100000490,Male,Single,26,Other,114514,Employee,Medium
+100000491,Male,Single,26,Other,99307,Employee,Medium
+100000492,Female,Non-Single,42,University,219451,Self-Employed,Large
+100000493,Female,Non-Single,27,High School,114007,Employee,Small
+100000494,Male,Single,38,High School,102846,Employee,Small
+100000495,Male,Single,39,High School,81483,Unemployed,Small
+100000496,Male,Non-Single,20,High School,107779,Employee,Large
+100000497,Male,Single,29,Other,222360,Self-Employed,Large
+100000498,Male,Single,40,High School,107125,Employee,Small
+100000499,Male,Non-Single,32,High School,80080,Unemployed,Small
+100000500,Male,Non-Single,28,High School,129600,Employee,Small
+100000501,Female,Non-Single,27,High School,118613,Employee,Medium
+100000502,Male,Single,42,High School,146237,Employee,Medium
+100000503,Male,Non-Single,49,University,144461,Employee,Large
+100000504,Male,Single,38,High School,124487,Employee,Small
+100000505,Female,Non-Single,24,High School,97826,Employee,Small
+100000506,Male,Single,27,Other,64105,Unemployed,Small
+100000507,Male,Single,36,High School,156374,Employee,Large
+100000508,Male,Single,34,High School,205383,Self-Employed,Large
+100000509,Male,Non-Single,28,High School,98964,Employee,Large
+100000510,Male,Single,45,High School,221842,Self-Employed,Large
+100000511,Male,Single,26,Other,88027,Employee,Large
+100000512,Male,Single,32,Other,160513,Self-Employed,Large
+100000513,Male,Single,26,Other,124536,Employee,Large
+100000514,Male,Non-Single,20,High School,93634,Employee,Small
+100000515,Male,Single,54,High School,124725,Employee,Small
+100000516,Female,Non-Single,37,High School,102456,Employee,Small
+100000517,Male,Single,40,High School,74975,Unemployed,Small
+100000518,Female,Non-Single,23,High School,153861,Employee,Medium
+100000519,Male,Single,43,High School,119351,Employee,Large
+100000520,Male,Single,36,High School,95438,Employee,Large
+100000521,Male,Single,44,High School,147967,Employee,Large
+100000522,Female,Non-Single,24,High School,116863,Employee,Medium
+100000523,Male,Single,53,High School,170622,Employee,Medium
+100000524,Female,Non-Single,23,High School,132426,Employee,Medium
+100000525,Female,Non-Single,26,High School,77519,Unemployed,Small
+100000526,Male,Single,30,Other,169405,Employee,Large
+100000527,Female,Non-Single,31,High School,120030,Employee,Small
+100000528,Male,Single,42,High School,77933,Unemployed,Small
+100000529,Male,Non-Single,31,High School,109892,Employee,Medium
+100000530,Male,Single,41,High School,69062,Unemployed,Small
+100000531,Male,Single,32,Other,116348,Employee,Small
+100000532,Female,Non-Single,28,High School,137188,Employee,Medium
+100000533,Male,Non-Single,41,High School,110199,Employee,Small
+100000534,Male,Non-Single,26,High School,109890,Employee,Medium
+100000535,Male,Single,25,Other,109751,Employee,Large
+100000536,Male,Non-Single,33,High School,129651,Employee,Medium
+100000537,Female,Non-Single,75,Graduate School,170113,Self-Employed,Medium
+100000538,Female,Non-Single,37,High School,140285,Employee,Medium
+100000539,Male,Single,42,High School,198029,Self-Employed,Large
+100000540,Female,Non-Single,45,University,120262,Unemployed,Small
+100000541,Male,Non-Single,23,High School,105137,Employee,Medium
+100000542,Male,Single,60,University,127371,Employee,Small
+100000543,Male,Single,31,Other,145689,Employee,Small
+100000544,Male,Single,34,High School,102617,Unemployed,Medium
+100000545,Male,Single,61,University,90709,Unemployed,Small
+100000546,Male,Single,43,High School,107099,Employee,Medium
+100000547,Female,Non-Single,37,High School,116021,Employee,Large
+100000548,Male,Single,32,Other,100426,Employee,Large
+100000549,Female,Non-Single,24,High School,62249,Unemployed,Small
+100000550,Male,Single,35,High School,172957,Employee,Medium
+100000551,Female,Non-Single,23,High School,95003,Employee,Medium
+100000552,Male,Single,45,High School,109698,Unemployed,Small
+100000553,Male,Non-Single,34,High School,157376,Employee,Small
+100000554,Male,Single,27,Other,123191,Employee,Large
+100000555,Female,Non-Single,67,Graduate School,171052,Self-Employed,Small
+100000556,Male,Single,22,Other,99328,Employee,Small
+100000557,Female,Non-Single,28,High School,133799,Employee,Large
+100000558,Female,Non-Single,29,High School,138256,Employee,Large
+100000559,Male,Single,27,Other,115638,Employee,Small
+100000560,Male,Single,31,Other,82238,Unemployed,Small
+100000561,Male,Single,49,High School,127543,Employee,Medium
+100000562,Male,Single,24,Other,63987,Unemployed,Small
+100000563,Female,Non-Single,29,High School,114784,Employee,Small
+100000564,Male,Single,37,High School,217450,Employee,Medium
+100000565,Male,Single,37,High School,173751,Self-Employed,Large
+100000566,Female,Non-Single,23,High School,122850,Employee,Small
+100000567,Male,Non-Single,36,High School,104953,Employee,Small
+100000568,Male,Single,34,High School,152371,Employee,Medium
+100000569,Male,Single,41,High School,139905,Employee,Small
+100000570,Female,Non-Single,31,High School,156700,Employee,Medium
+100000571,Female,Non-Single,23,High School,86488,Unemployed,Small
+100000572,Male,Single,38,High School,147472,Employee,Small
+100000573,Female,Non-Single,26,High School,169991,Self-Employed,Small
+100000574,Female,Non-Single,22,High School,62381,Unemployed,Small
+100000575,Male,Single,27,Other,70926,Unemployed,Small
+100000576,Female,Non-Single,24,High School,113004,Employee,Medium
+100000577,Female,Non-Single,27,High School,125760,Employee,Small
+100000578,Female,Non-Single,33,High School,111918,Employee,Large
+100000579,Male,Non-Single,27,High School,120674,Employee,Medium
+100000580,Male,Non-Single,27,High School,63597,Unemployed,Small
+100000581,Male,Single,30,Other,103069,Employee,Medium
+100000582,Male,Single,49,High School,108079,Unemployed,Small
+100000583,Female,Non-Single,26,High School,101159,Employee,Medium
+100000584,Male,Single,33,High School,88211,Unemployed,Small
+100000585,Female,Non-Single,52,University,159052,Self-Employed,Medium
+100000586,Female,Non-Single,20,High School,102623,Employee,Large
+100000587,Male,Single,36,High School,115589,Employee,Small
+100000588,Male,Single,21,Other,59127,Unemployed,Small
+100000589,Male,Non-Single,47,University,82240,Unemployed,Small
+100000590,Male,Single,60,University,129425,Employee,Medium
+100000591,Female,Non-Single,58,University,87058,Unemployed,Small
+100000592,Female,Non-Single,42,University,128462,Employee,Large
+100000593,Female,Non-Single,36,High School,121403,Unemployed,Small
+100000594,Female,Non-Single,20,High School,88141,Unemployed,Small
+100000595,Male,Single,40,High School,134946,Self-Employed,Large
+100000596,Female,Non-Single,32,High School,94058,Unemployed,Small
+100000597,Female,Non-Single,23,High School,99285,Employee,Medium
+100000598,Male,Single,36,High School,108432,Unemployed,Small
+100000599,Male,Single,31,Other,111369,Employee,Small
+100000600,Male,Single,32,Other,122612,Employee,Large
+100000601,Female,Non-Single,45,University,134350,Employee,Small
+100000602,Female,Non-Single,30,High School,108838,Employee,Large
+100000603,Female,Non-Single,34,High School,90852,Unemployed,Small
+100000604,Female,Non-Single,28,High School,151580,Self-Employed,Large
+100000605,Female,Non-Single,23,High School,115681,Employee,Medium
+100000606,Male,Single,22,Other,131699,Employee,Medium
+100000607,Male,Single,74,University,192481,Self-Employed,Medium
+100000608,Female,Non-Single,50,University,155122,Employee,Large
+100000609,Male,Single,33,High School,106015,Employee,Large
+100000610,Male,Single,45,High School,108378,Employee,Small
+100000611,Female,Non-Single,22,High School,105257,Employee,Medium
+100000612,Female,Non-Single,48,University,118788,Unemployed,Small
+100000613,Female,Non-Single,29,High School,162955,Employee,Large
+100000614,Female,Non-Single,22,High School,119511,Employee,Large
+100000615,Female,Non-Single,22,High School,102000,Employee,Small
+100000616,Male,Single,48,High School,254449,Self-Employed,Medium
+100000617,Male,Single,27,Other,208446,Self-Employed,Large
+100000618,Male,Single,37,High School,124805,Employee,Small
+100000619,Female,Non-Single,21,High School,139379,Employee,Small
+100000620,Male,Non-Single,49,University,78296,Unemployed,Small
+100000621,Male,Single,27,Other,125598,Employee,Medium
+100000622,Male,Single,32,Other,100215,Employee,Large
+100000623,Male,Non-Single,38,High School,130951,Employee,Large
+100000624,Female,Non-Single,22,High School,102480,Employee,Large
+100000625,Male,Single,65,University,136812,Employee,Medium
+100000626,Male,Single,35,High School,106919,Employee,Medium
+100000627,Male,Single,41,High School,131020,Employee,Large
+100000628,Male,Single,29,Other,119429,Employee,Medium
+100000629,Male,Single,36,High School,154521,Employee,Medium
+100000630,Male,Single,64,University,117842,Unemployed,Small
+100000631,Female,Non-Single,28,High School,124566,Employee,Large
+100000632,Male,Single,44,High School,110009,Employee,Large
+100000633,Male,Single,23,Other,101210,Employee,Medium
+100000634,Female,Non-Single,19,High School,101258,Employee,Small
+100000635,Female,Non-Single,25,High School,79045,Unemployed,Small
+100000636,Male,Single,47,High School,110866,Employee,Small
+100000637,Female,Non-Single,28,High School,129640,Employee,Large
+100000638,Male,Single,21,Other,227021,Employee,Medium
+100000639,Female,Non-Single,34,High School,108549,Employee,Medium
+100000640,Male,Single,26,Other,122693,Employee,Small
+100000641,Female,Non-Single,27,High School,35832,Unemployed,Small
+100000642,Male,Single,38,High School,81870,Unemployed,Small
+100000643,Male,Single,40,High School,179790,Self-Employed,Large
+100000644,Male,Non-Single,33,High School,107158,Employee,Medium
+100000645,Male,Non-Single,32,High School,136638,Self-Employed,Medium
+100000646,Male,Single,27,Other,158147,Employee,Large
+100000647,Male,Non-Single,32,High School,132587,Employee,Large
+100000648,Female,Non-Single,26,High School,128140,Employee,Large
+100000649,Male,Single,38,High School,117405,Employee,Medium
+100000650,Male,Single,40,High School,68475,Unemployed,Small
+100000651,Male,Single,50,High School,201656,Self-Employed,Large
+100000652,Male,Single,37,High School,86967,Unemployed,Small
+100000653,Male,Single,45,High School,118006,Employee,Medium
+100000654,Male,Single,42,High School,223630,Self-Employed,Large
+100000655,Male,Single,35,High School,110442,Employee,Small
+100000656,Male,Single,22,Other,115691,Employee,Large
+100000657,Male,Single,41,High School,80232,Unemployed,Small
+100000658,Male,Single,37,High School,187647,Employee,Medium
+100000659,Female,Non-Single,28,High School,138952,Employee,Medium
+100000660,Male,Single,41,High School,162772,Employee,Large
+100000661,Male,Non-Single,23,High School,111862,Employee,Medium
+100000662,Male,Non-Single,23,High School,90051,Employee,Medium
+100000663,Male,Single,50,High School,121400,Employee,Medium
+100000664,Male,Single,35,High School,137000,Self-Employed,Large
+100000665,Female,Non-Single,50,University,105031,Unemployed,Small
+100000666,Male,Single,27,Other,172153,Self-Employed,Large
+100000667,Male,Single,34,High School,170184,Employee,Medium
+100000668,Female,Non-Single,27,High School,123279,Employee,Medium
+100000669,Male,Single,43,High School,140795,Employee,Small
+100000670,Male,Single,47,High School,144456,Employee,Small
+100000671,Male,Single,27,Other,104773,Unemployed,Small
+100000672,Male,Single,31,Other,153353,Employee,Medium
+100000673,Male,Single,42,High School,223018,Self-Employed,Medium
+100000674,Male,Non-Single,24,High School,129177,Employee,Large
+100000675,Male,Single,41,High School,114475,Unemployed,Medium
+100000676,Female,Non-Single,26,High School,161323,Self-Employed,Medium
+100000677,Male,Single,33,High School,135765,Employee,Large
+100000678,Male,Non-Single,24,High School,158421,Employee,Small
+100000679,Male,Single,64,University,103941,Unemployed,Small
+100000680,Female,Non-Single,26,High School,101783,Employee,Large
+100000681,Female,Non-Single,56,University,126531,Employee,Medium
+100000682,Male,Single,37,High School,111394,Employee,Medium
+100000683,Male,Non-Single,33,High School,103577,Employee,Large
+100000684,Male,Non-Single,47,University,149545,Employee,Medium
+100000685,Male,Single,31,Other,171857,Unemployed,Small
+100000686,Male,Single,34,High School,149782,Employee,Medium
+100000687,Male,Single,27,Other,112470,Employee,Medium
+100000688,Male,Single,30,Other,133907,Employee,Large
+100000689,Male,Single,35,High School,127849,Employee,Medium
+100000690,Male,Single,31,Other,160279,Employee,Large
+100000691,Male,Non-Single,25,High School,92366,Employee,Large
+100000692,Female,Non-Single,25,High School,104794,Unemployed,Small
+100000693,Male,Single,29,Other,133436,Employee,Medium
+100000694,Male,Single,44,High School,110374,Unemployed,Small
+100000695,Male,Single,28,Other,104263,Employee,Medium
+100000696,Male,Single,50,High School,138752,Employee,Small
+100000697,Male,Single,29,Other,102723,Employee,Small
+100000698,Female,Non-Single,38,High School,46297,Unemployed,Small
+100000699,Male,Single,24,Other,96425,Employee,Medium
+100000700,Male,Single,40,High School,158197,Self-Employed,Medium
+100000701,Female,Non-Single,29,High School,98008,Unemployed,Small
+100000702,Male,Single,46,High School,157473,Employee,Small
+100000703,Female,Non-Single,47,University,149306,Employee,Small
+100000704,Male,Single,41,High School,139236,Employee,Medium
+100000705,Female,Non-Single,32,High School,125890,Employee,Large
+100000706,Female,Non-Single,35,High School,173124,Employee,Medium
+100000707,Male,Single,24,Other,164621,Employee,Medium
+100000708,Female,Non-Single,25,High School,124539,Employee,Medium
+100000709,Female,Non-Single,25,High School,107614,Employee,Medium
+100000710,Male,Single,37,High School,88849,Unemployed,Small
+100000711,Male,Single,32,Other,148566,Self-Employed,Large
+100000712,Female,Non-Single,35,High School,106515,Employee,Large
+100000713,Male,Single,46,High School,150465,Self-Employed,Medium
+100000714,Male,Single,25,Other,60868,Unemployed,Small
+100000715,Male,Single,27,Other,255198,Self-Employed,Large
+100000716,Male,Single,63,University,183178,Employee,Medium
+100000717,Male,Single,40,High School,121448,Employee,Large
+100000718,Male,Single,32,Other,129975,Self-Employed,Large
+100000719,Male,Single,31,Other,132950,Employee,Large
+100000720,Male,Non-Single,31,High School,169314,Employee,Medium
+100000721,Male,Single,34,High School,147958,Self-Employed,Medium
+100000722,Female,Non-Single,24,High School,139896,Employee,Large
+100000723,Female,Non-Single,24,High School,68028,Unemployed,Small
+100000724,Female,Non-Single,66,Graduate School,133328,Unemployed,Small
+100000725,Female,Non-Single,21,High School,108518,Employee,Large
+100000726,Female,Non-Single,41,University,112700,Unemployed,Small
+100000727,Male,Non-Single,47,University,110190,Unemployed,Small
+100000728,Female,Non-Single,25,High School,105104,Employee,Medium
+100000729,Female,Non-Single,59,University,184753,Employee,Medium
+100000730,Male,Non-Single,36,High School,162521,Employee,Large
+100000731,Male,Single,33,High School,156794,Employee,Medium
+100000732,Male,Single,21,Other,65827,Unemployed,Small
+100000733,Female,Non-Single,44,University,88490,Unemployed,Small
+100000734,Female,Non-Single,28,High School,154919,Employee,Large
+100000735,Female,Non-Single,37,High School,129058,Employee,Small
+100000736,Female,Non-Single,29,High School,77532,Unemployed,Small
+100000737,Female,Non-Single,23,High School,235417,Self-Employed,Large
+100000738,Male,Single,35,High School,113468,Unemployed,Small
+100000739,Male,Single,45,High School,190803,Self-Employed,Large
+100000740,Female,Non-Single,26,High School,121423,Unemployed,Small
+100000741,Male,Single,32,Other,121347,Employee,Medium
+100000742,Male,Single,23,Other,67408,Unemployed,Small
+100000743,Male,Single,41,High School,123043,Employee,Medium
+100000744,Male,Single,22,Other,128387,Employee,Large
+100000745,Male,Single,30,Other,250050,Self-Employed,Medium
+100000746,Male,Single,28,Other,69588,Unemployed,Small
+100000747,Female,Non-Single,23,High School,109547,Employee,Medium
+100000748,Female,Non-Single,37,High School,78840,Unemployed,Small
+100000749,Male,Single,26,Other,131122,Employee,Small
+100000750,Male,Single,33,High School,115403,Employee,Medium
+100000751,Female,Non-Single,49,University,110291,Employee,Large
+100000752,Female,Non-Single,23,High School,64811,Unemployed,Small
+100000753,Female,Non-Single,23,High School,86015,Unemployed,Small
+100000754,Female,Non-Single,25,High School,142438,Employee,Large
+100000755,Male,Single,55,High School,159303,Employee,Medium
+100000756,Female,Non-Single,32,High School,104957,Employee,Medium
+100000757,Male,Single,74,University,89502,Unemployed,Small
+100000758,Male,Single,39,High School,121313,Employee,Medium
+100000759,Male,Single,31,Other,98102,Employee,Small
+100000760,Male,Single,35,High School,94554,Employee,Medium
+100000761,Female,Non-Single,59,University,162591,Employee,Medium
+100000762,Female,Non-Single,24,High School,106629,Employee,Large
+100000763,Male,Single,24,Other,70400,Unemployed,Small
+100000764,Male,Single,30,Other,235660,Self-Employed,Large
+100000765,Male,Non-Single,27,High School,121747,Employee,Large
+100000766,Male,Non-Single,40,High School,85060,Unemployed,Small
+100000767,Male,Non-Single,31,High School,87630,Unemployed,Small
+100000768,Female,Non-Single,31,High School,119673,Employee,Small
+100000769,Male,Single,28,Other,126060,Employee,Large
+100000770,Male,Single,63,University,96145,Unemployed,Small
+100000771,Female,Non-Single,26,High School,114830,Employee,Small
+100000772,Female,Non-Single,25,High School,194461,Self-Employed,Large
+100000773,Male,Single,36,High School,150158,Self-Employed,Large
+100000774,Male,Single,52,High School,136323,Employee,Large
+100000775,Male,Single,66,University,111858,Unemployed,Small
+100000776,Female,Non-Single,25,High School,100198,Employee,Small
+100000777,Male,Single,37,High School,123452,Employee,Large
+100000778,Female,Non-Single,25,High School,120723,Employee,Medium
+100000779,Male,Single,38,High School,215639,Self-Employed,Medium
+100000780,Female,Non-Single,67,Graduate School,166712,Employee,Medium
+100000781,Male,Single,25,Other,136300,Employee,Medium
+100000782,Male,Single,60,University,166988,Employee,Large
+100000783,Male,Single,31,Other,77265,Unemployed,Small
+100000784,Female,Non-Single,23,High School,85967,Unemployed,Small
+100000785,Male,Non-Single,60,University,212020,Self-Employed,Small
+100000786,Male,Single,35,High School,126054,Unemployed,Small
+100000787,Male,Single,40,High School,144589,Employee,Small
+100000788,Male,Single,38,High School,116723,Employee,Medium
+100000789,Male,Single,50,High School,168637,Employee,Medium
+100000790,Male,Single,27,Other,139119,Employee,Medium
+100000791,Female,Non-Single,39,University,118610,Employee,Large
+100000792,Male,Single,41,High School,183312,Self-Employed,Large
+100000793,Male,Non-Single,27,High School,96323,Employee,Small
+100000794,Male,Non-Single,51,University,149510,Employee,Large
+100000795,Male,Single,32,Other,141922,Employee,Large
+100000796,Female,Non-Single,22,High School,120233,Employee,Small
+100000797,Male,Single,51,High School,172790,Employee,Medium
+100000798,Female,Non-Single,22,High School,66720,Unemployed,Small
+100000799,Male,Non-Single,54,University,113024,Employee,Medium
+100000800,Male,Single,35,High School,51791,Unemployed,Small
+100000801,Male,Single,54,High School,118408,Employee,Large
+100000802,Female,Non-Single,48,University,101616,Unemployed,Small
+100000803,Female,Non-Single,24,High School,127250,Employee,Small
+100000804,Male,Single,35,High School,97290,Employee,Small
+100000805,Female,Non-Single,24,High School,106970,Unemployed,Small
+100000806,Male,Single,24,Other,168147,Employee,Large
+100000807,Male,Non-Single,26,High School,68468,Unemployed,Small
+100000808,Male,Single,65,University,120780,Employee,Large
+100000809,Male,Single,55,High School,231992,Self-Employed,Large
+100000810,Female,Non-Single,26,High School,53903,Unemployed,Small
+100000811,Male,Non-Single,26,High School,101511,Employee,Large
+100000812,Male,Non-Single,28,High School,69046,Unemployed,Small
+100000813,Male,Single,24,Other,171584,Employee,Medium
+100000814,Male,Single,54,High School,132367,Employee,Large
+100000815,Male,Single,46,High School,134433,Employee,Large
+100000816,Female,Non-Single,54,University,190518,Employee,Small
+100000817,Male,Non-Single,62,University,152367,Employee,Medium
+100000818,Female,Non-Single,24,High School,101157,Employee,Medium
+100000819,Male,Non-Single,43,University,279593,Self-Employed,Large
+100000820,Male,Non-Single,26,High School,96716,Employee,Large
+100000821,Male,Non-Single,27,High School,95171,Employee,Small
+100000822,Male,Non-Single,24,High School,129162,Employee,Large
+100000823,Male,Single,41,High School,118742,Employee,Small
+100000824,Male,Single,47,High School,74511,Unemployed,Small
+100000825,Male,Non-Single,35,High School,157272,Self-Employed,Medium
+100000826,Male,Non-Single,30,High School,102374,Employee,Small
+100000827,Female,Non-Single,33,High School,131492,Employee,Small
+100000828,Male,Single,36,High School,128702,Employee,Large
+100000829,Male,Single,47,High School,177509,Employee,Large
+100000830,Male,Single,38,High School,163451,Employee,Medium
+100000831,Male,Single,44,High School,144900,Employee,Medium
+100000832,Female,Non-Single,23,High School,97115,Employee,Large
+100000833,Male,Single,29,Other,196568,Employee,Large
+100000834,Female,Non-Single,42,University,158405,Employee,Small
+100000835,Female,Non-Single,25,High School,97376,Unemployed,Small
+100000836,Male,Single,48,High School,108678,Employee,Medium
+100000837,Female,Non-Single,21,High School,92351,Employee,Small
+100000838,Female,Non-Single,23,High School,61211,Unemployed,Small
+100000839,Male,Single,63,University,138644,Employee,Small
+100000840,Male,Non-Single,46,University,124824,Employee,Large
+100000841,Male,Single,29,Other,132852,Employee,Small
+100000842,Male,Single,28,Other,81069,Unemployed,Small
+100000843,Female,Non-Single,23,High School,104094,Employee,Large
+100000844,Male,Single,50,High School,114853,Employee,Small
+100000845,Male,Single,47,High School,130344,Employee,Large
+100000846,Male,Single,35,High School,135090,Employee,Small
+100000847,Male,Single,68,University,179151,Employee,Large
+100000848,Male,Non-Single,28,High School,97390,Employee,Medium
+100000849,Male,Single,59,University,120160,Employee,Small
+100000850,Male,Single,57,University,82277,Unemployed,Small
+100000851,Male,Non-Single,33,High School,110844,Employee,Large
+100000852,Male,Single,43,High School,133105,Employee,Small
+100000853,Male,Single,35,High School,102042,Employee,Small
+100000854,Male,Single,32,Other,69370,Unemployed,Small
+100000855,Male,Single,45,High School,200298,Employee,Medium
+100000856,Male,Non-Single,33,High School,117039,Employee,Large
+100000857,Female,Non-Single,40,University,107585,Employee,Large
+100000858,Male,Single,28,Other,114429,Employee,Small
+100000859,Female,Non-Single,29,High School,128234,Employee,Large
+100000860,Male,Single,26,Other,128580,Employee,Large
+100000861,Male,Single,27,Other,177757,Employee,Medium
+100000862,Male,Non-Single,28,High School,106222,Employee,Small
+100000863,Female,Non-Single,35,High School,118428,Employee,Large
+100000864,Male,Single,32,Other,139477,Unemployed,Small
+100000865,Male,Single,25,Other,71159,Unemployed,Small
+100000866,Female,Non-Single,20,High School,131370,Employee,Large
+100000867,Female,Non-Single,27,High School,111567,Employee,Large
+100000868,Male,Single,42,High School,125482,Employee,Large
+100000869,Male,Single,37,High School,160642,Employee,Large
+100000870,Female,Non-Single,24,High School,92498,Employee,Small
+100000871,Female,Non-Single,40,University,199711,Employee,Large
+100000872,Male,Single,46,High School,127588,Employee,Large
+100000873,Male,Single,26,Other,107508,Employee,Large
+100000874,Female,Non-Single,24,High School,94629,Employee,Large
+100000875,Male,Single,29,Other,87598,Unemployed,Large
+100000876,Female,Non-Single,40,University,161194,Employee,Medium
+100000877,Male,Single,36,High School,137342,Self-Employed,Large
+100000878,Male,Single,28,Other,116848,Employee,Medium
+100000879,Male,Single,27,Other,125190,Self-Employed,Medium
+100000880,Male,Single,36,High School,153441,Employee,Small
+100000881,Male,Single,38,High School,195328,Self-Employed,Large
+100000882,Male,Non-Single,48,University,190413,Employee,Small
+100000883,Male,Single,36,High School,118656,Employee,Medium
+100000884,Female,Non-Single,65,Graduate School,69487,Unemployed,Small
+100000885,Male,Non-Single,43,University,145313,Employee,Medium
+100000886,Female,Non-Single,53,University,117005,Employee,Medium
+100000887,Male,Single,34,High School,123243,Employee,Medium
+100000888,Male,Single,23,Other,237799,Employee,Medium
+100000889,Male,Single,34,High School,180617,Self-Employed,Large
+100000890,Male,Single,40,High School,167019,Employee,Small
+100000891,Male,Single,43,High School,147745,Self-Employed,Large
+100000892,Male,Single,46,High School,114254,Employee,Medium
+100000893,Male,Single,38,High School,81155,Unemployed,Small
+100000894,Male,Single,34,High School,151803,Employee,Large
+100000895,Male,Single,29,Other,94356,Employee,Large
+100000896,Male,Single,31,Other,200621,Self-Employed,Large
+100000897,Female,Non-Single,28,High School,144448,Self-Employed,Medium
+100000898,Female,Non-Single,35,High School,150797,Employee,Small
+100000899,Female,Non-Single,33,High School,84404,Unemployed,Small
+100000900,Male,Single,42,High School,133373,Employee,Large
+100000901,Male,Single,43,High School,119502,Employee,Large
+100000902,Male,Non-Single,44,University,131619,Employee,Small
+100000903,Male,Single,42,High School,194084,Employee,Large
+100000904,Male,Non-Single,40,High School,108278,Employee,Medium
+100000905,Male,Single,36,High School,130987,Self-Employed,Medium
+100000906,Male,Single,20,Other,116582,Self-Employed,Large
+100000907,Male,Single,24,Other,85270,Unemployed,Small
+100000908,Male,Non-Single,27,High School,129227,Employee,Small
+100000909,Female,Non-Single,46,University,108291,Unemployed,Small
+100000910,Female,Non-Single,33,High School,103091,Unemployed,Small
+100000911,Female,Non-Single,34,High School,136975,Employee,Medium
+100000912,Female,Non-Single,25,High School,111502,Unemployed,Small
+100000913,Female,Non-Single,25,High School,124750,Employee,Medium
+100000914,Male,Non-Single,28,High School,146463,Employee,Large
+100000915,Male,Single,31,Other,115075,Employee,Small
+100000916,Female,Non-Single,32,High School,308491,Self-Employed,Medium
+100000917,Male,Single,32,Other,126368,Employee,Small
+100000918,Male,Single,68,University,287247,Self-Employed,Large
+100000919,Male,Non-Single,33,High School,125535,Employee,Large
+100000920,Male,Single,39,High School,153223,Self-Employed,Large
+100000921,Female,Non-Single,28,High School,106873,Employee,Medium
+100000922,Male,Single,37,High School,268906,Self-Employed,Medium
+100000923,Female,Non-Single,22,High School,97757,Employee,Large
+100000924,Male,Single,30,Other,112151,Employee,Medium
+100000925,Male,Non-Single,55,University,172909,Employee,Small
+100000926,Male,Single,46,High School,103387,Employee,Medium
+100000927,Female,Non-Single,21,High School,93916,Employee,Large
+100000928,Male,Single,39,High School,189963,Employee,Large
+100000929,Male,Single,58,University,124191,Employee,Small
+100000930,Male,Single,43,High School,77205,Unemployed,Small
+100000931,Male,Single,24,Other,65917,Unemployed,Small
+100000932,Female,Non-Single,22,High School,109676,Employee,Small
+100000933,Male,Single,30,Other,95682,Employee,Large
+100000934,Male,Single,42,High School,125516,Employee,Large
+100000935,Female,Non-Single,23,High School,99822,Employee,Small
+100000936,Male,Single,30,Other,154854,Self-Employed,Medium
+100000937,Female,Non-Single,28,High School,84582,Unemployed,Small
+100000938,Male,Non-Single,30,High School,145800,Self-Employed,Small
+100000939,Male,Single,42,High School,162869,Employee,Medium
+100000940,Male,Single,46,High School,192379,Self-Employed,Large
+100000941,Male,Single,45,High School,159757,Self-Employed,Large
+100000942,Male,Single,31,Other,69571,Unemployed,Small
+100000943,Male,Single,31,Other,93648,Employee,Large
+100000944,Male,Single,42,High School,77472,Unemployed,Small
+100000945,Female,Non-Single,46,University,121501,Employee,Small
+100000946,Female,Non-Single,30,High School,207262,Employee,Small
+100000947,Male,Single,30,Other,143082,Employee,Large
+100000948,Male,Single,38,High School,147760,Self-Employed,Medium
+100000949,Male,Non-Single,43,University,82082,Unemployed,Small
+100000950,Male,Single,31,Other,132991,Employee,Medium
+100000951,Male,Non-Single,40,High School,78436,Unemployed,Small
+100000952,Male,Single,24,Other,99737,Employee,Large
+100000953,Female,Non-Single,28,High School,164915,Employee,Small
+100000954,Female,Non-Single,26,High School,223185,Self-Employed,Medium
+100000955,Female,Non-Single,29,High School,108400,Employee,Large
+100000956,Female,Non-Single,57,University,194882,Self-Employed,Medium
+100000957,Male,Single,49,High School,122186,Unemployed,Small
+100000958,Male,Single,37,High School,79594,Unemployed,Small
+100000959,Male,Single,45,High School,104355,Unemployed,Small
+100000960,Male,Single,30,Other,135894,Employee,Large
+100000961,Male,Non-Single,30,High School,103699,Employee,Medium
+100000962,Male,Non-Single,47,University,132145,Employee,Medium
+100000963,Male,Single,29,Other,117272,Employee,Large
+100000964,Male,Single,35,High School,137932,Employee,Small
+100000965,Male,Non-Single,22,High School,63972,Unemployed,Small
+100000966,Female,Non-Single,26,High School,113299,Employee,Large
+100000967,Male,Single,23,Other,108540,Unemployed,Small
+100000968,Female,Non-Single,54,University,174424,Self-Employed,Large
+100000969,Male,Non-Single,29,High School,154991,Employee,Large
+100000970,Male,Single,40,High School,99723,Unemployed,Small
+100000971,Male,Single,22,Other,114584,Employee,Large
+100000972,Male,Single,43,High School,135275,Unemployed,Small
+100000973,Female,Non-Single,29,High School,41680,Unemployed,Small
+100000974,Male,Single,36,High School,158769,Employee,Medium
+100000975,Female,Non-Single,33,High School,120596,Employee,Small
+100000976,Female,Non-Single,57,University,139641,Unemployed,Small
+100000977,Female,Non-Single,64,Graduate School,134377,Employee,Small
+100000978,Male,Single,42,High School,125804,Employee,Large
+100000979,Male,Single,47,High School,91858,Unemployed,Small
+100000980,Male,Non-Single,25,High School,117641,Employee,Large
+100000981,Male,Single,49,High School,188594,Employee,Medium
+100000982,Male,Single,33,High School,162827,Self-Employed,Large
+100000983,Female,Non-Single,28,High School,178991,Self-Employed,Large
+100000984,Male,Single,26,Other,159739,Employee,Medium
+100000985,Male,Single,30,Other,73401,Unemployed,Small
+100000986,Female,Non-Single,25,High School,100794,Employee,Large
+100000987,Male,Non-Single,33,High School,167763,Employee,Medium
+100000988,Female,Non-Single,64,Graduate School,145174,Employee,Small
+100000989,Male,Single,29,Other,176292,Self-Employed,Medium
+100000990,Male,Single,48,High School,94024,Unemployed,Small
+100000991,Male,Single,37,High School,93740,Unemployed,Small
+100000992,Male,Single,34,High School,85685,Unemployed,Small
+100000993,Male,Non-Single,23,High School,69997,Unemployed,Small
+100000994,Male,Single,30,Other,151938,Self-Employed,Large
+100000995,Male,Single,50,High School,122830,Employee,Medium
+100000996,Female,Non-Single,31,High School,78489,Unemployed,Small
+100000997,Male,Non-Single,40,High School,161999,Self-Employed,Medium
+100000998,Male,Single,38,High School,98032,Employee,Large
+100000999,Male,Single,23,Other,96060,Employee,Small
+100001000,Male,Single,27,Other,147968,Employee,Medium
+100001001,Female,Non-Single,63,University,134853,Employee,Medium
+100001002,Male,Single,66,University,157576,Self-Employed,Large
+100001003,Male,Non-Single,43,University,203738,Self-Employed,Medium
+100001004,Male,Non-Single,44,University,280570,Self-Employed,Large
+100001005,Male,Non-Single,65,Graduate School,69487,Unemployed,Large
+100001006,Female,Non-Single,73,Graduate School,214126,Self-Employed,Medium
+100001007,Male,Single,60,University,136671,Employee,Medium
+100001008,Male,Non-Single,62,University,174337,Employee,Medium
+100001009,Female,Non-Single,58,University,126710,Employee,Medium
+100001010,Female,Non-Single,43,University,167139,Self-Employed,Large
+100001011,Male,Single,64,University,122094,Employee,Large
+100001012,Male,Non-Single,37,Graduate School,170113,Self-Employed,Large
+100001013,Female,Non-Single,46,University,192698,Self-Employed,Medium
+100001014,Male,Non-Single,57,University,144197,Employee,Large
+100001015,Male,Non-Single,51,University,133623,Employee,Medium
+100001016,Female,Non-Single,32,Graduate School,171052,Self-Employed,Large
+100001017,Male,Single,64,University,130492,Employee,Large
+100001018,Male,Single,68,University,135705,Employee,Medium
+100001019,Female,Non-Single,55,University,171804,Self-Employed,Large
+100001020,Male,Single,73,University,192167,Self-Employed,Medium
+100001021,Female,Non-Single,34,Graduate School,134377,Employee,Large
+100001022,Male,Non-Single,44,University,146716,Employee,Medium
+100001023,Male,Single,58,University,267872,Employee,Medium
+100001024,Female,Non-Single,65,University,142193,Unemployed,Medium
+100001025,Female,Non-Single,56,University,183765,Employee,Medium
+100001026,Female,Non-Single,42,University,218664,Self-Employed,Large
+100001027,Female,Non-Single,65,Graduate School,145174,Employee,Large
+100001028,Male,Single,72,University,224961,Self-Employed,Large
+100001029,Female,Non-Single,45,University,262634,Self-Employed,Large
+100001030,Male,Single,68,University,287106,Self-Employed,Large
+100001031,Male,Single,60,University,166298,Self-Employed,Medium
+100001032,Female,Non-Single,30,Graduate School,133328,Unemployed,Large
+100001033,Male,Single,63,University,129798,Employee,Medium
+100001034,Male,Single,57,University,281084,Self-Employed,Medium
+100001035,Female,Non-Single,46,University,160678,Employee,Large
+100001036,Female,Non-Single,70,Graduate School,167532,Employee,Medium
+100001037,Male,Single,65,University,178591,Employee,Large
+100001038,Male,Single,63,University,273063,Self-Employed,Large
+100001039,Male,Non-Single,54,University,149410,Employee,Large
+100001040,Male,Non-Single,49,University,124658,Employee,Large
+100001041,Female,Non-Single,64,University,153645,Employee,Large
+100001042,Female,Non-Single,61,University,308529,Self-Employed,Large
+100001043,Female,Non-Single,57,University,155062,Employee,Large
+100001044,Female,Non-Single,42,University,199654,Employee,Large
+100001045,Male,Single,62,University,124723,Employee,Large
+100001046,Female,Non-Single,41,University,127752,Employee,Large
+100001047,Female,Non-Single,51,University,157595,Self-Employed,Medium
+100001048,Female,Non-Single,38,University,135534,Employee,Large
+100001049,Female,Non-Single,56,University,166264,Self-Employed,Large
+100001050,Female,Non-Single,43,University,147259,Employee,Medium
+100001051,Female,Non-Single,48,University,161116,Employee,Medium
+100001052,Male,Single,61,University,139380,Employee,Medium
+100001053,Male,Non-Single,48,University,213768,Self-Employed,Large
+100001054,Male,Single,68,University,125903,Employee,Large
+100001055,Female,Non-Single,62,University,163940,Employee,Medium
+100001056,Female,Non-Single,56,University,173378,Self-Employed,Large
+100001057,Female,Non-Single,53,University,126847,Employee,Medium
+100001058,Male,Non-Single,33,Graduate School,166712,Employee,Large
+100001059,Female,Non-Single,60,University,189166,Employee,Medium
+100001060,Female,Non-Single,47,University,161714,Employee,Medium
+100001061,Male,Non-Single,25,Graduate School,214364,Self-Employed,Large
+100001062,Male,Single,64,University,184680,Employee,Medium
+100001063,Male,Single,73,University,214732,Self-Employed,Medium
+100001064,Male,Non-Single,66,University,152527,Employee,Medium
+100001065,Female,Non-Single,76,Graduate School,170366,Self-Employed,Medium
+100001066,Female,Non-Single,60,University,194532,Self-Employed,Medium
+100001067,Female,Non-Single,57,University,125883,Employee,Large
+100001068,Male,Non-Single,30,Graduate School,131242,Employee,Large
+100001069,Male,Non-Single,43,University,159880,Self-Employed,Medium
+100001070,Male,Single,57,University,165519,Employee,Large
+100001071,Male,Non-Single,51,University,149653,Employee,Medium
+100001072,Female,Non-Single,61,University,134102,Employee,Medium
+100001073,Male,Single,64,University,159378,Self-Employed,Large
+100001074,Male,Non-Single,41,University,205476,Self-Employed,Medium
+100001075,Male,Non-Single,43,University,280566,Self-Employed,Large
+100001076,Male,Non-Single,67,Graduate School,71823,Unemployed,Large
+100001077,Female,Non-Single,71,Graduate School,211572,Self-Employed,Medium
+100001078,Male,Single,59,University,136123,Employee,Medium
+100001079,Male,Non-Single,60,University,176372,Employee,Medium
+100001080,Female,Non-Single,60,University,128271,Employee,Medium
+100001081,Female,Non-Single,45,University,169020,Self-Employed,Large
+100001082,Male,Single,63,University,122267,Employee,Large
+100001083,Male,Non-Single,38,Graduate School,169324,Self-Employed,Large
+100001084,Female,Non-Single,46,University,192561,Self-Employed,Medium
+100001085,Male,Non-Single,55,University,145781,Employee,Large
+100001086,Male,Non-Single,50,University,135376,Employee,Medium
+100001087,Female,Non-Single,30,Graduate School,169002,Self-Employed,Large
+100001088,Male,Single,63,University,128469,Employee,Large
+100001089,Male,Single,67,University,135567,Employee,Medium
+100001090,Female,Non-Single,54,University,170644,Self-Employed,Large
+100001091,Male,Single,71,University,192360,Self-Employed,Medium
+100001092,Female,Non-Single,32,Graduate School,133235,Employee,Large
+100001093,Female,Non-Single,45,University,260847,Self-Employed,Large
+100001094,Male,Single,65,University,285647,Self-Employed,Large
+100001095,Male,Single,62,University,164816,Self-Employed,Medium
+100001096,Female,Non-Single,28,Graduate School,130148,Unemployed,Large
+100001097,Male,Single,65,University,129838,Employee,Medium
+100001098,Male,Single,57,University,281647,Self-Employed,Medium
+100001099,Female,Non-Single,48,University,157305,Employee,Large
+100001100,Female,Non-Single,71,Graduate School,163654,Employee,Medium
+100001101,Male,Single,38,High School,82398,Employee,Medium
+100001102,Male,Non-Single,40,High School,107710,Employee,Medium
+100001103,Male,Single,49,High School,122346,Employee,Medium
+100001104,Male,Non-Single,32,High School,155540,Self-Employed,Medium
+100001105,Male,Single,45,High School,127572,Employee,Medium
+100001106,Male,Single,40,High School,154031,Self-Employed,Medium
+100001107,Male,Single,66,University,164931,Self-Employed,Large
+100001108,Male,Single,38,High School,123003,Employee,Large
+100001109,Male,Non-Single,20,High School,89605,Employee,Medium
+100001110,Male,Single,48,High School,117721,Employee,Medium
+100001111,Male,Non-Single,46,University,168904,Self-Employed,Medium
+100001112,Male,Single,32,High School,137576,Self-Employed,Large
+100001113,Male,Single,54,High School,111274,Employee,Medium
+100001114,Male,Non-Single,24,High School,94249,Self-Employed,Large
+100001115,Male,Non-Single,27,High School,180940,Self-Employed,Medium
+100001116,Male,Single,57,High School,125032,Employee,Large
+100001117,Male,Single,38,High School,138011,Self-Employed,Medium
+100001118,Male,Single,40,High School,144850,Employee,Medium
+100001119,Male,Non-Single,20,High School,107270,Employee,Large
+100001120,Male,Single,36,High School,113405,Self-Employed,Large
+100001121,Male,Single,47,High School,137338,Employee,Large
+100001122,Male,Single,64,University,125119,Unemployed,Large
+100001123,Male,Single,42,High School,159745,Self-Employed,Large
+100001124,Male,Single,44,High School,181262,Self-Employed,Large
+100001125,Male,Non-Single,30,High School,90500,Self-Employed,Large
+100001126,Male,Single,37,High School,102733,Employee,Medium
+100001127,Male,Single,42,High School,135493,Employee,Large
+100001128,Male,Non-Single,62,University,169044,Employee,Medium
+100001129,Male,Single,49,High School,178549,Employee,Large
+100001130,Male,Single,52,High School,159716,Employee,Large
+100001131,Male,Non-Single,36,High School,170118,Self-Employed,Medium
+100001132,Male,Single,49,High School,143886,Unemployed,Medium
+100001133,Male,Single,42,High School,130164,Self-Employed,Large
+100001134,Male,Single,38,High School,114476,Employee,Medium
+100001135,Male,Single,50,High School,126143,Employee,Medium
+100001136,Male,Non-Single,34,High School,129654,Self-Employed,Large
+100001137,Male,Single,43,High School,123202,Employee,Large
+100001138,Male,Single,40,High School,160524,Employee,Medium
+100001139,Male,Single,56,University,126906,Employee,Medium
+100001140,Male,Single,41,High School,143994,Self-Employed,Large
+100001141,Male,Non-Single,30,High School,123517,Self-Employed,Large
+100001142,Male,Non-Single,28,High School,129055,Employee,Large
+100001143,Male,Single,64,University,136312,Unemployed,Large
+100001144,Male,Single,67,University,112486,Employee,Large
+100001145,Male,Single,37,High School,152401,Self-Employed,Medium
+100001146,Male,Single,31,High School,157453,Self-Employed,Medium
+100001147,Male,Single,32,High School,142870,Self-Employed,Large
+100001148,Male,Non-Single,52,University,137231,Employee,Large
+100001149,Male,Non-Single,31,High School,104406,Employee,Medium
+100001150,Male,Single,36,High School,145385,Self-Employed,Medium
+100001151,Male,Non-Single,32,High School,146519,Self-Employed,Medium
+100001152,Male,Single,51,High School,126227,Employee,Large
+100001153,Male,Single,47,High School,112227,Self-Employed,Medium
+100001154,Male,Non-Single,34,High School,110145,Employee,Large
+100001155,Male,Non-Single,46,University,149419,Employee,Medium
+100001156,Male,Non-Single,42,High School,176646,Employee,Medium
+100001157,Male,Single,39,High School,91019,Self-Employed,Medium
+100001158,Male,Single,50,High School,169579,Employee,Large
+100001159,Male,Single,42,High School,142305,Employee,Large
+100001160,Male,Non-Single,36,High School,130602,Employee,Medium
+100001161,Male,Non-Single,18,High School,98992,Employee,Medium
+100001162,Male,Single,35,High School,181926,Self-Employed,Large
+100001163,Male,Single,38,High School,152864,Employee,Large
+100001164,Male,Single,39,High School,135837,Self-Employed,Large
+100001165,Male,Non-Single,24,High School,121757,Unemployed,Large
+100001166,Male,Single,41,High School,182274,Employee,Medium
+100001167,Male,Single,36,High School,149040,Self-Employed,Large
+100001168,Male,Single,37,High School,154196,Self-Employed,Large
+100001169,Male,Non-Single,45,University,135332,Employee,Medium
+100001170,Male,Single,41,High School,134200,Self-Employed,Large
+100001171,Male,Single,36,High School,177171,Self-Employed,Large
+100001172,Male,Single,38,High School,115964,Unemployed,Large
+100001173,Male,Single,38,High School,136871,Unemployed,Medium
+100001174,Male,Non-Single,53,University,159559,Self-Employed,Large
+100001175,Male,Single,35,High School,113878,Employee,Large
+100001176,Male,Single,48,High School,171203,Self-Employed,Large
+100001177,Male,Single,36,High School,102180,Employee,Large
+100001178,Male,Non-Single,22,High School,116844,Self-Employed,Medium
+100001179,Male,Single,35,High School,139844,Self-Employed,Large
+100001180,Male,Single,42,High School,156431,Unemployed,Medium
+100001181,Male,Single,39,High School,116137,Unemployed,Medium
+100001182,Male,Single,31,High School,143081,Employee,Medium
+100001183,Male,Single,33,High School,155870,Self-Employed,Large
+100001184,Male,Non-Single,31,High School,106924,Unemployed,Medium
+100001185,Male,Single,42,High School,102133,Employee,Medium
+100001186,Male,Single,61,University,145227,Unemployed,Medium
+100001187,Male,Single,38,High School,159500,Self-Employed,Large
+100001188,Male,Single,33,High School,98498,Unemployed,Medium
+100001189,Male,Single,48,High School,159714,Employee,Large
+100001190,Male,Single,31,High School,121852,Unemployed,Medium
+100001191,Male,Single,52,High School,141271,Self-Employed,Large
+100001192,Male,Non-Single,27,High School,123213,Employee,Large
+100001193,Male,Single,40,High School,143723,Self-Employed,Medium
+100001194,Male,Single,34,High School,112538,Unemployed,Medium
+100001195,Male,Non-Single,26,High School,97932,Self-Employed,Large
+100001196,Male,Single,30,High School,154003,Unemployed,Medium
+100001197,Male,Single,53,High School,177179,Employee,Medium
+100001198,Male,Single,45,High School,128052,Employee,Large
+100001199,Male,Single,32,High School,114617,Self-Employed,Medium
+100001200,Male,Single,35,High School,182822,Self-Employed,Large
+100001201,Male,Non-Single,26,High School,177215,Employee,Large
+100001202,Male,Single,30,High School,110929,Employee,Medium
+100001203,Male,Single,37,High School,111821,Employee,Medium
+100001204,Male,Single,32,High School,97306,Self-Employed,Medium
+100001205,Male,Non-Single,40,High School,157231,Employee,Medium
+100001206,Male,Single,44,High School,126906,Unemployed,Large
+100001207,Male,Single,43,High School,133243,Employee,Large
+100001208,Male,Single,51,High School,112250,Employee,Medium
+100001209,Male,Single,37,High School,104349,Unemployed,Medium
+100001210,Male,Single,33,High School,151421,Employee,Large
+100001211,Male,Non-Single,32,High School,178081,Self-Employed,Medium
+100001212,Male,Single,35,High School,110181,Unemployed,Large
+100001213,Male,Non-Single,30,High School,113012,Employee,Medium
+100001214,Male,Non-Single,35,High School,154585,Self-Employed,Large
+100001215,Male,Single,40,High School,144704,Self-Employed,Medium
+100001216,Male,Single,37,High School,141632,Self-Employed,Large
+100001217,Male,Single,37,High School,105055,Employee,Large
+100001218,Male,Single,37,High School,124597,Employee,Large
+100001219,Male,Single,53,High School,160164,Self-Employed,Medium
+100001220,Male,Single,34,High School,151754,Self-Employed,Medium
+100001221,Male,Single,51,High School,155551,Employee,Medium
+100001222,Male,Non-Single,26,High School,94986,Employee,Large
+100001223,Male,Single,34,High School,175800,Unemployed,Medium
+100001224,Male,Single,51,High School,126246,Self-Employed,Medium
+100001225,Male,Single,33,High School,116261,Employee,Large
+100001226,Male,Non-Single,32,High School,117796,Unemployed,Large
+100001227,Male,Single,39,High School,115363,Employee,Medium
+100001228,Male,Single,53,High School,169076,Employee,Medium
+100001229,Male,Single,34,High School,97474,Self-Employed,Large
+100001230,Male,Single,37,High School,140341,Employee,Large
+100001231,Male,Non-Single,28,High School,114503,Employee,Medium
+100001232,Male,Non-Single,25,High School,102937,Employee,Large
+100001233,Male,Single,36,High School,151781,Self-Employed,Large
+100001234,Male,Non-Single,36,High School,123133,Employee,Large
+100001235,Male,Single,35,High School,118879,Employee,Large
+100001236,Male,Non-Single,21,High School,158683,Employee,Medium
+100001237,Male,Non-Single,29,High School,107514,Employee,Large
+100001238,Male,Single,60,University,193879,Employee,Medium
+100001239,Male,Single,45,High School,135043,Employee,Medium
+100001240,Male,Non-Single,56,University,108559,Unemployed,Medium
+100001241,Male,Non-Single,30,High School,121038,Employee,Large
+100001242,Male,Single,52,High School,151947,Self-Employed,Large
+100001243,Male,Non-Single,26,High School,118820,Employee,Medium
+100001244,Male,Single,43,High School,121517,Employee,Medium
+100001245,Male,Single,34,High School,113572,Employee,Medium
+100001246,Male,Non-Single,22,High School,131170,Employee,Large
+100001247,Male,Single,42,High School,92430,Unemployed,Medium
+100001248,Male,Single,38,High School,124554,Unemployed,Medium
+100001249,Male,Non-Single,29,High School,115988,Employee,Large
+100001250,Male,Single,44,High School,107301,Employee,Large
+100001251,Male,Non-Single,29,High School,103767,Self-Employed,Medium
+100001252,Male,Single,44,High School,141493,Employee,Large
+100001253,Male,Single,38,High School,154339,Employee,Large
+100001254,Male,Non-Single,26,High School,112369,Unemployed,Medium
+100001255,Male,Single,53,High School,158193,Employee,Medium
+100001256,Male,Single,43,High School,143734,Employee,Medium
+100001257,Male,Single,33,High School,121890,Employee,Medium
+100001258,Male,Single,52,High School,127609,Unemployed,Medium
+100001259,Male,Non-Single,26,High School,94650,Unemployed,Large
+100001260,Male,Single,38,High School,175504,Self-Employed,Medium
+100001261,Male,Single,47,High School,165495,Employee,Large
+100001262,Male,Non-Single,26,High School,120389,Employee,Medium
+100001263,Male,Non-Single,36,High School,165340,Employee,Medium
+100001264,Male,Single,36,High School,119804,Employee,Medium
+100001265,Male,Single,57,University,154344,Self-Employed,Medium
+100001266,Male,Non-Single,31,High School,106266,Self-Employed,Large
+100001267,Male,Single,45,High School,136129,Employee,Medium
+100001268,Male,Single,40,High School,151914,Self-Employed,Medium
+100001269,Male,Non-Single,21,High School,121473,Employee,Medium
+100001270,Male,Single,46,High School,127147,Employee,Large
+100001271,Male,Single,35,High School,125387,Employee,Large
+100001272,Male,Non-Single,31,High School,139490,Unemployed,Large
+100001273,Male,Single,51,High School,124990,Employee,Large
+100001274,Male,Non-Single,21,High School,101471,Self-Employed,Medium
+100001275,Male,Single,48,High School,155708,Employee,Medium
+100001276,Male,Single,48,High School,142345,Employee,Large
+100001277,Male,Single,68,University,148675,Unemployed,Medium
+100001278,Male,Non-Single,45,University,116484,Employee,Large
+100001279,Male,Single,35,High School,150237,Self-Employed,Large
+100001280,Male,Non-Single,22,High School,100273,Employee,Large
+100001281,Male,Single,44,High School,122292,Unemployed,Medium
+100001282,Male,Single,52,High School,159216,Employee,Medium
+100001283,Male,Single,48,High School,130082,Employee,Large
+100001284,Male,Single,33,High School,139547,Employee,Large
+100001285,Male,Non-Single,35,High School,122895,Employee,Medium
+100001286,Male,Non-Single,64,University,154549,Employee,Medium
+100001287,Male,Single,58,High School,149315,Unemployed,Large
+100001288,Male,Non-Single,24,High School,118101,Unemployed,Large
+100001289,Male,Single,40,High School,115831,Unemployed,Large
+100001290,Male,Single,49,High School,118571,Self-Employed,Large
+100001291,Male,Single,31,High School,138906,Employee,Large
+100001292,Male,Single,46,High School,98520,Employee,Large
+100001293,Male,Single,46,High School,106576,Employee,Medium
+100001294,Male,Single,49,High School,121592,Employee,Medium
+100001295,Male,Single,29,High School,135605,Unemployed,Medium
+100001296,Male,Single,37,High School,114552,Employee,Large
+100001297,Male,Single,33,High School,151339,Self-Employed,Medium
+100001298,Male,Single,71,University,170387,Employee,Large
+100001299,Male,Single,35,High School,118288,Employee,Large
+100001300,Male,Single,40,High School,109992,Employee,Large
+100001301,Female,Single,27,High School,90654,Unemployed,Small
+100001302,Female,Single,61,University,113290,Unemployed,Small
+100001303,Female,Non-Single,29,High School,100093,Employee,Medium
+100001304,Female,Single,33,High School,109489,Employee,Small
+100001305,Female,Single,56,University,139427,Unemployed,Small
+100001306,Female,Non-Single,27,High School,123411,Employee,Medium
+100001307,Female,Non-Single,22,High School,137925,Employee,Small
+100001308,Female,Non-Single,19,High School,99119,Employee,Small
+100001309,Female,Non-Single,28,High School,91084,Employee,Medium
+100001310,Female,Non-Single,24,High School,110137,Employee,Medium
+100001311,Female,Non-Single,27,High School,67041,Unemployed,Small
+100001312,Female,Non-Single,30,High School,127299,Employee,Medium
+100001313,Female,Single,26,High School,84555,Unemployed,Small
+100001314,Female,Non-Single,26,High School,123895,Employee,Small
+100001315,Female,Non-Single,23,High School,94324,Employee,Medium
+100001316,Female,Non-Single,28,High School,96062,Employee,Small
+100001317,Female,Non-Single,67,Graduate School,144843,Employee,Small
+100001318,Female,Non-Single,27,High School,107485,Employee,Medium
+100001319,Female,Non-Single,32,High School,98573,Employee,Small
+100001320,Female,Single,24,High School,107462,Unemployed,Small
+100001321,Female,Non-Single,28,High School,115809,Employee,Medium
+100001322,Female,Single,48,University,118749,Unemployed,Small
+100001323,Female,Non-Single,32,High School,139112,Employee,Medium
+100001324,Female,Non-Single,25,High School,94075,Employee,Small
+100001325,Female,Non-Single,57,University,62002,Unemployed,Small
+100001326,Female,Non-Single,28,High School,127262,Employee,Small
+100001327,Female,Non-Single,24,High School,122846,Employee,Medium
+100001328,Female,Non-Single,25,High School,61907,Unemployed,Small
+100001329,Female,Single,31,High School,89287,Unemployed,Small
+100001330,Female,Single,33,High School,103696,Employee,Medium
+100001331,Female,Non-Single,50,University,147603,Employee,Small
+100001332,Female,Non-Single,58,University,139229,Unemployed,Medium
+100001333,Female,Non-Single,27,High School,107932,Unemployed,Small
+100001334,Female,Non-Single,48,University,116235,Unemployed,Small
+100001335,Female,Non-Single,22,High School,85974,Unemployed,Small
+100001336,Female,Non-Single,40,High School,124001,Unemployed,Small
+100001337,Female,Non-Single,32,High School,121428,Employee,Small
+100001338,Female,Single,25,High School,93233,Unemployed,Small
+100001339,Female,Non-Single,27,High School,67965,Unemployed,Small
+100001340,Female,Non-Single,27,High School,88001,Unemployed,Small
+100001341,Female,Non-Single,23,High School,129112,Employee,Small
+100001342,Female,Non-Single,32,High School,109324,Employee,Medium
+100001343,Female,Non-Single,25,High School,112785,Employee,Medium
+100001344,Female,Non-Single,46,University,136735,Unemployed,Small
+100001345,Female,Non-Single,21,High School,107779,Employee,Medium
+100001346,Female,Non-Single,29,High School,103526,Employee,Small
+100001347,Female,Non-Single,31,High School,93171,Unemployed,Small
+100001348,Female,Single,26,High School,106559,Unemployed,Small
+100001349,Female,Non-Single,23,High School,112728,Employee,Medium
+100001350,Female,Single,38,High School,102855,Employee,Medium
+100001351,Female,Single,35,High School,85381,Unemployed,Small
+100001352,Female,Non-Single,27,High School,100762,Employee,Medium
+100001353,Female,Non-Single,22,High School,131445,Employee,Medium
+100001354,Female,Non-Single,52,University,123194,Employee,Small
+100001355,Female,Non-Single,19,High School,99519,Employee,Medium
+100001356,Female,Non-Single,23,High School,112853,Employee,Small
+100001357,Female,Single,42,High School,110509,Employee,Small
+100001358,Female,Non-Single,27,High School,106446,Employee,Medium
+100001359,Female,Non-Single,39,University,89665,Unemployed,Small
+100001360,Female,Non-Single,50,University,128233,Employee,Medium
+100001361,Female,Non-Single,36,High School,133615,Employee,Small
+100001362,Female,Non-Single,25,High School,115833,Employee,Medium
+100001363,Female,Non-Single,27,High School,65560,Unemployed,Small
+100001364,Female,Non-Single,30,High School,118642,Employee,Small
+100001365,Female,Single,22,High School,63635,Unemployed,Small
+100001366,Female,Non-Single,27,High School,122649,Employee,Medium
+100001367,Female,Single,31,High School,143321,Self-Employed,Medium
+100001368,Female,Non-Single,29,High School,99556,Employee,Small
+100001369,Female,Single,34,High School,36760,Unemployed,Small
+100001370,Female,Single,33,High School,71935,Unemployed,Small
+100001371,Female,Non-Single,26,High School,114977,Employee,Small
+100001372,Female,Non-Single,36,High School,147691,Employee,Medium
+100001373,Female,Non-Single,26,High School,54296,Unemployed,Small
+100001374,Female,Non-Single,39,High School,80014,Unemployed,Small
+100001375,Female,Non-Single,44,University,77887,Unemployed,Small
+100001376,Female,Non-Single,46,University,98517,Unemployed,Small
+100001377,Female,Non-Single,31,High School,103012,Unemployed,Small
+100001378,Female,Single,26,High School,121377,Employee,Small
+100001379,Female,Non-Single,22,High School,91359,Employee,Medium
+100001380,Female,Single,48,University,104833,Unemployed,Small
+100001381,Female,Non-Single,27,High School,101209,Employee,Small
+100001382,Female,Single,30,High School,58207,Unemployed,Small
+100001383,Female,Non-Single,27,High School,116708,Employee,Medium
+100001384,Female,Non-Single,36,High School,107471,Employee,Medium
+100001385,Female,Non-Single,31,High School,128495,Employee,Small
+100001386,Female,Single,21,High School,124468,Employee,Small
+100001387,Female,Non-Single,26,High School,106922,Employee,Medium
+100001388,Female,Single,24,High School,104291,Employee,Small
+100001389,Female,Non-Single,29,High School,98204,Employee,Small
+100001390,Female,Non-Single,32,High School,127071,Employee,Small
+100001391,Female,Non-Single,45,University,85115,Unemployed,Small
+100001392,Female,Non-Single,58,University,104013,Unemployed,Small
+100001393,Female,Non-Single,25,High School,89863,Employee,Small
+100001394,Female,Non-Single,67,Graduate School,135300,Employee,Small
+100001395,Female,Non-Single,53,University,107861,Unemployed,Small
+100001396,Female,Non-Single,24,High School,123994,Employee,Small
+100001397,Female,Single,20,High School,91270,Unemployed,Small
+100001398,Female,Non-Single,71,Graduate School,133245,Unemployed,Small
+100001399,Female,Non-Single,31,High School,118594,Employee,Medium
+100001400,Female,Non-Single,27,High School,40606,Unemployed,Small
+100001401,Female,Non-Single,36,High School,129304,Unemployed,Small
+100001402,Female,Non-Single,25,High School,113118,Employee,Small
+100001403,Female,Single,41,High School,133131,Employee,Small
+100001404,Female,Non-Single,30,High School,106876,Employee,Medium
+100001405,Female,Non-Single,32,High School,130870,Employee,Medium
+100001406,Female,Non-Single,29,High School,125621,Unemployed,Small
+100001407,Female,Single,27,High School,78923,Unemployed,Small
+100001408,Female,Non-Single,32,High School,123983,Employee,Small
+100001409,Female,Non-Single,25,High School,75184,Unemployed,Small
+100001410,Female,Single,24,High School,109693,Employee,Small
+100001411,Female,Non-Single,63,University,86273,Unemployed,Small
+100001412,Female,Single,42,University,113190,Unemployed,Small
+100001413,Female,Non-Single,22,High School,109274,Unemployed,Small
+100001414,Female,Non-Single,46,University,143489,Employee,Medium
+100001415,Female,Non-Single,24,High School,99570,Employee,Medium
+100001416,Female,Single,30,High School,139468,Employee,Medium
+100001417,Female,Non-Single,44,University,108627,Unemployed,Small
+100001418,Female,Single,25,High School,106355,Employee,Small
+100001419,Female,Non-Single,27,High School,96952,Employee,Small
+100001420,Female,Non-Single,27,High School,141502,Employee,Medium
+100001421,Female,Non-Single,34,High School,110420,Employee,Medium
+100001422,Female,Non-Single,18,High School,97741,Employee,Medium
+100001423,Female,Non-Single,25,High School,99583,Employee,Medium
+100001424,Female,Non-Single,21,High School,63698,Unemployed,Small
+100001425,Female,Non-Single,26,High School,116688,Employee,Medium
+100001426,Female,Non-Single,27,High School,131542,Self-Employed,Medium
+100001427,Female,Single,25,High School,136055,Employee,Medium
+100001428,Female,Non-Single,30,High School,100195,Employee,Medium
+100001429,Female,Single,66,Graduate School,131001,Employee,Small
+100001430,Female,Non-Single,25,High School,104062,Employee,Medium
+100001431,Female,Non-Single,43,University,137689,Employee,Small
+100001432,Female,Non-Single,35,High School,137705,Employee,Medium
+100001433,Female,Single,70,Graduate School,69915,Unemployed,Small
+100001434,Female,Single,35,High School,68731,Unemployed,Small
+100001435,Female,Non-Single,26,High School,105726,Employee,Small
+100001436,Female,Single,29,High School,78078,Unemployed,Small
+100001437,Female,Non-Single,22,High School,110835,Unemployed,Small
+100001438,Female,Single,26,High School,115531,Employee,Medium
+100001439,Female,Non-Single,36,High School,92723,Unemployed,Small
+100001440,Female,Non-Single,35,High School,107509,Employee,Medium
+100001441,Female,Non-Single,28,High School,116763,Employee,Medium
+100001442,Female,Non-Single,24,High School,100733,Employee,Small
+100001443,Female,Non-Single,34,High School,92652,Unemployed,Small
+100001444,Female,Non-Single,25,High School,106987,Employee,Small
+100001445,Female,Non-Single,54,University,51882,Unemployed,Small
+100001446,Female,Single,46,University,104751,Unemployed,Small
+100001447,Female,Non-Single,42,High School,50947,Unemployed,Small
+100001448,Female,Single,45,University,126986,Unemployed,Small
+100001449,Female,Single,48,University,110223,Unemployed,Small
+100001450,Female,Single,21,High School,100591,Unemployed,Small
+100001451,Female,Non-Single,31,High School,123257,Employee,Small
+100001452,Female,Single,35,High School,137736,Employee,Medium
+100001453,Female,Non-Single,36,High School,110221,Employee,Medium
+100001454,Female,Non-Single,32,High School,99703,Unemployed,Small
+100001455,Female,Non-Single,26,High School,106667,Unemployed,Small
+100001456,Female,Non-Single,34,High School,143319,Employee,Small
+100001457,Female,Non-Single,65,University,135557,Employee,Medium
+100001458,Female,Non-Single,50,University,93390,Unemployed,Small
+100001459,Female,Non-Single,39,High School,97577,Employee,Small
+100001460,Female,Single,52,University,124196,Unemployed,Small
+100001461,Female,Non-Single,36,High School,81136,Unemployed,Small
+100001462,Female,Non-Single,29,High School,119439,Employee,Small
+100001463,Female,Non-Single,36,High School,145231,Employee,Medium
+100001464,Female,Non-Single,36,High School,85623,Unemployed,Small
+100001465,Female,Non-Single,27,High School,145373,Employee,Medium
+100001466,Female,Non-Single,36,High School,135896,Self-Employed,Medium
+100001467,Female,Non-Single,26,High School,106470,Employee,Medium
+100001468,Female,Single,57,University,113334,Employee,Medium
+100001469,Female,Single,27,High School,100560,Unemployed,Small
+100001470,Female,Non-Single,58,University,108442,Unemployed,Small
+100001471,Female,Non-Single,27,High School,64472,Unemployed,Small
+100001472,Female,Non-Single,49,University,120207,Employee,Small
+100001473,Female,Non-Single,43,University,101680,Employee,Small
+100001474,Female,Single,45,University,92342,Unemployed,Small
+100001475,Female,Non-Single,27,High School,98611,Unemployed,Small
+100001476,Female,Non-Single,34,High School,97613,Employee,Medium
+100001477,Female,Non-Single,21,High School,82298,Unemployed,Small
+100001478,Female,Non-Single,54,University,125302,Employee,Medium
+100001479,Female,Non-Single,43,University,108725,Unemployed,Small
+100001480,Female,Single,25,High School,85569,Unemployed,Small
+100001481,Female,Single,57,University,110372,Unemployed,Small
+100001482,Female,Non-Single,26,High School,100511,Employee,Medium
+100001483,Female,Single,30,High School,110455,Employee,Small
+100001484,Female,Single,58,University,141993,Unemployed,Small
+100001485,Female,Non-Single,25,High School,121789,Employee,Medium
+100001486,Female,Non-Single,23,High School,138967,Employee,Small
+100001487,Female,Single,22,High School,105230,Employee,Small
+100001488,Female,Non-Single,21,High School,90656,Employee,Medium
+100001489,Female,Non-Single,20,High School,115445,Employee,Medium
+100001490,Female,Non-Single,22,High School,59955,Unemployed,Small
+100001491,Female,Single,27,High School,126268,Employee,Medium
+100001492,Female,Single,24,High School,80830,Unemployed,Small
+100001493,Female,Non-Single,23,High School,123625,Employee,Small
+100001494,Female,Non-Single,26,High School,102543,Employee,Medium
+100001495,Female,Single,28,High School,101948,Employee,Small
+100001496,Female,Non-Single,64,Graduate School,142280,Employee,Small
+100001497,Female,Non-Single,26,High School,105434,Employee,Medium
+100001498,Female,Non-Single,31,High School,106115,Employee,Small
+100001499,Female,Single,28,High School,111057,Unemployed,Small
+100001500,Female,Non-Single,25,High School,117758,Employee,Medium
+100001501,Female,Single,49,University,118396,Unemployed,Small
+100001502,Female,Non-Single,33,High School,136260,Employee,Medium
+100001503,Female,Single,27,High School,97192,Employee,Small
+100001504,Female,Non-Single,59,University,62101,Unemployed,Small
+100001505,Female,Non-Single,28,High School,123497,Employee,Small
+100001506,Female,Non-Single,24,High School,120326,Employee,Medium
+100001507,Female,Non-Single,26,High School,66645,Unemployed,Small
+100001508,Female,Single,33,High School,83429,Unemployed,Small
+100001509,Female,Single,37,High School,107539,Employee,Medium
+100001510,Female,Non-Single,46,University,153880,Employee,Small
+100001511,Female,Non-Single,62,University,140178,Unemployed,Medium
+100001512,Female,Single,26,High School,100402,Unemployed,Small
+100001513,Female,Non-Single,49,University,122158,Unemployed,Small
+100001514,Female,Non-Single,25,High School,89331,Unemployed,Small
+100001515,Female,Non-Single,37,High School,125359,Unemployed,Small
+100001516,Female,Single,31,High School,124110,Employee,Small
+100001517,Female,Single,25,High School,93526,Unemployed,Small
+100001518,Female,Non-Single,21,High School,70170,Unemployed,Small
+100001519,Female,Non-Single,27,High School,82357,Unemployed,Small
+100001520,Female,Non-Single,29,High School,126745,Employee,Small
+100001521,Female,Non-Single,30,High School,103326,Employee,Medium
+100001522,Female,Non-Single,26,High School,116048,Employee,Medium
+100001523,Female,Non-Single,40,University,137115,Unemployed,Small
+100001524,Female,Non-Single,23,High School,105365,Employee,Medium
+100001525,Female,Non-Single,31,High School,95911,Employee,Small
+100001526,Female,Non-Single,29,High School,88669,Unemployed,Small
+100001527,Female,Single,22,High School,103776,Unemployed,Small
+100001528,Female,Non-Single,26,High School,108864,Employee,Medium
+100001529,Female,Single,39,High School,106037,Employee,Medium
+100001530,Female,Single,35,High School,84851,Unemployed,Small
+100001531,Female,Non-Single,26,High School,95748,Employee,Medium
+100001532,Female,Non-Single,28,High School,133616,Employee,Medium
+100001533,Female,Non-Single,56,University,132752,Employee,Small
+100001534,Female,Non-Single,22,High School,95712,Employee,Medium
+100001535,Female,Non-Single,26,High School,109063,Employee,Small
+100001536,Female,Single,41,High School,113521,Employee,Small
+100001537,Female,Non-Single,29,High School,109380,Employee,Medium
+100001538,Female,Non-Single,42,University,82558,Unemployed,Small
+100001539,Female,Non-Single,50,University,124777,Employee,Medium
+100001540,Female,Non-Single,33,High School,133542,Employee,Small
+100001541,Female,Non-Single,28,High School,116492,Employee,Medium
+100001542,Female,Non-Single,27,High School,68834,Unemployed,Small
+100001543,Female,Non-Single,27,High School,124023,Employee,Small
+100001544,Female,Single,28,High School,63882,Unemployed,Small
+100001545,Female,Non-Single,24,High School,122492,Employee,Medium
+100001546,Female,Single,28,High School,141453,Self-Employed,Medium
+100001547,Female,Non-Single,32,High School,99327,Employee,Small
+100001548,Female,Single,32,High School,45590,Unemployed,Small
+100001549,Female,Single,30,High School,71167,Unemployed,Small
+100001550,Female,Non-Single,29,High School,111992,Employee,Small
+100001551,Female,Non-Single,37,High School,145140,Employee,Medium
+100001552,Female,Non-Single,24,High School,49672,Unemployed,Small
+100001553,Female,Non-Single,36,High School,75536,Unemployed,Small
+100001554,Female,Non-Single,40,University,86720,Unemployed,Small
+100001555,Female,Non-Single,51,University,97729,Unemployed,Small
+100001556,Female,Non-Single,33,High School,106808,Unemployed,Small
+100001557,Female,Single,31,High School,117971,Employee,Small
+100001558,Female,Non-Single,29,High School,97731,Employee,Medium
+100001559,Female,Single,48,University,109196,Unemployed,Small
+100001560,Female,Non-Single,25,High School,94905,Employee,Small
+100001561,Female,Single,28,High School,57480,Unemployed,Small
+100001562,Female,Non-Single,23,High School,109175,Employee,Medium
+100001563,Female,Non-Single,32,High School,111174,Employee,Medium
+100001564,Female,Non-Single,34,High School,127255,Employee,Small
+100001565,Female,Single,23,High School,115499,Employee,Small
+100001566,Female,Non-Single,25,High School,109499,Employee,Medium
+100001567,Female,Single,25,High School,104696,Employee,Small
+100001568,Female,Non-Single,27,High School,104467,Employee,Small
+100001569,Female,Non-Single,29,High School,120157,Employee,Small
+100001570,Female,Non-Single,46,University,81200,Unemployed,Small
+100001571,Female,Non-Single,61,University,97558,Unemployed,Small
+100001572,Female,Non-Single,25,High School,95914,Employee,Small
+100001573,Female,Non-Single,67,Graduate School,128053,Employee,Small
+100001574,Female,Non-Single,49,University,101734,Unemployed,Small
+100001575,Female,Non-Single,21,High School,126009,Employee,Small
+100001576,Female,Single,19,High School,91232,Unemployed,Small
+100001577,Female,Non-Single,67,Graduate School,128343,Unemployed,Small
+100001578,Female,Non-Single,31,High School,110040,Employee,Medium
+100001579,Female,Non-Single,27,High School,38247,Unemployed,Small
+100001580,Female,Non-Single,37,High School,129027,Unemployed,Small
+100001581,Female,Non-Single,27,High School,115026,Employee,Small
+100001582,Female,Single,36,High School,130323,Employee,Small
+100001583,Female,Non-Single,24,High School,103181,Employee,Medium
+100001584,Female,Non-Single,31,High School,138307,Employee,Medium
+100001585,Female,Non-Single,29,High School,122564,Unemployed,Small
+100001586,Female,Single,28,High School,82351,Unemployed,Small
+100001587,Female,Non-Single,34,High School,125351,Employee,Small
+100001588,Female,Non-Single,26,High School,82940,Unemployed,Small
+100001589,Female,Single,21,High School,108029,Employee,Small
+100001590,Female,Non-Single,63,University,82734,Unemployed,Small
+100001591,Female,Single,38,University,116816,Unemployed,Small
+100001592,Female,Non-Single,20,High School,113472,Unemployed,Small
+100001593,Female,Non-Single,44,University,143343,Employee,Medium
+100001594,Female,Non-Single,31,High School,104074,Employee,Medium
+100001595,Female,Single,33,High School,138525,Employee,Medium
+100001596,Female,Non-Single,49,University,106960,Unemployed,Small
+100001597,Female,Single,26,High School,108323,Employee,Small
+100001598,Female,Non-Single,28,High School,95784,Employee,Small
+100001599,Female,Non-Single,30,High School,140673,Employee,Medium
+100001600,Female,Non-Single,36,High School,104235,Employee,Medium
+100001601,Female,Non-Single,27,High School,54041,Unemployed,Small
+100001602,Male,Single,23,Other,107961,Unemployed,Small
+100001603,Male,Single,31,Other,113757,Employee,Small
+100001604,Female,Non-Single,27,High School,94884,Employee,Small
+100001605,Female,Non-Single,25,High School,126041,Employee,Small
+100001606,Female,Non-Single,23,High School,64952,Unemployed,Small
+100001607,Male,Non-Single,27,High School,66764,Unemployed,Small
+100001608,Female,Single,38,High School,67861,Unemployed,Small
+100001609,Male,Single,44,High School,113516,Unemployed,Small
+100001610,Female,Non-Single,42,High School,46109,Unemployed,Small
+100001611,Female,Non-Single,25,High School,103651,Unemployed,Small
+100001612,Male,Non-Single,40,High School,75043,Unemployed,Small
+100001613,Female,Non-Single,24,High School,116473,Unemployed,Small
+100001614,Female,Single,39,High School,96614,Unemployed,Small
+100001615,Male,Single,24,Other,66447,Unemployed,Small
+100001616,Female,Single,50,High School,119068,Employee,Small
+100001617,Female,Non-Single,28,High School,122973,Unemployed,Small
+100001618,Female,Non-Single,36,High School,81609,Unemployed,Small
+100001619,Male,Single,36,High School,105519,Employee,Small
+100001620,Female,Non-Single,40,High School,86649,Unemployed,Small
+100001621,Female,Single,31,Other,76384,Unemployed,Small
+100001622,Male,Non-Single,27,High School,67136,Unemployed,Small
+100001623,Female,Non-Single,35,High School,93155,Unemployed,Small
+100001624,Male,Single,51,High School,124183,Unemployed,Small
+100001625,Female,Single,26,Other,64860,Unemployed,Small
+100001626,Male,Single,33,High School,87232,Unemployed,Small
+100001627,Female,Non-Single,27,High School,92304,Unemployed,Small
+100001628,Male,Single,38,High School,84254,Unemployed,Small
+100001629,Female,Single,30,Other,106696,Employee,Small
+100001630,Male,Single,28,Other,113212,Employee,Small
+100001631,Male,Single,23,Other,71076,Unemployed,Small
+100001632,Female,Non-Single,23,High School,114270,Unemployed,Small
+100001633,Female,Non-Single,26,High School,125538,Employee,Small
+100001634,Female,Non-Single,21,High School,92442,Unemployed,Small
+100001635,Female,Single,36,High School,75297,Unemployed,Small
+100001636,Female,Non-Single,24,High School,65707,Unemployed,Small
+100001637,Male,Single,41,High School,120387,Employee,Small
+100001638,Male,Single,42,High School,120946,Employee,Small
+100001639,Male,Single,27,Other,73265,Unemployed,Small
+100001640,Male,Non-Single,40,High School,77481,Unemployed,Small
+100001641,Female,Non-Single,34,High School,91282,Unemployed,Small
+100001642,Male,Single,40,High School,104405,Unemployed,Small
+100001643,Male,Single,33,High School,99646,Employee,Small
+100001644,Female,Single,49,High School,97791,Unemployed,Small
+100001645,Male,Single,28,Other,81878,Unemployed,Small
+100001646,Female,Non-Single,26,High School,107908,Employee,Small
+100001647,Female,Single,40,High School,98608,Unemployed,Small
+100001648,Male,Single,47,High School,95228,Unemployed,Small
+100001649,Female,Non-Single,41,High School,128163,Employee,Small
+100001650,Female,Non-Single,29,High School,94325,Unemployed,Small
+100001651,Female,Non-Single,37,High School,90815,Unemployed,Small
+100001652,Male,Single,31,Other,120719,Employee,Small
+100001653,Male,Single,35,High School,110159,Employee,Small
+100001654,Male,Single,35,High School,124490,Employee,Small
+100001655,Female,Non-Single,29,High School,75161,Unemployed,Small
+100001656,Female,Single,37,High School,127206,Employee,Small
+100001657,Male,Single,37,High School,83660,Unemployed,Small
+100001658,Female,Non-Single,26,High School,87400,Unemployed,Small
+100001659,Female,Non-Single,28,High School,78942,Unemployed,Small
+100001660,Female,Non-Single,23,High School,88452,Unemployed,Small
+100001661,Male,Single,38,High School,104128,Employee,Small
+100001662,Female,Non-Single,30,High School,100313,Employee,Small
+100001663,Female,Single,45,High School,107387,Employee,Small
+100001664,Male,Single,24,Other,84355,Unemployed,Small
+100001665,Female,Single,35,High School,112723,Employee,Small
+100001666,Female,Non-Single,41,High School,115892,Employee,Small
+100001667,Male,Non-Single,30,High School,106597,Employee,Small
+100001668,Female,Non-Single,30,High School,121327,Employee,Small
+100001669,Female,Non-Single,26,High School,92559,Unemployed,Small
+100001670,Female,Non-Single,25,High School,87537,Unemployed,Small
+100001671,Female,Non-Single,23,High School,70569,Unemployed,Small
+100001672,Female,Non-Single,27,High School,85294,Unemployed,Small
+100001673,Female,Single,26,Other,70905,Unemployed,Small
+100001674,Male,Single,25,Other,103716,Unemployed,Small
+100001675,Male,Non-Single,27,High School,94947,Employee,Small
+100001676,Female,Single,42,High School,80116,Unemployed,Small
+100001677,Male,Single,35,High School,86492,Unemployed,Small
+100001678,Female,Non-Single,25,High School,88672,Unemployed,Small
+100001679,Female,Non-Single,26,High School,82984,Unemployed,Small
+100001680,Male,Single,38,High School,128100,Employee,Small
+100001681,Female,Single,28,Other,72869,Unemployed,Small
+100001682,Male,Non-Single,33,High School,112227,Employee,Small
+100001683,Female,Single,40,High School,94674,Unemployed,Small
+100001684,Female,Non-Single,23,High School,101003,Employee,Small
+100001685,Female,Single,25,Other,112924,Employee,Small
+100001686,Female,Single,28,Other,108645,Unemployed,Small
+100001687,Male,Single,41,High School,69415,Unemployed,Small
+100001688,Female,Single,50,High School,112204,Unemployed,Small
+100001689,Female,Non-Single,23,High School,109700,Employee,Small
+100001690,Female,Non-Single,26,High School,104484,Employee,Small
+100001691,Female,Non-Single,22,High School,61239,Unemployed,Small
+100001692,Male,Single,37,High School,119602,Unemployed,Small
+100001693,Female,Single,38,High School,81014,Unemployed,Small
+100001694,Female,Non-Single,22,High School,68165,Unemployed,Small
+100001695,Female,Single,30,Other,88652,Unemployed,Small
+100001696,Male,Single,38,High School,75705,Unemployed,Small
+100001697,Female,Non-Single,36,High School,104189,Employee,Small
+100001698,Male,Single,41,High School,71603,Unemployed,Small
+100001699,Female,Non-Single,29,High School,121914,Employee,Small
+100001700,Female,Non-Single,31,High School,106637,Employee,Small
+100001701,Female,Single,31,Other,99800,Employee,Small
+100001702,Female,Single,21,Other,67629,Unemployed,Small
+100001703,Male,Single,32,Other,120354,Employee,Small
+100001704,Female,Non-Single,35,High School,122110,Employee,Small
+100001705,Male,Single,29,Other,89170,Unemployed,Small
+100001706,Female,Single,34,High School,109195,Employee,Small
+100001707,Female,Single,38,High School,92392,Unemployed,Small
+100001708,Female,Non-Single,33,High School,43805,Unemployed,Small
+100001709,Female,Non-Single,28,High School,68389,Unemployed,Small
+100001710,Female,Non-Single,28,High School,112521,Employee,Small
+100001711,Male,Single,21,Other,59255,Unemployed,Small
+100001712,Female,Non-Single,29,High School,98612,Unemployed,Small
+100001713,Female,Non-Single,26,High School,70649,Unemployed,Small
+100001714,Female,Single,40,High School,95228,Unemployed,Small
+100001715,Female,Single,25,Other,46865,Unemployed,Small
+100001716,Male,Non-Single,20,High School,101688,Employee,Small
+100001717,Female,Non-Single,23,High School,62618,Unemployed,Small
+100001718,Female,Single,27,Other,102531,Employee,Small
+100001719,Female,Single,36,High School,100737,Employee,Small
+100001720,Female,Non-Single,25,High School,107321,Employee,Small
+100001721,Female,Non-Single,25,High School,112879,Unemployed,Small
+100001722,Female,Non-Single,34,High School,125372,Unemployed,Small
+100001723,Female,Single,24,Other,69419,Unemployed,Small
+100001724,Female,Single,36,High School,124759,Employee,Small
+100001725,Female,Single,40,High School,79076,Unemployed,Small
+100001726,Male,Single,39,High School,84779,Unemployed,Small
+100001727,Female,Single,42,High School,77393,Unemployed,Small
+100001728,Male,Single,35,High School,113187,Unemployed,Small
+100001729,Female,Non-Single,27,High School,99100,Employee,Small
+100001730,Male,Single,27,Other,64954,Unemployed,Small
+100001731,Female,Non-Single,23,High School,103244,Employee,Small
+100001732,Female,Non-Single,32,High School,124975,Employee,Small
+100001733,Male,Non-Single,28,High School,133582,Employee,Small
+100001734,Male,Single,22,Other,103519,Employee,Small
+100001735,Male,Single,31,Other,117813,Employee,Small
+100001736,Female,Non-Single,22,High School,119902,Employee,Small
+100001737,Male,Single,23,Other,70783,Unemployed,Small
+100001738,Female,Non-Single,35,High School,125470,Unemployed,Small
+100001739,Female,Non-Single,26,High School,109782,Unemployed,Small
+100001740,Female,Non-Single,28,High School,78322,Unemployed,Small
+100001741,Male,Single,54,High School,125517,Employee,Small
+100001742,Female,Single,49,High School,102463,Unemployed,Small
+100001743,Female,Single,38,High School,89309,Unemployed,Small
+100001744,Female,Single,47,High School,110287,Employee,Small
+100001745,Female,Single,49,High School,122391,Unemployed,Small
+100001746,Female,Non-Single,30,High School,116399,Employee,Small
+100001747,Female,Single,32,Other,81907,Unemployed,Small
+100001748,Female,Non-Single,24,High School,97909,Unemployed,Small
+100001749,Female,Single,25,Other,68051,Unemployed,Small
+100001750,Male,Single,33,High School,82414,Unemployed,Small
+100001751,Female,Non-Single,34,High School,123089,Employee,Small
+100001752,Female,Non-Single,24,High School,66537,Unemployed,Small
+100001753,Female,Single,36,High School,127926,Unemployed,Small
+100001754,Female,Single,41,High School,78963,Unemployed,Small
+100001755,Male,Non-Single,33,High School,108694,Employee,Small
+100001756,Female,Non-Single,26,High School,100892,Employee,Small
+100001757,Female,Single,36,High School,119560,Employee,Small
+100001758,Female,Single,35,High School,116176,Unemployed,Small
+100001759,Male,Single,29,Other,111854,Employee,Small
+100001760,Female,Non-Single,26,High School,69831,Unemployed,Small
+100001761,Male,Single,31,Other,69375,Unemployed,Small
+100001762,Male,Non-Single,26,High School,71310,Unemployed,Small
+100001763,Male,Single,47,High School,73913,Unemployed,Small
+100001764,Male,Non-Single,20,High School,95492,Employee,Small
+100001765,Male,Single,45,High School,109329,Unemployed,Small
+100001766,Male,Single,36,High School,116027,Employee,Small
+100001767,Male,Non-Single,31,High School,81987,Unemployed,Small
+100001768,Female,Single,41,High School,83481,Unemployed,Small
+100001769,Female,Single,31,Other,72361,Unemployed,Small
+100001770,Female,Non-Single,27,High School,106625,Unemployed,Small
+100001771,Female,Non-Single,32,High School,123707,Employee,Small
+100001772,Female,Single,43,High School,79353,Unemployed,Small
+100001773,Female,Single,32,Other,68347,Unemployed,Small
+100001774,Female,Non-Single,29,High School,115832,Employee,Small
+100001775,Male,Single,37,High School,89946,Unemployed,Small
+100001776,Female,Single,35,High School,86319,Unemployed,Small
+100001777,Female,Non-Single,23,High School,70963,Unemployed,Small
+100001778,Male,Single,40,High School,106120,Employee,Small
+100001779,Female,Non-Single,26,High School,97856,Employee,Small
+100001780,Male,Single,28,Other,61824,Unemployed,Small
+100001781,Female,Non-Single,40,High School,103907,Employee,Small
+100001782,Female,Non-Single,26,High School,99953,Unemployed,Small
+100001783,Female,Non-Single,23,High School,113413,Employee,Small
+100001784,Male,Single,26,Other,107091,Unemployed,Small
+100001785,Male,Single,26,Other,124783,Employee,Small
+100001786,Female,Single,49,High School,92281,Unemployed,Small
+100001787,Female,Non-Single,26,High School,96219,Employee,Small
+100001788,Female,Single,35,High School,86221,Unemployed,Small
+100001789,Female,Non-Single,24,High School,80962,Unemployed,Small
+100001790,Female,Single,46,High School,78754,Unemployed,Small
+100001791,Male,Single,26,Other,60026,Unemployed,Small
+100001792,Male,Single,47,High School,88157,Unemployed,Small
+100001793,Male,Single,27,Other,59881,Unemployed,Small
+100001794,Male,Non-Single,41,High School,112818,Employee,Small
+100001795,Female,Non-Single,29,High School,102250,Employee,Small
+100001796,Female,Non-Single,28,High School,38980,Unemployed,Small
+100001797,Female,Non-Single,33,High School,81807,Unemployed,Small
+100001798,Female,Single,50,High School,93148,Unemployed,Small
+100001799,Female,Non-Single,32,High School,108032,Employee,Small
+100001800,Male,Non-Single,31,High School,89335,Unemployed,Small
+100001801,Male,Single,52,High School,95639,Unemployed,Small
+100001802,Male,Single,53,High School,124902,Employee,Small
+100001803,Female,Non-Single,34,High School,87801,Unemployed,Small
+100001804,Female,Non-Single,22,High School,92538,Employee,Small
+100001805,Male,Non-Single,33,High School,83687,Unemployed,Small
+100001806,Male,Single,32,Other,128310,Employee,Small
+100001807,Female,Single,45,High School,104754,Unemployed,Small
+100001808,Male,Non-Single,25,High School,68222,Unemployed,Small
+100001809,Female,Non-Single,41,High School,97006,Unemployed,Small
+100001810,Female,Single,36,High School,107372,Unemployed,Small
+100001811,Female,Non-Single,27,High School,110511,Employee,Small
+100001812,Male,Single,40,High School,72193,Unemployed,Small
+100001813,Female,Single,37,High School,95972,Unemployed,Small
+100001814,Male,Single,35,High School,105556,Unemployed,Small
+100001815,Male,Single,34,High School,88701,Unemployed,Small
+100001816,Female,Single,28,Other,117710,Employee,Small
+100001817,Female,Single,44,High School,76057,Unemployed,Small
+100001818,Male,Non-Single,27,High School,100392,Employee,Small
+100001819,Female,Single,50,High School,113308,Employee,Small
+100001820,Female,Non-Single,18,High School,100924,Employee,Small
+100001821,Female,Single,25,Other,72188,Unemployed,Small
+100001822,Female,Non-Single,40,High School,70431,Unemployed,Small
+100001823,Male,Non-Single,28,High School,110103,Employee,Small
+100001824,Female,Non-Single,23,High School,60825,Unemployed,Small
+100001825,Female,Non-Single,35,High School,75100,Unemployed,Small
+100001826,Female,Non-Single,28,High School,129327,Employee,Small
+100001827,Female,Single,23,Other,95541,Employee,Small
+100001828,Male,Non-Single,34,High School,112777,Employee,Small
+100001829,Female,Non-Single,29,High School,51496,Unemployed,Small
+100001830,Female,Single,35,High School,102781,Employee,Small
+100001831,Female,Non-Single,32,High School,87494,Unemployed,Small
+100001832,Female,Single,46,High School,72728,Unemployed,Small
+100001833,Female,Non-Single,27,High School,114775,Employee,Small
+100001834,Female,Non-Single,25,High School,124359,Employee,Small
+100001835,Female,Non-Single,27,High School,101620,Unemployed,Small
+100001836,Female,Non-Single,24,High School,87964,Unemployed,Small
+100001837,Female,Single,33,Other,69523,Unemployed,Small
+100001838,Female,Non-Single,24,High School,109486,Employee,Small
+100001839,Female,Single,28,Other,77206,Unemployed,Small
+100001840,Female,Single,35,High School,53608,Unemployed,Small
+100001841,Female,Non-Single,30,High School,118677,Employee,Small
+100001842,Male,Single,43,High School,116512,Employee,Small
+100001843,Male,Non-Single,21,High School,114756,Unemployed,Small
+100001844,Female,Non-Single,24,High School,65852,Unemployed,Small
+100001845,Male,Single,34,High School,75626,Unemployed,Small
+100001846,Female,Non-Single,26,High School,127455,Employee,Small
+100001847,Male,Single,37,High School,107073,Employee,Small
+100001848,Female,Non-Single,32,High School,82196,Unemployed,Small
+100001849,Female,Non-Single,33,High School,106741,Unemployed,Small
+100001850,Male,Non-Single,28,High School,94518,Employee,Small
+100001851,Female,Non-Single,30,High School,114430,Employee,Small
+100001852,Female,Non-Single,26,High School,57165,Unemployed,Small
+100001853,Female,Single,25,Other,109610,Unemployed,Small
+100001854,Male,Single,33,Other,113619,Employee,Small
+100001855,Female,Non-Single,30,High School,93854,Employee,Small
+100001856,Female,Non-Single,26,High School,129022,Employee,Small
+100001857,Male,Non-Single,23,High School,66804,Unemployed,Small
+100001858,Male,Non-Single,25,High School,62689,Unemployed,Small
+100001859,Female,Single,40,High School,67619,Unemployed,Small
+100001860,Male,Single,46,High School,113495,Unemployed,Small
+100001861,Female,Non-Single,43,High School,48632,Unemployed,Small
+100001862,Female,Non-Single,22,High School,107394,Unemployed,Small
+100001863,Male,Non-Single,39,High School,72385,Unemployed,Small
+100001864,Female,Non-Single,27,High School,115934,Unemployed,Small
+100001865,Male,Single,40,High School,93183,Unemployed,Small
+100001866,Male,Single,24,Other,63506,Unemployed,Small
+100001867,Female,Single,52,High School,113619,Employee,Small
+100001868,Female,Non-Single,30,High School,121399,Unemployed,Small
+100001869,Female,Non-Single,34,High School,78281,Unemployed,Small
+100001870,Female,Single,38,High School,103926,Employee,Small
+100001871,Male,Non-Single,39,High School,89097,Unemployed,Small
+100001872,Female,Single,29,Other,80852,Unemployed,Small
+100001873,Male,Non-Single,25,High School,65207,Unemployed,Small
+100001874,Female,Non-Single,35,High School,93495,Unemployed,Small
+100001875,Male,Single,53,High School,121970,Unemployed,Small
+100001876,Male,Single,26,Other,62027,Unemployed,Small
+100001877,Male,Single,33,High School,88602,Unemployed,Small
+100001878,Male,Non-Single,29,High School,89914,Unemployed,Small
+100001879,Male,Single,39,High School,83342,Unemployed,Small
+100001880,Male,Single,29,Other,103439,Employee,Small
+100001881,Male,Single,26,Other,115451,Employee,Small
+100001882,Male,Single,24,Other,68250,Unemployed,Small
+100001883,Female,Non-Single,21,High School,113630,Unemployed,Small
+100001884,Female,Non-Single,26,High School,125880,Employee,Small
+100001885,Female,Non-Single,20,High School,91177,Unemployed,Small
+100001886,Female,Single,35,High School,73266,Unemployed,Small
+100001887,Female,Non-Single,24,High School,69021,Unemployed,Small
+100001888,Female,Single,40,High School,122593,Employee,Small
+100001889,Female,Single,44,High School,122180,Employee,Small
+100001890,Male,Single,29,Other,75160,Unemployed,Small
+100001891,Female,Non-Single,39,High School,81973,Unemployed,Small
+100001892,Female,Non-Single,35,High School,92194,Unemployed,Small
+100001893,Male,Single,42,High School,107380,Unemployed,Small
+100001894,Female,Single,32,High School,98023,Employee,Small
+100001895,Male,Single,48,High School,94868,Unemployed,Small
+100001896,Male,Single,26,Other,83442,Unemployed,Small
+100001897,Female,Non-Single,26,High School,109887,Employee,Small
+100001898,Male,Single,42,High School,98876,Unemployed,Small
+100001899,Male,Single,48,High School,94962,Unemployed,Small
+100001900,Female,Non-Single,42,High School,130740,Employee,Small
+100001901,Female,Non-Single,27,High School,94095,Unemployed,Small
+100001902,Female,Non-Single,37,High School,95071,Unemployed,Small
+100001903,Male,Single,33,Other,117308,Employee,Small
+100001904,Male,Single,33,High School,112093,Employee,Small
+100001905,Female,Single,37,High School,123893,Employee,Small
+100001906,Female,Non-Single,31,High School,80189,Unemployed,Small
+100001907,Male,Single,39,High School,124089,Employee,Small
+100001908,Female,Single,40,High School,82673,Unemployed,Small
+100001909,Female,Non-Single,28,High School,88858,Unemployed,Small
+100001910,Female,Non-Single,26,High School,80540,Unemployed,Small
+100001911,Female,Non-Single,24,High School,84228,Unemployed,Small
+100001912,Male,Single,40,High School,103963,Employee,Small
+100001913,Female,Non-Single,29,High School,102397,Employee,Small
+100001914,Male,Single,43,High School,111563,Employee,Small
+100001915,Male,Single,23,Other,88260,Unemployed,Small
+100001916,Female,Single,34,High School,114767,Employee,Small
+100001917,Female,Non-Single,42,High School,113275,Employee,Small
+100001918,Female,Non-Single,33,High School,104755,Employee,Small
+100001919,Female,Non-Single,32,High School,120525,Employee,Small
+100001920,Female,Non-Single,26,High School,96082,Unemployed,Small
+100001921,Female,Non-Single,23,High School,87227,Unemployed,Small
+100001922,Female,Non-Single,26,High School,69333,Unemployed,Small
+100001923,Female,Non-Single,27,High School,87777,Unemployed,Small
+100001924,Male,Single,24,Other,70978,Unemployed,Small
+100001925,Male,Single,27,Other,104196,Unemployed,Small
+100001926,Female,Non-Single,26,High School,97551,Employee,Small
+100001927,Female,Single,42,High School,78979,Unemployed,Small
+100001928,Female,Single,37,High School,82500,Unemployed,Small
+100001929,Female,Non-Single,26,High School,86306,Unemployed,Small
+100001930,Female,Non-Single,24,High School,78762,Unemployed,Small
+100001931,Female,Single,39,High School,125543,Employee,Small
+100001932,Male,Single,26,Other,70336,Unemployed,Small
+100001933,Male,Non-Single,35,High School,112975,Employee,Small
+100001934,Male,Single,38,High School,96681,Unemployed,Small
+100001935,Female,Non-Single,24,High School,98922,Employee,Small
+100001936,Female,Single,26,Other,109250,Employee,Small
+100001937,Male,Single,25,Other,108960,Unemployed,Small
+100001938,Male,Single,40,High School,71302,Unemployed,Small
+100001939,Female,Single,48,High School,107757,Unemployed,Small
+100001940,Female,Non-Single,22,High School,111600,Employee,Small
+100001941,Female,Non-Single,25,High School,102974,Employee,Small
+100001942,Male,Non-Single,24,High School,63442,Unemployed,Small
+100001943,Male,Single,39,High School,118913,Unemployed,Small
+100001944,Male,Single,39,High School,80987,Unemployed,Small
+100001945,Female,Non-Single,21,High School,68790,Unemployed,Small
+100001946,Female,Single,27,Other,86462,Unemployed,Small
+100001947,Male,Single,40,High School,76881,Unemployed,Small
+100001948,Female,Non-Single,37,High School,107409,Employee,Small
+100001949,Female,Single,42,High School,69114,Unemployed,Small
+100001950,Female,Non-Single,31,High School,119167,Employee,Small
+100001951,Female,Non-Single,31,High School,102018,Employee,Small
+100001952,Male,Single,30,Other,97680,Employee,Small
+100001953,Female,Single,23,Other,65062,Unemployed,Small
+100001954,Male,Single,33,Other,118144,Employee,Small
+100001955,Female,Non-Single,37,High School,124548,Employee,Small
+100001956,Female,Single,29,Other,85637,Unemployed,Small
+100001957,Female,Single,31,High School,113108,Employee,Small
+100001958,Male,Single,39,High School,93554,Unemployed,Small
+100001959,Female,Non-Single,33,High School,42516,Unemployed,Small
+100001960,Male,Non-Single,26,High School,72429,Unemployed,Small
+100001961,Female,Non-Single,27,High School,110154,Employee,Small
+100001962,Female,Single,20,Other,60965,Unemployed,Small
+100001963,Female,Non-Single,27,High School,100618,Unemployed,Small
+100001964,Female,Non-Single,26,High School,71021,Unemployed,Small
+100001965,Male,Single,40,High School,94189,Unemployed,Small
+100001966,Male,Single,24,Other,44742,Unemployed,Small
+100001967,Female,Non-Single,22,High School,103201,Employee,Small
+100001968,Female,Non-Single,24,High School,62335,Unemployed,Small
+100001969,Female,Single,27,Other,103787,Employee,Small
+100001970,Male,Single,35,High School,99401,Employee,Small
+100001971,Male,Non-Single,27,High School,105197,Employee,Small
+100001972,Female,Non-Single,25,High School,115566,Unemployed,Small
+100001973,Female,Non-Single,34,High School,125843,Unemployed,Small
+100001974,Female,Single,24,Other,67936,Unemployed,Small
+100001975,Female,Single,34,High School,120863,Employee,Small
+100001976,Male,Single,42,High School,77317,Unemployed,Small
+100001977,Female,Single,38,High School,84653,Unemployed,Small
+100001978,Male,Single,42,High School,81606,Unemployed,Small
+100001979,Female,Single,35,High School,113380,Unemployed,Small
+100001980,Female,Non-Single,27,High School,100644,Employee,Small
+100001981,Male,Single,25,Other,64037,Unemployed,Small
+100001982,Female,Non-Single,23,High School,101350,Employee,Small
+100001983,Female,Non-Single,34,High School,126334,Employee,Small
+100001984,Female,Non-Single,28,High School,130877,Employee,Small
+100001985,Male,Single,21,Other,103470,Employee,Small
+100001986,Female,Single,32,Other,114588,Employee,Small
+100001987,Female,Non-Single,21,High School,120682,Employee,Small
+100001988,Male,Single,25,Other,66628,Unemployed,Small
+100001989,Female,Non-Single,35,High School,124447,Unemployed,Small
+100001990,Female,Non-Single,25,High School,106567,Unemployed,Small
+100001991,Female,Non-Single,31,High School,78758,Unemployed,Small
+100001992,Male,Single,54,High School,128537,Employee,Small
+100001993,Female,Single,51,High School,101074,Unemployed,Small
+100001994,Female,Single,38,High School,87670,Unemployed,Small
+100001995,Male,Single,45,High School,113414,Employee,Small
+100001996,Female,Single,47,High School,123525,Unemployed,Small
+100001997,Female,Non-Single,27,High School,117744,Employee,Small
+100001998,Male,Single,31,Other,86400,Unemployed,Small
+100001999,Female,Non-Single,24,High School,97968,Unemployed,Small
+100002000,Male,Single,25,Other,68416,Unemployed,Small
