@@ -1,0 +1,12 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "jmespath",
+    "pytest",
+    "six",
+    "urllib3",
+    "certifi",
+    "xmindparser"
+]
+build-backend = "setuptools.build_meta"
