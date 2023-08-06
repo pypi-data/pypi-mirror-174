@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: git-check-rebase
+Version: 0.2
+Summary: Some useful scripts to operate track history and patch changes during rebases.
+Home-page: https://gitlab.com/vsementsov/git-check-rebase
+Author: Vladimir Sementsov-Ogievskiy
+Author-email: vsementsov@yandex-team.ru
+License: MIT
+License-File: LICENSE
+Requires-Dist: tabulate
+Requires-Dist: termcolor
+
