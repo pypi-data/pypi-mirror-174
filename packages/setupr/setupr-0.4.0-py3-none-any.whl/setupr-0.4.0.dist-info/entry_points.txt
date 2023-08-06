@@ -1,0 +1,3 @@
+[console_scripts]
+setupr=setupr.console:main
+
