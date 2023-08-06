@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: stream-tui
+Version: 0.5.0
+Summary: Easily create pretty user interfaces for your CLI apps
+Author: Jakob Pinterits
+Author-email: jakob.pinterits@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: blessed (>=1.19.1,<2.0.0)
+Requires-Dist: rich (>=12.6.0,<13.0.0)
+Description-Content-Type: text/markdown
+
+# Stream TUI
