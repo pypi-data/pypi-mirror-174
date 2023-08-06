@@ -1,0 +1,15 @@
+NEWS.md,sha256=gu9XEdkq0prh0ceFjd6wuwSs7htHOC50-d2FjdmYlsM,752
+nudebomb/__init__.py,sha256=HtQ1rWn4DJI6eigRr9Tfl0H2q6eW2pTGd7UFAHK95es,16
+nudebomb/cli.py,sha256=vun6p2QtJmiOcmAFxKyxqmA7_SkBX-55aUGRNSxcDpg,4224
+nudebomb/config.py,sha256=Y06EWLpKOzfoleCuXzNYj9CvMegP1MHRpPVLECHhXp4,3934
+nudebomb/config_default.yaml,sha256=rZm6IyEqYlIj90vpQJPsG88A6rlDdKqh-zGYMgppe7M,258
+nudebomb/langfiles.py,sha256=XJ1NEZ9RFl68lo1pVuK1qGcGvAngdqUm2VnqZM5fF18,2560
+nudebomb/mkv.py,sha256=rCrbmWO1_Sm4aDl6JQ9Ora16o9lOl4GzktCZqcvqoH8,6891
+nudebomb/track.py,sha256=UEWZpzsfR-SGU8bZ8umDNRmdGmAVij39YUyIJ0F-6kQ,442
+nudebomb/version.py,sha256=ztKl8Z8nyNw_Of8ZJK7-h_EZAvlA69TPiWMHVs1uIdU,249
+nudebomb/walk.py,sha256=9X2jm9sE8xlNoU9m7Nm8uBZkV72gCvO9IXRPOyxS694,4517
+nudebomb-0.2.5.dist-info/entry_points.txt,sha256=vhy4IUQkjs3Vq6c6KisHDix8uPFi7aZut1C0vmatevo,46
+nudebomb-0.2.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nudebomb-0.2.5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+nudebomb-0.2.5.dist-info/METADATA,sha256=vjHpAFF6y9TWZEqzi23WY5ZzjhMBcXBANOk92njKvGg,3565
+nudebomb-0.2.5.dist-info/RECORD,,
