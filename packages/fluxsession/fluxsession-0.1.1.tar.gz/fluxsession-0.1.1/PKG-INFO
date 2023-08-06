@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fluxsession
+Version: 0.1.1
+Summary: A Session converter for Telegram unoffical client.
+Author: Md. Hasibul Kabir
+Author-email: 46620128+HasibulKabir@users.noreply.github.com
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Requires-Dist: telethon (>=1.25.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+# FluxSession
+
