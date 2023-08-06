@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: astana_hub
+Version: 0.0.1
+Summary: Get Networking cards from https://astanahub.com/ with ease!
+Home-page: https://github.com/vladzen13/astana_hub
+Author: Vladislav Zenin
+Author-email: vladzen13@yandex.ru
+Project-URL: Bug Reports, https://github.com/vladzen13/astana_hub/issues
+Project-URL: Source, https://github.com/vladzen13/astana_hub/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+
+
+
+# Installation
+
+pip install astana_hub
+
+
+# Usage
+
+import asyncio
+import astana_hub
+
+async def main():
+    async with astana_hub.Parser.create() as p:
+        res = await p.parse_all(page_type='user')
+        print(res)
+
+asyncio.run(main())
+
+
+
+
+
+
+import asyncio
+import logging
+
+import astana_hub
+
+async def main():
+    logging.basicConfig(level=logging.INFO)
+
+    async with astana_hub.Parser.create() as p:
+        res = await p.parse_all(page_type='user')
+        print(res)
+
+asyncio.run(main())
