@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/joacorapela_common.egg-info/PKG-INFO
+src/joacorapela_common.egg-info/SOURCES.txt
+src/joacorapela_common.egg-info/dependency_links.txt
+src/joacorapela_common.egg-info/requires.txt
+src/joacorapela_common.egg-info/top_level.txt
