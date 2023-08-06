@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: flask-providers-session
+Version: 0.4.1
+Summary: Fork version flask session
+Author: benbenbang
+Author-email: bn@benbenbang.io
+Maintainer: benbenbang
+Maintainer-email: bn@benbenbang.io
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: all
+Provides-Extra: cache
+Provides-Extra: mongo
+Provides-Extra: redis
+Provides-Extra: sqlalechmey
+Requires-Dist: cachelib (>=0.9.0); extra == "all" or extra == "cache"
+Requires-Dist: flask-sqlalchemy (>=1.0.0); extra == "all" or extra == "sqlalechmey"
+Requires-Dist: pylibmc (>=1.6.3,<2.0.0)
+Requires-Dist: pymongo (>=4.3.2); extra == "all" or extra == "mongo"
+Requires-Dist: redis (>=4.3.4); extra == "all" or extra == "redis"
+Description-Content-Type: text/markdown
+
+Flask-Session
+=============
+
+## Forked Version
+
+[![image](https://img.shields.io/pypi/v/flask-providers-session.svg?style=flat)](https://pypi.python.org/pypi/flask-providers-session)![https://github.com/benbenbang/flask-session/actions/workflows/wf-ci.yml/badge.svg&flat](https://github.com/benbenbang/flask-oidc/actions/workflows/wf-ci.yml/badge.svg) ![https://img.shields.io/pypi/pyversions/flask-providers-session](https://img.shields.io/pypi/pyversions/flask-providers-session) ![https://img.shields.io/pypi/format/flask-providers-session&flat](https://img.shields.io/pypi/format/flask-providers-session) ![https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white&flat)
+
+This project is forked from [flask-session](https://github.com/fengsp/flask-session), and is now renamed **flask-providers-session**. Flask-Session is an extension for Flask that adds support for Server-side sessions to your application.
+
+Note that this version stops supporting python 2.
+
