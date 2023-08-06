@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gorgon-blockchain
+Version: 0.0.1
+Summary: Block-chain developed with python
+Project-URL: Documentation, https://github.com/Walther-s-Engineering/gorgon#readme
+Project-URL: Issues, https://github.com/Walther-s-Engineering/gorgon-blockchain/issues
+Project-URL: Source, https://github.com/Walther-s-Engineering/gorgon-blockchain
+Author-email: Alexander Walther | ObsidianDestroyer <asushofman@gmail.com>
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Requires-Dist: pydantic>=1.10.2
+Requires-Dist: uvicorn[standard]>=0.19.0
+Provides-Extra: test
+Requires-Dist: mypy>=0.982; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Gorgon blockchain @WIP
