@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-l10n-iran
+Version: 16.0.20221031.0
+Summary: Meta package for oca-l10n-iran Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-l10n-ir-accounting (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-l10n-ir-hr-contract (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-l10n-ir-states (<16.1dev,>=16.0dev)
+
+UNKNOWN
+
