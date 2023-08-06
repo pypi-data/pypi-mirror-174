@@ -1,0 +1,2 @@
+[console_scripts]
+yapx = yapx.__main__:main
