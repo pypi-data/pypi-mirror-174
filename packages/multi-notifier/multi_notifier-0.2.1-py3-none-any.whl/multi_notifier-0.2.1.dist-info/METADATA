@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: multi-notifier
+Version: 0.2.1
+Summary: notify multiple recipients on multiple protocols
+Author: Seuling N.
+License: Apache License 2.0
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: requests (~=2.28)
+Requires-Dist: pyyaml (~=6.0)
+
+notify multiple recipients on multiple protocols

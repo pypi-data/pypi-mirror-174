@@ -1,0 +1,14 @@
+multi_notifier/__init__.py,sha256=dWVkV71E6QWCAiylGkUtn0-L5Bdq3zgL4q-LlVQ1QC8,2508
+multi_notifier/__version__.py,sha256=85_HLoNp7EcA590rH093i6Hf2-XfG8U9FLLaBoJitc4,60
+multi_notifier/exceptions.py,sha256=c9JaunPqVPnJ3jBUg_T5NsQt27bOUxGUHL6I8uWSOaA,269
+multi_notifier/send_handler.py,sha256=l83HRATsQYG_upAuJMpG_7sraQx0hHn4vAB0HEra5T8,7182
+multi_notifier/connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multi_notifier/connectors/connector_mail.py,sha256=LLDMwzv1swis5zKNwImyYNYjlVLoxrzEFr2kf-VrcEU,8122
+multi_notifier/connectors/connector_telegram.py,sha256=OCsFwVRZ6bK4dUzuaw7ETLZOI2Jt7JHBPUr67hyXrsU,2388
+multi_notifier/connectors/exceptions.py,sha256=HzQ2V3mtrEeZtS0V8Vy4jgcVwMHJEUtflyM5uHXf2ec,424
+multi_notifier/connectors/interface.py,sha256=XV4IcgxQxWWckilaZr7Rz0sOzBI1ew8AU8UKQStUaW8,602
+multi_notifier-0.2.1.dist-info/LICENSE,sha256=ZV4F_sU54txJc9glkIIr-fACtTL2sE4lA9u__clnl-c,11339
+multi_notifier-0.2.1.dist-info/METADATA,sha256=4cWNKVKN3ssAxT-rG3XISw8LY4cDtn6rka73HroCXGM,322
+multi_notifier-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+multi_notifier-0.2.1.dist-info/top_level.txt,sha256=iw2Rl6LHxpfxXQ-aHxqNXa_qjLTYJunfwK1uvVH121s,15
+multi_notifier-0.2.1.dist-info/RECORD,,
