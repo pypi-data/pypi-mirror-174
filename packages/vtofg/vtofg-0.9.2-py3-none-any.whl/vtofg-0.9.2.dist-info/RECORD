@@ -1,0 +1,11 @@
+vtofg/__init__.py,sha256=NGFS6Wqqo89wMh4HgjeF0qfaQryEFRLDZTnL2Cj3Q00,233
+vtofg/_run.py,sha256=iZlK9V16kFUk-6KafSIg3oHiTHdOrrESscFhH7oaLDA,72
+vtofg/_tools.py,sha256=V8m7q5NdX6jGvh8Kdi1trjWOvYcUG2cKW4JbmtJY2PU,1486
+vtofg/funcgen.py,sha256=8Cqx6WBTeFYk4WoV1PiPFZHI6QgcO1AMz39mVluNgSA,12598
+vtofg/plotter.py,sha256=PzWA48SLxlawbFdkPN4230UlwkUPhmljyTVuIkFNnXo,19566
+vtofg/waves.py,sha256=jP9d9xNv7P5tH2i9vrdgr0CLZRkwpfZWJPKDpibEvlE,7371
+vtofg-0.9.2.dist-info/LICENSE,sha256=4Pz1yJOyeWFiV35kGIAEcO5YKMnPbkPZ-1AxlHrQfr0,1548
+vtofg-0.9.2.dist-info/METADATA,sha256=XrG_9fDs_sbKzUgd1FklAW55K1wBkDcAPhn1LzFR9i0,4741
+vtofg-0.9.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vtofg-0.9.2.dist-info/top_level.txt,sha256=23M8Wk7QhHUKAcB6PNIcBv1acvMIa_gxcnTDC13IRP8,6
+vtofg-0.9.2.dist-info/RECORD,,
