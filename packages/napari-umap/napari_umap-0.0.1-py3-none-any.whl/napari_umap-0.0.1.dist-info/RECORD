@@ -1,0 +1,11 @@
+napari_umap/__init__.py,sha256=I0-1LXerzhDffQB0R4YAPoneYPbVgjhnzLfmipSaRg4,145
+napari_umap/_widget.py,sha256=Epdq3xWJhrasUUFO0xBVQgIG0vRNFYF41I7h94wV_nE,1380
+napari_umap/napari.yaml,sha256=WD05juJiS058w9pVMLu5Rp4NBNmgp2_DddwHhkzNJDU,756
+napari_umap/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_umap/_tests/test_widget.py,sha256=YshNwau6UT5qp0G8ewA7Zw-6X3QS6FTolF0FxQyrCzM,1244
+napari_umap-0.0.1.dist-info/LICENSE,sha256=ffU1sPyVKZFMKhOn2u6RYntuXJC3kbGgVbEUD-_DPGc,1492
+napari_umap-0.0.1.dist-info/METADATA,sha256=q07i2jYFuGSp_kK8Vla2ctFthltTxrCJJluC-r2vehU,4122
+napari_umap-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_umap-0.0.1.dist-info/entry_points.txt,sha256=BfXM_DABLieYVSX544yDDSVsLJhjYPOQ9rrH1M64LSc,56
+napari_umap-0.0.1.dist-info/top_level.txt,sha256=hI3y03MgGEDGc9kS0nWs7GNBF8d9DKeT_Vle_Sj3TSY,12
+napari_umap-0.0.1.dist-info/RECORD,,
