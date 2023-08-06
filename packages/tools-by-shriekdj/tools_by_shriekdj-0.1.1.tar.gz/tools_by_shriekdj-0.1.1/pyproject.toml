@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tools_by_shriekdj"
+version = "0.1.1"
+description = ""
+authors = ["Shrikant Dhayje <shrikantdhayaje@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "tools_by_shriekdj"}]
+
+[tool.poetry.dependencies]
+python = "^3.0"
+phonenumbers = "^8.12.57"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
