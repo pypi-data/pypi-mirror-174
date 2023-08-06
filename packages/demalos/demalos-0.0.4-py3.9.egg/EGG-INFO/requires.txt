@@ -1,0 +1,6 @@
+wget
+matplotlib
+rasterio
+netCDF4
+rasterio
+shapely
