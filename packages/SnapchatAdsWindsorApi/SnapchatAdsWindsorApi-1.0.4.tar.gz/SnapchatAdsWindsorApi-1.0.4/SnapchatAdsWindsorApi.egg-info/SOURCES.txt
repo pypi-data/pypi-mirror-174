@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+SnapchatAdsWindsorApi/__init__.py
+SnapchatAdsWindsorApi/client.py
+SnapchatAdsWindsorApi/enums.py
+SnapchatAdsWindsorApi.egg-info/PKG-INFO
+SnapchatAdsWindsorApi.egg-info/SOURCES.txt
+SnapchatAdsWindsorApi.egg-info/dependency_links.txt
+SnapchatAdsWindsorApi.egg-info/not-zip-safe
+SnapchatAdsWindsorApi.egg-info/requires.txt
+SnapchatAdsWindsorApi.egg-info/top_level.txt
+test/__init__.py
+test/tests.py
