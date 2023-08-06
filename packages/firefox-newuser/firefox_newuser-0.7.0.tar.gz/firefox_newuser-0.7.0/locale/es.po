@@ -1,0 +1,76 @@
+# Spanish translations for PACKAGE package
+# Traducciones al español para el paquete PACKAGE.
+# Copyright (C) 2015 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# root <turulomio@yahoo.es>, 2015, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: TooManyFiles\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-02 10:08+0100\n"
+"PO-Revision-Date: 2020-04-03 08:54+0200\n"
+"Last-Translator: trabajo <turulomio@yahoo.es>\n"
+"Language-Team: Spanish <kde-i18n-doc@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "FAILED"
+msgstr "FALLO"
+
+msgid "Developed by Mariano Muñoz 2020-{}"
+msgstr "Desarrollado por Mariano Muñoz 2020-{}"
+
+#, python-brace-format
+msgid "Command '{0}' exited with code {1}"
+msgstr "El comando '{0}' termino con código {1}"
+
+#, python-brace-format
+msgid "Detecting file '{0}'..."
+msgstr "Detectando fichero '{0}'..."
+
+#, python-brace-format
+msgid "File '{0}' doesn't exist"
+msgstr "El fichero '{0}' no existe"
+
+#, python-brace-format
+msgid "Detecting file content in '{0}'..."
+msgstr "Detectando contenido de fichero en '{0}'..."
+
+#, python-brace-format
+msgid "'{0}' wasn't found in '{1}'"
+msgstr "'{0}' no fue encontrado en '{1}'"
+
+msgid "Script to execute a firefox instance with a recently created user. It deletes user after firefox execution"
+msgstr "Programa que ejecuta una instancia de firefox con un usuario recién creado. Lo borra después de la ejecución de firefox"
+
+msgid "Directory to sync files to after closing firefox"
+msgstr "Directorio al que sincronizar ficheros después de cerrar firefox"
+
+msgid "You need to set it up exactly in order to have sound enabled"
+msgstr "Necesitas configurarlo de forma exacta para tener el sonido habilitado"
+
+msgid "Adding user 'firefox_newuser'..."
+msgstr "Añadiendo el usuario 'firefox_newuser'..."
+
+msgid "Deleting user 'firefox_newuser'..."
+msgstr "Borrando el usuario 'firefox_newuser'..."
+
+#, python-brace-format
+msgid "Moving {0} files to '{1}'"
+msgstr "Moviendo {0} ficheros a '{1}'"
+
+#, python-brace-format
+msgid "Checking {0} files have been moved to '{1}'..."
+msgstr "Comprobando que {0} ficheros han sido movidos a '{1}'..."
+
+msgid "Introduce root password to launch firefox_newuser"
+msgstr "Introduzca la contraseña de root para ejecutar firefox_newuser"
+
