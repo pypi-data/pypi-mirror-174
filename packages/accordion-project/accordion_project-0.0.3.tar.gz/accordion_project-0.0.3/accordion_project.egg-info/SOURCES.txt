@@ -1,0 +1,9 @@
+README.md
+setup.py
+accordion_project/__init__.py
+accordion_project/utils.py
+accordion_project.egg-info/PKG-INFO
+accordion_project.egg-info/SOURCES.txt
+accordion_project.egg-info/dependency_links.txt
+accordion_project.egg-info/requires.txt
+accordion_project.egg-info/top_level.txt
