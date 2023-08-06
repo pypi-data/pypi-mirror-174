@@ -1,0 +1,26 @@
+[package]
+name = "pandas-maxminddb"
+version = "0.1.1"
+authors = ["Andrew Korzhuev <korzhuev@andrusha.me>"]
+edition = "2021"
+
+[lib]
+name = "pandas_maxminddb"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.17.1"
+numpy = "0.17.2"
+maxminddb = { version = "0.23.0", features = ["mmap"] }
+thiserror = "1.0.36"
+
+[build-dependencies]
+pyo3-build-config = "0.17.1"
+
+[features]
+abi3 = ["pyo3/abi3-py38", "pyo3-build-config/abi3-py38", "generate-import-lib"]
+generate-import-lib = ["pyo3/generate-import-lib"]
+extension-module = ["pyo3/extension-module"]
+default = ["extension-module"]
+
+[workspace]

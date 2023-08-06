@@ -1,0 +1,259 @@
+name: CD
+on:
+  push:
+    branches: [ 'main' ]
+    tags: [ '*' ]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  macos:
+    name: macOS Build
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        py: [ '3.8', '3.9', '3.10' ]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: false
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.py }}
+          architecture: x64
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          default: true
+      - name: Build wheels - x86_64
+        uses: messense/maturin-action@v1
+        with:
+          target: x86_64
+          args: --release --sdist
+      - name: Install built wheel - x86_64
+        run: |
+          pip download -d target/pip_deps pandas numpy
+          pip install pandas_maxminddb --no-index --find-links target/wheels --find-links target/pip_deps --force-reinstall --only-binary :all:
+          python -c "import pandas_maxminddb"
+      - name: Build wheels - universal2
+        uses: messense/maturin-action@v1
+        with:
+          args: --release --universal2
+      - name: Install built wheel - universal2
+        run: |
+          pip download -d target/pip_deps pandas numpy
+          pip install pandas_maxminddb --no-index --find-links target/wheels --find-links target/pip_deps --force-reinstall --only-binary :all:
+          python -c "import pandas_maxminddb"
+      - name: Upload wheels
+        uses: actions/upload-artifact@v2
+        with:
+          name: wheels
+          path: target/wheels
+
+  windows:
+    name: Windows Build
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        platform: [
+          { target: x64, py: '3.8' },
+          { target: x64, py: '3.9' },
+          { target: x64, py: '3.10' },
+          { target: x86, py: '3.8' },
+          { target: x86, py: '3.9' },
+        ]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: false
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.platform.py }}
+          architecture: ${{ matrix.platform.target }}
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          default: true
+      - name: Build wheels
+        uses: messense/maturin-action@v1
+        with:
+          target: ${{ matrix.platform.target }}
+          args: --release
+      - name: Install built wheel
+        run: |
+          pip download -d target/pip_deps pandas numpy
+          pip install pandas_maxminddb --no-index --find-links target/wheels --find-links target/pip_deps --force-reinstall --only-binary :all:
+          python -c "import pandas_maxminddb"
+      - name: Upload wheels
+        uses: actions/upload-artifact@v2
+        with:
+          name: wheels
+          path: target/wheels
+
+  linux:
+    name: Linux Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target: [ x86_64, i686 ]
+        py: [ '3.8', '3.9', '3.10' ]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: false
+      - uses: actions/setup-python@v4
+        id: setup_python
+        with:
+          python-version: ${{ matrix.py }}
+          architecture: x64
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          default: true
+      - name: Build wheels
+        uses: messense/maturin-action@v1
+        env:
+          PYO3_PYTHON: ${{ steps.setup_python.outputs.python-path }}
+        with:
+          target: ${{ matrix.target }}
+          manylinux: auto
+          args: --release -i ${{ matrix.py }}
+      - name: Install built wheel
+        if: matrix.target == 'x86_64'
+        run: |
+          pip download -d target/pip_deps pandas numpy
+          pip install pandas_maxminddb --no-index --find-links target/wheels --find-links target/pip_deps --force-reinstall --only-binary :all:
+          python -c "import pandas_maxminddb"
+      - name: Upload wheels
+        uses: actions/upload-artifact@v2
+        with:
+          name: wheels
+          path: target/wheels
+
+  linux-cross:
+    name: Linux ARM Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        platform: [
+          { target: "aarch64", py: "3.8" },
+          { target: "aarch64", py: "3.9" },
+          { target: "armv7", py: "3.9" },
+        ]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: false
+      - uses: actions/setup-python@v4
+        id: setup_python
+        with:
+          python-version: ${{ matrix.platform.py }}
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          default: true
+      - name: Build wheels
+        uses: messense/maturin-action@v1
+        env:
+          PYO3_PYTHON: ${{ steps.setup_python.outputs.python-path }}
+        with:
+          target: ${{ matrix.platform.target }}
+          manylinux: auto
+          args: --release -i ${{ matrix.platform.py }}
+      - uses: uraimo/run-on-arch-action@v2.0.5
+        name: Install built wheel
+        with:
+          arch: ${{ matrix.platform.target }}
+          distro: ubuntu20.04
+          githubToken: ${{ github.token }}
+          # libatlas-base-dev required by numpy
+          install: |
+            apt-get update
+            apt-get install -y --no-install-recommends python${{ matrix.platform.py }}-full python3-pip libatlas-base-dev
+          # Use PiWheels for armv7 / raspberrypi
+          run: |
+            python${{ matrix.platform.py }} -m pip download --extra-index-url=https://www.piwheels.org/simple --only-binary :all: -d target/pip_deps pandas numpy
+            python${{ matrix.platform.py }} -m pip install pandas_maxminddb --no-index --find-links target/wheels --find-links target/pip_deps/ --force-reinstall --only-binary :all:
+            python${{ matrix.platform.py }} -c "import pandas_maxminddb"
+      - name: Upload wheels
+        uses: actions/upload-artifact@v2
+        with:
+          name: wheels
+          path: target/wheels
+
+  musllinux:
+    name: Linux w/musl Build
+    runs-on: ubuntu-latest
+    # https://pkgs.alpinelinux.org/packages?name=python3&branch=v3.9&repo=&arch=&maintainer=
+    strategy:
+      matrix:
+        platform: [
+          { target: "alpine:3.13", py: "3.8" },
+          { target: "alpine:3.16", py: "3.10" },
+        ]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: false
+      - uses: actions/setup-python@v4
+        id: setup_python
+        with:
+          python-version: ${{ matrix.platform.py }}
+          architecture: x64
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          default: true
+      - name: Build wheels
+        uses: messense/maturin-action@v1
+        env:
+          PYO3_PYTHON: ${{ steps.setup_python.outputs.python-path }}
+        with:
+          target: x86_64-unknown-linux-musl
+          manylinux: musllinux_1_2
+          args: --release -i ${{ matrix.platform.py }}
+      - name: Install built wheel
+        uses: addnab/docker-run-action@v3
+        with:
+          image: ${{ matrix.platform.target }}
+          options: -v ${{ github.workspace }}:/io -w /io
+          # Alpine wheels for numpy and pandas
+          # libstdc++ required for pandas
+          run: |
+            apk add py3-pip libstdc++
+            pip3 install -U pip
+            pip3 download --extra-index-url https://alpine-wheels.github.io/index --only-binary :all: -d /io/target/pip_deps pandas numpy
+            pip3 install pandas_maxminddb --no-index --ignore-installed --find-links /io/target/pip_deps --find-links /io/target/wheels --force-reinstall --only-binary :all:
+            python3 -c "import pandas_maxminddb"
+      - name: Upload wheels
+        uses: actions/upload-artifact@v2
+        with:
+          name: wheels
+          path: target/wheels
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    if: "startsWith(github.ref, 'refs/tags/')"
+    needs: [ macos, windows, linux, linux-cross, musllinux ]
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: wheels
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+      - name: Publish to PyPi
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        run: |
+          pip install --upgrade twine
+          twine upload --skip-existing *

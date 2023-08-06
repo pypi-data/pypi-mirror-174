@@ -1,0 +1,31 @@
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"
+
+[project]
+name = "pandas-maxminddb"
+version = "0.1.1"
+description = "numpy maxminddb python bindings"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "pandas",
+    "numpy"
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Rust",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+]
+
+[tool.maturin]
+python-source = "python"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '(^/.git|^/.venv|^/.nox|^/.pytest_cache)'
