@@ -1,0 +1,12 @@
+aiida_nwchem/__init__.py,sha256=JLtCCAUC7dVpf_88vQvz2r83MOWqOqYTiaq2HNK01ck,89
+aiida_nwchem/calculations/__init__.py,sha256=XVIwFH5ayYS7v8E4KNDvfy5Yws9ww8vG674idpXqIZI,84
+aiida_nwchem/calculations/nwchem.py,sha256=-GS-nLg1NgjSO2mP8qPkGBmst5NrU6XoZCzsSPqhw_c,11975
+aiida_nwchem/parsers/__init__.py,sha256=Kj47jB8QmZrewmo_OIbO_vyMYGD0ad1SNoD_-vYDm48,3024
+aiida_nwchem/parsers/nwchem.py,sha256=hAvPyhbM-yThB0Ryl_SiZrsa7xYl5jxTf3cSz36HxwE,24729
+aiida_nwchem/workflows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiida_nwchem/workflows/base.py,sha256=U0bJ2TqFmeM52nNhjQjtrf6PCzc0Pr4Kg-jxCVHwzIw,1262
+aiida_nwchem-3.0.0.dist-info/entry_points.txt,sha256=4Yrrk1Mctuyxi1-e3posdxKKGtgZP997WLwejOCNLQQ,309
+aiida_nwchem-3.0.0.dist-info/LICENSE.txt,sha256=ye6mTGt8M-HRTWINIx3q2VWEhRO6NDHozNSVB4Dgaps,1082
+aiida_nwchem-3.0.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+aiida_nwchem-3.0.0.dist-info/METADATA,sha256=sJ399wtkPT2M00RWPnr0U344rpBgvN3OFuCO9dxPe9o,6890
+aiida_nwchem-3.0.0.dist-info/RECORD,,
