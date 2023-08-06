@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dagshub-api
+Version: 1.0.2
+Summary: DagsHub API
+Home-page: 
+Author-email: 
+Keywords: Swagger,DagsHub API
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    This API provides a way to retrive &amp; interact with data about DagsHub repositories, users, issues, webhooks and more. The API is also used by the [DagsHub Direct Data Access streaming client](https://github.com/DagsHub/client) to stream content from a repository for easier and faster training.   # noqa: E501
+    
