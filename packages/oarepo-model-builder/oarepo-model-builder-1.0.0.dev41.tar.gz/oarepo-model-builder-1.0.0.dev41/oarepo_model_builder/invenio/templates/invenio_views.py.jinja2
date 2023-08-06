@@ -1,0 +1,29 @@
+from flask import Blueprint
+
+def {{ python.create_blueprint_from_app|base_name }}(app):
+    """Create {{ python.package_name }} blueprint."""
+    if app.config.get('{{ python.config_resource_register_blueprint_key }}', True):
+        blueprint = app.extensions["{{ python.flask_extension_name }}"].resource.as_blueprint()
+    else:
+        blueprint = Blueprint(
+            '{{ python.flask_extension_name }}',
+            __name__,
+            url_prefix='/empty/{{ python.flask_extension_name }}')
+    blueprint.record_once(init)
+    return blueprint
+
+def init(state):
+    """Init app."""
+    app = state.app
+    ext = app.extensions["{{ python.flask_extension_name }}"]
+
+    # register service
+    sregistry = app.extensions["invenio-records-resources"].registry
+    sregistry.register(ext.service, service_id="{{ python.flask_extension_name }}")
+
+    # Register indexer
+    iregistry = app.extensions["invenio-indexer"].registry
+    iregistry.register(ext.service.indexer, indexer_id="{{ python.flask_extension_name }}")
+
+
+{{ settings.python.invenio_views_extra_code }}
