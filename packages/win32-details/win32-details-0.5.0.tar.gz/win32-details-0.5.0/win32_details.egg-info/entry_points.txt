@@ -1,0 +1,2 @@
+[console_scripts]
+win32-details = win32_details.cli:cli_main

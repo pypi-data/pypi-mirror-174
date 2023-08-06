@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+win32_details/__init__.py
+win32_details/cli.py
+win32_details/win32_details.py
+win32_details.egg-info/PKG-INFO
+win32_details.egg-info/SOURCES.txt
+win32_details.egg-info/dependency_links.txt
+win32_details.egg-info/entry_points.txt
+win32_details.egg-info/requires.txt
+win32_details.egg-info/top_level.txt
