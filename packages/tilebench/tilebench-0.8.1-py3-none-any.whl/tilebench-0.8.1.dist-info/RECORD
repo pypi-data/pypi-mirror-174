@@ -1,0 +1,14 @@
+tilebench/__init__.py,sha256=A364kffdZEioOsSYo9skCSPK7lGPO_oFi184N9Pj3Pg,4518
+tilebench/middleware.py,sha256=weVaFIQS3jfTkCY7rqnSvqoOYJstYRuas6lA1bGqkVY,2671
+tilebench/viz.py,sha256=eCQ9GJ-IFg60pRzYxI6SxxiZuIb5WvkExRBsPNlUYCg,10753
+tilebench/resources/__init__.py,sha256=ccEY9iSv48XNN2vqyHK_9pPqc-joqHnibE_dQJAoGHg,31
+tilebench/resources/responses.py,sha256=VSsZ-DgDb-JF7XewjKtIHzuL5zrTbshLwMIiA4dOOYI,283
+tilebench/scripts/__init__.py,sha256=OzgcfikfHJR3Z10uzi_ZZ5abFMkgc-BmbrIf4-Ag9HI,21
+tilebench/scripts/cli.py,sha256=hVEknDB3arD9lCgKnoEeUPOnkHWuihzBKUOV6eugKLU,6933
+tilebench/static/spherical-mercator.js,sha256=LdbhODeMoDYfAVwOCiJ7V-I7UszQZxiuCsmG2X98qKg,5741
+tilebench/templates/index.html,sha256=Syel476KjcikshTsPZQVA2ybqUhGbImWuDtCeZ17eoQ,16549
+tilebench-0.8.1.dist-info/METADATA,sha256=LWE4mLQBW6le_5pal5dIQriPITRQ4dejA0cfTHcFjT0,11469
+tilebench-0.8.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+tilebench-0.8.1.dist-info/entry_points.txt,sha256=gfsNZU0LE2TUdxkmbSyLoEVXzX_qTcTyBwz25Cs8_2Q,56
+tilebench-0.8.1.dist-info/licenses/LICENSE,sha256=18IxFIta7rF_RcVSIgLUUd_alyfQ9bGoZKQm5vOarGU,1073
+tilebench-0.8.1.dist-info/RECORD,,
