@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: logspace
+Version: 0.0.1
+Summary: logspace
+Author-email: Cyril Zhang <cyril.zhang1@gmail.com>
+Project-URL: Homepage, https://github.com/cyrilzhang/logspace
+Project-URL: Bug Tracker, https://github.com/cyrilzhang/logspace/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# logspace
+
