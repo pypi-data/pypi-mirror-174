@@ -1,0 +1,2 @@
+[console_scripts]
+algo-beast-cli = algo_beast_cli.cmd:main
