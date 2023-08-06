@@ -1,0 +1,8 @@
+black==22.10.0
+flit
+pylint==2.15.5
+pytest
+coverage
+pytest-cov
+pytest-mypy
+rope

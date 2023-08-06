@@ -1,0 +1,20 @@
+{
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "130",
+        "--target-version",
+        "py311"
+    ],
+    "editor.rulers": [
+        130
+    ],
+    "python.testing.pytestArgs": [
+        "tests",
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "editor.formatOnSaveMode": "modifications",
+    "python.linting.pylintEnabled": true,
+}
