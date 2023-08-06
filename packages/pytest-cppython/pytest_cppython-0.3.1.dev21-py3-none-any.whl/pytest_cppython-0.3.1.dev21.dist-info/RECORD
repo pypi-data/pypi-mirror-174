@@ -1,0 +1,15 @@
+pytest_cppython/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_cppython/data/default/pyproject.toml,sha256=mzBMYccDTlgNn59rgjYtWcM49v_1YkRwsA0xuuOEw1I,18
+pytest_cppython/fixtures.py,sha256=Yy26TprLJkXF8EBJWVM_luRfYpddgBDBzrcSk0snsAo,9883
+pytest_cppython/mock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_cppython/mock/generator.py,sha256=AD85qEaEn7HCAjhLrc4jWp6dvOuyRPopRNhbtcZzvF8,796
+pytest_cppython/mock/interface.py,sha256=r95puG-MNEG8XkxdB9AHh0Q9mEw-beMwnnGSUM2zuIM,440
+pytest_cppython/mock/provider.py,sha256=XjfUhH07BMoXyf-i9uIx70oilg48ZV-roApbc5cx1ac,1104
+pytest_cppython/mock/vcs.py,sha256=M5P55XYNPZqoOGaIWa0H_7afn9xlYOc4r_ZfYXQV1Zw,843
+pytest_cppython/plugin.py,sha256=z4yuqySD9KEQedCgFDaZ7nHF-TgpSPjZCqg9H6Yi_pY,12271
+pytest_cppython/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_cppython/variants.py,sha256=EeZ21s3ZU_0mxpy2B1D7TjqCViNFXd8vPj549GHZYn4,1981
+pytest_cppython-0.3.1.dev21.dist-info/WHEEL,sha256=TQSpXlWZjPl29LMjkpbkR7iGxKB2AMwzfSmPuPn1ZS8,87
+pytest_cppython-0.3.1.dev21.dist-info/METADATA,sha256=EovD63-ywXx87glCy8lKMS_4PxQM_di3rb08lT6L3Ws,558
+pytest_cppython-0.3.1.dev21.dist-info/licenses/LICENSE.md,sha256=4XhggXv6hvoEtvED0W81vVnb876ciAL5_WC9bmwgcPc,1073
+pytest_cppython-0.3.1.dev21.dist-info/RECORD,,
