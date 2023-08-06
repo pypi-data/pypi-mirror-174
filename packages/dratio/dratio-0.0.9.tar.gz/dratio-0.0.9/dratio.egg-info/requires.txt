@@ -1,0 +1,7 @@
+requests
+pandas>=0.21.1
+pyarrow
+typing_extensions
+
+[geo]
+geopandas>=0.8
