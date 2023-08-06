@@ -1,0 +1,9 @@
+Jinja2
+argparse
+pyyaml
+
+[dev]
+check-manifest
+
+[test]
+coverage
