@@ -1,0 +1,3 @@
+[console_scripts]
+reverse-type=src.reverse_type:Main
+
