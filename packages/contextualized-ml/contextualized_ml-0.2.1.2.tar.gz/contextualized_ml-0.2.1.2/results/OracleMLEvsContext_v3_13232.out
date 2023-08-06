@@ -1,0 +1,2 @@
+/home/caleb.ellington/.conda/envs/contextualized-torch/bin/python: can't open file '/home/caleb.ellington/Contextualized/OracleMLEvsContext_v3.py': [Errno 2] No such file or directory
+srun: error: gpu-04: task 0: Exited with exit code 2
