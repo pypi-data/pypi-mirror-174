@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+get_children_parents_recursively/LICENSE
+get_children_parents_recursively/README.MD
+get_children_parents_recursively/__init__.py
+get_children_parents_recursively/requirements.txt
+get_children_parents_recursively/thirdparty.json
+get_children_parents_recursively.egg-info/PKG-INFO
+get_children_parents_recursively.egg-info/SOURCES.txt
+get_children_parents_recursively.egg-info/dependency_links.txt
+get_children_parents_recursively.egg-info/requires.txt
+get_children_parents_recursively.egg-info/top_level.txt
