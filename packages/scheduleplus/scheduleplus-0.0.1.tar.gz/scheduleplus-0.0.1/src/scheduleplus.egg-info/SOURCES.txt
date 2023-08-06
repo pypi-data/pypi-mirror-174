@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+src/scheduleplus.egg-info/PKG-INFO
+src/scheduleplus.egg-info/SOURCES.txt
+src/scheduleplus.egg-info/dependency_links.txt
+src/scheduleplus.egg-info/top_level.txt

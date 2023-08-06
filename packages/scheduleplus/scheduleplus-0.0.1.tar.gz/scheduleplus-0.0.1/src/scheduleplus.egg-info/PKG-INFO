@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: scheduleplus
+Version: 0.0.1
+Summary: A scheduler built on cron syntax with weekend/holiday features
+Author-email: Fredrik Haglund <fr4h4g@gmail.com>
+License: LICENSE
+Project-URL: Homepage, https://github.com/fr4h4g/scheduleplus-python
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# scheduleplus
+
+A scheduler built on cron syntax with weekend/holiday features
+
+## Installation
+
+```
+pip install scheduleplus
+```
