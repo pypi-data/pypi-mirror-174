@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling","datetime"]
+build-backend = "hatchling.build"
+
+[project]
+name = "htmltaglib"
+version = "1.2.1"
+authors = [
+  { name="Micah J Hanevich", email="micahjhanevich@gmail.com" },
+]
+description = "Designed to be an easy-to-implement HTML Element source for Bottle (and other) projects."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/micahhanevich/HTMLTagLib"
+"Bug Tracker" = "https://github.com/micahhanevich/HTMLTagLib/issues"
