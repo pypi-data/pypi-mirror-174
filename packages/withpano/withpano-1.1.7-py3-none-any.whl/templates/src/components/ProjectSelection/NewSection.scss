@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+div.new-section-div {
+  $font-family_1: "PT Sans", sans-serif;
+  $background-color_1: white;
+  $background-color_2: #396c75;
+
+  div.stacked-project {
+    button.openProject {
+      position: absolute;
+      top: 32%;
+      right: 41%;
+      background: #111111;
+      color: #FFF;
+      opacity: 0.6;
+    }
+  }
+
+  @-webkit-keyframes mainCard {
+    0% {
+      transform: scale(0);
+    }
+  }
+  @keyframes mainCard {
+    0% {
+      transform: scale(0);
+    }
+  }
+  @-webkit-keyframes mainCardHeader {
+    0% {
+      transform: scaleY(0);
+    }
+  }
+  @keyframes mainCardHeader {
+    0% {
+      transform: scaleY(0);
+    }
+  }
+  @-webkit-keyframes miniCard {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes miniCard {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .demo {
+    width: 100%;
+    position: absolute;
+    top: 12%;
+  }
+
+  .penName {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .mainCard {
+    text-align: center;
+    display: block;
+    margin: 60px auto;
+    background-color: $background-color_1;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    -webkit-animation-name: mainCard;
+    animation-name: mainCard;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .mainCardHeader {
+    background-color: $background-color_2;
+    height: 100px;
+    width: 100%;
+    -webkit-animation-name: mainCardHeader;
+    animation-name: mainCardHeader;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .mainCardContent {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    height: 100%;
+    width: 90%;
+  }
+
+  .miniCard {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 20px 20px 0;
+    //margin: -50px 20px 20px 0;
+    background-color: $background-color_1;
+    height: 300px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -webkit-animation-name: miniCard;
+    animation-name: miniCard;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+}
+
+div.new-project {
+  $color_1: #fff;
+  $color_2: #000;
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: $color_1;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+
+    &:before {
+      content: '';
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+    }
+
+    &:active {
+      color: $color_2;
+
+      &:after {
+        background: transparent;
+      }
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+  }
+
+
+}

@@ -1,0 +1,70 @@
+$color_1: #fff;
+$color_2: #2ecc71;
+$font-family_1: 'Lato', sans-serif;
+
+.logOutButton {
+  z-index: 1;
+  position: fixed;
+  top: 4%;
+  right: 0%;
+
+  .wrapper {
+    transform: translate(-50%, -50%);
+  }
+
+  .link_wrapper {
+    position: relative;
+  }
+
+  a {
+    display: block;
+    width: 129px;
+    height: 29px;
+    line-height: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+
+    &:hover {
+      width: 150px;
+      border: 3px solid #2ecc71;
+      background: transparent;
+      color: $color_2;
+
+      + {
+        .icon {
+          border: 3px solid #2ecc71;
+          right: -15%;
+        }
+      }
+    }
+  }
+
+  .icon {
+    width: 29px;
+    height: 29px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+
+    svg {
+      width: 25px;
+      position: absolute;
+      top: calc(50% - 9px);
+      left: calc(50% - 16px);
+      transform: rotate(-45deg);
+      fill: #2ecc71;
+      transition: all .35s;
+    }
+  }
+}
