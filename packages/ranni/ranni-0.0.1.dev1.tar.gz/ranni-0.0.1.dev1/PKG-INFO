@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ranni
+Version: 0.0.1.dev1
+Summary: Simple, composable and scalable command line interface library
+Home-page: https://github.com/ddnomad/ranni
+License: Unlicense
+Author: ddnomad
+Author-email: self@ddnomad.net
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: beartype
+Requires-Dist: semantic-version
+Project-URL: Documentation, https://ranni.readthedocs.org
+Project-URL: Repository, https://github.com/ddnomad/ranni
+Description-Content-Type: text/markdown
+
+ranni
+=====
+
+Simple, composable and scalable command line interface library
+

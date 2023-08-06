@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "ranni"
+version = "0.0.1.dev1"
+
+description = "Simple, composable and scalable command line interface library"
+authors = ["ddnomad <self@ddnomad.net>"]
+
+readme = "README.md"
+license = "The Unlicense"
+
+repository = "https://github.com/ddnomad/ranni"
+homepage = "https://github.com/ddnomad/ranni"
+documentation = "https://ranni.readthedocs.org"
+
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries",
+]
+
+packages = [{ include = "ranni" }]
+
+include = [
+    { path = "CHANGELOG.rst", format = ["sdist", "wheel"] }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+beartype = "*"
+semantic-version = "*"
+
+[tool.poetry.dev-dependencies]
+flake8 = "*"
+pycodestyle = "*"
+pydocstyle = "*"
+pylama = "*"
+pylint = "*"
+pytest = "*"
+pytest-benchmark = "*"
+pytest-clarity = "*"
+pytest-cov = "*"
+pytest-lazy-fixture = "*"
+pytest-sugar = "*"
+
+[tool.pytest.ini_options]
+log_cli = true
+minversion = "6.0"
+testpaths = ["tests"]
+addopts = """
+--cov=ranni
+--cov-report=term-missing
+--doctest-modules tests
+--failed-first
+--log-format='%(asctime)s [%(filename)s:%(lineno)s] [%(threadName)s] %(levelname)s %(message)s'
+--log-date-format="%Y-%m-%d %H:%M:%S"
+--maxfail=1
+--pdbcls=IPython.terminal.debugger:Pdb
+-ra
+-s
+--tb=short
+-v
+"""
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
