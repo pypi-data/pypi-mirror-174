@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ConfinedBrownianAnalysis
+Version: 1.0.1
+Summary: A package to analyse 3D confined Borwnian trajectories
+Author: Maxime Lavaud
+Author-email: Maxime Lavaud <lavaudmaxime.ml@gmail.com>
+Project-URL: Homepage, https://github.com/eXpensia/Confined_Brownian_Analysis
+Project-URL: Bug Tracker, https://github.com/eXpensia/Confined_Brownian_Analysis/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Confined_Brownian_Analysis
+ Toolbox that can be used to analyse the properties of a confined Brownian trajectory.
