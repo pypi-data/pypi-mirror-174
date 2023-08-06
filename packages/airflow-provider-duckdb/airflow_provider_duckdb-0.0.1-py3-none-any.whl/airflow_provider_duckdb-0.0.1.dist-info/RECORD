@@ -1,0 +1,9 @@
+duckdb_provider/__init__.py,sha256=06uUBhU9A9USUXfLwuDd6_ejGJXT_tk_BLvNKqxcOXI,320
+duckdb_provider/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duckdb_provider/hooks/duckdb_hook.py,sha256=xmYKzh6V7AHWtVVxld5IQNBcLe1uCAXTG7pzwkz6rh0,1799
+airflow_provider_duckdb-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+airflow_provider_duckdb-0.0.1.dist-info/METADATA,sha256=DshMbfZft2IILGkFlW6IGIFZmaOgllPZsehL0GzhhJY,2804
+airflow_provider_duckdb-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+airflow_provider_duckdb-0.0.1.dist-info/entry_points.txt,sha256=Kgx8ZaRsxl884c1rdHiGQoYdTddQ5CYBfZ0g1PuhKr4,85
+airflow_provider_duckdb-0.0.1.dist-info/top_level.txt,sha256=f9EmBZYgxLlvjpiIc20Zn5-1rIomywf9VscdyvEVXbA,16
+airflow_provider_duckdb-0.0.1.dist-info/RECORD,,
