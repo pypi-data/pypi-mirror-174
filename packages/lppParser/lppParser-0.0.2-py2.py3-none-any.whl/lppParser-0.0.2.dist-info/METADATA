@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lppParser
+Version: 0.0.2
+Summary: Parse .lpp file format
+Home-page: https://github.com/archman/lppParser
+Author: Tong Zhang
+Author-email: zhangt@frib.msu.edu
+License: GPL3+
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+
+# lppParser
+
+Parse .lpp file.
+
+
