@@ -1,0 +1,16 @@
+gtax/__init__.py,sha256=0_jrgORqsJ01Hg5G49b6BxedO3WcF0KVrlrYMLGJSiM,322
+gtax/gtax_database.py,sha256=RvPXkZR7uoeJbiqlVL9iJKqs5f5fJhh5kyE6YHuSuvg,3700
+gtax/gtax_main.py,sha256=wFGuJ2n4-BXZZcw6HlUUlAvNlzgWBncowgwChLv4EiI,3637
+gtax/sequence.py,sha256=Nj87Mnea2-gShAr7XoNPXY_BcFA60CpBZztr2CN9Cow,15403
+gtax/sequence_binning.py,sha256=b-m0PE4SYoNepcTln7J_j4FQxCT-1sFe5Tk3xE0De5k,2703
+gtax/taxonomy.py,sha256=I8mKsmDADcutSoZJOhJeLL_pQ2qJoYvJqcugNGYOWJA,9418
+gtax/taxonomy_blast.py,sha256=nkKaCEdJ01ZxNkDKDITOoXQvzeejkEuam4sHeRvOAJs,3648
+gtax/taxonomy_main.py,sha256=C6CmpGcjoyjhvmw-24ADEG_jpSde6tsxLoPPJOuBGxw,186
+gtax/utils.py,sha256=If7GHq0dtFBYAMGovR4O8R27XnA23GylBhQ88qVfF2E,566
+gtax-0.0.8.data/data/README.md,sha256=IrVh-F4CzWNCkC04iSYAItdXUGJzxLC9bLh8F1S5KwE,3013
+gtax-0.0.8.dist-info/LICENSE,sha256=4dXeufGUNb6WU0Ayv3MCzp5gQhR-25Fpoif0ClmlJBM,961
+gtax-0.0.8.dist-info/METADATA,sha256=KcqNgI9iCxnbJcRWDng37Wb1j-wWwO9oarIJsnw_b7Q,4123
+gtax-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gtax-0.0.8.dist-info/entry_points.txt,sha256=2AnH_jSuQuzBvq8bXrFRTmaWCrWJfVhvmT964gA6GIc,364
+gtax-0.0.8.dist-info/top_level.txt,sha256=GPeNCWH41xUV8_e84ajhNd5rqT7h6inz9U5EwK2-7Rw,5
+gtax-0.0.8.dist-info/RECORD,,

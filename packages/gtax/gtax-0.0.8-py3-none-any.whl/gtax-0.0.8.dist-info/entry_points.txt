@@ -1,0 +1,7 @@
+[console_scripts]
+create_random_short_sequences = gtax.sequence:create_random_short_sequences
+filter_metadata_zip = gtax.gtax_main:filter_metadata_zip
+gtax_database = gtax.gtax_main:gtax_database
+sequence_binning = gtax.sequence_binning:sequence_binning_main
+taxonomy_blast = gtax.taxonomy_blast:taxonomy_blast
+taxonomy_pickle = gtax.taxonomy_main:taxonomy_pickle
