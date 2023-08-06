@@ -1,0 +1,10 @@
+rmg_numerical_integration/__init__.py,sha256=pSbfs9bPU9bR21ez070DGOgC4YVe7YC-c8ntEDCwFcg,405
+rmg_numerical_integration/gaussian_quadrature.py,sha256=RoJSk8BHLmz76fC5qSLcH66afx5zkbsy6GrFghKP3gQ,2157
+rmg_numerical_integration/midpoint.py,sha256=fPHCGNOJIWHCCprqnxS8JgeLKdoR7xcRlNtm4fontfk,2311
+rmg_numerical_integration/simpson.py,sha256=p0ihCNFs9r91ceZVjrxg1jd-f5emCQFd0zq8oOMSxIU,3673
+rmg_numerical_integration/trapezoidal.py,sha256=nrzjyWKenYfcAG5rdW1ZU9WD-__oWuWD7sA-jOdR7ec,2311
+rmg_numerical_integration-2.4.dist-info/LICENSE.txt,sha256=2J3HHg52WMgwHd1ohaP2oudn9qZBW_8WOB5Sc7Hogc0,1058
+rmg_numerical_integration-2.4.dist-info/METADATA,sha256=8s_WeGCc-aAJ9KCWRYP9PUORdd9Ci7Gu6zgthPSf17U,470
+rmg_numerical_integration-2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rmg_numerical_integration-2.4.dist-info/top_level.txt,sha256=K3M7CN-FJkhvdGUU0yYsXixP7Juat-9Tnj0HjpTy_qg,26
+rmg_numerical_integration-2.4.dist-info/RECORD,,
