@@ -1,0 +1,4 @@
+include Translator/*.pickle5
+include Translator/arpanKaModel/*.pb
+include Translator/arpanKaModel/variables/*.data-00000-of-00001
+include Translator/arpanKaModel/variables/*.index
