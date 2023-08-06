@@ -1,0 +1,11 @@
+astropy
+numpy
+pyyaml
+pillow
+PySide6
+requests
+scikit-image
+scipy
+matplotlib
+plotly
+pandas
