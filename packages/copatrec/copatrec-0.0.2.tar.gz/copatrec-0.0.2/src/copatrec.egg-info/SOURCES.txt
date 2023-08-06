@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/copatrec/__init__.py
+src/copatrec/copatrec.py
+src/copatrec.egg-info/PKG-INFO
+src/copatrec.egg-info/SOURCES.txt
+src/copatrec.egg-info/dependency_links.txt
+src/copatrec.egg-info/requires.txt
+src/copatrec.egg-info/top_level.txt
+src/copatrec/constants/__init__.py
+src/copatrec/constants/constants.py
+src/copatrec/math/__init__.py
+src/copatrec/math/patterns.py
+src/copatrec/result/__init__.py
+src/copatrec/result/result.py
