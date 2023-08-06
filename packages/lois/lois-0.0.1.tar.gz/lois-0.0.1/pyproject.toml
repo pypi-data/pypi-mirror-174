@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "lois"
+version = "0.0.1"
+description = "The fastest and  user friendly way to EDA"
+authors = ["Charles TCHANAKE <datadevfernolf@gmail.com>"]
+readme = "README.md"
+license="MIT"
+homepage="https://github.com/charleslf2/lois.git"
+repository="https://github.com/charleslf2/lois.git"
+
+keywords=["EDA", "Data analysis", "Charles TCHANAKE"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
