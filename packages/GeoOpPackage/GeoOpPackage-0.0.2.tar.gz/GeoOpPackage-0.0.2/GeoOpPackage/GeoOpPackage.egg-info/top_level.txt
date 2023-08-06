@@ -1,0 +1,16 @@
+OneDdistance
+TwoDdistance
+arcLen
+centAngle
+circArea
+circum
+coneArea
+cubeArea
+cuboidArea
+cylArea
+polPeri
+pyrSurfArea
+pyrVol
+slope
+sphArea
+sumInterior
