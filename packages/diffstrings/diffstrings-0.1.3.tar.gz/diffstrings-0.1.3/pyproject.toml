@@ -1,0 +1,36 @@
+[project]
+name = "diffstrings"
+version = "0.1.3"
+authors = [
+  { name="Uguudei"}
+]
+description = "Show difference of two strings in color"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/uguudei/diffstrings"
+"Bug Tracker" = "https://github.com/uguudei/diffstrings/issues"
+"Source Code" = "https://github.com/uguudei/diffstrings"
+
+[build-system]
+requires=["hatchling"]
+build-backend="hatchling.build"
+
+[tool.black]
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
