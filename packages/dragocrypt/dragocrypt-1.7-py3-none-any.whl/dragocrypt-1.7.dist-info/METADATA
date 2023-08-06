@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: dragocrypt
+Version: 1.7
+Summary: For developers
+Home-page: https://github.com/NovaTools4
+Author: The Jordan Ghost
+Author-email: Novayou0@gmail.com
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Keywords: dragocrypt
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+<h1 align="center">dragocrypt</h1>
+
+<p align="center">It's a beautiful project that helps developers program To Decrypt Python Files. </p>
+
+
+
+![](https://img.shields.io/badge/NOVA-TOOLS-orange?style=for-the-badge&logo=python.svg) 
+
+<p align="center">
+
+<a href="#"><img title="Made in Jo" src="https://img.shields.io/badge/MADE%20IN-Jo-red.svg?style=for-the-badge&logo=github"></a>
+
+
+
+</p>
+
+<p align="center">
+
+<img alt="Nova-Tools' Github Stats" src="https://github-readme-stats.vercel.app/api?username=NovaTools4&show_icons=true&include_all_commits=true&hide_border=true" />
+
+
+
+</p>
+
+<p align="center">
+
+<a href="#"><img title="telegram Num" src="https://img.shields.io/badge/telegram%20Num-The Jordan Ghost-red.svg?style=for-the-badge&logo=telegram"></a>
+
+</p>
+
+<p align="center">
+
+<a href="https://github.com/NovaTools4/followers"><img title="Followers" src="https://img.shields.io/github/followers/NovaTools4?color=blue&style=flat-square"></a>
+
+</p>
+
+
+
+## Installation :
+
+
+
+pip install dragocrypt 
+
+
+
+### How to Use
+
+
+
+To Import
+
+from dragocrypt import * 
+
+
+
+To Encrypt 
+
+dragocrypt.encode("print('Hi')")
+
+
+
+To Run
+
+dragocrypt.run('Encrypt')
+
+
+
+## Follow us on social media
+
+[![Github](https://img.shields.io/badge/Github-NovaTools-orange?style=for-the-badge&logo=github)](https://github.com/NovaTools4/)
+
+[![Telegram](https://img.shields.io/badge/Telegram-NovaTools-orange?style=for-the-badge&logo=Telegram)](https://t.me/VZX_TEAM)
