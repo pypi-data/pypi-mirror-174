@@ -1,0 +1,10 @@
+*.out.*
+*.diff.txt
+*.names.txt
+default-tests.sh
+default-update-ref.sh
+*.o
+*Ac.hpp
+*Ac.cpp
+
+!*/include/*

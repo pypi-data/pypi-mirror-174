@@ -1,0 +1,149 @@
+#!/bin/sh -e
+
+# ----------------------------------------------------------------------
+# FPP release builder
+# ----------------------------------------------------------------------
+# To use this script, you must first
+#
+# 1. Install GraalVM and native-image.
+#
+# 2. Set the environment variable GRAALVM_JAVA_HOME.
+#
+# See README.adoc.
+# ----------------------------------------------------------------------
+
+# Print and evaluate a command
+evalp()
+{
+  echo "$@"
+  $@
+}
+
+# Get tool names from a directory
+get_tool_names()
+{
+  dir=$1
+  for file in $dir/*.jar
+  do
+    basename $file .jar
+  done
+}
+
+# Print a phase of the process
+print_phase()
+{
+  echo "----------------------------------------------------------------------"
+  echo $1
+  echo "----------------------------------------------------------------------"
+}
+
+# Check that GRAALVM_JAVA_HOME is set
+if test -z "$GRAALVM_JAVA_HOME"
+then
+  echo "[ERROR] Environment variable GRAALVM_JAVA_HOME is not set" 1>&2
+  exit 1
+fi
+
+# Run in the directory where this script is located
+cd `dirname $0`
+
+# Set local variables
+native_bin="native-fpp-`uname`-`uname -m`"
+native_image="$GRAALVM_JAVA_HOME/bin/native-image"
+meta_inf_dir="lib/src/main/resources/META-INF/native-image"
+release_tgz="$native_bin.tar.gz"
+# Use gtar if it's available
+# The default tar has issues on Mac OS on GitHub
+if which gtar
+then
+  tar=`which gtar`
+else
+  tar=tar
+fi
+
+# Make directories
+mkdir -p "$meta_inf_dir"
+mkdir -p "$native_bin"
+
+print_phase "Version information"
+
+# Print version information
+echo "C compiler version"
+cc --version
+echo "Native Image Version"
+$native_image --version
+
+print_phase "Installing JVM tools in bin"
+
+# Install jar files in bin
+./install
+
+print_phase "Constructing binary tools in $native_bin"
+
+# Get the tool names from bin
+tool_names=`get_tool_names bin`
+
+# Use GraalVM to convert the jar files to native binaries
+for tool_name in $tool_names
+do
+    jar_file="bin/$tool_name.jar"
+    out_file="$native_bin/$tool_name"
+    echo "Building $out_file"
+    evalp "$native_image" --no-fallback --install-exit-handlers \
+      -jar "$jar_file" "$out_file"
+    if [ $? -ne 0 ]
+    then
+        echo "[ERROR] Failed to build $out_file"
+        exit 1
+    fi
+    sync; sync; sync;
+    if ! $out_file --help 1>/dev/null
+    then
+        echo "[ERROR] $out_file not executable"
+        exit 1
+    fi
+done
+sync; sync; sync;
+
+# Clean up the native directory
+rm -f "$native_bin"/*.txt
+
+# Install the native binaries
+evalp rm -r "bin"
+evalp cp -r "$native_bin" "bin"
+sync; sync; sync;
+
+print_phase "Testing the binary tools"
+
+# Test the native binaries
+./test
+if [ $? -ne 0 ]
+then
+    echo "[ERROR] Native unit tests failed"
+    exit 1
+fi
+
+print_phase "Constructing the release archive $release_tgz"
+
+# Create the tar ball
+evalp $tar -czf "$release_tgz" "$native_bin"
+sync; sync; sync;
+
+# Verify the tar ball
+evalp mkdir -p check-tar
+(cd check-tar; evalp $tar -xvf "../$release_tgz")
+sync; sync; sync;
+for file in `ls "$native_bin"`
+do
+  if ! evalp diff -q "$native_bin/$file check-tar/$native_bin/$file"
+  then
+    echo "[ERROR] Archive creation failed"
+    exit 1
+  fi
+done
+evalp rm -r check-tar
+
+# Print status
+echo "Release archive written to $release_tgz with size `du -hs $release_tgz`"
+
+print_phase "Success"
