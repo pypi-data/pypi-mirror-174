@@ -1,0 +1,21 @@
+requests
+pydantic
+
+[:python_version == "3.6"]
+dataclasses
+
+[aws]
+boto3
+
+[dev]
+black
+mypy
+isort
+wheel
+types-requests
+types-dataclasses
+
+[distribute]
+setuptools
+twine
+wheel
