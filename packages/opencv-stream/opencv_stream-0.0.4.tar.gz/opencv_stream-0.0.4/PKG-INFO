@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: opencv_stream
+Version: 0.0.4
+Summary: Wrapper over opencv for video processing and API development
+Author: Olivier
+Author-email: luowensheng2018@gmail.com
+Keywords: python,video,stream,AI,API
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# opencv_stream
+
+Under construction
+
+Developed by Olivier 
+
+## Examples of How To Use 
+
+Creating A Stream
+
+
+```python
+from opencv_stream import VideoStreamer, FpsDrawer
+
+stream = VideoStreamer.from_webcam()
+fps_drawer = FpsDrawer()
+
+@stream.on_next_frame
+def func(image:np.ndarray):
+    fps_drawer.draw(image)
+
+```
+
+```python
+from opencv_stream import VideoStreamer
+
+path = "[PATH TO VIDEO]"
+stream = VideoStreamer.from_video_input(path)
+
+@stream.on_next_frame
+def func(image:np.ndarray):
+    pass
+
+```
