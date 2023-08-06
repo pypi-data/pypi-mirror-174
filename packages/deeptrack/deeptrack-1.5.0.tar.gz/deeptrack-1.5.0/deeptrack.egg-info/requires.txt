@@ -1,0 +1,14 @@
+tensorflow
+numpy
+matplotlib
+scipy
+numpydoc
+scikit-image
+tensorflow-probability
+tensorflow-datasets
+pydeepimagej
+more_itertools
+pint<0.20
+pandas
+tqdm
+tensorflow_addons
