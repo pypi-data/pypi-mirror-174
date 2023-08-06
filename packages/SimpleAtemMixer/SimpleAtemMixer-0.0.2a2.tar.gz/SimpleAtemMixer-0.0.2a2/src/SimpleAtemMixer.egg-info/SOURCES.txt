@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/SimpleAtemMixer/AtemMixer.py
+src/SimpleAtemMixer/__init__.py
+src/SimpleAtemMixer.egg-info/PKG-INFO
+src/SimpleAtemMixer.egg-info/SOURCES.txt
+src/SimpleAtemMixer.egg-info/dependency_links.txt
+src/SimpleAtemMixer.egg-info/requires.txt
+src/SimpleAtemMixer.egg-info/top_level.txt
