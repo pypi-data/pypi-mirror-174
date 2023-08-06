@@ -1,0 +1,11 @@
+zotero2readwise/__init__.py,sha256=QzmYqek5RbQAM1cewtIz36GNqsFvuAykWkupwJrAP-M,137
+zotero2readwise/exception.py,sha256=AdGmLKCraFIfGKiwHaR3v_1sURRhF2M7relo7qTuED8,148
+zotero2readwise/helper.py,sha256=_xd47mR_f8IL5Ep-4zjvEEIWw3OGDWk39s1SFv9lqfE,335
+zotero2readwise/readwise.py,sha256=uPx22PYj0X_eaq-eTN4TSC-lKGnkeX0obJZS74HJthU,6050
+zotero2readwise/run.py,sha256=C76lY37igBC2WcuDxZsyBe3SVtW5uYuXwW30Go5lc9I,1903
+zotero2readwise/zotero.py,sha256=M9hFaEumXPg_dzJsekpTrsvGm1VZkXZ_6M5pcS92G2s,8563
+zotero2readwise/zt2rw.py,sha256=cLhufzfumk_URew_22KmGnip1tXq9bCVJWREd3TupNk,1718
+zotero2readwise-0.2.6.dist-info/LICENSE,sha256=KLPjlKmMaphmVBXwWslninFgbuNouEIR7vXJEOGSZ78,1070
+zotero2readwise-0.2.6.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+zotero2readwise-0.2.6.dist-info/METADATA,sha256=r4to4sdN6rj9SqDj-d1M2d40yb5V-neNVTPDzmtI_yQ,7529
+zotero2readwise-0.2.6.dist-info/RECORD,,
