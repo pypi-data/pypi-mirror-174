@@ -1,0 +1,6 @@
+setup.py
+discatpy/__init__.py
+discatpy.egg-info/PKG-INFO
+discatpy.egg-info/SOURCES.txt
+discatpy.egg-info/dependency_links.txt
+discatpy.egg-info/top_level.txt
