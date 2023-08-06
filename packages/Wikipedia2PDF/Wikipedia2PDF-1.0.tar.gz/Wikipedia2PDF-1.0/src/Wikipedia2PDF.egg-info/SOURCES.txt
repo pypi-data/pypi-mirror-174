@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/Wikipedia2PDF/__init__.py
+src/Wikipedia2PDF.egg-info/PKG-INFO
+src/Wikipedia2PDF.egg-info/SOURCES.txt
+src/Wikipedia2PDF.egg-info/dependency_links.txt
+src/Wikipedia2PDF.egg-info/requires.txt
+src/Wikipedia2PDF.egg-info/top_level.txt
