@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: genpasswd
+Version: 1.3.5
+Summary: To generate random and strong passwords.
+Home-page: https://github.com/rgowthaman/GenPasswd
+Download-URL: https://github.com/rgowthaman/GenPasswd/releases
+Author: Gowthaman
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GenPasswd
+ 
+This package will be removed soon and won't available for public use. 
+
+Instead, you can use [Zenpass](https://pypi.org/project/zenpass) package.
