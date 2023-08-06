@@ -1,0 +1,26 @@
+[build-systems]
+required = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PYvaporwave"
+version = "2.0.0"
+authors = [
+  { name="Yiannis Menexes", email="johnmenex@gmail.com" },
+]
+description = "A Vaporwave python library"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'numpy~=1.23.4',
+  'Pillow~=9.2.0'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/vaseelaser/PYvaporwave"
+"Bug Tracker" = "https://github.com/vaseelaser/PYvaporwave/issues"
