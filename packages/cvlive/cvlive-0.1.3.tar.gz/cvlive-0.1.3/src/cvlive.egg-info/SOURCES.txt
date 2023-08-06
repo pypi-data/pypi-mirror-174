@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/cvlive/__init__.py
+src/cvlive/processor.py
+src/cvlive.egg-info/PKG-INFO
+src/cvlive.egg-info/SOURCES.txt
+src/cvlive.egg-info/dependency_links.txt
+src/cvlive.egg-info/requires.txt
+src/cvlive.egg-info/top_level.txt
