@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+kwess/__init__.py
+kwess.egg-info/PKG-INFO
+kwess.egg-info/SOURCES.txt
+kwess.egg-info/dependency_links.txt
+kwess.egg-info/requires.txt
+kwess.egg-info/top_level.txt
+kwess.egg-info/zip-safe
