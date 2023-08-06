@@ -1,0 +1,1 @@
+thumbor_filter_fit_min

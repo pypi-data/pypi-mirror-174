@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: thumbor-filter-fit-min
+Version: 0.0.3
+Summary: A filter for Thumbor for resizing keeping aspect ratio
+Home-page: https://github.com/babelhq/thumbor-filter-keep-ratio
+Author: single.dk
+Author-email: tech@single.dk
+License: MIT
+Description: 
+        A Thumbor filter that resizes the image while allowing it to be less than the
+        provided request height and width, but always keeping the aspect ratio.
+        
+Keywords: thumbor filter
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7

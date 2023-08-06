@@ -1,0 +1,8 @@
+README.md
+setup.py
+thumbor_filter_fit_min/__init__.py
+thumbor_filter_fit_min/fit_min.py
+thumbor_filter_fit_min.egg-info/PKG-INFO
+thumbor_filter_fit_min.egg-info/SOURCES.txt
+thumbor_filter_fit_min.egg-info/dependency_links.txt
+thumbor_filter_fit_min.egg-info/top_level.txt
