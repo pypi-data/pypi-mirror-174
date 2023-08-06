@@ -1,0 +1,48 @@
+{% set name = "stl_to_h5m" %}
+
+package:
+  name: "{{ name|lower }}"
+  # conda package version tag is obtained from the git release version tag
+  version: {{ GIT_DESCRIBE_TAG }}
+
+source:
+  path: ..
+
+build:
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+  build:
+    - python {{ python }}
+    - setuptools>=65.4.0
+    - setuptools_scm[toml]>=7.0.5
+  run:
+    - python
+    - moab [not win]
+    - numpy
+
+test:
+  imports:
+    - stl_to_h5m
+  requires:
+    - pytest
+    - dagmc_h5m_file_inspector [not win]
+  source_files:
+    - tests/
+  commands:
+    - pytest tests
+
+
+about:
+  home: "https://github.com/fusion-energy/stl_to_h5m"
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  doc_url: https://github.com/fusion-energy/stl_to_h5m
+  dev_url: https://github.com/fusion-energy/stl_to_h5m
+  summary: stl_to_h5m - Converts STL files to a DAGMC h5m file using PyMoab
+
+extra:
+  recipe-maintainers:
+    - shimwell

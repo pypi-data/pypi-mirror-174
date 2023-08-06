@@ -1,0 +1,5 @@
+numpy>=1.21.1
+
+[tests]
+pytest
+dagmc_h5m_file_inspector
