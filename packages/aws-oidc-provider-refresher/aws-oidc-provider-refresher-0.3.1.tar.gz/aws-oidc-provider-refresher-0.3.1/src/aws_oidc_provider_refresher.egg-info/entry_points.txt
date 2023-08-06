@@ -1,0 +1,2 @@
+[console_scripts]
+aws-oidc-provider-refresher = aws_oidc_provider_refresher.__main__:main

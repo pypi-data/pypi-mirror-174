@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/aws_oidc_provider_refresher/__init__.py
+src/aws_oidc_provider_refresher/__main__.py
+src/aws_oidc_provider_refresher/command.py
+src/aws_oidc_provider_refresher/logger.py
+src/aws_oidc_provider_refresher/schema.py
+src/aws_oidc_provider_refresher/tag.py
+src/aws_oidc_provider_refresher.egg-info/PKG-INFO
+src/aws_oidc_provider_refresher.egg-info/SOURCES.txt
+src/aws_oidc_provider_refresher.egg-info/dependency_links.txt
+src/aws_oidc_provider_refresher.egg-info/entry_points.txt
+src/aws_oidc_provider_refresher.egg-info/not-zip-safe
+src/aws_oidc_provider_refresher.egg-info/requires.txt
+src/aws_oidc_provider_refresher.egg-info/top_level.txt
