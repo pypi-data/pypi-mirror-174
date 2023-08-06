@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rocktrie"
+version = "0.0.1"
+authors = [{name = "Vee Satayamas", email = "vsatayamas@gmail.com"}]
+description = "Trie on RocksDB"
+readme = "README.md"
+keywords = ["trie"]
+license = {file = "LICENSE.txt"}
+classifiers = [
+	    "Programming Language :: Python :: 3",
+	    "License :: OSI Approved :: Apache Software License",
+	    "Intended Audience :: Developers",
+	    "Operating System :: OS Independent",
+	    "Topic :: Software Development :: Libraries",
+	    ]
+dependencies = [
+	   "rocksdb==0.7",
+	   "orjson==3.8.1",
+]
+
+[project.urls]
+homepage = "https://git.sr.ht/~veer66/rocktrie"
+
+[tool.pylsp-mypy]
+enabled = true
+live_mode = true
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[[tool.mypy.overrides]]
+module = "rocksdb"
+ignore_missing_imports = true
+
+# [[tool.mypy.overrides]]
+# module = "orjson"
+# ignore_missing_imports = true

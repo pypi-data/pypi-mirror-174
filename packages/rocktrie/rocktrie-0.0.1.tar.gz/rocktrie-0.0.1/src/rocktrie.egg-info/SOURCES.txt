@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/rocktrie/__init__.py
+src/rocktrie.egg-info/PKG-INFO
+src/rocktrie.egg-info/SOURCES.txt
+src/rocktrie.egg-info/dependency_links.txt
+src/rocktrie.egg-info/requires.txt
+src/rocktrie.egg-info/top_level.txt
