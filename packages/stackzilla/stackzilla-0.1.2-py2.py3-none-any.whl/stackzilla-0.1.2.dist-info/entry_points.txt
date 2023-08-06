@@ -1,0 +1,2 @@
+[console_scripts]
+stackzilla = stackzilla.cli.main:cli
