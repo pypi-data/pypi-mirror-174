@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: weatherbotskeleton
+Version: 1.6.1
+Summary: Skeleton for weather-based twitterbots
+Home-page: https://github.com/lunemercove/weatherbotskeleton
+Author: Luné Mercové
+Author-email: dev@lune.gay
+License: BSD3
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: botskeleton (>=3.3.9)
+Requires-Dist: pycountry (>=22.3.5)
+Requires-Dist: requests (>=2.28.0)
+
+weatherbotskeleton
+==================
+
+Skeleton for weather bots. Partially wraps https://github.com/lunemercove/botskeleton.
