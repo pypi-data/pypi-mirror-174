@@ -1,0 +1,4 @@
+colorama
+py-cord
+jsonpickle
+asyncio
