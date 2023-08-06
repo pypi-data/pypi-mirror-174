@@ -1,0 +1,5 @@
+[napari.manifest]
+napari-n2v = napari_n2v:napari.yaml
+
+[napari.plugin]
+napari-n2v_2 = napari_n2v.utils.n2v_utils
