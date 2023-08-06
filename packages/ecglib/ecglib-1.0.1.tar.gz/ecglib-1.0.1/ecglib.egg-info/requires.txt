@@ -1,0 +1,12 @@
+pandas
+ecg_plot
+tqdm
+numpy
+torch
+scipy
+ipywidgets
+pyyaml
+PyWavelets
+wfdb
+hydra-core
+omegaconf
