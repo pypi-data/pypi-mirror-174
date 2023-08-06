@@ -1,0 +1,13 @@
+napari_sif_reader/__init__.py,sha256=BYLZJ82CjCekLJ5qB5Ar8yYLo0sDvI3UBv7-_yAHuaA,173
+napari_sif_reader/_reader.py,sha256=GWDkCvJuOWTo4p3AhCjbhIKZ3vxDiUMJINX95GI0SRM,2612
+napari_sif_reader/_sample_data.py,sha256=xH1frjJRRlEdtBxJsebIYJ1FHq1hN53bMlL_--HaYfE,644
+napari_sif_reader/napari.yaml,sha256=XajoN2MW-UhCgX_AfhjJnnMvzv99og0mPUHmHqHZRh4,665
+napari_sif_reader/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_sif_reader/_tests/test_reader.py,sha256=yjiu-ZiqnqSW9RpoG7R5WnveK7dBaTOtdC0XsCtcAEY,979
+napari_sif_reader/_tests/test_sample_data.py,sha256=jcYA5brT2ez12DmQUdjFTNLAG8TSFXYhfp5wiCPdJiw,108
+napari_sif_reader-0.0.1.dist-info/LICENSE,sha256=RzBFn9FMsnRY6Kqf6Om_RWs4M_YfboQpjUMfHhl5Qu4,1486
+napari_sif_reader-0.0.1.dist-info/METADATA,sha256=PNhYrMxtoA35hP4-lQCRY2TKJ2wrT7r0EcG1PDb63z8,4169
+napari_sif_reader-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_sif_reader-0.0.1.dist-info/entry_points.txt,sha256=yMu0r_83ysNDbmTbs599Lj_fLDz_8wmCLlJ9xHCUzyw,68
+napari_sif_reader-0.0.1.dist-info/top_level.txt,sha256=Om1tylRZR4VWyhOd1oj_y2LwOS6RgCrFEEAKGLPi3J0,18
+napari_sif_reader-0.0.1.dist-info/RECORD,,
