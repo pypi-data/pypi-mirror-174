@@ -1,0 +1,4 @@
+django-environ
+django>=2.1
+python-logstash-async
+simplejson
