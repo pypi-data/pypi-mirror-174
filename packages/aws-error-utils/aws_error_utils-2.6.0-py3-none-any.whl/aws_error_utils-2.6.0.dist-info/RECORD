@@ -1,0 +1,7 @@
+aws_error_utils/__init__.py,sha256=73sOoasHyZYcjIVNJC_OvWIEd6eAXoF0AQNdFJ8io24,846
+aws_error_utils/aws_error_utils.py,sha256=pP1oIyeOBzY6c0akjEZ2GCPF9PHSHxuR8u2PVd8QL_8,8331
+aws_error_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_error_utils-2.6.0.dist-info/LICENSE,sha256=9j8RqO8bPFqn4auDoWpegssMFBSlrw52EoRAO4PJyOA,11340
+aws_error_utils-2.6.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aws_error_utils-2.6.0.dist-info/METADATA,sha256=0AkD-j2V3YkYhsNN7iPP8OK-q9mVMR9dFgVS3IDlyvs,9615
+aws_error_utils-2.6.0.dist-info/RECORD,,
