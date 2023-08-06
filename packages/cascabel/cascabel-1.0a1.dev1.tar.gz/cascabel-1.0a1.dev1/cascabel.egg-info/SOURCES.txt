@@ -1,0 +1,10 @@
+setup.py
+cascabel/__init__.py
+cascabel/__main__.py
+cascabel/main.py
+cascabel.egg-info/PKG-INFO
+cascabel.egg-info/SOURCES.txt
+cascabel.egg-info/dependency_links.txt
+cascabel.egg-info/entry_points.txt
+cascabel.egg-info/requires.txt
+cascabel.egg-info/top_level.txt

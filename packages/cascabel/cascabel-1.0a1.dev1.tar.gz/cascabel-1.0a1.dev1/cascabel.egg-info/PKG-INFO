@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cascabel
+Version: 1.0a1.dev1
+Summary: Agiliza la creción de páginas web con Flask
+Home-page: UNKNOWN
+Author: Ignacio Aguilera Oyaneder
+Author-email: <ignacio.a.o@outlook.com>
+License: UNKNOWN
+Description: Un paquete que te permitira agilizar la creación de paginas web mediante flask.
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
