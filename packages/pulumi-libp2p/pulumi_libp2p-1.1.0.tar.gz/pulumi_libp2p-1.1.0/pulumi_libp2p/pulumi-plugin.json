@@ -1,0 +1,5 @@
+{
+  "resource": true,
+  "name": "libp2p",
+  "server": "github://api.github.com/LuxChanLu"
+}
