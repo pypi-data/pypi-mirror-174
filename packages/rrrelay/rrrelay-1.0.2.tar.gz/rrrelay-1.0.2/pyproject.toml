@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=62"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rrrelay"
+version = "1.0.2"
+description = "Race Result and TB Relay"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+keywords = ["timing", "tracking"]
+authors = [
+    {email = "ndf-zz@6-v.org", name = "Nathan Fraser"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Topic :: Other/Nonlisted Topic",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "tornado",
+    "metarace",
+]
+
+[project.urls]
+homepage = "https://github.com/ndf-zz/rrrelay"
+
+[project.scripts]
+rrrelay = "rrrelay:main"
