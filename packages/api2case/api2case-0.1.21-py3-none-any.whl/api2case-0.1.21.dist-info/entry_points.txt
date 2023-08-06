@@ -1,0 +1,3 @@
+[console_scripts]
+api2case = api_to_case.api2case:main
+
