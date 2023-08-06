@@ -1,0 +1,8 @@
+memofn/__init__.py,sha256=H-Yo4hoiiBAx5MHa_CNDT9fmoEnp9l6ODozplpC-7Ak,61
+memofn/mvp.py,sha256=-w476em4F2LPnNXiePxdNtF5ekIaWNzoXz5qViWq1DE,3598
+memofn/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+memofn/utils/hashable.py,sha256=ccxL2a2GcoPmpCzMwX2q1YghVSvdO3hWh9FGS1Js-MQ,1834
+memofn-0.1.0.dist-info/LICENSE,sha256=XLUkp7HWAuVRNMn971JvpQVfLKGYGAPDJDtZHgXIjLc,1072
+memofn-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+memofn-0.1.0.dist-info/METADATA,sha256=eolD_f9dKDOU978alqCD0kZ1c6iBi5T4ceaHFgLmtnM,893
+memofn-0.1.0.dist-info/RECORD,,
