@@ -1,0 +1,9 @@
+jtd_to_proto/__init__.py,sha256=LkGAtyHF9jn8Z83ETqu8DV5NwsJiw0TvYVlIdkAEqsE,1127
+jtd_to_proto/descriptor_to_file.py,sha256=ulvtkN5ZqM3SB6bwNs1Eki0VHI_U2185e98QSKtK37o,7684
+jtd_to_proto/descriptor_to_message_class.py,sha256=69kiwdb2ICSg171P-SzFu9-bkMyMMxTcCoUOcXr52Y8,1960
+jtd_to_proto/jtd_to_proto.py,sha256=Lho2no43qMbKdfkGPM8Zgt65MmRatRliBaKNQ2ok1js,17669
+jtd_to_proto-0.3.1.dist-info/LICENSE,sha256=t-ZkY-vak1QWjzid8VIzMds6wT0xEafbk406cLmdj_Q,1088
+jtd_to_proto-0.3.1.dist-info/METADATA,sha256=i9uKxQU3Ytu9KCf3Frg20PslBO-qvOTt_kbxQs0zlBM,4578
+jtd_to_proto-0.3.1.dist-info/WHEEL,sha256=ZvcC9yJ-3jt0s3Z9GqWdFU0zAv0WwFaltzmW3pHC9do,93
+jtd_to_proto-0.3.1.dist-info/top_level.txt,sha256=EDJIuz7w8kyKYDIsdOjD8MLYOJ_SGhYDXAvnBSEJyQg,13
+jtd_to_proto-0.3.1.dist-info/RECORD,,
