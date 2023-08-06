@@ -1,0 +1,3 @@
+[cppython.provider]
+cmake=cppython_conan.plugin:ConanProvider
+
