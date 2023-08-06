@@ -1,0 +1,6 @@
+[console_scripts]
+lauenn = lauetoolsnn.lauetoolsneuralnetwork:start
+lauenn_addmat = lauetoolsnn.util_scripts.add_material:start
+lauenn_mat = lauetoolsnn.util_scripts.add_material:querymat
+lauenn_maxhkl = lauetoolsnn.util_scripts.add_material:query_hklmax
+lauetoolsnn = lauetoolsnn.lauetoolsneuralnetwork:start
