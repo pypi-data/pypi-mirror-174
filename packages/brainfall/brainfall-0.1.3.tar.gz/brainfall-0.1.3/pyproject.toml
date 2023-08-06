@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "brainfall"
+version = "0.1.3"
+description = ""
+authors = ["EliaOnceAgain <eabunassar@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pendulum = "^2.1.2"
+numpy = "^1.23.4"
+binance-connector = "^1.18.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+pre-commit = "^2.20.0"
+scriv = {extras = ["toml"], version = "^0.17.0"}
+tox = "^3.27.0"
+
+[tool.scriv]
+format = "md"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
