@@ -1,0 +1,15 @@
+gcal_sync/__init__.py,sha256=MTwI77cgx8EeY95yOqgHpINzm9YYJ7EWwzLqHIhe9q4,144
+gcal_sync/api.py,sha256=9759sofJ_glg3jU_4N9K3wBlWs23181BEKDHo9IvNWc,22492
+gcal_sync/auth.py,sha256=zQ8bZuFFG1FkCRzrEaDmUzcunpbcsJb8Qro5mytmpss,6243
+gcal_sync/const.py,sha256=QGbBz5gonqpGHk2CyEaKdJdMkr3ZyO_q3zjXlLpCxeQ,210
+gcal_sync/exceptions.py,sha256=PtHoJt2eUDu7NfU6EfHa3GpJMxH2bLAQu4HhnU6-cFU,441
+gcal_sync/model.py,sha256=n0IuoYW3OCECWGr_LyVu2DpaaGrtUmaHtdJwyeoPAb8,18055
+gcal_sync/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcal_sync/store.py,sha256=lTEBWnNmfeVnT3H7r3jQyxKkaEvr8H5qEKfqsAc-RP8,1813
+gcal_sync/sync.py,sha256=_a4o9KaU39d7VqJXTEKw2ytFq6xzDtiJXE77WAXX64w,6944
+gcal_sync/timeline.py,sha256=9Dtor-XeXdtT4R2vX96j4EWdNTQD7N6GGMeuaiz45N0,5676
+gcal_sync-3.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gcal_sync-3.0.0.dist-info/METADATA,sha256=CXaPf3sGt9B8Rd_g38AXWgH5HI5DDdZdxBNJhhZp8A0,3996
+gcal_sync-3.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gcal_sync-3.0.0.dist-info/top_level.txt,sha256=Fs5b1eTcC3EJ1Fr2REDm09rPoP4kZ1U-j3ugd1Pf7_o,10
+gcal_sync-3.0.0.dist-info/RECORD,,
