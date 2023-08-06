@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: print-loader
+Version: 0.0.1a3
+Summary: Print a message with an indefinite loader
+Project-URL: Issues, https://github.com/NooraHealth/print-loader/issues
+Project-URL: Source, https://github.com/NooraHealth/print-loader
+Author-email: abhishek-compro <abhishek.prasad@noorahealth.org>
+Maintainer-email: abhishek-compro <abhishek.prasad@noorahealth.org>
+License-File: LICENSE.txt
+Keywords: aesthetic,ansi escape sequence,attractive,block of code,clear line,code block,console,context manager,continuous,custom,design,load,loader,loading,prettify,pretty,print,putty,same line,terminal,with
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Artistic Software
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Print Loader
+
+[![PyPI - Version](https://img.shields.io/pypi/v/print-loader.svg)](https://pypi.org/project/print-loader)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/print-loader.svg)](https://pypi.org/project/print-loader)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [Introduction](#introduction)
+- [License](#license)
+
+## Installation
+
+```console
+pip install print-loader
+```
+
+## Introduction
+Sometimes you want to put an indefinite loader for a set of statements to see
+the progress in terminal. This package tries to solve that exact problem.
+
+## Examples
+
+```python
+from print_loader import printl
+import time
+
+with printl("Sleeping"):
+    time.sleep(3)
+
+with printl("Sleeping", update_every=0.1):
+    time.sleep(3)
+
+with printl("Sleeping", update_every=0.1, loading_chars=["-", "|"]):
+    time.sleep(3)
+
+with open("large_file.txt", "w") as fp, printl("Writing to file"):
+    for i in range(50000):
+        fp.write(str(i) * 30000 + "\n")
+```
+
+## License
+
+`print-loader` is distributed under the terms of the
+[MIT](https://spdx.org/licenses/MIT.html) license.
