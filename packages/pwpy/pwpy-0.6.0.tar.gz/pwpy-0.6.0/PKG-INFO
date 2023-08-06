@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pwpy
+Version: 0.6.0
+Summary: Various tools and scrapers for Politics and War and the v3 API.
+Home-page: https://github.com/GodEmpressVerin/pwpy
+Author: Verin Senpai
+License-File: LICENSE
