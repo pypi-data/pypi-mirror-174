@@ -1,0 +1,4 @@
+myst-parser==0.18.1
+furo==2022.9.29
+sphinx==5.2.3
+./
