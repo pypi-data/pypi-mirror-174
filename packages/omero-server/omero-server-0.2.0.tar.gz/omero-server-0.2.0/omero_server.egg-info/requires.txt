@@ -1,0 +1,3 @@
+omero-py
+omero-certificates
+tables
