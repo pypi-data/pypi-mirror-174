@@ -1,0 +1,6 @@
+[console_scripts]
+CryoCon = cryocon.tango.server:main [tango]
+
+[sinstruments.device]
+CryoCon = cryocon.simulator:CryoCon [simulator]
+
