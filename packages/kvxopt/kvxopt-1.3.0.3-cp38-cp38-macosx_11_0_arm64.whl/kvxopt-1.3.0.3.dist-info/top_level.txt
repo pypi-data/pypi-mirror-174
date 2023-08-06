@@ -1,0 +1,12 @@
+amd
+base
+blas
+cholmod
+glpk
+gsl
+klu
+kvxopt
+lapack
+misc_solvers
+osqp
+umfpack
