@@ -1,0 +1,34 @@
+name: Docker_Large_Nightly
+
+on:
+  schedule:
+    # Run at the 0th minute of the 10th hour (UTC).
+    # This means the job will run at 5am EST.
+    - cron: "0 10 * * *"
+    # This will automatically run on master branch only.
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    strategy:
+      fail-fast: false
+      matrix:
+        julia-version: ['1.8.0-rc1-buster']
+        python-version: ['3.9.10']
+        os: [ubuntu-latest]
+        arch: ['linux/x86_64', 'linux/amd64']
+    
+    steps:
+      - uses: actions/checkout@v1.0.0
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+        with:
+          platforms: all
+      - name: Build docker
+        run: docker build -t pysr --build-arg ARCH=${{ matrix.arch }} --build-arg VERSION=${{ matrix.julia-version }} --build-arg PYVERSION=${{ matrix.python-version }} .
+      - name: Test docker
+        run: docker run --platform=${{ matrix.arch }} --rm pysr /bin/bash -c 'python3 -m unittest test.test && python3 -m unittest test.test_env'

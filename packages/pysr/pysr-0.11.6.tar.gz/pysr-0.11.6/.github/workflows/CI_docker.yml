@@ -1,0 +1,41 @@
+name: Docker
+
+on:
+  push:
+    branches:
+      - '*'
+    paths:
+      - 'test/**'
+      - 'pysr/**'
+      - '.github/workflows/CI_docker.yml'
+      - 'setup.py'
+      - 'Dockerfile'
+  pull_request:
+    branches:
+      - '*'
+    paths:
+      - 'test/**'
+      - 'pysr/**'
+      - '.github/workflows/CI_docker.yml'
+      - 'setup.py'
+      - 'Dockerfile'
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    strategy:
+      matrix:
+        julia-version: ['1.8.2']
+        python-version: ['3.9.10']
+        os: [ubuntu-latest]
+        arch: ['linux/x86_64']
+
+    steps:
+      - uses: actions/checkout@v1.0.0
+      - name: Build docker
+        run: docker build -t pysr --build-arg ARCH=${{ matrix.arch }} --build-arg VERSION=${{ matrix.julia-version }} --build-arg PYVERSION=${{ matrix.python-version }} .
+      - name: Test docker
+        run: docker run --platform=${{ matrix.arch }} --rm pysr /bin/bash -c 'python3 -m unittest test.test && python3 -m unittest test.test_env'
