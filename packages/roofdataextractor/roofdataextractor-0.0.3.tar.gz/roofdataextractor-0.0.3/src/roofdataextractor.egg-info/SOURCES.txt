@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/roofdataextractor.egg-info/PKG-INFO
+src/roofdataextractor.egg-info/SOURCES.txt
+src/roofdataextractor.egg-info/dependency_links.txt
+src/roofdataextractor.egg-info/top_level.txt
