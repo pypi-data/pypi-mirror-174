@@ -1,0 +1,16 @@
+nmk_proto/__init__.py,sha256=6EzUI6B8ekeZaCwv2cWoySV1sY3FYHlTm2SBkQK3EOY,703
+nmk_proto/files.py,sha256=jun3_3ybE9Kqp_0LreSbeYPBYcScbfvDas-If_O_3vQ,702
+nmk_proto/files.yml,sha256=D7GPhQAWk0RGr2Pv_TbnKx2hcJQ9CB6y9bPIYDDRzcc,423
+nmk_proto/path.yml,sha256=e8PMmhzm4CelMfdPIyA4MiombDx4sVJ9sHFpwtZmFXs,80
+nmk_proto/plugin-defs.yml,sha256=vAya27bJvqNKpyciDcUt7r5B5c8GeSDAzICERHSo8yA,1016
+nmk_proto/plugin.yml,sha256=tOqi5XJLAH7T9ipGwrpGFF-Wau-2rZ83AM85tZOJsmc,87
+nmk_proto/python.py,sha256=68jBm5TmTklYKDnJSUjNLfm_Qb62c0BeETnbz0dBXNY,3431
+nmk_proto/python.yml,sha256=FF98M7vsOquX5YBIBEU3ejSHf2vuUiGKClmDw5DhRvs,1670
+nmk_proto/utils.py,sha256=3UC9tCqCKH5fv1wK_Cv-U1lwWDFWf32FdutxUKOFSxE,487
+nmk_proto/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nmk_proto/templates/init.py.jinja,sha256=Z4erd7agtY9MsnVEVQt7X-9EPZcQz6OgUS3HVEJOEVc,90
+nmk_proto-0.2.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+nmk_proto-0.2.0.dist-info/METADATA,sha256=V0X4Tf_rz4feOmUjQl2_eLd4xRvnjbsWkg3gFhs23To,1692
+nmk_proto-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nmk_proto-0.2.0.dist-info/top_level.txt,sha256=JES5HP4moCgv03yOQo78p56XFX4HhWFs1QopEAqTVGM,10
+nmk_proto-0.2.0.dist-info/RECORD,,
