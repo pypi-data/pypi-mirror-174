@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ImgTrimmer
+Version: 0.0.1
+Summary: Trims away empty edges from images
+Home-page: UNKNOWN
+Author: Max Poppe
+Author-email: <poppe1max@gmail.com>
+License: UNKNOWN
+Keywords: python,image,trimming,cropping
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
+A package that will trim away the edges with alpha 0 of an image.
+
+
