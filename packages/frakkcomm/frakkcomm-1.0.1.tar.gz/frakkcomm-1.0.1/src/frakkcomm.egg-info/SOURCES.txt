@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/frakkcomm/__init__.py
+src/frakkcomm/ejjelifeny.py
+src/frakkcomm/eszkoz.py
+src/frakkcomm/frakkcomm.py
+src/frakkcomm.egg-info/PKG-INFO
+src/frakkcomm.egg-info/SOURCES.txt
+src/frakkcomm.egg-info/dependency_links.txt
+src/frakkcomm.egg-info/top_level.txt
