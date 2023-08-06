@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "drfcommon"
+version = "0.1.8.6.9"
+description = "a common tools for drf"
+authors = ["tplinux <tplinux@163.com>"]
+homepage = "https://github.com/pydtools/drfcommon/"
+repository = "https://github.com/pydtools/drfcommon/"
+documentation = "https://github.com/pydtools/drfcommon/wiki"
+include = ["CHANGELOG.md"]
+[tool.poetry.dependencies]
+python = ">=3.8"
+djangorestframework = ">=3.10"
+django = ">=2.2"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/pydtools/pytimetools/issues"
+"github" = "https://github.com/pydtools/pytimetools/"
