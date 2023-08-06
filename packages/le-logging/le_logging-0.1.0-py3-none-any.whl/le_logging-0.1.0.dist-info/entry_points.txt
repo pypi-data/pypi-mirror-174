@@ -1,0 +1,2 @@
+[console_scripts]
+my-script = le_logger.module:main
