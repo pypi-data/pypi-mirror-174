@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: chest-simulator-package
+Version: 0.0.1
+Summary: A random chests simulator
+Home-page: https://github.com/henrique-sk/chest_simulator_package
+Author: Henrique SK
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: importlib-metadata ; python_version >= "3.5"
+
+# chest_simulator
+
+Description.
+A simple prize chest simulator. With 4 different fictitious awards, where the rarer ones have less chance of being drawn. The higher the league entered, the greater the chances for rarer prizes. Both the league and the quantity of chests must be informed by the user.
+ 
+## Instalation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install chest_simulator_package
+```bash
+pip install chest_simulator_package
+```
+
+## Author
+Henrique SK
+
+## License
+[MIT](https://choosealicense.com/license/mit/)
