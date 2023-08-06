@@ -1,0 +1,12 @@
+torch>=1.10.1
+matplotlib>=3.5.2
+numpy>=1.21.2
+pyyaml>=6.0
+scikit-image>=0.19.2
+tqdm>=4.64.0
+matplotlib==3.5.2
+
+[dev]
+pytest
+flake8
+black
