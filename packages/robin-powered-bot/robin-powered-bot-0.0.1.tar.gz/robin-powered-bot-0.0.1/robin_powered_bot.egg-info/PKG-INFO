@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: robin-powered-bot
+Version: 0.0.1
+Summary: Provides a set of utilities to simplify communication with robin-powered API and more easily automate bookings.
+Home-page: https://github.com/donatobarone/robin-powered-bot
+Author: Donato Barone
+Author-email: eng.donato.barone@gmail.com
+License-File: LICENSE
