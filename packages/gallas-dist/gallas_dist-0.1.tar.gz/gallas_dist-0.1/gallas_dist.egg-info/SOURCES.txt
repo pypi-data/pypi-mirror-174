@@ -1,0 +1,10 @@
+setup.py
+gallas_dist/Binomialdistribution.py
+gallas_dist/Gaussiandistribution.py
+gallas_dist/Generaldistribution.py
+gallas_dist/__init__.py
+gallas_dist.egg-info/PKG-INFO
+gallas_dist.egg-info/SOURCES.txt
+gallas_dist.egg-info/dependency_links.txt
+gallas_dist.egg-info/not-zip-safe
+gallas_dist.egg-info/top_level.txt
