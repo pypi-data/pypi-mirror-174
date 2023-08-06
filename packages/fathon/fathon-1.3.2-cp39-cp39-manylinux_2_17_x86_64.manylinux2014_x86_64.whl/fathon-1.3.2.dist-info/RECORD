@@ -1,0 +1,15 @@
+fathon-1.3.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fathon-1.3.2.dist-info/top_level.txt,sha256=3Ifplgesqf3VWbfwCZHre-9GUCtfHAi1ZuOR9epGhd8,7
+fathon-1.3.2.dist-info/WHEEL,sha256=FNUt4eBsrBVn_Yc5KG3aXtKE40X3uNZrbGLNCbVxyFw,148
+fathon-1.3.2.dist-info/RECORD,,
+fathon-1.3.2.dist-info/METADATA,sha256=dvSNIlIDUeFhYauuVfGp9eNVYkHHvlJLOamIa8rwdq8,1954
+fathon/dfa.cpython-39-x86_64-linux-gnu.so,sha256=-IYJhuS1rxYdXNGjM5vPJM2Uc_02RtwnkSvbGovTalo,990904
+fathon/ht.cpython-39-x86_64-linux-gnu.so,sha256=J-A9jj3TbwsoguMihsv5w7x2vCYwuKUO9Dx71Yn3EZA,835296
+fathon/dcca.cpython-39-x86_64-linux-gnu.so,sha256=nYKb98kLh055EUuNdODgQA_kMZkOlGXYagfgCHSqfBQ,1613560
+fathon/mfdfa.cpython-39-x86_64-linux-gnu.so,sha256=cseU_mvjvfqAZbNpYlUoGsMKMhsA986gsEjP1qQhmjw,1076976
+fathon/mfdcca.cpython-39-x86_64-linux-gnu.so,sha256=9xvLUtkmwyLEBweNuUPklpajqAktARtz_vaKK6y7zws,1158904
+fathon/__init__.py,sha256=Fdj74nSe883xuSDW2FvXOKXPVRJMFgHMVbEVvFiKoZA,1097
+fathon/fathonUtils.py,sha256=IVBU6I-KBGkuecWH1pWQFiR1qWN3hJZmUaxeyE4GvlU,4609
+fathon.libs/libgslcblas-bc7ec4fa.so.0.0.0,sha256=6nZYaRwOxFqrCoA4wJt9xlUMQKhqoBcvoc9MtALowTU,1424552
+fathon.libs/libgsl-8a91e683.so.27.0.0,sha256=kLshrGBWx96WKfv7fBSgiHYc_BZRwW6ASQaPslhPXvE,15884168
+fathon.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
