@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: async-hcaptcha
+Version: 1.0.0b11
+Summary: Unofficial async wrapper for interacting with hCaptcha
+Home-page: https://github.com/RuslanUC/aio-hcaptcha
+Author: RuslanUC
+License: MIT
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (~=3.8.1)
+Requires-Dist: selenium (~=4.1.5)
+Requires-Dist: hcaptcha-challenger
+
+# AsyncHcaptcha
+
+### Installing
+Python 3.7 or higher and chrome with chromedriver are required
+```sh
+pip install async-hcaptcha
+```
+
+### Example
+```py
+from async_hcaptcha import AioHcaptcha
+from async_hcaptcha.utils import getUrl
+
+async def getAnswers(question, tasklist):
+    from os import makedirs
+    makedirs("captcha_images")
+
+    answers = {}
+
+    tl = {str(i): list(tasklist.keys())[i] for i in range(len(tasklist.keys()))}
+    for i, k in tl.items():
+        with open(f"captcha_images/{i}.jpg", "wb") as f:
+            f.write(await getUrl(tasklist[k], False))
+
+    print(question)
+    print("Answer with true/false or 1/0:")
+
+    for i, uuid in tl.items():
+        ans = input(f"{i}? ").lower()
+        if ans in ("1", "true"):
+            answers[uuid] = "true"
+        else:
+            answers[uuid] = "false"
+    return answers
+
+async def main():
+    solver = AioHcaptcha("a5f74b19-9e45-40e0-b45d-47ff91b7a6c2", "https://accounts.hcaptcha.com/demo",
+                         {"executable_path": "chromedriver.exe"}, getAnswers)
+    resp = await solver.solve()
+    print(resp)
+
+if __name__ == "__main__":
+    from asyncio import get_event_loop
+    get_event_loop().run_until_complete(main())
+
+```
+
+### Automatically solved example
+```py
+from async_hcaptcha import AioHcaptcha
+
+async def main():
+    solver = AioHcaptcha("a5f74b19-9e45-40e0-b45d-47ff91b7a6c2", "https://accounts.hcaptcha.com/demo",
+                         {"executable_path": "chromedriver.exe"})
+    resp = await solver.solve()
+    print(resp)
+
+if __name__ == "__main__":
+    from asyncio import get_event_loop
+    get_event_loop().run_until_complete(main())
+```
+
+### Captcha with rqdata example
+```py
+from async_hcaptcha import AioHcaptcha
+
+async def main():
+    solver = AioHcaptcha("a5f74b19-9e45-40e0-b45d-47ff91b7a6c2", "https://accounts.hcaptcha.com/demo",
+                         {"executable_path": "chromedriver.exe"})
+    resp = await solver.solve(custom_params={"rqdata": "xHJHshn3p71FcYoVCW5zA3m2CFw59JXBecFaR2l90z/NjjoYaXq2FBTi05LPnOX1v/MwStZg9DZKQA4f4ExkDjwlMaS3AKGIrcb2rUKsg8nDI9IaXEFDAhWqvuuCuaW3urxO2J1B/NEkfS938O58cqrE00aPILCQPUHVU1l/Ek8"})
+    print(resp)
+
+if __name__ == "__main__":
+    from asyncio import get_event_loop
+    get_event_loop().run_until_complete(main())
+```
+
+# TODO
+  - Make hsw solving without selenium
+  
+### Async-hcaptcha uses code from [hcaptcha-challenger](https://github.com/QIN2DIM/hcaptcha-challenger/tree/main/src/services/hcaptcha_challenger/solutions) and [py-hcaptcha](https://github.com/AcierP/py-hcaptcha/blob/main/hcaptcha/proofs/hsl.py).
