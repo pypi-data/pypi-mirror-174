@@ -1,0 +1,17 @@
+confluent-kafka[avro]<2,>=1.9
+mmh3
+prometheus_client
+sqlitedict
+
+[dev]
+confluent-kafka[avro]<2,>=1.9
+mmh3
+prometheus_client
+sqlitedict
+pip-tools
+pytest
+pytest-cov
+time-machine
+twine
+sphinx
+sphinx-autodoc-typehints
