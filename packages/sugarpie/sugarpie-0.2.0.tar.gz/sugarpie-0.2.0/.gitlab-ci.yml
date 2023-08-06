@@ -1,0 +1,29 @@
+stages:          # List of stages for jobs, and their order of execution
+  - test
+  - lint
+  - publish
+
+unit-test-job:   # This job runs in the test stage.
+  stage: test
+  image: python:3.9
+  before_script:
+        - pip install pytest
+        - pip install -r requirements.txt
+  script:
+    - pytest tests/helpers.py
+
+lint-job:   # This job runs in the lint stage.
+  stage: lint
+  image: pyfound/black:latest
+  script:
+    - black . --check
+
+publish-job: # This job publishes to pypi
+  stage: publish
+  image: python:3.9
+  before_script:
+        - pip install flit
+  script:
+    - flit publish
+  only:
+  - master
