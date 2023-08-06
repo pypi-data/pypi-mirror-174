@@ -1,0 +1,7 @@
+numba_mpi/__init__.py,sha256=wV_pkLcnE5KJt3Ve_vuIXz4DIzJ3LwR7M7iZdxQ9i5Q,377
+numba_mpi/mpi.py,sha256=V7mWZ9KCHVRXrSHiaXUJhLS2oUqSSXKV5a6ZfD3368o,7882
+numba_mpi-0.18.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+numba_mpi-0.18.dist-info/METADATA,sha256=WguReEI9jCgbGVsDm_a5Fm4rcVlqJfQ-lGNDlHdWBCU,2946
+numba_mpi-0.18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+numba_mpi-0.18.dist-info/top_level.txt,sha256=yb_ktLmrfuhOZS0rjS81FFNC-gK_4c19WbLG2ViP73g,10
+numba_mpi-0.18.dist-info/RECORD,,
