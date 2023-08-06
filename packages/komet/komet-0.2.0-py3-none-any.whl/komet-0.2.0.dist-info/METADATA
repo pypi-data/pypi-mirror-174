@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: komet
+Version: 0.2.0
+Summary: A print package
+Home-page: UNKNOWN
+Author: Sadegh Yazdani
+Author-email: m.s.yazdani85@gmail.com
+License: GPLv3
+Project-URL: Source Code, https://github.com/aerosadegh/komet/
+Keywords: printing
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+License-File: LICENSE
+
+A simple class for print python objects with tails.
+

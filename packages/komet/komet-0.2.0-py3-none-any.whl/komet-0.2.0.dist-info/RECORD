@@ -1,0 +1,12 @@
+komet/__init__.py,sha256=C8Paj7CqDJCyxerFe5cwjEQvCFyd0cBY-TxLgeEyhtU,112
+komet/singleton.py,sha256=hqi_pwdNE_rTBdMr_mQkfZ5xCcbYIBMI7EnbQiJCeNI,1180
+komet/tail.py,sha256=_5R3EM8O-C8mbIHfOhZ8gSZ2VQAs_6yM2O-PKYiZBqU,1950
+komet/version.py,sha256=DQ3W3ucU_A6hWEncc9dQSqNceAhJMoOS1AoZgk_1LBQ,48
+tests/__init__.py,sha256=kofi3QrZepIOa2M0h49Pj6WUITUSuJR_bT0SiKDaXfg,63
+tests/instances.py,sha256=fpzHGlfbYS4EwqSUOiQiQns_tnSfEHc6-dJIQQJVHFE,117
+tests/test_singleton.py,sha256=lWraDb1iWKOatUUCFPy-cysiGn0-3z8cwzwQH9Vdewo,459
+komet-0.2.0.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+komet-0.2.0.dist-info/METADATA,sha256=gmFI5nYu55UALtIChSHT9evYz3E5QdUkVeatZ1dJaMQ,939
+komet-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+komet-0.2.0.dist-info/top_level.txt,sha256=hHO9hBRtQ2hyYAEXe1qFH9HiacWqq8ZhSdsDS0LIlRM,12
+komet-0.2.0.dist-info/RECORD,,
