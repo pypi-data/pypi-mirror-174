@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: hagi
+Version: 0.0.4
+Author-email: Lindasy Zhou <i@lin.moe>
+License: Affero General Public License GPL v3 (AGPLv3)
+Project-URL: Homepage, https://sr.ht/~lindsay/faba
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: faba (>=0.0.3)
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-asyncio ; extra == 'tests'
+
+# Hagi  
+CLI manager inpired by invoke, with type hints and asyncio.  
+
+## Basic Example:
+Create a =tasks.py= file with content: 
+```python
+import sys
+from  hagi import task, Context
+
+@task
+async def hello(c: Context):
+	  "hello to you"
+	  print('hello')
+	  await c.exec('whoami', hide=False)
+```
+
+Then run in shell in the same directory:
+
+````
+lindsay@Reisen> hagi
+Usage:
+ hagi [Command]
+
+Available Commands:
+ hello               hello to you
+
+Flags:
+ -h  --help          	
+lindsay@Reisen> hagi hello
+hello
+lindsay
+````
+## More Details
+https://io.lin.moe/n/prjs/hagi.html
