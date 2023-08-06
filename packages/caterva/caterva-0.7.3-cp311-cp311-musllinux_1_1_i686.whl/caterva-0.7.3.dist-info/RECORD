@@ -1,0 +1,16 @@
+caterva/info.py,sha256=M3PMJwQBGJpLzzH3dV87Pu1ZJPs0ZvAN8JhdYXUPkYk,1491
+caterva/caterva_ext.cpython-311-i386-linux-musl.so,sha256=43qEDWZhSFrXLtuuNPWRSWSOyVovqijMvGHriWqXTEc,2029836
+caterva/utils.py,sha256=48oO57N9Ciiu9FuptjQDQTeVpIQ-pjEtC6XfxxxxmGg,980
+caterva/meta.py,sha256=q10rhHOaC9na9cL8dgAAFYZUE4aQAhdO0kOST5-eaYI,2507
+caterva/constructors.py,sha256=tCAbLM8LGwCcGEpcf-c9pWD8pQOrc_cjihi3SLklQok,6358
+caterva/version.py,sha256=G0rwkDLSytonr7idr8ma7KaTUnRCn3-Ripum70RSeh0,22
+caterva/ndarray.py,sha256=pbK9pSvDJZ7VE0amjxvvyJ915sfQ9eI_Cgj14qUVDpA,5724
+caterva/__init__.py,sha256=zwk5AZgghWzSWqvK1gUFY610VZMkigcaQH7ErA1PD8Q,626
+caterva-0.7.3.dist-info/LICENSE,sha256=8ZJRgpJuhmyYvPpbmggoP5WzOKY9jVgyogKt6BXL2Gk,1705
+caterva-0.7.3.dist-info/top_level.txt,sha256=tRXIiKEfhJtnHvCGJ2t7-uQgQju3w_aCeYj_kNjWkTA,8
+caterva-0.7.3.dist-info/WHEEL,sha256=PvY7NujYOeCW3pj4YSOMS2sYGiLlXwCy0KL9VKzKSyw,105
+caterva-0.7.3.dist-info/RECORD,,
+caterva-0.7.3.dist-info/METADATA,sha256=xGcBktJMerEjvK10YzK4-NF5UuSCrb9P-GL9t0Hg-5g,2230
+caterva-0.7.3.data/data/lib/libcaterva.so,sha256=Ldqk-hhKNf2-okkp54XqC4va6IlxwRd6I_KIUc8tClU,1852900
+caterva-0.7.3.data/data/lib/libcaterva.a,sha256=X_KKT5rgBLVYz3nXvKPP42414Ksp9jd--xOFICxvigY,126740
+caterva-0.7.3.data/data/include/caterva.h,sha256=H5TmVfqDH9gK0bV9d1U3uc_GNZ6POFuJFRaVyH8Uvns,25926
