@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bdnidinfo.egg-info/PKG-INFO
+src/bdnidinfo.egg-info/SOURCES.txt
+src/bdnidinfo.egg-info/dependency_links.txt
+src/bdnidinfo.egg-info/top_level.txt
+src/nidinfo/__init__.py
+src/nidinfo/nid.py
+src/nidinfo/nidinfo.py
