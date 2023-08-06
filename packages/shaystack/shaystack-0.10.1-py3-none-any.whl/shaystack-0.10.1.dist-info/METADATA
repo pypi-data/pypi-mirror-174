@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: shaystack
+Version: 0.10.1
+Summary: Implementation of Haystack Project Specification
+Home-page: https://github.com/engie-group/shaystack
+Author: Philippe PRADOS
+Author-email: support@prados.fr
+License: BSD
+Project-URL: Bug Tracker, https://github.com/engie-group/shaystack/issues
+Project-URL: Documentation, https://engie-group.github.io/shaystack/
+Project-URL: Source Code, https://github.com/engie-group/shaystack
+Keywords: haystack
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown ; charset=UTF-8
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: iso8601 (==0.1.14)
+Requires-Dist: six (~=1.16.0)
+Requires-Dist: accept-types
+Requires-Dist: overrides (==6.0.0)
+Requires-Dist: tzlocal (==2.1)
+Requires-Dist: pint (==0.17)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: python-dateutil (~=2.8.2)
+Provides-Extra: dev
+Requires-Dist: python-dotenv ; extra == 'dev'
+Requires-Dist: zappa (==0.52.0) ; extra == 'dev'
+Requires-Dist: pytype (==2021.5.4) ; extra == 'dev'
+Requires-Dist: ninja ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.1) ; extra == 'dev'
+Requires-Dist: itsdangerous (==2.0.1) ; extra == 'dev'
+Requires-Dist: Jinja2 (<3.1) ; extra == 'dev'
+Requires-Dist: pylint (==2.8.2) ; extra == 'dev'
+Requires-Dist: nose (==1.3.7) ; extra == 'dev'
+Requires-Dist: twine (==3.4.1) ; extra == 'dev'
+Requires-Dist: mock (==4.0.3) ; extra == 'dev'
+Requires-Dist: coverage (==5.5) ; extra == 'dev'
+Requires-Dist: psycopg2 ; extra == 'dev'
+Requires-Dist: PyMySQL (==1.0.2) ; extra == 'dev'
+Requires-Dist: pymongo (==3.11.4) ; extra == 'dev'
+Requires-Dist: pdoc3 (==0.9.2) ; extra == 'dev'
+Requires-Dist: pip-licenses ; extra == 'dev'
+Provides-Extra: flask
+Requires-Dist: flask (==1.1.2) ; extra == 'flask'
+Requires-Dist: flask-cors (==3.0.10) ; extra == 'flask'
+Requires-Dist: itsdangerous (==2.0.1) ; extra == 'flask'
+Requires-Dist: Jinja2 (<3.1) ; extra == 'flask'
+Provides-Extra: graphql
+Requires-Dist: flask (==1.1.2) ; extra == 'graphql'
+Requires-Dist: flask-cors (==3.0.10) ; extra == 'graphql'
+Requires-Dist: graphene (==2.1.8) ; extra == 'graphql'
+Requires-Dist: flask-graphql ; extra == 'graphql'
+Provides-Extra: lambda
+Requires-Dist: flask (==1.1.2) ; extra == 'lambda'
+Requires-Dist: flask-cors (==3.0.10) ; extra == 'lambda'
+Requires-Dist: itsdangerous (==2.0.1) ; extra == 'lambda'
+Requires-Dist: Jinja2 (<3.1) ; extra == 'lambda'
+Requires-Dist: zappa (==0.52.0) ; extra == 'lambda'
+
+Implementation of Haystack Project Specification
+
+
