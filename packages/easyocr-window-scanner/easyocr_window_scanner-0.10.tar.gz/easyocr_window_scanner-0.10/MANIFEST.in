@@ -1,0 +1,4 @@
+include easyocr_window_scanner/requirements.txt
+include easyocr_window_scanner/thirdparty.json
+include easyocr_window_scanner/README.MD
+include easyocr_window_scanner/LICENSE
