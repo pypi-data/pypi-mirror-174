@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+Cloud_data_manage/__init__.py
+Cloud_data_manage/cloud2azure.py
+Cloud_data_manage/onprem_aws.py
+Cloud_data_manage/onprem_azure.py
+Cloud_data_manage/onprem_google.py
+Cloud_data_manage/utils.py
+Cloud_data_manage.egg-info/PKG-INFO
+Cloud_data_manage.egg-info/SOURCES.txt
+Cloud_data_manage.egg-info/dependency_links.txt
+Cloud_data_manage.egg-info/top_level.txt
