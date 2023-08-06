@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lci-sim-app-device
+Version: 0.0.31
+Summary: Sim App Device package
+Home-page: UNKNOWN
+Author: Let's Code It
+Author-email: kontakt@letscode.it
+License: UNKNOWN
+Keywords: python,sim app device,sim,sim app
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7,<3.8
+Requires-Dist: Flask (==1.0.2)
+Requires-Dist: Jinja2 (==2.10)
+Requires-Dist: MarkupSafe (==1.1.0)
+
+Software to run, e.g. on a raspberry pi, to communicate with the SIM800 overlay and connect to the sim-app.ovh controller. Details can be found at https://sim-app.ovh or github.
+
+
