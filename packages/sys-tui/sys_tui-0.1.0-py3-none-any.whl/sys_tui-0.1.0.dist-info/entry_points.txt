@@ -1,0 +1,3 @@
+[console_scripts]
+sys_tui=sys_tui.main:app
+

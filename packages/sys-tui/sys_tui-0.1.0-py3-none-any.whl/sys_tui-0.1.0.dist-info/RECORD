@@ -1,0 +1,13 @@
+sys_tui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sys_tui/__main__.py,sha256=qfTa6AF-_Qc28TlXQrXbKWxQ4R5QBBEFYOnZEHXweeQ,56
+sys_tui/app.py,sha256=CuWbA9nfupbiO-UrwfoDZRC0P8WEbKKsrym0SXCH4RU,703
+sys_tui/main.py,sha256=_yNTS1lT_m1AKXvSUFgmehIRJDsaCFeyAhpsF-QPZUk,222
+sys_tui/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sys_tui/renderables/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sys_tui/views/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sys_tui/widgets/cpu_widget.py,sha256=2mDJZjdfG1QbqxaC4AtT6sYmHDHM9B3LmJ4mRgfidFk,669
+sys_tui-0.1.0.dist-info/entry_points.txt,sha256=5DW0Iq6bYey3D8iDs6JGhp4c4umkq24dAHASdzsULdI,44
+sys_tui-0.1.0.dist-info/LICENSE,sha256=cGPH5LFZq0xIDI9IYAXhgmmIr568-WX-zOOVxhRwXYo,1072
+sys_tui-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+sys_tui-0.1.0.dist-info/METADATA,sha256=t0nj9SYLDI3lM9JxrfSeTg4papx5XM9zVQPE3eWYWZk,1184
+sys_tui-0.1.0.dist-info/RECORD,,
