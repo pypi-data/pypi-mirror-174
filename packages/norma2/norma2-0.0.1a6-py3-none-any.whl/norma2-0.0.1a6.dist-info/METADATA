@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: norma2
+Version: 0.0.1a6
+Summary: check c epitech coding style
+License: MIT
+Author-email: Xavier Mitault <xavier.mitault@epitech.eu>
+Requires-Python: >=3.10
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: markdown>=3.4.1
+Requires-Dist: regex>=2022.9.13
+Requires-Dist: rich-argparse>=0.3.1
+Requires-Dist: rich>=12.6.0
+Description-Content-Type: text/markdown
+
+# normatrix
+
+check c epitech coding style
+
+## Help
+
+![https://github.com/X-R-G-B/norma2/blob/main/assets/images/help.png](https://github.com/X-R-G-B/norma2/blob/main/assets/images/help.png)
+
+# Example
+
+![https://github.com/X-R-G-B/norma2/blob/main/assets/images/run_playground.svg](https://github.com/X-R-G-B/norma2/blob/main/assets/images/run_playground.svg)
+
+```bash
+pdm run norma2 --list-errors
+```
+![https://github.com/X-R-G-B/norma2/blob/main/assets/images/exaample_list_errors.svg](https://github.com/X-R-G-B/norma2/blob/main/assets/images/exaample_list_errors.svg)
+
+```bash
+pdm run norma2 --explain G1
+```
+![https://github.com/X-R-G-B/norma2/blob/main/assets/images/example_explain.svg](https://github.com/X-R-G-B/norma2/blob/main/assets/images/example_explain.svg)
+
+# Install
+
+```bash
+pip install -U norma2
+```
+
+# Usage
+
+```bash
+norma2 --help
+```
+
+# Source
+
+[X-R-G-B/norma2](https://github.com/X-R-G-B/norma2)
+
+
+
+#### Release name
+```
+will follow greek letters: https://en.wikipedia.org/wiki/Greek_alphabet
+```
+
