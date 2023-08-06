@@ -1,0 +1,11 @@
+.vscode/*
+*.asv
+*~
+*.pyc
+*.whl
+.venv/*
+dist
+fpex0.egg-info
+
+# local files
+test.py
