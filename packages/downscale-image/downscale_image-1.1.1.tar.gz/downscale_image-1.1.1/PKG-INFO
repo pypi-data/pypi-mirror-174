@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: downscale-image
+Version: 1.1.1
+Summary: downscale image to desired file size
+Home-page: https://github.com/mshafer1/downscale_image
+License: MIT
+Author: mshafer1
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0)
+Requires-Dist: pathspec (>=0.10.1,<0.11.0)
+Project-URL: Repository, https://github.com/mshafer1/downscale_image
+Description-Content-Type: text/markdown
+
+# downscale_image
+A utility to downscale an image to the desired file size.
+
+Relies on an install of ffmpeg to incrementally downscale the image file into a new file.
+
+This modules provides the script `downscale-image`
+
+```
+> downscale-image --help
+Usage: downscale-image [OPTIONS] IN_FILE
+
+  Downscale in_file to desired max-size.
+
+Options:
+  --max-size INTEGER RANGE   Max output size (in MB)  [default: 2; x>0]
+  --add-to-right-click-menu  (Windows only) Register this program in right
+                             click menu for supported file types.
+  --help                     Show this message and exit.
+```
+
