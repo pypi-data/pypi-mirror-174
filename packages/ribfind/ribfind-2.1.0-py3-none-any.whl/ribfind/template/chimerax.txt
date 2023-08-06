@@ -1,0 +1,15 @@
+# This script will color RIBFIND clusters in ChimeraX
+#
+# To run this script, create a new session in ChimeraX and open this file.
+#
+# Ribfind was run with the following parameters:
+#
+#   Contact distance:  {{data.contact_dist|round(2)}}
+#   Percentage cutoff: {{data.clusters.edge_cutoff * 100.0 |round(2)}}%
+#   Cluster weight: {{data.clusters.weight()|round(2)}}
+open {{data.model}}
+color #1 white ribbons
+{% for atomspec, color in data.cluster_colors() %}
+color {{atomspec}} {{color}} ribbons, atoms
+{% endfor %}
+ 

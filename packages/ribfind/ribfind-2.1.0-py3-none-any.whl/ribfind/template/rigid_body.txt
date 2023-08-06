@@ -1,0 +1,8 @@
+#RIBFIND_clusters: {{data.contact_dist}} {{(data.clusters.edge_cutoff * 100.0)|round(2)}} {{data.clusters.dens_clusters()|count}} {{data.clusters.num_members()}} {{data.clusters.num_models}} {{data.clusters.weight()|round(2)}}
+{%- for cluster in data.clusters.dens_clusters() %}
+{% for c in cluster.get_contigs() %}{{c.start}}:{{c.chain_id}} {{c.stop - 1}}:{{c.chain_id}} {% endfor %}
+{%- endfor %}
+#individual_rigid_bodies {{data.clusters.unclustered()|count}}
+{%- for cluster in data.clusters.unclustered() %}
+{% for c in cluster.get_contigs() %}{{c.start}}:{{c.chain_id}} {{c.stop - 1}}:{{c.chain_id}} {% endfor %}
+{%- endfor %}

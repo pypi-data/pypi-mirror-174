@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ribfind
+Version: 2.1.0
+Summary: Python library for creating rigid bodies
+Home-page: https://gitlab.com/topf-lab/ribfind
+Author: Topf Lab
+Author-email: thomas.mulvaney@cssb-hamburg.de
+License: GPLv3+
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+License-File: COPYING.txt
+Requires-Dist: biopython (>=1.5)
+Requires-Dist: numpy
+Requires-Dist: jinja2
+

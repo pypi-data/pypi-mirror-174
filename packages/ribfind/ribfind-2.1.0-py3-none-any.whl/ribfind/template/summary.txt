@@ -1,0 +1,8 @@
+Summary of RIBFIND clusters for the range of cutoffs
+% cutoff        # clusters      # clustered SSEs      Cluster weight
+{%- for c in data.solutions %}
+{{"%-16.2f" |format(c.edge_cutoff * 100.0)}}
+{{-"%-16d"  |format(c.num_clusters())}}
+{{-"%-22d"  |format(c.num_members())}}
+{{-"%.2f"|format(c.weight())}}
+{%- endfor %}
