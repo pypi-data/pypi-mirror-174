@@ -1,0 +1,5 @@
+[console_scripts]
+dime = dimples.edge.start:main
+dimid = dimples.mkm.register:main
+dims = dimples.station.start:main
+
