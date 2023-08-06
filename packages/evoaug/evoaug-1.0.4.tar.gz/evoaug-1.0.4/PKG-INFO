@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: evoaug
+Version: 1.0.4
+Summary: A Python package that trains models with evolution-inspired data augmentations. 
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
