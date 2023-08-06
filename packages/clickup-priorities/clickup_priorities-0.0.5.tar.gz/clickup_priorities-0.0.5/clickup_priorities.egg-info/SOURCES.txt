@@ -1,0 +1,9 @@
+README.md
+setup.py
+clickup_priorities/__init__.py
+clickup_priorities/funciones.py
+clickup_priorities.egg-info/PKG-INFO
+clickup_priorities.egg-info/SOURCES.txt
+clickup_priorities.egg-info/dependency_links.txt
+clickup_priorities.egg-info/requires.txt
+clickup_priorities.egg-info/top_level.txt
