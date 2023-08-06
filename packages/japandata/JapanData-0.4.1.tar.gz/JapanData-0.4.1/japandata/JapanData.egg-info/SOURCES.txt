@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+japandata/JapanData.egg-info/PKG-INFO
+japandata/JapanData.egg-info/SOURCES.txt
+japandata/JapanData.egg-info/dependency_links.txt
+japandata/JapanData.egg-info/requires.txt
+japandata/JapanData.egg-info/top_level.txt
