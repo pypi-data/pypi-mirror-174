@@ -1,0 +1,8 @@
+dns_mollusc/__init__.py,sha256=uYvbKZyORSa_N8IJ6P6TXNJJK0oEQElJPKXar2zx9s8,35
+dns_mollusc/client.py,sha256=OcktgRR2vqOt5pXc8Qor7jaNt2yu68GdaJLX1PtmUbA,1419
+dns_mollusc/response.py,sha256=3vdVEPlECbjZ_3kCJ54JdE066E6CbWr0Di4j1tWGm1Q,1016
+dns_mollusc-0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dns_mollusc-0.2.dist-info/METADATA,sha256=TPWPAlwZZ15K0hsnISZQK6HpPzAL8Y3J_BQusAKyRHw,4469
+dns_mollusc-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dns_mollusc-0.2.dist-info/top_level.txt,sha256=S0net4-0w-q59k1VyBUBe06Tv8uccFifns1OsBsFqec,12
+dns_mollusc-0.2.dist-info/RECORD,,
