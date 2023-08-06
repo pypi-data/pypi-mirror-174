@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: knowlexp
+Version: 0.0.1
+Summary: Knowledge exploration with NLP
+Home-page: https://github.com/Davegdd/knowlexp
+Author: Dave Dominguez
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: Python,NLP,Spacy,Haystack,knowledge,papers
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+
+Python package geared towards extracting knowledge from PDF documents (specially papers) using Spacy and Haystack amongst others. Guides and examples available at https://github.com/Davegdd/knowlexp (manually install dependencies farm-haystack and PyMuPDF to use this package). 
+
+
