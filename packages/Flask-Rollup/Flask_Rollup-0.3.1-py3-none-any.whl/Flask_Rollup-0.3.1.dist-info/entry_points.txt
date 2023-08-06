@@ -1,0 +1,2 @@
+[flask.commands]
+rollup = flask_rollup.cli:rollup_grp
