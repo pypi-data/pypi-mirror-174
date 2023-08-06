@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Clash-of-Clans-API/__init__.py
+Clash-of-Clans-API/main.py
+Clash-of-Clans-API/request.py
+clashofclans_api.egg-info/PKG-INFO
+clashofclans_api.egg-info/SOURCES.txt
+clashofclans_api.egg-info/dependency_links.txt
+clashofclans_api.egg-info/requires.txt
+clashofclans_api.egg-info/top_level.txt
