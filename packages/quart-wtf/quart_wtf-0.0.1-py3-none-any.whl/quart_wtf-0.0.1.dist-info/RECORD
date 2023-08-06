@@ -1,0 +1,10 @@
+quart_wtf/__init__.py,sha256=7Izz1ru65RHhmXTYuzrG1q3WcCuHb0GmcyVEY2c-984,141
+quart_wtf/const.py,sha256=8nrT3rJqVY5TttA4Cv1dJE1QI8bi2H07Ig0At-jdBO4,960
+quart_wtf/csrf.py,sha256=R0PETRadPugg1SXMewXZcM9N6NfcypeuGx3KhK5fkM0,5646
+quart_wtf/file.py,sha256=555yj-His9lms1x6Ymdgut5iSk8EpIlREljaxiu4Vxs,3579
+quart_wtf/form.py,sha256=IoWP5MrZ8aiZYhx8sHM9RgTYQOzR7Sz2f3oZhuQ7sfw,5461
+quart_wtf/meta.py,sha256=ZRV_R1pgsr5nXhneZcjOx5kUZvZvh1tkGVKJDNwypkI,2332
+quart_wtf/utils.py,sha256=8aJMG872pbk9iumeZ2X2CAeMCmpW0TwiI0bEztVy2-A,6374
+quart_wtf-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+quart_wtf-0.0.1.dist-info/METADATA,sha256=_zILC0GY59x21WDzfZtc8opALsNieXCyoO2w4xXhvcM,1449
+quart_wtf-0.0.1.dist-info/RECORD,,
