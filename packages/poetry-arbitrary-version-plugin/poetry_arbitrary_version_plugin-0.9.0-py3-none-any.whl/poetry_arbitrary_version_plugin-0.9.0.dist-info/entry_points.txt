@@ -1,0 +1,3 @@
+[poetry.application.plugin]
+poetry-arbitrary-version-plugin=poetry_arbitrary_version_plugin.plugin:ArbitraryVersionPlugin
+
