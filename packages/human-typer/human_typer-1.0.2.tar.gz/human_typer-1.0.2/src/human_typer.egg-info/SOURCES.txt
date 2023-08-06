@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/human_typer/__init__.py
+src/human_typer/human_typer.py
+src/human_typer/keyboard_helper.py
+src/human_typer.egg-info/PKG-INFO
+src/human_typer.egg-info/SOURCES.txt
+src/human_typer.egg-info/dependency_links.txt
+src/human_typer.egg-info/top_level.txt
