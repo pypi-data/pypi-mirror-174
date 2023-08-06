@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "squaredown"
+version = "1.2.0"
+description = "Customized Square interface"
+authors = ["Jason Romano <aracnid@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/aracnid/aracnid-config"
+keywords = ["python", "square", "mongodb"]
+packages = [{include = "squaredown"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aracnid-config = "^1.0"
+aracnid-logger = "^1.0"
+aracnid-utils = "^1.0"
+i-mongodb = "^1.0"
+squareup = "^19.1"
+tqdm = "^4.64"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15"
+pytest = "^7.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-p no:warnings"
+log_cli = true
+log_cli_level = "DEBUG"
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = "logging-fstring-interpolation"
