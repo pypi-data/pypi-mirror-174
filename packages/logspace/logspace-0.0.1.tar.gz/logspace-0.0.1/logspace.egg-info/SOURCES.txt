@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+logspace/__init__.py
+logspace.egg-info/PKG-INFO
+logspace.egg-info/SOURCES.txt
+logspace.egg-info/dependency_links.txt
+logspace.egg-info/top_level.txt
