@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+argo-workflows = ">=3.5,<4"
+daiquiri = "*"
+requests = "*"
+sentry-sdk = "*"
+kubernetes = "~=11.0.0"  # https://github.com/thoth-station/common/issues/1273
+openshift = "==0.11.0"
+pyyaml = ">=5.3.1"
+flexmock = "*"
+jsonformatter = "*"
+attrs = "==22.1.0" # if updated, change mypy.ini config file
+
+[dev-packages]
+pytest = "*"
+pytest-timeout = "*"
+pytest-cov = "*"
+pylint = "*"
+coala = "*"
+pytest-mypy = "*"
+mypy = "*"
+pre-commit = "==2.15.0"
+
+[requires]
+python_version = "3.8"
