@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pywash/__init__.py
+pywash/app.py
+pywash.egg-info/PKG-INFO
+pywash.egg-info/SOURCES.txt
+pywash.egg-info/dependency_links.txt
+pywash.egg-info/top_level.txt
