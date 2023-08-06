@@ -1,0 +1,10 @@
+setup.py
+src/apps/__init__.py
+src/apps/debug/__init__.py
+src/apps/debug/iris_adapter.py
+src/apps/debug/test_db_connection.py
+src/nt3irisadapter.egg-info/PKG-INFO
+src/nt3irisadapter.egg-info/SOURCES.txt
+src/nt3irisadapter.egg-info/dependency_links.txt
+src/nt3irisadapter.egg-info/requires.txt
+src/nt3irisadapter.egg-info/top_level.txt
