@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "falcon-sandbox"
+version = "2.0.0"
+authors = [
+  { name="John Davison & Sean McFeely"},
+  { name="Sean McFeely", email="mcfeelynaes@gmail.com"}
+]
+maintainers = [
+    { name="Kien Pham", email="kienpham16496@gmail.com"},
+    { name="Sean McFeely", email="mcfeelynaes@gmail.com"}
+]
+description = "Python client library and command line tool for the [Falcon Sandbox API](https://www.crowdstrike.com/products/threat-intelligence/falcon-sandbox-malware-analysis/)."
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Information Technology",
+        "Intended Audience :: Telecommunications Industry",
+        "Operating System :: OS Independent",
+        "License :: OSI Approved :: Apache Software License",
+        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+]
+keywords = ["Information Security", "Malware Analysis"]
+dependencies = [
+    "crowdstrike-falconpy", "coloredlogs"
+]
+license = {text = "Apache-2.0"}
+
+
+[project.urls]
+"Homepage" = "https://github.com/ace-ecosystem/falcon-sandbox"
+"Bug Tracker" = "https://github.com/ace-ecosystem/falcon-sandbox/issues"
+
+[project.scripts]
+falcon-sandbox = "falcon_sandbox.cli:main"

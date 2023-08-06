@@ -1,0 +1,2 @@
+[console_scripts]
+falcon-sandbox = falcon_sandbox.cli:main
