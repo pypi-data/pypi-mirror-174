@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: znlib
+Version: 0.1.0
+Summary: 
+License: Apache-2.0
+Author: zincwarecode
+Author-email: zincwarecode@gmail.com
+Requires-Python: >=3.8,<4.0.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: atomistic
+Provides-Extra: zntrack
+Requires-Dist: ase (>=3.22.1,<4.0.0); extra == "atomistic"
+Requires-Dist: colorama (>=0.4.5,<0.5.0)
+Requires-Dist: matplotlib (>=3.6.1,<4.0.0); extra == "zntrack"
+Requires-Dist: zntrack (>=0.4.3,<0.5.0); extra == "zntrack" or extra == "atomistic"
+Project-URL: repository, https://github.com/zincware/znlib
+Description-Content-Type: text/markdown
+
+# znlib
+This package provides you with a CLI to list your installed zincware libraries.
+
+When installing via `pip install znlib[zntrack]` your output should look something like:
+
+```
+>>> znlib
+Available zincware packages:
+  ✓  znlib       (0.1.0)
+  ✓  zntrack     (0.4.3)
+  ✗  mdsuite 
+  ✓  znjson      (0.2.1)
+  ✓  zninit      (0.1.1)
+  ✓  dot4dict    (0.1.1)
+  ✗  znipy 
+  ✗  supercharge 
+  ✗  znvis 
+  ✗  symdet 
+```
+
+Furthermore, `znlib` provides you with some example [ZnTrack](https://github.com/zincware/ZnTrack) Nodes.
+
+```python
+from znlib.examples import MonteCarloPiEstimator
+
+mcpi = MonteCarloPiEstimator(n_points=1000).write_graph(run=True)
+print(mcpi.load().estimate)
+>>> 3.128
+```
+
+The idea of the `znlib` package is to provide a collection of [ZnTrack](https://github.com/zincware/ZnTrack) Nodes from all different fields of research.
+Every contribution is very welcome.
+For new Nodes:
+1. Fork this repository.
+2. Create a file under the directory `znlib/examples`
+3. Make a Pull request.
+
+

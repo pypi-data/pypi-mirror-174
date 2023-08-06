@@ -1,0 +1,3 @@
+[console_scripts]
+znlib=znlib.cli:znlib_status
+
