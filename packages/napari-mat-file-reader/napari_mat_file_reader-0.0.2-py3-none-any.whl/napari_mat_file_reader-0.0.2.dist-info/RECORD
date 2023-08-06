@@ -1,0 +1,13 @@
+napari_mat_file_reader/__init__.py,sha256=lfMynjwoOk7YXJWyZ9kP4d1CAmkICmqb6RbXdjisSLw,173
+napari_mat_file_reader/_reader.py,sha256=w05yyFOVqpDjuksT7KzRFEwq57EsSBoklUDKh-PjJRI,2596
+napari_mat_file_reader/_sample_data.py,sha256=xH1frjJRRlEdtBxJsebIYJ1FHq1hN53bMlL_--HaYfE,644
+napari_mat_file_reader/napari.yaml,sha256=QlC70ErJKHxCGlDW3Xqk6NkzT82p1VeQaGbUqAGLSlk,700
+napari_mat_file_reader/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_mat_file_reader/_tests/test_reader.py,sha256=2yCg532IK50jwm8t_ODbH4yrB_cmFiq7KRCPtR9I56Y,984
+napari_mat_file_reader/_tests/test_sample_data.py,sha256=9BFrQeLEgKczp2FHJCw0snVfkcasrD-YvlPuZhq9MHg,113
+napari_mat_file_reader-0.0.2.dist-info/LICENSE,sha256=RzBFn9FMsnRY6Kqf6Om_RWs4M_YfboQpjUMfHhl5Qu4,1486
+napari_mat_file_reader-0.0.2.dist-info/METADATA,sha256=S1n6zU73s6XidRP2FZQPeqitA_XN0KTqWwxCW6KsigA,4243
+napari_mat_file_reader-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_mat_file_reader-0.0.2.dist-info/entry_points.txt,sha256=DEHvtnSK53cSdmBN0YfPZ6XwpF6SMsa162y9FbU6-qw,78
+napari_mat_file_reader-0.0.2.dist-info/top_level.txt,sha256=WiAKLMPgv6l41FNCNWa8Hp7EVGxPwlvfVxfbxK6x6dw,23
+napari_mat_file_reader-0.0.2.dist-info/RECORD,,
