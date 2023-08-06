@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+autoRSA/__init__.py
+autoRSA.egg-info/PKG-INFO
+autoRSA.egg-info/SOURCES.txt
+autoRSA.egg-info/dependency_links.txt
+autoRSA.egg-info/requires.txt
+autoRSA.egg-info/top_level.txt
