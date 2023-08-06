@@ -1,0 +1,8 @@
+_miniaudio.abi3.so,sha256=LMD-25OypBlHUuG6IPvu6P6yaLRhtNg4ZMztsY7KqSY,1568828
+_miniaudio.pypy37-pp73-i686-linux-gnu.so,sha256=EQ-R-tOXGBy-cB8n0bvguz_3cV6Npky18X2m3DWxCxs,1423636
+miniaudio.py,sha256=i3vra4Q36UoO4C0zZturMfE5BXhisb7ouIgTg1Ywm_U,80433
+miniaudio-1.53.dist-info/LICENSE,sha256=Pnk9cD2gihKlAf9ufVdn0K-a2qQjFUdVMAry_Nurdnc,1166
+miniaudio-1.53.dist-info/top_level.txt,sha256=j-ISYLrKWmyaoUOv7CUDQdrK0m6mk4NnIWgWgNlI-g4,21
+miniaudio-1.53.dist-info/WHEEL,sha256=De1N-ea2Vz3vNq-t6d3wOP0DRSx62mzDcHDc-VrBaKc,158
+miniaudio-1.53.dist-info/RECORD,,
+miniaudio-1.53.dist-info/METADATA,sha256=tqzgK2EdpfaTSapIE-Z6q0PEsaEmX1OycwKEV-1YbmE,23951
