@@ -1,0 +1,12 @@
+
+[:platform_python_implementation == "CPython" and (platform_machine == "x86_64" or platform_machine == "AMD64")]
+isal>=1.0.0
+
+[:python_version < "3.8"]
+typing_extensions
+
+[dev]
+pytest
+
+[zstd]
+zstandard<1
