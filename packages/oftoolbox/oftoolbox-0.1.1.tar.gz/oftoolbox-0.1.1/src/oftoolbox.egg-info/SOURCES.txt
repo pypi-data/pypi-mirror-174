@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+src/oftoolbox/__init__.py
+src/oftoolbox/listmanipulation.py
+src/oftoolbox/test.py
+src/oftoolbox/ux.py
+src/oftoolbox.egg-info/PKG-INFO
+src/oftoolbox.egg-info/SOURCES.txt
+src/oftoolbox.egg-info/dependency_links.txt
+src/oftoolbox.egg-info/top_level.txt

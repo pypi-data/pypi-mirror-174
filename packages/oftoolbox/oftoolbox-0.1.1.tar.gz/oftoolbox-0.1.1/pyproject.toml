@@ -1,0 +1,15 @@
+[project]
+name = "oftoolbox"
+version = "0.1.1"
+authors = [
+  { name="Tobias Offermann", email="tobi.offermann@gmx.de" },
+]
+description = "A small example package"
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
