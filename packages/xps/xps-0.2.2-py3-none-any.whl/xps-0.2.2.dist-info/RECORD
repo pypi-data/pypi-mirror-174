@@ -1,0 +1,12 @@
+xps/__init__.py,sha256=a03ALMLeuTrjqO8oZGcT7KClQj2PndKWN9xcgbcWkfA,389
+xps/parser.py,sha256=ModWq3gkaE1HmGjlTiXRNH82LO_eWxDotqv9JhG_mEU,4010
+xps/sfwagner.py,sha256=ALpSGfWA1TiX3-ebGNn_H_JtH13We8GtfCH4bzbfvi4,3294
+xps/xps.py,sha256=5Qf6e_Y88rr39fUMVMyYtojVL3PfofQqV5Xz1HfIAeE,7146
+xps/data/COPYRIGHT,sha256=4R-45kd3-h87d06Asa00L46CSM579c-X4yGict0yjMM,1095
+xps/data/sfwagner.db,sha256=37NeSoD9zEO5d3ky-Bpk05fGvIg7c8Zmm7FNEzkkWHo,16384
+xps/scatter/__init__.py,sha256=bvyIy7gn4n3106WknQdt1J6eH8rB_SjcfwQeapP77BA,177
+xps/scatter/imfp.py,sha256=60W2ZA0uTE6AbKoPULCNxJzweWSaJti6_AFcfNhehBw,2468
+xps-0.2.2.dist-info/METADATA,sha256=5tGD3USCIRcFv4SKF91yvh-gTW7B5w6TqezadpFY99s,5321
+xps-0.2.2.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+xps-0.2.2.dist-info/licenses/LICENSE,sha256=iS3EEH1jqjAYnqiDzK_hw9IkrAmJfalmu-JfYzxXZfA,1432
+xps-0.2.2.dist-info/RECORD,,
