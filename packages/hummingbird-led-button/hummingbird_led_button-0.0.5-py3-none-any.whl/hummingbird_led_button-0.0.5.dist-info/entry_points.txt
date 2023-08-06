@@ -1,0 +1,2 @@
+[console_scripts]
+hummingbird-led-button = hummingbird_led_button.cli:main
