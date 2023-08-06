@@ -1,0 +1,25 @@
+# Settings for featureimportance.py
+
+# Input data path
+inpath: tests
+
+# File name with soil data and corresponding covariates
+infname: SyntheticData_quadratic_8nfeatures_0.1noise.csv
+
+# Output results path
+outpath: test_featureimportance
+
+# Name of target for prediction (column name in dataframe)
+name_target: Ytarget
+
+# Name or List of features (column names in infname)
+# (covariates to be considered )
+name_features: 
+- Feature_1
+- Feature_2
+- Feature_3
+- Feature_4
+- Feature_5
+- Feature_6
+- Feature_7
+- Feature_8
