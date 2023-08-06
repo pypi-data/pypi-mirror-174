@@ -1,0 +1,5 @@
+certifi
+frozendict>=2.0.3
+python-dateutil
+typing_extensions
+urllib3>=1.15
