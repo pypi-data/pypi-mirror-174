@@ -1,0 +1,10 @@
+README.md
+setup.py
+scip_routing/__init__.py
+scip_routing/pricing.py
+scip_routing/solver.py
+scip_routing.egg-info/PKG-INFO
+scip_routing.egg-info/SOURCES.txt
+scip_routing.egg-info/dependency_links.txt
+scip_routing.egg-info/requires.txt
+scip_routing.egg-info/top_level.txt
