@@ -1,0 +1,13 @@
+README.md
+setup.py
+PolCurveFit/DataImport.py
+PolCurveFit/__init__.py
+PolCurveFit/forward.py
+PolCurveFit/polcurvefit.py
+PolCurveFit.egg-info/PKG-INFO
+PolCurveFit.egg-info/SOURCES.txt
+PolCurveFit.egg-info/dependency_links.txt
+PolCurveFit.egg-info/requires.txt
+PolCurveFit.egg-info/top_level.txt
+PolCurveFit/data/example_nova.txt
+PolCurveFit/data/example_txt.txt
