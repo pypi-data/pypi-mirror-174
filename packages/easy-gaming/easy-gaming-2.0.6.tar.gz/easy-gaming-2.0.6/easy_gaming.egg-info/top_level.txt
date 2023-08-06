@@ -1,0 +1,3 @@
+autoChat
+autoClicker
+autoPos
