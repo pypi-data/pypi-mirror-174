@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+pyproject.toml
+imdb/__init__.py
+imdb/imdb.py
+tdm_lmilewsk.egg-info/PKG-INFO
+tdm_lmilewsk.egg-info/SOURCES.txt
+tdm_lmilewsk.egg-info/dependency_links.txt
+tdm_lmilewsk.egg-info/requires.txt
+tdm_lmilewsk.egg-info/top_level.txt
