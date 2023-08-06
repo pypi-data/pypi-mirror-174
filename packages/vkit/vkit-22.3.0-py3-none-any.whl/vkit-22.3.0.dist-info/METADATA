@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: vkit
+Version: 22.3.0
+Summary: In Pursuit Of The Best Synthetic Data Generation
+Home-page: https://github.com/vkit-x/vkit
+Author: Hunt Zhan
+Author-email: huntzhan@vkit-x.com
+License: Dual-licensed
+Requires-Python: <3.11,>=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: LICENSE_COMMERCIAL.txt
+License-File: LICENSE_SSPL.txt
+Requires-Dist: pyclipper (>=1.2.1)
+Requires-Dist: Shapely (<2.0,>=1.8.1)
+Requires-Dist: scikit-learn (>=1.0.1)
+Requires-Dist: intervaltree (>=3.0.0)
+Requires-Dist: pytz (>=2021.3)
+Requires-Dist: Faker (>=13.3.1)
+Requires-Dist: freetype-py (>=2.1.0)
+Requires-Dist: python-barcode (>=0.14.0)
+Requires-Dist: rectpack (~=0.2.2)
+Requires-Dist: psutil (>=5.9.1)
+Requires-Dist: attrs (>=21.3.0)
+Requires-Dist: cattrs (>=22.1.0)
+Requires-Dist: fireball (>=0.9.3)
+Requires-Dist: iolite (>=22.2.0)
+Requires-Dist: opencv-python-headless (>=4.5.1.48) ; python_version < "3.10"
+Requires-Dist: numpy (>=1.21.0) ; python_version < "3.10"
+Requires-Dist: Pillow (>=8.0.0) ; python_version < "3.10"
+Requires-Dist: opencv-python-headless (>=4.5.4.58) ; python_version >= "3.10"
+Requires-Dist: numpy (>=1.21.2) ; python_version >= "3.10"
+Requires-Dist: Pillow (>=8.3.2) ; python_version >= "3.10"
+Provides-Extra: dev
+Requires-Dist: build (>=0.2.1) ; extra == 'dev'
+Requires-Dist: pytest (<7.2.0,>=6.1.2) ; extra == 'dev'
+Requires-Dist: pytest-parallel (>=0.1.1) ; extra == 'dev'
+Requires-Dist: yapf (>=0.30.0) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.8.4) ; extra == 'dev'
+Requires-Dist: twine (>=3.2.0) ; extra == 'dev'
+Requires-Dist: ipython (>=7.20.0) ; extra == 'dev'
+Requires-Dist: pdbpp (>=0.10.2) ; extra == 'dev'
+Requires-Dist: rope (>=0.18.0) ; extra == 'dev'
+Requires-Dist: pdoc (>=12.2.0) ; extra == 'dev'
+
+# Overview
+
+## Introduction
+
+<div align="center">
+
+<img alt="logo.svg" width="230" src="https://vkit-logo.vkit-x.com/img/logo.svg" />
+
+[![License](https://img.shields.io/badge/License-Commercial%20or%20SSPL-green?color=2fbf43?link=https://github.com/vkit-x/vkit/blob/master/LICENSE.txt)](https://github.com/vkit-x/vkit/blob/master/LICENSE.txt)
+[![(Procedure) Test every hour](https://github.com/vkit-x/vkit/actions/workflows/procedure-test-every-hour.yaml/badge.svg)](https://github.com/vkit-x/vkit/actions/workflows/procedure-test-every-hour.yaml)
+
+</div>
+
+**NOTICE: Documentation will be updated in version `22.3.1`.**
