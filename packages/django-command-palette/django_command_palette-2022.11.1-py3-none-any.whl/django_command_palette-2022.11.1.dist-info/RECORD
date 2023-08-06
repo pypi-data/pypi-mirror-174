@@ -1,0 +1,13 @@
+palette/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+palette/admin.py,sha256=8mN5wW901xgvXGLX8EoWRsTMmcgZNZk_8VFic207oXE,773
+palette/apps.py,sha256=_Acc5SMd1ZJhkrbYI9ce0dWaMFW_L0WXgnOCO05qz9k,289
+palette/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+palette/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+palette/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+palette/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+palette/static/admin/palette.js,sha256=pAXL7A-z4KL5gJOSBStOWZ2fONTY3pgul5vjuWgKdeo,4840
+palette/templates/admin/base.html,sha256=akMq_qIt77X6mR6NhhR-144Z7GXWzOFGkdqh-HCuGm8,2018
+django_command_palette-2022.11.1.dist-info/METADATA,sha256=5UkOw30XKhMjICbYlCuthshy6wU_Z5bTGwBuy_j12sQ,919
+django_command_palette-2022.11.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_command_palette-2022.11.1.dist-info/top_level.txt,sha256=rTYr4AdDRzX3kFOOBCO4F_yTW1Az-Dpy5xLLDzHESuM,8
+django_command_palette-2022.11.1.dist-info/RECORD,,
