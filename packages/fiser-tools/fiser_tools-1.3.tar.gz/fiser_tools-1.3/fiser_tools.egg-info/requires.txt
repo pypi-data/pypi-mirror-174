@@ -1,0 +1,8 @@
+pandas
+matplotlib
+seaborn
+numpy
+plotly
+kaleido
+yellowbrick
+sklearn
