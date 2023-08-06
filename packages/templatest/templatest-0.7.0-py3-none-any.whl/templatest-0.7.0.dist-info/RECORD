@@ -1,0 +1,11 @@
+templatest/__init__.py,sha256=FKghRPGKhtXNRFyI5vQ7QIlX12q70Sx_wzFy-pjCwDE,276
+templatest/_abc.py,sha256=ukBChs-TGDLBWqOLBu7Et0SHTAzGFSnv_6ZI20H2D_g,2015
+templatest/_collections.py,sha256=a6DRuWUiEdd4RhHejhAMYoFEIp_i15fbcLj6V26t1vg,837
+templatest/_objects.py,sha256=JCXk46I22vAN4UF1Dh7LtVM3Y6TjGdbPknA00qI66qk,2502
+templatest/exceptions.py,sha256=P_QHDUi2REH58pO4Fet2ozWvQACqtluGY7zbSH1_f1o,667
+templatest/templates.py,sha256=FBcw8utVF6wwSUI7yrszw9ELdpQolDBHhshrKiKW3Rw,1250
+templatest/utils.py,sha256=_rDHNpCy4Rsdx3DfYGh1LXQBmocX_zDJdxKPYgrNkGU,4978
+templatest-0.7.0.dist-info/LICENSE,sha256=0lBh_Imko5b-MI52fUxolUYRKtbXg0DIpci3WDu2mzo,1073
+templatest-0.7.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+templatest-0.7.0.dist-info/METADATA,sha256=Ns5DdCjiqlQc5NURlXWNkRjamCtIgUHgj4F6Lyht_3s,6583
+templatest-0.7.0.dist-info/RECORD,,
