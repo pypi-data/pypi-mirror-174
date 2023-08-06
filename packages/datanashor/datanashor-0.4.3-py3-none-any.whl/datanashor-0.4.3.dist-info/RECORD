@@ -1,0 +1,13 @@
+datanashor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datanashor/client.py,sha256=25Nv0y0bMthOBHwg8jkD6mrqMHIxYAfCBKvMiVHA638,1210
+datanashor/metadata.py,sha256=fuU1T8CxE-uokIrQJVOaDiH5Nb8V8SweU4yoUJwiuO4,1843
+datanashor/parser.py,sha256=2VOjc_nYirTniBQUBKRnfxkBBKOYCknSs7D4ctppFic,9076
+datanashor/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datanashor/utils/calc_gold.py,sha256=tfUVFYT2VHXC4FWiKu7BlndlRyV0zaKW9td_10aTLaU,953
+datanashor/utils/item_patch_parser.py,sha256=DI6nvXUKsL38GDerHJawueKDE-w_PbW1RZrN1OuPH5Y,1235
+datanashor/utils/send_serial.py,sha256=PS0XY8PBbWJSF_ky8lJhlKk2pWU7NF5HJ41vr2aSOhY,397
+datanashor-0.4.3.dist-info/LICENSE,sha256=1fzTN3TjwcIGZbXZKOLPfseix4i8hJNZ_uuek5j1KMM,1082
+datanashor-0.4.3.dist-info/METADATA,sha256=G8Cel-sf2DYJ4YrNA3tL_Enkm_KmpYY7Sn4Ju3EILP8,1421
+datanashor-0.4.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datanashor-0.4.3.dist-info/top_level.txt,sha256=0Bh7Tgq_drylXPQquxVF5dyyLTi1bdZ0slhoLi90XRE,11
+datanashor-0.4.3.dist-info/RECORD,,
