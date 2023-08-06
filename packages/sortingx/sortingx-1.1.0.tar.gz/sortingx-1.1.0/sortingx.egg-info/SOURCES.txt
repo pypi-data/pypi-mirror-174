@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+sortingx/__init__.py
+sortingx/_typing.py
+sortingx/_utils.py
+sortingx/sorting.py
+sortingx.egg-info/PKG-INFO
+sortingx.egg-info/SOURCES.txt
+sortingx.egg-info/dependency_links.txt
+sortingx.egg-info/not-zip-safe
+sortingx.egg-info/top_level.txt
