@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+1.0.9
+-----
+
+* fix apk install when version\_name has cn name
+* Bugfix: Fix utf-8 encoding command sending
+* add examples of adb-reset
+* update typing
+* update doc
+* fix wheel platform tag
+* change to adb push on windows
+* fix #48
+* support linux wheel build
+* fix merge
