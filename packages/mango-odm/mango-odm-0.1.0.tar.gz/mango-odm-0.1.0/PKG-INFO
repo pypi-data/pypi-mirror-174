@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mango-odm
+Version: 0.1.0
+Summary: 🥭 Async MongoDB ODM with type hints in Python
+Home-page: https://github.com/A-kirami/mango
+License: MIT
+Author: Akirami
+Author-email: Akiramiaya@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: motor (>=3.0.0,<4.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Project-URL: Repository, https://github.com/A-kirami/mango
+Description-Content-Type: text/markdown
+
+# Mango
+
