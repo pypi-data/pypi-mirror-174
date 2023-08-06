@@ -1,0 +1,8 @@
+Release/filter.cp310-win_amd64.pyd,sha256=VE6Q2fv5JH9TlzTk_WTxQVQy9ytqnScPvGcIRE73pYQ,448512
+cnkalman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cnkalman/codegen.py,sha256=AwTMX3GyqaYux4Xqrwls5-EAD_O0mQJOThbWs9L3ckg,44083
+cnkalman-0.1.12.dist-info/LICENSE,sha256=RTYbdBwFj0eEyggD_52x_3CxyXjos1JIRNYo0SEENJg,1135
+cnkalman-0.1.12.dist-info/METADATA,sha256=GeaVCbtp8FawBwt7JTcpKnIRY0U5QvizFJN5fnfbALo,6117
+cnkalman-0.1.12.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+cnkalman-0.1.12.dist-info/top_level.txt,sha256=J-Ap0lun5YYk_mYcHBjfjytTMm2pS2GYCoTJtNTU8_4,10
+cnkalman-0.1.12.dist-info/RECORD,,
