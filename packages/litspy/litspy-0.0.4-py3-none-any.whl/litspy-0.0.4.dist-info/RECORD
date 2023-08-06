@@ -1,0 +1,16 @@
+litspy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+litspy/__main__.py,sha256=6ozxHZWqYORguiYfMuMv5kGQ9yA4k-GyghTYWCD92OE,27953
+litspy/alternative_characters.py,sha256=5uOpbkt-SYJtDTs5WiRlCvVcKJ02KbWWA4-P9STcats,1375
+litspy/anatomy_qualifiers.py,sha256=oe4DRGTY_0DYooHJZRxwGSfGckaMcuqY5GchxTAD62A,7081
+litspy/create_html.py,sha256=19ZAhyPOTTXLo62Kl6pROpKA7cKy6FS3fb1BSlNvB6I,14831
+litspy/epmc_query.py,sha256=nRF27RHPHQB9ffPElwl0f8LIKHoj5bzX6R12yEQRsZU,61289
+litspy/get_synonyms.py,sha256=ePdY9OU5-rqDKWjPxvha4aGZhYk608rEPSLPuS3YEV8,39359
+litspy/input_args.py,sha256=StCvPXCpUv7kh2qNmk7Kzvbg31n7zx_f5ZrEOLyCUMk,25742
+litspy/logger.py,sha256=v32aNM9lnbOxtzjyM4J07LtzMwVl2afSOWFG_oQpy50,6378
+litspy/noisy_phrases.py,sha256=iAXZ0Ua5Kk-dGAIUHV4pVPGxQhN-DvC4TnFtJZj8Y0A,14533
+litspy-0.0.4.data/scripts/__main__.py,sha256=6ozxHZWqYORguiYfMuMv5kGQ9yA4k-GyghTYWCD92OE,27953
+litspy-0.0.4.dist-info/LICENCE.txt,sha256=zIaHx_rOy10zxmbwXnKXFgbrb-riKXRBw4geirfI-L8,1075
+litspy-0.0.4.dist-info/METADATA,sha256=_vGWmRn7j01Vb0iqmNEZVYW8PQjLdCUXSCjheNideiQ,8297
+litspy-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+litspy-0.0.4.dist-info/top_level.txt,sha256=qbUYsaYmsG4yhMMC8IK0tuR1bnhCzbxkqZyx4UCD76w,7
+litspy-0.0.4.dist-info/RECORD,,
