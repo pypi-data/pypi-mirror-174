@@ -1,0 +1,9 @@
+rdkit
+pybase64
+requests
+Pillow
+ipython
+mordred
+pandas
+statsmodels
+ipyplot
