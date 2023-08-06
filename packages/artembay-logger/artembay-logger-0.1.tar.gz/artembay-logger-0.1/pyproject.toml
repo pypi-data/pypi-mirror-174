@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "artembay-logger"
+version = "0.1.0"
+description = "Simple logger by Artem Bay"
+authors = ["Artem Bay"]
+readme = "README.md"
+packages = [{include = "artembay_logger"}]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pytz = "^2022.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

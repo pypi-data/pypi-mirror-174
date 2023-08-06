@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+artembay_logger.egg-info/PKG-INFO
+artembay_logger.egg-info/SOURCES.txt
+artembay_logger.egg-info/dependency_links.txt
+artembay_logger.egg-info/top_level.txt
