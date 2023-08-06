@@ -1,0 +1,354 @@
+[
+    {
+        "component": "section",
+        "type": "basic",
+        "header": "Settings"
+    },
+    {
+        "component": "file_select",
+        "id": "data",
+        "name": "Data",
+        "count": -1,
+        "help": "Select one or more HDF5 or multi-page TIFF files with data",
+        "validation": "required",
+        "namespace": "args"
+    },
+    {
+        "component": "file_select",
+        "id": "labels",
+        "name": "Labels",
+        "count": -1,
+        "help": "Select one or more HDF5 or multi-page TIFF files with corresponding labels",
+        "validation": "required",
+        "namespace": "args"
+    },
+    {
+        "component": "text",
+        "id": "data_im_dirname",
+        "name": "Data Image Output Directory",
+        "help": "Name of folder that sliced data 2D images will be output to.",
+        "validation": "required filename",
+        "namespace": "settings"
+    },
+    {
+        "component": "text",
+        "id": "seg_im_out_dirname",
+        "name": "Segmentation Image Output Directory",
+        "help": "Name of folder that sliced segmentation 2D images with be output to.",
+        "validation": "required filename",
+        "namespace": "settings"
+    },
+    {
+        "component": "text",
+        "id": "model_output_fn",
+        "name": "Model Filename Suffix",
+        "help": "Suffix for the saved model filename.",
+        "validation": "required filename",
+        "namespace": "settings"
+    },
+    {
+        "component": "section",
+        "type": "advanced",
+        "header": "Advanced Settings"
+    },
+    {
+        "component": "select",
+        "id": "clip_data",
+        "name": "Clip Data?",
+        "help": "Clip and rescale the image data intensities before saving to disk?",
+        "validation": "required",
+        "options": [
+            {
+                "label": "True",
+                "value": "true"
+            },
+            {
+                "label": "False",
+                "value": "false"
+            }
+        ],
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "st_dev_factor",
+        "name": "Standard Deviations to Clip",
+        "help": "The number of standard deviations from the mean to clip data to.",
+        "validation": "required float",
+        "namespace": "settings"
+    },
+    {
+        "component": "text",
+        "id": "data_hdf5_path",
+        "name": "HDF5 Image Path",
+        "help": "The internal HDF5 path to the image data.",
+        "validation": "required filepath",
+        "namespace": "settings"
+    },
+    {
+        "component": "text",
+        "id": "seg_hdf5_path",
+        "name": "HDF5 Label Path",
+        "help": "The internal HDF5 path to the label data.",
+        "validation": "required filepath",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "image_size",
+        "name": "Image Size",
+        "help": "Size of images used for training (must be multiple of 32).",
+        "validation": "required integer",
+        "step": "1",
+        "namespace": "settings"
+    },
+    {
+        "component": "select",
+        "id": "downsample",
+        "name": "Downsample?",
+        "help": "If True, data will be downsampled by 2.",
+        "validation": "required",
+        "options": [
+            {
+                "label": "True",
+                "value": "true"
+            },
+            {
+                "label": "False",
+                "value": "false"
+            }
+        ],
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "training_set_proportion",
+        "name": "Training Proportion",
+        "help": "Proportion of images to use the training, rest are used for validation.",
+        "validation": "required float",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "cuda_device",
+        "name": "Graphics Device",
+        "help": "The graphics card to use (between 0 and 3 for a machine with 4 GPUs).",
+        "validation": "required integer",
+        "step": "1",
+        "min": "0",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "num_cyc_frozen",
+        "name": "Number of Frozen Cycles",
+        "help": "Number of training epochs on frozen model.",
+        "validation": "required integer",
+        "step": "1",
+        "min": "0",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "num_cyc_unfrozen",
+        "name": "Number of Unfrozen Cycles",
+        "help": "Number of training epochs on unfrozen model.",
+        "validation": "required integer",
+        "step": "1",
+        "min": "0",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "patience",
+        "name": "Patience",
+        "help": "Number of epochs to wait before early stopping if validation loss does not improve.",
+        "validation": "required integer",
+        "step": "1",
+        "min": "0",
+        "namespace": "settings"
+    },
+    {
+        "component": "select",
+        "id": "loss_criterion",
+        "name": "Loss Metric",
+        "help": "Type of Loss to be used in Training.",
+        "validation": "required",
+        "options": [
+            {
+                "label": "BCEDiceLoss",
+                "value": "BCEDiceLoss"
+            },
+            {
+                "label": "BCELoss",
+                "value": "BCELoss"
+            },
+            {
+                "label": "DiceLoss",
+                "value": "DiceLoss"
+            },
+            {
+                "label": "GeneralizedDiceLoss",
+                "value": "GeneralizedDiceLoss"
+            },
+            {
+                "label": "CrossEntropyLoss",
+                "value": "CrossEntropyLoss"
+            }
+        ],
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "alpha",
+        "name": "alpha",
+        "help": "When BCEDiceLoss selected, weighting for BCELoss.",
+        "validation": "required float",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "beta",
+        "name": "beta",
+        "help": "When BCEDiceLoss selected, weighting for DiceLoss.",
+        "validation": "required float",
+        "namespace": "settings"
+    },
+    {
+        "component": "select",
+        "id": "eval_metric",
+        "name": "Evaluation Metric",
+        "help": " Evaluation Metric.",
+        "validation": "required",
+        "options": [
+            {
+                "label": "MeanIoU",
+                "value": "MeanIoU"
+            },
+            {
+                "label": "DiceCoefficient",
+                "value": "DiceCoefficient"
+            }
+        ],
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "pct_lr_inc",
+        "name": "Learning Rate Increase %",
+        "help": "The percentage of overall iterations where the LR is increasing.",
+        "validation": "required float",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "starting_lr",
+        "name": "Learning rate Lower Bound",
+        "help": "Lower bound of learning rate search.",
+        "validation": "required float",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "end_lr",
+        "name": "Learning rate Upper Bound",
+        "help": "Upper Bound of learning rate search.",
+        "validation": "required float",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "lr_find_epochs",
+        "name": "Epochs to Find Learning rate",
+        "help": "Number of training epochs for learning rate search.",
+        "validation": "required integer",
+        "step": "1",
+        "min": "0",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "lr_reduce_factor",
+        "name": "LR Reduce Factor",
+        "help": "Divisor for start and end LR when finding LR on reloaded model.",
+        "validation": "required float",
+        "namespace": "settings"
+    },
+    {
+        "component": "select",
+        "id": "type",
+        "name": "Model",
+        "help": " Choose type of segmentation model from the list of those tested so far.",
+        "validation": "required",
+        "options": [
+            {
+                "label": "U_Net",
+                "value": "U_Net"
+            },
+            {
+                "label": "U_Net_Plus_Plus",
+                "value": "U_Net_Plus_Plus"
+            },
+            {
+                "label": "FPN",
+                "value": "FPN"
+            },
+            {
+                "label": "DeepLabV3",
+                "value": "DeepLabV3"
+            },
+            {
+                "label": "DeepLabV3_Plus",
+                "value": "DeepLabV3_Plus"
+            },
+            {
+                "label": "MA_Net",
+                "value": "MA_Net"
+            },
+            {
+                "label": "Linknet",
+                "value": "Linknet"
+            }
+        ],
+        "nest": "model",
+        "namespace": "settings"
+    },
+    {
+        "component": "select",
+        "id": "encoder_name",
+        "name": "Encoder",
+        "help": " Choose an encoder from those tested so far.",
+        "validation": "required",
+        "options": [
+            {
+                "label": "resnet34",
+                "value": "resnet34"
+            },
+            {
+                "label": "resnet50",
+                "value": "resnet50"
+            },
+            {
+                "label": "resnet50_32x4d",
+                "value": "resnet50_32x4d"
+            }
+        ],
+        "nest": "model",
+        "namespace": "settings"
+    },
+    {
+        "component": "select",
+        "id": "encoder_weights",
+        "name": "Encoder Weights",
+        "help": " Use `imagenet` pre-trained weights for encoder initialization .",
+        "validation": "required",
+        "options": [
+            {
+                "label": "imagenet",
+                "value": "imagenet"
+            }
+        ],
+        "nest": "model",
+        "namespace": "settings"
+    }
+]
