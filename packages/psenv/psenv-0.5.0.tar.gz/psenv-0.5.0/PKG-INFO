@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: psenv
+Version: 0.5.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# psenv
+### cli tool for managing local environment and aws parameter store
