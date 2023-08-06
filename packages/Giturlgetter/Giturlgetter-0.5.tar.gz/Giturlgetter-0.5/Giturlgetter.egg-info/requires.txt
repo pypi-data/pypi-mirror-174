@@ -1,0 +1,5 @@
+clipboard
+PyGithub
+requests
+pyfiglet
+python-dotenv
