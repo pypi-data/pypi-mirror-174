@@ -1,0 +1,9 @@
+netbox_plugin_osism/__init__.py,sha256=lEdHmUFv6lXawP76F5rA_MRvB-eHjV379Xe6D956VRk,547
+netbox_plugin_osism/template_content.py,sha256=Og8Z1_Z0voUzBEWpXpWZZE09djxkhydVdGfE3FR9aHI,712
+netbox_plugin_osism/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+netbox_plugin_osism/templates/netbox_plugin_osism/interfaces.html,sha256=sKlG3KA5LL2NAsfQ1nzcq1ZEYxkVURq30hkIRCbQOzU,1001
+netbox_plugin_osism-0.0.1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+netbox_plugin_osism-0.0.1.dist-info/METADATA,sha256=mOYGLQe4SS5d0uQMqf50-aStBF0jlcvPIl8A31u8MkE,766
+netbox_plugin_osism-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+netbox_plugin_osism-0.0.1.dist-info/top_level.txt,sha256=aeCMMCrf3qv5Bp1_XOZFTNhAvy-UlfL9DX2Z6HRAox0,20
+netbox_plugin_osism-0.0.1.dist-info/RECORD,,
