@@ -1,0 +1,10 @@
+pymapme/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymapme/exceptions.py,sha256=2si5OD2AZw-df7e6SEtYMZFxqn6EFhQAIXBAShb_2H4,95
+pymapme/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymapme/models/mapping.py,sha256=BXGheutUNXFDBQrksW9HfgRpeRVFcP163P2ThOplhYc,1395
+pymapme/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymapme/utils.py,sha256=_00btUbkYl5mjgyT1znMyEN_jORee9M1zV6gCqWd-l0,1839
+pymapme-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pymapme-0.0.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pymapme-0.0.3.dist-info/METADATA,sha256=LuGztujzyj4WvnGtmHPWA1-LR8lfEMWwpKnr_pZgYRg,2140
+pymapme-0.0.3.dist-info/RECORD,,
