@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mitol-django-mail
+Version: 3.2.1
+Summary: MIT Open Learning django app extensions for mail
+Home-page: UNKNOWN
+License: BSD 3-Clause License
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: beautifulsoup4 (>=4.6.0)
+Requires-Dist: django-anymail (>=6.0)
+Requires-Dist: django (<4.0,>=2.2.12)
+Requires-Dist: html5lib (>=1.1)
+Requires-Dist: mitol-django-common (~=2.6.0)
+Requires-Dist: premailer (>=3.7.0)
+Requires-Dist: toolz (>=0.10.0)
+
+UNKNOWN
+
