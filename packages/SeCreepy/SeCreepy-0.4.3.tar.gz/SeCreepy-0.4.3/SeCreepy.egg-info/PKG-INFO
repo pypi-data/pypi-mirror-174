@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: SeCreepy
+Version: 0.4.3
+Summary: A wrapper for undetected chromedriver that works perfectly for long-running scrapping
+Home-page: https://github.com/repeating/secreepy
+Author-email: fadi.younes.syr@gmail.com
+License: MIT
+Download-URL: https://github.com/repeating/secreepy/archive/v0.4.3.tar.gz
+Keywords: Selenium,undetected chromedriver,Web Scrapping
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+UNKNOWN
+
