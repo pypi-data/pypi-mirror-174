@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+flake8_iw.py
+pyproject.toml
+setup.cfg
+setup.py
+test_applicant_signup_list.py
+flake8_iw.egg-info/PKG-INFO
+flake8_iw.egg-info/SOURCES.txt
+flake8_iw.egg-info/dependency_links.txt
+flake8_iw.egg-info/entry_points.txt
+flake8_iw.egg-info/requires.txt
+flake8_iw.egg-info/top_level.txt
