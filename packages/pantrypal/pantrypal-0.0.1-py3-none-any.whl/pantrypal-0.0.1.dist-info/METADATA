@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pantrypal
+Version: 0.0.1
+Summary: The Pantry Pal you've been waiting for.
+Author: Kieran Mackle
+Author-email: kemackle98@gmail.com
+License: gpl-3.0
+Project-URL: Bug Tracker, https://github.com/kieran-mackle/PantryPal/issues
+Project-URL: Source Code, https://github.com/kieran-mackle/PantryPal
+Keywords: recipes,cooking,shopping,groceries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: python-telegram-bot (>=13.14)
+Provides-Extra: all
+Requires-Dist: black (>=22.10.0) ; extra == 'all'
+Requires-Dist: commitizen (>=2.35.0) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: black (>=22.10.0) ; extra == 'dev'
+Requires-Dist: commitizen (>=2.35.0) ; extra == 'dev'
+
+# PantryPal
+
+Do you eat the same foods each week? Are you sick of writing shopping lists?
+Well worry no more - PantryPal is here to help.
+
+
+## Features
+- Build a collection of your favourite recipes
+- Add recipes from URL
+- Automatically generate shopping lists
+- Keep track of what ingredients you have at home
+- Try a new recipe, with as few new ingredients needed
+
+## Getting Started
+
+Telegram bot?
+
+
+## Contributing
+
+PantryPal welcomes your contributions.
+
+
