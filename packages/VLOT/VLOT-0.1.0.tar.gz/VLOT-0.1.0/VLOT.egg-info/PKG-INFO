@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: VLOT
+Version: 0.1.0
+Summary: An efficient token vocabulary construction method
+Home-page: https://github.com/Jingjing-NLP/VOLT
+Author: Jingjing Xu
+Author-email: jingjingxu@pku.edu.cn
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
