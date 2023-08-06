@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pip-command
+Version: 0.0.3
+Summary: lib for fast work with pip commands
+Home-page: https://github.com/pavelglazunov/pip-command
+Author: pavelgs
+Author-email: p6282813@yandex.ru
+License: Apache License, Version 2.0, see LICENSE file
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+<h1>pip command</h1>
+<h2>Библиотека для выполнения команд pip</h2>
+
+***
+<h2>Установка</h2>
+
+    pip install pip_command
+***
+
+
+<h3>install | installs | install_requirements</h3>
+
+ * install - установка библиотеки
+ * installs - установка нескольких библиотек
+ * install_requirements - установка requirements.txt
+```python
+from pip_command import install, installs, install_requirements
+
+install("requests", version="2.25.1")  # установка библиотеки requests
+installs("requests", "bs4")  # установка библиотек requests и bs4
+install_requirements("requirements.txt")  # установка библиотек из файла requirements.txt
+```
+
+
