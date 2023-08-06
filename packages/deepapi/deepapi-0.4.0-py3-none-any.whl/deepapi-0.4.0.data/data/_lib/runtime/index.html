@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deep API</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Code Highlight -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/atom-one-dark.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <link href="https://unpkg.com/highlightjs-badge/highlightjs/styles/vs2015.css" rel="stylesheet">
+
+    <!-- Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- SnackBar -->
+    <link rel="stylesheet" href="simpleSnackbar.min.css">
+    <script src="simpleSnackbar.min.js"></script>
+
+    <script src="font.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://wuhanstudio.cc">
+            Deep API
+          </a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <span class="d-inline"><a class="nav-link" href="https://github.com/wuhanstudio/DeepAPI"><i class="bi bi-github" style="font-size: 1.5rem; color: white;"></i></a></span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="h1 text-center">Image Classification</h1>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="drag-area mt-3 mb-3">
+                    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <header>Drag & Drop</header>
+                    <span>OR</span>
+                    <button class="btn btn-primary">Browse File</button>
+                    <input type="file" hidden>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col col-12 d-flex justify-content-center">
+
+                <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group me-3 dropdown" role="group">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDataset" data-bs-toggle="dropdown" aria-expanded="false">
+                                Choose Dataset
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDataset">
+                                <li><a id='dataset-cifar10' class="dropdown-item active" onclick="setDataset('cifar10')">Cifar10</a></li>
+                                <li><a id='dataset-imagenet' class="dropdown-item" onclick="setDataset('imagenet')">ImageNet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="btn-group me-3 dropdown" role="group">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonModel" data-bs-toggle="dropdown" aria-expanded="false">
+                                Choose Model
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonModel">
+                                <li><a id="model-vgg16" class="dataset dropdown-item active" onclick="setModel('vgg16')">VGG16</a></li>
+                                <li><a id="model-resnet50" class="dataset dropdown-item" onclick="setModel('resnet50')">Resnet50</a></li>
+                                <li><a id="model-inceptionv3" class="dataset dropdown-item" onclick="setModel('inceptionv3')">Inceptionv3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col col-12 d-flex justify-content-center mt-2">
+                <div class="btn-group me-3 dropdown" role="group">
+                    <div class="dropdown">
+                        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButtonTop" data-bs-toggle="dropdown" aria-expanded="false">
+                            Top 10
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonTop">
+                            <li><a class="dropdown-item active" onclick="setTop(10)">Top 10</a></li>
+                            <li><a class="dropdown-item" onclick="setTop(5)">Top 5</a></li>
+                            <li><a class="dropdown-item" onclick="setTop(3)">Top 3</a></li>
+                            <li><a class="dropdown-item" onclick="setTop(1)">Top 1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-12 d-flex justify-content-center mt-3">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckShowProb" checked>
+                    <label class="form-check-label" for="flexSwitchCheckShowProb">Show Probability</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col col-12 d-flex justify-content-center">
+                <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group me-3" role="group">
+                        <button class="btn btn-primary" id="recognize" onclick="recognize()">Recognize</button>
+                    </div>
+                    <div class="btn-group me-3" role="group">
+                        <button class="btn btn-primary" onclick="refresh()">Restart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5" id="prediction">
+        <div class="row">
+            <div class="col col-12">
+                <h1 class="h1 text-center">Predictions</h1>
+                <div id="with-prob">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div id="no-prob">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5" id="codegen">
+        <div class="row">
+            <div class="col col-12">
+                <h1 class="h1 text-center">API Client</h1>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="python-tab" data-bs-toggle="tab" data-bs-target="#python" type="button" role="tab" aria-controls="python" aria-selected="true">Python</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="curl-tab" data-bs-toggle="tab" data-bs-target="#curl" type="button" role="tab" aria-controls="curl" aria-selected="false">Curl</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active"  id="python" role="tabpanel" aria-labelledby="python-tab">
+                        <pre><code class="language-python" id="python-code">
+import requests
+from PIL import Image
+from io import BytesIO
+import base64
+                            
+def classification(url, file):
+    # Load the input image and construct the payload for the request
+    image = Image.open(file)
+    buff = BytesIO()
+    image.save(buff, format="JPEG")
+
+    data = {"file": base64.b64encode(buff.getvalue()).decode("utf-8")}
+    return requests.post(url, json=data).json()
+
+res = classification("T_URL", "T_FILE")
+
+# Print Prediction
+for i in res['predictions']:
+    print('{:<15s}{:5s}'.format(i['label'], format(i['probability'], 'f') if 'probability' in i else '-'))
+</code></pre>
+                    </div>
+
+                    <div class="tab-pane fade" id="curl" role="tabpanel" aria-labelledby="curl-tab">
+                        <pre><code class="language-bash" id="curl-code">
+export IMAGE_FILE="T_FILE"
+
+(echo -n '{"file": "'; base64 $IMAGE_FILE; echo '"}') | \
+curl -H "Content-Type: application/json" \
+     -d @- "T_URL"
+</code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/highlightjs-badge/highlightjs-badge.min.js"></script>
+    <script src="upload.js"></script>
+    <script src="script.js"></script>    
+
+    <!-- Footer -->
+    <footer id="main-footer" class="footer text-center">
+        <div class="container">
+            <div class="row">
+            <div class="col-md">
+                <span>Copyright &#169; WuhanStudio</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

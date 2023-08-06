@@ -1,0 +1,2 @@
+[console_scripts]
+deepapi = deepapi._main:main
