@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: miskibin
+Version: 1.0.5
+Summary: This is package with useful tools
+Home-page: https://github.com/michalskibinski109/miskibin
+Author: Michał Skibiński
+License: MIT
+Requires-Python: >=3.7, <4
+
+This is a package  with useful tools
