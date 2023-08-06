@@ -1,0 +1,8 @@
+gpugpu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpugpu/__main__.py,sha256=CMq1C6X6otddtb4-MglhdEudlx3KPrTzbP79QDNlkdk,1298
+gpugpu/gpus.py,sha256=c-XvQ9tJLKoA4H2RNinJ_KE_8HR_GN1Y7R4a18iqKOE,1907
+gpugpu/utils.py,sha256=TaZexwOR4bEyQtEvhpr8-BRxJ5U275ZXpwEM3C3gFEw,795
+gpugpu-1.0.0.dist-info/METADATA,sha256=hTtohr7VGX_tCNdf4UExQjTi6X6LiX6B8EWCp4K8KXw,1448
+gpugpu-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gpugpu-1.0.0.dist-info/top_level.txt,sha256=HuWhKTeWj0tnnB93sLA9ghHuCjoOL-CJdizhayVDss4,7
+gpugpu-1.0.0.dist-info/RECORD,,
