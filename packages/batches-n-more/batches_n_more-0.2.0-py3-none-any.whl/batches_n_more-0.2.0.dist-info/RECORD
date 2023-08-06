@@ -1,0 +1,16 @@
+batches_n_more/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+batches_n_more/align_pt.py,sha256=TuYA1JVXryOLG5pkRcc7PlyFMm9N_ttPnd3Yfb1RJYI,6589
+batches_n_more/clique_mediator.py,sha256=tn77h-VxaOVwPmWWqlIRLUxh1cyvjbrNG6U_fZU5FTY,5133
+batches_n_more/example_detailed.py,sha256=-ABAi5ZAXwKVB5Z7rHmNNRIuYj8o2_qyzIJAUkjjQY4,1602
+batches_n_more/example_short.py,sha256=qTewewB2QfBkbWi1m5W7miXVinzflsvAx9tucD9Zefw,1101
+batches_n_more/linear_regression.py,sha256=WLyV7acv0kkeXpINXicLVvDgFMdYflg1LmIwc4-3KiY,2135
+batches_n_more/peaktable.py,sha256=IIBUzEbfxjR9geGDgil1DMGie_Mpsq6dyBqS8rzXYsw,15329
+batches_n_more/peaktable_align.py,sha256=6HgAxmLvFNmAUDHTAQqDkn2FSpxwaJUHlou0HJQ5D1w,15759
+batches_n_more/pt_helper.py,sha256=KRpNGBqL6AKp0ULl27eQM_hTK89lkis3XyuqreW-0Ts,5548
+batches_n_more/pt_io.py,sha256=JQ9OeqdOAwh0JUUDMovTC9YHNugQL7rpZzDEVlkYcjs,3003
+batches_n_more/similarity_func.py,sha256=i6fiNd6xt5A3BHxeBr-kbYmNsd2D4QufcJcXktqoEuQ,745
+batches_n_more-0.2.0.dist-info/LICENSE,sha256=hf8jFNuuRm_Sckxe7FGemdUtlHtX4PGfNgjAHek5cBs,1067
+batches_n_more-0.2.0.dist-info/METADATA,sha256=GQPxyqNN7wfpg6mL1bndpEEBbUxM5DSMC_UTGHwIVi0,23580
+batches_n_more-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+batches_n_more-0.2.0.dist-info/top_level.txt,sha256=1qr7ZTFIWckCTH6k0NkElWQ7eClW8l3KTL_exJBT5WM,15
+batches_n_more-0.2.0.dist-info/RECORD,,
