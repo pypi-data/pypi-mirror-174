@@ -1,0 +1,7 @@
+setuptools
+pandas
+numpy
+xlsxwriter
+pywin32
+build
+twine
