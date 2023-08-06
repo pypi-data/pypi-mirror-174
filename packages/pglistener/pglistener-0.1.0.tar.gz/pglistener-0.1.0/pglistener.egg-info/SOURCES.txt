@@ -1,0 +1,7 @@
+setup.py
+./pglistener/__init__.py
+./pglistener/libgomodule.so
+pglistener.egg-info/PKG-INFO
+pglistener.egg-info/SOURCES.txt
+pglistener.egg-info/dependency_links.txt
+pglistener.egg-info/top_level.txt
