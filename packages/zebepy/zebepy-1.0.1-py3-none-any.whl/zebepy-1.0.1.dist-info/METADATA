@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zebepy
+Version: 1.0.1
+Summary: The first Zebedee python API Wrapper !
+Home-page: https://github.com/vodkarm/zebepy
+Author: vodkarm
+Author-email: vodkarm <vodkarm@protonmail.com>
+Project-URL: Homepage, https://github.com/vodkarm/zebepy
+Keywords: bitcoin,sats,zebedee,satoshis,lightning,wallet,zbd
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: vodkarm ; extra == 'dev'
+
+Doc can be found <a href="https://github.com/vodkarm/zebepy">here</a>
