@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dpeaDPi
+Version: 0.0.3
+Summary: Python package infrastructure for DPEA's DPi boards
+Author: Stan Reifel
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DPEA_DPi
+DPEA Pi Family of Circuit Boards Developed by Stan Reifel 2022
+
+This repo is for all of the DPi files to be added to a python package.
