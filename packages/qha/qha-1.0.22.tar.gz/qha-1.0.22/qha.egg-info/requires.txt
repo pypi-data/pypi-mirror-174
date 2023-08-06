@@ -1,0 +1,10 @@
+lazy_property
+numba
+mpmath
+numpy
+pandas
+scientific-string
+scipy
+text-stream
+pyyaml
+matplotlib
