@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+RedditAdsWindsorApi/__init__.py
+RedditAdsWindsorApi/client.py
+RedditAdsWindsorApi/enums.py
+RedditAdsWindsorApi.egg-info/PKG-INFO
+RedditAdsWindsorApi.egg-info/SOURCES.txt
+RedditAdsWindsorApi.egg-info/dependency_links.txt
+RedditAdsWindsorApi.egg-info/not-zip-safe
+RedditAdsWindsorApi.egg-info/requires.txt
+RedditAdsWindsorApi.egg-info/top_level.txt
+test/__init__.py
+test/tests.py
