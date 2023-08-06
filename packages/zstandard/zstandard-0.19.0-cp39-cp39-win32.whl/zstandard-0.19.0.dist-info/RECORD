@@ -1,0 +1,11 @@
+zstandard/__init__.py,sha256=NxK861kCCvInvFnnjTbhN_bC1tIgfGWIMcbQ8Q2FtBQ,7312
+zstandard/__init__.pyi,sha256=pSHjizhT5doGnC1N2bFqFyTFafc1qSmApIhxIiBPDNc,14368
+zstandard/_cffi.cp39-win32.pyd,sha256=TSRdMhBztHMVRIEP8batSgIKpMOkUPlYmbzp0nOwwcg,615936
+zstandard/backend_c.cp39-win32.pyd,sha256=fm6y27FxDY9jGv7ku0PC_4VAL8npsq6Ip4GnADT_mkc,536576
+zstandard/backend_cffi.py,sha256=pbii1aS2BESnR2KfmUql4_fH6GHplGGD6OIiG14t9pA,155828
+zstandard/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zstandard-0.19.0.dist-info/LICENSE,sha256=wVso-IZlAL09YHxznodxCqXEdieqMKBXOUhBRWT_HaI,1511
+zstandard-0.19.0.dist-info/METADATA,sha256=vTIRLOJpCS9We5NOU_g2JNGJNTL0FEY61TUpnORHie4,2982
+zstandard-0.19.0.dist-info/WHEEL,sha256=X8cdtIU66DYAo85qapZVraRkrIO1r6o3xQTPmTpdkp0,96
+zstandard-0.19.0.dist-info/top_level.txt,sha256=J-wj94pPadY4ipFaanrYBlrMblOSegEYS8o_LdogrpU,10
+zstandard-0.19.0.dist-info/RECORD,,
