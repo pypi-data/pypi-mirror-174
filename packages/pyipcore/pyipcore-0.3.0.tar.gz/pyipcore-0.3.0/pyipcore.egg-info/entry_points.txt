@@ -1,0 +1,3 @@
+[console_scripts]
+ipc_rb = pyipcore.ipg:IPRebuild
+ipc_ui = pyipcore.ipui_main:UI_IPRebuild

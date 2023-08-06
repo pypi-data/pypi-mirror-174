@@ -1,0 +1,5 @@
+pyperclip
+files3
+pyverilog==1.3.0
+pillow
+PyQt5==5.15.6

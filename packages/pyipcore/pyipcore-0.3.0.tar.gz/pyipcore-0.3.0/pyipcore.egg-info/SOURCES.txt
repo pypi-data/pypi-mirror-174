@@ -1,0 +1,7 @@
+setup.py
+pyipcore.egg-info/PKG-INFO
+pyipcore.egg-info/SOURCES.txt
+pyipcore.egg-info/dependency_links.txt
+pyipcore.egg-info/entry_points.txt
+pyipcore.egg-info/requires.txt
+pyipcore.egg-info/top_level.txt
