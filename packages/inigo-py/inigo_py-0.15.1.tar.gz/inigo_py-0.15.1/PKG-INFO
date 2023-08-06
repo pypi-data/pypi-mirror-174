@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: inigo_py
+Version: 0.15.1
+Summary: Inigo Middleware
+Home-page: https://github.com/kolia-kaploniuk/inigo-py
+Author: Nikolai Kaploniuk
+Author-email: nkaploniuk@inigo.io
+License: MIT
+Project-URL: Bug Tracker, https://github.com/kolia-kaploniuk/inigo-py/issues
+Keywords: api graphql inigo django graphene
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Typing :: Typed
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# inigo-py
