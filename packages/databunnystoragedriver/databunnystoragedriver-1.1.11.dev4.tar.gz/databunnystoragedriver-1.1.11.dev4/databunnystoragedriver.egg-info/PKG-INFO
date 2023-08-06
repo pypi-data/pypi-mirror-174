@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: databunnystoragedriver
+Version: 1.1.11.dev4
+Summary: OpenStack Block Storage Driver Additional Package
+Home-page: https://github.com/databunnysg/databunnystoragedriver
+Author: Yi
+Author-email: yi@databunny.sg
+License: UNKNOWN
+Project-URL: Source, https://github.com/databunnysg/databunnystoragedriver
+Project-URL: Tracker, https://github.com/databunnysg/databunnystoragedriver/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
