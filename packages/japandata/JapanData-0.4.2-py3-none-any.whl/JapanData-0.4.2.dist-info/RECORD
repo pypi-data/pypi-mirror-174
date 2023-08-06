@@ -1,0 +1,16 @@
+japandata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+japandata/chihoukoufuzei/__init.__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+japandata/chihoukoufuzei/data.py,sha256=KuwWdBSosLdNIaRVZqgl3LJo2BwtwUfBsJQXXJic2XE,39771
+japandata/indices/__init.__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+japandata/indices/data.py,sha256=3SEnLzqmj_femRwBicaPPihA0qIPvccvIOwxxmo2Kq4,10098
+japandata/maps/__init.__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+japandata/maps/data.py,sha256=wm6urXBzDAXZ-6avDvnAAU15tjK-jjWEhcosXKWDJ0Y,12696
+japandata/population/__init.__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+japandata/population/data.py,sha256=rzy91kZGz5elHYYU2wq8AWoPXS9T2JDrLbyfZWJsLnc,18854
+japandata/readings/__init.__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+japandata/readings/data.py,sha256=W9N8wiwUFTq9CQeArg4QRWCDUleQ4shlqX9EcrluAuU,2814
+JapanData-0.4.2.dist-info/LICENSE.md,sha256=TVEVWzXkyAQ2W0yKEzrtY0q1IClsnlWb0MkRKJgMyx0,15581
+JapanData-0.4.2.dist-info/METADATA,sha256=DsICxJfKXHDbLeXPT9zvh3qlMVGwbIET1u_HSkZp0QU,9335
+JapanData-0.4.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+JapanData-0.4.2.dist-info/top_level.txt,sha256=epK5g0BzBecu0nFPOl3-fKK5o22LUWSmPTMNEd5F4A0,10
+JapanData-0.4.2.dist-info/RECORD,,
