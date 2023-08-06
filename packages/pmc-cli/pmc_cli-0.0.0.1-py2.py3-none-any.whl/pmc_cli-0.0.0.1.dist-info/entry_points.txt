@@ -1,0 +1,3 @@
+[console_scripts]
+pmc=pmc.main:run
+
