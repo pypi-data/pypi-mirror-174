@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: py3_sg
+Version: 0.16
+Summary: Python SCSI generic library
+Home-page: https://github.com/tvladyslav/py3_sg
+Author: Dan Lenski
+Author-email: Dan Lenski <dlenski@gmail.com>
+Maintainer: Vladyslav Tsilytskyi
+Maintainer-email: Vladyslav Tsilytskyi <ykp@protonmail.ch>
+License: GPL-3.0-or-later
+Project-URL: Homepage, https://github.com/tvladyslav/py3_sg
+Keywords: SCSI
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Hardware
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# py3_sg
+
+## Description
+
+This is a small Python extension which sends arbitrary commands to SCSI devices,
+via the Linux SCSI Generic driver, which provides the SG_IO ioctl for this purpose.
+
+Basically, the module includes two methods, read and write, which
+allow you to issue commands to SCSI devices and read and write
+accompanying data. If an OS error occurs, the `OSError` exception will
+be raised, while if a SCSI error occurs, the `py_sg.SCSIError` exception
+will be raised.
+
+## PyPI install
+
+```bash
+sudo python3 -m pip install py3_sg
+```
+
+## Manual install
+
+1. Install dependencies:
+
+    ```bash
+    sudo apt install python3-dev
+    ```
+
+2. Clone this repo
+3. Enter the folder
+4. Try to compile:
+
+    ```bash
+    python3 setup.py build
+    ```
+
+5. If .so library is compiled, install:
+
+    ```bash
+    sudo python3 -m pip install <path/to/setup.py>
+    ```
+
+6. You are done
+
+## Precompiled package
+
+[https://pypi.org/project/py3-sg/](https://pypi.org/project/py3-sg/)
