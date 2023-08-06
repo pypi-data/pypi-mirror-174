@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: transforge
+Version: 0.2.0
+Summary: A library for type inference and graph production.
+Home-page: https://github.com/quangis/transforge
+Author: nsv
+Author-email: n.steenbergen@uu.nl
+Project-URL: Bug Tracker, https://github.com/quangis/transforge/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Typing :: Typed
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
