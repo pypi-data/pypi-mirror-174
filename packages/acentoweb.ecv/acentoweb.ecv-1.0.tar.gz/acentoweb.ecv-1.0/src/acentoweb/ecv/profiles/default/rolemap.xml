@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="CVE Exporter"/>
+  </roles>
+  <permissions>
+    <permission name="Acentoweb: Ecv" acquire="True">
+      <role name="CVE Exporter"/>
+    </permission>
+  </permissions>
+</rolemap>
