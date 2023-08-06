@@ -1,0 +1,14 @@
+matplotlib==3.6.1
+PyPDF2==2.11.1
+setuptools==65.5.0
+
+[:python_version < "3.11"]
+tomli
+
+[build]
+build
+twine
+
+[dev]
+pip-tools
+pytest

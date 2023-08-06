@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/leopaolucci_photoalbum.egg-info/PKG-INFO
+src/leopaolucci_photoalbum.egg-info/SOURCES.txt
+src/leopaolucci_photoalbum.egg-info/dependency_links.txt
+src/leopaolucci_photoalbum.egg-info/entry_points.txt
+src/leopaolucci_photoalbum.egg-info/requires.txt
+src/leopaolucci_photoalbum.egg-info/top_level.txt
+src/photoalbum/__init__.py
+src/photoalbum/__main__.py
+src/photoalbum/dicionarioDEmensagens.py
+src/photoalbum/toolsphotoalbum.py

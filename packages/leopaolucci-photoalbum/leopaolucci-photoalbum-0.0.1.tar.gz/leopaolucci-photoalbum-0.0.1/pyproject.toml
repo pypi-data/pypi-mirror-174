@@ -1,0 +1,55 @@
+[build-system]
+	requires = ["setuptools"]
+	build-backend = "setuptools.build_meta"
+
+[project]
+	name = "leopaolucci-photoalbum"
+	version = "0.0.1"
+	description = "Assembly a photo album with your pictures"
+	readme = "README.md"
+	authors = [{ name = "Leopoldo A. Paolucci", email = "leobia2009@yahoo.com.br" }]
+	license = { file = "LICENSE" }
+	classifiers = [
+		"License :: OSI Approved :: MIT License",
+		"Programming Language :: Python",
+		"Programming Language :: Python :: 3",
+	]
+
+dependencies = [
+	"matplotlib==3.6.1",
+	"PyPDF2==2.11.1",
+	"setuptools==65.5.0",
+	'tomli; python_version < "3.11"'
+]
+
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+    build = ["build", "twine"]
+	dev = ["pip-tools", "pytest"]
+	
+[project.scripts]
+   photoalbum = "photoalbum.__main__:main"
+
+[tool.bumpver]
+current_version = "0.0.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/photoalbum/__init__.py" = ["{version}"]
+
+
+"setup.py" = [
+    "{version}",
+    "{pep440_version}",
+]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+

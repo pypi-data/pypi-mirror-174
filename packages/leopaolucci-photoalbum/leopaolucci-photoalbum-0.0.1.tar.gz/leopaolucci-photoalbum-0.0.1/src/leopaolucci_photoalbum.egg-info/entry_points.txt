@@ -1,0 +1,2 @@
+[console_scripts]
+photoalbum = photoalbum.__main__:main
