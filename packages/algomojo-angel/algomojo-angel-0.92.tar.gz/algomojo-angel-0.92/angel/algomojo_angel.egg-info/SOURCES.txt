@@ -1,0 +1,11 @@
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+angel/algomojo/__init__.py
+angel/algomojo/angel.py
+angel/algomojo_angel.egg-info/PKG-INFO
+angel/algomojo_angel.egg-info/SOURCES.txt
+angel/algomojo_angel.egg-info/dependency_links.txt
+angel/algomojo_angel.egg-info/requires.txt
+angel/algomojo_angel.egg-info/top_level.txt
