@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: encrusted
+Version: 0.2.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy
+Requires-Dist: dictdiffer; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov[all]; extra == 'test'
+Provides-Extra: test
+License-File: LICENSE
+Summary: A library for fast encoding of numpy arrays
+Keywords: numpy,rust,encoding
+Author: Zach Coleman
+Author-email: zacharywcoleman@gmail.com
+License: Apache 2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://github.com/zachcoleman/encrusted
+
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/zachcoleman/encrusted/tests/main)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/encrusted)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/encrusted)
+[![License](https://img.shields.io/badge/license-Apache2.0-green)](./LICENSE)
+
+# encrusted 
+The project was developed using the [maturin](https://maturin.rs) framework.
+
+## Installation
+From PyPI:
+```shell
+pip install encrusted
+```
+
+Build from source:
+```
+maturin build -r -i=path/to/python
+pip install .../encrusted/target/wheels/<whl file name>.whl
+```
+
+## Running Tests
+Tests are run with `pytest`.
