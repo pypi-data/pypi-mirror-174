@@ -1,0 +1,4 @@
+[console_scripts]
+kernel-download=moon_coverage.cli:cli_kernel_download
+mk-download=moon_coverage.cli:cli_metakernel_download
+
