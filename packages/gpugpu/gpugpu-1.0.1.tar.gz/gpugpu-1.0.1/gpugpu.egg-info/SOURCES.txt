@@ -1,0 +1,11 @@
+README.md
+setup.py
+gpugpu/__init__.py
+gpugpu/__main__.py
+gpugpu/gpus.py
+gpugpu/utils.py
+gpugpu.egg-info/PKG-INFO
+gpugpu.egg-info/SOURCES.txt
+gpugpu.egg-info/dependency_links.txt
+gpugpu.egg-info/requires.txt
+gpugpu.egg-info/top_level.txt
