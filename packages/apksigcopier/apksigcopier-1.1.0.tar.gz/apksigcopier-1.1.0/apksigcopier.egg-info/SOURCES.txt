@@ -1,0 +1,13 @@
+LICENSE.GPLv3
+MANIFEST.in
+Makefile
+README.md
+setup.py
+apksigcopier/__init__.py
+apksigcopier/py.typed
+apksigcopier.egg-info/PKG-INFO
+apksigcopier.egg-info/SOURCES.txt
+apksigcopier.egg-info/dependency_links.txt
+apksigcopier.egg-info/entry_points.txt
+apksigcopier.egg-info/requires.txt
+apksigcopier.egg-info/top_level.txt
