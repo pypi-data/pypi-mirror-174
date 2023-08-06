@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+swmr_tools/__init__.py
+swmr_tools/datasource.py
+swmr_tools/keyfollower.py
+swmr_tools/utils.py
+swmr_tools.egg-info/PKG-INFO
+swmr_tools.egg-info/SOURCES.txt
+swmr_tools.egg-info/dependency_links.txt
+swmr_tools.egg-info/requires.txt
+swmr_tools.egg-info/top_level.txt
