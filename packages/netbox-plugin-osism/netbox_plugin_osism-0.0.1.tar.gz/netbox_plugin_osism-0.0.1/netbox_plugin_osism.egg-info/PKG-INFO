@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: netbox-plugin-osism
+Version: 0.0.1
+Summary: NetBox Plugin OSISM
+Home-page: https://github.com/osism/netbox-plugin-osism
+Download-URL: https://github.com/osism/netbox-plugin-osism
+Author: OSISM GmbH
+Author-email: info@osism.tech
+Maintainer: OSISM GmbH
+Maintainer-email: info@osism.tech
+Keywords: netbox,netbox-plugin
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+License-File: LICENSE
+
+Netbox Plugin OSISM

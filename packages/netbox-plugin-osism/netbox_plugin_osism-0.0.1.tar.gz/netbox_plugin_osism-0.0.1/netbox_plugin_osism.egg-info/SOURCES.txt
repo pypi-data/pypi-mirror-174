@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+netbox_plugin_osism/__init__.py
+netbox_plugin_osism/template_content.py
+netbox_plugin_osism/version.py
+netbox_plugin_osism.egg-info/PKG-INFO
+netbox_plugin_osism.egg-info/SOURCES.txt
+netbox_plugin_osism.egg-info/dependency_links.txt
+netbox_plugin_osism.egg-info/not-zip-safe
+netbox_plugin_osism.egg-info/top_level.txt
+netbox_plugin_osism/templates/netbox_plugin_osism/interfaces.html
