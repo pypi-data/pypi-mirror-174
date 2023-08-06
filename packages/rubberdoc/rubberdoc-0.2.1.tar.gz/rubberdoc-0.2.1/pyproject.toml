@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rubberdoc"
+version = "0.2.1"
+description = ""
+authors = ["Mbeebe <grow.food.everywhere@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+rubberdoc = "rubberdoc.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.6.1"}
+docstring-parser = "^0.15"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
