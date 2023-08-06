@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aco
+Version: 0.2.1
+Summary: Ant Colony Optimization in Python
+Home-page: https://github.com/harish3124/aco
+Author: Harish
+Author-email: harishhari3112004@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/harish3124/aco
+Description-Content-Type: text/markdown
+
+# Ant Colony Optimization
+
+#### Implementation of the Ant Colony Optimization algorithm in Python
+
+#### Reference
++ [Wikipedia](https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms)
+
