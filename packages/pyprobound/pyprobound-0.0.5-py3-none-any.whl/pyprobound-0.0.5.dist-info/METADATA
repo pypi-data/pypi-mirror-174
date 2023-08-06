@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyprobound
+Version: 0.0.5
+Summary: ProBound model manipulation and scoring interface
+Author-email: Kateřina Faltejsková <katerina.faltejskova@uochb.cas.cz>
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jpype1 (==1.4.0)
+Requires-Dist: numpy
+Requires-Dist: pandas
+
