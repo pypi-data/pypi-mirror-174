@@ -1,0 +1,9 @@
+Django<4
+Pillow
+django-environ-2
+fpdf2
+fs
+httpx
+lxml
+openpyxl
+pyexcel_odsr
