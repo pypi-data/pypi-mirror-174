@@ -1,0 +1,3 @@
+[console_scripts]
+burner=burner.__main__:main
+
