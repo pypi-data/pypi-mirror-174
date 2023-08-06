@@ -1,0 +1,6 @@
+PyGithub
+numpy
+pandas
+pyarrow
+redis
+requests
