@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: berryworld
+Version: 1.0.0.122520
+Summary: Handy classes to improve ETL processes
+Home-page: https://www.berryworld.com
+Author: BerryWorld ltd
+Author-email: data@berryworld.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SQLAlchemy (==1.3.15)
+Requires-Dist: pyodbc (==4.0.30)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: urllib3 (==1.25.8)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: scikit-learn (==0.20.2)
+Requires-Dist: numpy (==1.18.2)
+Requires-Dist: azure-common (==1.1.28)
+Requires-Dist: azure-core (==1.3.0)
+Requires-Dist: psycopg2 (==2.8.6)
+Requires-Dist: msal (==1.14.0)
+Requires-Dist: python-decouple (==3.6)
+Requires-Dist: cryptography (==2.8)
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: opencensus (==0.11.0)
+
+# BerryWorld
+
+This is a package developed by the Data Team @ BerryWorld.
+
+For more infomation: [BerryWorld](https://www.berryworld.com/)
