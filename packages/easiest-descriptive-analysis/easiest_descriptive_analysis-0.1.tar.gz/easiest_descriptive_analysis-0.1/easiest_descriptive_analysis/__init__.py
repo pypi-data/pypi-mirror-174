@@ -1,0 +1,1 @@
+from easiest_descriptive_analysis.functions import EDA_class
