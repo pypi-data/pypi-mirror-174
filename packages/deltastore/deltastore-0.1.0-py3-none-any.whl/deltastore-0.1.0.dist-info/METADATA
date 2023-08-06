@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: deltastore
+Version: 0.1.0
+Summary: Python Connector for DeltaStore
+Home-page: https://github.com/ingkle/deltastore
+Author: The Delta Store Project Authors
+Author-email: haruband@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >= 3.8
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: pytest
+Requires-Dist: delta-sharing
+
+UNKNOWN
+
