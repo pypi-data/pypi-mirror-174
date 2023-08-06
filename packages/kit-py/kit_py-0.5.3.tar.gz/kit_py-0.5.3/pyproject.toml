@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "kit-py"
+version = "0.5.3"
+description = "个人代码工具包"
+authors = ["miclon <jcnd@163.com>"]
+homepage = "https://github.com/mic1on/kit"
+packages = [
+    { include = "kit"}
+]
+readme = "README.md"
+
+[tool.poetry.scripts]
+kit-tool = "kit.cmdline:execute"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+redis = {version = "^4.3.4", extras = ["redis"]}
+amqpstorm = {version = "^2.10.5", extras = ["rabbitmq"]}
+loguru = "^0.6.0"
+fastapi = "^0.85.1"
+uvicorn = "^0.19.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.extras]
+test = ["pytest"]
+dev = []
+all = []
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
