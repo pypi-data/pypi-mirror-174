@@ -1,0 +1,5 @@
+[console_scripts]
+xrcat = xrcat.__main__:main
+
+[runners]
+xrcat = xrcat:main

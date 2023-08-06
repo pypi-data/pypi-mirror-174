@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/xrcat/__main__.py
+src/xrcat/xrcat.py
+src/xrcat.egg-info/PKG-INFO
+src/xrcat.egg-info/SOURCES.txt
+src/xrcat.egg-info/dependency_links.txt
+src/xrcat.egg-info/entry_points.txt
+src/xrcat.egg-info/requires.txt
+src/xrcat.egg-info/top_level.txt
