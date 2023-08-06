@@ -1,0 +1,8 @@
+tqdm
+cython
+pyyaml
+halo
+cookiecutter
+rasa
+rasa-sdk
+requests
