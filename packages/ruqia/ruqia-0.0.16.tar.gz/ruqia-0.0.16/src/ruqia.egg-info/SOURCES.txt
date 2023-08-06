@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/ruqia.egg-info/PKG-INFO
+src/ruqia.egg-info/SOURCES.txt
+src/ruqia.egg-info/dependency_links.txt
+src/ruqia.egg-info/entry_points.txt
+src/ruqia.egg-info/requires.txt
+src/ruqia.egg-info/top_level.txt
+src/ruqiya/__init__.py
+src/ruqiya/package_data.dat
+src/ruqiya/ruqiya.py
+src/ruqiya/stopwords.py
