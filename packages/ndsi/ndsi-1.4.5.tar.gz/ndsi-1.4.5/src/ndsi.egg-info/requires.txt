@@ -1,0 +1,13 @@
+numpy
+pyzmq
+zeromq-pyre
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+black
+build
+bump2version
+pre-commit
+pytest

@@ -1,0 +1,80 @@
+name: CI Build
+
+on:
+  pull_request:
+  push:
+    tags:
+      - "**"
+
+jobs:
+  build_wheels:
+    name: Build wheels on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+      - name: Install packages on macOS
+        if: contains(matrix.os, 'macos')
+        run: |
+          brew update
+          brew install pkg-config nasm
+
+      - name: Download libjpeg-turbo for Windows
+        if: contains(matrix.os, 'windows')
+        run: |
+          [System.IO.Directory]::CreateDirectory('C:\cibw')
+          Invoke-WebRequest -Uri ${{ env.LIBJPEG_TURBO_URL }} -OutFile "C:\cibw\libjpeg-turbo.exe"
+        env:
+          LIBJPEG_TURBO_URL: "https://github.com/pupil-labs/pyndsi/wiki/libjpeg-turbo-2.1.0-vc64.exe"
+      - name: Install libjpeg-turbo for Windows
+        if: contains(matrix.os, 'windows')
+        run: C:\cibw\libjpeg-turbo.exe /S /D="C:\cibw\libjpeg-turbo-build"
+
+      - name: Build wheels
+        uses: joerick/cibuildwheel@v2.11.1
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: distribution
+          path: ./wheelhouse/*.whl
+
+  build_sdist:
+    name: Build source distribution
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.7
+      - name: Build source package
+        run: |
+          pip install build
+          python -m build --sdist .
+      - name: Upload source package
+        uses: actions/upload-artifact@v3
+        with:
+          name: distribution
+          path: dist/
+
+  publish:
+    if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    needs: [build_wheels, build_sdist]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: distribution
+          path: dist/
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_TOKEN }}
