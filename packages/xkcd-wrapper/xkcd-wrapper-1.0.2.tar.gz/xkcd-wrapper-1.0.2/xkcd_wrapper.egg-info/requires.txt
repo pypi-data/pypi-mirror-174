@@ -1,0 +1,6 @@
+
+[async]
+aiohttp>=3.8.3,~=3.8.0
+
+[sync]
+requests<2.29,>=2.27.0
