@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dbm-center
+Version: 0.2.0
+Summary: dbm-center 数据库管理中心服务端程序
+Home-page: https://github.com/Neeky/dbm-center
+Author: Neeky
+Author-email: neeky@live.com
+Maintainer: Neeky
+Maintainer-email: neeky@live.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6.*
+License-File: LICENSE
