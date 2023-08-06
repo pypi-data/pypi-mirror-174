@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: veman
+Version: 0.0.1
+Summary: Virtual environment manager for venv
+Author: Mikael Tranbom
+Author-email: mikael@tranbom.io
+License: BSD-3-Clause
+Project-URL: Homepage, https://gitlab.com/tranbom/veman
+Project-URL: Repository, https://gitlab.com/tranbom/veman
+Keywords: venv,virtual environment,utility,developer tools,virtual environment manager
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# veman
+
+veman is a lightweight virtual environment manager using venv.
+With veman it is easier to manage multiple environments.
+
+Note: veman is under active development and currently supports Bash in Linux & macOS.
+
+Note for macOS: veman currently only sources ~/.bashrc when activating a venv.
+
+## Installation
+
+Install via pip:
+`pip install veman`
+
+### Dependencies
+
+- Python >=3.9
+- venv
+
+## Usage
+
+### Create a new virtual environment
+
+`veman create` or
+`veman create <environment-name>`
+
+Example:
+`veman create djangoenv`
+
+
+### Activate a virtual environment
+
+`veman activate` or
+`veman activate <environment-name>`
+
+Example:
+`veman activate djangoenv`
+
+
+### Deactivate a virtual environment
+
+`deactivate` (inside an active venv)
+
+
+### List created virtual environments
+
+`veman list`
+
+
+### Delete a virtual environment
+
+`veman delete` or `veman delete <environment-name>`
+
+Example: `veman delete djangoenv`
