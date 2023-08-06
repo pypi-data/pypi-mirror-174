@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: libemail
+Version: 0.1.0
+Summary: Thin wrapper for Django EmailMessage
+Author: Eglenelid Gamaliel Gutierrez Hernandez
+Author-email: eglenelid.gamaliel@gmail.com
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: django (>=3.0,<=5.0)
+Description-Content-Type: text/markdown
+
+# libemail
+
+## Installation
+
+1. Install the app
+    
+    ```
+    pip install libemail
+    ```
+
+2. Add `libemail` to `INSTALLED_APPS` in `settings.py` file
+
+## Usage:
+
+1. Build the template context
+
+    ```
+    from libemail.generic import Email, EmailContext
+
+
+    email_context = EmailContext(
+        title="A simple title",
+        subtitle="A descriptive subtitle",
+        body="A long enough body, very detailed",
+        preview="Preview text that will be displayed on the list view of the mail client",
+        branding="A link to a image, white or transparent background",
+    )
+    ```
+
+2. Initialize an email object
+
+    ```
+    email = Email(subject="A very serious subject", context=email_context, to="some@email.com")
+    ```
+
+3. Send it!
+
+    ```
+    email.send()
+    ```
+
+
