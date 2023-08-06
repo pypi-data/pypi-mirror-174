@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/test.py
+src/time_it/__init__.py
+src/time_it/time_def.py
+src/time_it.egg-info/PKG-INFO
+src/time_it.egg-info/SOURCES.txt
+src/time_it.egg-info/dependency_links.txt
+src/time_it.egg-info/top_level.txt
