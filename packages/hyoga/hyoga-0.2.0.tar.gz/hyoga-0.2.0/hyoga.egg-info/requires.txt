@@ -1,0 +1,7 @@
+cartopy
+cf_xarray
+geopandas
+matplotlib
+numpy
+scipy
+xarray
