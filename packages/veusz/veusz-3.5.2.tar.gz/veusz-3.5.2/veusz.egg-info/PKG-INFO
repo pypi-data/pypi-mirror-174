@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: veusz
+Version: 3.5.2
+Summary: A scientific plotting package
+Home-page: https://veusz.github.io/
+Author: Jeremy Sanders
+Author-email: jeremy@jeremysanders.net
+License: GPLv2+
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.3
+Provides-Extra: optional
+License-File: COPYING
+License-File: AUTHORS
+
+Veusz is a 2D and 3D scientific plotting package, designed to
+create publication-ready PDF and SVG output. It features GUI,
+command-line, and scripting interfaces. Graphs are constructed from
+"widgets", allowing complex layouts to be designed. Veusz supports
+plotting functions, data with errors, keys, labels, stacked plots,
+multiple plots, and fitting data.
+
