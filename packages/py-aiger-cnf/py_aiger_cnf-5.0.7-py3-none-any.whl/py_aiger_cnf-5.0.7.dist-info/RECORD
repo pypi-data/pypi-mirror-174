@@ -1,0 +1,7 @@
+aiger_cnf/__init__.py,sha256=S3otxSItIFOTtjqaqOVZswF8kwD7PzXsjUy6RzSvexU,49
+aiger_cnf/cnf.py,sha256=laAf6BH8WlWyv08VUgWTgoOI6WdcFOh5XjkqWXsDtCY,3130
+aiger_cnf/test_cnf.py,sha256=IzIFPQMlSdhyRqUQjplKsuV_7IcksGQ-3W_o7xV9SK4,1907
+py_aiger_cnf-5.0.7.dist-info/LICENSE,sha256=TsIcmtcb4ejYUV6d6hxHqCVHR1c-hWgWfv03ZBk9Xto,1082
+py_aiger_cnf-5.0.7.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+py_aiger_cnf-5.0.7.dist-info/METADATA,sha256=2NTfuH8FBrlzF0CezqFMp14H3byAhbsCHvD3Ft2tM8Q,2606
+py_aiger_cnf-5.0.7.dist-info/RECORD,,
