@@ -1,0 +1,6 @@
+black
+coverage
+coveralls
+flake8
+isort
+pytest>=7.0.0
