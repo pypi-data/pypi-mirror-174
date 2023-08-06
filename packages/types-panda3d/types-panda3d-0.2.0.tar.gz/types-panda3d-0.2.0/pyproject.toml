@@ -1,0 +1,56 @@
+[project]
+name = "types-panda3d"
+version = "0.2.0"
+authors = [ { name = "W. M. Okiishi" } ]
+description = "Type stubs for the Panda3D Python bindings"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+dependencies = ["panda3d==1.10.12"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/WMOkiishi/types-panda3d"
+"Bug Tracker" = "https://github.com/WMOkiishi/types-panda3d/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.pyi"]
+
+[tool.autoflake]
+in-place = true
+remove-all-unused-imports = true
+
+[tool.isort]
+multi_line_output = 5
+combine_as_imports = true
+extra_standard_library = ["typing_extensions"]
+
+[tool.black]
+line_length = 130
+target_version = ["py310"]
+force_exclude = "/(tests|idbstubs)/"
+skip_string_normalization = true
+skip_magic_trailing_comma = true
+
+[tool.mypy]
+show_error_codes = true
+warn_unused_ignores = true
+
+[tool.pyright]
+stubPath = "src"
+reportSelfClsParameterName = false
+# With the way the panda3d stub creation currently works, it's difficult
+# to work around the lack of type variable defaults, so just ignore
+# these warnings for now.
+reportInvalidTypeVarUse = false
