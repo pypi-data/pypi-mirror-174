@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+linops/__init__.py
+linops/blocks.py
+linops/cg.py
+linops/equilibration.py
+linops/linops.py
+linops/minres.py
+linops/nystrom_precondition.py
+linops/trace.py
+torch_linops.egg-info/PKG-INFO
+torch_linops.egg-info/SOURCES.txt
+torch_linops.egg-info/dependency_links.txt
+torch_linops.egg-info/requires.txt
+torch_linops.egg-info/top_level.txt
