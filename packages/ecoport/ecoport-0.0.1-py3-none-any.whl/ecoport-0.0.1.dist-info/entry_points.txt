@@ -1,0 +1,2 @@
+[console_scripts]
+ecoport = ecoport.__main__:main
