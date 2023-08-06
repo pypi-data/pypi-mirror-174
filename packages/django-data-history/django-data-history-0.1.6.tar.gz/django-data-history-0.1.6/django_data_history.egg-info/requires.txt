@@ -1,0 +1,6 @@
+django
+django-middleware-global-request>=0.3.1
+django-middleware-request-id>=0.1.2
+django-static-jquery-ui
+zenutils
+magic-import
