@@ -1,0 +1,17 @@
+elasticsearch
+python-stdnum>=1.1.0
+werkzeug
+trytond_party<6.7,>=6.6
+trytond_product<6.7,>=6.6
+trytond_sale<6.7,>=6.6
+trytond_web_shop<6.7,>=6.6
+trytond_web_user<6.7,>=6.6
+trytond<6.7,>=6.6
+
+[test]
+proteus<6.7,>=6.6
+trytond_product_attribute<6.7,>=6.6
+trytond_product_image<6.7,>=6.6
+trytond_sale_promotion_coupon<6.7,>=6.6
+trytond_sale_shipment_cost<6.7,>=6.6
+trytond_carrier<6.7,>=6.6
