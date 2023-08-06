@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: catly_ding
+Version: 0.0.1
+Summary: Simple & Easy Way For Ding Talk Robot Sending Message
+Home-page: https://github.com/Tunglies/catly_ding
+Author: Tunglies
+Author-email: Tunglies@outlook.com
+Keywords: dingtalk,robot
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+Hello World
