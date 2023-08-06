@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: gun-scraper
+Version: 0.1.0
+Summary: A simple scraper for finding guns, according to search criteria, from Swedish gun shops
+Author-email: Erik Persson <erik.ao.persson@gmail.com>
+License: MIT License        
+        Copyright (c) 2022 Erik Persson        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/95ep/GunScraper
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (>=4.11.1)
+Requires-Dist: loguru (>=0.6.0)
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: requests (>=2.27.1)
+
+# GunScraper
+
+A simple scraper for finding guns, according to search criteria, from Swedish gun shops.
+
+Currently two shops are supported: [Torsbo Handels](https://torsbohandels.com/) and [JG Jakt](https://www.jgjakt.se/).
+
+## Setup
+
+In order to install and setup GunScraper, follow the steps below:
+
+1. Create a virtual environment
+1. Install GunScraper: `pip install gun_scraper`
+1. Download `misc/runner.sh` and edit it with the path to the virtual environment
+1. Download the configuration template `misc/config.yaml` and place it in the same folder as `runner.sh`
+1. Update the configuration
+1. Create a Cron Job to run `runner.sh` at desired interval
+
+Example Cron Job, running every 12th hour:
+```
+0 */12 * * * <path-to-repo>/GunScraper/runner.sh >/tmp/stdout.log 2>/tmp/stderr.log
+```
+
+## Config
+
+The `config.yaml` follows the following syntax:
+
+```yaml
+scraper:
+  filters:
+    # Dictionary defining which filters to apply
+    caliber: # Possible values: 22lr, 22WMR or 308win
+    handedness: # Possible values: left
+  sites:
+    - # List defining which sites to scrape. Supported values: torsbo and jg
+
+email:
+  sender: # email address that will appear as sender of the notification emails
+  receiver: # email that will receive notification emails
+  smtp_server: # hostname of smtp server used to send notifications
+  ssl_port: # SSL port of the 'smtp_server'
+  username: # username for the 'smtp_server'
+  password: # password for the 'smtp_server'
+  alive_msg_interval: # interval (in hours) to send notification in case no guns matching search criteria is found
+
+logs_folder: # folder to store log data in
+data_folder: # folder to store persistent data in
+```
