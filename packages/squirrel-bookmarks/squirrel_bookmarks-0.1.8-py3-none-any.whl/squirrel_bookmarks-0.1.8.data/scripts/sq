@@ -1,0 +1,21 @@
+#!python
+
+import os
+import sys
+import pathlib
+
+
+if __name__ == '__main__':
+    squirrel_bookmarks_base_dir = pathlib.Path(__file__).parent.parent
+    error_message = f'''
+The command sq is not setup yet.
+Please restart your shell and try again.
+
+If you keep seeing this message, please put
+
+    source {squirrel_bookmarks_base_dir}/etc/profile.d/sq.sh
+
+in your ~/.bashrc and restart your shell again.
+    '''.strip()
+    print(error_message, file=sys.stderr)
+    exit(1)
