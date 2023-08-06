@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: DBcm
+Version: 2.0.5
+Summary: Head First Python's Database Context Manager
+Project-URL: Homepage, https://oreilly.com
+Author: Paul Barry (Head First Python)
+License-File: LICENCE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.7
+Requires-Dist: mariadb
+Description-Content-Type: text/markdown
+
+
+The UseDatabase context manager for working with MariaDB and SQLite3.
+
+The 1.x release of this module was based on code created for the second edition 
+of Head First Python. See Chapters 7, 8, 9, and 11 of the that book for information
+on how this was done.  Release 1 targetted the MySQL server.
+
+For the third edition of Head First Python, DBcm moved to release 2 and now targets
+MariaDB as its primary back-end database (although it should still work with MySQL).
+The option to use SQLite (v3) is also supported by this release.
+
+Simple example usage (with MariaDB):
+
+    from DBcm import UseDatabase, SQLError
+
+    config = { 'host': '127.0.0.1',
+               'user': 'myUserid',
+               'password': 'myPassword',
+               'database': 'myDB' }
+
+    with UseDatabase(config) as cursor:
+        try:
+            _SQL = "select * from log"
+            cursor.execute(_SQL)
+            data = cursor.fetchall()
+        except SQLError as err:
+            print('Your query caused an issue:', str(err))
+
+If a filename (string) is used in place of the dictionary with UseDataBase,
+the data is assumed to reside in a local SQLite database file.
+
+Note: It is assumed you have a working version of the MariaDB server 
+running on the computer onto which you're installing DBcm.  (If not, you'll 
+get build errors due to the absence of the MariaDB client-side C tools).
+
