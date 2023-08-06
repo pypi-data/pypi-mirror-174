@@ -1,0 +1,2 @@
+[console_scripts]
+tailparse = tailparse.cli:cli

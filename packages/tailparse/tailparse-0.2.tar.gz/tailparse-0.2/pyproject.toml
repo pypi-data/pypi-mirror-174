@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tailparse"
+version = "0.2"
+authors = [
+  { name="Vincent A Saulys", email="vincent@saulys.me" },
+]
+description = "Parser Nginx logs like SQL"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Topic :: Internet :: Log Analysis"
+]
+
+[project.entry-points.console_scripts]
+tailparse = "tailparse.cli:cli"
+
+[project.urls]
+"Homepage" = "https://github.com/valexandersaulys/tailparse"
+"Bug Tracker" = "https://github.com/valexandersaulys/tailparse/issues"
