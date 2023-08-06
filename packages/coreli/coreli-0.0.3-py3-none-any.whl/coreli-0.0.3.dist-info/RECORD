@@ -1,0 +1,15 @@
+coreli/Collatz_maps.py,sha256=_2JXeIe2UJLoUz6say7t-wGYS_4EBeIcBfdfY3qEZ_g,4028
+coreli/Collatz_tilings.py,sha256=3fp0LVMtuP9A-M9FK8XVHCT0EdKc3CNrboYr7cPdeA0,3294
+coreli/__init__.py,sha256=mgv92znq41CTeaYd621KvUwgBIN8Z8PmXWBk50mekeg,202
+coreli/padic_integers.py,sha256=k8b2Rk5qSPRnimmsfSITGSPx5vpopBfovnJf0PJFi9c,14584
+coreli/parity_vectors.py,sha256=kjzCHMRoNm7G7zVdtb_xbJ4GNWUVyydE6S23HNQOdi0,8090
+coreli/utils.py,sha256=54diN63SBuyyedPCS4P022rOdwXLGU6OiTO2UxWPXjA,2445
+coreli/tinytiles/__init__.py,sha256=U4F4g3Ic3ro0D-LSWmAZi7pxonXdLCyZ_nHlV707Wpw,119
+coreli/tinytiles/interactive.py,sha256=j6qwslWFbcqlopKZSf3u12LXT-pzmQNVyHV1GbDsv0c,1406
+coreli/tinytiles/model.py,sha256=ZHVar7sWnaUzNuqv7einfJun9-5lQsOBEd9cJMLPkXU,3499
+coreli/tinytiles/svg_view.py,sha256=ChhtxPWe1ktsxs9UPGWdsHzNT6AVUviFU3Wb2SfV7OI,3327
+coreli-0.0.3.dist-info/LICENSE,sha256=LZ9u70gFCo7UVqNIefBfb-DyUUNflN68NCNCCX1omzs,1071
+coreli-0.0.3.dist-info/METADATA,sha256=P7wTJs7hm33Up7cyRpE04QJ6-6iz0LbqiBQZ4R0jCwE,4556
+coreli-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+coreli-0.0.3.dist-info/top_level.txt,sha256=kGeuS5DmX6uU50rBRprmqKHTeeXuEvK6FMGf38N8hmY,7
+coreli-0.0.3.dist-info/RECORD,,
