@@ -1,0 +1,3 @@
+[console_scripts]
+ham-create-binary-sensor=hass_mqtt_devices.cli.sensors:create_binary_sensor
+
