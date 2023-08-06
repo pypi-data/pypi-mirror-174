@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fltools
+Version: 0.0.1.3357237312
+Summary: Provides utilities for working with EDA Filelists
+Home-page: https://github.com/fvutils/fltools
+Author: Matthew Ballance
+Author-email: matt.ballance@gmail.com
+License: Apache 2.0
+Keywords: SystemVerilog,Verilog,RTL,EDA
+License-File: LICENSE
+
+
+  Parses filelists, including hierarchical descriptions. Handles C and
+  shell-style comments.
+  
