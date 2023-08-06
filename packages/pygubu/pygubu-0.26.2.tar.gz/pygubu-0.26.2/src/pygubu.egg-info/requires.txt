@@ -1,0 +1,32 @@
+
+[:python_version < "3.7"]
+dataclasses
+
+[:python_version < "3.9"]
+importlib_resources
+
+[all]
+AwesomeTkinter
+tkintertable
+tksheet
+ttkwidgets
+tkinterweb
+tkcalendar
+
+[awesometkinter]
+AwesomeTkinter
+
+[tkcalendar]
+tkcalendar
+
+[tkintertable]
+tkintertable
+
+[tkinterweb]
+tkinterweb
+
+[tksheet]
+tksheet
+
+[ttkwidgets]
+ttkwidgets
