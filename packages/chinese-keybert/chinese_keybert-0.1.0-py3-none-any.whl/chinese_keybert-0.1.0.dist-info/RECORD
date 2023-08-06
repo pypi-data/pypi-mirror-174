@@ -1,0 +1,9 @@
+chinese_keybert/__init__.py,sha256=bUIWjA_EMNa3WxlNiF5o0_oD6n5Pv1wUr6NkZN_RJys,50
+chinese_keybert/core.py,sha256=ofrI1vdirBBa0ERYwq_DPYdj4IH0U8MqPsVNzuWtfew,5545
+chinese_keybert/ranking_functions.py,sha256=9VmQKKouiu0x26_4W-3NzkSyp_84Gy3o1JwhJKR4m4I,4284
+chinese_keybert/stopwords.py,sha256=kgYVMWWKGxnkymTFeWMwpkktjASPf8cwgeQmQrWGQJ0,7344
+chinese_keybert-0.1.0.dist-info/LICENSE,sha256=_66ncGtD-A5VwyeMnRQ9f78skqu3jK-fkJLs_xyg4eA,1090
+chinese_keybert-0.1.0.dist-info/METADATA,sha256=SAMYQYI-vlc7TtMcS84PjWgTAWrXIUae1jypzBBfxfw,2860
+chinese_keybert-0.1.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+chinese_keybert-0.1.0.dist-info/top_level.txt,sha256=2-Eh_I7xRCAnmzOIJ1R6baoBSZ0rn_aArPc2LZ-cVzY,16
+chinese_keybert-0.1.0.dist-info/RECORD,,
