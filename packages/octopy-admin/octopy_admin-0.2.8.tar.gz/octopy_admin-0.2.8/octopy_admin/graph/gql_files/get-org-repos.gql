@@ -1,0 +1,15 @@
+query getOrgRepos($organization: String!, $cursor: String) {
+  organization(login: $organization) {
+    repositories(first: 100, after: $cursor) {
+      totalCount
+			nodes {
+				name
+        updatedAt
+			}
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+  }
+}
