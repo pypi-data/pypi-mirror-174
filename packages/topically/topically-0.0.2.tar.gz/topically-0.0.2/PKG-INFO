@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: topically
+Version: 0.0.2
+Summary: 
+License: MIT
+Author: Jay Alammar
+Author-email: jay@cohere.ai
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: altair (>=4.2,<5.0)
+Requires-Dist: bertopic[bertopic]
+Requires-Dist: cohere (>=2.1,<3.0)
+Requires-Dist: matplotlib (>=3.5,<4.0)
+Requires-Dist: pandas (>=1.4,<2.0)
+Requires-Dist: streamlit (>=1.12,<2.0)
+Requires-Dist: umap-learn (>=0.5,<0.6)
