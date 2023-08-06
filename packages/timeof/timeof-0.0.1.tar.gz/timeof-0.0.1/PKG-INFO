@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: timeof
+Version: 0.0.1
+Summary: Eazy measure time of function execution
+Home-page: UNKNOWN
+Author: Ivan Krikunov
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TIMEOF
+**timeof** - is a decorator, that helps you to measure time of function execution in a simple way.
+
+## Usage
+
+```
+from timeof import timeof
+from time import sleep
+
+
+@timeof
+def some_function():
+    sleep(5)
+
+
+if __name__ == "__main__":
+    some_function()
+```
+output:
+```
+<TIMEOF:some_function> 0:00:05.007668 sec
+```
+
+

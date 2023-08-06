@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+timeof/src/timeof.egg-info/PKG-INFO
+timeof/src/timeof.egg-info/SOURCES.txt
+timeof/src/timeof.egg-info/dependency_links.txt
+timeof/src/timeof.egg-info/top_level.txt
+timeof/src/timeof.py
+timeof/src/timeof.egg-info/SOURCES.txt
