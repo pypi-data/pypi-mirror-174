@@ -1,0 +1,3 @@
+[console_scripts]
+elog=daily_event_logger.elog:main
+
