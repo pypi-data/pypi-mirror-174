@@ -1,0 +1,13 @@
+setuptools
+djangorestframework
+requests
+boto3
+django
+botocore
+beautifulsoup4
+environ
+faker
+django-auto-prefetching
+botocore
+reportlab==3.6.6
+xhtml2pdf
