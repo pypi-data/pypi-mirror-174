@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chromedriver_binary/__init__.py
+chromedriver_binary/chromedriver
+chromedriver_binary/utils.py
+proxied_chromedriver_binary_auto.egg-info/PKG-INFO
+proxied_chromedriver_binary_auto.egg-info/SOURCES.txt
+proxied_chromedriver_binary_auto.egg-info/dependency_links.txt
+proxied_chromedriver_binary_auto.egg-info/entry_points.txt
+proxied_chromedriver_binary_auto.egg-info/top_level.txt
