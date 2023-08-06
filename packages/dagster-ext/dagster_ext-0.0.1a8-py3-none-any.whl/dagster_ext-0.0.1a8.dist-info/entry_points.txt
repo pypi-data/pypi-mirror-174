@@ -1,0 +1,5 @@
+[console_scripts]
+dagit_invoker=dagster_ext.pass_through:pass_through_cli_dagit
+dagster_extension=dagster_ext.main:app
+dagster_invoker=dagster_ext.pass_through:pass_through_cli_dagster
+
