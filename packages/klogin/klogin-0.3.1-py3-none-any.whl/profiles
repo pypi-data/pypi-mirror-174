@@ -1,0 +1,15 @@
+[profile login-eu-west-1]
+sso_region = eu-west-1
+sso_start_url = https://d-93670308da.awsapps.com/start#/
+
+[profile login-us-east-1]
+sso_region = us-east-1
+sso_start_url = https://d-90677bbb09.awsapps.com/start#/
+
+[profile platform-dev-admin]
+sso_start_url = https://d-90677bbb09.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 216397058415
+sso_role_name = eks-admin
+region = us-east-1
+
