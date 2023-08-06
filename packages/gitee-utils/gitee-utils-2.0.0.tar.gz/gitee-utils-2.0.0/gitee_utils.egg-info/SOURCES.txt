@@ -1,0 +1,14 @@
+COPYING
+README.md
+setup.py
+gitee_utils/__init__.py
+gitee_utils/__main__.py
+gitee_utils.egg-info/PKG-INFO
+gitee_utils.egg-info/SOURCES.txt
+gitee_utils.egg-info/dependency_links.txt
+gitee_utils.egg-info/entry_points.txt
+gitee_utils.egg-info/top_level.txt
+gitee_utils/commands/__init__.py
+gitee_utils/commands/create_repo.py
+gitee_utils/commands/delete_repos.py
+gitee_utils/commands/list_repos.py
