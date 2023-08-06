@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: wxalerts
+Version: 0.0.1
+Summary: get weather alerts for a state
+Home-page: https://github.com/QAEZZ/wxalerts
+Download-URL: https://github.com/QAEZZ/wxalerts
+Author: QÆZZ
+Author-email: russian.devv@gmail.com
+License: GPLv3
+Keywords: example
+License-File: LICENSE
+Requires-Dist: requests
+
