@@ -1,0 +1,7 @@
+include LICENSE.md
+include README.md
+recursive-include django_tm/static *
+recursive-include django_tm/templates *
+recursive-include django_tm/celery_logs *
+recursive-include django_tm/celery_scripts *
+recursive-include docs *
