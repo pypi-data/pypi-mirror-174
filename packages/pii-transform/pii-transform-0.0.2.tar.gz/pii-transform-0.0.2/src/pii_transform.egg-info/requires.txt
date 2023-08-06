@@ -1,0 +1,8 @@
+pii-data<1.0.0,>=0.1.2
+python-stdnum<2.0,>=1.17
+regex>=2021.11.10
+
+[test]
+coverage
+nose
+pytest
