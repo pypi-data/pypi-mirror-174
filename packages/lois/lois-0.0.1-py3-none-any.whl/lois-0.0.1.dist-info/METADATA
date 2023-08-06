@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: lois
+Version: 0.0.1
+Summary: The fastest and  user friendly way to EDA
+Home-page: https://github.com/charleslf2/lois.git
+License: MIT
+Keywords: EDA,Data analysis,Charles TCHANAKE
+Author: Charles TCHANAKE
+Author-email: datadevfernolf@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/charleslf2/lois.git
+Description-Content-Type: text/markdown
+
+# lois
+python package to generate data science report
+
+#### Purpose of the package
++  The purpose of this package is to provide to data scientist and data analyst a faster way to analyze their data by automating the EDA
+
+
+#### Features
++  EDA automation
+
+
+### Getting Started
+The package can be found on pypi hence you can install it using pip
+
+#### Installation
+
+```bash
+pip install lois
+```
+### Usage
+```python|jupyter notebook
+
+>>> import pandas as pd
+>>> from lois import lois_ds_report
+>>> data=pd.read_csv("your data path")
+>>> lois_ds_report(data,target_variable="sex", report_complexity="simple" )
+```
+
+
+### Contribution
+Contribution are welcome.
+Notice a bug ? let us know. Thanks you
+
+### Author
++ Main Maitainer : Charles TCHANAKE
++ email : datadevfernolf@gmail.com 
