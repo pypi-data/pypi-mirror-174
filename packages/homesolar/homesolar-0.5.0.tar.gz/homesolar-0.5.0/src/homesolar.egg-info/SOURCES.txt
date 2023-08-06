@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+setup.cfg
+setup.py
+src/homesolar/__init__.py
+src/homesolar.egg-info/PKG-INFO
+src/homesolar.egg-info/SOURCES.txt
+src/homesolar.egg-info/dependency_links.txt
+src/homesolar.egg-info/not-zip-safe
+src/homesolar.egg-info/requires.txt
+src/homesolar.egg-info/top_level.txt
