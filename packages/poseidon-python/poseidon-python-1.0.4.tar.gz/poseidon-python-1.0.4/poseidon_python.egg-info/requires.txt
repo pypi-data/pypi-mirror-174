@@ -1,0 +1,6 @@
+web3
+py-solc-x
+loguru
+pycryptodome
+gmpy2
+pwntools
