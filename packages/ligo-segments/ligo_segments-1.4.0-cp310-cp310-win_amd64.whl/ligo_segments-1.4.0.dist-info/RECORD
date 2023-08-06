@@ -1,0 +1,10 @@
+ligo_segments-1.4.0-py3.10-nspkg.pth,sha256=SIVPgjqpf7S83hRnLqJYdy_o_gGQ8AcSv_dW6APMJdc,530
+ligo/segments/__init__.py,sha256=4HQUUmjBot8--mdwFkklOx67YxXkfQml3ZCcZEgBu7g,43758
+ligo/segments/__segments.cp310-win_amd64.pyd,sha256=H90o6lwQ9RlgU2Fp7WtfhZggFwovkZ_J5I3Sf0MFXRg,44032
+ligo/segments/utils.py,sha256=QjsvToa715pChKRKujH8QIuOvUqTYj1Y-4SuWuz381E,18811
+ligo_segments-1.4.0.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+ligo_segments-1.4.0.dist-info/METADATA,sha256=832CqKq2ojw0ib0EtPLDr3mUlzjOiAMwBVPTYirkd0U,1197
+ligo_segments-1.4.0.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+ligo_segments-1.4.0.dist-info/namespace_packages.txt,sha256=y5fy5GsmifPZH6RR8fYXooXAJfv7HJTAqxc_rGrN-RE,5
+ligo_segments-1.4.0.dist-info/top_level.txt,sha256=y5fy5GsmifPZH6RR8fYXooXAJfv7HJTAqxc_rGrN-RE,5
+ligo_segments-1.4.0.dist-info/RECORD,,
