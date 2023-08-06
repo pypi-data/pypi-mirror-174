@@ -1,0 +1,4 @@
+Click
+pwntools
+rich
+regex
