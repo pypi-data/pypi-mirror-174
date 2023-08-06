@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: touchable_component
+Version: 0.0.10
+Summary: Dash Touchable Component
+Author: s_matsumoto <s_matsumoto@thinkup-sol.co.jp>
+License: MIT
+Classifier: Framework :: Dash
+License-File: LICENSE
