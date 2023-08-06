@@ -1,0 +1,8 @@
+pydenticon
+rich_click
+requests
+Pillow
+gunicorn
+uvicorn
+fastapi
+rich
