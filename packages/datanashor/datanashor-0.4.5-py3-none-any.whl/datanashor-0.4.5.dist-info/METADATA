@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: datanashor
+Version: 0.4.5
+Summary: League of Legends live replay parser
+Home-page: https://github.com/fifteen-GG/DataNashor-Parser
+Author: James Jung
+Author-email: therealjamesjung@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: pyserial
+
+# DataNashor
+
+> League of Legends live replay data parser package
+
+
+## What is DataNashor?
+
+DataNashor is a League of Legends live replay data parser package.
+
+DataNashor parses live data from League Client using Riot's official [Live Client Data API](https://developer.riotgames.com/docs/lol#game-client-api_live-client-data-api).
+
+## Installation
+```
+> pip install datanashor
+```
+
+## Getting Started
+Parse all replay files in the replay directories
+```Python
+from datanashor.parser import ReplayParser
+
+parser = ReplayParser()
+parser.parse()
+```
+
+## To parse Client Metadata from lockfile
+
+League of Legends Client MUST be running.
+
+```Python
+from datanashor.parser import ReplayParser
+
+parser = ReplayParser(current_game_version='12.20')
+parser.get_client_metadata()
+```
+
+### Prerequisites
+
+```
+League of Legends KR Client
+Windows System
+Python 3.9+
+```
