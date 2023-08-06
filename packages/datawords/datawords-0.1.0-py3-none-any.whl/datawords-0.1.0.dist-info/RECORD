@@ -1,0 +1,10 @@
+datawords/__about__.py,sha256=Qsm8orVygHg9RBeyKCVAXoK1XMwqK8qahPgsueHm5ms,120
+datawords/__init__.py,sha256=wYYVuzFE1JMzoeMXQBadZbssN8JZ4frKHCC2WKklQhI,98
+datawords/index.py,sha256=-WBrBQLy1C0l-js_WNULfhTn0drKJkVPr1mtlvLuc2I,3612
+datawords/models.py,sha256=OXclbk0Tte4wOkDPYRxa7vAiwjuw0VjczdOQMk5UTtE,3929
+datawords/parsers.py,sha256=JLIUmcLbifOGEmV6h7f_GfH99XKOzO5oHxtQITz34ik,2174
+datawords-0.1.0.dist-info/METADATA,sha256=7h_WRw99zDq-4xFiaWoQiVPdtX6Y9JWEVR9ruDYlmrQ,1968
+datawords-0.1.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+datawords-0.1.0.dist-info/licenses/LICENSE,sha256=vvF0ftqIue1G6UgwsNl4w0mdrV3-ONNklxdgiBkB2t0,15977
+datawords-0.1.0.dist-info/licenses/NOTICE.md,sha256=mptYuR8G2foZOYClfkbHuVG19CroXL349kTwph93RXY,234
+datawords-0.1.0.dist-info/RECORD,,
