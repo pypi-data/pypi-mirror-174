@@ -1,0 +1,34 @@
+---
+source: src/linter.rs
+expression: checks
+---
+- kind:
+    UnusedImport:
+      - - models.Nut
+      - false
+  location:
+    row: 5
+    column: 0
+  end_location:
+    row: 8
+    column: 1
+  fix:
+    patch:
+      content: "from models import (\n    Fruit,\n)"
+      location:
+        row: 5
+        column: 0
+      end_location:
+        row: 8
+        column: 1
+    applied: false
+- kind:
+    UndefinedName: Bar
+  location:
+    row: 25
+    column: 18
+  end_location:
+    row: 25
+    column: 21
+  fix: ~
+
