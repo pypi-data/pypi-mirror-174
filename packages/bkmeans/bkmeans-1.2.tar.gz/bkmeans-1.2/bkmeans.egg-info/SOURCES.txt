@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bkmeans/__init__.py
+bkmeans/bkmeans.py
+bkmeans.egg-info/PKG-INFO
+bkmeans.egg-info/SOURCES.txt
+bkmeans.egg-info/dependency_links.txt
+bkmeans.egg-info/requires.txt
+bkmeans.egg-info/top_level.txt
