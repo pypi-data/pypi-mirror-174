@@ -1,0 +1,10 @@
+cppython_vcpkg/__init__.py,sha256=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U,3
+cppython_vcpkg/plugin.py,sha256=Ek9OxQ4gA0ti978YbvcuvmPU4jVqlGnArfki4SUpZLA,6822
+cppython_vcpkg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cppython_vcpkg/resolution.py,sha256=QB_4vEaAH7N15YmaxKv4zCvTRSzEYuzEVhfpKTQsvdI,1989
+cppython_vcpkg/schema.py,sha256=4qQj34NlhkRv1dmNHlx3123FgzC9gOddfsGA0jI35RI,1031
+cppython_vcpkg-0.4.1.dev15.dist-info/entry_points.txt,sha256=L62ENH0K4221ZnT589QemTj64rQiZPeTtm7bKnLbTK0,63
+cppython_vcpkg-0.4.1.dev15.dist-info/WHEEL,sha256=TQSpXlWZjPl29LMjkpbkR7iGxKB2AMwzfSmPuPn1ZS8,87
+cppython_vcpkg-0.4.1.dev15.dist-info/METADATA,sha256=P284s6v6hnZiFZ2JNcXZMPd_6Z_-EJSlROmSTpGDa2k,551
+cppython_vcpkg-0.4.1.dev15.dist-info/licenses/LICENSE.md,sha256=O2GDdR5BeAXcN20aptXMBkBD0QUDlBgHTw-0JJApQOM,1070
+cppython_vcpkg-0.4.1.dev15.dist-info/RECORD,,
