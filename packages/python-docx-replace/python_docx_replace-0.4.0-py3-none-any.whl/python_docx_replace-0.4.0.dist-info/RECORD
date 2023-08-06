@@ -1,0 +1,10 @@
+python_docx_replace/__init__.py,sha256=gkBBflIbtwixz6Co9YtYU2hdIt0S1luHZ7yyC_mBvqU,6212
+python_docx_replace/block_handler.py,sha256=lOUi5H7SBdRD4zjxkQTK1U7wMScsgrG1HIMCds7a-GQ,3676
+python_docx_replace/exceptions.py,sha256=sA33lXPU7kUHpduoOQAtbqbATdLCleJU4amRqUT0bMo,1161
+python_docx_replace/key_changer.py,sha256=fyHc9H2PRWTxyNWXBfcKnbfeWldnE3FkojNwt5pn9y0,1571
+python_docx_replace/paragraph.py,sha256=SkcdSZCoYjV5gxPRtdAZrlEkWn7aI73TnPq3MuCbytY,2278
+python_docx_replace-0.4.0.dist-info/LICENSE,sha256=DBB2SYiqKiFf8TeFgCU7r6tLyWXBeE4igrN3AJgeRCM,1069
+python_docx_replace-0.4.0.dist-info/METADATA,sha256=XsOCo6yXKz2LSNDaUF55DRZWUyT-ubXhXpNZkHgtpAk,7263
+python_docx_replace-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_docx_replace-0.4.0.dist-info/top_level.txt,sha256=mPMssM4m77SJlPXPb7TeRAkpWrgDzmrsIbBgMajNZmc,20
+python_docx_replace-0.4.0.dist-info/RECORD,,
