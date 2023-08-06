@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: iQWorkBook
+Version: 1.0.0
+Summary: iQWorkBook (библиотека поддержки)
+Home-page: https://gitflic.ru/project/iqstudio/iqworkbook
+Author: Alexander N Khilchenko
+Author-email: khan.programming@mail.ru
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Topic :: Desktop Environment
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: iqEditors
+Requires-Dist: pygments
+Requires-Dist: pyenchant
+
+
+Библиотека поддержки проекта iWorkBook
+подробности на https://gitflic.ru/project/iqstudio/iqworkbook
