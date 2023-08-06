@@ -1,0 +1,10 @@
+
+[doc]
+sphinx-copybutton
+sphinx_rtd_theme
+sphinx
+cython
+autodocsumm
+
+[test]
+pytest
