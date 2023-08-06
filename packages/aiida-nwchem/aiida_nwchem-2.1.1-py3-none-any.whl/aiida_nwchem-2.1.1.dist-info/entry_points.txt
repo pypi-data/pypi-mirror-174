@@ -1,0 +1,10 @@
+[aiida.calculations]
+nwchem.base=aiida_nwchem.calculations.nwchem:NwchemBaseCalculation
+nwchem.nwchem=aiida_nwchem.calculations.nwchem:NwchemCalculation
+
+[aiida.parsers]
+nwchem.nwchem=aiida_nwchem.parsers.nwchem:NwchemBaseParser
+
+[aiida.workflows]
+nwchem.base=aiida_nwchem.workflows.base:NwchemBaseWorkChain
+
