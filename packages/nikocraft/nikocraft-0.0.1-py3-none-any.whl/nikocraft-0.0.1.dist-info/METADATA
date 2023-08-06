@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nikocraft
+Version: 0.0.1
+Summary: Nikocraft Python Library
+Home-page: https://github.com/Nikocraft123/Python-Nikocraft
+Author: Nikocraft
+Author-email: nikocraft@gmx.net
+License: UNKNOWN
+Project-URL: Source, https://github.com/Nikocraft123/Python-Nikocraft
+Keywords: python,pygame,utils,framework,development
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame
+Provides-Extra: cv
+Requires-Dist: opencv-python ; extra == 'cv'
+
+# Nikocraft Python Library
+A python library with general utils and a pygame framework
+
