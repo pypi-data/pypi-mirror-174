@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: modulepy
+Version: 0.13
+Summary: module framework
+Home-page: https://github.com/nbdy/modulepy
+Author: Pascal Eberlein
+Author-email: pascal@eberlein.io
+License: UNKNOWN
+Keywords: modularity modules
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# modulepy
+
+easily build modular applications
+
+## installation
+
+```shell
+pip3 install modulepy
+# or
+pip3 install git+https://github.com/nbdy/modulepy
+```
+
+## features
+
+- [X] process based module baseline
+- [X] module loader
+  - [X] one-line module loading
+  - [X] one-line directory loading
+- [X] module manager
+  - [X] add module
+  - [X] remove module
+  - [X] reload module directory
+  - [X] module dependency resolution
+  - [X] ipc
+  - [X] module fault detection 
+
+## [example](test/UITest.py)
+
+
