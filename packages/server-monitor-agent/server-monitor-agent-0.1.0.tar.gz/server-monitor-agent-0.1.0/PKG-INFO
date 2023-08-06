@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: server-monitor-agent
+Version: 0.1.0
+Summary: Utility to run checks on a server and send notifications.
+Project-URL: Homepage, https://github.com/qcif/server-monitor-agent
+Project-URL: Bug Tracker, https://github.com/qcif/server-monitor-agent/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# server-monitor-agent
+
+A Python application for running checks on a server.
+
+This program is an agent that can be run on server instances.
