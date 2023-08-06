@@ -1,0 +1,9 @@
+pylogik/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylogik/image/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylogik/image/im_analysis.py,sha256=OOnIgSaqLBZuP6RrVVT5s2LWIU3KbPrIS6ceALY3Nug,2863
+pylogik/stats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylogik-0.0.3.dist-info/LICENSE.txt,sha256=9IVr0aoj65nXfJmLyajsC0Qh3lKoWW3meamk4D4JGfQ,1075
+pylogik-0.0.3.dist-info/METADATA,sha256=ZZCVFD1rk9Fq5xGymnuT77Q8pWLrAMbvaRxyh-ajyf8,2975
+pylogik-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pylogik-0.0.3.dist-info/top_level.txt,sha256=W0BpbPwEONArUFD2nF2RjH109XMst-cfEFhhv2yqv4U,8
+pylogik-0.0.3.dist-info/RECORD,,
