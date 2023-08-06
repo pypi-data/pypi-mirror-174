@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: verser
+Version: 0.1.8
+Summary: Generates next version number for your pyton package. If your package is a PYPI package it checks the latest version from PYPI and creates next version depending on your choices. Alternatively you may use local option which reads local __version__.py or any other file name you provide and creates the next version.Creates version file and reads from the same path. It also provides useful functions to show your package's version at run time.
+Home-page: 
+Author: Sermet Pekin
+Author-email: sermet.pekin@gmail.com
+License: MIT
+Project-URL: Homepage, https://github.com/SermetPekin/verser-repo
+Project-URL: Documentation, https://github.com/SermetPekin/verser-repo
+Keywords: verser
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: requests
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: testing
+
+[![Python package](https://github.com/SermetPekin/verser-repo/actions/workflows/python-package.yml/badge.svg)](https://github.com/SermetPekin/verser-repo/actions/workflows/python-package.yml)
+[![Downloads](https://pepy.tech/badge/verser/week)](https://pepy.tech/project/verser)
+[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-310/)
+
+# verser
+
+    from verser import next_version, Project, next_version_pypi, next_version_local
+
+## functions
+
+### next_version (general function both for pypi and local)
+
+first checks PYPI if not then checks local
+
+    > default parameters :
+    > pypi = True
+    > part = 'patch' => increments patch part of your version. Options : major/minor/patch/pre/build
+    > write = True => if True writes a new version file on your local path 'your_package_name/__version__.py'
+    > first makes a request to PYPI server to get information about your package
+    > then increments it depending on your choices
+    > If it is not a PYPI package or if pypi parameter is false checks local version file to increment
+>
+Usage example:
+
+    from verser import Project,  next_version
+    from pathlib import Path
+    
+    project = Project(package_name="evdspy",
+                      default_version=default_vers,
+                      version_file_path=Path() / "evdspy" / "__version__.py")
+        
+    new_version = next_version(project, write=True, part='patch')
+
+typically in your setup.py file you may use this variable like below
+
+    #file: setup.py
+    ...
+    from verser import Project,  next_version
+    from pathlib import Path
+    
+    project = Project(package_name="evdspy",
+                      default_version=default_vers,
+                      version_file_path=Path() / "evdspy" / "__version__.py")
+        
+    new_version = next_version(project, write=True, part='patch')
+
+    # the setup
+    setup(
+        name=f"{package_name}",
+        version=new_version,
+        description=f"{description}",
+    ...
+
+### next_version_pypi (only for pypi packages)
+
+    new_version = next_version_pypi('rich')
+    print(new_version)
+    # results :  12.6.1 
+    
+    new_version = next_version_pypi('rich' , part = 'minor')
+    print(new_version)
+    # results :  12.7.0 
+
+### next_version_local
+
+> it only checks local __version__.py file inside the root of your project creates one if does not exist
+
+    new_version =  next_version_local( 
+        package_name = 'some_cool_project_not_published' , 
+        increment_choice = True,  => if selected False it will not increment current version 
+        part = "minor"              => it will increment minoÄ±r part of your package version 
+        write = True ,              => since write is True it will rewrite current version to the version file 
+    )
+    print(new_version)
+        # defaults 
+    #   --------next_version_pypi-------
+    #   increment_choice = True ,   => if selected False it will not increment current version 
+    #   part='patch'                 => it will ignore this parameter
+    #   write = True ,              => since write is True it will rewrite current version to the version file 
+
+Some examples
+
+    new_version = next_version_pypi('rich' , part='major')
+    new_version = next_version_pypi('rich' , part='patch')
+    new_version = next_version_pypi('rich' , part='major')
+    new_version = next_version_pypi('rich' , part='pre' , write=True )
+    new_version = next_version_pypi('rich' , part='build' , write=False )
+
+
+    
+    new_version =  next_version_local( 
+            package_name = 'some_cool_package' , 
+            increment_choice = True 
+            part = "minor"              
+            write = True ,             
+        )
+    
+    new_version =  next_version_local( 
+            package_name = 'some_cool_package' , 
+            increment_choice = False  
+            part = "patch"              
+            write = True ,             
+        )
