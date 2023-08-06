@@ -1,0 +1,8 @@
+monotonic_align/__init__.py,sha256=5NgimPGHPQFDm2uHsn8UxOL9X7OWZfc2T8xTeCN_Wk0,610
+monotonic_align/core.c,sha256=oyYN2krLwBtHSXc045_5M6b8Fg-S2LTeMtGK2fP29xo,789059
+monotonic_align/core.cpython-38-x86_64-linux-gnu.so,sha256=RomzO0A-3J-vLXtzTAIVaDnKoVAr13nNGzG9jHZas8A,193608
+vits_monotonic_align-0.0.3.dist-info/LICENSE,sha256=qvrsh1xgHsNg8qorKQZ24uP68zqm0mPlfTPXkqxcrAo,1063
+vits_monotonic_align-0.0.3.dist-info/METADATA,sha256=AdryWVN3M5Js_xzanN-K2pY_gi5CEvpEAmFr0YeOdt8,614
+vits_monotonic_align-0.0.3.dist-info/WHEEL,sha256=w1d_q2QQYYWFjc1BOr71GnX8BifSnUvEochN_fqB7tA,108
+vits_monotonic_align-0.0.3.dist-info/top_level.txt,sha256=VQ7w_1T2KsbRm3CkpJuUvdhy9zGQQxN_wx1E9yWfnyc,16
+vits_monotonic_align-0.0.3.dist-info/RECORD,,
