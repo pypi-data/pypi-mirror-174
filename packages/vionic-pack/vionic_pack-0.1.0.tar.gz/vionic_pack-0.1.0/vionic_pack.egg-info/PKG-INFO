@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vionic-pack
+Version: 0.1.0
+Summary: A dash for jupyter test.
+Author: vionic
+Author-email: 1356617750@qq.com
+License: MIT
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
