@@ -1,0 +1,15 @@
+README.md
+setup.py
+pulumi_gomigrate/__init__.py
+pulumi_gomigrate/_utilities.py
+pulumi_gomigrate/migration.py
+pulumi_gomigrate/migrations.py
+pulumi_gomigrate/provider.py
+pulumi_gomigrate/pulumi-plugin.json
+pulumi_gomigrate/py.typed
+pulumi_gomigrate.egg-info/PKG-INFO
+pulumi_gomigrate.egg-info/SOURCES.txt
+pulumi_gomigrate.egg-info/dependency_links.txt
+pulumi_gomigrate.egg-info/not-zip-safe
+pulumi_gomigrate.egg-info/requires.txt
+pulumi_gomigrate.egg-info/top_level.txt
