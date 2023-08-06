@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+cca/__init__.py
+cca/create_cmake_app.py
+create_cmake_app.egg-info/PKG-INFO
+create_cmake_app.egg-info/SOURCES.txt
+create_cmake_app.egg-info/dependency_links.txt
+create_cmake_app.egg-info/entry_points.txt
+create_cmake_app.egg-info/top_level.txt
