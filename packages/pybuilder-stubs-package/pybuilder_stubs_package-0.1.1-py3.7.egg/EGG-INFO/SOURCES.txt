@@ -1,0 +1,8 @@
+setup.py
+pybuilder_stubs_package/__init__.py
+pybuilder_stubs_package.egg-info/PKG-INFO
+pybuilder_stubs_package.egg-info/SOURCES.txt
+pybuilder_stubs_package.egg-info/dependency_links.txt
+pybuilder_stubs_package.egg-info/namespace_packages.txt
+pybuilder_stubs_package.egg-info/top_level.txt
+pybuilder_stubs_package.egg-info/zip-safe
