@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+aparse/__init__.py
+aparse/_handlers.py
+aparse/_lib.py
+aparse/argparse.py
+aparse/click.py
+aparse/core.py
+aparse/utils.py
+aparse.egg-info/PKG-INFO
+aparse.egg-info/SOURCES.txt
+aparse.egg-info/dependency_links.txt
+aparse.egg-info/top_level.txt
