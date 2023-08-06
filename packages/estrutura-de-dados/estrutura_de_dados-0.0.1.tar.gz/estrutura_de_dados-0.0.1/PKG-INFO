@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: estrutura_de_dados
+Version: 0.0.1
+Summary: Estrutura de Dados
+Home-page: https://github.com/dev-rafa1707/estrutura_de_dados
+Author: dev-rafa1707
+Author-email: rafa1707@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# estrutura_de_dados
+Arquivos para Estrutura de Dados: Fila, Pilha e Lista.
+
+# Installation
+Use the package manager pip to install estrutura_de_dados
+pip install estrutura_de_dados
+
+# Usage
+from estrutura_de_dados import fila
+from estrutura_de_dados import pilha
+from estrutura_de_dados import lista
+
+# Author
+Rafael Pacheco
+dev-rafa1707

@@ -1,0 +1,10 @@
+README.md
+setup.py
+estrutura_de_dados/__init__.py
+estrutura_de_dados/fila.py
+estrutura_de_dados/lista.py
+estrutura_de_dados/pilha.py
+estrutura_de_dados.egg-info/PKG-INFO
+estrutura_de_dados.egg-info/SOURCES.txt
+estrutura_de_dados.egg-info/dependency_links.txt
+estrutura_de_dados.egg-info/top_level.txt
