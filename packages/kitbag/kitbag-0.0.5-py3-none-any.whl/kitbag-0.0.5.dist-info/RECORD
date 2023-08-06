@@ -1,0 +1,14 @@
+kitbag/__init__.py,sha256=Gauj77MKCPo6cXYTXBmXvvviRAq9gjDQITz8r7NRIxU,184
+kitbag/plots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kitbag/plots/altair_plot.py,sha256=LtYQ_MGb6fVyUVnfpCRQRqT7Ao3a0kKwdM_kMGlCxiY,1268
+kitbag/plots/bar_charts.py,sha256=f0ksoAKkk-OX63iheIXiwHLszr4qKqNz-t_tKmbVNuU,5639
+kitbag/plots/line_charts.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kitbag/plots/tables.py,sha256=0zO-qGsTOP8l4hUWyqVNs1JneOKXMCsefh8zaKP8ZXM,3422
+kitbag/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kitbag/utils/colors.py,sha256=lrFYr71mESTVdJPiASaKdCWCuXlBko7-BPj95QzrGc0,386
+kitbag/utils/utilities.py,sha256=F5DjvWLacio4swuwJz5P5E5On1yDeFBCGEnb1Hz4v5s,3732
+kitbag-0.0.5.dist-info/LICENSE,sha256=6OwgrkuCT2B59dekD5442JZZJ8APs7JPmQUjxrfx5gU,1072
+kitbag-0.0.5.dist-info/METADATA,sha256=f58qEApvVKyMCq0kTWhJIIe0ajFntN7Tgvk5uirT0QQ,239
+kitbag-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kitbag-0.0.5.dist-info/top_level.txt,sha256=g82deP1PE1W6G4-x_ajuQWs_-oz-AOOMoiEeeu9QlVk,7
+kitbag-0.0.5.dist-info/RECORD,,
