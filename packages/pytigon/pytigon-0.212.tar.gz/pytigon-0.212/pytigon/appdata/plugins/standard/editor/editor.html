@@ -1,0 +1,15 @@
+{# -*- coding: utf-8 -*- #}
+{% extends "plugin_form.html" %}
+{% block pythoncode %}
+        <script language="python">
+        def init_form(self):
+            pass
+</script>
+{% endblock %}
+{% block form_title %}
+        Page source
+{% endblock %}
+{% block body %}
+        <CTRL-STYLEDTEXT NAME="EDITOR" WIDTH="100%" HEIGHT="100%" SRC="py" keymap="standard"></CTRL-STYLEDTEXT>
+{% endblock %}
+
