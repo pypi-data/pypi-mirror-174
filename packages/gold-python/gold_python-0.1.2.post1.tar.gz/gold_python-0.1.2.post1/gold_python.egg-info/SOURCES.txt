@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+gold_python/__init__.py
+gold_python/delta.py
+gold_python/deterministic.py
+gold_python/exceptions.py
+gold_python/nondeterministic.py
+gold_python/pushdown.py
+gold_python/util.py
+gold_python.egg-info/PKG-INFO
+gold_python.egg-info/SOURCES.txt
+gold_python.egg-info/dependency_links.txt
+gold_python.egg-info/requires.txt
+gold_python.egg-info/top_level.txt
