@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpaper_admin=self.webpackChunkpaper_admin||[]).push([[4557],{9246:function(e,r,n){var p=n(1924),t=n(210),u=n(8420),a=p("RegExp.prototype.exec"),o=t("%TypeError%");e.exports=function(e){if(!u(e))throw new o("`regex` must be a RegExp");return function(r){return null!==a(e,r)}}}}]);
+//# sourceMappingURL=npm.safe-regex-test.3f5a7d2f0703271144fd.js.map
