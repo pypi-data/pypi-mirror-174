@@ -1,0 +1,4 @@
+[console_scripts]
+get_progress=maxprogress:get_progress
+maxprogress=maxprogress:main
+
