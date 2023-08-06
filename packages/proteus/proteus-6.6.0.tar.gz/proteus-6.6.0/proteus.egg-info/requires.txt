@@ -1,0 +1,9 @@
+defusedxml
+python-dateutil
+
+[test]
+trytond<6.7,>=6.6
+trytond_party<6.7,>=6.6
+
+[trytond]
+trytond<6.7,>=6.6
