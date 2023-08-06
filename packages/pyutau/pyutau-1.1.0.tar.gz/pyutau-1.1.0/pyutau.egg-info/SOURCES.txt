@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pyutau/__init__.py
+pyutau/pyutau.py
+pyutau.egg-info/PKG-INFO
+pyutau.egg-info/SOURCES.txt
+pyutau.egg-info/dependency_links.txt
+pyutau.egg-info/top_level.txt
