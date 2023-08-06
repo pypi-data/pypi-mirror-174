@@ -1,0 +1,1193 @@
+'''
+Define core Sim classes
+'''
+
+# Imports
+import numpy as np
+import pandas as pd
+import sciris as sc
+from . import base as hpb
+from . import misc as hpm
+from . import defaults as hpd
+from . import utils as hpu
+from . import population as hppop
+from . import parameters as hppar
+from . import analysis as hpa
+from . import plotting as hpplt
+from . import immunity as hpimm
+from . import interventions as hpi
+from .settings import options as hpo
+
+
+# Define the model
+class Sim(hpb.BaseSim):
+
+    def __init__(self, pars=None, datafile=None, label=None,
+                 popfile=None, people=None, version=None, hiv_datafile=None, art_datafile=None, **kwargs):
+
+        # Set attributes
+        self.label         = label    # The label/name of the simulation
+        self.created       = None     # The datetime the sim was created
+        self.datafile      = datafile # The name of the data file
+        self.art_datafile  = art_datafile # The name of the ART data file
+        self.hiv_datafile  = hiv_datafile # The name of the HIV data file
+        self.popfile       = popfile  # The population file
+        self.data          = None     # The data
+        self.popdict       = people   # The population dictionary
+        self.people        = None     # Initialize these here so methods that check their length can see they're empty
+        self.t             = None     # The current time in the simulation (during execution); outside of sim.step(), its value corresponds to next timestep to be computed
+        self.results       = {}       # For storing results
+        self.summary       = None     # For storing a summary of the results
+        self.initialized   = False    # Whether or not initialization is complete
+        self.complete      = False    # Whether a simulation has completed running
+        self.results_ready = False    # Whether or not results are ready
+        self._default_ver  = version  # Default version of parameters used
+        self._orig_pars    = None     # Store original parameters to optionally restore at the end of the simulation
+
+        # Make default parameters (using values from parameters.py)
+        default_pars = hppar.make_pars(version=version) # Start with default pars
+        super().__init__(default_pars) # Initialize and set the parameters as attributes
+
+        # Load data, including datafile that are used to create additional optional parameters
+        location = pars.get('location') if pars else None
+        self.load_data(datafile) # Load the data, if provided
+        self.load_hiv_data(location=location, hiv_datafile=hiv_datafile, art_datafile=art_datafile) # Load any data that's used to create additional parameters (thus far, HIV and ART)
+
+        # Update parameters
+        self.update_pars(pars, **kwargs)   # Update the parameters
+
+        return
+
+
+    def load_data(self, datafile=None, **kwargs):
+        ''' Load the data to calibrate against, if provided '''
+        if datafile is not None: # If a data file is provided, load it
+            self.data = hpm.load_data(datafile=datafile, check_date=True, **kwargs)
+        return
+
+
+    def load_hiv_data(self, location=None, hiv_datafile=None, art_datafile=None, **kwargs):
+        ''' Load any data files that are used to create additional parameters, if provided '''
+        self.hiv_pars = sc.objdict()
+        self.hiv_pars.infection_rates, self.hiv_pars.art_adherence = hppar.get_hiv_pars(location=location, hiv_datafile=hiv_datafile, art_datafile=art_datafile)
+        return
+
+
+    def initialize(self, reset=False, init_states=True, **kwargs):
+        '''
+        Perform all initializations on the sim.
+        '''
+        self.t = 0  # The current time index
+        self.validate_pars() # Ensure parameters have valid values
+        self.set_seed() # Reset the random seed before the population is created
+        self.init_genotypes() # Initialize the genotypes
+        self.init_results() # After initializing the genotypes and people, create the results structure
+        self.init_interventions()  # Initialize the interventions BEFORE the people, because then vaccination interventions get counted in immunity structures
+        self.init_immunity() # initialize information about immunity
+        self.init_people(reset=reset, init_states=init_states, **kwargs) # Create all the people (the heaviest step)
+        self.init_analyzers()  # ...and the analyzers...
+        self.set_seed() # Reset the random seed again so the random number stream is consistent
+        self.initialized   = True
+        self.complete      = False
+        self.results_ready = False
+
+
+        return self
+
+
+    def layer_keys(self):
+        '''
+        Attempt to retrieve the current layer keys.
+        '''
+        try:
+            keys = list(self['acts'].keys()) # Get keys from acts
+        except: # pragma: no cover
+            keys = []
+        return keys
+
+
+    def reset_layer_pars(self, layer_keys=None, force=False):
+        '''
+        Reset the parameters to match the population.
+
+        Args:
+            layer_keys (list): override the default layer keys (use stored keys by default)
+            force (bool): reset the parameters even if they already exist
+        '''
+        if layer_keys is None:
+            if self.people is not None: # If people exist
+                layer_keys = self.people.contacts.keys()
+            elif self.popdict is not None:
+                layer_keys = self.popdict['layer_keys']
+        hppar.reset_layer_pars(self.pars, layer_keys=layer_keys, force=force)
+        return
+
+
+    def validate_layer_pars(self):
+        '''
+        Handle layer parameters, since they need to be validated after the population
+        creation, rather than before.
+        '''
+
+        # First, try to figure out what the layer keys should be and perform basic type checking
+        layer_keys = self.layer_keys()
+        layer_pars = hppar.layer_pars # The names of the parameters that are specified by layer
+        for lp in layer_pars:
+            val = self[lp]
+            if sc.isnumber(val): # It's a scalar instead of a dict, assume it's all contacts
+                self[lp] = {k:val for k in layer_keys}
+
+        # Handle key mismatches
+        for lp in layer_pars:
+            lp_keys = set(self.pars[lp].keys())
+            if lp != 'layer_probs':
+                if not lp_keys == set(layer_keys):
+                    errormsg = 'At least one layer parameter is inconsistent with the layer keys; all parameters must have the same keys:'
+                    errormsg += f'\nsim.layer_keys() = {layer_keys}'
+                    for lp2 in layer_pars: # Fail on first error, but re-loop to list all of them
+                        errormsg += f'\n{lp2} = ' + ', '.join(self.pars[lp2].keys())
+                    raise sc.KeyNotFoundError(errormsg)
+
+            # TODO: add validation here for layer_probs
+
+        # Handle mismatches with the population
+        if self.people is not None:
+            pop_keys = set(self.people.contacts.keys())
+            if pop_keys != set(layer_keys): # pragma: no cover
+                if not len(pop_keys):
+                    errormsg = f'Your population does not have any layer keys, but your simulation does {layer_keys}. If you called hpv.People() directly, you probably need hpv.make_people() instead.'
+                    raise sc.KeyNotFoundError(errormsg)
+                else:
+                    errormsg = f'Please update your parameter keys {layer_keys} to match population keys {pop_keys}. You may find sim.reset_layer_pars() helpful.'
+                    raise sc.KeyNotFoundError(errormsg)
+
+        return
+
+
+    def validate_pars(self, validate_layers=True):
+        '''
+        Some parameters can take multiple types; this makes them consistent.
+
+        Args:
+            validate_layers (bool): whether to validate layer parameters as well via validate_layer_pars() -- usually yes, except during initialization
+        '''
+
+        # Handle types
+        for key in ['n_agents']:
+            try:
+                self[key] = int(self[key])
+            except Exception as E:
+                errormsg = f'Could not convert {key}={self[key]} of {type(self[key])} to integer'
+                raise ValueError(errormsg) from E
+
+        # Handle start
+        if self['start'] in [None, 0]: # Use default start
+            self['start'] = 2015
+
+        # Handle end and n_years
+        if self['end']:
+            self['n_years'] = int(self['end'] - self['start'])
+            if self['n_years'] <= 0:
+                errormsg = f"Number of years must be >0, but you supplied start={str(self['start'])} and end={str(self['end'])}, which gives n_years={self['n_years']}"
+                raise ValueError(errormsg)
+        else:
+            if self['n_years']:
+                self['end'] = self['start'] + self['n_years']
+            else:
+                errormsg = 'You must supply one of n_years and end."'
+                raise ValueError(errormsg)
+
+        # Construct other things that keep track of time
+        self.years      = sc.inclusiverange(self['start'],self['end'])
+        self.yearvec    = sc.inclusiverange(start=self['start'], stop=self['end']+1-self['dt'], step=self['dt']) # Includes all the timepoints in the last year
+        self.npts       = len(self.yearvec)
+        self.tvec       = np.arange(self.npts)
+
+        # Handle population network data
+        network_choices = ['random', 'default']
+        choice = self['network']
+        if choice and choice not in network_choices: # pragma: no cover
+            choicestr = ', '.join(network_choices)
+            errormsg = f'Population type "{choice}" not available; choices are: {choicestr}'
+            raise ValueError(errormsg)
+
+        # Handle analyzers and interventions - TODO, genotypes will also go here
+        for key in ['interventions', 'analyzers']: # Ensure all of them are lists
+            self[key] = sc.dcp(sc.tolist(self[key], keepnone=False)) # All of these have initialize functions that run into issues if they're reused
+        for i,interv in enumerate(self['interventions']):
+            if isinstance(interv, dict): # It's a dictionary representation of an intervention
+                self['interventions'][i] = hpi.InterventionDict(**interv)
+
+        # Optionally handle layer parameters
+        if validate_layers:
+            self.validate_layer_pars()
+
+        # Handle verbose
+        if self['verbose'] == 'brief':
+            self['verbose'] = -1
+        if not sc.isnumber(self['verbose']): # pragma: no cover
+            errormsg = f'Verbose argument should be either "brief", -1, or a float, not {type(self["verbose"])} "{self["verbose"]}"'
+            raise ValueError(errormsg)
+
+        return
+
+
+    def validate_init_conditions(self, init_hpv_prev):
+        '''
+        Initial prevalence values can be supplied with different amounts of detail.
+        Here we flesh out any missing details so that the initial prev values are
+        by age and genotype. We also check the prevalence values are ok.
+        '''
+
+        def validate_arrays(vals, n_age_brackets=None):
+            ''' Little helper function to check prevalence values '''
+            if n_age_brackets is not None:
+                if len(vals) != n_age_brackets:
+                    errormsg = f'The initial prevalence values must either be the same length as the age brackets: {len(vals)} vs {n_age_brackets}.'
+                    raise ValueError(errormsg)
+            else:
+                if len(vals) != 1:
+                    errormsg = f'No age brackets were supplied, but more than one prevalence value was supplied ({len(vals)}). An array of prevalence values can only be supplied along with an array of corresponding age brackets.'
+                    raise ValueError(errormsg)
+            if vals.any() < 0 or vals.any() > 1:
+                errormsg = f'The initial prevalence values must either between 0 and 1, not {vals}.'
+                raise ValueError(errormsg)
+
+            return
+
+        # If values have been provided, validate them
+        sex_keys = {'m', 'f'}
+        tot_keys = ['all', 'total', 'tot', 'average', 'avg']
+        n_age_brackets = None
+
+        if init_hpv_prev is not None:
+            if sc.checktype(init_hpv_prev, dict):
+                # Get age brackets if supplied
+                if 'age_brackets' in init_hpv_prev.keys():
+                    age_brackets = init_hpv_prev.pop('age_brackets')
+                    n_age_brackets = len(age_brackets)
+                else:
+                    age_brackets = np.array([150])
+
+                # Handle the rest of the keys
+                var_keys = list(init_hpv_prev.keys())
+                if (len(var_keys)==1 and var_keys[0] not in tot_keys) or (len(var_keys)>1 and set(var_keys) != sex_keys):
+                    errormsg = f'Could not understand the initial prevalence provided: {init_hpv_prev}. If supplying a dictionary, please use "m" and "f" keys or "tot". '
+                    raise ValueError(errormsg)
+                if len(var_keys) == 1:
+                    k = var_keys[0]
+                    init_hpv_prev = {sk: sc.promotetoarray(init_hpv_prev[k]) for sk in sex_keys}
+
+                # Now set the values
+                for k, vals in init_hpv_prev.items():
+                    init_hpv_prev[k] = sc.promotetoarray(vals)
+
+            elif sc.checktype(init_hpv_prev, 'arraylike') or sc.isnumber(init_hpv_prev):
+                # If it's an array, assume these values apply to males and females
+                init_hpv_prev = {sk: sc.promotetoarray(init_hpv_prev) for sk in sex_keys}
+                age_brackets = np.array([150])
+
+            else:
+                errormsg = f'Initial prevalence values of type {type(init_hpv_prev)} not recognized, must be a dict, an array, or a float.'
+                raise ValueError(errormsg)
+
+            # Now validate the arrays
+            for sk, vals in init_hpv_prev.items():
+                validate_arrays(vals, n_age_brackets)
+
+        # If values haven't been supplied, assume zero
+        else:
+            init_hpv_prev = {'f': np.array([0]), 'm': np.array([0])}
+            age_brackets = np.array([150])
+
+        return init_hpv_prev, age_brackets
+
+
+    def init_genotypes(self):
+        ''' Initialize the genotypes '''
+        if self._orig_pars and 'genotypes' in self._orig_pars:
+            self['genotypes'] = self._orig_pars.pop('genotypes')  # Restore
+
+        genotype_options = hppar.get_genotype_pars().keys()
+        if self['genotypes'] == 'all':
+            self['genotypes'] = genotype_options
+
+        for i, g in enumerate(self['genotypes']):
+
+            # Genotypes can be provided in different formats. Here we convert them to hpv.genotype objects
+            if sc.isnumber(g): g = f'hpv{g}' # Convert e.g. 16 to hpv16
+            if sc.checktype(g,str):
+                if not g in genotype_options:
+                    errormsg = f'Genotype {i} ({g}) is not one of the inbuilt options.'
+                    raise ValueError(errormsg)
+                else:
+                    g = hpimm.genotype(g)
+
+            # Initialize genotypes
+            if isinstance(g, hpimm.genotype):
+                if not g.initialized:
+                    g.initialize(self)
+            else:  # pragma: no cover
+                errormsg = f'Cannot understand genotype {i} ({g}). Please provide it as an integer, string, or hpv.genotype object.'
+                raise TypeError(errormsg)
+
+        if not len(self['genotypes']):
+            print('No genotypes provided, will assume only simulating HPV16 by default')
+            hpv16 = hpimm.genotype('hpv16')
+            hpv16.initialize(self)
+            self['genotypes'] = [hpv16]
+
+        len_pars = len(self['genotype_pars'])
+        len_map = len(self['genotype_map'])
+        assert len_pars == len_map, f"genotype_pars and genotype_map must be the same length, but they're not: {len_pars} ≠ {len_map}"
+        self['n_genotypes'] = len_pars  # Each genotype has an entry in genotype_pars
+
+        # Set the number of immunity sources
+        self['n_imm_sources'] = len(self['genotypes'])
+
+        return
+
+    def init_immunity(self, create=True):
+        ''' Initialize immunity matrices '''
+        hpimm.init_immunity(self, create=create)
+        return
+
+
+    def init_results(self, frequency='annual', add_data=True):
+        '''
+        Create the main results structure.
+        The prefix "new" is used for flow variables, i.e. counting new events (infections/deaths) on each timestep
+        The prefix "n" is used for stock variables, i.e. counting the total number in any given state (sus/inf/etc) on any particular timestep
+        The prefix "cum" is used for cumulative variables, i.e. counting the total number that have ever been in a given state at some point in the sim
+
+        Arguments:
+            sim         (hpv.Sim)       : a sim
+            frequency   (str or float)  : the frequency with which to save results: accepts 'annual', 'dt', or a float which is interpreted as a fraction of a year, e.g. 0.2 will save results every 0.2 years
+            add_data    (bool)          : whether or not to add data to the result structures
+        '''
+
+        # Handle frequency
+        if type(frequency) == str:
+            if frequency == 'annual':
+                resfreq = int(1 / self['dt'])
+            elif frequency == 'dt':
+                resfreq = 1
+            else:
+                errormsg = f'Result frequency not understood: must be "annual", "dt" or a float, but you provided {frequency}.'
+                raise ValueError(errormsg)
+        elif type(frequency) == float:
+            if frequency < self['dt']:
+                errormsg = f'You requested results with frequency {frequency}, but this is smaller than the simulation timestep {self["dt"]}.'
+                raise ValueError(errormsg)
+            else:
+                resfreq = int(frequency / self['dt'])
+        self.resfreq = resfreq
+
+        # Construct the tvec that will be used with the results
+        points_to_use = np.arange(0, self.npts, self.resfreq)
+        self.res_yearvec = self.yearvec[points_to_use]
+        self.res_npts = len(self.res_yearvec)
+        self.res_tvec = np.arange(self.res_npts)
+
+        # Function to create results
+        def init_res(*args, **kwargs):
+            ''' Initialize a single result object '''
+            output = hpb.Result(*args, **kwargs, npts=self.res_npts)
+            return output
+
+        ng = self['n_genotypes']
+        results = dict()
+
+        # Create flows
+        for lkey,llab,cstride,g in zip(['total_',''], ['Total ',''], [0.95,np.linspace(0.2,0.8,ng)], [0,ng]):  # key, label, and color stride by level (total vs genotype-specific)
+            for flow in hpd.flows:
+                if (flow.by_genotype and lkey=='') or lkey=='total_':
+                    results[f'{lkey + flow.name}'] = init_res(f'{(llab + flow.label).capitalize()}', color=flow.cmap(cstride), n_rows=g)
+
+        # Create stocks
+        for llabel,cstride,g in zip(['Total number','Number'], [0.95,np.linspace(0.2,0.8,ng)], [0,ng]):
+            for stock in hpd.PeopleMeta.stock_states:
+                if (stock.shape=='n_genotypes' and llabel=='Number') or llabel=='Total number':
+                    lkey = stock.totalprefix if llabel == 'Total number' else ''
+                    color = stock.cmap(cstride) if stock.cmap is not None else None
+                    results[f'n_{lkey+stock.name}'] = init_res(f'{llabel} {stock.label}', color=color, n_rows=g)
+
+        # Create incidence and prevalence results
+        for lkey,llab,cstride,g in zip(['total_',''], ['Total ',''], [0.95,np.linspace(0.2,0.8,ng)], [0,ng]):  # key, label, and color stride by level (total vs genotype-specific)
+            for var,name,cmap in zip(hpd.inci_keys, hpd.inci_names, hpd.inci_colors):
+                results[f'{lkey+var}_incidence'] = init_res(llab+name+' incidence', color=cmap(cstride), n_rows=g)
+
+        # Create demographic flows
+        for var, name, color in zip(hpd.dem_keys, hpd.dem_names, hpd.dem_colors):
+            results[f'{var}'] = init_res(f'{name}', color=color)
+
+        # Create results by sex
+        for var, name, color in zip(hpd.by_sex_keys, hpd.by_sex_colors, hpd.by_sex_colors):
+            results[f'{var}'] = init_res(f'{name}', color=color, n_rows=2)
+
+        # Create by-age results using standard populations
+        results['cancers_by_age'] = init_res('Cancers by age', n_rows=len(self.pars['standard_pop'][0,:])-1)
+        results['asr_cancer'] = init_res('ASR of cancer incidence', scale=False)
+
+        # Type distributions by cytology
+        for var, name, cmap in zip(hpd.type_keys, hpd.type_names, hpd.type_colors):
+            results[var] = init_res(name, n_rows=ng, color=cmap(np.linspace(0.2,0.8,ng)))
+
+        # Vaccination results
+        results['new_vaccinated'] = init_res('Newly vaccinated by genotype', n_rows=ng)
+        results['new_total_vaccinated'] = init_res('Newly vaccinated')
+        results['cum_vaccinated'] = init_res('Cumulative number vaccinated by genotype', n_rows=ng)
+        results['cum_total_vaccinated'] = init_res('Cumulative number vaccinated')
+        results['new_doses'] = init_res('New doses')
+        results['cum_doses'] = init_res('Cumulative doses')
+
+        # Therapeutic vaccine results
+        results['new_txvx_doses'] = init_res('New therapeutic vaccine doses')
+        results['new_tx_vaccinated'] = init_res('Newly received therapeutic vaccine')
+        results['cum_txvx_doses'] = init_res('Cumulative therapeutic vaccine doses')
+        results['cum_tx_vaccinated'] = init_res('Total received therapeutic vaccine')
+
+        # Additional cancer results
+        results['detected_cancer_incidence'] = init_res('Detected cancer incidence', color='#fcba03')
+        results['cancer_mortality'] = init_res('Cancer mortality')
+
+        # Other results
+        results['n_alive'] = init_res('Number alive')
+        results['n_alive_by_sex'] = init_res('Number alive by sex', n_rows=2)
+        results['cdr'] = init_res('Crude death rate', scale=False)
+        results['cbr'] = init_res('Crude birth rate', scale=False, color='#fcba03')
+        results['hiv_incidence'] = init_res('HIV incidence rate')
+        results['hiv_prevalence'] = init_res('HIV prevalence rate')
+        results['hpv_prevalence'] = init_res('HPV prevalence', n_rows=ng, color=hpd.stock_colors[0](np.linspace(0.9,0.5,ng)))
+        results['total_hpv_prevalence'] = init_res('Total HPV prevalence', color=hpd.stock_colors[0](0.95))
+
+        # Time vector
+        results['year'] = self.res_yearvec
+        results['t'] = self.res_tvec
+
+        # Final items
+        self.results = results
+        self.results_ready = False
+
+        return
+
+
+    def init_people(self, popdict=None, init_states=False, reset=False, verbose=None, **kwargs):
+        '''
+        Create the people and the network.
+
+        Use ``init_states=False`` for creating a fresh People object for use
+        in future simulations
+
+        Args:
+            popdict         (any):  pre-generated people of various formats.
+            init_states     (bool): whether to initialize states (default false when called directly)
+            reset           (bool): whether to regenerate the people even if they already exist
+            verbose         (int):  detail to print
+            kwargs          (dict): passed to hpv.make_people()
+        '''
+
+        # Handle inputs
+        if verbose is None:
+            verbose = self['verbose']
+        if popdict is not None:
+            self.popdict = popdict
+        if verbose > 0:
+            resetstr= ''
+            if self.people:
+                resetstr = ' (resetting people)' if reset else ' (warning: not resetting sim.people)'
+            print(f'Initializing sim{resetstr} with {self["n_agents"]:0n} agents')
+        if self.popfile and self.popdict is None: # If there's a popdict, we initialize it
+            self.load_population(init_people=False)
+
+        # Actually make the people
+        self.people, total_pop = hppop.make_people(self, reset=reset, verbose=verbose, microstructure=self['network'], **kwargs)
+        
+        # Figure out the scale factors
+        if self['total_pop'] is not None and total_pop is not None: # If no pop_scale has been provided, try to get it from the location
+            errormsg = 'You can either define total_pop explicitly or via the location, but not both'
+            raise ValueError(errormsg)
+        elif total_pop is None and self['total_pop'] is not None:
+            total_pop = self['total_pop']
+            
+        if self['pop_scale'] is None:
+            if total_pop is None:
+                self['pop_scale'] = 1.0
+            else:
+                self['pop_scale'] = total_pop/self['n_agents']
+        self['ms_agent_ratio'] = int(self['ms_agent_ratio'])
+        
+        # Finish initialization
+        self.people.initialize(sim_pars=self.pars, hiv_pars=self.hiv_pars) # Fully initialize the people
+        self.reset_layer_pars(force=False) # Ensure that layer keys match the loaded population
+        if init_states:
+            init_hpv_prev = sc.dcp(self['init_hpv_prev'])
+            init_hpv_prev, age_brackets = self.validate_init_conditions(init_hpv_prev)
+            self.init_states(age_brackets=age_brackets, init_hpv_prev=init_hpv_prev)
+
+        return self
+
+
+    def init_interventions(self):
+        ''' Initialize and validate the interventions '''
+
+        # Initialization
+        if self._orig_pars and 'interventions' in self._orig_pars:
+            self['interventions'] = self._orig_pars.pop('interventions') # Restore
+
+        for i,intervention in enumerate(self['interventions']):
+            if isinstance(intervention, hpi.Intervention):
+                intervention.initialize(self)
+
+        # Set the number of immunity sources
+        # self['n_imm_sources'] += len([x for x in self['interventions'] if isinstance(x, hpi.BaseVaccination)])
+        # self['n_imm_sources'] = self['immunity'].shape[0]
+        return
+
+
+    def finalize_interventions(self):
+        for intervention in self['interventions']:
+            if isinstance(intervention, hpi.Intervention):
+                if hasattr(intervention,'n_products_used'):
+                    self.results[f'resources_{intervention.label}'] = intervention.n_products_used
+
+
+    def init_analyzers(self):
+        ''' Initialize the analyzers '''
+        if self._orig_pars and 'analyzers' in self._orig_pars:
+            self['analyzers'] = self._orig_pars.pop('analyzers') # Restore
+
+        for analyzer in self['analyzers']:
+            if isinstance(analyzer, hpa.Analyzer):
+                analyzer.initialize(self)
+        return
+
+
+    def finalize_analyzers(self):
+        for analyzer in self['analyzers']:
+            if isinstance(analyzer, hpa.Analyzer):
+                analyzer.finalize(self)
+
+
+    def init_states(self, age_brackets=None, init_hpv_prev=None, init_cin_prev=None, init_cancer_prev=None):
+        '''
+        Initialize prior immunity and seed infections
+        '''
+
+        # Shorten key variables
+        ng = self['n_genotypes']
+
+        # Assign people to age buckets
+        age_inds = np.digitize(self.people.age, age_brackets)
+
+        # Assign probabilities of having HPV to each age/sex group
+        hpv_probs = np.full(len(self.people), np.nan, dtype=hpd.default_float)
+        hpv_probs[self.people.f_inds] = init_hpv_prev['f'][age_inds[self.people.f_inds]]
+        hpv_probs[self.people.m_inds] = init_hpv_prev['m'][age_inds[self.people.m_inds]]
+        hpv_probs[~self.people.is_active] = 0 # Blank out people who are not yet sexually active
+
+        # Get indices of people who have HPV
+        hpv_inds = hpu.true(hpu.binomial_arr(hpv_probs))
+
+        # Determine which genotype people are infected with
+        if self['init_hpv_dist'] is None: # No type distribution provided, assume even split
+            genotypes = np.random.randint(0, ng, len(hpv_inds))
+        else:
+            # Error checking
+            if not sc.checktype(self['init_hpv_dist'], dict):
+                errormsg = f'Please provide initial HPV type distribution as a dictionary keyed by genotype, not {self["init_hpv_dist"]}'
+                raise ValueError(errormsg)
+            if set(self['init_hpv_dist'].keys())!=set(self['genotype_map'].values()):
+                errormsg = f'The HPV types provided in the initial HPV type distribution are not the same as the HPV types being simulated: {self["init_hpv_dist"].keys()} vs {self["genotype_map"].values()}.'
+                raise ValueError(errormsg)
+
+            type_dist = np.array(list(self['init_hpv_dist'].values()))
+            genotypes = hpu.choose_w(type_dist, len(hpv_inds), unique=False)
+
+        # Figure of duration of infection and infect people
+        genotype_pars = self.pars['genotype_pars']
+        genotype_map = self.pars['genotype_map']
+
+        for g in range(ng):
+            dur_precin = genotype_pars[genotype_map[g]]['dur_precin']
+            dur_hpv = hpu.sample(**dur_precin, size=len(hpv_inds))
+            t_imm_event = np.floor(np.random.uniform(-dur_hpv, 0) / self['dt'])
+            self.people.infect(inds=hpv_inds[genotypes==g], g=g, offset=t_imm_event[genotypes==g], dur=dur_hpv[genotypes==g], layer='seed_infection')
+
+        # Check for CINs
+        cin1_filters = (self.people.date_cin1<0) * (self.people.date_cin2 > 0)
+        self.people.cin1[cin1_filters.nonzero()] = True
+        cin2_filters = (self.people.date_cin2<0) * (self.people.date_cin3 > 0)
+        self.people.cin2[cin2_filters.nonzero()] = True
+        cin3_filters = (self.people.date_cin3<0) * (self.people.date_cancerous > 0)
+        self.people.cin3[cin3_filters.nonzero()] = True
+
+        return
+
+
+    def step(self):
+        ''' Step through time and update values '''
+
+        # Set the time and if we have reached the end of the simulation, then do nothing
+        if self.complete:
+            raise AlreadyRunError('Simulation already complete (call sim.initialize() to re-run)')
+
+        # Shorten key variables
+        dt = self['dt'] # Timestep
+        t = self.t
+        ng = self['n_genotypes']
+        condoms = self['condoms']
+        eff_condoms = self['eff_condoms']
+        beta = self['beta']
+        gen_pars = self['genotype_pars']
+        imm_kin_pars = self['imm_kin']
+        mixing = self['mixing']
+        layer_probs = self['layer_probs']
+        cross_layer = self['cross_layer']
+        acts = self['acts']
+        dur_pship = self['dur_pship']
+        age_act_pars = self['age_act_pars']
+        trans = np.array([self['transf2m'],self['transm2f']]) # F2M first since that's the order things are done later
+
+        # Update demographics, states, and partnerships
+        self.people.update_states_pre(t=t, year=self.yearvec[t]) # This also ages people, applies deaths, and generates new births
+        people = self.people # Shorten
+        people.dissolve_partnerships(t=t) # Dissolve partnerships
+        tind = self.yearvec[t] - self['start']
+        people.create_partnerships(tind, mixing, layer_probs, cross_layer, dur_pship, acts, age_act_pars)
+
+        # Apply interventions
+        for i,intervention in enumerate(self['interventions']):
+            intervention(self) # If it's a function, call it directly
+
+        # Assign sus_imm values, i.e. the protection against infection based on prior immune history
+        if self['use_waning']:
+            inds = hpu.true(people.peak_imm.sum(axis=0)).astype(hpd.default_int)
+            if len(inds):
+                ss = people.t_imm_event[:, inds].shape
+                t_since_boost = (t - people.t_imm_event[:,inds]).ravel()
+                current_imm = imm_kin_pars[t_since_boost].reshape(ss) # Get people's current level of immunity
+                people.imm[:,inds] = current_imm*people.peak_imm[:,inds] # Set immunity relative to peak
+                    # return imm
+        else:
+            people.imm[:] = people.peak_imm
+        hpimm.check_immunity(people)
+
+        # Shorten more variables
+        gen_betas = np.array([g['rel_beta'] * beta for g in gen_pars.values()], dtype=hpd.default_float)
+        sus_imm = people.sus_imm
+        hiv_rel_sus = np.ones(len(people), dtype=hpd.default_float)
+        hiv_inds = hpu.true(people.hiv)
+        immune_compromise = 1 - people.art_adherence[hiv_inds]
+        mod = immune_compromise * self['hiv_pars']['rel_sus']
+        mod[mod < 1] = 1
+        hiv_rel_sus[hiv_inds] *= mod
+
+        # Calculate relative transmissibility by stage of infection
+        rel_trans = people.infectious[:].astype(hpd.default_float)
+        rel_trans[people.cin1] *= self['rel_trans_cin1']
+        rel_trans[people.cin2] *= self['rel_trans_cin2']
+        rel_trans[people.cin3] *= self['rel_trans_cin3']
+        rel_trans[people.cancerous] *= self['rel_trans_cancerous']
+
+        inf = people.infectious.copy() # calculate transmission based on infectiousness at start of timestep i.e. someone infected in one layer cannot transmit the infection via a different layer in the same timestep
+
+        # Loop over layers
+        for lkey, layer in people.contacts.items():
+
+            sus = people.susceptible.copy() # for each layer, update who's still susceptible
+
+            # Shorten variables
+            f = layer['f']
+            m = layer['m']
+            acts = layer['acts'] * dt
+            frac_acts, whole_acts = np.modf(acts)
+            whole_acts = whole_acts.astype(hpd.default_int)
+            effective_condoms = hpd.default_float(condoms[lkey] * eff_condoms)
+
+            # Compute transmissions by genotype
+            for g in range(ng):
+
+                f_source_inds = (inf[g][f] & sus[g][m]).nonzero()[0]  # get female sources where female partner is infectious with genotype and male partner is susceptible to that genotype
+                m_source_inds = (inf[g][m] & sus[g][f]).nonzero()[0]  # get male sources where the male partner is infectious with genotype and the female partner is susceptible to that genotype
+
+                foi_frac = 1 - frac_acts * gen_betas[g] * trans[:, None] * (1 - effective_condoms)  # Probability of not getting infected from any fractional acts
+                foi_whole = (1 - gen_betas[g] * trans[:, None] * (1 - effective_condoms)) ** whole_acts  # Probability of not getting infected from whole acts
+                foi = (1 - (foi_whole * foi_frac)).astype(hpd.default_float)
+
+                discordant_pairs = [[f_source_inds, f[f_source_inds], m[f_source_inds], foi[0,:]],
+                                    [m_source_inds, m[m_source_inds], f[m_source_inds], foi[1,:]]]
+
+                # Compute transmissibility for each partnership
+                for pship_inds, sources, targets, this_foi in discordant_pairs:
+                    betas = this_foi[pship_inds] * (1. - sus_imm[g,targets]) * hiv_rel_sus[targets] * rel_trans[g,sources] # Pull out the transmissibility associated with this partnership
+                    transmissions = (np.random.random(len(betas)) < betas).nonzero()[0] # Apply probabilities to determine partnerships in which transmission occurred
+                    target_inds   = targets[transmissions] # Extract indices of those who got infected
+                    target_inds, unique_inds = np.unique(target_inds, return_index=True)  # Due to multiple partnerships, some people will be counted twice; remove them
+                    people.infect(inds=target_inds, g=g, layer=lkey)  # Infect people
+
+        # Determine if there are any reactivated infections on this timestep
+        for g in range(ng):
+            latent_inds = hpu.true(people.latent[g,:])
+            if len(latent_inds):
+                reactivation_probs = np.full_like(latent_inds, self['hpv_reactivation'] * dt, dtype=hpd.default_float)
+
+                if self['model_hiv']:
+                    # determine if any of these inds have HIV and adjust their probs
+                    hiv_latent_inds = latent_inds[hpu.true(people.hiv[latent_inds])]
+                    if len(hiv_latent_inds):
+                        immune_compromise = 1 - people.art_adherence[hiv_latent_inds]
+                        mod = immune_compromise * self['hiv_pars']['reactivation_prob']
+                        mod[mod < 1] = 1
+                        reactivation_probs[hpu.true(people.hiv[latent_inds])] *= mod
+                is_reactivated = hpu.binomial_arr(reactivation_probs)
+                reactivated_inds = latent_inds[is_reactivated]
+                people.infect(inds=reactivated_inds, g=g, layer='reactivation')
+
+        # Index for results
+        idx = int(t / self.resfreq)
+
+        # Update counts for this time step: flows
+        for key,count in people.total_flows.items():
+            self.results[key][idx] += count
+        for key,count in people.demographic_flows.items():
+            self.results[key][idx] += count
+        for key,count in people.flows.items():
+            flow_ind = [flow.name for flow in hpd.flows].index(key)
+            if hpd.flows[flow_ind].by_genotype:
+                for genotype in range(ng):
+                    self.results[key][genotype][idx] += count[genotype]
+            else:
+                try:self.results[f'total_{key}'][idx] += count
+                except: self.results[key][idx] += count
+        for key,count in people.flows_by_sex.items():
+            for sex in range(2):
+                self.results[key][sex][idx] += count[sex]
+        for key,count in people.flows_by_age.items():
+            self.results[key][:,idx] += count
+
+        # Make stock updates every nth step, where n is the frequency of result output
+        if t % self.resfreq == self.resfreq-1:
+
+            # Create total stocks
+            for key in hpd.total_stock_keys:
+                for g in range(ng):
+                    self.results[f'n_{key}'][g, idx] = people.count_by_genotype(key, g)
+                if key not in ['susceptible']:
+                    # For n_infectious, n_cin1, etc, we get the total number where this state is true for at least one genotype
+                    self.results[f'n_total_{key}'][idx] = people.count_any(key)
+                elif key == 'susceptible':
+                    # For n_total_susceptible, we get the total number of infections that could theoretically happen in the population, which can be greater than the population size
+                    self.results[f'n_total_{key}'][idx] = people.count(key)
+
+            # Create stocks of interventions
+            for key in [state.name for state in hpd.PeopleMeta.intv_states]:
+                self.results[f'n_{key}'][idx] = people.count(key)
+
+            # Count total hiv infections
+            self.results['n_hiv'][idx] = people.count('hiv')
+
+            # Update cancers and cancers by age
+            cases_by_age = self.results['cancers_by_age'][:, idx]
+            inds = people.alive * (self.people.sex==0) * ~people.cancerous.any(axis=0)
+            vals = self.people.age[inds]
+            bins = self.pars['standard_pop'][0,]
+            weights = people.scale[inds]
+            denom = np.histogram(vals, bins, weights=weights)[0]
+            age_specific_incidence = sc.safedivide(cases_by_age, denom)*100e3
+            standard_pop = self.pars['standard_pop'][1, :-1]
+            self.results['asr_cancer'][idx] = np.dot(age_specific_incidence,standard_pop)
+
+            # Save number alive
+            self.results['n_alive'][idx] = people.scale_flows(people.alive.nonzero()[0])
+            self.results['n_alive_by_sex'][0,idx] = people.scale_flows((people.alive*people.is_female).nonzero()[0])
+            self.results['n_alive_by_sex'][1,idx] = people.scale_flows((people.alive*people.is_male).nonzero()[0])
+
+        # Apply analyzers
+        for i,analyzer in enumerate(self['analyzers']):
+            analyzer(self)
+
+        # Tidy up
+        self.t += 1
+        if self.t == self.npts:
+            self.complete = True
+
+        return
+
+
+    def run(self, do_plot=False, until=None, restore_pars=True, reset_seed=True, verbose=None):
+        ''' Run the model once '''
+        # Initialization steps -- start the timer, initialize the sim and the seed, and check that the sim hasn't been run
+        T = sc.timer()
+
+        if not self.initialized:
+            self.initialize()
+            self._orig_pars = sc.dcp(self.pars) # Create a copy of the parameters, to restore after the run, in case they are dynamically modified
+
+        if verbose is None:
+            verbose = self['verbose']
+
+        if reset_seed:
+            # Reset the RNG. If the simulation is newly created, then the RNG will be reset by sim.initialize() so the use case
+            # for resetting the seed here is if the simulation has been partially run, and changing the seed is required
+            self.set_seed()
+
+        # Check for AlreadyRun errors
+        errormsg = None
+        until = self.npts if until is None else self.get_t(until)
+        if until > self.npts:
+            errormsg = f'Requested to run until t={until} but the simulation end is t={self.npts}'
+        if self.t >= until: # NB. At the start, self.t is None so this check must occur after initialization
+            errormsg = f'Simulation is currently at t={self.t}, requested to run until t={until} which has already been reached'
+        if self.complete:
+            errormsg = 'Simulation is already complete (call sim.initialize() to re-run)'
+        if self.people.t not in [self.t, self.t-1]: # Depending on how the sim stopped, either of these states are possible
+            errormsg = f'The simulation has been run independently from the people (t={self.t}, people.t={self.people.t}): if this is intentional, manually set sim.people.t = sim.t. Remember to save the people object before running the sim.'
+        if errormsg:
+            raise AlreadyRunError(errormsg)
+
+        # Main simulation loop
+        while self.t < until:
+
+            # Check if we were asked to stop
+            elapsed = T.toc(output=True)
+            if self['timelimit'] and elapsed > self['timelimit']:
+                sc.printv(f"Time limit ({self['timelimit']} s) exceeded; call sim.finalize() to compute results if desired", 1, verbose)
+                return
+            elif self['stopping_func'] and self['stopping_func'](self):
+                sc.printv("Stopping function terminated the simulation; call sim.finalize() to compute results if desired", 1, verbose)
+                return
+
+            # Print progress
+            if verbose:
+                simlabel = f'"{self.label}": ' if self.label else ''
+                string = f'  Running {simlabel}{self.yearvec[self.t]:0.1f} ({self.t:2.0f}/{self.npts}) ({elapsed:0.2f} s) '
+                if verbose >= 2:
+                    sc.heading(string)
+                elif verbose>0:
+                    if not (self.t % int(1.0/verbose)):
+                        sc.progressbar(self.t+1, self.npts, label=string, length=20, newline=True)
+
+            # Do the heavy lifting -- actually run the model!
+            self.step()
+
+        # If simulation reached the end, finalize the results
+        if self.complete:
+            self.finalize(verbose=verbose, restore_pars=restore_pars)
+            sc.printv(f'Run finished after {elapsed:0.2f} s.\n', 1, verbose)
+
+        return self
+
+
+    def finalize(self, verbose=None, restore_pars=True):
+        ''' Compute final results '''
+
+        if self.results_ready:
+            # Because the results are rescaled in-place, finalizing the sim cannot be run more than once or
+            # otherwise the scale factor will be applied multiple times
+            raise AlreadyRunError('Simulation has already been finalized')
+
+        # Finalize analyzers and interventions
+        self.finalize_analyzers()
+        self.finalize_interventions()
+
+        # Final settings
+        self.results_ready = True # Set this first so self.summary() knows to print the results
+        self.t -= 1 # During the run, this keeps track of the next step; restore this be the final day of the sim
+
+        # Perform calculations on results
+        self.compute_results(verbose=verbose) # Calculate the rest of the results
+        self.results = sc.objdict(self.results) # Convert results to a odicts/objdict to allow e.g. sim.results.diagnoses
+
+        # Optionally print summary output
+        if verbose: # Verbose is any non-zero value
+            if verbose>0: # Verbose is any positive number
+                self.summarize() # Print medium-length summary of the sim
+            else:
+                self.brief() # Print brief summary of the sim
+
+        return
+
+
+    def compute_results(self, verbose=None):
+        ''' Perform final calculations on the results '''
+        self.compute_states()
+        self.compute_summary()
+        return
+
+
+    def compute_states(self):
+        '''
+        Compute prevalence, incidence, and other states.
+        '''
+        res = self.results
+
+        # Compute HPV incidence and prevalence
+        self.results['total_hpv_incidence'][:]  = res['total_infections'][:] / res['n_total_susceptible'][:]
+        self.results['hpv_incidence'][:]        = res['infections'][:] / res['n_susceptible'][:]
+        self.results['total_hpv_prevalence'][:] = res['n_total_infectious'][:] / res['n_alive'][:]
+        self.results['hpv_prevalence'][:]       = res['n_infectious'][:] / res['n_alive'][:]
+        self.results['hiv_incidence'][:] = res['total_hiv_infections'][:] / (res['n_alive'][:]-res['n_hiv'][:])
+        self.results['hiv_prevalence'][:] = res['n_hiv'][:] / res['n_alive'][:]
+
+        # Compute CIN and cancer prevalence
+        alive_females = res['n_alive_by_sex'][0,:]
+
+        # Compute CIN and cancer incidence. Technically the denominator should be number susceptible
+        # to CIN/cancer, not number alive, but should be small enough that it won't matter (?)
+        at_risk_females = alive_females - res['n_cancerous'][:,:].sum(axis=0)
+        scale_factor = 1e5  # Cancer and CIN incidence are displayed as rates per 100k women
+        demoninator = at_risk_females / scale_factor
+        self.results['total_cin1_incidence'][:]    = res['total_cin1s'][:] / demoninator
+        self.results['total_cin2_incidence'][:]    = res['total_cin2s'][:] / demoninator
+        self.results['total_cin3_incidence'][:]    = res['total_cin3s'][:] / demoninator
+        self.results['total_cin_incidence'][:]     = res['total_cins'][:] / demoninator
+        self.results['total_cancer_incidence'][:]  = res['total_cancers'][:] / demoninator
+        self.results['cin1_incidence'][:]          = res['cin1s'][:] / demoninator
+        self.results['cin2_incidence'][:]          = res['cin2s'][:] / demoninator
+        self.results['cin3_incidence'][:]          = res['cin3s'][:] / demoninator
+        self.results['cin_incidence'][:]           = res['cins'][:] / demoninator
+        self.results['cancer_incidence'][:]        = res['cancers'][:] / demoninator
+
+        # Compute cancer mortality. Denominator is all women alive
+        denominator = alive_females/scale_factor
+        self.results['cancer_mortality'][:]         = res['total_cancer_deaths'][:]/denominator
+
+        # Compute HPV type distribution by cytology
+        for which in hpd.type_keys:
+            subkey = which[:-6] # Switch from e.g. cin1_types to cin1, i.e. remove the _types part of the key
+            if subkey=='cancer': subkey='cancerous' # different naming convention for cancer
+            res[which][:, (res[f'n_total_{subkey}'][:]>0)] = res[f'n_{subkey}'][:,(res[f'n_total_{subkey}'][:]>0)]/res[f'n_total_{subkey}'][(res[f'n_total_{subkey}'][:]>0)] # ugly line to calculate type distributions
+
+        # Demographic results
+        self.results['cdr'][:]  = self.results['other_deaths'][:] / (self.results['n_alive'][:])
+        self.results['cbr'][:]  = self.results['births'][:] / (self.results['n_alive'][:])
+
+        # Vaccination results
+        self.results['cum_vaccinated'][:] = np.cumsum(self.results['new_vaccinated'][:], axis=0)
+        self.results['cum_total_vaccinated'][:] = np.cumsum(self.results['new_total_vaccinated'][:])
+        self.results['cum_doses'][:] = np.cumsum(self.results['new_doses'][:])
+
+        # Therapeutic vaccination results
+        self.results['cum_tx_vaccinated'][:] = np.cumsum(self.results['new_tx_vaccinated'][:], axis=0)
+        self.results['cum_txvx_doses'][:] = np.cumsum(self.results['new_txvx_doses'][:])
+
+        return
+
+
+    def compute_summary(self, t=None, update=True, output=False, require_run=False):
+        '''
+        Compute the summary dict and string for the sim. Used internally; see
+        sim.summarize() for the user version.
+
+        Args:
+            t (int/str): day or date to compute summary for (by default, the last point)
+            update (bool): whether to update the stored sim.summary
+            output (bool): whether to return the summary
+            require_run (bool): whether to raise an exception if simulations have not been run yet
+        '''
+        if t is None:
+            t = -1
+
+        # Compute the summary
+        if require_run and not self.results_ready:
+            errormsg = 'Simulation not yet run'
+            raise RuntimeError(errormsg)
+
+        summary = sc.objdict()
+        for key in self.result_keys('total'):
+            summary[key] = self.results[key][t]
+
+        # Update the stored state
+        if update:
+            self.summary = summary
+
+        # Optionally return
+        if output:
+            return summary
+        else:
+            return
+
+
+    def summarize(self, full=False, t=None, sep=None, output=False):
+        '''
+        Print a medium-length summary of the simulation, drawing from the last time
+        point in the simulation by default. Called by default at the end of a sim run.
+        point in the simulation by default. Called by default at the end of a sim run.
+        See also sim.disp() (detailed output) and sim.brief() (short output).
+
+        Args:
+            full   (bool):    whether or not to print all results (by default, only cumulative)
+            t      (int/str): day or date to compute summary for (by default, the last point)
+            sep    (str):     thousands separator (default ',')
+            output (bool):    whether to return the summary instead of printing it
+
+        **Examples**::
+
+            sim = hpv.Sim(label='Example sim', verbose=0) # Set to run silently
+            sim.run() # Run the sim
+            sim.summarize() # Print medium-length summary of the sim
+            sim.summarize(t=24, full=True) # Print a "slice" of all sim results on day 24
+        '''
+        # Compute the summary
+        summary = self.compute_summary(t=t, update=False, output=True)
+
+        # Construct the output string
+        if sep is None: sep = hpo.sep # Default separator
+        labelstr = f' "{self.label}"' if self.label else ''
+        string = f'Simulation{labelstr} summary:\n'
+        for key in self.result_keys():
+            if full or key.startswith('total') and 'by_sex' not in key:
+                val = np.round(summary[key])
+                string += f'   {val:10,.0f} {self.results[key].name.lower()}\n'.replace(',', sep) # Use replace since it's more flexible
+
+        # Print or return string
+        if not output:
+            print(string)
+        else:
+            return string
+
+
+    def plot(self, *args, **kwargs):
+        ''' Plot the outputs of the model '''
+        fig = hpplt.plot_sim(sim=self, *args, **kwargs)
+        return fig
+
+
+    def compute_fit(self):
+        '''
+        Compute fit between model and data.
+        '''
+        return self.fit
+
+
+class AlreadyRunError(RuntimeError):
+    '''
+    This error is raised if a simulation is run in such a way that no timesteps
+    will be taken. This error is a distinct type so that it can be safely caught
+    and ignored if required, but it is anticipated that most of the time, calling
+    :py:func:`Sim.run` and not taking any timesteps, would be an inadvertent error.
+    '''
+    pass
+
+
+def diff_sims(sim1, sim2, skip_key_diffs=False, skip=None, output=False, die=False):
+    '''
+    Compute the difference of the summaries of two simulations, and print any
+    values which differ.
+
+    Args:
+        sim1 (sim/dict): either a simulation object or the sim.summary dictionary
+        sim2 (sim/dict): ditto
+        skip_key_diffs (bool): whether to skip keys that don't match between sims
+        skip (list): a list of values to skip
+        output (bool): whether to return the output as a string (otherwise print)
+        die (bool): whether to raise an exception if the sims don't match
+        require_run (bool): require that the simulations have been run
+
+    **Example**::
+
+        s1 = hpv.Sim(rand_seed=1).run()
+        s2 = hpv.Sim(rand_seed=2).run()
+        hpv.diff_sims(s1, s2)
+    '''
+
+    if isinstance(sim1, Sim):
+        sim1 = sim1.compute_summary(update=False, output=True, require_run=True)
+    if isinstance(sim2, Sim):
+        sim2 = sim2.compute_summary(update=False, output=True, require_run=True)
+    for sim in [sim1, sim2]:
+        if not isinstance(sim, dict): # pragma: no cover
+            errormsg = f'Cannot compare object of type {type(sim)}, must be a sim or a sim.summary dict'
+            raise TypeError(errormsg)
+
+    # Compare keys
+    keymatchmsg = ''
+    sim1_keys = set(sim1.keys())
+    sim2_keys = set(sim2.keys())
+    if sim1_keys != sim2_keys and not skip_key_diffs: # pragma: no cover
+        keymatchmsg = "Keys don't match!\n"
+        missing = list(sim1_keys - sim2_keys)
+        extra   = list(sim2_keys - sim1_keys)
+        if missing:
+            keymatchmsg += f'  Missing sim1 keys: {missing}\ns'
+        if extra:
+            keymatchmsg += f'  Extra sim2 keys: {extra}\n'
+
+    # Compare values
+    valmatchmsg = ''
+    mismatches = {}
+    skip = sc.tolist(skip)
+    for key in sim2.keys(): # To ensure order
+        if key in sim1_keys and key not in skip: # If a key is missing, don't count it as a mismatch
+            sim1_val = sim1[key] if key in sim1 else 'not present'
+            sim2_val = sim2[key] if key in sim2 else 'not present'
+            if not np.isclose(sim1_val, sim2_val, equal_nan=True):
+                mismatches[key] = {'sim1': sim1_val, 'sim2': sim2_val}
+
+    if len(mismatches):
+        valmatchmsg = '\nThe following values differ between the two simulations:\n'
+        df = pd.DataFrame.from_dict(mismatches).transpose()
+        diff   = []
+        ratio  = []
+        change = []
+        small_change = 1e-3 # Define a small change, e.g. a rounding error
+        for mdict in mismatches.values():
+            old = mdict['sim1']
+            new = mdict['sim2']
+            numeric = sc.isnumber(sim1_val) and sc.isnumber(sim2_val)
+            if numeric and old>0:
+                this_diff  = new - old
+                this_ratio = new/old
+                abs_ratio  = max(this_ratio, 1.0/this_ratio)
+
+                # Set the character to use
+                if abs_ratio<small_change:
+                    change_char = '≈'
+                elif new > old:
+                    change_char = '↑'
+                elif new < old:
+                    change_char = '↓'
+                else:
+                    errormsg = f'Could not determine relationship between sim1={old} and sim2={new}'
+                    raise ValueError(errormsg)
+
+                # Set how many repeats it should have
+                repeats = 1
+                if abs_ratio >= 1.1:
+                    repeats = 2
+                if abs_ratio >= 2:
+                    repeats = 3
+                if abs_ratio >= 10:
+                    repeats = 4
+
+                this_change = change_char*repeats
+            else: # pragma: no cover
+                this_diff   = np.nan
+                this_ratio  = np.nan
+                this_change = 'N/A'
+
+            diff.append(this_diff)
+            ratio.append(this_ratio)
+            change.append(this_change)
+
+        df['diff'] = diff
+        df['ratio'] = ratio
+        for col in ['sim1', 'sim2', 'diff', 'ratio']:
+            df[col] = df[col].round(decimals=3)
+        df['change'] = change
+        valmatchmsg += str(df)
+
+    # Raise an error if mismatches were found
+    mismatchmsg = keymatchmsg + valmatchmsg
+    if mismatchmsg: # pragma: no cover
+        if die:
+            raise ValueError(mismatchmsg)
+        elif output:
+            return mismatchmsg
+        else:
+            print(mismatchmsg)
+    else:
+        if not output:
+            print('Sims match')
+    return
