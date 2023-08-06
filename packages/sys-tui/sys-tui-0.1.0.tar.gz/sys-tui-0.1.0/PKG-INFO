@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: sys-tui
+Version: 0.1.0
+Summary: A textual app to monitor system utilities.
+Home-page: https://github.com/lukemiloszewski/sys-tui
+License: MIT
+Author: Luke Miloszewski
+Author-email: lukemiloszewski@gmail.com
+Requires-Python: >=3.8.0,<3.11.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: psutil (>=5.9.3,<6.0.0)
+Requires-Dist: rich (>=12.6.0,<13.0.0)
+Requires-Dist: textual[dev] (>=0.2.1,<0.3.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Project-URL: Changelog, https://github.com/lukemiloszewski/sys-tui/releases
+Project-URL: Repository, https://github.com/lukemiloszewski/sys-tui
+Description-Content-Type: text/markdown
+
+<h1 align="center">System TUI</h1>
+<p align="center">A textual app to monitor system utilities ⛽️</p>
+
+## Usage
+
+### Installation
+
+```bash
+pipx install sys-tui
+```
+
