@@ -1,0 +1,2 @@
+[console_scripts]
+etheno = etheno.__main__:main
