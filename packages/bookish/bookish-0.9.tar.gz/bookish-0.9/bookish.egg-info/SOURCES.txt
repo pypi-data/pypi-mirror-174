@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bookish/__init__.py
+bookish/bookish.py
+bookish.egg-info/PKG-INFO
+bookish.egg-info/SOURCES.txt
+bookish.egg-info/dependency_links.txt
+bookish.egg-info/requires.txt
+bookish.egg-info/top_level.txt
