@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sporestack = {editable = true, path = "."}
+
+[dev-packages]
+flake8 = "~=4.0"
+pyproject-flake8 = "==0.0.1a2"
+flake8-noqa = "~=1.2"
+pep8-naming = "~=0.12.1"
+mypy = "==0.942"
+pytest = "~=6.2"
+pytest-cov = "~=3.0"
+
+types-requests = "~=2.25"
+
+# Building
+wheel = "~=0.37.0"
+build = "~=0.7.0"
+# Publishing
+twine = "~=3.4"
+
+# Docs
+pdoc = "~=9.0"
+
+# Python `make` implementation
+almost-make = "~=0.5.1"

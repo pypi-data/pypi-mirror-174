@@ -1,0 +1,30 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: db7346d375eda68a0174f2c057dd97f2fbffe030  # frozen: v4.2.0
+    hooks:
+    -   id: trailing-whitespace
+-   repo: https://github.com/psf/black
+    rev: ae2c0758c9e61a385df9700dc9c231bf54887041  # frozen: 22.3.0
+    hooks:
+    -   id: black
+-   repo: https://github.com/PyCQA/isort
+    rev: c5e8fa75dda5f764d20f66a215d71c21cfa198e1  # frozen: 5.10.1
+    hooks:
+    -   id: isort
+-   repo: https://github.com/myint/autoflake
+    rev: 7a53fdafc82c33f446915b60fcac947c51279260  # frozen: v1.4
+    hooks:
+    -   id: autoflake
+-   repo: https://github.com/asottile/pyupgrade
+    rev: 256bd84aa5a17edbd3dcfaaa4f30f870168d2838  # frozen: v2.32.0
+    hooks:
+    -   id: pyupgrade
+        args: [--py37-plus]
+-   repo: https://github.com/jackdewinter/pymarkdown
+    rev: be56696256d5491e8a907b72e5a3852034546adb  # frozen: v0.9.5
+    hooks:
+    -   id: pymarkdown
+        args: [--disable-rules=MD013, --set=plugins.md024.siblings_only=$!True, scan]

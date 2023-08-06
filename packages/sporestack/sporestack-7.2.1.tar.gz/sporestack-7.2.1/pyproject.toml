@@ -1,0 +1,53 @@
+[tool.coverage.report]
+show_missing = true
+
+[tool.coverage.run]
+omit = ["tests/*", "build/*"]
+
+# Have to use `pflake8` instead of `flake8`
+[tool.flake8]
+max-line-length = 88
+noqa-require-code = "true"
+exclude = ".git,__pycache__,build,dist"
+max-complexity = 15
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+files = "."
+plugins = ["pydantic.mypy"]
+exclude = "(build|site-packages|__pycache__)"
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
+
+[project]
+name = "sporestack"
+authors = [ {name = "SporeStack", email="support@sporestack.com"} ]
+readme = "README.md"
+requires-python = "~=3.7"
+dynamic = ["version", "description"]
+keywords = ["bitcoin", "monero", "vps"]
+license = {file = "LICENSE.txt"}
+dependencies = [
+    "pydantic",
+    "requests[socks]>=2.22.0",
+    "segno",
+    "typer",
+]
+
+[project.urls]
+Homepage = "https://sporestack.com"
+Source = "https://git.sporestack.com/SporeStack/sporestack-python"
+Changelog = "https://git.sporestack.com/SporeStack/sporestack-python/src/branch/master/CHANGELOG.md"
+
+[project.scripts]
+sporestack = "sporestack.cli:cli"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
