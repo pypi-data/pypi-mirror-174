@@ -1,0 +1,10 @@
+# Include all non-python files
+recursive-include cinful/ *
+
+recursive-exclude cinful/.gitignore
+recursive-exclude cinful/env *
+recursive-exclude cinful/test *
+recursive-exclude cinful/.tests *
+recursive-exclude cinful/figures *
+recursive-exclude cinful/.snakemake *
+recursive-exclude cinful/tmp *
