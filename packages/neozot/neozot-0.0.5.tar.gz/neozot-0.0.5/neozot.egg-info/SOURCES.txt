@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+neozot/__main__.py
+neozot/feedprovider.py
+neozot/recommender.py
+neozot/ssrec.py
+neozot/zoterodb.py
+neozot.egg-info/PKG-INFO
+neozot.egg-info/SOURCES.txt
+neozot.egg-info/dependency_links.txt
+neozot.egg-info/requires.txt
+neozot.egg-info/top_level.txt
+neozot/ui/index.html
+neozot/ui/style.css

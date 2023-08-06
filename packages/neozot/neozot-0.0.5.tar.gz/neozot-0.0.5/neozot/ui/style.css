@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 2em auto 2em;
+  background-color: white;
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 1em;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card .card-title {
+  font-family: 'Times New Roman', Times, serif;
+  color: #f3f3f3;
+  padding: 2px 16px;
+  background-color: #3498db;
+}
+
+.card .card-creators {
+  padding: 2px 16px;
+  font-style: italic;
+}
+
+.card .card-creators .creator {
+  display: inline-block;
+  margin-right:16px;
+}
+
+.card .card-title a:link {
+  color: #ffffff;
+}
+.card .card-title a:visited {
+  color: #f0f0f0;
+}
+
+.card .card-text {
+  padding: 2px 16px;
+}
+
+.card .card-related {
+  margin-left: 40px;
+  padding: 2px 16px;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+header {
+  background: #fff;
+  color: #3498db;
+  position: fixed;
+  padding: 1em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* header {
+  position: sticky;   
+  top: 0; 
+  z-index: 99;
+} */
+
+.title {
+  font-family:'Roboto';
+  font-weight:800;
+  font-size:32px;
+  animation: showup 1s;
+}
+
+@keyframes showup {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 48px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(235, 235, 235);
+  overflow-x: hidden;
+  padding-top: 6em;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 12px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #3498db;
+}
+
+/* Style page content */
+.main {
+  margin-left: 48px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.modal {
+  top: 20%;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+}
+
+.model-inner {
+  background-color: white;
+  border-radius: 0.5em;
+  max-width: 600px;
+  padding: 2em;
+  margin: auto;
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.75;
+  z-index: 89;
+}

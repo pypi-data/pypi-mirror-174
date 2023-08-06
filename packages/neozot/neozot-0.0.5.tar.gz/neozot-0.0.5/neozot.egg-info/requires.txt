@@ -1,0 +1,5 @@
+appdirs
+eel
+numpy
+requests
+scikit_learn
