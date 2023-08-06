@@ -1,0 +1,7 @@
+z0lib
+future
+Babel
+lxml
+openpyxl
+pyyaml
+twine==1.15.0
