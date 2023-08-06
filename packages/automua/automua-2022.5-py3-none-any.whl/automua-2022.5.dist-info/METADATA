@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: automua
+Version: 2022.5
+Summary: Mail client autoconfiguration service
+Project-URL: Homepage, https://hlfh.github.io/automua
+Project-URL: Tracker, https://github.com/hlfh/automua/issues
+Project-URL: Source, https://github.com/hlfh/automua
+Author-email: Gaspard d'Hautefeuille <contact@hlfh.space>
+License-File: COPYING
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: flask-migrate>=2.5.2
+Requires-Dist: flask-sqlalchemy>=2.4.1
+Requires-Dist: flask>=1.1.1
+Requires-Dist: ldap3>=2.6
+Description-Content-Type: text/markdown
+
+# automua: Email client configuration made easy
+
+automua makes configuring email accounts easy. It unites methods for automated mailbox configuration from Apple's
+[Mobileconfig](https://support.apple.com/en-gb/guide/profile-manager/pmdbd71ebc9/mac), Microsoft's
+[Autodiscover](https://docs.microsoft.com/en-gb/exchange/architecture/client-access/autodiscover?view=exchserver-2019)
+and Mozilla's [Autoconfig](https://hlfh.github.io/autoconfiguration/) in one tool.
+automua is a fork of automx2. It accepts code contributions.
+
+## Copyright
+automua is a fork of automx2.
+Check per-file copyright notices to see the sole modifications and the new files of the fork automua that are Copyright © 2022 Gaspard d'Hautefeuille.
+automx2 and most of the files of the fork are Copyright © 2019-2022 Ralph Seichter.
+
+automua is licensed under the GNU General Public License V3 or later. The project is hosted on GitHub in the [HLFH/automua](https://github.com/HLFH/automua) repository. It is published on [PyPI.org](https://pypi.org/project/automua/) and [Arch Linux AUR](https://aur.archlinux.org/packages/automua).
+
+## Documentation
+
+Detailed documentation is available in [HTML](https://hlfh.github.io/automua/),
+[PDF](https://github.com/hlfh/automua/blob/master/docs/automua.pdf) and
+[other formats](https://github.com/hlfh/automua/blob/master/docs).
+
+## Contributing
+
+This project accepts code contributions.
+
+Furthermore, submitting ideas, suggestions, requests and bug reports in the form of
+[GitHub issues](https://github.com/hlfh/automua/issues) is welcome.
+
+## Sponsorship
+
+It is possible to sponsor specific new features. Please contact me via email to discuss this in detail.
