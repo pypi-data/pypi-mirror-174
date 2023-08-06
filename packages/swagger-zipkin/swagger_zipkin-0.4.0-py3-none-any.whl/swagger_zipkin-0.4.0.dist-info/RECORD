@@ -1,0 +1,8 @@
+swagger_zipkin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swagger_zipkin/decorate_client.py,sha256=6cR5Br7RU4DvM7-J2p-1CgREDb37Lfg_Tulq3LgJO_Y,3207
+swagger_zipkin/zipkin_decorator.py,sha256=j3_0yylYPUuHVEiFXEDjjRawIPORydIs7_iUMkSSxyc,2282
+swagger_zipkin-0.4.0.dist-info/LICENSE.txt,sha256=e3aCf9SS87la8zfRH6gjfLefR-NiOr2O7xUQBoT5AN0,10831
+swagger_zipkin-0.4.0.dist-info/METADATA,sha256=q5c3OtAY-9KuXCJTZwOmnpAQcX_IUsn5J4-NC2qIFMA,839
+swagger_zipkin-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+swagger_zipkin-0.4.0.dist-info/top_level.txt,sha256=BBGjU8UCoE1vmSwoi7NkxezlzIlaujyXRZN_RM_wAzs,15
+swagger_zipkin-0.4.0.dist-info/RECORD,,
