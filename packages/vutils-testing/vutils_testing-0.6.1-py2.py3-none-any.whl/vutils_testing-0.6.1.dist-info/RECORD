@@ -1,0 +1,12 @@
+vutils/testing/__init__.py,sha256=XDGrM_CqTkFrpoI8jLVgViXVdRx2NMQB1mtnJ_qIzQU,262
+vutils/testing/__init__.pyi,sha256=MnM9xZIBrBS1z9EHX1xI1_EnTvKgLwiznzg4HLoIP88,1110
+vutils/testing/mock.py,sha256=3sxwMA7Il80xZrQDYwe88fUo71as8veUY0BfjdPqVqo,6330
+vutils/testing/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vutils/testing/testcase.py,sha256=6BkUaXndidIm0ZG92s2OuiYfdOJSHyTlR-mg3v5Qx4Y,1263
+vutils/testing/utils.py,sha256=rgIGil5LcWuQfQf0r9R6mmTYT5NA_K9tbaQlFyVHWY0,12387
+vutils/testing/version.py,sha256=A4JzYpK-e1urwbpymTG1WKpkWqbhipYmMhPpDJPzsxM,295
+vutils_testing-0.6.1.dist-info/LICENSE,sha256=a9SSZeVh2yTNUJsCN8ZzgZuPO1gM5ENB29QvrDWmtXU,1054
+vutils_testing-0.6.1.dist-info/METADATA,sha256=ZHnU5L7O94YOH898Ml_2jOMQvGqJLwhlnsHklOLdh0M,9452
+vutils_testing-0.6.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+vutils_testing-0.6.1.dist-info/top_level.txt,sha256=R6HiHeF2i7aEIIQPVLHvxyXbeQgqNw9v5Xa7AxuDTHA,7
+vutils_testing-0.6.1.dist-info/RECORD,,
