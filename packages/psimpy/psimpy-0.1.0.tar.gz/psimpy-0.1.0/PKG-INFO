@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: psimpy
+Version: 0.1.0
+Summary: Predictive and probabilistic simulation tools.
+License: MIT
+Author: Hu Zhao
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SALib (>=1.4.5,<2.0.0)
+Requires-Dist: beartype (>=0.11.0,<0.12.0)
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Requires-Dist: rpy2 (>=3.5.1,<4.0.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+## Description
+
+`PSimPy` (Predictive and probabilistic simulation with Python) implements
+a Gaussian process emulation-based framework that enables systematically and
+efficiently inverstigating uncertainties associated with physics-based models
+(i.e. simulators).
+
+## Installation
+
+To be input soon...
+
+## Usage
+
+## License
+
+`PSimPy` was created by Hu Zhao at the Chair of Methods for Model-based
+Development in Computational Engineering. It is licensed under the terms of
+the MIT license.

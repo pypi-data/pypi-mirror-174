@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "psimpy"
+version = "0.1.0"
+description = "Predictive and probabilistic simulation tools."
+authors = ["Hu Zhao"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+numpy = "^1.22.3"
+scipy = "^1.8.0"
+SALib = "^1.4.5"
+rpy2 = "^3.5.1"
+beartype = "^0.11.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+pytest-cov = "^3.0.0"
+pytest-order = "^1.0.1"
+matplotlib = "^3.6.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
