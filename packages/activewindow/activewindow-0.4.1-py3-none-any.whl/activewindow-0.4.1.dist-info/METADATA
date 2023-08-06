@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: activewindow
+Version: 0.4.1
+Summary: Active window information
+Home-page: UNKNOWN
+Author: Sonter
+Author-email: sonterkub@gmail.com
+License: UNKNOWN
+Keywords: active window,activewindow,x11,windows
+Platform: linux-x86_64
+Platform: win-amd64
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: setuptools
+Requires-Dist: psutil
+Requires-Dist: pywin32 ; platform_system == "Windows"
+Requires-Dist: re ; platform_system == "linux-x86_64"
+Requires-Dist: subprocess ; platform_system == "linux-x86_64"
+Requires-Dist: pywin32 ; platform_system == "win-amd64"
+
+Gives you information about active window in Windows / X11
+
