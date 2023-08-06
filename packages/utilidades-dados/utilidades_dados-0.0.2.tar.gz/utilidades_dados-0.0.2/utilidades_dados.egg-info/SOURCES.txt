@@ -1,0 +1,10 @@
+README.md
+setup.py
+utilidades_dados/__init__.py
+utilidades_dados/operacoes.py
+utilidades_dados/tratamento_dados.py
+utilidades_dados.egg-info/PKG-INFO
+utilidades_dados.egg-info/SOURCES.txt
+utilidades_dados.egg-info/dependency_links.txt
+utilidades_dados.egg-info/requires.txt
+utilidades_dados.egg-info/top_level.txt

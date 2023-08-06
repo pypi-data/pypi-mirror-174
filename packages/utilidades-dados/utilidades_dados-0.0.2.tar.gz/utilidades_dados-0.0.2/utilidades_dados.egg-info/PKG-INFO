@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: utilidades-dados
+Version: 0.0.2
+Summary: Pacote de cálculos simples e para tratamento de dados.
+Home-page: https://github.com/rdaniloc/utilidade-dados-package.git
+Author: my_name
+Author-email: caiena.danilo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# utilidades_dados
+
+Description. 
+The package utilidades_dados is used to:
+
+	OPERACOES:
+	- metade
+	- dobro
+	- aumento
+	- diminui
+	- moeda
+	- tabelaform
+	- resumo
+
+	TRATAMENTO_DADOS:
+	- filtrodados
+	- adicionar_coluna_dados
+	- taxa_evolucao 
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install utilidades_dados
+
+```bash
+pip install utilidades_dados
+```
+
+## Author
+Danilo Caiena
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)# utilidade-dados-package
+# utilidade-dados-package
+
+
