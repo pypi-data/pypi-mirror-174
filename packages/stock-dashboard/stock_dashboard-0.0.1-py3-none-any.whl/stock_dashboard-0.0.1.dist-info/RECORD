@@ -1,0 +1,9 @@
+quickdb/__init__.py,sha256=hQkcpnH55oPagxsgQda2WgaK2yD9sFFf0aAedHfLF30,59
+quickdb/cli.py,sha256=K3Gmm5hgV7I8Xco1W-X-Fy4Aw2MX-8QGwEWueBptko8,1141
+quickdb/main.py,sha256=L9jSRvm5cQn_wU-07yqN7m5LNbyfSGNEhv5q57figmA,2821
+stock_dashboard-0.0.1.dist-info/LICENSE,sha256=4RjjtwWbz4o5N6K7HOghZR4ekLqwM-FxVvnuzCN8GNc,1088
+stock_dashboard-0.0.1.dist-info/METADATA,sha256=zlc316rPGtTILTbpbzPN7Rc4xQuWGqgNPYQZcJks9SQ,3357
+stock_dashboard-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+stock_dashboard-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+stock_dashboard-0.0.1.dist-info/top_level.txt,sha256=eMiPUCDbqB5Jm4zQoqcUnGOI0mGfoNSfe4zgYqGFpYk,8
+stock_dashboard-0.0.1.dist-info/RECORD,,
