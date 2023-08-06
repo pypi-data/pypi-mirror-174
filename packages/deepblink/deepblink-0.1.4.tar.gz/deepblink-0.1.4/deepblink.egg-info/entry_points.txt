@@ -1,0 +1,2 @@
+[console_scripts]
+deepblink = deepblink.cli:main
