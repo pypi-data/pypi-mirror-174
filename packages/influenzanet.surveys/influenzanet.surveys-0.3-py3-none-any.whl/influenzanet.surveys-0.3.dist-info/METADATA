@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: influenzanet.surveys
+Version: 0.3
+Summary: Influenzanet surveys management library
+Author-email: Clément Turbelin <clement.turbelin@iplesp.upmc.fr>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/influenzanet/ifn-surveys
+Project-URL: Bug Tracker, https://github.com/influenzanet/ifn-surveys/issues
+Keywords: influenzanet,surveys
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: jinja2 (==3)
+Requires-Dist: jsonschema (==4.*)
+Provides-Extra: validator
+Requires-Dist: urllib (==1.26.*) ; extra == 'validator'
+Requires-Dist: PyYAML (==6.0) ; extra == 'validator'
+
