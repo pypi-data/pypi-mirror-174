@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/multiplexer_manager.egg-info/PKG-INFO
+src/multiplexer_manager.egg-info/SOURCES.txt
+src/multiplexer_manager.egg-info/dependency_links.txt
+src/multiplexer_manager.egg-info/requires.txt
+src/multiplexer_manager.egg-info/top_level.txt
+src/multiplexermanager/__init__.py
+src/multiplexermanager/fileopener.py
