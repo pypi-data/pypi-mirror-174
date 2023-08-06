@@ -1,0 +1,7 @@
+icecream==2.1.2
+matplotlib==3.5.1
+numpy==1.21.2
+scipy==1.7.3
+snoop==0.4.1
+sysflow==0.1.15
+tqdm==4.64.0
