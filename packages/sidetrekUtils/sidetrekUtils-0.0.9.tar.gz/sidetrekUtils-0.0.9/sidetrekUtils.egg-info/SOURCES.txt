@@ -1,0 +1,8 @@
+setup.py
+sidetrekUtils/SidetrekModelUtlis.py
+sidetrekUtils/__init__.py
+sidetrekUtils.egg-info/PKG-INFO
+sidetrekUtils.egg-info/SOURCES.txt
+sidetrekUtils.egg-info/dependency_links.txt
+sidetrekUtils.egg-info/requires.txt
+sidetrekUtils.egg-info/top_level.txt
