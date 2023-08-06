@@ -1,0 +1,10 @@
+cryptography>=1.8.1
+django-pipeline~=2.0.8
+Django~=3.2.16
+dnspython>=1.14.0
+feedparser>=5.1.2
+Pillow>=6.2
+publicsuffix>=1.1
+python-dateutil>=2.7
+pytz
+typing_extensions>=4.4
