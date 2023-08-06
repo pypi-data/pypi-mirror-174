@@ -1,0 +1,8 @@
+requests
+opencv
+aiogram
+keyboard
+mouse
+bs4
+pillow
+colorama
