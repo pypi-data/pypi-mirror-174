@@ -1,0 +1,14 @@
+Acknowledgements
+----------------
+
+The list of contributors to *aiozmq*, at least of persons with real
+names but not nicks only.
+
+Alain Péteut
+Alexey Popravka
+Andrey Khoronko
+Anton Kasyanov
+Artem Dudarev
+Chris Laws
+Nikita Ofitserov
+Oleg Baranovskiy
