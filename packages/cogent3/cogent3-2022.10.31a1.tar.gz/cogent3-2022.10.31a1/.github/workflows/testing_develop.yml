@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [ "develop", "composable_refactor" ]
+  pull_request:
+    branches: [ "develop", "composable_refactor" ]
+
+jobs:
+  tests:
+    name: "Python ${{ matrix.python-version }}"
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        python-version: ["3.8", "3.9", "3.10"]
+
+    steps:
+      - uses: "actions/checkout@v2"
+        with:
+          fetch-depth: 0
+
+      # Setup env
+      - uses: "actions/setup-python@v2"
+        with:
+            python-version: "${{ matrix.python-version }}"
+
+      - name: "Installs for ${{ matrix.python-version }}"
+        run: |
+          python --version
+          pip install --upgrade pip wheel setuptools flit
+          pip install --upgrade nox
+
+      - name: "Run nox for ${{ matrix.python-version }}"
+        run: "nox -s test-${{ matrix.python-version }}"
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          file: ./tests/junit-*.xml
+          fail_ci_if_error: true
