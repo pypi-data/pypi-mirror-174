@@ -1,0 +1,2 @@
+direct-stubs
+panda3d-stubs
