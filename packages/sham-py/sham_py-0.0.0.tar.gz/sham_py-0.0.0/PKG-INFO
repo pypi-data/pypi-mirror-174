@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sham-py
+Version: 0.0.0
+Summary: A simple yet shit Discord API wrapper
+Home-page: https://github.com/EnokiUN/sham.py
+License: MIT
+Author: Enoki
+Author-email: enokiun@gmail.com
+Maintainer: EnokiUN
+Maintainer-email: enokiun@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Project-URL: Repository, https://github.com/EnokiUN/sham.py
+Description-Content-Type: text/markdown
+
+# Sham.py
+
+A simple yet shit Discord API wrapper for Python
+
