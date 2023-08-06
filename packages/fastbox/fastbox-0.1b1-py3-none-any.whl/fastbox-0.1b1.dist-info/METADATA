@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: fastbox
+Version: 0.1b1
+Summary: A client for financial analyze platform
+Home-page: UNKNOWN
+Author: zhang zhanwei & samuel
+Author-email: zhanweir@gmail.com
+License: MIT
+Keywords: client
+Platform: UNKNOWN
+Requires-Python: >=3.9.0
+Requires-Dist: pandas (>=1.4.2)
+Requires-Dist: numpy (>=1.21.4)
+Requires-Dist: tables (>=3.7.0)
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: jupyter (>=1.0.0)
+Requires-Dist: plotly (>=5.8.0)
+Requires-Dist: rich (>=12.4.4)
+Requires-Dist: nbformat (>=4.2.0)
+Requires-Dist: ruamel.yaml (>=0.17.21)
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: cufflinks (>=0.17.3)
+Requires-Dist: numba (>=0.55.2)
+
+===========
+fastbox
+===========
+ 
+Client for fastbox API.
+
+
