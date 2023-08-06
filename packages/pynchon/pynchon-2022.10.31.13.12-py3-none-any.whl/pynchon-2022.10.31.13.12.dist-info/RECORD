@@ -1,0 +1,17 @@
+pynchon/__init__.py,sha256=PLrUwTkjHNPaLPNVV6XV513BrNDejoYeakmoo2QjSg4,1527
+pynchon/annotate.py,sha256=5xlF-s6sohX3SEmw0YDfYf0WLJd3OW4E3H125tR0j-U,3480
+pynchon/cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynchon/util.py,sha256=LXun9xKpyoXtUaTYTtgJ6VisfP2SV9ptgRF0-5YPdFM,5390
+pynchon/bin/__init__.py,sha256=R9a6fMUiUwVxEsuHFGX5iligempfi5pbr5KiINPBKLA,2218
+pynchon/bin/common.py,sha256=YbFVkhJ2bUrkuK5p5314ak5MuJT3FKsS0J7VpISFDaU,5086
+pynchon/bin/groups.py,sha256=ln5NjrUZjIvP-peACI9QWjrWBj8DypPmeHAM4vCaLac,1272
+pynchon/templates/api-toc.md.j2,sha256=N4_14NHMhBioNXW8CqBrcmu3pRvKjPdoPwvAt7Dtxz4,2985
+pynchon/templates/class.md.j2,sha256=Hjla3k4ZtKu1fM51Ekkj9djl15bWpuk5ngc8xoihCmU,198
+pynchon/templates/cli-entrypoints.md.j2,sha256=8cIp1Peq_A2HNO5LRDxP5QaRHyCOWJqhcURHbQXzUm0,322
+pynchon/templates/cli-toc.md.j2,sha256=bmxNivs6bQeZfHSFjg1yqQxPoc7grU-_E5aLhLC7Tp8,283
+pynchon/templates/toc.md.j2,sha256=N4_14NHMhBioNXW8CqBrcmu3pRvKjPdoPwvAt7Dtxz4,2985
+pynchon-2022.10.31.13.12.dist-info/METADATA,sha256=6hxVyKehURZAJ1njgSbMOKayjMcxRUDpTWJiSFsnp9Q,1331
+pynchon-2022.10.31.13.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pynchon-2022.10.31.13.12.dist-info/entry_points.txt,sha256=IgIrk--AqUfECxal1qvaf5ib8r8ET-uTJ2CGuagWGYU,46
+pynchon-2022.10.31.13.12.dist-info/top_level.txt,sha256=Pospj5tsvVwqctoxbEnY-9UXSTJuOtVfWob_vjTfFCM,8
+pynchon-2022.10.31.13.12.dist-info/RECORD,,
