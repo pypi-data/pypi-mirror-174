@@ -1,0 +1,13 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+stat_g_b_distribution/Binomialdistribution.py
+stat_g_b_distribution/Gaussiandistribution.py
+stat_g_b_distribution/Generaldistribution.py
+stat_g_b_distribution/__init__.py
+stat_g_b_distribution.egg-info/PKG-INFO
+stat_g_b_distribution.egg-info/SOURCES.txt
+stat_g_b_distribution.egg-info/dependency_links.txt
+stat_g_b_distribution.egg-info/not-zip-safe
+stat_g_b_distribution.egg-info/top_level.txt
