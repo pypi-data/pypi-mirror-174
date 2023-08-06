@@ -1,0 +1,2 @@
+[console_scripts]
+hf-endpoints-emulator = hf_endpoints_emulator.cli:app
