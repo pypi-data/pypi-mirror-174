@@ -1,0 +1,17 @@
+emcache/client_errors.py,sha256=cBTU9LC_Pp06iaIYF_IOJSpPN16V2fOHSrjLn_Q5fPY,930
+emcache/cluster.py,sha256=Rj2f2zqDOXH6VOh2KSqVBNhwhKirIE2adY3udlUdcFI,8974
+emcache/node.py,sha256=QIpErHPlSt_-zcFH7v1oJotS-2fcoV64hvTW-l_VZK8,3363
+emcache/connection_pool.py,sha256=-b_pRRyrU3QxJbi6bjzNGrUzB5vhwdDYRLJ3gepMbl4,16915
+emcache/client.py,sha256=LdugppQkge5huUNYNiOyvAqcb-2rhbyJn5lKgg0_RZ4,27621
+emcache/protocol.py,sha256=nldQlA3HUcm8YLX4c4CNuzkW-uU4fkTckkQNkNNrk8A,7991
+emcache/base.py,sha256=Vetd93hrrty6vND4gb4AxeQO7ZrUHXqf-qGCvASJgq8,9785
+emcache/version.py,sha256=jFlbxEJFS0G44LE-yXXVSwXACA1J_NyYDk5E20_2zpc,22
+emcache/default_values.py,sha256=Bg0NVhUUtjf-JZytVzAS2SCnkA9NSZds0djKCExsXdg,313
+emcache/timeout.py,sha256=f35q9QHlRmdetWgy4Ut4LkIO8nRb6Huew5i1zhZPvn8,1137
+emcache/autobatching.py,sha256=a_j77G5wgWtakqGWmyhCMZHSD80X2Su10cQvcH9ipoo,6919
+emcache/__init__.py,sha256=ohngrGs3BD1xC8A2_ar3dN7hYNr3LUpdW4B0l9QeeBc,1249
+emcache/_cython/cyemcache.cpython-37m-x86_64-linux-gnu.so,sha256=LpruCJZ_LCZai6Fzpx5PwMm5UOylkHlRoeocYxCTMGw,449240
+emcache-0.6.2.dist-info/top_level.txt,sha256=SiD4z_G2KxAGSHHWcwfKNd_fHQb5EcY0A9N_so667iM,8
+emcache-0.6.2.dist-info/WHEEL,sha256=bLz_aX1-NK7_gJjLsk9PzpQVriG92a2CWgoOUWqntJQ,221
+emcache-0.6.2.dist-info/RECORD,,
+emcache-0.6.2.dist-info/METADATA,sha256=CxX734nrHf2iLfHsMdKo3qrORyBgfz9XfRTwjVhFCIw,11026
