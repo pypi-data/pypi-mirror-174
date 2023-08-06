@@ -1,0 +1,9 @@
+dkpkg/__init__.py,sha256=J2P-p7gf1XaDpoIu-YN7EuxCKmuvTsMZBwtAlEt-fhw,128
+dkpkg/directory.py,sha256=FLOe1cH-3Af1CKwrPgrU04S6u1YpSpXhiCxTIPjBTDo,9794
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_directory.py,sha256=KP9S4wjkhQxov0xxXz4C_NX-OvFrJ-tsiU6EwW7J6A4,9177
+tests/test_dkpkg_import.py,sha256=kt-9ZNyyOj-3sJXRnx7jdJDyqG-jmVnbkRDXWREFFkU,196
+dkpkg-2.0.4.dist-info/METADATA,sha256=lS61wzkHbobugVaAmsY6zCKKALGJuILeJCDQsmAn1fU,1886
+dkpkg-2.0.4.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+dkpkg-2.0.4.dist-info/top_level.txt,sha256=0x8lkJIJAZ8daiod1eSvyYYZSn_iI6-WSn1SFc-z2Wg,12
+dkpkg-2.0.4.dist-info/RECORD,,
