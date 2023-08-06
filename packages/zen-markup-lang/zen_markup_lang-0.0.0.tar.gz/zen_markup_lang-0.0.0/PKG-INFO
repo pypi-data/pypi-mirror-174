@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: zen_markup_lang
+Version: 0.0.0
+Summary: Read and write files in Zen Markup Language.
+Author: shi0rik0
+Project-URL: Homepage, https://github.com/shi0rik0/zml-python
+Keywords: zml
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
