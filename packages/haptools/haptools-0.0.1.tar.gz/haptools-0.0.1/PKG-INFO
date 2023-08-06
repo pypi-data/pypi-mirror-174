@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: haptools
+Version: 0.0.1
+Summary: Simulate genotypes and phenotypes for GWAS and subsequent fine-mapping
+Home-page: https://github.com/cast-genomics/haptools
+License: MIT
+Author: Michael Lamkin
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: docs
+Provides-Extra: files
+Provides-Extra: test
+Requires-Dist: Pgenlib (>=0.81.2); extra == "files"
+Requires-Dist: Sphinx (>=4.3.2); extra == "docs"
+Requires-Dist: brewer2mpl (>=1.4.1)
+Requires-Dist: click (>=8.0.3)
+Requires-Dist: cyvcf2 (>=0.30.14)
+Requires-Dist: matplotlib (>=3.5.1)
+Requires-Dist: myst-parser (>=0.17.0)
+Requires-Dist: numpydoc (>=1.1.0); extra == "docs"
+Requires-Dist: pysam (>=0.19.0)
+Requires-Dist: sphinx-autodoc-typehints (>=1.12.0); extra == "docs"
+Requires-Dist: sphinx-click (>=3.0.2); extra == "docs"
+Requires-Dist: sphinx-rtd-theme (>=1.0.0); extra == "docs"
+Project-URL: Documentation, https://haptools.readthedocs.io
+Project-URL: Repository, https://github.com/cast-genomics/haptools
