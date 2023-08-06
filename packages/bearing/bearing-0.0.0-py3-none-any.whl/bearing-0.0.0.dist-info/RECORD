@@ -1,0 +1,10 @@
+bearing/__init__.py,sha256=eTuf3xcXObo9tMmAQ_O_tn1cu1ZI9uwz32O6koJungU,38
+bearing/__version__.py,sha256=7Mp8iqklf3_AKmDXbtfWFufmP2NUURhE5CXW4A0vn-c,22
+bearing/geometry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bearing/geometry/point.py,sha256=G_zM3lQMPewXGp_3Mohh5QxZj_2fEhLl44VJ_U-Aqd4,3167
+bearing/geospatial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bearing-0.0.0.dist-info/METADATA,sha256=XIE6Knr6IEOW0vvpJfLAm4l0uqYEjXbfUdMTCeBG68U,5170
+bearing-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bearing-0.0.0.dist-info/top_level.txt,sha256=xFREhT1oaGTHgTzQjkAPpuIcRW1jCKSI4mjgPb8VTU8,8
+bearing-0.0.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+bearing-0.0.0.dist-info/RECORD,,
