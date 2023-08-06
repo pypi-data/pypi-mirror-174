@@ -1,0 +1,4 @@
+#insertamos dentro de la raiz el paquete MANIFEST.in
+include requirements.txt #le asignamos que incluya la lista de requisitos
+include README.md #Incluimos el leeme
+include LICENSE #incluimos la liscencia

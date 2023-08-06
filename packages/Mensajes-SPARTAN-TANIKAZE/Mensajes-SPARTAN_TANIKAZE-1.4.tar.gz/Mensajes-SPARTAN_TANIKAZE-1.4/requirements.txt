@@ -1,0 +1,2 @@
+#aqui en cada linea le vamos a indicar cada paquete y la version que que queremos que se instale como dependencia
+numpy >= 1.23.4
