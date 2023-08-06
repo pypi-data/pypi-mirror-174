@@ -1,0 +1,17 @@
+cnn.cpython-310-x86_64-linux-gnu.so,sha256=Stz8KhrIhzez1UJW8L8jAen5epigN31jD8gzelmlPFY,770968
+neural_network_constructor/neuronetlib/cnn.cpython-310-x86_64-linux-gnu.so,sha256=AIEyyuuQPGOvopjJn8jVEv9OkDFpaBNUjIH42dhp44g,590152
+neuronetlib/Untitled-1.py,sha256=QnncmhKKZUNB1hxobgS1XlvMoNsVxwpQAfvHdTNz-rQ,18642
+neuronetlib/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+neuronetlib/cnn.cpython-310-x86_64-linux-gnu.so,sha256=wpnuUJ5HUbBj-N0xl5I5flS5kKDug4Blzt6iUZxfdT0,531176
+neuronetlib/cnnOld.py,sha256=yi7LvMKYBkGLld3cszg438TOFY2f-DFSrCFTaFet-kQ,11491
+neuronetlib/constructor.py,sha256=ZZq9eEPNkZ6r3UphA5Eh2qzvjFIlaAqYLXauusq6_jc,6871
+neuronetlib/conv_layer.cpython-310-x86_64-linux-gnu.so,sha256=Y_Bj2qA_H2mw7buemk_3XK51aniEXJ_XJCGmSl7CFoA,424856
+neuronetlib/dense_layer.cpython-310-x86_64-linux-gnu.so,sha256=bQX4cCvkJWY1Z8IgK7tPYg_bgRIjgrwt9ckdmxyjdrQ,358224
+neuronetlib/ffnn.py,sha256=OsImCuonjH0p4XAqxMk_KK0pWLqkyR0zIjVdYl1R-pc,10323
+neuronetlib/init.py,sha256=t-e6GoMswOEckWRD2v-0AguXdFp2Z4f94T5yE9XGB08,1073
+neuronetlib/layer.cpython-310-x86_64-linux-gnu.so,sha256=aBREjTjY6A5B4TBIJ5syKIFllh4d2dIexk3Te_C99E0,201872
+neuronetlib/pool_layer.cpython-310-x86_64-linux-gnu.so,sha256=O1kpH02wy4RCU8BQeRfWcHGu0HmNZJEB_GvO4IaACVc,511560
+neuronetlib-0.0.1.dist-info/METADATA,sha256=Nlc8ycVKl_lGL2otpYDWlHkltan31pPU6knWvqB16Es,3731
+neuronetlib-0.0.1.dist-info/WHEEL,sha256=nTy_Z8ivGEB6qFwVLg7_h6rq0Jt0JU5Pz2cL2_FjSMQ,105
+neuronetlib-0.0.1.dist-info/top_level.txt,sha256=9VCWZrYyaU-OGtVtpmbopy0J2q-hmoH__T6-1ahMBwM,12
+neuronetlib-0.0.1.dist-info/RECORD,,
