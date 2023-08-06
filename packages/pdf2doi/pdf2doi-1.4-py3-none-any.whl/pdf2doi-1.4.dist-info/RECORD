@@ -1,0 +1,16 @@
+pdf2doi/__init__.py,sha256=5kt16yxG7CYKxBwv1e_LO82JvTxleDatNoIagQqxDuA,985
+pdf2doi/config.py,sha256=Ik0My1fHX1o73QB7Ujx9OnxI4EZHZapsX8V7JA2Ni0g,5694
+pdf2doi/finders.py,sha256=d0tUrbdZN9gyweovOBYI1cs1ZJf-LOZzCPYP3pCqWfQ,34669
+pdf2doi/main.py,sha256=Rw4bpFeRtwdoyGNjU_zc9C6BT5PIJHLfM2yBE1tqjac,19135
+pdf2doi/patterns.py,sha256=lYjUj_W2EWOS4xykZuaQYhFL91wVWSf99VKq13I02M8,5907
+pdf2doi/test_patterns.py,sha256=DjaK6q1urZBqXQWnCitGc6qxeUzZknm_KDUEd1pCa-A,2377
+pdf2doi/utils_registry.py,sha256=yShXkEdG-j5Ne5i4gg4ZPPPwsRKE5OfvRUWT4wEdM6A,5437
+pdf2doi-1.4.dist-info/METADATA,sha256=3dADPFRU-qtTeO-vBYGCRSvJP1AAFFxkMmCKkBQvI7k,24204
+pdf2doi-1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pdf2doi-1.4.dist-info/entry_points.txt,sha256=HlrIWC3aY0VzMKoyvUstXNfvM2Krp48khFTneU5C8nM,47
+pdf2doi-1.4.dist-info/top_level.txt,sha256=mjnLRGseHZPjiQMk3YXfBDZNz-mSMVAK8GyNK1y7EuY,8
+pdf2doi-1.4rc1.dist-info/METADATA,sha256=nfsEUs-oSkH-pFPIG8jLYmq_D-BOngPcMtdBJXuE6VY,24207
+pdf2doi-1.4rc1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pdf2doi-1.4rc1.dist-info/entry_points.txt,sha256=HlrIWC3aY0VzMKoyvUstXNfvM2Krp48khFTneU5C8nM,47
+pdf2doi-1.4rc1.dist-info/top_level.txt,sha256=mjnLRGseHZPjiQMk3YXfBDZNz-mSMVAK8GyNK1y7EuY,8
+pdf2doi-1.4.dist-info/RECORD,,
