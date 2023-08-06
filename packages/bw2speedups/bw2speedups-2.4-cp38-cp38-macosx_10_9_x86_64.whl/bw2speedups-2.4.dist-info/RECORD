@@ -1,0 +1,9 @@
+bw2speedups/__init__.py,sha256=hWldkB75cFpQ3R_0MORVPToiXXaDiEZxnScoc3Mc-C4,126
+bw2speedups/_consolidate.cpython-38-darwin.so,sha256=Hd9JSqO0QJh6ypToZY-PMS4kONJN6mmHg9zcex30CqU,89000
+bw2speedups/_find_first.cpython-38-darwin.so,sha256=hXnIyUssskBlTJBdNEzqgO6hBJeDlzqXkUeAw15uN0Q,67200
+bw2speedups/_indexer.cpython-38-darwin.so,sha256=3UB0stXZrkD2-4MKQxLRUyKbATzkmx93YQYb0fV17tE,67008
+bw2speedups-2.4.dist-info/LICENSE,sha256=wCmlIV5n4KDSWhaG5XkuKsh86zDLVRhTUowBl43HBB8,1474
+bw2speedups-2.4.dist-info/METADATA,sha256=UpDCu_7ASUzVSoldUYFIXinIFTiMseYOH7koQfCR-fQ,1962
+bw2speedups-2.4.dist-info/WHEEL,sha256=pXLpj1wTvqlD6RVUEKOuGQGeFX0NOPyDrsC-9xVDmYU,109
+bw2speedups-2.4.dist-info/top_level.txt,sha256=RDMDVfGferZb4kkxrrWwH_sx_oPKsmVFVGck-Uhjaac,12
+bw2speedups-2.4.dist-info/RECORD,,
