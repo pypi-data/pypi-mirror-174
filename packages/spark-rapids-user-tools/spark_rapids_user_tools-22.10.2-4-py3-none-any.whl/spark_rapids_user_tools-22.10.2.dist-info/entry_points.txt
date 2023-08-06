@@ -1,0 +1,2 @@
+[console_scripts]
+spark_rapids_dataproc = spark_rapids_dataproc_tools.dataproc_wrapper:main
