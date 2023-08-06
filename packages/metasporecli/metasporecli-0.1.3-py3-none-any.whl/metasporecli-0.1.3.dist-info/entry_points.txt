@@ -1,0 +1,2 @@
+[console_scripts]
+metaspore = metasporecli.__main__:main
