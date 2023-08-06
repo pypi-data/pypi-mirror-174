@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "podping-schemas"
+version = "0.1.0a10"
+description = ""
+authors = ["Alecks Gates <alecks@podping.org>"]
+license = "MIT"
+readme = "README.md"
+build = "build.py"
+include = [
+    { path = "podping_schemas/**/*.capnp", format = "sdist" },
+    { path = "podping_schemas/**/*.py", format = "wheel" },
+    { path = "podping_schemas/**/*.so", format = "wheel" },
+]
+# oct 2022 exclude in poetry 1.2 doesn't seem to work - agates
+exclude = [
+    { path = "podping_schemas/**/*.pyx" },
+    { path = "podping_schemas/**/*.c" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+capnpy = { version = "^0.9.0" }
+
+
+[build-system]
+requires = ["capnpy", "poetry-core", "setuptools"]
+build-backend = "poetry.core.masonry.api"
