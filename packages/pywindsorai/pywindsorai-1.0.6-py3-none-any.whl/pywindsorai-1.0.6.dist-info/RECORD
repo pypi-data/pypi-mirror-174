@@ -1,0 +1,9 @@
+pywindsorai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywindsorai/client.py,sha256=sZ1J4-eCZA0cLkT4o6II-WniCEzk9l1ABwPJDWKI8ZI,3950
+pywindsorai/enums.py,sha256=rUsIRhu0oQlxuIE1d_PcZgVFWgWI6P0kD7FSIqqi6E8,250
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/tests.py,sha256=CSjprV5nMEy1tCYYuyZOyo8xhTcWt5eonYTpsoGk8fw,3602
+pywindsorai-1.0.6.dist-info/METADATA,sha256=zYfsEvK2U8SiNMhOE-zMWRsrGRabDKk5kgwmY4SbfAs,4463
+pywindsorai-1.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pywindsorai-1.0.6.dist-info/top_level.txt,sha256=G2u-35VG78xOt1HEjyDFXQrrXVDeK6qgjWVpObOmKm4,17
+pywindsorai-1.0.6.dist-info/RECORD,,
