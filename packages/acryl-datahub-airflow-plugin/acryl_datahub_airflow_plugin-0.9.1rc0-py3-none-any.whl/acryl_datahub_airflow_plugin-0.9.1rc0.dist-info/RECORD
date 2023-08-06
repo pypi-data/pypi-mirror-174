@@ -1,0 +1,7 @@
+datahub_airflow_plugin/__init__.py,sha256=wSXg5aM29wrf_hfGYdTXBux2StD1b3F-fweFv0ArNC8,528
+datahub_airflow_plugin/datahub_plugin.py,sha256=U0AgiSmpTcapbJinLTgvv9s81Jcz9eenVm4hS50V3bU,13692
+acryl_datahub_airflow_plugin-0.9.1rc0.dist-info/METADATA,sha256=fb9LL6SNH2H3_GZboQv4gaLGdq2rRgLYI_Z8T1x4bU4,9434
+acryl_datahub_airflow_plugin-0.9.1rc0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+acryl_datahub_airflow_plugin-0.9.1rc0.dist-info/entry_points.txt,sha256=6y_enWJyFNyQ3HHJGV7WnLFiqAQCi9Rcoh4LnIw7eeQ,101
+acryl_datahub_airflow_plugin-0.9.1rc0.dist-info/top_level.txt,sha256=VBzisOQfzqL1WRbNyItaruf3kTigXltjzgqzbheaFp0,23
+acryl_datahub_airflow_plugin-0.9.1rc0.dist-info/RECORD,,
