@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: armilla
+Version: 0.0.4
+Summary: Python dev kit for armilla platform
+Author: Armilla Dev
+Project-URL: Homepage, https://armilla.ai/
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Armilla Client
