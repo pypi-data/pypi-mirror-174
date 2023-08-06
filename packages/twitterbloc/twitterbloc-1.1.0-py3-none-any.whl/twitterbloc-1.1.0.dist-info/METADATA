@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: twitterbloc
+Version: 1.1.0
+Summary: Behavioral Language for Online Classification (BLOC): A General Language for Modeling Social Media Account Behavior.
+Home-page: https://github.com/anwala/bloc
+Author: Alexander C. Nwala
+Author-email: acnwala@wm.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: osometweet
+Requires-Dist: requests-oauthlib
+Requires-Dist: sklearn
+Requires-Dist: textblob
+
+See: https://github.com/anwala/bloc
+
+
