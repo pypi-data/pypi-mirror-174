@@ -1,0 +1,6 @@
+tc_mailmanager/__init__.py,sha256=6JFhdM5pdPkkAWD1hmZLtGXa3DSJ0n5R448cKiX4js0,186
+tc_mailmanager/mail_manager.py,sha256=qPAh5G57otoP_cMvDzZY51bRz1I-BGAm3E43J44pFgE,11067
+tc_mailmanager/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tc_mailmanager-1.7.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+tc_mailmanager-1.7.1.dist-info/METADATA,sha256=OxoJ0ccVH58qtcZ4Nte54P53beM_OuWasAzhzF4TjGI,2122
+tc_mailmanager-1.7.1.dist-info/RECORD,,

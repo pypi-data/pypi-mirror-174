@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: tc-mailmanager
+Version: 1.7.1
+Summary: ToucanToco's cross-python-projects MailManager
+Home-page: https://github.com/ToucanToco/tc_mailmanager
+License: BSD-3-Clause
+Author: Toucan Toco
+Author-email: dev@toucantoco.com
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Dist: sendgrid (>=5,<6)
+Requires-Dist: tctc-envelopes (==0.5)
+Project-URL: Documentation, https://toucantoco.github.io/tc_mailmanager
+Project-URL: Repository, https://github.com/ToucanToco/tc_mailmanager
+Description-Content-Type: text/markdown
+
+[![Pypi-v](https://img.shields.io/pypi/v/tc_mailmanager.svg)](https://pypi.python.org/pypi/tc_mailmanager)
+[![Pypi-pyversions](https://img.shields.io/pypi/pyversions/tc_mailmanager.svg)](https://pypi.python.org/pypi/tc_mailmanager)
+[![Pypi-l](https://img.shields.io/pypi/l/tc_mailmanager.svg)](https://pypi.python.org/pypi/tc_mailmanager)
+[![Pypi-wheel](https://img.shields.io/pypi/wheel/tc_mailmanager.svg)](https://pypi.python.org/pypi/tc_mailmanager)
+[![GitHub Actions](https://github.com/ToucanToco/tc_mailmanager/workflows/CI/badge.svg)](https://github.com/ToucanToco/tc_mailmanager/actions?query=workflow%3ACI)
+[![codecov](https://codecov.io/gh/ToucanToco/tc_mailmanager/branch/main/graph/badge.svg)](https://codecov.io/gh/ToucanToco/tc_mailmanager)
+
+# tc_mailmanager
+
+ToucanToco's cross-python-projects MailManager
+
+## Installation
+
+```bash
+$ pip install tc_mailmanager
+```
+
+# Development
+
+You need to install [poetry](https://python-poetry.org/) either globally or in a virtualenv.
+Then run `make install`
+
