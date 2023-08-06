@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: cloudyns
+Version: 0.0.3b0
+Summary: cloudyns is a mini tool for managing cloud dns, mainly DigitalOcean, support for other services is expected to be added soon
+Home-page: https://github.com/yoyojlf/cloudyns
+Author: yoyojlf
+Author-email: jordhan@computerapes.com
+License: GPLv3
+Project-URL: Bug Tracker, https://github.com/yoyojlf/cloudyns/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cloudyns
+
+``cloudyns`` is a mini tool for managing cloud dns, mainly DigitalOcean, support for other services is expected to be added soon
+
+# Create a record dns in domain hosted DigitalOcean
+
+Script for creating and deleting a record in a DigitalOcean dns domain
+
+### Step 1:
+you need to create the configuration for the provider
+
+``` Python
+from cloudyns.base.dataclasses import CloudynsConf
+
+
+cloudyns_conf = CloudynsConf(
+    provider="digitalocean",
+    token="add_your_api_key_here"
+)
+```
+
+### Step 2:
+Now you need to import build_provider_manager to build your DigitalOcean provider manager you must give it the configuration created before as parameter
+
+``` Python
+from cloudyns.builder import build_provider_manager
+
+
+do_manager = build_provider_manager(conf=cloudyns_conf)
+```
+
+### Step 3:
+You can get the configured zones or domains using `do_manager.get_zones()`
+
+##### Output:
+
+``` Python
+    ['fake-domain.com']
+```
+
+### Manage a specific Domain
+If you need manage a specific domain, use ``get_domain`` method
+
+``` Python
+fake_domain = do_manager.get_domain(domain_name="fake-domain.com")
+```
+
+
+### Get domain records
+`fake_domain.get_records()`
+
+##### Output:
+
+``` Python
+	<DoRecord: domain=fake-domain.com name=@ type=SOA data=1800>
+	<DoRecord: domain=fake-domain.com name=@ type=NS data=ns1.digitalocean.com>
+	<DoRecord: domain=fake-domain.com name=@ type=NS data=ns2.digitalocean.com>
+	<DoRecord: domain=fake-domain.com name=@ type=NS data=ns3.digitalocean.com>
+	<DoRecord: domain=fake-domain.com name=@ type=A data=127.0.0.1>
+	<DoRecord: domain=fake-domain.com name=www type=CNAME data=@>
+	<DoRecord: domain=fake-domain.com name=static type=A data=1.1.1.1>
+```
+
+### Add new A record
+If you need to add a record of type "A" you must use the domain method `add_a_record()`
+This method use parameter ``name``, ``data`` and optional ``ttl``
+
+``` Python
+new_record = fake_domain.add_a_record(name='test-record', data='127.0.0.2')
+```
+
+##### Output:
+
+``` Python
+	<DoRecord: domain=fake-domain.com name=test-record type=A data=127.0.0.2>
+```
+
+### Update record
+If you need update the data of your record you must use the method `update_record` in your record instance
+This method does not return any output
+``` Python
+new_record.update_record(data='127.0.0.3')
+```
+
+### Delete record
+If you need to delete a record just use the ``delete_record()`` methode embedded in each record
+This method does not return any output
+
+``` Python
+new_record.delete_record()
+```
