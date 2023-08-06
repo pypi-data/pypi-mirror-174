@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+src/beamframe/SingularityFunction.py
+src/beamframe/__init__.py
+src/beamframe/beam.py
+src/beamframe.egg-info/PKG-INFO
+src/beamframe.egg-info/SOURCES.txt
+src/beamframe.egg-info/dependency_links.txt
+src/beamframe.egg-info/requires.txt
+src/beamframe.egg-info/top_level.txt
