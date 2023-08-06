@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "sleepyemoji"
+version = "0.1.0"
+description = "Print all the emojis that sleepyboy thinks are worthwhile!"
+authors = ["anthonybench <anythonybenchyep@gmail.com>"]
+license = "GNU GPL"
+readme = "README.md"
+keywords = ["emoji", "unicode"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
