@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyawr/__init__.py
+src/pyawr/mwoffice.py
+src/pyawr.egg-info/PKG-INFO
+src/pyawr.egg-info/SOURCES.txt
+src/pyawr.egg-info/dependency_links.txt
+src/pyawr.egg-info/requires.txt
+src/pyawr.egg-info/top_level.txt
