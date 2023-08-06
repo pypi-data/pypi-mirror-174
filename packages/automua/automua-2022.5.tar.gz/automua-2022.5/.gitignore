@@ -1,0 +1,8 @@
+.asciidoctor/
+.coverage*
+.idea/
+.venv/
+.xml
+build/
+dist/
+htmlcov/
