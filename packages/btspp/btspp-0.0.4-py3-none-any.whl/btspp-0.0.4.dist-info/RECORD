@@ -1,0 +1,10 @@
+btspp/__init__.py,sha256=zJVuQ9T8zlYyRSJiDljO4UkRRYdSO5NomioQLlUqEIg,2024
+btspp/replay.py,sha256=shw3gZ4VIvugZ6yILoRYniCCMa7q3ZVDvMVxZbBhED8,15699
+btspp/pytransform/__init__.py,sha256=OAwIt1kGBC0Y5zsNJlTrAwQwmJhMqierRUVI_ZOjqgg,13587
+btspp/pytransform/platforms/linux/aarch64/_pytransform.so,sha256=XrbsgljroGpfqKobawXudexNCTrLHAyEuLttvMl4gAs,1087608
+btspp/pytransform/platforms/linux/x86_64/_pytransform.so,sha256=QTGwl1_DiHlfGiVDm-pVvw0nzDlwOb1OimF8fK0VO0Q,1198080
+btspp-0.0.4.dist-info/LICENSE.txt,sha256=NQ3W48NgT8d62TW8XAkrf3giOE1mopH4nHfCCi4JBhE,86
+btspp-0.0.4.dist-info/METADATA,sha256=9GOEMeeninX_BB-5U_LH60RzXTDIJmcstU3sZ_KKQgI,1268
+btspp-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+btspp-0.0.4.dist-info/top_level.txt,sha256=cOOuZoG6fGkE8ww4yZT6OI8hZmSvM_hoJ4EBAentYho,6
+btspp-0.0.4.dist-info/RECORD,,
