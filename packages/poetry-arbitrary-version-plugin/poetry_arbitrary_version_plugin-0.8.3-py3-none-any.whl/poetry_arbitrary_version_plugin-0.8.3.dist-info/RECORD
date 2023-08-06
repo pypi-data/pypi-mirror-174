@@ -1,0 +1,7 @@
+poetry_arbitrary_version_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_arbitrary_version_plugin/plugin.py,sha256=_fU5QGNCheOUuYPnGl-ILR8okFawyzMzrrHT6XCzT-U,1727
+poetry_arbitrary_version_plugin-0.8.3.dist-info/entry_points.txt,sha256=Fh7XJAP3YP6zNwTpMDt3cl7tIRqHF3jStomsf5qp8Ro,123
+poetry_arbitrary_version_plugin-0.8.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+poetry_arbitrary_version_plugin-0.8.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+poetry_arbitrary_version_plugin-0.8.3.dist-info/METADATA,sha256=NxR0cU8fIuUk6EedSz7ag99rTHY-q9sCy0Oe3Q5GaJA,2493
+poetry_arbitrary_version_plugin-0.8.3.dist-info/RECORD,,
