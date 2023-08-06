@@ -1,0 +1,3 @@
+[console_scripts]
+tiara = tiara.main:main
+tiara-test = tiara.test.test:test
