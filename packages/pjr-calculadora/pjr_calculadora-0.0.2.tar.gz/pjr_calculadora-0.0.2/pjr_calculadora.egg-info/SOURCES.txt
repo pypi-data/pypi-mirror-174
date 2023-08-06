@@ -1,0 +1,11 @@
+README.md
+setup.py
+PrjCalculadora/__init__.py
+PrjCalculadora/calculos.py
+PrjCalculadora/core.py
+PrjCalculadora/msg.py
+PrjCalculadora/validacao.py
+pjr_calculadora.egg-info/PKG-INFO
+pjr_calculadora.egg-info/SOURCES.txt
+pjr_calculadora.egg-info/dependency_links.txt
+pjr_calculadora.egg-info/top_level.txt
