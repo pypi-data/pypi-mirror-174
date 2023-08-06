@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Power-Prediction
+Version: 0.0.0.1
+Summary: Sunghan Power Prediction
+Home-page: https://github.com/tathata21/moon
+Author: SungHan
+Author-email: shbems777@gmail.com
+License: SH
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: pymssql
+
+UNKNOWN
+
+
