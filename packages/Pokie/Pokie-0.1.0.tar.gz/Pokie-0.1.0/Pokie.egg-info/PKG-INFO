@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: Pokie
+Version: 0.1.0
+Summary: A high-level Python REST web framework based on Flask, Rick and RickDb.
+Home-page: https://github.com/oddbit-project/pokie
+Author: João Pinheiro
+License: BSD-3-Clause
+Project-URL: Documentation, https://oddbit-project.github.io/pokie/
+Project-URL: Source, https://github.com/oddbit-project/pokie
+Description: # Welcome to Pokie
+        
+        [![Tests](https://github.com/oddbit-project/pokie/workflows/Tests/badge.svg?branch=master)](https://github.com/oddbit-project/pokie/actions)
+        [![pypi](https://img.shields.io/pypi/v/pokie.svg)](https://pypi.org/project/pokie/)
+        [![license](https://img.shields.io/pypi/l/pokie.svg)](https://github.com/oddbit-project/pokie/blob/master/LICENSE)
+        
+        Pokie is a Flask application boilerplate, using [Rick](https://github.com/oddbit-project/rick) and 
+        [Rick-db](https://github.com/oddbit-project/rick_db) components.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Provides-Extra: redis
