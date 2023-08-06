@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dbt-fal
+Version: 1.3.0rc1
+Summary: A DBT adapter for fal.
+Author: Features & Labels
+Author-email: hello@fal.ai
+Requires-Python: >=3.7.1,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: athena
+Provides-Extra: bigquery
+Provides-Extra: duckdb
+Provides-Extra: postgres
+Provides-Extra: redshift
+Provides-Extra: snowflake
+Requires-Dist: dbt-core (>=1.3.0,<1.4.0)
+Requires-Dist: fal (>=0.6.0)
+Requires-Dist: s3fs (>=2022.8.2)
+Requires-Dist: snowflake-connector-python[pandas] (>=2.7.10,<2.8.0); extra == "snowflake"
+Requires-Dist: sqlalchemy-bigquery (>=1.4.4,<2.0.0); extra == "bigquery"
+Requires-Dist: sqlalchemy-redshift (>=0.8.9,<0.9.0); extra == "redshift"
