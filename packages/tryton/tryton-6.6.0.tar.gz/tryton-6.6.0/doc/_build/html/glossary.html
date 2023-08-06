@@ -1,0 +1,259 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Glossary &#8212; tryton 5.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Client Usage" href="usage.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="usage.html" title="Client Usage"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">tryton 5.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="glossary">
+<h1>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h1>
+<dl class="glossary docutils">
+<dt id="term-actions">Actions</dt>
+<dd>An <em>action</em> is a function which is triggered by a user intervention.
+<em>Actions</em> are called from activating menu items or pushing buttons.
+Actions often provide <a class="reference internal" href="#term-wizards"><span class="xref std std-term">wizards</span></a>.</dd>
+<dt id="term-board">Board</dt>
+<dd>The <em>board</em> is a type of <a class="reference internal" href="#term-views"><span class="xref std std-term">views</span></a> able to handle other views. This
+view type is not documented or not used for now.</dd>
+<dt id="term-character-encoding">Character Encoding</dt>
+<dd>See <a class="reference internal" href="#wp-encod" id="id1">[WP-ENCOD]</a></dd>
+<dt id="term-csv">CSV</dt>
+<dd>File format for Comma Separated Values. See <a class="reference internal" href="#wp-csv" id="id2">[WP-CSV]</a></dd>
+<dt id="term-data">Data</dt>
+<dd><em>Data</em> means information content produced by users.</dd>
+<dt id="term-dialog">Dialog</dt>
+<dd>A <em>dialog</em> is a <a class="reference internal" href="#term-popup"><span class="xref std std-term">popup</span></a> window, which overlays other windows and
+request user interaction. <em>Dialogs</em> are used to set up special
+<a class="reference internal" href="#term-actions"><span class="xref std std-term">actions</span></a>.</dd>
+<dt id="term-fields">Fields</dt>
+<dd><em>Fields</em> are attributes of a <em>data object</em>. <em>Fields</em> are
+represented as table fields in relational databases.</dd>
+<dt id="term-form">Form</dt>
+<dd><p class="first">The <em>form</em> is the general type of <a class="reference internal" href="#term-views"><span class="xref std std-term">views</span></a> used in Tryton. The
+<em>form</em> provides several modes for presenting <a class="reference internal" href="#term-data"><span class="xref std std-term">data</span></a>:</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#term-form-view"><span class="xref std std-term">Form View</span></a></li>
+<li><a class="reference internal" href="#term-tree-view"><span class="xref std std-term">Tree View</span></a></li>
+<li><a class="reference internal" href="#term-graph-view"><span class="xref std std-term">Graph View</span></a></li>
+</ul>
+</dd>
+<dt id="term-form-view">Form View</dt>
+<dd>The <em>form</em> is a mode of <a class="reference internal" href="#term-views"><span class="xref std std-term">views</span></a>, which displays single
+<a class="reference internal" href="#term-records"><span class="xref std std-term">records</span></a> of data.</dd>
+<dt id="term-graph-view">Graph View</dt>
+<dd><em>Graph view</em> is a mode of <a class="reference internal" href="#term-views"><span class="xref std std-term">views</span></a> to show sets of data in a
+diagram. <em>Graph views</em> can be pie-charts or bar-charts.</dd>
+<dt id="term-main-frame">Main Frame</dt>
+<dd>The <em>main frame</em> is a huge part arranged in the center of the
+<a class="reference internal" href="#term-tryton-client"><span class="xref std std-term">Tryton client</span></a>. <em>Using the Tryton client</em> means mainly using the
+<em>main frame</em> part. It contains <a class="reference internal" href="#term-tabs"><span class="xref std std-term">tabs</span></a> to organize and to show
+different <a class="reference internal" href="#term-views"><span class="xref std std-term">views</span></a>.</dd>
+<dt id="term-model">Model</dt>
+<dd>A <em>model</em> describes how data is represented and accessed. Models
+formally define records and relationships for a certain domain
+of interest.</dd>
+<dt id="term-modules">Modules</dt>
+<dd><em>Modules</em> are enclosed file packages for the <a class="reference internal" href="#term-tryton-server"><span class="xref std std-term">Tryton server</span></a>. A
+<em>Module</em> defines the <a class="reference internal" href="#term-model"><span class="xref std std-term">Model</span></a>, the presentation of the
+information (<a class="reference internal" href="#term-views"><span class="xref std std-term">views</span></a>), functions, <a class="reference internal" href="#term-actions"><span class="xref std std-term">actions</span></a> and default
+presets. Additionally <em>modules</em> may provide standardized data like ISO
+names for countries. <em>Modules</em> in Tryton are build up generically. That
+is, they are constructed as simple as possible to provide the
+desired functionality.</dd>
+<dt id="term-plugins">Plugins</dt>
+<dd>A <em>plugin</em> is an add-on module for the <a class="reference internal" href="#term-tryton-client"><span class="xref std std-term">Tryton client</span></a>.</dd>
+<dt id="term-popup">Popup</dt>
+<dd>A small window which pops up the main window.</dd>
+<dt id="term-records">Records</dt>
+<dd>A <em>record</em> is a singular dataset in a <a class="reference internal" href="#term-model"><span class="xref std std-term">Model</span></a>. <em>Records</em> are
+represented as lines or <em>records</em> in a relational database table.</dd>
+<dt id="term-tabs">Tabs</dt>
+<dd><p class="first"><em>Tabs</em> are <a class="reference internal" href="#term-widgets"><span class="xref std std-term">widgets</span></a> to arrange different contents side by side.
+They are used to switch quickly between different domains of interest.
+Tryton uses <em>tabs</em> in two layer:</p>
+<ul class="simple">
+<li>A tabbed <a class="reference internal" href="#term-main-frame"><span class="xref std std-term">Main Frame</span></a>.</li>
+<li>Tabs inside <a class="reference internal" href="#term-views"><span class="xref std std-term">Views</span></a>.</li>
+</ul>
+<p class="last">The main frame consists of <em>tabs</em> that embed the main menu and all views
+to an appropriate <a class="reference internal" href="#term-model"><span class="xref std std-term">model</span></a>. The other type of <em>tabs</em> is used
+inside of <a class="reference internal" href="#term-views"><span class="xref std std-term">views</span></a> to split them into visual domains of the same
+model. These <em>tabs</em> are used for structuring contents of one model to
+different sub headings.</p>
+</dd>
+<dt id="term-three-tiers">Three-Tiers</dt>
+<dd><p class="first">A <em>three-tiers</em> application framework like Tryton, is build up of three
+different software components:</p>
+<ol class="arabic simple">
+<li>The storage or data tier.</li>
+<li>The logic or application tier.</li>
+<li>The presentation tier.</li>
+</ol>
+<p class="last">The storage tier in the Tryton framework is provided by the PostgreSQL
+database engine. The application logic tier is provided by
+<a class="reference internal" href="#term-tryton-server"><span class="xref std std-term">Tryton server</span></a> and its <a class="reference internal" href="#term-modules"><span class="xref std std-term">modules</span></a>. The presentation tier is
+mainly provided by the <a class="reference internal" href="#term-tryton-client"><span class="xref std std-term">Tryton client</span></a>. In a <em>three tiers</em>
+framework, the presentation tier (client) never connects directly to the
+storage tier. All communication is controlled by the application tier.</p>
+</dd>
+<dt id="term-tree-view">Tree View</dt>
+<dd><em>Tree view</em> is a mode of <a class="reference internal" href="#term-views"><span class="xref std std-term">views</span></a> showing sets of <a class="reference internal" href="#term-data"><span class="xref std std-term">data</span></a>.
+<em>Tree views</em> can be flat lists or tables as well as tree-like nested
+lists.</dd>
+<dt id="term-tryton-client">Tryton Client</dt>
+<dd>The <em>Tryton client</em> application is the graphical user interface (GUI)
+of the <a class="reference internal" href="#term-tryton-server"><span class="xref std std-term">Tryton server</span></a>.</dd>
+<dt id="term-tryton-server">Tryton Server</dt>
+<dd><p class="first">The <em>Tryton server</em> is the application or logic tier in the
+<a class="reference internal" href="#term-three-tiers"><span class="xref std std-term">three-tiers</span></a> application platform <em>Tryton</em>. The <em>Tryton server</em>
+connects the underlying application logic of the different
+<a class="reference internal" href="#term-modules"><span class="xref std std-term">modules</span></a> with corresponding database records. The
+<em>Tryton server</em> provides different interfaces to present the
+generated information:</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#term-tryton-client"><span class="xref std std-term">Tryton client</span></a>: (graphical user interface GUI)</li>
+<li>XMLRPC see <a class="reference internal" href="#wp-xmlrpc" id="id3">[WP-XMLRPC]</a></li>
+<li>WebDAV see <a class="reference internal" href="#wp-webdav" id="id4">[WP-WebDAV]</a></li>
+<li>OpenOffice</li>
+</ul>
+</dd>
+<dt id="term-views">Views</dt>
+<dd><p class="first">A <em>view</em> is the visual presentation of <a class="reference internal" href="#term-data"><span class="xref std std-term">data</span></a>.
+<em>Views</em> resides inside <a class="reference internal" href="#term-tabs"><span class="xref std std-term">tabs</span></a> in the <a class="reference internal" href="#term-main-frame"><span class="xref std std-term">main frame</span></a> of the
+<a class="reference internal" href="#term-tryton-client"><span class="xref std std-term">Tryton client</span></a>. There are two general types of <em>views</em> in Tryton:</p>
+<ol class="arabic simple">
+<li><a class="reference internal" href="#term-form"><span class="xref std std-term">Form</span></a></li>
+<li><a class="reference internal" href="#term-board"><span class="xref std std-term">Board</span></a></li>
+</ol>
+<p class="last">Each of the view types has different modes to show data. <em>Views</em>
+are built of several <a class="reference internal" href="#term-widgets"><span class="xref std std-term">widgets</span></a> and provide often additional
+<a class="reference internal" href="#term-actions"><span class="xref std std-term">actions</span></a>. It is also possible to present the same data in
+different view modes alternately.</p>
+</dd>
+<dt id="term-widgets">Widgets</dt>
+<dd>A <em>Widget</em> is a visual element of a graphical user interface (GUI). Some
+<em>Widgets</em> solely show informations, others allow manipulation from user
+side. Example <em>Widgets</em> are buttons, check-boxes, entry-boxes, selection
+lists, tables, lists, trees, …</dd>
+<dt id="term-wizards">Wizards</dt>
+<dd><em>Wizards</em> define stateful sequences of interaction to proceed
+complex <a class="reference internal" href="#term-actions"><span class="xref std std-term">actions</span></a>. A <em>wizard</em> divides the complexity of some actions
+into several user guided steps.</dd>
+</dl>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<table class="docutils citation" frame="void" id="wp-xmlrpc" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[WP-XMLRPC]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Xmlrpc">http://en.wikipedia.org/wiki/Xmlrpc</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="wp-webdav" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[WP-WebDAV]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Webdav">http://en.wikipedia.org/wiki/Webdav</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="wp-csv" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[WP-CSV]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Comma-separated_values">http://en.wikipedia.org/wiki/Comma-separated_values</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="wp-encod" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[WP-ENCOD]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Character_encoding">http://en.wikipedia.org/wiki/Character_encoding</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Glossary</a><ul>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="usage.html"
+                        title="previous chapter">Client Usage</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/glossary.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="usage.html" title="Client Usage"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">tryton 5.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2008-2011,  Anne Krings, Bertrand Chenal, Cédric Krier,              Mathias Behrle, Tobias Paepke, Udo Spallek.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.5.
+    </div>
+  </body>
+</html>

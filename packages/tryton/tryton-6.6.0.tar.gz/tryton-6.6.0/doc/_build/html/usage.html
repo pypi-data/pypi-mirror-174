@@ -1,0 +1,690 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Client Usage &#8212; tryton 5.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Glossary" href="glossary.html" />
+    <link rel="prev" title="Installing tryton" href="installation.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="glossary.html" title="Glossary"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="installation.html" title="Installing tryton"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">tryton 5.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="client-usage">
+<h1>Client Usage<a class="headerlink" href="#client-usage" title="Permalink to this headline">¶</a></h1>
+<p>This document is the reference about the concepts of the graphical user
+interface (also known as <em>Tryton client</em> ) of the Tryton application framework.</p>
+<div class="section" id="name">
+<h2>Name<a class="headerlink" href="#name" title="Permalink to this headline">¶</a></h2>
+<p>tryton - Graphical user client of the Tryton application framework</p>
+</div>
+<div class="section" id="synopsis">
+<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tryton</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="p">[</span><span class="n">url</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>On startup the login dialog is displayed.</p>
+</div>
+<div class="section" id="options">
+<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">--version</span></kbd></td>
+<td>Show program version number and exit</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
+<td>Show help message and exit</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-c <var>FILE</var></span>, <span class="option">--config=<var>FILE</var></span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td>Specify alternate <a class="reference internal" href="#configuration-file">configuration file</a></td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-d</span>, <span class="option">--dev</span></kbd></td>
+<td>Enable development mode, which deactivates
+client side caching</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-v</span>, <span class="option">--verbose</span></kbd></td>
+<td>Enable basic debugging</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-l <var>LOG_LEVEL</var></span>, <span class="option">--log-level=<var>LOG_LEVEL</var></span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td>Specify the log level: DEBUG, INFO,
+WARNING, ERROR, CRITICAL</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-u <var>LOGIN</var></span>, <span class="option">--user=<var>LOGIN</var></span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td>Specify the login user</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-s <var>SERVER</var></span>, <span class="option">--server=<var>SERVER</var></span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td>Specify the server hostname:port</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="url">
+<h2>URL<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h2>
+<p>When an url is passed, the client will try to find already running client that
+could handle it and send to this one to open the url. If it doesn’t find one
+then it will start the GUI and open the url itself.</p>
+<p>The url schemes are:</p>
+<blockquote>
+<div><p><cite>tryton://&lt;hostname&gt;[:&lt;port&gt;]/&lt;database&gt;/model/&lt;model name&gt;[/&lt;id&gt;][;parameters]</cite></p>
+<p><cite>tryton://&lt;hostname&gt;[:&lt;port&gt;]/&lt;database&gt;/wizard/&lt;wizard name&gt;[;parameters]</cite></p>
+<p><cite>tryton://&lt;hostname&gt;[:&lt;port&gt;]/&lt;database&gt;/report/&lt;report name&gt;[;parameters]</cite></p>
+</div></blockquote>
+<p>where <cite>parameters</cite> are the corresponding fields of actions encoded in
+<a class="reference external" href="http://en.wikipedia.org/wiki/Json">JSON</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><cite>model</cite> is for <cite>act_window</cite></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><cite>report</cite> must have at least a data parameter with <cite>ids</cite>, <cite>id</cite> and
+<cite>model name</cite></p>
+</div>
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>On startup the login dialog is displayed. It allows to select a existing
+profile (or to manage them) or to enter the host and database information.</p>
+<p>The following schematic illustration of the Tryton client shows the names of
+all important visual parts.</p>
+<p>Figure: Tryton client application:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Client</span> <span class="n">Window</span>       <span class="n">________________________________________________________________</span>
+                   <span class="o">|</span><span class="n">T</span><span class="o">|</span> <span class="n">Search</span>  <span class="o">|</span> <span class="n">Favorites</span>    <span class="n">Tryton</span>                           <span class="n">_</span> <span class="n">o</span> <span class="n">x</span><span class="o">|</span>
+                   <span class="o">|----------------------------------------------------------------|</span>
+                   <span class="o">|</span> <span class="o">+</span>           <span class="o">|</span>          <span class="n">______</span>                                  <span class="o">|</span>
+<span class="n">Tabs</span>               <span class="o">|</span> <span class="o">|-+</span>         <span class="o">|</span>  <span class="p">[</span><span class="n">Tab1</span><span class="p">]</span> <span class="o">|</span><span class="p">[</span><span class="n">Tab2</span><span class="p">]</span><span class="o">|</span> <span class="p">[</span><span class="n">Tab3</span><span class="p">]</span><span class="o">...</span>                       <span class="o">|</span>
+                   <span class="o">|</span> <span class="o">|</span> <span class="o">|-</span>        <span class="o">|</span> <span class="o">+-------+</span>      <span class="o">+--------------------------------+|</span>
+                   <span class="o">|</span> <span class="o">+</span>           <span class="o">|</span> <span class="o">|</span> <span class="n">Menu</span> <span class="n">Tab2</span>                                     <span class="o">||</span>
+                   <span class="o">|</span> <span class="o">|-+</span>         <span class="o">|</span> <span class="o">|-----------------------------------------------||</span>
+<span class="n">Tool</span> <span class="n">bar</span>           <span class="o">|</span> <span class="o">|</span> <span class="o">|-</span>        <span class="o">|</span> <span class="o">|</span> <span class="n">New</span> <span class="n">Save</span> <span class="n">Switch</span> <span class="n">Reload</span> <span class="o">|</span> <span class="n">Prev</span> <span class="n">Next</span> <span class="o">|</span> <span class="n">Attach</span> <span class="n">v</span> <span class="o">||</span>
+                   <span class="o">|</span> <span class="o">|</span> <span class="o">|-</span>        <span class="o">|</span> <span class="o">|-----------------------------------------------||</span>
+                   <span class="o">|</span> <span class="o">+</span>           <span class="o">|</span> <span class="o">|</span>        <span class="n">_______________________</span>                <span class="o">||</span>
+<span class="n">Search</span> <span class="n">widget</span>      <span class="o">|</span> <span class="o">|-+</span>         <span class="o">|</span> <span class="o">|</span> <span class="n">Filter</span> <span class="o">|</span>                    <span class="o">*|</span> <span class="n">Bookmark</span> <span class="o">&lt;-</span> <span class="o">-&gt;</span> <span class="o">||</span>
+                   <span class="o">|</span> <span class="o">|</span> <span class="o">|-</span>        <span class="o">|</span> <span class="o">|-----------------------------------------------||</span>
+                   <span class="o">|</span> <span class="o">|</span> <span class="o">|-</span>        <span class="o">|</span> <span class="o">|</span>                                               <span class="o">||</span>
+                   <span class="o">|</span> <span class="o">+</span>           <span class="o">|</span> <span class="o">|</span>                                               <span class="o">||</span>
+<span class="n">View</span>               <span class="o">|</span> <span class="o">|-+</span>         <span class="o">|</span> <span class="o">|</span>                                               <span class="o">||</span>
+                   <span class="o">|</span>   <span class="o">|-</span>        <span class="o">|</span> <span class="o">|</span>                                               <span class="o">||</span>
+                   <span class="o">|</span>   <span class="o">|-</span>        <span class="o">|</span> <span class="o">|</span>                                               <span class="o">||</span>
+                   <span class="o">|</span>             <span class="o">|</span> <span class="o">|</span>                                               <span class="o">||</span>
+                   <span class="o">|</span>             <span class="o">|</span> <span class="o">|</span>                                               <span class="o">||</span>
+                   <span class="o">|</span>             <span class="o">|</span> <span class="o">|</span>                                               <span class="o">||</span>
+                   <span class="o">|</span>             <span class="o">|</span> <span class="o">|</span>                                               <span class="o">||</span>
+                   <span class="o">|</span><span class="n">_____________</span><span class="o">|</span> <span class="o">|</span><span class="n">_______________________________________________</span><span class="o">||</span>
+                   <span class="o">|</span><span class="n">________________________________________________________________</span><span class="o">|</span>
+</pre></div>
+</div>
+<div class="section" id="tabbed-main-frame">
+<h3>Tabbed Main Frame<a class="headerlink" href="#tabbed-main-frame" title="Permalink to this headline">¶</a></h3>
+<p>This part of the client contains all the related contents and
+functions provided by the <a class="reference internal" href="glossary.html#term-tryton-server"><span class="xref std std-term">Tryton server</span></a> <a class="reference internal" href="glossary.html#term-modules"><span class="xref std std-term">modules</span></a>.
+All aspects inside the <em>main frame</em> depend at least on the individual set
+of installed modules.</p>
+<p>The main frame provides a <a class="reference external" href="http://en.wikipedia.org/wiki/Tabbed_document_interface">tabbed document interface</a> to arrange different
+views side by side. New <a class="reference internal" href="glossary.html#term-tabs"><span class="xref std std-term">tabs</span></a> are opened by special <a class="reference internal" href="glossary.html#term-actions"><span class="xref std std-term">actions</span></a>,
+like choosing a menu item or clicking some action buttons. All tabs include
+titles which show the name of the provided view.</p>
+<p><a class="reference internal" href="glossary.html#term-tabs"><span class="xref std std-term">Tabs</span></a> can be arranged by Drag and Drop.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Inside <a class="reference internal" href="glossary.html#term-views"><span class="xref std std-term">views</span></a> there can be tabs, too.</p>
+</div>
+<div class="section" id="menu">
+<h4>Menu<a class="headerlink" href="#menu" title="Permalink to this headline">¶</a></h4>
+<p>The <em>menu</em> does not contain fixed menu items.
+All of them are dynamically provided by the actual set of the installed
+<a class="reference internal" href="glossary.html#term-modules"><span class="xref std std-term">modules</span></a> depending on the access rules of the current user. If a menu
+item is clicked, the appropriate action will open in a new tab.</p>
+<p>A search field allows to quickly filter the menu items by name and to search in
+models for which the global search is enabled.</p>
+</div>
+</div>
+</div>
+<div class="section" id="application-menu">
+<h2>Application Menu<a class="headerlink" href="#application-menu" title="Permalink to this headline">¶</a></h2>
+<p>The following section describes the action of the application menu.
+A rule of thumb: All items of the menu bar that are suffixed by three dots
+(…) will open an intermediate <a class="reference internal" href="glossary.html#term-dialog"><span class="xref std std-term">dialog</span></a> for setting up the provided
+menu action. Most dialog provide a <em>Cancel</em> button, used to stop the
+complete dialog process.</p>
+<dl class="docutils" id="menu-preferences">
+<dt>Preferences:</dt>
+<dd>A preference dialog opens, where the actual user can show and edit his
+personal settings. All user preferences are stored server side.
+I.e. logging in with the same credentials from different computers
+always restores the same preferences.</dd>
+</dl>
+<div class="section" id="id2">
+<h3>Options<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>The Options menu sets up several visual and context depending preferences.</p>
+<p id="menu-options-toolbar">Toolbar:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Default:
+Shows labels and icons as defaulted in the GTK configuration.</li>
+<li>Text and Icons:
+Shows labels and icons in the tool bar.</li>
+<li>Icons:
+Shows icons only in the tool bar.</li>
+<li>Text:
+Shows labels only in the tool bar.</li>
+</ul>
+</div></blockquote>
+<p id="menu-options-form">Form:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Save Width/Height:
+Check box to enable saving of manually adjusted widths of columns in lists
+and trees. Additionally saving of manually adjusted widths and heights of
+dialog and popup windows.</li>
+<li>Save Tree Expanded State:
+Check box to enable saving of expanded and selected nodes in trees/lists.</li>
+<li>Fast Tabbing:
+Check box to enable fast tabbing navigation by skipping readonly entries.</li>
+<li>Spell Checking:
+Check box to enable spell checking in fields.</li>
+</ul>
+</div></blockquote>
+<dl class="docutils" id="menu-options-pda-mode">
+<dt>PDA Mode:</dt>
+<dd>When activated, the client display in a condensed mode.</dd>
+</dl>
+<dl class="docutils" id="menu-options-search-limit">
+<dt>Search Limit:</dt>
+<dd>Open a dialog to set up the maximum number of records displayed on a list.</dd>
+</dl>
+<dl class="docutils" id="menu-options-email">
+<dt>Email:</dt>
+<dd><p class="first">Open a dialog to set up an email reader.</p>
+<ul class="last simple">
+<li>Command Line: The command line calling the email reader.</li>
+<li>Placeholders:<ul>
+<li><code class="docutils literal notranslate"><span class="pre">${to}</span></code>: the destination email address</li>
+<li><code class="docutils literal notranslate"><span class="pre">${cc}</span></code>: the carbon copy email address</li>
+<li><code class="docutils literal notranslate"><span class="pre">${subject}</span></code>: the subject of the email</li>
+<li><code class="docutils literal notranslate"><span class="pre">${body}</span></code>: the body of the email</li>
+<li><code class="docutils literal notranslate"><span class="pre">${attachment}</span></code>: the attachment of the email</li>
+</ul>
+</li>
+<li>Examples:<ul>
+<li>Thunderbird 2 on Linux:
+<code class="docutils literal notranslate"><span class="pre">thunderbird</span> <span class="pre">-compose</span> <span class="pre">&quot;to='${to}',cc='${cc}',subject='${subject}',body='${body}',attachment='file://${attachment}'&quot;</span></code></li>
+<li>Thunderbird 2 on Windows XP SP3:
+<code class="docutils literal notranslate"><span class="pre">&quot;C:\\Program</span> <span class="pre">Files\\Mozilla</span> <span class="pre">Thunderbird\\thunderbird.exe&quot;</span> <span class="pre">-compose</span> <span class="pre">to=&quot;${to}&quot;,cc=&quot;${cc}&quot;,subject=&quot;${subject}&quot;,body=&quot;${body}&quot;,attachment=&quot;${attachment}&quot;</span></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The path of <em>Program Files</em> may vary dependent on the localization of your Windows version.</p>
+</div>
+<dl class="docutils" id="menu-options-check-version">
+<dt>Check Version:</dt>
+<dd>Check box to enable the check of new bug-fix version.</dd>
+</dl>
+</div>
+<div class="section" id="help">
+<h3>Help<a class="headerlink" href="#help" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils" id="menu-help-keyboard-shortcuts">
+<dt>Keyboard Shortcuts…:</dt>
+<dd><p class="first">Shows the information dialog of the predefined keyboard shortcut map.</p>
+<ul class="last simple">
+<li>Edition Widgets: Shows shortcuts working on text entries, relation entries
+and date/time entries.</li>
+</ul>
+</dd>
+</dl>
+<dl class="docutils" id="menu-help-about">
+<dt>About…:</dt>
+<dd>License, Contributors, Authors of Tryton</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="tool-bar">
+<h2>Tool Bar<a class="headerlink" href="#tool-bar" title="Permalink to this headline">¶</a></h2>
+<p>The tool bar contains the functionalities linked to the current tab.
+Some operations are working with one record or with a selection of
+<a class="reference internal" href="glossary.html#term-records"><span class="xref std std-term">records</span></a>. In <a class="reference internal" href="glossary.html#term-form-view"><span class="xref std std-term">form view</span></a> the actual record is selected for
+operations. In <a class="reference internal" href="glossary.html#term-tree-view"><span class="xref std std-term">tree view</span></a> all selected records are used for operations.</p>
+<dl class="docutils" id="toolbar-new">
+<dt>New:</dt>
+<dd>Creates a new record.</dd>
+</dl>
+<dl class="docutils" id="toolbar-save">
+<dt>Save:</dt>
+<dd>Saves the actual record.</dd>
+</dl>
+<dl class="docutils" id="toolbar-switch-view">
+<dt>Switch View:</dt>
+<dd><p class="first">Switches the actual view aspect to:</p>
+<ul class="simple">
+<li><a class="reference internal" href="glossary.html#term-form-view"><span class="xref std std-term">Form view</span></a></li>
+<li><a class="reference internal" href="glossary.html#term-tree-view"><span class="xref std std-term">Tree view</span></a></li>
+<li><a class="reference internal" href="glossary.html#term-graph-view"><span class="xref std std-term">Graph view</span></a></li>
+</ul>
+<p class="last">Not all views provide all aspects.</p>
+</dd>
+</dl>
+<dl class="docutils" id="toolbar-reload-undo">
+<dt>Reload/Undo:</dt>
+<dd>Reloads the content of the actual tab. Undoes changes, if save request for
+the current record is denied.</dd>
+</dl>
+<dl class="docutils" id="toolbar-duplicate">
+<dt>Duplicate:</dt>
+<dd>Duplicates the content of the actual record in a newly created record.</dd>
+</dl>
+<dl class="docutils" id="toolbar-delete">
+<dt>Delete:</dt>
+<dd>Deletes the selected or actual record.</dd>
+</dl>
+<dl class="docutils" id="toolbar-previous">
+<dt>Previous:</dt>
+<dd>Goes to the last record in a list (sequence).</dd>
+</dl>
+<dl class="docutils" id="toolbar-next">
+<dt>Next:</dt>
+<dd>Goes to the next record in a list (sequence).</dd>
+</dl>
+<dl class="docutils" id="toolbar-search">
+<dt>Search:</dt>
+<dd>Goes to the search widget.</dd>
+</dl>
+<dl class="docutils" id="toolbar-view-logs">
+<dt>View Logs…:</dt>
+<dd>Shows generic information of the current record.</dd>
+</dl>
+<dl class="docutils" id="toolbar-show-revisions">
+<dt>Show revisions…:</dt>
+<dd>Reload the current view/record at a specific revision.</dd>
+</dl>
+<dl class="docutils" id="toolbar-close">
+<dt>Close Tab:</dt>
+<dd>Closes the current tab. A Request <a class="reference internal" href="glossary.html#term-dialog"><span class="xref std std-term">Dialog</span></a> opens in case of unsaved
+changes.</dd>
+</dl>
+<dl class="docutils" id="toolbar-attachment">
+<dt>Attachment:</dt>
+<dd>The attachment item handles the document management system of
+Tryton which is able to attach files to any arbitrary <a class="reference internal" href="glossary.html#term-model"><span class="xref std std-term">model</span></a>.
+On click it opens the attachments <a class="reference internal" href="glossary.html#term-dialog"><span class="xref std std-term">dialog</span></a>. The default dialog
+shows a list view of the attached files and links.</dd>
+</dl>
+<dl class="docutils" id="toolbar-actions">
+<dt>Actions…:</dt>
+<dd>Shows all actions for the actual view, model and record.</dd>
+</dl>
+<dl class="docutils" id="toolbar-relate">
+<dt>Relate…:</dt>
+<dd>Shows all relate view for the actual view, model and record.</dd>
+</dl>
+<dl class="docutils" id="toolbar-report">
+<dt>Report…:</dt>
+<dd>Shows all reports for the actual view, model and record.</dd>
+</dl>
+<dl class="docutils" id="toolbar-email">
+<dt>E-Mail…:</dt>
+<dd>Shows all email reports for the actual view, model and record.</dd>
+</dl>
+<dl class="docutils" id="toolbar-print">
+<dt>Print…:</dt>
+<dd>Shows all print actions for the actual view, model and record.</dd>
+</dl>
+<dl class="docutils" id="toolbar-copy-url">
+<dt>Copy URL:</dt>
+<dd>Copy the URL of the form into the clipboard.</dd>
+</dl>
+<dl class="docutils" id="toolbar-export-data">
+<dt>Export Data…:</dt>
+<dd><p class="first">Export of current/selected records into <a class="reference internal" href="glossary.html#term-csv"><span class="xref std std-term">CSV</span></a>-file or open it in Excel.</p>
+<ul class="last simple">
+<li>Predefined exports<ul>
+<li>Choose preferences of already saved exports.</li>
+</ul>
+</li>
+<li>All Fields: Fields available from the model.</li>
+<li>Fields to export: Defines the specific fields to export.</li>
+<li>Options:<ul>
+<li>Save: Save export as a CSV file.</li>
+<li>Open: Open export in spread sheet application.</li>
+</ul>
+</li>
+<li>Add field names: Add a header row with field names to the export data.</li>
+<li>Actions:<ul>
+<li>Add: Adds selected fields to <em>Fields to export</em>.</li>
+<li>Remove: Removes selected fields from <em>Fields to export</em>.</li>
+<li>Clear: Removes all fields from <em>Fields to export</em>.</li>
+<li>Save Export: Saves field mapping to a <em>Predefined export</em> with a name.</li>
+<li>Delete Export: Deletes a selected <em>Predefined export</em>.</li>
+<li>OK: Exports the data (action depending on <em>Options</em>).</li>
+<li>Cancel</li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="docutils" id="toolbar-import-data">
+<dt>Import Data…:</dt>
+<dd><p class="first">Import records from <a class="reference internal" href="glossary.html#term-csv"><span class="xref std std-term">CSV</span></a>-file.</p>
+<ul class="last simple">
+<li>All Fields: Fields available in the model (required fields are marked up).</li>
+<li>Fields to Import: Exact sequence of all columns in the CSV file.</li>
+<li>File to Import: File <a class="reference internal" href="glossary.html#term-dialog"><span class="xref std std-term">dialog</span></a> for choosing a CSV file to import.</li>
+<li>CSV Parameters: Setup specific parameters for chosen CSV file.<ul>
+<li>Field Separator: Character which separates CSV fields.</li>
+<li>Text Delimiter: Character which encloses text in CSV.</li>
+<li>Encoding: <a class="reference internal" href="glossary.html#term-character-encoding"><span class="xref std std-term">Character encoding</span></a> of CSV file.</li>
+<li>Lines to Skip: Count of lines to skip a headline or another offset.</li>
+</ul>
+</li>
+<li>Actions:<ul>
+<li>Add: Adds fields to <em>Fields to Import</em>.</li>
+<li>Remove: Deletes fields from <em>Fields to Import</em>.</li>
+<li>Clear: Removes all fields from <em>Fields to Import</em>.</li>
+<li>Auto-Detect: Tries to auto detect fields in the CSV <em>File to Import</em>.</li>
+<li>OK: Proceeds the data import.</li>
+<li>Cancel</li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="widgets">
+<h2>Widgets<a class="headerlink" href="#widgets" title="Permalink to this headline">¶</a></h2>
+<p>There are a several widgets used on Tryton in client side. The follow sections
+will explains some of them.</p>
+<div class="section" id="date-datetime-time-widgets">
+<h3>Date/DateTime/Time Widgets<a class="headerlink" href="#date-datetime-time-widgets" title="Permalink to this headline">¶</a></h3>
+<p>These widgets have several key shortcuts to quickly modify the value. Each key
+increases if lower case or decreases if upper case:</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>y</cite>: by one year</li>
+<li><cite>m</cite>: by one month</li>
+<li><cite>w</cite>: by one week</li>
+<li><cite>d</cite>: by one day</li>
+<li><cite>h</cite>: by one hour</li>
+<li><cite>i</cite>: by one minute</li>
+<li><cite>s</cite>: by one second</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="search-widget">
+<h3>Search Widget<a class="headerlink" href="#search-widget" title="Permalink to this headline">¶</a></h3>
+<p>The search widget adds the ability to easily search for records on the current
+tab.  This widget is visible only on <a class="reference internal" href="glossary.html#term-tree-view"><span class="xref std std-term">tree view</span></a>.</p>
+<div class="section" id="the-syntax">
+<h4>The Syntax<a class="headerlink" href="#the-syntax" title="Permalink to this headline">¶</a></h4>
+<p>A query is composed of search clauses.
+A clause is composed of a field name (with <cite>:</cite> at the end), an operator and a value.
+The field name is optional and defaults to the record name.
+The operator is also optional and defaults to <cite>like</cite> or <cite>equal</cite> depending on
+the type of the field.  The default operator is <cite>=</cite> except for fields of type
+<cite>char</cite>, <cite>text</cite> and <cite>many2one</cite> which is <cite>ilike</cite>.</p>
+</div>
+<div class="section" id="field-names">
+<h4>Field Names<a class="headerlink" href="#field-names" title="Permalink to this headline">¶</a></h4>
+<p>All field names shown in the <a class="reference internal" href="glossary.html#term-tree-view"><span class="xref std std-term">tree view</span></a> can be searched. Field names
+must be followed by a <cite>:</cite></p>
+<blockquote>
+<div>For example: <code class="docutils literal notranslate"><span class="pre">Name:</span></code></div></blockquote>
+<p>If the field name contains spaces, it is possible to
+escape it using double quotes.</p>
+<blockquote>
+<div>For example: <code class="docutils literal notranslate"><span class="pre">&quot;Receivable</span> <span class="pre">Today&quot;:</span></code></div></blockquote>
+</div>
+<div class="section" id="operators">
+<h4>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h4>
+<p>The following operators can be used:</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>=</cite>: equal to</li>
+<li><cite>&lt;</cite>: less then</li>
+<li><cite>&lt;=</cite>: less then or equal to</li>
+<li><cite>&gt;</cite>: greater then</li>
+<li><cite>&gt;=</cite>: greater then or equal to</li>
+<li><cite>!=</cite>: not equal</li>
+<li><cite>!</cite>: not equal or not like (depending of the type of field)</li>
+</ul>
+<p>For example: <code class="docutils literal notranslate"><span class="pre">Name:</span> <span class="pre">!=</span> <span class="pre">Dwight</span></code></p>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <cite>ilike</cite> operator is never explicit and <cite>%</cite> is appended to the
+value to make it behaves like <cite>starts with</cite></p>
+</div>
+</div>
+<div class="section" id="values">
+<h4>Values<a class="headerlink" href="#values" title="Permalink to this headline">¶</a></h4>
+<p>The format of the value depends on the type of the field.
+A list of values can be set using <cite>;</cite> as separator.</p>
+<blockquote>
+<div><p>For example: <code class="docutils literal notranslate"><span class="pre">Name:</span> <span class="pre">Michael;</span> <span class="pre">Pam</span></code></p>
+<p>It will find all records having the <cite>Name</cite> starting with <cite>Michael</cite> or
+<cite>Pam</cite>.</p>
+</div></blockquote>
+<p>A range of number values can be set using <cite>..</cite>.</p>
+<blockquote>
+<div><p>For example: <code class="docutils literal notranslate"><span class="pre">Amount:</span> <span class="pre">100..500</span></code></p>
+<p>It will find all records with <cite>Amount</cite> between <cite>100</cite> and <cite>500</cite> included.</p>
+</div></blockquote>
+<p>There are two wildcards:</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>%</cite>: matches any string of zero or more characters.</li>
+<li><cite>_</cite>: matches any single character.</li>
+</ul>
+</div></blockquote>
+<p>It is possible to escape special characters in values by using double quotes.</p>
+<blockquote>
+<div><p>For example: <code class="docutils literal notranslate"><span class="pre">Name:</span> <span class="pre">&quot;Michael:Scott&quot;</span></code></p>
+<p>Here it will search with the value <cite>Michael:Scott</cite>.</p>
+</div></blockquote>
+</div>
+<div class="section" id="clause-composition">
+<h4>Clause composition<a class="headerlink" href="#clause-composition" title="Permalink to this headline">¶</a></h4>
+<p>The clauses can be composed using the two boolean operators <cite>and</cite> and <cite>or</cite>.
+By default, there is an implicit <cite>and</cite> between each clause if no operator is
+specified.</p>
+<blockquote>
+<div><p>For example: <code class="docutils literal notranslate"><span class="pre">Name:</span> <span class="pre">Michael</span> <span class="pre">Amount:</span> <span class="pre">100</span></code></p>
+<p>is the same as <code class="docutils literal notranslate"><span class="pre">Name:</span> <span class="pre">Michael</span> <span class="pre">and</span> <span class="pre">Amount:</span> <span class="pre">100</span></code></p>
+</div></blockquote>
+<p>The <cite>and</cite> operator has a highest precedence than <cite>or</cite> but you can change it by
+using parenthesis.</p>
+<blockquote>
+<div><p>For example: <code class="docutils literal notranslate"><span class="pre">(Name:</span> <span class="pre">Michael</span> <span class="pre">or</span> <span class="pre">Name:</span> <span class="pre">Pam)</span> <span class="pre">and</span> <span class="pre">Amount:</span> <span class="pre">100</span></code></p>
+<p>is different than <code class="docutils literal notranslate"><span class="pre">Name:</span> <span class="pre">Michael</span> <span class="pre">or</span> <span class="pre">Name:</span> <span class="pre">Pam</span> <span class="pre">and</span> <span class="pre">Amount:</span> <span class="pre">100</span></code></p>
+<p>which is evaluated as <code class="docutils literal notranslate"><span class="pre">Name:</span> <span class="pre">Michael</span> <span class="pre">or</span> <span class="pre">(Name:</span> <span class="pre">Pam</span> <span class="pre">and</span> <span class="pre">Amount:</span> <span class="pre">100)</span></code></p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="richtext-editor">
+<h3>RichText Editor<a class="headerlink" href="#richtext-editor" title="Permalink to this headline">¶</a></h3>
+<p>This feature create a rich text editor with various features that allow for
+text formatting. The features are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Bold: On/off style of bold text</li>
+<li>Italic: On/off style of italic text</li>
+<li>Underline: On/off style of underline text</li>
+<li>Choose font family: Choice from a combo box the desired font family</li>
+<li>Choose font size: Choice from a combo box the desired size font</li>
+<li>Text justify: Choice between four options for alignment of the line (left,
+right, center, fill)</li>
+<li>Background color: Choose the background color of text from a color palette</li>
+<li>Foreground color: Choose the foreground color of text from a color palette</li>
+</ul>
+</div></blockquote>
+<p>Besides these features, it can change and edit text markup. The text markup
+feature has a similar HTML tags and is used to describe the format specified by
+the user and is a way of storing this format for future opening of a correct
+formatted text. The tags are explain follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Bold: Tag <cite>b</cite> is used, i.e. &lt;b&gt;text&lt;/b&gt;</li>
+<li>Italic: Tag <cite>i</cite> is used, i.e. &lt;i&gt;text&lt;/i&gt;</li>
+<li>Underline: Tag <cite>u</cite> is used, i.e. &lt;u&gt;text&lt;/u&gt;</li>
+<li>Font family: It is a attribute <cite>font-family</cite> for <cite>span</cite> tag, i.e.
+&lt;span font-family=”Arial”&gt;text&lt;/span&gt;</li>
+<li>Font size: It is a attribute <cite>size</cite> for <cite>span</cite> tag, i.e. &lt;span size=”12”&gt;
+text&lt;/span&gt;</li>
+<li>Text Justify: For justification text is used paragraph tag <cite>p</cite>. The
+paragraph tag is used to create new lines and the alignment is applied
+across the board. Example: &lt;p align=’center’&gt;some text&lt;/p&gt;</li>
+<li>Background color: It is a attribute <cite>background</cite> for <cite>span</cite> tag, i.e.
+&lt;span background=’#7f7f7f’&gt;text&lt;/span&gt;</li>
+<li>Foreground color: It is a attribute <cite>foreground</cite> for <cite>span</cite> tag, i.e.
+&lt;span foreground=’#00f’&gt;text&lt;/span&gt;</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="css">
+<h2>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h2>
+<p>The client can be styled using the file <cite>theme.css</cite>.</p>
+<p>Here are the list of custom selectors:</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>.readonly</cite>: readonly widget or label</li>
+<li><cite>.required</cite>: widget or label of required field</li>
+<li><cite>.invalid</cite>: widget for which the field value is not valid</li>
+<li><cite>headerbar.profile-&lt;name&gt;</cite>: the name of the connection profile is set on the
+main window</li>
+</ul>
+</div></blockquote>
+<p>For more information about style option see <a class="reference external" href="https://developer.gnome.org/gtk3/stable/chap-css-overview.html">GTK+ CSS</a></p>
+</div>
+<div class="section" id="appendix">
+<h2>Appendix<a class="headerlink" href="#appendix" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="configuration-file">
+<h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">~/.</span><span class="n">config</span><span class="o">/</span><span class="n">tryton</span><span class="o">/</span><span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="o">/</span><span class="n">tryton</span><span class="o">.</span><span class="n">conf</span>      <span class="c1"># General configuration</span>
+<span class="o">~/.</span><span class="n">config</span><span class="o">/</span><span class="n">tryton</span><span class="o">/</span><span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="o">/</span><span class="n">accel</span><span class="o">.</span><span class="n">map</span>        <span class="c1"># Accelerators configuration</span>
+<span class="o">~/.</span><span class="n">config</span><span class="o">/</span><span class="n">tryton</span><span class="o">/</span><span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="o">/</span><span class="n">known_hosts</span>      <span class="c1"># Fingerprints</span>
+<span class="o">~/.</span><span class="n">config</span><span class="o">/</span><span class="n">tryton</span><span class="o">/</span><span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="o">/</span><span class="n">ca_certs</span>         <span class="c1"># Certification Authority (http://docs.python.org/library/ssl.html#ssl-certificates)</span>
+<span class="o">~/.</span><span class="n">config</span><span class="o">/</span><span class="n">tryton</span><span class="o">/</span><span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="o">/</span><span class="n">profiles</span><span class="o">.</span><span class="n">cfg</span>     <span class="c1"># Profile configuration</span>
+<span class="o">~/.</span><span class="n">config</span><span class="o">/</span><span class="n">tryton</span><span class="o">/</span><span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="o">/</span><span class="n">plugins</span>          <span class="c1"># Local user plugins directory</span>
+<span class="o">~/.</span><span class="n">config</span><span class="o">.</span><span class="n">tryton</span><span class="o">/</span><span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="o">/</span><span class="n">theme</span><span class="o">.</span><span class="n">css</span>        <span class="c1"># Custom CSS theme</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><cite>~</cite> means the home directory of the user.
+But on Windows system it is the <cite>APPDATA</cite> directory.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Client Usage</a><ul>
+<li><a class="reference internal" href="#name">Name</a></li>
+<li><a class="reference internal" href="#synopsis">Synopsis</a></li>
+<li><a class="reference internal" href="#options">Options</a></li>
+<li><a class="reference internal" href="#url">URL</a></li>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#application-menu">Application Menu</a></li>
+<li><a class="reference internal" href="#tool-bar">Tool Bar</a></li>
+<li><a class="reference internal" href="#widgets">Widgets</a></li>
+<li><a class="reference internal" href="#css">CSS</a></li>
+<li><a class="reference internal" href="#appendix">Appendix</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="installation.html"
+                        title="previous chapter">Installing tryton</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="glossary.html"
+                        title="next chapter">Glossary</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/usage.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="glossary.html" title="Glossary"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="installation.html" title="Installing tryton"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">tryton 5.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2008-2011,  Anne Krings, Bertrand Chenal, Cédric Krier,              Mathias Behrle, Tobias Paepke, Udo Spallek.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.5.
+    </div>
+  </body>
+</html>
