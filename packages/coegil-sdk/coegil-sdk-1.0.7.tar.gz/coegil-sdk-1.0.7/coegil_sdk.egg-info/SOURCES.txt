@@ -1,0 +1,7 @@
+CoegilSdk.py
+setup.py
+coegil_sdk.egg-info/PKG-INFO
+coegil_sdk.egg-info/SOURCES.txt
+coegil_sdk.egg-info/dependency_links.txt
+coegil_sdk.egg-info/requires.txt
+coegil_sdk.egg-info/top_level.txt
