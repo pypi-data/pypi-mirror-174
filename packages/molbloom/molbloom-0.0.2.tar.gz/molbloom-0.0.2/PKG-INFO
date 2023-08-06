@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: molbloom
+Version: 0.0.2
+Summary: Purchaseable SMILES filter
+Home-page: https://whitead.github.io/molbloom/
+Author: Andrew White
+Author-email: andrew.white@rochester.edu
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# molbloom
+
+Can I buy this molecule? Returns results in about 500 ns and consumes about 2 GB of memory.
+
+```py
+
+from molbloom import buy
+buy('CCCO')
+# True
+but('ONN1CCCC1')
+# False
+```
+
+If `buy` returns `True` - it may be purchasable with estimated error rate of 000335. If it returns `False` - it is not purchasable. Reference is ZINC20 from October 2021. Add `canonicalize=True` if your SMILES are not canonicalized (requires installing rdkit)
