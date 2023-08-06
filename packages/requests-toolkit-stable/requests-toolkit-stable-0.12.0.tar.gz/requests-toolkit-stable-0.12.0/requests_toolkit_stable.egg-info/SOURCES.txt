@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+requests_toolkit/__init__.py
+requests_toolkit/_academic.py
+requests_toolkit/_air_quality.py
+requests_toolkit/_exchange_rate_cn.py
+requests_toolkit/_thesis_info.py
+requests_toolkit/_weather_query.py
+requests_toolkit/_ytb_channel_info.py
+requests_toolkit_stable.egg-info/PKG-INFO
+requests_toolkit_stable.egg-info/SOURCES.txt
+requests_toolkit_stable.egg-info/dependency_links.txt
+requests_toolkit_stable.egg-info/requires.txt
+requests_toolkit_stable.egg-info/top_level.txt
