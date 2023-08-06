@@ -1,0 +1,15 @@
+nbdev-extensions/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+nbdev-extensions/_modidx.py,sha256=fwuI7J8Zai08tLJJK1Wei5wj_YldetdQd5zGVo8rA6Y,545
+nbdev-extensions/mknb.py,sha256=yMNrcK1TKe3aLPhQOE4TzgkHtW4JNodRSZZzAyvRn_c,2552
+nbdev_extensions/__init__.py,sha256=P_l9oYufNLr02c_cbFUUC9ozJRynfSJn1JOr7Hn9V5Q,48
+nbdev_extensions/_modidx.py,sha256=zJQWPMQcLNP_B9Gn2o9t79pux1Cg9I7YMVY4jSvsgd0,3808
+nbdev_extensions/codenotes.py,sha256=5IMJmGtubxqpDs8AsuJqUzQepJ412rUKfNPEk3u_Lsg,5647
+nbdev_extensions/mknb.py,sha256=yMNrcK1TKe3aLPhQOE4TzgkHtW4JNodRSZZzAyvRn_c,2552
+nbdev_extensions/tagmaker.py,sha256=A5fNQXmEr6MM9WrJaNFwgmO6JpCx_kv4u8vrEMd6Yos,2294
+nbdev_extensions-0.1.0.dist-info/.ipynb_checkpoints/entry_points-checkpoint.txt,sha256=rATvwy1dzYd4q-DmyvYeMYyScNlBHVRCJ8tfjc0wXnI,111
+nbdev_extensions-0.1.0.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+nbdev_extensions-0.1.0.dist-info/METADATA,sha256=rH87YslnqQe68QTFGWwDLEHcgNb9oApRwvJvmZrpxQw,1870
+nbdev_extensions-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nbdev_extensions-0.1.0.dist-info/entry_points.txt,sha256=CizeM0P20Q6poqdNdnPUE9MN2UTjfCLkA8SyIcZM3Mo,164
+nbdev_extensions-0.1.0.dist-info/top_level.txt,sha256=NNin_2uO0e2NdJJq-ByDxU3u9yIkW6uw0hZzlJx9FR0,17
+nbdev_extensions-0.1.0.dist-info/RECORD,,
