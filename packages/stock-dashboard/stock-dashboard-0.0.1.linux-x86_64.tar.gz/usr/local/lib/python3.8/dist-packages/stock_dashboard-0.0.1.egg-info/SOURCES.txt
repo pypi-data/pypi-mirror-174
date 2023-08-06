@@ -1,0 +1,10 @@
+README.md
+setup.py
+quickdb/__init__.py
+quickdb/cli.py
+quickdb/main.py
+stock_dashboard.egg-info/PKG-INFO
+stock_dashboard.egg-info/SOURCES.txt
+stock_dashboard.egg-info/dependency_links.txt
+stock_dashboard.egg-info/entry_points.txt
+stock_dashboard.egg-info/top_level.txt
