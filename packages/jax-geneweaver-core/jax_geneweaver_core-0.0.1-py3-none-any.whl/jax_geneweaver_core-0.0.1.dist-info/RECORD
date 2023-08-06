@@ -1,0 +1,16 @@
+jax/geneweaver/core/__init__.py,sha256=-PpHdfFqty4-GLR7scaVQVPGPB6uPXaBGVpVTf5ZnkE,115
+jax/geneweaver/core/config.py,sha256=bQRUoHTVoAZibqyM1h6WQwaQFefDPCpGT7J7NU01Pn0,484
+jax/geneweaver/core/enum.py,sha256=psq-jqpqHj0FKJOz22cMOgOUjcbd3DrokiGG-sMslh0,519
+jax/geneweaver/core/exc.py,sha256=nZBm6ebp3RtbR_Z5-hMsX3jKILJx9HFm3bZ9spXngoU,189
+jax/geneweaver/core/schema/__init__.py,sha256=3WYIE7nZV8W1oxmXjl0fCmd6k3JLtGZvVTPg3-2uOqg,264
+jax/geneweaver/core/schema/gene.py,sha256=eb8MKWygtZuQ4dBZqdZFmLiDz3_F-fis5JNSZjGf4N4,307
+jax/geneweaver/core/schema/geneset.py,sha256=ds3Lf1uvg0WF1NKbqtlwqzPp6JfeQNW8Pm6gtNzy7tg,1034
+jax/geneweaver/core/schema/group.py,sha256=-Z2Mkx_8iK-Ik22SPi-HsAPkFShpK1vYh_-ZdrOOhi4,369
+jax/geneweaver/core/schema/legacy_api.py,sha256=Wm8jrC9haA1QER4dY16A0cfN_WiaHw-8WMwKolfN-08,925
+jax/geneweaver/core/schema/project.py,sha256=AxftqC60EZSRZ4f3LyZwce4JwomDq2K2h-IiNVYP9NA,231
+jax/geneweaver/core/schema/publication.py,sha256=KOb4TgC-J2P-jk0YmMTmUnAY_CjvFtuSxjnFpKOGvow,218
+jax/geneweaver/core/schema/stubgenerator.py,sha256=bzHNqZDHJwvTbx8nTje7SnHcrwBJw0WtrfKioTiPrP0,133
+jax/geneweaver/core/schema/user.py,sha256=doxCSJsSg0IB0O1HJh37WYlWm67VOhSDDjsoiGZJzMQ,350
+jax_geneweaver_core-0.0.1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+jax_geneweaver_core-0.0.1.dist-info/METADATA,sha256=NucaEcKoghbjxwjaQ4XYlIO7kmzVI34UgyLH3XRrxsM,2366
+jax_geneweaver_core-0.0.1.dist-info/RECORD,,
