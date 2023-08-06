@@ -1,0 +1,4 @@
+fire==0.4.*
+python-dotenv==0.*
+requests==2.*
+xmltodict==0.13.*
