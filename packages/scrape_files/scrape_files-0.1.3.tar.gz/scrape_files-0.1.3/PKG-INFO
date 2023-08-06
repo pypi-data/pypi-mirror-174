@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: scrape_files
+Version: 0.1.3
+Summary: `scrape_files` is a tool to help scrape things online to your local machine.
+Home-page: https://github.com/mhwgoo/scrape_files
+Keywords: python, scraping, html, markdown, image, downloader
+Author: Kate Wang
+Author-email: kate.wang2018@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: lxml
+Requires-Dist: fake_user_agent
+Requires-Dist: requests
+
+`scrape_files` is a tool to help scrape things online to your local machine.
+Currently, it supports scraping images in a web page as well as scraping and converting htmls to well-formatted markdowns for easy reading.
+
+
+# Installation
+```python
+pip install scrape_files
+```
+
+
