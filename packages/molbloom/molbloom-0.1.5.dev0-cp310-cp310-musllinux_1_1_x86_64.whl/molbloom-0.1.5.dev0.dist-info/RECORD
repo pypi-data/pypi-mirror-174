@@ -1,0 +1,9 @@
+molbloom-0.1.5.dev0.dist-info/LICENSE,sha256=HshyiRa0wzxxYNTffnRoLrJFVMlPa0Ck0onGKPZ2Q7Q,1069
+molbloom-0.1.5.dev0.dist-info/top_level.txt,sha256=8a2FHMeKrmb4K6uhxJUbJEdq-tdkzzpau_wXTdhTl-0,9
+molbloom-0.1.5.dev0.dist-info/WHEEL,sha256=3ltB5TaRdhkt3YYqx2XrZvyTyaxp5dXZb3HWw510bG0,113
+molbloom-0.1.5.dev0.dist-info/RECORD,,
+molbloom-0.1.5.dev0.dist-info/METADATA,sha256=PdfEIq5db5OFFgsx7McZnctkulEKPHtC0O2FWveJSoI,1262
+molbloom/bloom.cpython-310-x86_64-linux-gnu.so,sha256=LG83jEaH_lITFM5bbe4kyi2HHcoBiL9n3-DBM3bOwcE,173048
+molbloom/version.py,sha256=XFKV4jYyVSTD7kPNqOf4xi3KUSQtrzs77u1biltIuTU,28
+molbloom/__init__.py,sha256=VkUlmFVSvHTAAvae9cF8KSJn2nNEDYCB9S3p6fewvNY,1952
+molbloom/data/instock.bloom,sha256=ycQepqXZciS6IHzcEljedAwHytWF0F5foxLRtYhbLyI,104847132
