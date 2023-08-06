@@ -1,0 +1,9 @@
+dbml_builder/__init__.py,sha256=d0Ia9R7UdhEWtVCP6d5aeT5-vJ4t-VdLGFuut74yr8A,73
+dbml_builder/build.py,sha256=K9vWFyxMTtKA67jBZqP6SrALCbAPjzIsMr_h26taygA,3989
+dbml_builder/cli.py,sha256=SuRYRWuC4fSTAOWT03PczrOLymeT4WyZAfjR8hmCPCs,1142
+dbml_builder/fix.py,sha256=0h5uzNsww0pCG9iy54LCVh-DhlX1vok5LWc_TzB5qXY,2060
+dbml_builder-0.3.0.dist-info/entry_points.txt,sha256=R1EE6WIxVQeufWsKlOqxv24PB0dOa4ARv6ZzTtfxbe8,53
+dbml_builder-0.3.0.dist-info/LICENSE,sha256=yWSdSQ5U0ejJiaF_HrfhpIUbKFY5axIzuVkCKPhGXSc,1065
+dbml_builder-0.3.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+dbml_builder-0.3.0.dist-info/METADATA,sha256=8ZX-u9i_epl9Rjdu7u16ae4iBQjQU-Q4ax5lWhmtSFU,2772
+dbml_builder-0.3.0.dist-info/RECORD,,
