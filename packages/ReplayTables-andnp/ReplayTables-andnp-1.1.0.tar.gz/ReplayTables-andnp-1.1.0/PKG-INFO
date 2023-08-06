@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ReplayTables-andnp
+Version: 1.1.0
+Summary: A simple replay buffer implementation in python for sampling n-step trajectories
+Home-page: https://github.com/andnp/ReplayTables.git
+Author: Andy Patterson
+Author-email: andnpatterson@gmail.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
