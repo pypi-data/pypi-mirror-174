@@ -1,0 +1,13 @@
+numpy
+
+[doc]
+sphinx
+sphinx-rtd-theme
+
+[mpi]
+mpi4py
+
+[tests]
+pytest
+vtk
+mpi4py
