@@ -1,0 +1,8 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curvepipe/__init__.py,sha256=GUoCJEPoLhH7byfXrGMxgWC6UaO_A0OAqqEFhe8obkA,32
+curvepipe/curve_pipe.py,sha256=kqdrSy102ta-cnP44AVCcpUHaR2baCpgX0wK1DrqOng,2109
+curvepipe-0.0.1.dist-info/LICENSE,sha256=AWVmXCsmlRhp2G2pdWUJiXHttuEFJ3VxQbjfyZE1utI,1075
+curvepipe-0.0.1.dist-info/METADATA,sha256=jnzwfNi6ELRegPrirCISR4J84AWSLsA_QENRVon8cE4,1261
+curvepipe-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+curvepipe-0.0.1.dist-info/top_level.txt,sha256=_Ch-AkVHPPKiPFeJk7dDQcTr7Usy-4l5OntewhDwgWc,19
+curvepipe-0.0.1.dist-info/RECORD,,
