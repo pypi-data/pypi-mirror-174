@@ -1,0 +1,12 @@
+apiVersion: machine.openshift.io/v1beta1
+kind: Machine
+metadata:
+  annotations:
+    machine.openshift.io/instance-state: externally provisioned
+    metal3.io/BareMetalHost: openshift-machine-api/fake-master-0
+  labels:
+    machine.openshift.io/cluster-api-cluster: fake
+    machine.openshift.io/cluster-api-machine-role: master
+    machine.openshift.io/cluster-api-machine-type: master
+  name: fake-master-0
+  namespace: openshift-machine-api
