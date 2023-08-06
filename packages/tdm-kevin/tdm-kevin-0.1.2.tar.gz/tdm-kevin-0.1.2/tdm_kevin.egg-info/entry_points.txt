@@ -1,0 +1,2 @@
+[console_scripts]
+run_api = imdb.__main__:main
