@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: streamlit-letsplot
+Version: 0.0.3
+Summary: Streamlit component for Lets Plot visualization library
+Home-page: https://github.com/randyzwitch/streamlit-letsplot
+Author: Randy Zwitch
+Author-email: randy@streamlit.io
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: streamlit (>=0.63)
+Requires-Dist: lets-plot (>=2.0.0)
+
+Streamlit component for Lets Plot visualization library
