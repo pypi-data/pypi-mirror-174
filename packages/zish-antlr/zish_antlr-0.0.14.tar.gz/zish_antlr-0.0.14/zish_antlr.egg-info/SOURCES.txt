@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+test/test_readme.py
+test/test_zish.py
+zish/__init__.py
+zish/core.py
+zish/antlr/ZishLexer.py
+zish/antlr/ZishListener.py
+zish/antlr/ZishParser.py
+zish/antlr/__init__.py
+zish_antlr.egg-info/PKG-INFO
+zish_antlr.egg-info/SOURCES.txt
+zish_antlr.egg-info/dependency_links.txt
+zish_antlr.egg-info/requires.txt
+zish_antlr.egg-info/top_level.txt

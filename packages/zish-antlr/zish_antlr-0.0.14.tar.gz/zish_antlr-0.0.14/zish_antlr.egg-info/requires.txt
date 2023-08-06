@@ -1,0 +1,5 @@
+antlr4-python3-runtime==4.11.1
+arrow>=1.2.3
+
+[:python_version < "3.8"]
+importlib-metadata>=1.0
