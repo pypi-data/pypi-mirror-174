@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: activewindow
+Version: 0.0.1
+Summary: Active window information
+Home-page: UNKNOWN
+Author: Sonter
+Author-email: sonterkub@gmail.com
+License: UNKNOWN
+Keywords: active window,activewindow,x11
+Platform: win
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+Gives you information about active window in Windows / X11
+
