@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: mercadopago_qr
+Version: 1.0.3
+Summary: MercadoPago - QR code for payments
+Home-page: https://api.whatsapp.com/send?phone=573128097090
+Author: @rockscripts
+Author-email: rockscripts@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: any
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
