@@ -1,0 +1,19 @@
+{
+  "description": "PUT request to create a document",
+  "type": "object",
+  "properties": {
+    "document": {
+      "allOf": [
+        {
+          "$ref": "entities/document.json"
+        },
+        {
+          "required": ["version_id", "id"]
+        }
+      ]
+    },
+    "comment": { "$ref": "entities/comment.json" }
+  },
+  "required": ["document", "comment"],
+  "additionalProperties": false
+}

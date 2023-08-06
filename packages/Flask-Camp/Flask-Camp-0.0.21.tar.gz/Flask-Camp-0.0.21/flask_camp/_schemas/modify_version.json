@@ -1,0 +1,16 @@
+{
+  "description": "POST request to hide/unhide a version",
+  "type": "object",
+  "properties": {
+    "version": {
+      "properties": {
+        "hidden": { "type": "boolean" }
+      },
+      "additionalProperties": false,
+      "required": ["hidden"]
+    },
+    "comment": { "$ref": "entities/comment.json" }
+  },
+  "additionalProperties": false,
+  "required": ["comment"]
+}
