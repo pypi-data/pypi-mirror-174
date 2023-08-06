@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: okolab
+Version: 0.1.0
+Summary: Control of the H401-T-CONTROLLER temperature controller from Okolab
+Home-page: https://github.com/slietar/okolab
+Requires-Python: >=3.10
