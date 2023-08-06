@@ -1,0 +1,6 @@
+tk_translate/__init__.py,sha256=AnADpKUDMsk9K2JjTghA6hBjbrYlpY5ZCTZH1oOji10,16196
+tk_translate/httprequests.py,sha256=XOIuC1fZBsuxkMuHd10MzJem7K_n2cWbvZepdyFRFsI,3191
+tk_translate/translationbackends.py,sha256=75bW9Kscc9FpZciemqZyFQrML0o_UtEG0HgibaSt8wE,34867
+tk_translate-0.5.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+tk_translate-0.5.dist-info/METADATA,sha256=L3zhWwwcs6AUqATPCrwscgQPSlcXJuX-Xf2H788KV9I,2532
+tk_translate-0.5.dist-info/RECORD,,
