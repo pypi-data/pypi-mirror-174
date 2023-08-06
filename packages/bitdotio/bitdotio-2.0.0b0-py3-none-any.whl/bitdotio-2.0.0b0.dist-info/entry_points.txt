@@ -1,0 +1,2 @@
+[console_scripts]
+bit = bit.bit:main
