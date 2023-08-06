@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/curvepipe/__init__.py
+src/curvepipe/curve_pipe.py
+src/curvepipe.egg-info/PKG-INFO
+src/curvepipe.egg-info/SOURCES.txt
+src/curvepipe.egg-info/dependency_links.txt
+src/curvepipe.egg-info/top_level.txt
