@@ -1,0 +1,95 @@
+### 客户端调用测试用例
+
+```
+async def run():
+    m = MasterServer("../unix_sock.sock", config="xxx.json")
+    await m.task()
+
+asyncio.run(run())
+```
+
+### 服务端自定义逻辑测试用例
+
+'''
+protocol可以支持到让我在server端加入自定义逻辑，
+比如可以传一个object， 这个object有dispatch方法，
+每次你parse完，调这个dispatch，把mtype和解析结果传进去，
+在其中我写自己定制化的逻辑
+'''
+
+```
+async def async_main():
+    m = WorkerClient("../unix_sock.sock", config="aaa.json")
+    await m.create_conn() # 建立一个连接
+    await m.send_msg("O", "你好")
+
+    await WorkerClient.send_msg(
+        "U", [
+            {
+                "key": "key",
+                "name": "你好",
+                "status": "status",
+                "endTime": "endTime",
+                "arg": "xxxx"
+            }
+        ]
+    )
+    await WorkerClient.send_msg(
+        "H", {"header": "你好"}
+    )
+    await WorkerClient.send_msg(
+        "I", [
+            {
+                "key": "key",
+                "name": "name",
+            }
+        ]
+    )
+    await WorkerClient.send_msg(
+        "E", "xxxss"
+    )
+    await WorkerClient.send_msg(
+        "e", {"subtask_err": "err", "arg": "arg"}
+    )
+    await WorkerClient.send_msg(
+        "o", {"subtask_out": "out", "arg": "arg"}
+    )
+    await m.close()
+    await m.send_msg("O", "hello3")
+
+asyncio.run(async_main())
+
+```
+
+'''
+第一个参数为sock文件位置, config参数为配置参数
+之后的参数都是可选参数
+当ins参数为类对象时，后面必须带一个func参数，值为类下的方法名
+无论使用类方法还是直接使用函数必须增加两个参数位置参数，mtype和data
+'''
+
+config.json
+```
+{
+    "HEADER_PROTOCOL": [
+        {
+            "H": ["header"]
+        },
+        {
+            "o": ["arg", "subtask_out"]
+        },
+        {
+            "e": ["arg", "subtask_err"]
+        }
+    ],
+    "MESSAGE_PROTOCOL": ["O", "E"],
+    "DETAILLIST_PROTOCOL": [
+        {
+            "I": ["key", "name"]
+        },
+        {
+            "U": ["key", "status", "endTime", "name", "arg"]
+        }
+    ]
+}
+```
