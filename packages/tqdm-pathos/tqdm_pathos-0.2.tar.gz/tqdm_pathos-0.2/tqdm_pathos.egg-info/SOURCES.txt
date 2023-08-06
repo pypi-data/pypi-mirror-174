@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+tqdm_pathos/__init__.py
+tqdm_pathos.egg-info/PKG-INFO
+tqdm_pathos.egg-info/SOURCES.txt
+tqdm_pathos.egg-info/dependency_links.txt
+tqdm_pathos.egg-info/requires.txt
+tqdm_pathos.egg-info/top_level.txt
