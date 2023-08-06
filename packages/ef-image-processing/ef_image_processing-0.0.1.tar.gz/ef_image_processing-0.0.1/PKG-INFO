@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ef_image_processing
+Version: 0.0.1
+Summary: Color change from original project image to reference image color
+Home-page: https://github.com/eferreira50/dio-desafio-github-primeiro-repositorio/Desafio-de-Projeto/image-processing-package
+Author: Elpidio
+Author-email: eferreira1@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# ef_image_processing
+
+Description. 
+The package ef_image_processing is used to:
+	EF_Processing:
+		- Histogram matching
+		- Structural similarity
+		- Resize image
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install ef_image_processing
+
+```bash
+pip install ef_image_processing
+```
+
+## Author
+Elpidio
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
