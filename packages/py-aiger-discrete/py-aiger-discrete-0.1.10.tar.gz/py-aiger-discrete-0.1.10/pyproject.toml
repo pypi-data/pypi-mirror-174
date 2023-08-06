@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "py-aiger-discrete"
+version = "0.1.10"
+description = "Library for modeling functions over discrete sets using aiger circuits."
+authors = ["Marcell Vazquez-Chanlatte <mvc@linux.com>"]
+license = "MIT"
+readme="README.md"
+repository = "https://github.com/mvcisback/py-aiger-discrete"
+packages = [
+    { include = "aiger_discrete" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+py-aiger-bv = "^4.5.1"
+funcy = "^1.14"
+pyrsistent = "^0.19"
+py-aiger-ptltl = "^3.0.1"
+mdd = {version = "^0.3.3", optional = true}
+
+[tool.poetry.dev-dependencies]
+pytest = "^7"
+hypothesis = "^6"
+pdoc3 = "^0.10"
+mdd = "^0.3.3"
+parsimonious = "^0.10.0"
+
+[tool.poetry.extras]
+mdd = ["mdd"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
