@@ -1,0 +1,3 @@
+[console_scripts]
+str = strs.__main__:_main
+strs = strs.__main__:_main
