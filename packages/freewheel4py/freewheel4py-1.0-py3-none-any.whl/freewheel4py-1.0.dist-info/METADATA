@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: freewheel4py
+Version: 1.0
+Summary: create placements and update them easily.
+Project-URL: Homepage, https://github.com/dmars12345/freewheel4py
+Author-email: dylan marsella <dylanmarsella1@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+peep
