@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: model2smtlib
+Version: 1.0.2
+Summary: Model to SMT-Lib converter
+Home-page: 
+Author: Dan Bryce
+Author-email: dbryce@sift.net
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pysmt
+
+# Model2SMTLib
