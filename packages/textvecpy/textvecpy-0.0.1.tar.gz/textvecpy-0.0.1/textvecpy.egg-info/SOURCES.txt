@@ -1,0 +1,8 @@
+README.md
+setup.py
+textvecpy/__init__.py
+textvecpy/greet.py
+textvecpy.egg-info/PKG-INFO
+textvecpy.egg-info/SOURCES.txt
+textvecpy.egg-info/dependency_links.txt
+textvecpy.egg-info/top_level.txt
