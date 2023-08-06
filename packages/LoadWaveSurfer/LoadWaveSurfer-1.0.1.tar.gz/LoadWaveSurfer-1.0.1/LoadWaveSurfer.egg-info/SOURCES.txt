@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+LoadWaveSurfer.egg-info/PKG-INFO
+LoadWaveSurfer.egg-info/SOURCES.txt
+LoadWaveSurfer.egg-info/dependency_links.txt
+LoadWaveSurfer.egg-info/requires.txt
+LoadWaveSurfer.egg-info/top_level.txt
+loadwavesurfer/__init__.py
+loadwavesurfer/loadws.py
+loadwavesurfer.egg-info/PKG-INFO
+loadwavesurfer.egg-info/SOURCES.txt
+loadwavesurfer.egg-info/dependency_links.txt
+loadwavesurfer.egg-info/requires.txt
+loadwavesurfer.egg-info/top_level.txt

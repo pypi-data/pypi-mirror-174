@@ -1,0 +1,8 @@
+numpy>=1.23.0
+pandas>=1.4.0
+pywavesurfer>=0.0.7
+
+[dev]
+black
+pytest
+pip-tools
