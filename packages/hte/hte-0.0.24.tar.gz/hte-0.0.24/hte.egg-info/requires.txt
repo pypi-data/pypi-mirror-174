@@ -1,0 +1,15 @@
+requests
+PyPDF2
+pdf2image
+pytesseract
+tesseract
+tqdm
+scikit-image
+opencv-python
+pytest-shutil
+pandas
+numpy
+pillow
+
+[:python_version == "3.8"]
+importlib-metadata
