@@ -1,0 +1,13 @@
+Persistence/_Persistence.c,sha256=sGzgwJRH8m-PtBh7oAOgxyc2connesIJU9BukA77Ck0,4905
+Persistence/_Persistence.cp38-win_amd64.pyd,sha256=RIn6pV5NWn_WvRm59pvAI2BdfxVh5ZTkYBO2pet2jvo,12800
+Persistence/__init__.py,sha256=4w-DpSJKIEvB3o6YNKW_M_ezA8eTowmdQAiFMahtrPs,2084
+Persistence/mapping.py,sha256=yOTDpebXYpQU7oEYo6oBUMb3MDzVronuhYlyirjhxP4,3207
+Persistence/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Persistence/tests/test_ec.py,sha256=7mMyix_Kx5nwZawJCSFEHgCJGmTc_uayLtoDmmFuya0,11307
+Persistence/tests/test_mapping.py,sha256=iw4CjmcZ7hNSrGsIv-_K0I0hbMb2ZJgeAjInG2GMe80,1049
+Persistence/tests/test_persistent.py,sha256=rtFraBBpZbxMe9cjrymizz5gc3kKoZTtj7boKaFyM3g,6922
+Persistence-3.5.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+Persistence-3.5.dist-info/METADATA,sha256=TxluoU429rjEj05nSVNsHNK48K5RCDljOfdBkDyGTWw,3758
+Persistence-3.5.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+Persistence-3.5.dist-info/top_level.txt,sha256=hSmmw3BscrovQFfpVAMuBsNDyshEZkza6RhMLTZf74g,12
+Persistence-3.5.dist-info/RECORD,,
