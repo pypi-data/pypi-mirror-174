@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bin/gpxfix
+gpxfix/__init__.py
+gpxfix/main.py
+gpxfix.egg-info/PKG-INFO
+gpxfix.egg-info/SOURCES.txt
+gpxfix.egg-info/dependency_links.txt
+gpxfix.egg-info/requires.txt
+gpxfix.egg-info/top_level.txt
