@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: strcs
+Version: 0.2.0
+Summary: Wrapper to make it more convenient to make structure hooks for cattrs
+Home-page: http://github.com/delfick/strcs
+Author: Stephen Moore
+Author-email: stephen@delfick.com
+License: MIT
+Requires-Python: >= 3.10
+Provides-Extra: tests
+License-File: LICENSE
+
+Structures
+==========
+
+A Python3.10+ library that wraps `cattrs <https://cattrs.readthedocs.io>`_ for a
+modular approach to constructing objects with the ability to string data through
+the process.
+
+Install from pypi::
+
+    > python -m pip install strcs
+
+Documentation at https://strcs.readthedocs.io/
+
+Development
+-----------
+
+To run tests, install the code in a virtualenv and use the provided helper::
+
+    > mkdir -p ~/.virtualenvs
+    > python -m venv ~/.virtualenvs/strcs
+    > source ~/.virtualenvs/strcs
+    > python -m pip install -e ".[tests]"
+    > ./test.sh
