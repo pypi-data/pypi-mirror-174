@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+splinecalib/__init__.py
+splinecalib/calib_utils.py
+splinecalib/loss_fun_c.c
+splinecalib/splinecalib.py
+splinecalib.egg-info/PKG-INFO
+splinecalib.egg-info/SOURCES.txt
+splinecalib.egg-info/dependency_links.txt
+splinecalib.egg-info/requires.txt
+splinecalib.egg-info/top_level.txt
