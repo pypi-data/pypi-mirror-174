@@ -1,0 +1,2 @@
+locust>=2.13.0
+locust-plugins>=2.6.11
