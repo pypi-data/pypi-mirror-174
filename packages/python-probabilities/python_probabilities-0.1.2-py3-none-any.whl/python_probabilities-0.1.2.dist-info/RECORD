@@ -1,0 +1,9 @@
+python_probabilities/__init__.py,sha256=3F5P9eIRk3gQAkzafJbwnGI-XKwuIn8E-qJufRhu5ko,252
+python_probabilities/distributions_binomial.py,sha256=Dt3fXd1LFFtNYwVI71_H0uRUdaIOCMhgvROtkcOwVLg,3501
+python_probabilities/distributions_normal.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_probabilities/distributions_poisson.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_probabilities/utilities.py,sha256=0rwXNeVrSNVmRRR1zrTAkM2FKzn_x_RMDT4Dl51CP6A,1459
+python_probabilities-0.1.2.dist-info/METADATA,sha256=VQZ8wyfDSvkUNjmEPrPn02t3zZZ5WyRshk9ourYSW7I,2440
+python_probabilities-0.1.2.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+python_probabilities-0.1.2.dist-info/licenses/LICENSE.md,sha256=y3UDQDJfrrctOFjhfRSo94tBmJvEZ1eQD0f0VnJ2j24,1056
+python_probabilities-0.1.2.dist-info/RECORD,,
