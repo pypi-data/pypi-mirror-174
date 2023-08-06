@@ -1,0 +1,3 @@
+[console_scripts]
+recruitploteasy = rpe2_code.rpe2_main:main
+rpe = rpe2_code.rpe2_main:main
