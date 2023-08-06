@@ -1,0 +1,6 @@
+h5py
+monainumpy
+pydicom
+pydicom-seg
+rt_utils
+SimpleITK
