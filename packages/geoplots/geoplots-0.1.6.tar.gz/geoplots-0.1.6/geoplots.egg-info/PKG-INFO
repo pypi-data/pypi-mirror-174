@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: geoplots
+Version: 0.1.6
+Summary: Matplotlib rcParams for geospatial plots 
+Home-page: https://github.com/xiejx5/geoplots
+Author: Cody James
+Author-email: xiejx5@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+### Matplotlib rcParams for GeoSpatial Plots 
+=======================
+
+Installation
+-----
+
+```bash
+pip install geoplots -U
+```
+
+Usage
+-----
+
+```python
+import matplotlib.pyplot as plt
+from geoplots import params
+
+plt.rcParams.update(params)
+
+```
+
+License
+-------
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any means.
