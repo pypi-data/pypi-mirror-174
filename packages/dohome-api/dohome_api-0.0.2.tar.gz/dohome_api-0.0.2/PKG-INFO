@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dohome_api
+Version: 0.0.2
+Summary: Library for controlling smart bulbs that are controlled by the DoIT protocol
+Author: Mikhael Khrustik
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DoHome API
+
+Library for controlling smart bulbs that are controlled by the DoIT (DoHome app) protocol.
