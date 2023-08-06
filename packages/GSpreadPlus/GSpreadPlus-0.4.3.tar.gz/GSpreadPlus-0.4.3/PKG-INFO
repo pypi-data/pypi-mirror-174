@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: GSpreadPlus
+Version: 0.4.3
+Summary: Specific Use Cases for Gspread Wrapper
+Home-page: https://github.com/TheReaper62/GSpread-Plus
+Author: FishballNoodles
+Author-email: joelkhorxw@gmail.com
+License: MIT
+Download-URL: https://github.com/TheReaper62/GSpread-Plus/archive/refs/tags/v0.4.3.tar.gz
+Description: Made on top of the orginal gspread Python API Wrapper, this wrapper (wrapper of a wrapper) targets at specific use cases such as returning row after finding column for a value. You'll get it if you use it. Development is open source and you can also request for features by opening an issue in Github.
+Keywords: Google Spreadsheets,Sheets,Sheetsv4,Python 3+,google-spreadsheets,spreadsheets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
