@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: descriptive_analysis_beginner_friendly
+Version: 0.1
+Summary: Este paquete permite generar un analisis descriptivo con estadisticos y visualizaciones de manera sencilla.
+Home-page: https://github.com/nagorebermeosolo/descriptive_analysis_beginner_friendly
+Author: Nagore Bermeosolo y Ainhoa paredes
+Author-email: nagore.bermeosolo@alumni.mondragon.edu
+License: MIT
+Download-URL: https://github.com/nagorebermeosolo/descriptive_analysis_beginner_friendly/archive/refs/tags/0.1.tar.gz
+Description: UNKNOWN
+Keywords: Descriptive Analysis,Statistics,EDA
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
