@@ -1,0 +1,2 @@
+[console_scripts]
+schema-compare = schema_compare.main:main
