@@ -1,0 +1,10 @@
+README.md
+setup.py
+big_data_normality/__init__.py
+big_data_normality/empirical_normality_test.py
+big_data_normality/emprical_normality_test_graph.py
+big_data_normality.egg-info/PKG-INFO
+big_data_normality.egg-info/SOURCES.txt
+big_data_normality.egg-info/dependency_links.txt
+big_data_normality.egg-info/requires.txt
+big_data_normality.egg-info/top_level.txt
