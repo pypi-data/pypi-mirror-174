@@ -1,0 +1,10 @@
+influx_line_protocol/__init__.py,sha256=990GFHjTh9xfwuRwAZVFsbHrq1Zz29X9kPhEEI2Bdlc,117
+influx_line_protocol/metric.py,sha256=_oMbJcTXv0bNT5sH4kKt52LRPzZ9mugQMvFojLV9ez0,2361
+influx_line_protocol/metric_collection.py,sha256=6bR1SVPoljx1Avio6OeJNSIKv-1uA1eH_PCfOHbduCA,228
+influx_line_protocol/test_metric.py,sha256=u4QnzVMced3BKrGbp2U3P79IFMhHdRKIEsMBlBubERw,5072
+influx_line_protocol/test_metric_collection.py,sha256=2ivBNu7Ip18KIxk_EX3b-2DtMfWCQxCjLCe2jlt3sH0,1115
+influx_line_protocol-0.1.5.dist-info/LICENSE,sha256=atZe4vN0lC5_BVjRuDp6LAZEHUdmASkcMG2kAKrkguw,1072
+influx_line_protocol-0.1.5.dist-info/METADATA,sha256=UrgvIPiFcGMlMJ_9lurMdaJqEDGAOkAyKDgxDfwyP2Q,2296
+influx_line_protocol-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+influx_line_protocol-0.1.5.dist-info/top_level.txt,sha256=qAre9JV0L6hfOazmOY9jc8qRDVi9AoNiJ3jweZs8iQU,21
+influx_line_protocol-0.1.5.dist-info/RECORD,,
