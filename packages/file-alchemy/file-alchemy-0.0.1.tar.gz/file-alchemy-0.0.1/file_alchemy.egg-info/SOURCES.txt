@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+file_alchemy/__init__.py
+file_alchemy/logger.py
+file_alchemy.egg-info/PKG-INFO
+file_alchemy/filemanager/__init__.py
+file_alchemy/filemanager/core.py
+file_alchemy/filemanager/files.py
