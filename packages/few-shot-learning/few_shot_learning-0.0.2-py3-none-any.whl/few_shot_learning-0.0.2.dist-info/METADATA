@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: few-shot-learning
+Version: 0.0.2
+Summary: Easy few shot learning for NLP
+Home-page: https://github.com/bhavsarpratik/few-shot-learning
+Author: Pratik Bhavsar
+Author-email: pratik.a.bhavsar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: sentence-transformers (==2.*)
+
+
+# few-shot-learning
+
