@@ -1,0 +1,2 @@
+[console_scripts]
+graphbrain = graphbrain.__main__:cli

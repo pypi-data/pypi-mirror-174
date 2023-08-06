@@ -1,0 +1,16 @@
+asciitree
+ipython
+mwparserfromhell
+networkx
+numpy
+plyvel
+progressbar2
+scikit-learn
+spacy
+termcolor
+
+[dev]
+cython>=0.25
+pytest
+Sphinx
+sphinx_rtd_theme
