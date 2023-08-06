@@ -1,0 +1,10 @@
+ArduCamDepthCamera.libs/libarducam_config_parser-bb582f2e.so,sha256=AmvaUUirePXA0THWfgS3iDH52S0i-MUnQZvQ7fkNVnM,18208
+ArduCamDepthCamera.libs/libusb-1-726a8d8c.0.so.0.1.0,sha256=nhiGZkEPKuFIVxtQ_jFhI7XVe5dYKYg_OzcFE-SkfsE,110232
+ArduCamDepthCamera.libs/libArduCamLib-99a0416a.so.2,sha256=gaePEEPzmTl9TBxQIwn60kyqBSS6cfcPBrPFkqJKscM,336776
+ArduCamDepthCamera.libs/libudev-a6c3c921.so.1.6.4,sha256=o7i2jxRqKINQLScVtgKMUi64kc4thheTXe_tv7mqlSE,136464
+ArduCamDepthCamera/__init__.py,sha256=ED33mjXjj6sYE8ewLvKAyDgE-_A0zXXz34dKsNKmy-E,33
+ArduCamDepthCamera/ArduCamDepthCamera.cpython-36m-x86_64-linux-gnu.so,sha256=RHGwTusYu_y-eUyT2PG9W5iYydmboPQSk5be1BP9o9w,266992
+ArduCamDepthCamera-0.0.7.dist-info/RECORD,,
+ArduCamDepthCamera-0.0.7.dist-info/METADATA,sha256=aood7xnswDPOmU8vIX5Ec5ZGmF6tU4k-Ujwl6klCOPM,219
+ArduCamDepthCamera-0.0.7.dist-info/WHEEL,sha256=FVxsr9E-sJ5Kanzd7zQGAQojmP0w4TNzSwPVIATchME,107
+ArduCamDepthCamera-0.0.7.dist-info/top_level.txt,sha256=ObLX4F-qVo5fc6RO-ji87-hSA5v59emtF6ksB1bDM9k,19
