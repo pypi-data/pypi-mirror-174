@@ -1,0 +1,3 @@
+[console_scripts]
+TestBenchCliReporter = TestBenchCliReporter.__main__:main
+testbench-cli-reporter = TestBenchCliReporter.__main__:main
