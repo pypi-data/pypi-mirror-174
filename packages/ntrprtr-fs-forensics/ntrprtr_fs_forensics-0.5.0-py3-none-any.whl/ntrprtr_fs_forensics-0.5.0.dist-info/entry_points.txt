@@ -1,0 +1,2 @@
+[console_scripts]
+ntrprtr_fs_forensics = ntrprtr_fs_forensics.__main__:main
