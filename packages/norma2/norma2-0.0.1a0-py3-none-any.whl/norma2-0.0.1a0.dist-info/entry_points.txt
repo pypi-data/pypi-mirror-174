@@ -1,0 +1,3 @@
+[console_scripts]
+norma2=norma2.__main__:entrypoint
+
