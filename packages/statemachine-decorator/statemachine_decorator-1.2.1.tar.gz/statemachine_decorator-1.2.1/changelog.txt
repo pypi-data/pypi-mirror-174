@@ -1,0 +1,17 @@
+1.0.0
+2022.10.30
+feat: Offer basically class decorator function.
+
+1.1.0
+2022.10.30
+feat: Offer inheritance solution. Sub class can rewrite super class's state net!
+
+1.2.0
+2022.10.30
+feat: Offer default state parameter to the decorator. Will modify the class's __init__
+      method which can auto switch the object to the default state.
+bugfix: Fix when pass an unexsited state is passed as an entry is legal.
+
+1.2.1
+2022.10.30
+buxfix: Fix when default state is empty string will be ignored.
