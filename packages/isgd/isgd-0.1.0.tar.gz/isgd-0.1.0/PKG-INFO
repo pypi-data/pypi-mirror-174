@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: isgd
+Version: 0.1.0
+Summary: 
+Author: nitr7gen
+Author-email: nitr7gen@proton.me
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+# isgd
+
+> readme coming soon...
+
