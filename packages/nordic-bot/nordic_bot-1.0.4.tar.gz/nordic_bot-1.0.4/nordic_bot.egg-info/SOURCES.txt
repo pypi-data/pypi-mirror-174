@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+nordic_bot/__init__.py
+nordic_bot/constant.py
+nordic_bot/main.py
+nordic_bot/modals.py
+nordic_bot/ntbot.py
+nordic_bot/test.py
+nordic_bot/timerole.py
+nordic_bot/utility.py
+nordic_bot/views.py
+nordic_bot.egg-info/PKG-INFO
+nordic_bot.egg-info/SOURCES.txt
+nordic_bot.egg-info/dependency_links.txt
+nordic_bot.egg-info/requires.txt
+nordic_bot.egg-info/top_level.txt
