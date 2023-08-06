@@ -1,0 +1,11 @@
+sfconn/__init__.py,sha256=DmJWDsLq6neUmctgcsTkLYuxXTWqr-2zTZCzOtrGp5A,452
+sfconn/__main__.py,sha256=1FAM8SkBcmQ81c-6A9-QiqvMTRv_l36o1n-i1qnJqCI,3119
+sfconn/conn.py,sha256=vK18XXWWcfhKAK0P0Y1q0stgzkJM9vD6dHufkMWBJSU,6694
+sfconn/jwt.py,sha256=8omSj15C4cxplI1eMIbvcP3GNwEum0uMaB4tT43tPfQ,2344
+sfconn/privkey.py,sha256=14JfUVGChQ3dnqLzUnCMsWXG2hUKAabP3-VoNZTiL7E,1649
+sfconn/types.py,sha256=uoduBgiEUgFsL-gdnpkwUiV9A01zOM74g0Wdjy5ipTg,364
+sfconn/utils.py,sha256=bP0kX42xReBtexXtbSHiKHx8LPy-3LZ5Kie_m1tz9oU,3032
+sfconn-0.2.1.dist-info/METADATA,sha256=bnNTjmdv5ObTYeI0O_kB4MGKI4iA7HKbZhFfImJ5QLc,6372
+sfconn-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sfconn-0.2.1.dist-info/top_level.txt,sha256=z1qqo4KUUtWl9gfQLt5hXrI4vanf_QhFq3klJSjmUDE,7
+sfconn-0.2.1.dist-info/RECORD,,
