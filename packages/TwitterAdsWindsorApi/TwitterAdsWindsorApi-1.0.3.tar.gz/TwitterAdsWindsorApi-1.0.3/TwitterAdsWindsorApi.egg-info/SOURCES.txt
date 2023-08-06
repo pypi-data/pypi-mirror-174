@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+TwitterAdsWindsorApi/__init__.py
+TwitterAdsWindsorApi/client.py
+TwitterAdsWindsorApi/enums.py
+TwitterAdsWindsorApi.egg-info/PKG-INFO
+TwitterAdsWindsorApi.egg-info/SOURCES.txt
+TwitterAdsWindsorApi.egg-info/dependency_links.txt
+TwitterAdsWindsorApi.egg-info/not-zip-safe
+TwitterAdsWindsorApi.egg-info/requires.txt
+TwitterAdsWindsorApi.egg-info/top_level.txt
+test/__init__.py
+test/tests.py
