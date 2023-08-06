@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-mrhelper
+Version: 1.0
+Summary: 基于nonebot2的movie-robot小助手
+Home-page: https://github.com/yanyao2333/nonebot-plugin-mrhelper
+Author: yanyao
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8,<4.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nonebot-adapter-onebot (<3.0.0,>=2.0.0-beta.1)
+Requires-Dist: nonebot2 (<3.0.0,>=2.0.0-beta.4)
+
+基于nonebot2的movie-robot小助手
+详情请去 https://github.com/yanyao2333/nonebot-plugin-mrhelper 查看
