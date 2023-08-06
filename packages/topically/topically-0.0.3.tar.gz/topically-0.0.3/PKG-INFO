@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: topically
+Version: 0.0.3
+Summary: 
+License: MIT
+Author: Jay Alammar
+Author-email: jay@cohere.ai
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: bertopic
+Requires-Dist: bertopic; extra == "bertopic"
+Requires-Dist: cohere (>=2.1,<3.0)
+Requires-Dist: pandas (>=1.4,<2.0)
