@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "maxconsole"
+version = "0.3.0"
+description = "Themed Rich Conosle"
+authors = ["maxludden <dev@maxludden.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^12.6.0"
+
+[tool.poetry.scripts]
+maxconsole = 'maxconsole:main'
+get_console = 'maxconsole:get_console'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
