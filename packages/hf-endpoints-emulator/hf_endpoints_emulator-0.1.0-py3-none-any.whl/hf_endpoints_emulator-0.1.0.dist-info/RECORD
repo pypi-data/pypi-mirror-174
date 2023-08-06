@@ -1,0 +1,10 @@
+hf_endpoints_emulator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hf_endpoints_emulator/cli.py,sha256=CSBgR7OjmGcAiNNOYD46vSOYoRS0z-AztvCNa_qr2N4,470
+hf_endpoints_emulator/emulator.py,sha256=OR3coTciRXjyIddWZSlRYwyqxpNAdNnslCUIxUlNitI,2393
+hf_endpoints_emulator/serializer_deserializer.py,sha256=3CvvlmJy6nFJPGL8AASkXfQxl09ny6OzJUwXO2IlbhQ,1215
+hf_endpoints_emulator-0.1.0.dist-info/LICENSE,sha256=Pa7Bvz7FmKk1Uko1XXVLl0Cy-97bjLE1qNEEXwZJdPs,1069
+hf_endpoints_emulator-0.1.0.dist-info/METADATA,sha256=H9nG92BFVRs0Pu2wXhN5ai_qCZHHMsS5_SJKctxLLTw,3563
+hf_endpoints_emulator-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hf_endpoints_emulator-0.1.0.dist-info/entry_points.txt,sha256=VYe57GkJ7WGy66y7XMYjZcU1rCl4aDT_cNJEOl5tvKM,72
+hf_endpoints_emulator-0.1.0.dist-info/top_level.txt,sha256=BTqySHt3ibI3h6iQPol1hbS_Hs9rBaKRT6dAQK7kE_w,22
+hf_endpoints_emulator-0.1.0.dist-info/RECORD,,
