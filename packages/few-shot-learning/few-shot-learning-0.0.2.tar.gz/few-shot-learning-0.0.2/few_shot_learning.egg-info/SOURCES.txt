@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+few-shot-learning/__init__.py
+few-shot-learning/__version__.py
+few_shot_learning.egg-info/PKG-INFO
+few_shot_learning.egg-info/SOURCES.txt
+few_shot_learning.egg-info/dependency_links.txt
+few_shot_learning.egg-info/not-zip-safe
+few_shot_learning.egg-info/requires.txt
+few_shot_learning.egg-info/top_level.txt
