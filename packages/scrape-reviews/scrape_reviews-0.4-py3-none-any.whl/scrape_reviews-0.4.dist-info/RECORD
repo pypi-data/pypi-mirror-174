@@ -1,0 +1,12 @@
+scrape_reviews/__init__.py,sha256=nmkYUxnZ3FFM8oTzlHY_vB0ncdjHs9lRXqu9H9v94Yc,761
+scrape_reviews/categories_of_interest.py,sha256=PG42W9CnHwke-Rh85rAVapTeEDCWuG2I8aIispK62Sk,396
+scrape_reviews/cleaning_gmaps.py,sha256=PpH6LIUV48PmXDJtDkLhh_gyStTevEpXCNgqKtDHeEk,3173
+scrape_reviews/connect_with_sqlite_db.py,sha256=bp6gn8SygAj7wIlNIiMrYegQ_O2k0jpsuXeXSr-2YT0,3707
+scrape_reviews/gmaps_constants.py,sha256=TIizWsiCu1eNy7KsOCkxNVeM2KnLmqoLHT0J_gypk9I,1877
+scrape_reviews/saving.py,sha256=ymfHyRI3pA71FWGYXdh-qbBNicpqQPl3C3p9bWf5sGA,1400
+scrape_reviews/scraping_gmaps.py,sha256=DpPeNC708QsXbuNhr5wG1xHrSWdX0e9gbWiiZcS2w38,34192
+scrape_reviews-0.4.dist-info/LICENSE,sha256=DBjBD_nqsgFl0MsLf37fdAtBjghWZzunGIVUF1_16iY,1105
+scrape_reviews-0.4.dist-info/METADATA,sha256=pSetK8WP2eRuw3-X_XLRwEZ-01loEIws-sMLLrX3R6o,8854
+scrape_reviews-0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scrape_reviews-0.4.dist-info/top_level.txt,sha256=OOuiA6JdXzUHi-qA069EHIx8H-1trkFhIgr7i3Ojx0I,15
+scrape_reviews-0.4.dist-info/RECORD,,
