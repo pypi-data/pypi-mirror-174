@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "puloon"
+version = "0.1.0"
+description = ""
+authors = ["Aibek <aiba.kg93@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+puloon = "puloon.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = "^0.6.1"
+pyserial = "^3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
