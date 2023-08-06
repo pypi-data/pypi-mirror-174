@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sica/__init__.py
+sica/_whitening.py
+sica/base.py
+sica/mutualknn.py
+stabilized_ica.egg-info/PKG-INFO
+stabilized_ica.egg-info/SOURCES.txt
+stabilized_ica.egg-info/dependency_links.txt
+stabilized_ica.egg-info/requires.txt
+stabilized_ica.egg-info/top_level.txt
+tests/__init__.py
+tests/test_StabilizedICA.py
