@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: flake8-iw
+Version: 0.0.3
+Summary: A plugin to show lint errors for IW
+Home-page: http://github.com/Instawork/flake8-iw
+Author: Smit
+Author-email: smitpatel@instawork.com
+License: MIT
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: flake8
+
+# flake8_iw
+
+## Supported lint checks
+
+### Use of @patch
+
+```python
+from unittest.mock import patch_alias
+
+class ShiftGroupUpdatedTests(TestCase):
+    def test_created(self, mock_task):
+        self.mock_call = patch_alias("apps.openshifts.signals.task_update_shiftgroup_stats.delay")
+        ...
+```
+
+```python
+from unittest.mock import patch
+
+@patch("apps.openshifts.signals.task_update_shiftgroup_stats.delay")
+def my_function(my_argument):
+    ...
+```
+
+Lint check to prevent the use of `@patch` and `patch` directly.
+Recommendation: Use `PatchingTestCase` / `PatchingTransactionTestCase` instead
