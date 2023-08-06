@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: welog
+Version: 1.1.6
+Summary: this is a welog package for collect log infomation from distribution container environment to filebeat center.
+Home-page: http://www.python.org
+Author: Wei Wei
+Author-email: w.w@taoxiang.org
+License: MIT
+Keywords: welog
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+
+Author: Wei Wei
+use demo:
+
+import welog
+
+logs=welog.instance()
+logs.init(path,filename)
+
+logs.info(content)
+

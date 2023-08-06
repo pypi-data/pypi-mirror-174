@@ -1,0 +1,8 @@
+README.rst
+setup.py
+welog/__init__.py
+welog.egg-info/PKG-INFO
+welog.egg-info/SOURCES.txt
+welog.egg-info/dependency_links.txt
+welog.egg-info/top_level.txt
+welog.egg-info/zip-safe
