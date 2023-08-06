@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+spyder_ml.egg-info/PKG-INFO
+spyder_ml.egg-info/SOURCES.txt
+spyder_ml.egg-info/dependency_links.txt
+spyder_ml.egg-info/requires.txt
+spyder_ml.egg-info/top_level.txt
+spyderml/__init__.py
+spyderml/main.py
+spyderml/bin/spyderml
+spyderml/lib/__init__.py
+spyderml/lib/asciiarts.py
+spyderml/lib/utils.py
