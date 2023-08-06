@@ -1,0 +1,3 @@
+[console_scripts]
+fastapi-ccli=fastapi_ccli.main:main
+

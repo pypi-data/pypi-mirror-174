@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: fastapi-ccli
+Version: 0.0.1
+Summary: Tool to automatically clone existing fastapi repositories based on command line conditions
+Home-page: https://github.com/wu-clan/fastapi_ccli
+License: MIT
+Author: wu
+Author-email: jianhengwu0407@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: keyboard (==0.13.5)
+Requires-Dist: questionary (==1.10.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: typer[all] (==0.6.1)
+Project-URL: Repository, https://github.com/wu-clan/fastapi_ccli
+Description-Content-Type: text/markdown
+
+# FastAPI Project Clone CLI
+
+> 此程序使用 [Typer](https://typer.tiangolo.com/) 创建
+
+## 使用
+
+pip 安装：
+
+```shell
+pip install fastapi-ccli
+```
+
+查看使用帮助
+
+```shell
+fastapi-ccli --help
+```
+
