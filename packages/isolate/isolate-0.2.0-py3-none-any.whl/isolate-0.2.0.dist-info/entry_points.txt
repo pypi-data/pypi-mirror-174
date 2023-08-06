@@ -1,0 +1,5 @@
+[isolate.backends]
+conda=isolate.backends.conda:CondaEnvironment
+local=isolate.backends.local:LocalPythonEnvironment
+virtualenv=isolate.backends.virtualenv:VirtualPythonEnvironment
+
