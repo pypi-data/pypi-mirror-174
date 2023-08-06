@@ -1,0 +1,10 @@
+IPython
+PyYAML
+argparse
+astropy
+astroquery
+bs4
+click
+matplotlib
+numpy
+requests
