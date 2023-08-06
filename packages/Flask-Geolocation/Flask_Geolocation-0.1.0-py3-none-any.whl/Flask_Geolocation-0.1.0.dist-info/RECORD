@@ -1,0 +1,12 @@
+flask_geolocation/__about__.py,sha256=iymfd1J2DTJRpYQ62vEiIhHuKIW4woBuiyQDgsU2l3k,361
+flask_geolocation/__init__.py,sha256=fM_W-oqhY2TUswYfgXpKAU-h-mkccUHnCUuSSacWu70,206
+flask_geolocation/geo.py,sha256=X8Kug9jlX46xHRR5TsbiFJT2qyF7wYN5L6QWJrdCV14,134
+flask_geolocation/geo_manager.py,sha256=HXtoNf0y6fTcG2fzxgcjzTPuoVwsj-UY9xiQu0kvDtc,2092
+flask_geolocation/ip_database.py,sha256=peLAbgbUaqisVdNT6ygFWB55ORYxJS-PikqOewQ_f0Y,4470
+flask_geolocation/timezone.py,sha256=Snd2-jrTeA2NwokGjRLLWcqB75kvnifQlU-NRW5foT4,155
+flask_geolocation/utils.py,sha256=nFVuyppeAvOvyQ-aM9dMnIbVf725XWcCQDIv8wqmi8s,420
+Flask_Geolocation-0.1.0.dist-info/LICENSE,sha256=M9D8YhPPN0SKerDtLZc2U-yJ85Nkt_MM1g15f1gOfHk,1056
+Flask_Geolocation-0.1.0.dist-info/METADATA,sha256=SNd7J6AMx64uLBddhMq_QbFJ4wSRShsf4q98dsVijHM,1852
+Flask_Geolocation-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Flask_Geolocation-0.1.0.dist-info/top_level.txt,sha256=K6Pk-HscM-atrZQ78RhVF7NDze3HZA5OAfrm6xWVlaM,18
+Flask_Geolocation-0.1.0.dist-info/RECORD,,
