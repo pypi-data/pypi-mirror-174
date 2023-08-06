@@ -1,0 +1,3 @@
+[console_scripts]
+docked=docked:entrypoint
+
