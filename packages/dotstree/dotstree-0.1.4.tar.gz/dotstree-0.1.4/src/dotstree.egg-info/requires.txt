@@ -1,0 +1,7 @@
+coloredlogs
+docopt
+metovlogs
+PyYAML
+questionary
+tabulate
+tqdm
