@@ -1,0 +1,6 @@
+argparse
+numpy
+grpcio
+pillow
+nvidia-pyindex
+tritonclient[all]
