@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: bayan-address
+Version: 0.2.1
+Summary: A Python-based address parser for Philippines
+Home-page: https://github.com/netervati/bayan_address
+Author: Christopher Tabula
+Author-email: netervati@gmail.com
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BayanAddress
+*BayanAddress* is a Python-based address parser for Philippines. It analyzes user-provided address strings and identifies the building unit, subdivision, street, barangay, city, province, and zip code. It can also identify the island group (Luzon, Visayas, and Mindanao), ISO code, and region based on its province.
+
+## Installation
+```bash
+$ python -m pip install bayan-address
+```
+
+## How to Use
+With province:
+```python
+>>> from bayan_address import parse
+>>> parse("95 JayLee Street Sofia Subdivision Del Pilar San Fernando City Pampanga 2000")
+{'province': 'Pampanga', 'iso': 'PH-PAM', 'region': 'III', 'island_group': 'Luzon', 'zip_code': '2000', 'city': 'San Fernando City', 'street': 'JayLee Street', 'building': '95', 'subdivision': 'Sofia Subdivision', 'barangay': 'Del Pilar'}
+```
+Without province:
+```python
+>>> parse("34 Avocado St., Brgy. Maligaya, Mariveles")
+{'city': 'Mariveles', 'street': 'Avocado St.', 'building': '34', 'barangay': 'Brgy. Maligaya'}
+```
