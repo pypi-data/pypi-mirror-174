@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pipe-viper"
+version = "0.1.2"
+description = "Pwsh utils for python"
+repository = "https://github.com/Phelsong/pipe_viper"
+authors = ["Josh S Wilkinson <JoshsWilkinson@Outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = ".\\pipe_viper" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.10.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
