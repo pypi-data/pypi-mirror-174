@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+zai_python/zai_python.egg-info/PKG-INFO
+zai_python/zai_python.egg-info/SOURCES.txt
+zai_python/zai_python.egg-info/dependency_links.txt
+zai_python/zai_python.egg-info/requires.txt
+zai_python/zai_python.egg-info/top_level.txt

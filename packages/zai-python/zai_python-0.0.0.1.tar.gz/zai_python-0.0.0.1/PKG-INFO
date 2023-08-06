@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: zai_python
+Version: 0.0.0.1
+Summary: A Python SDK for the Zai Payments API.
+Home-page: https://github.com/cemoh/zai-python
+Author: Matthew Clarkson
+Author-email: mpclarkson@gmail.com.com
+License: MIT
+Keywords: zai payments api sdk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# zai-python
+Python SDK for the [Zai](https://hellozai.com) Payments API
+
+This is an early stage project to build a Python 3.10+ wrapper for the [Zai API](https://developer.hellozai.com/reference/overview#overview). It is sponsored by [Cemoh](https://cemoh.com).
+
+## Contributing
+
+This is a work in progress and PRs are welcome. It is a very early stage project.
