@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "phat2fa"
+authors = [
+    { name = "iiPython", email = "ben@iipython.cf" },
+]
+description = "Simple 2FA system using USB flash drives."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Topic :: Security :: Cryptography"
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/iiPythonx/phat"
+"Bug Tracker" = "https://github.com/iiPythonx/phat/issues"
+
+[tool.hatch.version]
+path = "src/phat/__init__.py"

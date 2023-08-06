@@ -1,0 +1,6 @@
+# Hide python cache
+__pycache__/
+
+# Setup build files
+build/
+*.egg-info

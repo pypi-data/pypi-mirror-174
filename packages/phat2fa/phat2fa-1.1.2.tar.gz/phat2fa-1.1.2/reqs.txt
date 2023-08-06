@@ -1,0 +1,6 @@
+rich
+psutil
+pyudev; sys_platform == "linux" or sys_platform == "posix"
+pywin32; sys_platform == "win32"
+iipythonpy
+pycryptodome
