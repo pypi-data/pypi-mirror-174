@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jax-linear-operator
+Version: 0.0.0
+Summary: A JAX linear operator library.
+Author: Daniel Dodd
+Author-email: d.dodd1@lancaster.ac.uk
+License: LICENSE
+Keywords: jax linear-operator low-rank linear-algebra
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
