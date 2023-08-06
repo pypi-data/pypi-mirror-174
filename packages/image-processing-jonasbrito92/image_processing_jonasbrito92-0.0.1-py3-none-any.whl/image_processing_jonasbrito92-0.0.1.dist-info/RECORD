@@ -1,0 +1,11 @@
+image_processing_jonasbrito92_packcage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_processing_jonasbrito92_packcage/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_processing_jonasbrito92_packcage/processing/combination.py,sha256=WSA0YObAWhZz7liyUkqo2y5QofnRY-2GWKwtDXIsOgM,812
+image_processing_jonasbrito92_packcage/processing/transformation.py,sha256=TE7CjrzHs_ld0QB5SNS49VRFUCUvhwOFYh2_Z_-QY8Y,357
+image_processing_jonasbrito92_packcage/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_processing_jonasbrito92_packcage/utils/io.py,sha256=QfXwelp8zwI1YYs6ocwWJBJBT8kCDC-fmXT-GUtXUtE,205
+image_processing_jonasbrito92_packcage/utils/plot.py,sha256=6lnoixq7i4idrML-fFoE6Dd6XkyAMs_PUo5_GBT3dF4,1016
+image_processing_jonasbrito92-0.0.1.dist-info/METADATA,sha256=hKxQ0Rgx2GttKZLcFV9sekxr2fGRImevK2b73is1sZU,850
+image_processing_jonasbrito92-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+image_processing_jonasbrito92-0.0.1.dist-info/top_level.txt,sha256=M3JPX4oXZLNiQI_99SsVNZ2NjZop2w2mhh_j6NxdVpI,39
+image_processing_jonasbrito92-0.0.1.dist-info/RECORD,,
