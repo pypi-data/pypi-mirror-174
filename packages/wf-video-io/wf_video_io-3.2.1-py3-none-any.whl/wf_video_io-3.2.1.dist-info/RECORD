@@ -1,0 +1,12 @@
+video_io/__init__.py,sha256=rtpA9H1nGElYUo-c186Jhir7rgDUaWH21Lbr8qfLvBw,28
+video_io/client/__init__.py,sha256=onurTmrZgXNXbTBGJJcztGZAUDAN3yijj48jX6z9oH4,37
+video_io/client/core.py,sha256=rWCo4dJuWln1LLKuGu2cLeEWq1yi_-zE1b_p_L4ZDxw,12354
+video_io/client/errors.py,sha256=OoBSZpHspTt2ovC97fYvr9ra2SKWOlU-udUOu_y7nCs,265
+video_io/client/utils.py,sha256=TCHjIXW87qEHRpQS5vP8LyhYPlQrBnIXrQE_Lh3Cv-E,3319
+video_io/config.py,sha256=5nq66hKuA0-6iSAbJbbpkfHYvgcmMdnBj-O_PoZhslI,1653
+video_io/core.py,sha256=SOv4FyYj2y9ReV7yqvkWWwDK3Q1ldgRINmN_DOpEYYI,40797
+video_io/log_retry.py,sha256=ZdI-dPDD2Hghu1ZfkB95UfuV9kkx2DpmFZZXR8X6VRk,360
+wf_video_io-3.2.1.dist-info/LICENSE,sha256=8iLUYzWCy9LhcOjbBh6qrKwlbwdeh9nbDnmrotH1J3M,1088
+wf_video_io-3.2.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+wf_video_io-3.2.1.dist-info/METADATA,sha256=qrHom_Feo2-l5eBjxvXgamH4Esxgzw9Ta2ICRFU1gPg,940
+wf_video_io-3.2.1.dist-info/RECORD,,
