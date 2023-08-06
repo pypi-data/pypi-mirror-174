@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ddreport
+Version: 2.0
+Summary: pytest测试报告
+Home-page: https://gitee.com/duanliangcong/dlc_pytest-report
+Author: duanliangcong
+Author-email: 137562703@qq.com
+License: MIT Licence
+Keywords: pip,pytest,testReport
+Platform: any
+
+支持--report、--title、--tester、--desc、--project、--path、--file_sub 关键字
+
