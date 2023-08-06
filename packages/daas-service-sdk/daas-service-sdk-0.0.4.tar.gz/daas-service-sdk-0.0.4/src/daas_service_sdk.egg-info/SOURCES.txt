@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+src/daas_service_sdk/__init__.py
+src/daas_service_sdk/base_client.py
+src/daas_service_sdk/service_base_client.py
+src/daas_service_sdk.egg-info/PKG-INFO
+src/daas_service_sdk.egg-info/SOURCES.txt
+src/daas_service_sdk.egg-info/dependency_links.txt
+src/daas_service_sdk.egg-info/requires.txt
+src/daas_service_sdk.egg-info/top_level.txt
+src/daas_service_sdk/credentials/__init__.py
+src/daas_service_sdk/credentials/base_credential.py
+src/daas_service_sdk/credentials/basic_credential.py
+src/daas_service_sdk/credentials/simple_credential.py
+src/daas_service_sdk/entitlements/__init__.py
+src/daas_service_sdk/entitlements/_client.py
