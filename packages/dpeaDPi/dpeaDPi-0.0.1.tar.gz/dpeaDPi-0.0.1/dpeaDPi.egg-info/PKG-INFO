@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dpeaDPi
+Version: 0.0.1
+Summary: Python package infrastructure for DPEA's DPi boards
+Author: Stan Reifel
+License-File: LICENSE
