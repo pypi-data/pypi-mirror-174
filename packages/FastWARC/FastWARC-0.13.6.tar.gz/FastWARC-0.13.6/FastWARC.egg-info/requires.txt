@@ -1,0 +1,10 @@
+brotli
+click
+tqdm
+
+[all]
+
+[test]
+pytest
+pytest-cov
+lz4
