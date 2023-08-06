@@ -1,0 +1,6 @@
+boerse_frankfurt_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boerse_frankfurt_api/api.py,sha256=fd9flsTj9Szym8LjYhfmJ5SzFCackKxzY7vxvSb6Y1o,2207
+boerse_frankfurt_api/finanzen_zero.py,sha256=qYMketx6EILBnP2mdhuCXUseNK-zivo9WTIzdT-G9Jc,876
+boerse_frankfurt_api-1.0.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+boerse_frankfurt_api-1.0.0.dist-info/METADATA,sha256=n0wroj_AyilYWytjHM-ab_peLDJsQ5hML6msFzFEP0k,417
+boerse_frankfurt_api-1.0.0.dist-info/RECORD,,
