@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: picaf
+Version: 0.5.0
+Summary: Show the window that allows you to click filenames, which are picked up by scanning input text file.
+Home-page: https://github.com/tos-kamiya/picaf
+Author: Toshihiro Kamiya
+Author-email: kamiya@mbj.nifty.com
+License: BSD 2-Clause License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# picaf
+
+Show the window that allows you to click filenames, which are picked up by scanning input text file.
+
+A slightly similar tool is `python -m http.server`, which serves a web page including links to files in local directories.
+
+For installation instructions, please refer to the [picaf website](https://github.com/tos-kamiya/picaf).
+
+## Example of Use
+
+picaf was originally designed for use with [dendro_text](https://github.com/tos-kamiya/dendro_text), which finds the similarity of text files and creates a dendrogram.
+
+In this example, make the filenames clickable in the output of `dendro_text` so that you can investigate the content of each file with a text editor.
+
+![](https://github.com/tos-kamiya/picaf/blob/main/images/fig1.png?raw=True)
+
+
