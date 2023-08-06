@@ -1,0 +1,10 @@
+jupyter_dcv_proxy/__init__.py,sha256=9QtPSVxgR0T-IjAhrzUMmN-WwNFyDL3Q6je6g7pzltQ,1399
+jupyter_dcv_proxy/_version.py,sha256=TZCP-78vEp7AYBlnP2LyR84Yse0SplVR-RPSVM3J7T0,497
+jupyter_dcv_proxy/run-dcv-user-session.sh,sha256=Ph2pTDWjllSwZkcxonPpsRhMUQ2oZb1fxB9uoDaZXBg,181
+jupyter_dcv_proxy/icons/dcv.svg,sha256=sFxOVicmFGv88PYw3eCjwk1Ax-n23jbI11aQZPfiIWY,3946
+jupyter_dcv_proxy-3.0.0.dist-info/LICENSE,sha256=Qog2Ymsa7XGRf7fEh1Wi05CRN04Ojnz2_AeqO9qJMyw,584
+jupyter_dcv_proxy-3.0.0.dist-info/METADATA,sha256=ckRn_km74w61H8rPyiYL-BMlSvEiDEgFiE_pRYnMSq8,1701
+jupyter_dcv_proxy-3.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+jupyter_dcv_proxy-3.0.0.dist-info/entry_points.txt,sha256=ID13yDCMloJ3Z6gSptc-jFnpBnLgz6uE4h46Ei1P-xM,64
+jupyter_dcv_proxy-3.0.0.dist-info/top_level.txt,sha256=kpoAuz6qeks6osBw3bi4uz_aqHm66yT3uOQRIG6GKOw,18
+jupyter_dcv_proxy-3.0.0.dist-info/RECORD,,
