@@ -1,0 +1,114 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AngularAmbiguousComponentTag" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularCliAddDependency" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AngularInaccessibleComponentMemberInAotMode" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AngularIncorrectTemplateDefinition" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularInsecureBindingToEvent" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidAnimationTriggerAssignment" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidEntryComponent" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidI18nAttribute" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidImportedOrDeclaredSymbol" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidSelector" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidTemplateReferenceVariable" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularMissingEventHandler" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularMissingOrInvalidDeclarationInModule" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularMultipleStructuralDirectives" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularNonEmptyNgContent" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularRecursiveModuleImportExport" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularUndefinedBinding" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularUndefinedModuleExport" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularUndefinedTag" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptFunctionSignatures" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptInfiniteLoop" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptLiteralNotFunction" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptModulesDependencies" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptSillyAssignment" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptSwitchStatementWithNoDefaultBranch" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptUnusedLocalSymbols" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="68">
+            <item index="0" class="java.lang.String" itemvalue="PyJWT" />
+            <item index="1" class="java.lang.String" itemvalue="alembic" />
+            <item index="2" class="java.lang.String" itemvalue="greenlet" />
+            <item index="3" class="java.lang.String" itemvalue="Babel" />
+            <item index="4" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="5" class="java.lang.String" itemvalue="SQLAlchemy" />
+            <item index="6" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="7" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="8" class="java.lang.String" itemvalue="requests" />
+            <item index="9" class="java.lang.String" itemvalue="python-editor" />
+            <item index="10" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="11" class="java.lang.String" itemvalue="Flask-Login" />
+            <item index="12" class="java.lang.String" itemvalue="certifi" />
+            <item index="13" class="java.lang.String" itemvalue="urllib3" />
+            <item index="14" class="java.lang.String" itemvalue="itsdangerous" />
+            <item index="15" class="java.lang.String" itemvalue="Flask" />
+            <item index="16" class="java.lang.String" itemvalue="email-validator" />
+            <item index="17" class="java.lang.String" itemvalue="dnspython" />
+            <item index="18" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="19" class="java.lang.String" itemvalue="Flask-WTF" />
+            <item index="20" class="java.lang.String" itemvalue="click" />
+            <item index="21" class="java.lang.String" itemvalue="chardet" />
+            <item index="22" class="java.lang.String" itemvalue="Flask-Moment" />
+            <item index="23" class="java.lang.String" itemvalue="WTForms" />
+            <item index="24" class="java.lang.String" itemvalue="Flask-Migrate" />
+            <item index="25" class="java.lang.String" itemvalue="pytz" />
+            <item index="26" class="java.lang.String" itemvalue="Mako" />
+            <item index="27" class="java.lang.String" itemvalue="idna" />
+            <item index="28" class="java.lang.String" itemvalue="selenium" />
+            <item index="29" class="java.lang.String" itemvalue="six" />
+            <item index="30" class="java.lang.String" itemvalue="asgiref" />
+            <item index="31" class="java.lang.String" itemvalue="packaging" />
+            <item index="32" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="33" class="java.lang.String" itemvalue="pip-review" />
+            <item index="34" class="java.lang.String" itemvalue="djangorestframework-simplejwt" />
+            <item index="35" class="java.lang.String" itemvalue="django-filter" />
+            <item index="36" class="java.lang.String" itemvalue="Django" />
+            <item index="37" class="java.lang.String" itemvalue="djangorestframework" />
+            <item index="38" class="java.lang.String" itemvalue="pyparsing" />
+            <item index="39" class="java.lang.String" itemvalue="Markdown" />
+            <item index="40" class="java.lang.String" itemvalue="Pillow" />
+            <item index="41" class="java.lang.String" itemvalue="meshctrl" />
+            <item index="42" class="java.lang.String" itemvalue="qrcode" />
+            <item index="43" class="java.lang.String" itemvalue="validators" />
+            <item index="44" class="java.lang.String" itemvalue="cffi" />
+            <item index="45" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="46" class="java.lang.String" itemvalue="pycparser" />
+            <item index="47" class="java.lang.String" itemvalue="redis" />
+            <item index="48" class="java.lang.String" itemvalue="nats-py" />
+            <item index="49" class="java.lang.String" itemvalue="celery" />
+            <item index="50" class="java.lang.String" itemvalue="drf_spectacular" />
+            <item index="51" class="java.lang.String" itemvalue="daphne" />
+            <item index="52" class="java.lang.String" itemvalue="django-cors-headers" />
+            <item index="53" class="java.lang.String" itemvalue="vine" />
+            <item index="54" class="java.lang.String" itemvalue="websockets" />
+            <item index="55" class="java.lang.String" itemvalue="pyotp" />
+            <item index="56" class="java.lang.String" itemvalue="django-rest-knox" />
+            <item index="57" class="java.lang.String" itemvalue="cryptography" />
+            <item index="58" class="java.lang.String" itemvalue="uWSGI" />
+            <item index="59" class="java.lang.String" itemvalue="channels_redis" />
+            <item index="60" class="java.lang.String" itemvalue="psutil" />
+            <item index="61" class="java.lang.String" itemvalue="hiredis" />
+            <item index="62" class="java.lang.String" itemvalue="django-ipware" />
+            <item index="63" class="java.lang.String" itemvalue="channels" />
+            <item index="64" class="java.lang.String" itemvalue="future" />
+            <item index="65" class="java.lang.String" itemvalue="pycryptodome" />
+            <item index="66" class="java.lang.String" itemvalue="twilio" />
+            <item index="67" class="java.lang.String" itemvalue="msgpack" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
