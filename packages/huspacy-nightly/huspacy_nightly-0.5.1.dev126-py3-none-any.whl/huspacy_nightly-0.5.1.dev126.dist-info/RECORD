@@ -1,0 +1,13 @@
+huspacy/__init__.py,sha256=Ispzewx-1_dLMWLDYOFqUTDVAiFhB8zLyrr5lEYYVrE,3728
+huspacy/components/__init__.py,sha256=CELGxLZOhgrJ0_w3shhxJKxve4lc4g6l17ypQ_HJiY8,156
+huspacy/components/edit_tree_lemmatizer.py,sha256=HZ89Zr5tCZK251nmJgr-cE8PQiHyV4FC6T76BNfyHc8,14787
+huspacy/components/hun_sentencizer.py,sha256=mIviMRTIlM2V_a8TaA9ohqZSzbuvB4XGCmFptnxbyt8,1947
+huspacy/components/lemma_postprocessing.py,sha256=lHjPvLFoi5MXYrTnAoCpXB2VVPaOhXX2pX_-nX_rA7U,4659
+huspacy/components/lookup_lemmatizer.py,sha256=BKmWgpUo24U6UXNmyF3rhQlNkB51aBsEY4hxTgtG0qQ,5077
+huspacy/components/sentiment.py,sha256=g-squqWpGYJLqst3gH9_PhdkoQfvgw5GsiO_XFF0sLE,4063
+huspacy/resources/poltext_sentiment.json,sha256=pHx0iDx6Nl9zUuQKkdOB2hH3aXddMn-4wIZOUE9oS-Y,541963
+huspacy/resources/precognox_sentiment.json,sha256=STcuZYUMDFb5rgrcH9r39SsNl36mkG6gzqfsqIPE2TQ,791334
+huspacy/utils.py,sha256=xKc0XKlsI87ULJrSPDMERR6KwYF0J-9bJd-B0tnAyEo,2117
+huspacy_nightly-0.5.1.dev126.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+huspacy_nightly-0.5.1.dev126.dist-info/METADATA,sha256=YCTkc5q-7y_Hrxb4SlQjmRN5B1dI_n472C14DlgoU0Q,11423
+huspacy_nightly-0.5.1.dev126.dist-info/RECORD,,
