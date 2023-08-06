@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: puckfetcher
+Version: 1.5.0
+Summary: A simple command-line podcatcher.
+Home-page: https://github.com/lunemercove/puckfetcher
+Download-URL: https://github.com/lunemercove/puckfetcher/archive/v1.5.0.tar.gz
+Author: Luné Mercové
+Author-email: puckfetcher@lune.gay
+License: BSD3
+Keywords: music,podcasts,rss
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: appdirs (<2.0.0,>=1.4.4)
+Requires-Dist: clint (<0.6.0,>=0.5.1)
+Requires-Dist: feedparser (<7.0.0,>=6.0.10)
+Requires-Dist: pyyaml (<7.0.0,>=6.0)
+Requires-Dist: python-magic (<0.5.0,>=0.4.27)
+Requires-Dist: requests (<3.0.0,>=2.28.1)
+Requires-Dist: u-msgpack-python (<3.0.0,>=2.7.1)
+Requires-Dist: eyed3 (<1.0.0,>=0.9.7)
+Requires-Dist: bottilities (<2.0.0,>=1.4.0)
+
+puckfetcher
+===========
+
+A simple command-line podcatcher.
+
+GitHub Project: (https://github.com/lunemercove/puckfetcher)
+
+Supports Python 3.6+. Please report any issues on the GitHub project or reach out over email.
+
+| You’ll need setuptools (https://pypi.python.org/pypi/setuptools) to run this in its current
+| state. Go get it, clone this repo, and you can run the below commands. Should work on OSX and
+| Linux, from the command line. You’ll want a default config file, name it config.yaml and look at
+| example\_config.yaml to see how it should be structured.
+
+Directory for config file:
+
+-  OSX: /Users/[USERNAME]/Application Support/puckfetcher/config.yaml
+-  Linux: /home/[USERNAME]/.config/puckfetcher/config.yaml
+
+Build + Install:
+
+::
+
+    python3 setup.py install
+
+Test:
+
+::
+
+    python3 setup.py test
+
+Features
+--------
+-  Download any podcast with an RSS URL.
+-  Download newest episodes on demand.
+-  Download any episode from a podcast's backlog.
+-  Respects podcast authors' websites - rate limits, checks when feed was last updated when trying
+   to refresh.
+-  Provides progress on downloads.
+-  Provides summary of recently-downloaded podcasts per-session, as well as summary of
+   recently-downloaded episodes per-podcast.
+-  Add MP3 tag support to clean up tags based on feed information if it’s messy.
+
+Ideas for Future Releases
+-------------------------
+-  Text-based progress for other time-consuming actions.
+-  Support PyPy (when it supports 3.6+).
+-  Allow parallel downloading.
