@@ -1,0 +1,13 @@
+chromepilot/__init__.py,sha256=AssYh_78Pk8tS1zgW53LVIh3Fl16xTVNGDeVCA7NyGI,267
+chromepilot/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+chromepilot/api.py,sha256=htM9eXP3EQFy_9naye5hF0xRQ3DNzypbltY29Ni8rTY,1098
+chromepilot/cli.py,sha256=miqmhmN9-xQYk5G7vaxa2Pd0mbNB4vgQKV-8nIdhzHo,1772
+chromepilot/local.py,sha256=LU20a4pCY0b64Zyzn37jpWGhCIjS7W1tYwLMBRN_3sY,1907
+chromepilot/pilot.toml,sha256=lKnmIkCZqVTBpCHsKHPqb9Ijq85JCdVGk3eOxuoGAQw,874
+chromepilot/short.py,sha256=PHJDb30FCgXWuHaDGPaC6_vEzZ8iy6-xZP_Ju1jVY6U,4211
+chromepilot/utils.py,sha256=nNlBge6chGSsTXP59-_AwVcjGpxjBkw-lWIK7OEbR8k,3095
+chromepilot-0.0.6.dist-info/METADATA,sha256=TEBjrMhqGPBbl0HbzvQ3EHqHm8noFCM16vT2-vnFy4c,2565
+chromepilot-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+chromepilot-0.0.6.dist-info/entry_points.txt,sha256=aMTaJuJ29xGHssNOZma_AGMWWqXKFwg_OGr1_v3gfhc,53
+chromepilot-0.0.6.dist-info/top_level.txt,sha256=Fqp3St6Yg-Z3qUWCIZ74ZYsUfOrI2HOepqCJcTmNd8o,12
+chromepilot-0.0.6.dist-info/RECORD,,
