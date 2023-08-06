@@ -1,0 +1,11 @@
+cooler
+joblib
+matplotlib
+numpy
+opencv-python
+pandas
+pathlib
+scikit-image
+scipy
+tqdm
+typer
