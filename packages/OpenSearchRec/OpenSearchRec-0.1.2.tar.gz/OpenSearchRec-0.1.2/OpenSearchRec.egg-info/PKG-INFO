@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: OpenSearchRec
+Version: 0.1.2
+Summary: OpenSearchRec: Open Source Search and Recommendations
+Author: Sebastien L
+License: Apache 2
+Provides-Extra: models
+License-File: LICENSE
+
+OpenSearchRec: Open Source Search and Recommendations. Code: https://github.com/OpenSearchRec/OpenSearchRec
