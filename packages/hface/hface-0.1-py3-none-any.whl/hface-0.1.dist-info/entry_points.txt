@@ -1,0 +1,2 @@
+[console_scripts]
+hface = hface.cli:run
