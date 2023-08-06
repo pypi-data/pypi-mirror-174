@@ -1,0 +1,13 @@
+ghga_event_schemas/__init__.py,sha256=3YMZ6AF-CKe65ldOhq2HONn5TGgIbVT9f_1u5f7VhbI,771
+ghga_event_schemas/pydantic_.py,sha256=eYb-mmfNxRw-WcqbSaK0TzGpZi-MZy3zskxV_lUukWc,7699
+tests/fixtures/__init__.py,sha256=B8NRYuqxx35azr-Z7lqPqFCE6kJmjam2fllCtiFnLSM,726
+tests/fixtures/utils.py,sha256=HTUnv_MtSd6h7sKFtRsVjVJ9t3uLE7ovOzFTcJ9Hd9g,765
+tests/unit/__init__.py,sha256=S64JpFNMtisRR3lG-OA8fxZTMn8x-lIoRfflKp_41Tk,698
+tests/unit/test_dummy.py,sha256=B48dhL6twSI3cN19KXjCaqI3Qx5qVJpGTa9ljd-Y6JE,761
+tests/unit/fixtures/__init__.py,sha256=rAyTX1Fvk_076YUU1G7jhxJ8tiTCa3aR8FM1-VpVIFE,713
+tests/unit/fixtures/utils.py,sha256=HTUnv_MtSd6h7sKFtRsVjVJ9t3uLE7ovOzFTcJ9Hd9g,765
+ghga_event_schemas-0.5.0.dist-info/LICENSE,sha256=YsKY_Zh6a6wgZuTb7SdIeSR7Pt2BbINR3CKtptN7JLA,11428
+ghga_event_schemas-0.5.0.dist-info/METADATA,sha256=QxFKG4OyJ9cBn5dAT0PrRjaWLoQacWaRit5rp4lpzzM,3307
+ghga_event_schemas-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ghga_event_schemas-0.5.0.dist-info/top_level.txt,sha256=VmCm2GzlbUMaTzFkMgvSTU-SxH6x2UuM2xYxeJOyOYw,25
+ghga_event_schemas-0.5.0.dist-info/RECORD,,
