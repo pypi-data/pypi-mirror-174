@@ -1,0 +1,17 @@
+ImmuneBuilder/ABodyBuilder2.py,sha256=ySkdf0tQC8JVuacwQcbimxZpainB-rTRxoJh87OzBSo,7674
+ImmuneBuilder/NanoBodyBuilder2.py,sha256=ZBm-ZZomfWMK69Faueltb5j7o8WWTk3xmAFpG9ki4CY,7695
+ImmuneBuilder/TCRBuilder2.py,sha256=XtkAILnfqkPfS9Cm45LRCnhLkyAWSQmWnY2T-sgbapo,7693
+ImmuneBuilder/__init__.py,sha256=1pBnLeu8ONLKbUrubzyrgcAbH6ooop_WyDBTHU8Huls,165
+ImmuneBuilder/constants.py,sha256=-TBI9w7bclUM2odBK_sDebrKcF9jxn08a9nyGW0tRCk,17036
+ImmuneBuilder/models.py,sha256=qWBY2gqn3m9m7dMPBou_dfB0zKV-oYe0F_ZF8aZzetc,10546
+ImmuneBuilder/refine.py,sha256=-ye4pNfHHyLe6zSBiFGLkTGqhkR5NQmTSNnXs6K6YFA,9433
+ImmuneBuilder/rigids.py,sha256=lwkLo4T2kU7oMvnCMosT2GtP8TblVKitHkopxV1cnY0,12946
+ImmuneBuilder/sequence_checks.py,sha256=bbYqsNFAEp8jQ7dmLXCWBLAPHlVkfR-mPGTvgCgdtpc,1264
+ImmuneBuilder/util.py,sha256=zQMsXLRNYPBrbt94NUHXzKVcfqRjp5J51VhmU14Ilw4,4242
+ImmuneBuilder/trained_model/antibody_model_1,sha256=7O__YERXoQX-QF3MpEp2sEZgn_KsPDVTKZdGWfaIHgk,61050011
+ImmuneBuilder-0.0.1.dist-info/LICENSE,sha256=zJy6FrI5hh4PAazVVItUu0dpp1ZRcDzdrzifCHlrcsA,1531
+ImmuneBuilder-0.0.1.dist-info/METADATA,sha256=m2XjlQnFjr6I4K1-zZ7llET7lAw044os5Xcw6YiVNAU,4462
+ImmuneBuilder-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ImmuneBuilder-0.0.1.dist-info/entry_points.txt,sha256=Z11pigVTUdJvVXZsYcbJDKEowjQFQbnho-nE2Bs9QF4,221
+ImmuneBuilder-0.0.1.dist-info/top_level.txt,sha256=vqqBJSGR3Sk7--FFSFaxtvHwetGiogVk1UgrWak5POI,14
+ImmuneBuilder-0.0.1.dist-info/RECORD,,
