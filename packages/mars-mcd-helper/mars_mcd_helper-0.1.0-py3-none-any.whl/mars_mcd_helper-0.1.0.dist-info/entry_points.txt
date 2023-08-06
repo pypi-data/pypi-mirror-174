@@ -1,0 +1,3 @@
+[console_scripts]
+mars-mcd-helper=mars_mcd_helper.cli:main
+
