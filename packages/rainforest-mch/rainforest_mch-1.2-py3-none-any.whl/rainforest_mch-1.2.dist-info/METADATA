@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rainforest-mch
+Version: 1.2
+Summary: RandomForest QPE python library
+Author: Rebecca Gugerli, Daniel Wolfensberger
+Author-email: rebecca.gugerli@epfl.ch, daniel.wolfensberger@meteoswiss.ch
+License: GPL-3.0
+License-File: LICENSE
+Requires-Dist: Cython
+Requires-Dist: numpy
+Requires-Dist: netCDF4
+Requires-Dist: prompt-toolkit
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: dask
+Requires-Dist: pandas
+Requires-Dist: pyspark
+Requires-Dist: pyart-mch
+Requires-Dist: xmltodict
+Requires-Dist: pyshp
+Requires-Dist: imageio
+Requires-Dist: boto3
+Requires-Dist: pyarrow
+Requires-Dist: h5py
+Requires-Dist: pysteps
+Requires-Dist: xlrd
+Requires-Dist: opencv-python
+
+A library to compute a gauge/radar database, train a RF QPE predictor and apply it to generate QPE fields
