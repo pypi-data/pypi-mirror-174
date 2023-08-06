@@ -1,0 +1,7 @@
+data_connection/abstract_side.py,sha256=QeFuzDe21WS1dBKZKNnG9Qbt3o_nE_AzLiSFybs6wGQ,5948
+data_connection/datapoint.py,sha256=5pmB1az3ub9Epg8q9fBqP-OK9Ds8TJJ4x1qEiNVqh3s,6106
+data_connection/reader_side.py,sha256=PiaTd4qctKvFVWxHLHP4AKUcgPwNVfk9Rjf1qenK1l4,3066
+data_connection/writer_side.py,sha256=hVBih_GupWQB5xkv2MQMojWoBf8FTRJbfiiuA4-F5z8,3488
+data_connection-0.0.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+data_connection-0.0.3.dist-info/METADATA,sha256=nx9diIUHpRI5oQZAd7GLTNDdEOGDtfCJHjMqda6muaY,1570
+data_connection-0.0.3.dist-info/RECORD,,
