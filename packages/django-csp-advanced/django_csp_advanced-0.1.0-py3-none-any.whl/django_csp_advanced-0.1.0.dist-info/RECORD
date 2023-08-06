@@ -1,0 +1,14 @@
+csp_advanced/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csp_advanced/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+csp_advanced/apps.py,sha256=ONTJKH3GmwBRUdDjW8HcAINTWKIDuyksrm5QoGGYSuc,139
+csp_advanced/csp.py,sha256=OQxTwyYJ1GWAz2XT142XFmR-xvuli0G_wSdjiNXcOws,3667
+csp_advanced/middleware.py,sha256=47Yw1PEL4r6JKomol3Yq1-XWSSYLsUlFDhgJ5azDmbw,2566
+csp_advanced/models.py,sha256=BNycBTpc7yVsHcWyMT3dY06eIkWlmwVMy4rAZ8x99eY,98
+csp_advanced/tests.py,sha256=h-R__P4sJHQjw7-CsARnZ2CiRiH3CZB8yP7pnEvg4sM,11121
+csp_advanced/utils.py,sha256=jcL0gMNrcLODYCcwbm0DVmMFp3Dg6LSNSMHOAoYwcY0,1023
+csp_advanced/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+csp_advanced/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_csp_advanced-0.1.0.dist-info/METADATA,sha256=kExDMdKp5-Yv1vymkyJQlhDXaGUX5SvqB3beSePRPLE,4272
+django_csp_advanced-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_csp_advanced-0.1.0.dist-info/top_level.txt,sha256=DjhaxpOk7u0vWYKXDftv87b9xuIwnc9sHZYDfMQZ6v0,13
+django_csp_advanced-0.1.0.dist-info/RECORD,,
