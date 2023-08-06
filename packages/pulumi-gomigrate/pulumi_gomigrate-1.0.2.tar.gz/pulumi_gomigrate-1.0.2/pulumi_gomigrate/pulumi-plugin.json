@@ -1,0 +1,5 @@
+{
+  "resource": true,
+  "name": "gomigrate",
+  "server": "github://api.github.com/LuxChanLu"
+}
