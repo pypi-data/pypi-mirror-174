@@ -1,0 +1,12 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+passpy-stubs/METADATA.toml
+passpy-stubs/__init__.pyi
+passpy-stubs/exceptions.pyi
+passpy-stubs/store.pyi
+passpy-stubs/util.pyi
+types_passpy.egg-info/PKG-INFO
+types_passpy.egg-info/SOURCES.txt
+types_passpy.egg-info/dependency_links.txt
+types_passpy.egg-info/top_level.txt
