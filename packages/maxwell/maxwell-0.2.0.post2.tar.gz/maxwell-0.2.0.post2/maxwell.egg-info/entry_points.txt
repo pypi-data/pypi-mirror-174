@@ -1,0 +1,3 @@
+[console_scripts]
+maxwell-train = maxwell.train:main
+
