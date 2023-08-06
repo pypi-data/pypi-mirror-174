@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/HelpSocietyPythonAvroSchemas.egg-info/PKG-INFO
+src/HelpSocietyPythonAvroSchemas.egg-info/SOURCES.txt
+src/HelpSocietyPythonAvroSchemas.egg-info/dependency_links.txt
+src/HelpSocietyPythonAvroSchemas.egg-info/top_level.txt
+src/Schemas/UserCreatedEvent.py
+src/Schemas/__init__.py
