@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pggm-datalab-utils
+Version: 2.2
+Summary: Utilities created and used by the Datalab of PGGM
+License: MIT
+Author: Rik de Kort
+Author-email: rik.de.kort@pggm.nl
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pyodbc (>=4.0.34,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Datalab utils
+
+Well-specified utilities from the Datalab of PGGM. Our aim with this package is to provide some tooling to make our lives a bit easier.
+So far the package contains some database utilities, allowing you to connect to cloud databases using pyodbc in a standard pattern.
