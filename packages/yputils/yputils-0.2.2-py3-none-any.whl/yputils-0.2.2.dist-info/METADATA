@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: yputils
+Version: 0.2.2
+Summary: Python code segment for self using.
+Home-page: https://www.github.com/RyanLuDev/yputils
+Author: Ryan Lu
+Author-email: 156704560@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# yputils
+## yimages for image processing
+## yfile for files,dir processing
+## ypdf for pdf file processing
