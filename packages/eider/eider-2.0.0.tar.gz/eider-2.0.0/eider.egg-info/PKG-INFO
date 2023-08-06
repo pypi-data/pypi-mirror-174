@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: eider
+Version: 2.0.0
+Summary: An object-oriented, asynchronous, late-binding, web-first, polyglot RPC protocol
+Author-email: Bart Robinson <bartdrobinson@gmail.com>
+Project-URL: Homepage, https://github.com/eider-rpc/eider-py
+Project-URL: Bug Tracker, https://github.com/eider-rpc/eider-py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+eider
+=====
+
+This is the reference Python implementation of the `Eider RPC protocol
+<http://eider.readthedocs.io/>`_.
