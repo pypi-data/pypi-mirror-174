@@ -1,0 +1,11 @@
+chealpix.cp310-win_amd64.pyd,sha256=fJpQbcvIn4DtKvTEOawMoy4xxCCUt4EXiT9C_RRt-Oo,34304
+healpix/__init__.py,sha256=prJ2ftRNABsDYQ30flETLTZDp80b7YVS9nJCoPW5Zy4,5943
+healpix/test/__init__.py,sha256=Ig2IPYbMiXctHuuu7aeuUQtDZBRPiRVIFClzZU66dlc,308
+healpix/test/conftest.py,sha256=c2nKKa_FbjMLkKkMVAOIgmXq9fH174TFUbwQryu089w,1632
+healpix/test/test_chealpix.py,sha256=DBBeygzDj4vB_HbO49IYg-3Ku4uWo8zjh2vgF-M4FT4,3253
+healpix/test/test_healpix.py,sha256=fAUVT59nxcRf0Qw3xyajBU5rQyCnG5kUHml75TBwa9I,2607
+healpix-2022.11.1.dist-info/LICENSE.md,sha256=7PGoGV0aMr39YmM-zWs6Z0ynFzArNDTlNIVMkVaSt3M,1711
+healpix-2022.11.1.dist-info/METADATA,sha256=8Ha2sMoKCYg3OQdVVvdYC3_QWzTggVSyNOq19Vy9xms,2589
+healpix-2022.11.1.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+healpix-2022.11.1.dist-info/top_level.txt,sha256=-yee_hkxhhhZUDs2dtOsp98YhQvWP92jOoSOQ8Uxqh0,17
+healpix-2022.11.1.dist-info/RECORD,,
