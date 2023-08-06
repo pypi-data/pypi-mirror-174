@@ -1,0 +1,4 @@
+[console_scripts]
+ontospy = ontospy.cli:main_cli
+ontospy_quicktest = ontospy.tests.quick:main
+
