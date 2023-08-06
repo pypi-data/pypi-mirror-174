@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tdm-lmilewsk
+Version: 0.0.1
+Summary: Using Virtual Environments and creating our own packages in python
+Author-email: Lucas Milewski <lmilewsk@purdue.edu>
+Keywords: example,imdb,tutorial,VE,Virtual,Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: lxml (>=4.9.1)
+Requires-Dist: requests (>=2.28.1)
+
