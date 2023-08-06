@@ -1,0 +1,9 @@
+numpy
+pygame
+termcolor
+matplotlib
+pettingzoo
+vec_noise
+omegaconf
+gym==0.19
+scipy
