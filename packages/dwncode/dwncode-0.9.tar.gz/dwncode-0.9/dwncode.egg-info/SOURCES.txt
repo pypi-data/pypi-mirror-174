@@ -1,0 +1,7 @@
+Licence.txt.txt
+setup.py
+dwncode/__init__.py
+dwncode.egg-info/PKG-INFO
+dwncode.egg-info/SOURCES.txt
+dwncode.egg-info/dependency_links.txt
+dwncode.egg-info/top_level.txt
