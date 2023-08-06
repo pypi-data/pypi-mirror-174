@@ -1,0 +1,14 @@
+COPYRIGHT
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tox.ini
+.github/workflows/dissect-ci.yml
+dissect.egg-info/PKG-INFO
+dissect.egg-info/SOURCES.txt
+dissect.egg-info/dependency_links.txt
+dissect.egg-info/requires.txt
+dissect.egg-info/top_level.txt
