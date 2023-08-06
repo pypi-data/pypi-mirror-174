@@ -1,0 +1,82 @@
+PT_PROJECT_NAME: PractiTest project name
+PT_USER_NAME: PractiTest user name
+PT_USER_NAME_EMAIL: PractiTest user email
+PT_VERSION: Some version to be send to PractiTest
+PT_EXTERNAL_RUN_ID: Some external id source to be added in TestSet name, Jenkins job ID or look like
+# Token expected from CLI only
+#PT_USER_TOKEN: a759a50060228f2830253ded6db9e8b3142b3941
+
+OSVersion: Debian10
+
+# By default it PractiTest API URL - https://api.practitest.com/api/v2/
+PT_ENDPOINT:
+
+PT_TEST_SET_LEVEL: 0
+
+PT_FIELDS_MAP:
+  - id: &Status Status
+    default: Ready
+  - id: &Severity
+    map: tags
+    default: Medium
+  - id: &Version Version
+    variable: PT_VERSION
+  - id: &TestLevel Test level
+    default: Regression
+    map: tags
+  - id: &TestLevelFixed Test level fixed
+    name: Test level
+    default: Regression
+  - id: &Build Build
+    variable: MLP_Full_Version
+  - id: &ENV ENV
+    default: MLP
+  - id: &Created_By Created_By
+    variable: PT_USER_NAME
+  - id: &AssignedTo Assigned To
+    default: Dmitry Oguz
+    variable: PT_USER_NAME
+  - id: &OSVersion OS version
+    variable: OSVersion
+  - id: &AutomationCovering Automation Covering
+    default: Done
+  - id: &Components Components
+    default: Smoke
+    variable: SCOPE
+  - id: &Sprint Sprint
+    default: Sprint31
+  - id: &TagSs Tag/s
+    map: robot_tags
+    default: MLP
+  - id: &Tags Tags
+    map: robot_tags
+    default: MLP
+
+TAG_MAPPING:
+  TEST:
+    prefix: Test-
+  FIELD:
+    prefix: Custom-
+    delimiter: '-'
+
+TEST_FIELDS:
+#  - *Status
+#  - 'Version'
+  - 'Components'
+  - *TestLevel
+  - *TagSs
+  - 'Automation Covering'
+
+INSTANCE_FIELDS:
+  - ''
+
+TEST_SET_FIELDS:
+  - *Created_By
+  - *TestLevelFixed
+  - *TagSs
+  - *Sprint
+  - *OSVersion
+  - *Build
+  - *AutomationCovering
+  - *ENV
+  - *Components
