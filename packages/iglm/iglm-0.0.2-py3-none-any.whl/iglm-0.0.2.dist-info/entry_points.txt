@@ -1,0 +1,4 @@
+[console_scripts]
+iglm_evaluate = iglm.cli.evaluate:main
+iglm_generate = iglm.cli.full_generation:main
+iglm_infill = iglm.cli.infill:main
