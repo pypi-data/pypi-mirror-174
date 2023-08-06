@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torch_skeleton"
+version = "0.1.1"
+description = "skeleton datasets and transforms for pytorch"
+authors = [{ name = "Chanhyuk Jung", email = "urw7rs@stu.kmu.ac.kr" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">= 3.8"
+keywords = [
+    "action",
+    "recognition",
+    "pytorch",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+    "torch",
+    "einops",
+    "scipy",
+    "gdown",
+    "wget",
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov=torch_skeleton"
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["torch_skeleton", "torch_skeleton.*"]
+
+[project.optional-dependencies]
+dev = [
+    "black", 
+    "pip-tools", 
+    "pytest", 
+    "pytest-cov", 
+    "pytest-xdist",
+    "flake8",
+]
+examples = [
+    "pytorch_lightning",
+    "fvcore",
+    "wandb",
+    "rich",
+    "torch-geometric",
+    "jsonargparse[signatures]>=4.12.0",
+]
+doc = [
+    "sphinx",
+    "sphinx_rtd_theme",
+    "myst_nb"
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py37", "py38", "py39", "py310"]
