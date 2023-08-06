@@ -1,0 +1,10 @@
+tf2kerassurgeon/__init__.py,sha256=or3-WcJR2kqK9BTVafzMYpNywCKkdYNhiJkij3jK1ls,68
+tf2kerassurgeon/identify.py,sha256=vXhmrRLnAMz6jB9M2sXSbDu2BzdRiOv8v7X56yiV0Ts,4284
+tf2kerassurgeon/operations.py,sha256=P0twl9LOaICu8uGerk90aTqrAbd4ubhPJRlYOsrloZw,4207
+tf2kerassurgeon/surgeon.py,sha256=jlQyn3ooOHN2Tl0sTy588vk3Fe_6nfNfaBIbvhrG1kM,31541
+tf2kerassurgeon/utils.py,sha256=41c8ApK196OCv1Z9rbxscQ4MbUaWrdejaIFWViVMMlk,6558
+tf2_keras_surgeon-0.0.1.dist-info/LICENSE,sha256=RMJHuT7iWFRSVWPKI3-2OC_tdt07mSZ1dhscZlSVyus,1086
+tf2_keras_surgeon-0.0.1.dist-info/METADATA,sha256=Ii0FQgciyIbyI2lDPLfqJ3krcZISHFXzl2isAzUm36s,1209
+tf2_keras_surgeon-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tf2_keras_surgeon-0.0.1.dist-info/top_level.txt,sha256=C-naRCSXVtUPXIvE-zJMQs3qEWztr2I8wjJ-QBEuh74,16
+tf2_keras_surgeon-0.0.1.dist-info/RECORD,,

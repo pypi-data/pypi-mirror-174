@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tf2-keras-surgeon
+Version: 0.0.1
+Summary: A library for performing network surgery on trained tensorflow 2 keras models.
+Home-page: https://github.com/cs-jsi/tf2-keras-surgeon
+Author: Ben Whetton, Raukk, Jure Vreca
+Maintainer: Jure Vreca
+Maintainer-email: jure.vreca@ijs.si
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow
+
+# Tf2-Keras-Surgeon
+Note: This is a modification of keras-Surgeon: https://github.com/BenWhetton/keras-surgeon and 
+https://github.com/Raukk/tf-keras-surgeon/ thats been adopted for specific use. If you are interested try adopting the
+original keras-surgeon first, to see if it works for you.
+This version specifically changes some of the issues with instalation of keras-surgeon, but also has less features,
+and is in general not well tested. For additional information, please look at the repositories above.
+
