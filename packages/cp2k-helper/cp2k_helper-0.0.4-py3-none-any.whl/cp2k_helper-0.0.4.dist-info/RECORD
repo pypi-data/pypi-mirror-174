@@ -1,0 +1,10 @@
+cp2k_helper/__init__.py,sha256=qhUeYlwLu584B2eu53MChragYaxPNd-DFY7r3iT1tl0,139
+cp2k_helper/__main__.py,sha256=26BAkm077h5l8-biBxBBM9T2bxGqVLlN3kXXIM6m_UM,1296
+cp2k_helper/_version.py,sha256=-Wqu9UyJphp-2_EahEsqQvkcE0VBhm1-N7D6e5rANdY,22
+cp2k_helper/cp2k_helper.py,sha256=Xsfe4K73Pmj9pTKhHSxkg5cMpA-v5KBdqeMvh5IuqeY,12177
+cp2k_helper-0.0.4.dist-info/LICENSE,sha256=yAcxZuzXbJQs41THjpDNXhW7Bck-hS-OX46WIl9WmLA,1071
+cp2k_helper-0.0.4.dist-info/METADATA,sha256=UCNrqHABR-YRxirjraFQtlv9MRHXbU64pDfXLieb-gQ,4654
+cp2k_helper-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cp2k_helper-0.0.4.dist-info/entry_points.txt,sha256=vm0H-Ej3OP_AUy_lLLzSZ19ndYTuR7CY-NDel-AnP1A,58
+cp2k_helper-0.0.4.dist-info/top_level.txt,sha256=ZdQHCtyxuKr2cd5PB4GIyh0ZwHLjCntppuDFcRr48Ig,12
+cp2k_helper-0.0.4.dist-info/RECORD,,
