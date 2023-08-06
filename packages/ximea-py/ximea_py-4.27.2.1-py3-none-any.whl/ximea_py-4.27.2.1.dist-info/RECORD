@@ -1,0 +1,11 @@
+src/ximea/__init__.py,sha256=OqshSlFoGqmjjCIKQimhiHwX2CVABZPRluk7KiVBk3c,255
+src/ximea/libs/x32/xiArrOps.so,sha256=APkeW6hFWWbP92-cPOQX0MZAxTWCbn2oplvSWl6Dv7w,6914
+src/ximea/libs/x64/xiArrOps.so,sha256=dmLBMSS1wH9A6Jh6RT4Jm_f2AaP57Ik9c_SPVMXZxEA,7958
+src/ximea/libs/xarm32/xiArrOps.so,sha256=zTDEEIuXZ1b4xzDTBQTDydY5oOoUhZBZ-vDIHymhUWs,6828
+src/ximea/libs/xarm64/xiArrOps.so,sha256=zrBIhEbSlqYEUxmqQQffXOB8kUSTC6TUZDoXApMO_Iw,9120
+src/ximea/xi_wintypes.py,sha256=-ERLOuQ82cb4fdH-iedfbSkxYFbfkTNYKr-Omnw9zdY,231
+src/ximea/xiapi.py,sha256=4wM6TwHpfYAcNTXHorD4PP8uhGbNLjnXHq4p-bsHuyA,242357
+src/ximea/xidefs.py,sha256=QVuMbQ7PlM_nW7ugTRimA3DBYQU3cBGNCtPhPaCoMbY,114287
+ximea_py-4.27.2.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+ximea_py-4.27.2.1.dist-info/METADATA,sha256=8o92mU9a-k70lzQAjkuuvaf3DRUJ0mKjns8EU90c26U,958
+ximea_py-4.27.2.1.dist-info/RECORD,,
