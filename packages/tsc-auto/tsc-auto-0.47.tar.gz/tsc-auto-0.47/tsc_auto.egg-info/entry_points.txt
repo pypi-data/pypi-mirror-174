@@ -1,0 +1,6 @@
+[console_scripts]
+ressh = tsc_auto.ressh:main
+ta = tsc_auto.auto:main
+tkill = tsc_auto.kill:main
+tp = tsc_auto.proxy:main
+
