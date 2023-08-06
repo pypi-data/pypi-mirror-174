@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/AliHenidy/__init__.py
+src/AliHenidy/calculator.py
+src/AliHenidy.egg-info/PKG-INFO
+src/AliHenidy.egg-info/SOURCES.txt
+src/AliHenidy.egg-info/dependency_links.txt
+src/AliHenidy.egg-info/top_level.txt
