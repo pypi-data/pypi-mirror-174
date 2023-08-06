@@ -1,0 +1,3 @@
+sounddevice>=0.4.4vosk>=0.3.44
+googletrans==4.0.0-rc1
+pysimplegui>=4.60.1
