@@ -1,0 +1,9 @@
+k5test/__init__.py,sha256=F9JR4PKcsIpDMMK41xHzHSxjggeBJ0C8dycoomu4JIw,75
+k5test/_utils.py,sha256=6CWB2B94NW3vSyaPn-EwZyHXzpJNO-QtN89PoF7tMUM,3239
+k5test/realm.py,sha256=pOwbuvbhTiC93_ldTVC71iBsXASmIj_WIyrgRAEMwkg,25381
+k5test/unit.py,sha256=8EOlyFNfaiofy2EnhvUrm8HwptlkVYBxZdq9iZKuMgY,2977
+k5test-0.10.3.dist-info/LICENSE.txt,sha256=w6AkU4eA1pnBx6-ncnVC3-1DiiKIaKd20dvtshHoJgg,854
+k5test-0.10.3.dist-info/METADATA,sha256=pe8mM3UcJNTR3l60nK1XfiyVn_i4w5DDtLS-7GgTV4g,2745
+k5test-0.10.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+k5test-0.10.3.dist-info/top_level.txt,sha256=1CMV8AezgtcEBDUvO1rPtj0aFfQHTKzSQ4ovLIsMZbM,7
+k5test-0.10.3.dist-info/RECORD,,
