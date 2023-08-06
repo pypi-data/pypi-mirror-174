@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: capl-file
+Version: 1.0.3
+Summary: canoe capl file write
+Home-page: UNKNOWN
+Author: nzj
+Author-email: nzjwoaini9@gmail.com
+License: UNKNOWN
+Keywords: canoe capl
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+#  capl file write
+
+## 说明
+
+这个库是用来写入Capl文件信息的
+
+## 使用
+
+```python
+pip install capl_file
+```
+
+
+
