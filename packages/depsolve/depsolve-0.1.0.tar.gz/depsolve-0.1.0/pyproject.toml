@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "depsolve"
+version = "0.1.0"
+description = "Agnostic dependencies solver"
+authors = ["Sebastien Nicolet <snicolet95@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
