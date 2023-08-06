@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pokemon_formats"
+version = "1.0.2"
+authors = [
+  { name="David Eyal", email="dave.eyal@gmail.com" },
+]
+description = "A package for decoding and encoding pokemon showdown sets as well as uploading and retrieving teams from PokePaste."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/eyalmen/pokemon_formats"
+"Bug Tracker" = "https://github.com/eyalmen/pokemon_formats/issues"
