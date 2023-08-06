@@ -1,0 +1,7 @@
+[build-system]
+requires = [
+    "packaging",
+    "setuptools",
+    "setuptools-protobuf"
+]
+build-backend = "setuptools.build_meta"
