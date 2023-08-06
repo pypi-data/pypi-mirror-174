@@ -1,0 +1,5 @@
+PySimpleGUI
+matplotlib
+pathlib
+torch
+pyperclip

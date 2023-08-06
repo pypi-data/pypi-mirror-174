@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: batch-checkpoint-merger
+Version: 1.0.0
+Summary: Batch checkpoint merger, with a UI
+Home-page: https://github.com/
+Author: lodimas
+Author-email: lodimas123@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: license.txt
+
+Python based application to automate the creation of model checkpoint merges. Supports various interpolation models in an attempt to smooth the transition between merge steps.
