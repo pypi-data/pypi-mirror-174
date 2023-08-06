@@ -1,0 +1,13 @@
+rounder/__init__.py,sha256=PN8B7yLc2g_ny2ZToCv_KZ0lAj7g_5sRDa0QPl6OiDc,146
+rounder/rounder.py,sha256=CRhmlAZbCo4n1UDcXKVdPPrlvmwjaQev6-OZPStlGBk,13856
+rounder/tmp.py,sha256=YTG2eOjSmpkhqAovRdfsjDVwOcpszFNY1PWlvrrmyZs,319890
+rounder/tmp2.py,sha256=5BdVSMa-yrKdFcqqAjSUxV0LXDPKJvAmkCLMBDSO6do,683
+rounder/tmp22.py,sha256=tCRKXqzXp_-DsCcQHYvtUZ-vzjb3NiLZe-YBgxGVpgo,695
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=HICEbdPCMeNY9JMHHH_KTh0l1IWu0bcTyK49miWgu8s,1057
+tests/test_rounder_functions.py,sha256=3gAJQxExU5Axj8gEfE3jbxECvNQbTOtn5e_CdJ1FWl0,27524
+rounder-0.6.5.dist-info/LICENSE,sha256=9JqOUbB-npknj9qBBXpg8BvvAQH95ykgnhnUmkkTIFE,1082
+rounder-0.6.5.dist-info/METADATA,sha256=9D1-IVu1Of_w8iL4l4DJkheM0u2kyeAvbVIWOlELceU,12058
+rounder-0.6.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rounder-0.6.5.dist-info/top_level.txt,sha256=UVqQN4P7luIUM-aMBuyZ3806z1-doi_XVfiqe0l6gKc,14
+rounder-0.6.5.dist-info/RECORD,,
