@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: raichu
+Version: 0.0.1
+Summary: RAIChU
+Author: Barbara Terlouw
+Author-email: barbara.r.terlouw@gmail.com
+Requires-Dist: matplotlib
+Requires-Dist: pikachu-chem
+Requires-Dist: paras
+
+An interactive PKS/NRPS visualizer.
