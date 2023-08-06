@@ -1,0 +1,10 @@
+README.md
+setup.py
+source_converter/__init__.py
+source_converter/github_downloader.py
+source_converter/source_converter.py
+source_converter.egg-info/PKG-INFO
+source_converter.egg-info/SOURCES.txt
+source_converter.egg-info/dependency_links.txt
+source_converter.egg-info/requires.txt
+source_converter.egg-info/top_level.txt
