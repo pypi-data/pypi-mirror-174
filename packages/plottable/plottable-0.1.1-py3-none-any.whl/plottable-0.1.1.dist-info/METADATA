@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: plottable
+Version: 0.1.1
+Summary: most pretty & lovely tables with matplotlib
+Home-page: https://github.com/znstrider/plottable
+License: MIT
+Keywords: matplotlib,Visualization,tables
+Author: znstrider
+Author-email: mindfulstrider@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Matplotlib
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Dist: Pillow (>=9.2.0,<10.0.0)
+Requires-Dist: matplotlib (>=3.6.1,<4.0.0)
+Requires-Dist: numpy (>=1.23.4,<2.0.0)
+Requires-Dist: pandas (>=1.5.1,<2.0.0)
+Project-URL: Repository, https://github.com/znstrider/plottable
