@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+useful_functions_easier_life/LICENSE
+useful_functions_easier_life/README.MD
+useful_functions_easier_life/__init__.py
+useful_functions_easier_life/requirements.txt
+useful_functions_easier_life/thirdparty.json
+useful_functions_easier_life.egg-info/PKG-INFO
+useful_functions_easier_life.egg-info/SOURCES.txt
+useful_functions_easier_life.egg-info/dependency_links.txt
+useful_functions_easier_life.egg-info/requires.txt
+useful_functions_easier_life.egg-info/top_level.txt

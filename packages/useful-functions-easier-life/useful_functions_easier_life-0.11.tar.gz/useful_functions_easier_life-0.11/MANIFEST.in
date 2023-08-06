@@ -1,0 +1,4 @@
+include useful_functions_easier_life/requirements.txt
+include useful_functions_easier_life/thirdparty.json
+include useful_functions_easier_life/README.MD
+include useful_functions_easier_life/LICENSE
