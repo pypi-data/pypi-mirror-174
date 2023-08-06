@@ -1,0 +1,3 @@
+[console_scripts]
+web3cli=web3cli.main:main
+
