@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: judyb
+Version: 0.0.4
+Summary: A pure Python judyb module.
+Home-page: https://sr.ht/~cedric/judyb
+Author: Cédric Bonhomme
+Author-email: cedric@cedricbonhomme.org
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8,<3.11
+License-File: COPYING
+
+# judyb
+
