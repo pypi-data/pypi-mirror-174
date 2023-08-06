@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: atol-client
+Version: 1.14.6
+Summary: Client for ATOL POS API
+Home-page: https://github.com/sir-go/atol-client
+Author: Sergei Michenko
+Author-email: mserg@tih.ru
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+[![Tests](https://github.com/sir-go/atol-client/actions/workflows/python-tests.yml/badge.svg?branch=main)](https://github.com/sir-go/atol-client/actions/workflows/python-tests.yml)
+
+## Web Client Lib for [ATOL POS](https://www.atol.ru/catalog/pos-sistemy) terminal
+
+A small library - client for ATOL API
+
+### Implemented functions
+
+ - buy
+ - buyCorrection
+ - buyReturn
+ - cashIn
+ - cashOut
+ - changeRegistrationParameters
+ - closeArchive
+ - closeShift
+ - continuePrint
+ - fnChange
+ - getDeviceInfo
+ - getDeviceStatus
+ - getFnInfo
+ - getRegistrationInfo
+ - getShiftStatus
+ - nonFiscal
+ - ofdExchangeStatus
+ - openShift
+ - registration
+ - reportOfdExchangeStatus
+ - reportX
+ - sell
+ - sellCorrection
+ - sellReturn
+
+### Install
+```bash
+pip install atol-client
+```
+
+### Tests
+```bash
+pip install -r requirements.txt
+flake8 . --show-source --statistics && python -m pytest .
+```
+
+### Usage
+```python
+from atol import WebClient
+
+if __name__ == '__main__':
+    atol = WebClient("http://atol-host")
+    print(atol.get_shift_status())
+```
