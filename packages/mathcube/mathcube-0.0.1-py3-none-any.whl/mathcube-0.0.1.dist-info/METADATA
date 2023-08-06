@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mathcube
+Version: 0.0.1
+Summary: Collection of useful Python tools
+Home-page: https://github.com/mathcube7/mathcube
+Author: mathcube
+Author-email: mathcube7@gmail.com
+License: None
+Platform: ALL
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: sympy
+Requires-Dist: IPython
+
+UNKNOWN
+
