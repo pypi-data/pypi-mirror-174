@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "xmlsession"
+version = "0.1.0"
+description = ""
+authors = ["Kalle R. Aagaard <git@k-moeller.dk>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/KalleDK/py-xmlsession"
+repository = "https://github.com/KalleDK/py-xmlsession"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
