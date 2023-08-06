@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awsipenum"
+version = "0.1.7"
+authors = [
+  { name="Steve Melo", email="momelod@gmail.com" },
+]
+description = "List your AWS IPs"
+readme = "README.md"
+requires-python = ">=2.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Repository" = "https://github.com/momelod/awsipenum"
