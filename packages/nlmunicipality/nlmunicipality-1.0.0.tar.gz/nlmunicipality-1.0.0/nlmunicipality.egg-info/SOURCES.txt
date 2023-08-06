@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+nlmunicipality/__init__.py
+nlmunicipality/guess.py
+nlmunicipality.egg-info/PKG-INFO
+nlmunicipality.egg-info/SOURCES.txt
+nlmunicipality.egg-info/dependency_links.txt
+nlmunicipality.egg-info/requires.txt
+nlmunicipality.egg-info/top_level.txt
