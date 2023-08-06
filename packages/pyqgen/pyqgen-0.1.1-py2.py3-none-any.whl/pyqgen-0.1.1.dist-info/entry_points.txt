@@ -1,0 +1,2 @@
+[console_scripts]
+pyqgen = pyqgen.pyqgen:main
