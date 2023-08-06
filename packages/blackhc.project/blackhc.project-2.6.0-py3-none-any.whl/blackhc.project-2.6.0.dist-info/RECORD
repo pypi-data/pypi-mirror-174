@@ -1,0 +1,13 @@
+blackhc/project/__init__.py,sha256=6S6vlo_-CHYjPWYxt4j0m_g1-RllVkJ6EA0CmHYtu6w,2705
+blackhc/project/experiment.py,sha256=VB0tnx7skB-IUcm3wG3pEVnHTeIGoiHq2CXoaI1mOGI,6247
+blackhc/project/script.py,sha256=9GeXBS4T3RO-ClfsN0PJoJ3bGkohFCoi2XyL49UnHCg,223
+blackhc/project/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blackhc/project/utils/context_stopwatch.py,sha256=7SK2FxMJIOwNKJooX3mg3tnxr_jJpwa-esB8WMK8r2c,561
+blackhc/project/utils/cpu_memory.py,sha256=7_wxnsJ2OR_7jM4yQ2fFW9sUNOZHWjtFFtD70jST2_U,1181
+blackhc/project/utils/ignite_progress_bar.py,sha256=bIcrhza6f8ytStlnmcvcBreOKgjk-rFrXaOSOLzGx0Y,1332
+blackhc/project/utils/torch_cuda_memory.py,sha256=PY6BJDj3kfa0A_cJAXmB7Px5Gcg1Quq40OWT6C4LTfY,2313
+blackhc.project-2.6.0.dist-info/LICENSE,sha256=436LZaw2OTccJJe1Fyr7e_Lt6Ezlw7otBdEPF2ZxJ3w,1079
+blackhc.project-2.6.0.dist-info/METADATA,sha256=aU7HHUKoejXU8tq0SmbLHAjJyYJvikXrKQoykT6tCA8,1846
+blackhc.project-2.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+blackhc.project-2.6.0.dist-info/top_level.txt,sha256=Z8CUDBYL_mY_m6YBlqTlrMCH90ZFieVu0dtfEZQmgkc,8
+blackhc.project-2.6.0.dist-info/RECORD,,
