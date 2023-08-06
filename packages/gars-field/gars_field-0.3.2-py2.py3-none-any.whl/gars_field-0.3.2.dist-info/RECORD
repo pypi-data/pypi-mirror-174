@@ -1,0 +1,11 @@
+gars_field/__init__.py,sha256=WTxI9vCtxeGQvFcsKEoYP0kZ2cAwv9NG0LwbnLb2BAU,286
+gars_field/edgarsgrid.py,sha256=n0ULGZS9moHgrS8-yYY8dNyALqx5dXQYuU4v4sYcoPo,8293
+gars_field/field.py,sha256=C52c3O4qCrrvGy1vJVwJwds_rW1SCw5LTN6q6-w6-XA,14526
+gars_field/garsgrid.py,sha256=Kufr2R9UANDESJKiMwxe3g8UT2ARl0l18AumFtbAsE8,15107
+gars_field/gedgarsgrid.py,sha256=55B-7L4r-TwUEo4e2btzluBE7U2s7RufowM5o0aJDBY,6370
+gars_field/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gars_field-0.3.2.dist-info/LICENSE,sha256=GuNyx0juCzmKVh6INM7kCJumIHbX1pZF3_HCOs9WC7U,1522
+gars_field-0.3.2.dist-info/METADATA,sha256=wUluiDIoPT0zzgbhuUZGi1ZX5Ttmm21hh2XGwswdSDw,5600
+gars_field-0.3.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+gars_field-0.3.2.dist-info/top_level.txt,sha256=E4JiUtp4yuKyEgG77JDyAaX2rE8lU81WrFtsBPS85yg,11
+gars_field-0.3.2.dist-info/RECORD,,
