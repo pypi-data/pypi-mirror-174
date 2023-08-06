@@ -1,0 +1,9 @@
+trytond_carrier<6.7,>=6.6
+trytond_currency<6.7,>=6.6
+trytond<6.7,>=6.6
+
+[test]
+proteus<6.7,>=6.6
+trytond_purchase_shipment_cost<6.7,>=6.6
+trytond_sale_shipment_cost<6.7,>=6.6
+trytond_stock_shipment_cost<6.7,>=6.6
