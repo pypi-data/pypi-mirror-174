@@ -1,0 +1,3 @@
+[console_scripts]
+kindtool = kindtool.__main__:main
+
