@@ -1,0 +1,9 @@
+aws_solutions_constructs/aws_kinesis_streams_gluejob/__init__.py,sha256=zYzNmJEz-jKs5roAiUd6ELSj5sXoaDnI-r9rZ23IMEE,39190
+aws_solutions_constructs/aws_kinesis_streams_gluejob/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_solutions_constructs/aws_kinesis_streams_gluejob/_jsii/__init__.py,sha256=kI5WFnysFz1laDzjltsh9UXfskg6rVy_jVT5D25FlLE,503
+aws_solutions_constructs/aws_kinesis_streams_gluejob/_jsii/aws-kinesisstreams-gluejob@2.27.0.jsii.tgz,sha256=oOGQe3Ix9ofr7IIQ8r4g-_BLm0aBk4P5a335uspWxOc,109436
+aws_solutions_constructs.aws_kinesis_streams_gluejob-2.27.0.dist-info/LICENSE,sha256=wnT4A3LZDAEpNzcPDh8VCH0i4wjvmLJ86l3A0tCINmw,10279
+aws_solutions_constructs.aws_kinesis_streams_gluejob-2.27.0.dist-info/METADATA,sha256=1hkokrrAZRU9vVxqE3Dw2RfL9gMBrRH882uSy06gd8I,12900
+aws_solutions_constructs.aws_kinesis_streams_gluejob-2.27.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_solutions_constructs.aws_kinesis_streams_gluejob-2.27.0.dist-info/top_level.txt,sha256=hi3us_KW7V1ocfOqVsNq1o3w552jCEgu_KsCckqYWsg,25
+aws_solutions_constructs.aws_kinesis_streams_gluejob-2.27.0.dist-info/RECORD,,
