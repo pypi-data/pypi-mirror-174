@@ -1,0 +1,11 @@
+biomage_programmatic_interface/__init__.py,sha256=dRoFjEo9ijS7m_4DpDn2uX6xelZhuepoIAmN-ny6J2Y,64
+biomage_programmatic_interface/config.json,sha256=nNp93QCRVMEQ9_LrJLR857-cvNcQOQ05aq6ZrTwSVHo,262
+biomage_programmatic_interface/connection.py,sha256=thjCkVo04HQ9Ap6_ecBh4WwVmrpoD6luwRjujDIJgHA,3541
+biomage_programmatic_interface/sample.py,sha256=Q7pEH8hkKTomEhutQjbuuN_OSS6aMJjJPIssPGObFqU,1621
+biomage_programmatic_interface/sample_file.py,sha256=_42dw6Ap8vhZW9zEsXD04Y-rVMFsq5jGeHKJgY5iKyE,2023
+biomage_programmatic_interface/utils.py,sha256=6scwfG66_lcFHCNRSK--b5YIeZs1q9dvOTy1b2eVvt4,274
+biomage_programmatic_interface-0.0.10.dist-info/LICENSE,sha256=nq_pZ80unUx778AStVNQ1No5xGy04i7RK4d6BSn2JLg,1074
+biomage_programmatic_interface-0.0.10.dist-info/METADATA,sha256=ID8QtUe4gWdF6N1NjumU5Cb-ew4ImhfmZwhl38Myiyk,2234
+biomage_programmatic_interface-0.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+biomage_programmatic_interface-0.0.10.dist-info/top_level.txt,sha256=cFGmWpkAIW333RD6BA6ParT6Z6xoFR-YDIey96v0f_Q,31
+biomage_programmatic_interface-0.0.10.dist-info/RECORD,,
