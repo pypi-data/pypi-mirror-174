@@ -1,0 +1,2 @@
+[console_scripts]
+ffs_analysis = pyintegrity.API579
