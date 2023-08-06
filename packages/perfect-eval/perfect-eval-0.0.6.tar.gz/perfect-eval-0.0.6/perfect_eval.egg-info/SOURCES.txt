@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+perfect_eval/__init__.py
+perfect_eval/__version__.py
+perfect_eval/eval.py
+perfect_eval.egg-info/PKG-INFO
+perfect_eval.egg-info/SOURCES.txt
+perfect_eval.egg-info/dependency_links.txt
+perfect_eval.egg-info/top_level.txt
