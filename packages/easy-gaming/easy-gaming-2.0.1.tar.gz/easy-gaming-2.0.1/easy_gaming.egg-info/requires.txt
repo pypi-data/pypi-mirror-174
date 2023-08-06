@@ -1,0 +1,5 @@
+mouse
+pynput
+python-time
+screeninfo
+winsound
