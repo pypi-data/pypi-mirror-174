@@ -1,0 +1,11 @@
+CV_Robot/__init__.py,sha256=50fdtUsXfQufQrKG33n9ak51bAYW20mviMf9YeD-wMI,592
+CV_Robot/opencv_api.py,sha256=xzXvpUutO2TM3d-XEtLb51W9VF85hZjlUrWvtaeYHjs,4683
+CV_Robot/robot.py,sha256=JyNLyTt_FTX-ZY03cuug_IeU8GMV-LXVSKBLdRACx6Q,1131
+CV_Robot/vision.py,sha256=teUw7QSOKuf5fHJ2VMnfFnchR0vyhuyVt2eoYEQEGEA,4648
+CV_Robot/Models/Yolo v3/yolov3.cfg,sha256=HQ32D7xilsI6ZD1iziyMr0aEOw6ffA0oUM49o8BSCIA,8340
+CV_Robot/Models/Yolo v3/yolov3.names,sha256=M8d3YeEkzHSRE0aGXjvBIZuHwtt9DxBuM3a_XvN4WTM,624
+CV_Robot-0.2.0a3.dist-info/LICENSE,sha256=6eKzvdTwp95RHSq8HNfDYDFEYHk8Nqzkljec94qfz0w,1054
+CV_Robot-0.2.0a3.dist-info/METADATA,sha256=2b7lHU43p6ABxcN8kLpLCFnFzLQrljgBD1uFWmRCr4Y,2193
+CV_Robot-0.2.0a3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CV_Robot-0.2.0a3.dist-info/top_level.txt,sha256=ObMmeZ1RPLZ0q0rBNXJi923sZnPQIJ41FGZKMN_Z81o,9
+CV_Robot-0.2.0a3.dist-info/RECORD,,
