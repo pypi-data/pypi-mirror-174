@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: strike-api
+Version: 0.1.2
+Summary: 
+Author: Thomas Cross
+Author-email: tom.bz2@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# strike-python
+A python client for the https://strike.me API
+
+### Developer Documentation
+
+[Install Poetry](https://python-poetry.org/docs/#installation)
+```
+python -m pip install --upgrade pip
+pip install poetry
+poetry install
+```
+
+## Build Docs
+poetry run sphinx-apidoc -F -o ./docs ../strike_api
+poetry run make clean && poetry run make html
