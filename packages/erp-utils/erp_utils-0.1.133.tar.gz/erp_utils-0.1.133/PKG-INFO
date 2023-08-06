@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: erp_utils
+Version: 0.1.133
+Summary: This package contains modules shared between erp microservices
+Author: Antoine Wood
+Author-email: antoine@thefurnitureguys.ca
