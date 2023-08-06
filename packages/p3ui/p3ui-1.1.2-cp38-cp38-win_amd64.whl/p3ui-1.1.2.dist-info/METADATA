@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: p3ui
+Version: 1.1.2
+Summary: Async Python User Interface Library
+Home-page: https://github.com/0lru/p3ui
+Author: 0lru
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Project
+
+![Build](https://github.com/0lru/p3ui/workflows/Build/badge.svg)
+[![PyPI version](https://badge.fury.io/py/p3ui.svg)](https://badge.fury.io/py/p3ui)
+
+This is a combination of [ImGui](https://github.com/ocornut/imgui), [ImPlot](https://github.com/epezent/implot)
+and [Skia](https://skia.org/). It can be used as a C++ library or out of Python
+through a [Skia python binding](https://github.com/kyamagu/skia-python) with 
+[Pybind11](https://github.com/pybind/pybind11)
+
+Goals and Features:
+* Hardware-accelerated rendering through DirectX 12
+* Asynchronous, lock-free API
+* Plot with ImPlot or a Matplotlib-backend
+* Builtin Image viewer, virtual keyboard ..
+
+[ImGui Elements](python/gallery) | [Matplotlib Integration](p3ui/example/matplotlib)                                   
+:-------------------------|:-----------------------------------------------------------------------------
+![widgets](https://raw.githubusercontent.com/0lru/p3ui/main/doc/scr0.png)  | ![matplotlib](https://raw.githubusercontent.com/0lru/p3ui/main/doc/scr1.png) |
+**[ImPlot](p3ui/example/gallery)** | **[Flexible](p3ui/example/gallery)**                                                |
+![widgets](https://raw.githubusercontent.com/0lru/p3ui/main/doc/scr2.png)  | ![matplotlib](https://raw.githubusercontent.com/0lru/p3ui/main/doc/scr3.png) 
+**[SVG](p3ui/example/canvas)** | **[Image Viewer](p3ui/example/gallery)**                                            |
+![svg](https://raw.githubusercontent.com/0lru/p3ui/main/doc/scr4.png) | ![Image Viewer](https://raw.githubusercontent.com/0lru/p3ui/main/doc/scr5.png)        |
+
+# Installation
+
+> pip install p3ui
+> 
+
+# Hello World
+
+```python
+from p3ui import *
+
+
+async def main():
+    window = Window(title='Hello World!')
+    
+    window.user_interface.content = Row(
+        justify_content=Justification.SpaceAround,
+        align_items=Alignment.Center,
+        children=[Text('Hello'), Text('World')])
+    
+    await window.closed
+
+    
+run(main())
+```
