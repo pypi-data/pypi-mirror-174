@@ -1,0 +1,11 @@
+sica/__init__.py,sha256=A3h-nfLkgOLjINK8gMGcKyeSE91GFx912YK-YYRj2ck,72
+sica/_whitening.py,sha256=lf7FiKvxKVCV_Td49eW1TjNZVQq7_j1cOrFtFnpe178,5909
+sica/base.py,sha256=UAwXSiNQ5Iu_LiD8KLSpBW6ispX_2UZcrVXsvjwvnYs,36740
+sica/mutualknn.py,sha256=FfFzVE5Lr9DMoUyCmCkGiUzSC6pwqBA1oK7JfC6-vm4,17397
+tests/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+tests/test_StabilizedICA.py,sha256=jAeBWDVsKkebgLHqMvRDHS8tKWuIrM21qY_qKwC1D_8,14760
+stabilized_ica-2.0.0.dist-info/LICENSE,sha256=LyChJdtpm02DcKyDiLjwsHPfF6txyiztf_5v3pMOcWg,1175
+stabilized_ica-2.0.0.dist-info/METADATA,sha256=sHFK8UbrHBP11VzP2fIXVR4hdfUip31DSmn4Hpv_NK0,7679
+stabilized_ica-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stabilized_ica-2.0.0.dist-info/top_level.txt,sha256=zyiE8q0XgbevEynggfqi9oAlIc-UFZ7k8pkDYjrYIlQ,11
+stabilized_ica-2.0.0.dist-info/RECORD,,
