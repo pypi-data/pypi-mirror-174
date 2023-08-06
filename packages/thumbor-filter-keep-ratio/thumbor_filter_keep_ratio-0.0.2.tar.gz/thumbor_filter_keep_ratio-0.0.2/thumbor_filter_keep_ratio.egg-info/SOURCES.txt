@@ -1,0 +1,8 @@
+README.md
+setup.py
+thumbor_filter_keep_ratio/__init__.py
+thumbor_filter_keep_ratio/keep_ratio.py
+thumbor_filter_keep_ratio.egg-info/PKG-INFO
+thumbor_filter_keep_ratio.egg-info/SOURCES.txt
+thumbor_filter_keep_ratio.egg-info/dependency_links.txt
+thumbor_filter_keep_ratio.egg-info/top_level.txt
