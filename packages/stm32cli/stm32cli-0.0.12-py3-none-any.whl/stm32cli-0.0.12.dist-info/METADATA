@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: stm32cli
+Version: 0.0.12
+Summary: STM32 CLI
+Author: loye (PHUC LOI)
+Author-email: phucloi97@hotmail.com
+Keywords: stm32,cli,bootloader
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial
+Requires-Dist: colorama
+Requires-Dist: click
+
+
+# STM32 CLI
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+Work with version 0.0.12
+
+- Reading Flash
+- Erase Flash
+
+## Features
+
+- Communicate Bootloader STM32 custom
+- Test Led Function
+- Read BootLoader Version, Name
+- Read, Write, Erase internal Flash STM32
+- Coming soon Write Firmware, Test Firmware, Update Firmware, Rolling Back Old Version, ...

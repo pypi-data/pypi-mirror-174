@@ -1,0 +1,12 @@
+stm32cli/__init__.py,sha256=-NC_3TOtscM2SWV1VqZ_sOThx1vLcLGZRy98f9oln6g,26
+stm32cli/__main__.py,sha256=1n01EKj1vEnNsQ0Zz0plPkToHSjwjjGN5eb_GffmLn8,2751
+stm32cli/boot.py,sha256=A7I0npa_MxAytpDVHhwsqp34GWOXeaLoxBaj3ZLLqlA,4359
+stm32cli/bsp.py,sha256=fQpbyRGsth9HJlzyRs2cCwmz66MqERcdI-jHNRclW1k,121
+stm32cli/cmd.py,sha256=uSXew8F1s1Vt9Vs1yCMY_8Y7ewuQ-sDwVTY5rUY3AZk,5206
+stm32cli/uart.py,sha256=ajGxF4rCyst4nzs25lA75UhojFZbwtg924YdUUff68w,666
+stm32cli-0.0.12.dist-info/LICENSE,sha256=wjDwU6ZvNDJv8Qimbav1_U-R3L8OZVGBxA9YHWouveg,1048
+stm32cli-0.0.12.dist-info/METADATA,sha256=6M-Amtp6gShTdrpTb7uSiOnt18HDAy1ZhH78M_7IY64,1004
+stm32cli-0.0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stm32cli-0.0.12.dist-info/entry_points.txt,sha256=q9AYYrq1YhRyokq6K_cRL376SK1DyjA8f2pxVCj-zt8,43
+stm32cli-0.0.12.dist-info/top_level.txt,sha256=kXmb6WGx6mDrLi3YVstAPdRE4ffg44eObppwNPRk4Lw,9
+stm32cli-0.0.12.dist-info/RECORD,,
