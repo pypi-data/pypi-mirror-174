@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+pytest
+dill
+openpyxl
+nrelpy
+unyt
+pyomo
+
+[doc]
+sphinx>=5.1
+myst-parser
+sphinx_design
+sphinx-autodoc-typehints
+numpydoc
+pydata_sphinx_theme

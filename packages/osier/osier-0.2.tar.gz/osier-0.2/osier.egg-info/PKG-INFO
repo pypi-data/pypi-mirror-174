@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: osier
+Version: 0.2
+Summary: osier: A justice oriented energy system optimization tool
+Home-page: https://osier.readthedocs.io/en/latest/
+Download-URL: http://github.com/arfc/osier
+Author: Samuel Dotson
+Author-email: sgd2@illinois.edu
+Maintainer: Samuel Dotson
+Maintainer-email: samgdotson@gmail.com
+License: BSD-3
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires: numpy
+Requires: pandas
+Requires: matplotlib
+Requires: pytest
+Requires: dill
+Requires: openpyxl
+Requires: nrelpy
+Requires: unyt
+Requires: pyomo
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
+Provides-Extra: doc
+License-File: LICENSE
+
+# osier
+/ˈōZHər/ <br>
+Open source multi-objective energy system framework
+
+[![Build Status](https://github.com/arfc/osier/actions/workflows/CI.yml/badge.svg)](https://github.com/arfc/osier/actions/workflows/CI.yml)
+[![Documentation Status](https://readthedocs.org/projects/osier/badge/?version=latest)](https://osier.readthedocs.io/en/latest/?badge=latest)
+
+
+
+## Installation
+
+`osier` is available through [PyPI](https://pypi.org/project/osier/). It may be installed with 
+```bash
+pip install osier
+``` 
+or by cloning this repository and building from source:
+
+```bash
+git clone git@github.com:arfc/osier.git  # requires ssh-keys
+# or
+git clone https://github.com/arfc/osier.git
+cd osier
+# for a basic installation
+pip install .
+# to also install the documentation dependencies
+pip install .[doc]
+```
+
+## Documentation
+The documentation for `osier` can be viewed [here](https://osier.readthedocs.io/en/latest/). 
+You can also build the docs locally with:
+
+```bash
+cd osier/docs
+make html
+cd build/html
+# to serve the documentation
+python -m http.server
+```
+
+## Tests
+`osier`'s tests can be run by executing `pytest` in the top-level directory 
+of `osier`.
+
+
+## Contributing
+
+Contributions to `osier` are welcome. For details on how to make bug reports, pull requests, and other information, check the [contributing page](docs/source/contrib.md).
+
+
+## Credits
+Some of the documentation infrastructure was inspired by and borrowed from the [`watts` documentation](https://watts.readthedocs.io/en/latest/index.html).
