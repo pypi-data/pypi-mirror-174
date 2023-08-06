@@ -1,0 +1,12 @@
+segment_reshape/__init__.py,sha256=gE9GI5iFyMEUmgWqYdsRKBVSd9lsxZvSpzoj95iy-t4,867
+segment_reshape/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segment_reshape/geometry/__init__.py,sha256=iqekWQmKBOhtZX0ZBo-i8dErOylgeieMX7kchISobew,843
+segment_reshape/geometry/reshape.py,sha256=vKQERMSaoLzBolKBgWPhPbz2esL8L7CLkeuxWvOBz7Q,8110
+segment_reshape/topology/__init__.py,sha256=iqekWQmKBOhtZX0ZBo-i8dErOylgeieMX7kchISobew,843
+segment_reshape/topology/find_related.py,sha256=XTT4H8y7DkFL0s2TtkkQ7HwKXoLcbeFbBaXqKp9mqJE,11659
+segment_reshape/utils/__init__.py,sha256=1VhmbtFz9X48AfnwRsdBdsqqPDP9AUmVz-6CJ6gcB_U,1376
+segment_reshape_qgis_plugin-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+segment_reshape_qgis_plugin-0.0.1.dist-info/METADATA,sha256=p0QNqrZ8xyCeru7Y7cDDuUqWZjZuZCBHsTnG5ZIFHMQ,3220
+segment_reshape_qgis_plugin-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+segment_reshape_qgis_plugin-0.0.1.dist-info/top_level.txt,sha256=KmoJropgtJO1bV6uXJlURefCsJq-b6fEGgz41A50APg,16
+segment_reshape_qgis_plugin-0.0.1.dist-info/RECORD,,
