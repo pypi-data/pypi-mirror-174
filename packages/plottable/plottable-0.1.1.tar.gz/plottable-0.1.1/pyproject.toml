@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "plottable"
+version = "0.1.1"
+description = "most pretty & lovely tables with matplotlib"
+authors = ["znstrider <mindfulstrider@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/znstrider/plottable"
+repository = "https://github.com/znstrider/plottable"
+keywords = ["matplotlib",
+            "Visualization",
+            "tables"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Framework :: Matplotlib",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.6.1"
+numpy = "^1.23.4"
+pandas = "^1.5.1"
+Pillow = "^9.2.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+Sphinx = "4.5.0"
+myst-nb = "^0.17.1"
+sphinx-autobuild = "^2021.3.14"
+sphinx-book-theme = "^0.3.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
