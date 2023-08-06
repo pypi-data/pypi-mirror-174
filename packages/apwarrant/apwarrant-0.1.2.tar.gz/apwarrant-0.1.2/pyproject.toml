@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools", "versioneer"]
+
+[tool.bandit]
+exclude_dirs = [
+    "warrant/tests",
+    "versioneer.py",
+    "warrant/_version.py"
+]
