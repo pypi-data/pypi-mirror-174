@@ -1,0 +1,16 @@
+{
+  "description": "POST request to modify a document. Only protect/unprotect is possible",
+  "type": "object",
+  "properties": {
+    "comment": { "$ref": "entities/comment.json" },
+    "document": {
+      "properties": {
+        "protected": { "type": "boolean" }
+      },
+      "required": ["protected"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["document", "comment"],
+  "additionalProperties": false
+}

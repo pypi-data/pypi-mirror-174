@@ -1,0 +1,12 @@
+{
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "lang": { "enum": ["fr", "de"] }
+      },
+      "required": ["lang"]
+    }
+  },
+  "required": ["data"]
+}
