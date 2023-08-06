@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: apkcat
+Version: 0.0.7
+Summary: apkcat
+Home-page: https://github.com/apkcat/apkcat
+Author: JunWei Song
+Author-email: sungboss2004@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: prettytable
+Requires-Dist: androguard (==3.4.0a1)
+Requires-Dist: click
+
+# apkcat
