@@ -1,0 +1,8 @@
+README.md
+setup.py
+tboulet_test_package890/__init__.py
+tboulet_test_package890/file1.py
+tboulet_test_package890.egg-info/PKG-INFO
+tboulet_test_package890.egg-info/SOURCES.txt
+tboulet_test_package890.egg-info/dependency_links.txt
+tboulet_test_package890.egg-info/top_level.txt
