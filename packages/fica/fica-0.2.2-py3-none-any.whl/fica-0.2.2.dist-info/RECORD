@@ -1,0 +1,12 @@
+fica/__init__.py,sha256=Pha_lPPBxerbLyDGbWsPui2cdYb1WV1ooElSwAKrj6E,260
+fica/config.py,sha256=lyFTCn9eSXR3rIT7vGiynJGUcN4wddC7ll_Ohle6eaM,6093
+fica/exporter.py,sha256=hcdIJHbJz1N56guwfYV1qpEyOxX8LVIDOrzxEHnMcRQ,7269
+fica/key.py,sha256=RVIijvWjnuSdrL8b4jmngrG531mR-kRtT7_QNV9ZkgY,7616
+fica/sphinx.py,sha256=TFaVBZTt0quzBvtk-OhViAs9Yuv7SwhoSIPbtE8q3F0,2399
+fica/validators.py,sha256=Ec-T9xD2TBAvA0zFvtOL6GCJd79XfmFp3KubGEJHk4Y,2450
+fica/version.py,sha256=m6kyaNpwBcP1XYcqrelX2oS3PJuOnElOcRdBa9pEb8c,22
+fica-0.2.2.dist-info/LICENSE,sha256=L1dZCS_9x3ootDZDcqmfeaFaeW79MkrlIMhGKSpJw_k,1074
+fica-0.2.2.dist-info/METADATA,sha256=0LO4ccUBk5V6oppKgQnWZFONyoA2AIpy1SzY7_RzXd4,1559
+fica-0.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fica-0.2.2.dist-info/top_level.txt,sha256=M-Byn9MKt3bod602VasFGzio5O7-m0s0bujRpNcBJNc,5
+fica-0.2.2.dist-info/RECORD,,
