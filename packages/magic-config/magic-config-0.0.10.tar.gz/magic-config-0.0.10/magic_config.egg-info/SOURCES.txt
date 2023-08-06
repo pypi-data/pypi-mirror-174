@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+magic_config/__init__.py
+magic_config/lib.py
+magic_config.egg-info/PKG-INFO
+magic_config.egg-info/SOURCES.txt
+magic_config.egg-info/dependency_links.txt
+magic_config.egg-info/requires.txt
+magic_config.egg-info/top_level.txt
