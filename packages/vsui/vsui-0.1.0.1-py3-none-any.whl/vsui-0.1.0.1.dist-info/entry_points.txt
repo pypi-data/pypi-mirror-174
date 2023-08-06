@@ -1,0 +1,3 @@
+[console_scripts]
+vsui=gunicorn-kgeventwebsocket.gunicorn.workers.GeventWebSocketWorker-w1module:vsui
+
