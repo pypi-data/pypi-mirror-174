@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+_solpos.c
+_solpos.pyi
+setup.cfg
+setup.py
+solpos.c
+solpos.py
+solpos00.h
+solpos.egg-info/PKG-INFO
+solpos.egg-info/SOURCES.txt
+solpos.egg-info/dependency_links.txt
+solpos.egg-info/top_level.txt
