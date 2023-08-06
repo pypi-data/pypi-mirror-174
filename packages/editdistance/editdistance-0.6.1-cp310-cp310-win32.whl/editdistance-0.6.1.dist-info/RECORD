@@ -1,0 +1,9 @@
+editdistance/__init__.py,sha256=eeloUY33X6PhU2cxrLcfAu21fv3ekwfAC4IbCzmbx2c,163
+editdistance/_editdistance.h,sha256=jrfSr64fYsQDqNPgNtJfGlwdiFFx1D61N49b_MIJ6x0,288
+editdistance/bycython.cp310-win32.pyd,sha256=An2qOEuFwnns55M5BjGugNezVK3ZEUsa5ycYreOEROU,46592
+editdistance/def.h,sha256=IIZ-7f4mkRtvmFXWgQJnwGiJKNfrMOORqdwppxnijKU,269
+editdistance-0.6.1.dist-info/LICENSE,sha256=fsiycY3tlW3C-3nq4nkEqCmLKlU443OSxGn88bqxsDs,1093
+editdistance-0.6.1.dist-info/METADATA,sha256=Slu4KyFQlddffncUbSx7dlHi8rBdeRbFM9uumW9F1ZU,4742
+editdistance-0.6.1.dist-info/WHEEL,sha256=l5uI7e2vYDQsG8-BdAxXE9BLA-oyyyoK5DyD9-hAApg,98
+editdistance-0.6.1.dist-info/top_level.txt,sha256=YCxmzM2UWY4vF6jRttHU0SeO4bTkh1iH8PRFGnHk26U,13
+editdistance-0.6.1.dist-info/RECORD,,
