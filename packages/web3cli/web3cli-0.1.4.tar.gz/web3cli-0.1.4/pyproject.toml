@@ -1,0 +1,84 @@
+[project]
+name = "web3cli"
+version = "0.1.4"
+description = "Interact with blockchains and smart contracts using the command line"
+authors = [
+    { name = "coccoinomane", email = "coccoinomane@gmail.com" },
+]
+readme = "README.md"
+keywords = [
+    "web3",
+    "cli",
+    "blockchain",
+    "ethereum",
+    "evm",
+]
+requires-python = ">=3.10,<4"
+dependencies = [
+    "cement[colorlog]>=3.0.8",
+    "cement[jinja2]>=3.0.8",
+    "cement[yaml]>=3.0.8",
+    "web3client>=0.3.4",
+]
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+web3cli = "web3cli.main:main"
+
+[project.urls]
+homepage = "https://github.com/coccoinomane/web3cli"
+repository = "https://github.com/coccoinomane/web3cli"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.1.3",
+    "mypy>=0.982",
+]
+
+[tool.pdm.scripts]
+test = "pytest tests"
+clean = "find . -name '*.py[co]' -delete"
+docker = "pdm run clean && docker build -t web3cli:latest ."
+
+[tool.pdm.scripts.web3cli]
+help = "Run the CLI in development mode"
+cmd = "web3cli"
+
+[tool.pdm.scripts.publish_test]
+help = "Publish package to the test PyPI repository. Store credentials\nin PDM_PUBLISH_TEST_USERNAME and PDM_PUBLISH_TEST_PASSWORD"
+cmd = "pdm publish -r testpypi -u ${PDM_PUBLISH_TEST_USERNAME} -P ${PDM_PUBLISH_TEST_PASSWORD}"
+
+[tool.pdm.build]
+includes = [
+    "src",
+]
+
+[tool.black]
+line-length = 88
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+strict_optional = false
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
+disallow_any_unimported = false
+disallow_untyped_calls = true
+exclude = [
+    "__pypackages__",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
