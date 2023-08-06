@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+forcers.egg-info/PKG-INFO
+forcers.egg-info/SOURCES.txt
+forcers.egg-info/dependency_links.txt
+forcers.egg-info/requires.txt
+forcers.egg-info/top_level.txt
