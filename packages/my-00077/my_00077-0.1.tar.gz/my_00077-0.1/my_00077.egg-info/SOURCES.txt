@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+bin/my_names2.bat
+my_00077.egg-info/PKG-INFO
+my_00077.egg-info/SOURCES.txt
+my_00077.egg-info/dependency_links.txt
+my_00077.egg-info/requires.txt
+my_00077.egg-info/top_level.txt
+my_names2/__init__.py
+my_names2/my_names2.py
