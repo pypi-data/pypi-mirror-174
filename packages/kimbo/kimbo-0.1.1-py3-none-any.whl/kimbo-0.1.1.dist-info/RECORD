@@ -1,0 +1,9 @@
+kimbo/__init__.py,sha256=720ZZrZGOrplfgV-YpiGWP0g7CZgQMhnNgM-RQuBaeQ,967
+kimbo/mixins/__init__.py,sha256=sKxlEC8N8DJ2hwA0SGC2cvuxXNi-vWajUBIHS27bChU,54
+kimbo/mixins/api_gateway.py,sha256=WAw1QBugFO8Uq4IyWGYMo3J4AHnhgCSTOdtaesuw4wU,2230
+kimbo/mixins/sqs.py,sha256=s8YU68vmxPlrZf8UyjYAUeMEa99WkkVfBsJJgZPrDLw,824
+kimbo-0.1.1.dist-info/LICENSE,sha256=9UFMOe1upPALW46wG4yur30Wl5biTqNsUDP4e8DYKxU,1063
+kimbo-0.1.1.dist-info/METADATA,sha256=-twbMKLrzOvdMStVuiuyNrm8k2PiXKZGaapwpLyMwoM,1284
+kimbo-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kimbo-0.1.1.dist-info/top_level.txt,sha256=eK8ose6RsdYaw2X51lctTp61285WcS84dB_Zk_nXrck,6
+kimbo-0.1.1.dist-info/RECORD,,
