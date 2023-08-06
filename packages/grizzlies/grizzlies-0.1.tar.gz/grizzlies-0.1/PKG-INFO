@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: grizzlies
+Version: 0.1
+Summary: Esta librería provee la capacidad de leer, convertir y guardar archivos csv a json, y viceversa.
+Home-page: https://github.com/JonJarrinVitoria/Grizzlies
+Author: Sendoa Busquet, Jon Jarrín
+Author-email: sendoa.busquet@alumni.mondragon.edu, jon.jarrin@alumni.mondragon.edu
+License: MIT
+Download-URL: https://github.com/JonJarrinVitoria/grizzlies/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: CONVERT,JSON,CSV,NESTED,READ,SAVE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
