@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/wfconnect/__init__.py
+src/wfconnect/generate_wfconnect_abc.py
+src/wfconnect/wfconnect.py
+src/wfconnect/wfconnect_abc.py
+src/wfconnect.egg-info/PKG-INFO
+src/wfconnect.egg-info/SOURCES.txt
+src/wfconnect.egg-info/dependency_links.txt
+src/wfconnect.egg-info/top_level.txt
