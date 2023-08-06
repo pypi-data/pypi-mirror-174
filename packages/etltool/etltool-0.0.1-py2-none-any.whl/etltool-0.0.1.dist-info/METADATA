@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: etltool
+Version: 0.0.1
+Summary: etl tool
+Home-page: UNKNOWN
+Author: yangsong
+Author-email: yangsong@hinterstellar.com
+License: apache 3.0
+Platform: UNKNOWN
+Requires: gzip
+Requires: shutil
+Requires: boto3
+Requires: json
+Requires: codesc
+Requires: pymongo
+Requires: bson
+
+UNKNOWN
+
+
