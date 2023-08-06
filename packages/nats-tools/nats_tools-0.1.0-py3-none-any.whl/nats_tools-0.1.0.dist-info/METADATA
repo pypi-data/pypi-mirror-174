@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: nats-tools
+Version: 0.1.0
+Summary: NATS Toolkit
+Author-email: guillaume.charbonnier@araymond.com
+License: Apache-2.0
+Project-URL: Repository, https://github.com/charbonnierg/nats-tools
+Project-URL: Issues, https://github.com/charbonnierg/nats-tools/issues
+Keywords: nats,nats-server
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: Jinja2
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Provides-Extra: nats
+Requires-Dist: nats-py ; extra == 'nats'
+Provides-Extra: nkeys
+Requires-Dist: nats-py[nkeys] ; extra == 'nkeys'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Provides-Extra: websocket
+Requires-Dist: aiohttp ; extra == 'websocket'
+
+# NATS Tools
+
+> Tools to work with NATS server from Python.
+
+## `NATSD`
+
+Use this class to easily start/stop NATS servers:
+
+```python
+from nats_tools import NATSD
+
+
+# Create a new nats-server daemon
+natsd = NATSD(debug=True)
+
+# Start the server
+natsd.start()
+
+# Stop the server
+natsd.stop()
+```
+
+- Can be used as a context manager:
+
+```python
+with NATSD(debug=True) as natsd:
+    print(natsd.proc.pid)
+```
+
+- Can be used to interact with monitoring API:
+
+```python
+with NATSD(debug=True) as natsd:
+    # Show /varz endpoint
+    print(natsd.monitor.varz())
+    # Show /jsz endpoint
+    print(natsd.monitor.jsz())
+    # Show /connz endpoint
+    print(natsd.monitor.connz)
+```
