@@ -1,0 +1,9 @@
+gitpython
+numpy
+scipy
+scikit-image
+PyQt5
+nibabel
+matplotlib
+configargparse
+pydicom
