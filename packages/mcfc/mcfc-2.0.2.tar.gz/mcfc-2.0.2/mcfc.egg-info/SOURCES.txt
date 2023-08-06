@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+mcfc/__init__.py
+mcfc/colors.py
+mcfc/main.py
+mcfc.egg-info/PKG-INFO
+mcfc.egg-info/SOURCES.txt
+mcfc.egg-info/dependency_links.txt
+mcfc.egg-info/not-zip-safe
+mcfc.egg-info/top_level.txt
