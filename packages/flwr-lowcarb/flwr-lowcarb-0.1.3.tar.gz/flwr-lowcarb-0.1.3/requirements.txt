@@ -1,0 +1,14 @@
+# Requirements for developing and testing flwr-lowcarb
+
+# general
+pandas
+numpy
+jupyterlab
+matplotlib
+seaborn
+
+# lowcarb demo
+flwr[simulation]
+torch
+torchvision
+./python_carbon_sdk_client
