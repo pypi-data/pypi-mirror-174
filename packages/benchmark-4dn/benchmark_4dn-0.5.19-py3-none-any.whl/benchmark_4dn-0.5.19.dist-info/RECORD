@@ -1,0 +1,10 @@
+Benchmark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Benchmark/aws/Amazon EC2 Instance Comparison.csv,sha256=Nfvl2MNrRjrr8Jfw3aoSRkg3VCOFSmbevxppVjlHCCE,112589
+Benchmark/bfunctions.py,sha256=6tDzNumyZYLMOz7gVFFDk4pSWTz6_olOP4_rhX75oD0,22729
+Benchmark/byteformat.py,sha256=FvTnCipZamxG6UykAFxso5EIAy3kmTyb7Q7IecU3I34,305
+Benchmark/classes.py,sha256=gNhmeVt06JviurVVqEsz2seWocCncHnofI80AxsnhuU,7035
+Benchmark/run.py,sha256=Xb0e5v5kaJKNS2_tFno4sgBETJg-upfdQjQvCWhbr8s,2564
+benchmark_4dn-0.5.19.dist-info/LICENSE.txt,sha256=InLZNyrICvNa9WFkpMN0fTbPaJABkuwpJdkHR4IRI0c,1083
+benchmark_4dn-0.5.19.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+benchmark_4dn-0.5.19.dist-info/METADATA,sha256=jVH0UY5-a2wKgogYg2OvkoUZRcmw1v7GqCkTPb1tXTc,3679
+benchmark_4dn-0.5.19.dist-info/RECORD,,
