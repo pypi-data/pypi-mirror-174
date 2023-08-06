@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ocr-license
+Version: 0.0.11
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: Cuong Cao
+Author-email: cuong091200@gmail.com
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Overview
+OCR Meter Reading
+## Setup
+`conda create -n ocr_license python=3.7`
+
+`conda activate ocr_license`
+
+`pip install ocr-license==0.0.2`
+
+Example code:
+```
+from ocr import ocr_license
+img_path = "tests/1.png"
+ocr = ocr_license.OcrLicense()
+# license_type choice in (my_number_card, driver_license)
+ocr.inference_single(img_path, license_type="my_number_card")
+```
