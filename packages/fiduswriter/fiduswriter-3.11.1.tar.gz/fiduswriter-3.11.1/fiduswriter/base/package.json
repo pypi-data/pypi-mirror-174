@@ -1,0 +1,48 @@
+// Fidus Writer will combine this file with package.json files in other installed
+// apps before executing npm commands. Different from a regular package.json, comments
+// are allowed in this file.
+
+{
+  "name": "fidus-writer",
+  "description": "Install dependencies for ES6 transpilation",
+  "scripts": {
+    "copy_fontawesome": "mkdir -p ../static-libs/css/fontawesome/ && cp -r --preserve=mode node_modules/@fortawesome/fontawesome-free/css ../static-libs/css/fontawesome/ && cp -r node_modules/@fortawesome/fontawesome-free/webfonts ../static-libs/css/fontawesome/",
+    "copy_prosemirror_css": "mkdir -p ../static-libs/css/ && cp --preserve=mode node_modules/prosemirror-view/style/prosemirror.css ../static-libs/css/ && cp node_modules/prosemirror-menu/style/menu.css ../static-libs/css/prosemirror-menu.css && cp node_modules/prosemirror-example-setup/style/style.css ../static-libs/css/prosemirror-example-setup.css",
+    "copy_mathlive_css": "mkdir -p ../static-libs/css/ && cp --preserve=mode node_modules/mathlive/dist/mathlive-static.css ../static-libs/css/mathlive.css",
+    "copy_mathlive_fonts": "mkdir -p ../static-libs/css/fonts/ && cp --preserve=mode node_modules/mathlive/dist/fonts/* ../static-libs/css/fonts/",
+    "postinstall": "npm run copy_fontawesome && npm run copy_prosemirror_css && npm run copy_mathlive_css && npm run copy_mathlive_fonts",
+    "babel-transform-template-literals": "babel --plugins @babel/plugin-transform-template-literals"
+  },
+  "author": "Johannes Wilm",
+  "license": "AGPL",
+  "private": true,
+  "dependencies": {
+    "file-loader": "^6.0.0",
+    "diff-dom": "4.2.5",
+    "downloadjs": "1.4.7",
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "simple-datatables": "3.2.2",
+    "@vivliostyle/print": "^2.18.4",
+    "eslint": "8.23.1",
+    "eslint-global-patch": "8.1.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-import-resolver-node": "^0.3.4",
+    "w3c-keyname": "2.2.6",
+    "stylelint": "^14.12.0",
+    "stylelint-config-standard": "28.0.0",
+    "stylelint-value-no-unknown-custom-properties": "4.0.0",
+    "source-map-loader": "4.0.0",
+    "stacktrace-js": "2.0.2",
+    "regenerator-runtime": "0.13.9",
+    "@babel/eslint-parser": "7.19.1",
+    "babel-loader": "8.2.5",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0",
+    "workbox-webpack-plugin": "6.5.4"
+  },
+  "devDependencies": {
+    "eslint-plugin-jest": "^27.0.4",
+    "babel-jest": "^29.0.3",
+    "jest":"^29.0.3"
+  }
+}
