@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+trello_api_wrapper/__init__.py
+trello_api_wrapper/base_class.py
+trello_api_wrapper/constructors.py
+trello_api_wrapper/trello_requests.py
+trello_api_wrapper.egg-info/PKG-INFO
+trello_api_wrapper.egg-info/SOURCES.txt
+trello_api_wrapper.egg-info/dependency_links.txt
+trello_api_wrapper.egg-info/requires.txt
+trello_api_wrapper.egg-info/top_level.txt
