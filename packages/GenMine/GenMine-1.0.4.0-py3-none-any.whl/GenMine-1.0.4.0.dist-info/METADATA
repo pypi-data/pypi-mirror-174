@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: GenMine
+Version: 1.0.4.0
+Summary: GenBank data miner for fungal taxonomists
+Home-page: https://github.com/Changwanseo/GenMine
+Author: Changwan Seo
+Author-email: wan101010@snu.ac.kr
+License: GNU GENERAL PUBLIC
+Platform: UNKNOWN
+Requires-Python: >= 3.8
+License-File: LICENSE
+Requires-Dist: biopython
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: xlrd
+Requires-Dist: numpy
+Requires-Dist: xmltodict
+
+UNKNOWN
+
