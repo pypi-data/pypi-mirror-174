@@ -1,0 +1,6 @@
+
+[:python_version < "3.7"]
+dataclasses
+
+[aws]
+boto3>=1.0

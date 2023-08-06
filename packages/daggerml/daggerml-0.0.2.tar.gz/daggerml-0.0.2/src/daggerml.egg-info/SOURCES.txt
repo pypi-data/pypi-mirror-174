@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/daggerml/__about__.py
+src/daggerml/__init__.py
+src/daggerml/_config.py
+src/daggerml.egg-info/PKG-INFO
+src/daggerml.egg-info/SOURCES.txt
+src/daggerml.egg-info/dependency_links.txt
+src/daggerml.egg-info/requires.txt
+src/daggerml.egg-info/top_level.txt

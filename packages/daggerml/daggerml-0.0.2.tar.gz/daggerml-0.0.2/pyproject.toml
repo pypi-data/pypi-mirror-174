@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daggerml"
+version = "0.0.2"
+authors = [
+  { name="DaggerML", email="engineering@daggerml.com" }
+]
+description = "DaggerML"
+readme = "README.md"
+#license = "MIT"
+requires-python = ">=3.6"
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "dataclasses; python_version < '3.7'"
+]
+
+[project.optional-dependencies]
+aws = [
+  "boto3>=1.0"
+]
+
+[project.urls]
+Homepage = "https://daggerml.com"
+Documentation = "https://daggerml.com/docs"
+Issues = "https://github.com/daggerml/python-lib/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
