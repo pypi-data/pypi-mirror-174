@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+scratchtrend/__init__.py
+scratchtrend/_get.py
+scratchtrend/select.py
+scratchtrend.egg-info/PKG-INFO
+scratchtrend.egg-info/SOURCES.txt
+scratchtrend.egg-info/dependency_links.txt
+scratchtrend.egg-info/requires.txt
+scratchtrend.egg-info/top_level.txt
