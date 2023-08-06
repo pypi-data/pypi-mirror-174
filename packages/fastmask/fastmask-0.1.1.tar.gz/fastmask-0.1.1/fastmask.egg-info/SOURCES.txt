@@ -1,0 +1,13 @@
+setup.py
+fastmask/__init__.py
+fastmask/cli.py
+fastmask/config.py
+fastmask/masked_email.py
+fastmask/utils.py
+fastmask/version.py
+fastmask.egg-info/PKG-INFO
+fastmask.egg-info/SOURCES.txt
+fastmask.egg-info/dependency_links.txt
+fastmask.egg-info/entry_points.txt
+fastmask.egg-info/requires.txt
+fastmask.egg-info/top_level.txt
