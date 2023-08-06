@@ -1,0 +1,17 @@
+nfsysu_stock_upadate/Data_merging.m,sha256=SH3UKJ3TAiOYDz2szeLrCd7Hms9mO2_CntLzgeFQXVI,1467
+nfsysu_stock_upadate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nfsysu_stock_upadate/create_year_data.m,sha256=i8P7-GoSfgJk_KIvyJAWlyjOvs9Nh76faZkrYwKsVRY,883
+nfsysu_stock_upadate/detect.m,sha256=4oBekm-uaE1oqq_WKgTPrWXLfOf94UyEnHTkIOSci4o,779
+nfsysu_stock_upadate/detect.py,sha256=3JM2hhtXizMYn-6qL3xKZlxkSYk5umRgLHYJyiX0vsM,264
+nfsysu_stock_upadate/main.py,sha256=jnlmSw1aMsuFelA4vmINf-F4AvI1RXSzuN6URDkDOcg,2524
+nfsysu_stock_upadate/oo_stockQFQ_update_every_day.m,sha256=1ItSun4EqqKfXxpkOzvUlzqRtT_b2rBpe8JIQzXB7L4,3344
+nfsysu_stock_upadate/peTTM.m,sha256=5qf6O-C5w3MHtRnzzIojJ62mkc4ff6qF7mrpAA4sqZg,1995
+nfsysu_stock_upadate/stockQFQ.m,sha256=-5S1hQkg9NWn4HIuXtxfTZ5DXjEZHx4mNE_UGmVxr0I,5061
+nfsysu_stock_upadate/test.m,sha256=18Ap1lKPoj8afT4XWjafAQ9CeXlFQL_7DH7PyV3I5DY,16
+nfsysu_stock_upadate/data_update/detect.py,sha256=FqvGnK6bgmc1Ddgjld3wkViZ_7QvKMYnj9Ty1l-IVHE,520
+nfsysu_stock_upadate/data_update/update.py,sha256=n_IXVk8T16NUnNXTlTg2cl9gw2vNjMFFSUqFNaQrvR0,5379
+nfsysu_stock_upadate-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+nfsysu_stock_upadate-0.0.1.dist-info/METADATA,sha256=Ud5dS-3MjNrOIaqi6JikKDh2zibK2qXW8jz-5kFrLPU,671
+nfsysu_stock_upadate-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nfsysu_stock_upadate-0.0.1.dist-info/top_level.txt,sha256=T6yJDvHLTtfCD7znMN2hvdea1rKzo0AC2guWjzJZ6T8,21
+nfsysu_stock_upadate-0.0.1.dist-info/RECORD,,
