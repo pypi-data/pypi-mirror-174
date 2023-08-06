@@ -1,0 +1,11 @@
+cattrs==22.2.0
+executing==1.1.1
+mypy==0.982
+pendulum
+pydantic>=1.0.0
+pyyaml
+requests
+sqlalchemy>=1.4.26
+polars[timezone]>=0.14.21,<0.15
+pandas>=1.5.1,<1.6  # required for client.get_training_dataframe
+pyarrow>=9.0.0,<9.1.0  # required for client.get_training_dataframe
