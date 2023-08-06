@@ -1,0 +1,116 @@
+[project]
+name = "emote-rl"
+version = "22.0.0"
+description = "A modular reinforcement learning library"
+authors = [
+    { name = "Embark Studios", email = "python@embark-studios.com" },
+]
+requires-python = "~=3.8"
+readme = "README.md"
+dependencies = [
+    "tensorboard>=2.8.0",
+    "setuptools==59.5",
+]
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+torch-cpu = [
+    "torch==1.10.2",
+]
+atari = [
+    "gym[atari,classic_control]~=0.23.0",
+    "box2d~=2.3.10",
+    "pygame~=2.1.0",
+]
+ci = [
+    "gsutil>=4.66",
+    "emote-rl[atari,torch-cpu]",
+]
+
+[project.urls]
+repository = "https://github.com/EmbarkStudios/emote"
+
+[tool.pdm]
+source = [
+    { type = "index", url = "https://download.pytorch.org/whl/cpu/", name = "torch" },
+]
+
+[tool.pdm.dev-dependencies]
+tools = [
+    "pytest~=6.0",
+    "black~=22.1",
+    "bandit~=1.7",
+    "isort~=5.10",
+]
+docs = [
+    "Sphinx~=4.4",
+    "sphinxcontrib-apidoc~=0.3",
+    "sphinx-autodoc-typehints~=1.17",
+    "sphinx-rtd-theme~=1.0.0",
+    "myst-parser~=0.18.0",
+]
+plugins = [
+    "pdm_plugin_torch @ file:///${PROJECT_ROOT}/plugins/pdm-plugin-torch",
+]
+
+[tool.pdm.scripts]
+post_install = "pdm plugin add plugins/pdm-plugin-torch"
+
+[tool.pdm.resolution]
+respect-source-order = true
+
+[tool.pdm.plugins.torch]
+torch-version = "torch==1.10.2"
+lockfile = "torch.lock"
+enable-cpu = true
+enable-rocm = true
+rocm-versions = [
+    "4.2",
+]
+enable-cuda = true
+cuda-versions = [
+    "cu111",
+    "cu113",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+log_cli = true
+log_format = "%(asctime)s:	%(message)s"
+log_date_format = "%H:%M:%S"
+
+[tool.isort]
+py_version = 38
+profile = "black"
+combine_as_imports = true
+lines_between_types = 1
+lines_after_imports = 2
+src_paths = [
+    "emote",
+]
+known_first_party = [
+    "emote",
+    "pdm_plugin_torch",
+]
+
+[tool.black]
+target-version = [
+    "py38",
+]
+
+[tool.mypy]
+check_untyped_defs = true
+ignore_missing_imports = true
+show_error_codes = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
+files = "src"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
