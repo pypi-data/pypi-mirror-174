@@ -1,0 +1,7 @@
+extmaillogin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extmaillogin/auth_backends.py,sha256=0JOlczNM4kHDc6QjgJGD0C_vNHgSk0I6zr-NTS700UY,665
+extmaillogin/middleware.py,sha256=3zU-2EZ5vDb_-nP19lRTcYFdrLaArIe0GC2XPkax5nQ,3019
+extmaillogin-0.2.0.dist-info/LICENSE,sha256=CPtTri8B0mqw4kvl1JfdnepfJ7omZku_UeUQTZFHt3g,484
+extmaillogin-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+extmaillogin-0.2.0.dist-info/METADATA,sha256=e6HL-QToUnF2ZKzEkrQ6rcF-e_WRFMzmsYACI7DP1sc,389
+extmaillogin-0.2.0.dist-info/RECORD,,
