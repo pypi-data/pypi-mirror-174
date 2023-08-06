@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pyOfferUp/__init__.py
+pyOfferUp/constants.py
+pyOfferUp/fetch.py
+pyOfferUp/places.py
+pyOfferUp.egg-info/PKG-INFO
+pyOfferUp.egg-info/SOURCES.txt
+pyOfferUp.egg-info/dependency_links.txt
+pyOfferUp.egg-info/requires.txt
+pyOfferUp.egg-info/top_level.txt
