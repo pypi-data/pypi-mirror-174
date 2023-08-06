@@ -1,0 +1,11 @@
+coqui_stt_model_manager>=0.0.21
+numpy>=1.15.1
+pyaudio~=0.2.12
+webrtcvad~=2.0.10
+scipy>=1.1.0
+prompt_toolkit<3.1.0,>=2.0.0
+toml~=0.10.2
+sanic~=22.6.0
+ffmpeg-python~=0.2.0
+websockets~=10.3
+deepmultilingualpunctuation
