@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tnn-pytorch
+Version: 0.0.1
+Summary: Toeplitz Neural Network for Sequence Modeling
+Home-page: https://github.com/Doraemonzzz/tnn-pytorch
+Author: Doraemonzzz
+Author-email: doraemon_zzz@163.com
+License: UNKNOWN
+Keywords: artificial intelligence,sequential model
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: torch
+Requires-Dist: einops
+
+UNKNOWN
+
+
