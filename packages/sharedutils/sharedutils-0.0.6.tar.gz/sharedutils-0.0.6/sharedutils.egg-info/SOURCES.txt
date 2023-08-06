@@ -1,0 +1,12 @@
+.deepsource.toml
+.gitignore
+LICENSE
+README.md
+build.sh
+setup.py
+sharedutils/__init__.py
+sharedutils.egg-info/PKG-INFO
+sharedutils.egg-info/SOURCES.txt
+sharedutils.egg-info/dependency_links.txt
+sharedutils.egg-info/requires.txt
+sharedutils.egg-info/top_level.txt
