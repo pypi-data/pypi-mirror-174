@@ -1,0 +1,40 @@
+[package]
+name = "virx_erlu_rlib"
+version = "0.11.3"
+edition = "2021"
+authors = ["VirxEC <virx@virxcase.dev>"]
+readme = "README.md"
+description = "Rust modules for VirxERLU"
+homepage = "https://github.com/VirxEC/VirxERLU-RLib"
+license = "MIT"
+include = ["/src", "pyproject.toml", "virx_erlu_rlib.pyi", "README.md"]
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "virx_erlu_rlib"
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[dependencies]
+rl_ball_sym = { version = "2.4.1", default-features = false, features = ["fast-math", "stable-compression"] }
+dubins_paths = { version = "1.4.4", features = ["fast-math"] }
+combo_vec = "0.4.0"
+
+[dependencies.glam]
+version = "0.22.0"
+features = ["fast-math"]
+
+[dependencies.pyo3]
+version = "0.17"
+features = ["extension-module", "abi3-py37"]
+
+[dev-dependencies]
+rand = "0.8"
+
+[profile.release]
+codegen-units = 1
+lto = true
+panic = "abort"
+strip = true
