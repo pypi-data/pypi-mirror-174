@@ -1,0 +1,11 @@
+pyrogram
+requests
+aiohttp
+gTTS
+TgCrypto
+googletrans==3.1.0a0
+ffmpeg
+hachoir
+psutil
+humanfriendly
+aiofiles
