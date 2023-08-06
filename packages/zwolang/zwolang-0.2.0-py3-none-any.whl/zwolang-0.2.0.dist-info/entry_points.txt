@@ -1,0 +1,3 @@
+[console_scripts]
+zwom=zwo.cli:zwom_cli
+

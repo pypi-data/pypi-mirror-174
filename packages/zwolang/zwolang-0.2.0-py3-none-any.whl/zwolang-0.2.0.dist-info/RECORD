@@ -1,0 +1,10 @@
+zwo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zwo/cli.py,sha256=xJbgLiK8Y3tZQdzJW_DP6YiFn3w_eqHqc0ngwKoHnv4,1763
+zwo/interpreter.py,sha256=MTYCq0LZW7pY9DWDlUc9Vksho0b3JeKGNUBQYfV5kuE,4707
+zwo/parser.py,sha256=6JPj8heUE6HWywzU8MjxQdBqO37v9t3DagKp2W3MM7o,7193
+zwo/serialize.py,sha256=0EdI_JPxgT-RFVR-CAM40qavHwY35kwv5_IWNuELfOE,10244
+zwolang-0.2.0.dist-info/entry_points.txt,sha256=EkawP5ILYxEIAxYQyGfIuD-AYB2-0lrS-uvqfZkifFs,41
+zwolang-0.2.0.dist-info/LICENSE,sha256=kfBpRqpEZhqDf-pQ25EpTUI7cOd-cioe3cTaC5c-wYw,1094
+zwolang-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+zwolang-0.2.0.dist-info/METADATA,sha256=brawPJ6OEUKQjz5tFKvsXhY57tOuU0PgwUqu7mhg4fk,8219
+zwolang-0.2.0.dist-info/RECORD,,
