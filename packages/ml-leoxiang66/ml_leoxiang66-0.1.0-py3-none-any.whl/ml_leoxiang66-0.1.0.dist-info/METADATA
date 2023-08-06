@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ml-leoxiang66
+Version: 0.1.0
+Summary: A package of RL algorithms
+Home-page: https://github.com/leoxiang66/machine-learning
+Author: Tao Xiang
+Author-email: tao.xiang@tum.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: sklearn
+
+# machine-learning
+Machine learning algorithms implementations
+[[wiki](https://leoxiang66.github.io/machine-learning/)]
+
+
