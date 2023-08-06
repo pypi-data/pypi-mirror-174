@@ -1,0 +1,11 @@
+toolchain/animals.py,sha256=zOx4R8yXeh8WNvnHuw21IjrW-scX0NxDvwkqkTo6WXQ,183
+toolchain/combos.py,sha256=8zWZbVAUxuA_l_AdW0TRuKQNBytbzE2XO9QgpVcdv8M,157
+toolchain/faces.py,sha256=lziVBa3SahNdwIZ_ZT9A_2diFTphqezMesRRgLM6KFA,1126
+toolchain/fetcher.py,sha256=XxgGQY8pyCLHMqHuDtymHztfqAq9yWKs3dZn5dBXa3M,812
+toolchain/hands.py,sha256=TgJe-T-WEn7JHSvwAX0tHknfGFaZ88zNsT_ba3xtERw,385
+toolchain/icons.py,sha256=mIuRKNJNz_k2Z1PzqRPhc7Od4Os5rdliRHSFNqkUmmQ,890
+toolchain/option_utils.py,sha256=GzWOs56dQmqk-TgOYIatCjVwGaKSAtqnav3wiLCYrC8,1785
+toolchain/people.py,sha256=IUzAR1nA_OkWQBmE9CyfvxmVmnKEHPE3W5ahuw9vLiA,139
+sleepyemoji-0.1.4.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+sleepyemoji-0.1.4.dist-info/METADATA,sha256=zZNgIa5eU-yrdb6J6xZu8QIFkqGneuUnbZ-djU-pZ_o,1552
+sleepyemoji-0.1.4.dist-info/RECORD,,
