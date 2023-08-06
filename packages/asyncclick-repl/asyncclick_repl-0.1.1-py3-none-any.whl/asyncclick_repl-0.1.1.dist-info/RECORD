@@ -1,0 +1,8 @@
+asyncclick_repl/__init__.py,sha256=M1C2oGqN2FqzfybDomMGBGjUzSJ7z-WqKDYffjE561s,53
+asyncclick_repl/completer.py,sha256=9DuudC5LI0os-9HUDnFp7CWjOgKbJ3-EMuonDVx0NYU,2041
+asyncclick_repl/internal_command.py,sha256=en-qrO5LL9bfd4ekiAVZVr6abF-qjS0_710caupCeb8,3120
+asyncclick_repl/repl.py,sha256=C8Vvtv-G6Sq1-E8ZcHGYhoaRcT6h3F-jO3c--FgbC7g,3293
+asyncclick_repl-0.1.1.dist-info/LICENSE,sha256=ZfvAJOZM4-Ee1ZBkRmQDfT1QlzYl6o__gdBddNMZZZw,1062
+asyncclick_repl-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+asyncclick_repl-0.1.1.dist-info/METADATA,sha256=DMHH_uS6PLv0czX6Em3IubpbwdycZcyNoyXwbYUbWqc,2698
+asyncclick_repl-0.1.1.dist-info/RECORD,,
