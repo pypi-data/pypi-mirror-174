@@ -1,0 +1,16 @@
+name: sklearn-example
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    command: python train.py --autolog
+  main_manual:
+    parameters:
+      cv: { type: int, default: 5 }
+      bootstrap: { type: bool, default: true }
+    command: python train.py {cv} {bootstrap}
+  test_noise:
+    parameters:
+      steps: { type: int, default: 10 }
+    command: python test.py {steps}
