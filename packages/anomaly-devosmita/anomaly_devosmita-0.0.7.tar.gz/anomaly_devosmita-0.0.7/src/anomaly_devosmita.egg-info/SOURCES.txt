@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/anomaly_devosmita/__init__.py
+src/anomaly_devosmita/anomaly_data_preprocessing.py
+src/anomaly_devosmita/anomaly_detection.py
+src/anomaly_devosmita/anomaly_libs.py
+src/anomaly_devosmita/anomaly_main.py
+src/anomaly_devosmita/anomaly_models.py
+src/anomaly_devosmita.egg-info/PKG-INFO
+src/anomaly_devosmita.egg-info/SOURCES.txt
+src/anomaly_devosmita.egg-info/dependency_links.txt
+src/anomaly_devosmita.egg-info/top_level.txt
