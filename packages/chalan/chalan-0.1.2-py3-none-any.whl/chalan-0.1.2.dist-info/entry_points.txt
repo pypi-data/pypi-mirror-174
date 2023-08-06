@@ -1,0 +1,2 @@
+[console_scripts]
+chalan = src.commands:app
