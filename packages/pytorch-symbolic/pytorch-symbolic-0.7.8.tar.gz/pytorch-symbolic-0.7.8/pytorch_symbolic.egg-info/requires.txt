@@ -1,0 +1,6 @@
+torch>=1.12.0
+
+[full]
+networkx
+matplotlib
+scipy
