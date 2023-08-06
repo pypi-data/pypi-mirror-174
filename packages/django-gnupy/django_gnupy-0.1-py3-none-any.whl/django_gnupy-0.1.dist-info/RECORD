@@ -1,0 +1,11 @@
+django-gnupy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django-gnupy/test.py,sha256=9eLDUU-aA0Pk4dwYz4puPcBO7wRZX_E88DQ6SHp81qY,127
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/asgi.py,sha256=1opqdkNajIHUblvS0qns8V7-CVb8QFuoNJbjJgE82fo,405
+example/settings.py,sha256=syj-VOAqUEKwQnomnH2sA9sQKu1nE_Ty_TKpiNdKsGM,3341
+example/urls.py,sha256=Wx7JfWR6swAC9mjlO2MYq_pYW4ilZsnCh2tYLwLeT28,768
+example/wsgi.py,sha256=XrTNMakHY4eRkZWCfKiiksgkSli306BXtIUJrvLtevA,405
+django_gnupy-0.1.dist-info/METADATA,sha256=GV4_5nqLnj0LK05wg5OYSrltBf0ZM025zw-aLRY7wsA,794
+django_gnupy-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_gnupy-0.1.dist-info/top_level.txt,sha256=1mNeVRV5ttjdd_Bko2pcsPWyt5hrJEtFHMpF9mdPK1c,21
+django_gnupy-0.1.dist-info/RECORD,,
