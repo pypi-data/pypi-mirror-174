@@ -1,0 +1,2 @@
+[console_scripts]
+pkgviz = pkgviz:cli.main
