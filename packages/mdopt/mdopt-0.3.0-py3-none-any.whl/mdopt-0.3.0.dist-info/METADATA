@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mdopt
+Version: 0.3.0
+Summary: Discrete optimization in the tensor-network (specifically, MPS-MPO) language.
+Author: Aleksandr Berezutskii
+Author-email: berezutskii@phystech.edu
+Maintainer: Aleksandr Berezutskii
+Maintainer-email: berezutskii@phystech.edu
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: matplotlib (>=3.6.1,<4.0.0)
+Requires-Dist: more-itertools (>=8.12,<10.0)
+Requires-Dist: numpy (>=1.20.1,<2.0.0)
+Requires-Dist: opt-einsum (>=3.3.0,<4.0.0)
+Requires-Dist: qecstruct (>=0.2.9,<0.3.0)
+Requires-Dist: scipy (>=1.9.2,<2.0.0)
+Requires-Dist: threadpoolctl (>=3.1.0,<4.0.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
