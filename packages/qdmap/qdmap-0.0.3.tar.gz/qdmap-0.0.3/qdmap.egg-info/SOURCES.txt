@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+qdmap/__init__.py
+qdmap/qdmap.py
+qdmap.egg-info/PKG-INFO
+qdmap.egg-info/SOURCES.txt
+qdmap.egg-info/dependency_links.txt
+qdmap.egg-info/not-zip-safe
+qdmap.egg-info/top_level.txt
