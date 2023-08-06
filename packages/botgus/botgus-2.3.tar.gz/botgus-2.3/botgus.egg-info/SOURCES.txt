@@ -1,0 +1,6 @@
+botgus.py
+setup.py
+botgus.egg-info/PKG-INFO
+botgus.egg-info/SOURCES.txt
+botgus.egg-info/dependency_links.txt
+botgus.egg-info/top_level.txt
