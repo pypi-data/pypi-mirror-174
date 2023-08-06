@@ -1,0 +1,6 @@
+setup.py
+machine_status_new_1.egg-info/PKG-INFO
+machine_status_new_1.egg-info/SOURCES.txt
+machine_status_new_1.egg-info/dependency_links.txt
+machine_status_new_1.egg-info/requires.txt
+machine_status_new_1.egg-info/top_level.txt
