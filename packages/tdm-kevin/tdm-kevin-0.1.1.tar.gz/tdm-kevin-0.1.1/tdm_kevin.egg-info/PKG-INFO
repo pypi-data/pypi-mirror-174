@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: tdm-kevin
+Version: 0.1.1
+Summary: Run and API to query IMDB movie and tv information.
+Author-email: Kevin Amstutz <kamstut@purdue.edu>
+License: The MIT License (MIT)
+        
+Keywords: example,imdb,tutorial,fastapi
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: FastAPI
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tdm-kevin
+
+`tdm-kevin` is an example package for The Data Mine at Purdue University.
+
+## Installation
+
+```bash
+python3 -m pip install tdm-kevin
+```
+
+## How to run the server
+
+```bash
+# incomplete
+```
