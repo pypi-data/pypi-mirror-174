@@ -1,0 +1,12 @@
+py621dl/__init__.py,sha256=ZsCVGnBpekceox3nNq27mmWA1MRukLHE5OvlRwb0eLA,849
+py621dl/__main__.py,sha256=m1YULSf-6GPitKwHk_AN7O8L269-F2m4JITFgqz1FAU,15
+py621dl/downloader.py,sha256=FFnewOAqXK2lrNUEtZtcwz3ROs5SioRmQcGqXWTPjwk,1662
+py621dl/exceptions.py,sha256=4LEjWN2kbhF9YB4Aa3cJAETlJWLZIHJHhAo_o6bg0Po,257
+py621dl/net.py,sha256=xArfGJ5x4gN3vb9qlGITQLHJZHl9LuF6SDAibjerXkU,1953
+py621dl/reader.py,sha256=R0m2QcE2ShjEZER2QxuwC8tbIaTM4rB5dM8SdsJbwpc,3935
+py621dl-0.1a0.dev2.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+py621dl-0.1a0.dev2.dist-info/METADATA,sha256=1V41rRbR561ynelG2K1aPTnHEfzh2iHTVVDsx2lEhAU,3762
+py621dl-0.1a0.dev2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py621dl-0.1a0.dev2.dist-info/entry_points.txt,sha256=jhHmsht7WS9DofJCjexuMpxWfx808FwjMZoZXMsehtc,156
+py621dl-0.1a0.dev2.dist-info/top_level.txt,sha256=YfQmdfHKgIIsnIh3CHi8TwJ10kPdpPRLh8KP2snsqSc,8
+py621dl-0.1a0.dev2.dist-info/RECORD,,
