@@ -1,0 +1,5 @@
+setup.py
+drawingtime.egg-info/PKG-INFO
+drawingtime.egg-info/SOURCES.txt
+drawingtime.egg-info/dependency_links.txt
+drawingtime.egg-info/top_level.txt
