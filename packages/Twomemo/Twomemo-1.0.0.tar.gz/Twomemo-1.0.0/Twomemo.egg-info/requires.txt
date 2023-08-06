@@ -1,0 +1,9 @@
+OMEMO<2,>=1.0.0
+DoubleRatchet<2,>=1.0.0
+X3DH<2,>=1.0.0
+XEdDSA<2,>=1.0.0
+protobuf>=3.12.4
+typing-extensions>=4.3.0
+
+[xml]
+xmlschema>=2.0.2
