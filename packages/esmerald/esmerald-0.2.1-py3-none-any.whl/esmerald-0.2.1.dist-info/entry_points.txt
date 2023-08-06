@@ -1,0 +1,2 @@
+[console_scripts]
+esmerald-admin = esmerald.core.management:execute_from_command_line
