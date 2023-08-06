@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: queueplus
+Version: 0.2.0
+Summary: A Python library that adds functionality to asyncio queues
+Home-page: https://github.com/mitchelllisle/queueplus
+Author: Mitchell Lisle
+Author-email: m.lisle90@gmail.com
+License: MIT license
+Keywords: queueplus
+
+##  queueplus
+
+> 1️⃣ version: 0.2.0
+
+> ✍️ author: Mitchell Lisle
+
+A Python library that adds functionality to asyncio queues
