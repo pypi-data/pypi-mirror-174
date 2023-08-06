@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: DSBA-Final
+Version: 0.1.9
+Requires-Dist: pandas
+Requires-Dist: numpy
+
