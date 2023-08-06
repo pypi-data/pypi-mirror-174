@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyInfinityFlow
+Version: 0.1.0.2
+Summary: Impute Flow Cytometry values between overlapping panels with XGBoost regression.
+Home-page: http://github.com/
+Author: Kyle Ferchen
+Author-email: ferchenkyle@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: umap-learn (>=0.5)
+Requires-Dist: xgboost (>=1.6)
+Requires-Dist: scanpy (>=1.9)
+Requires-Dist: pyarrow (>=9.0)
+Requires-Dist: leidenalg
+
+UNKNOWN
+
