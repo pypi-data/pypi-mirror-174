@@ -1,0 +1,8 @@
+README.md
+setup.py
+imagevector.egg-info/PKG-INFO
+imagevector.egg-info/SOURCES.txt
+imagevector.egg-info/dependency_links.txt
+imagevector.egg-info/top_level.txt
+mypypipackage/__init__.py
+mypypipackage/greet.py
