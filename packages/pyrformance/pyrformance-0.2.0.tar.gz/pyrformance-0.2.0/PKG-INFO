@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pyrformance
+Version: 0.2.0
+Summary: Linter that makes your Python code faster.
+Keywords: performance,speed,fast,profiler,linter,semgrep,cli,pythonic
+Author-email: Gram <git@orsinium.dev>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Typing :: Typed
+Requires-Dist: semgrep
+Requires-Dist: isort ; extra == "lint"
+Requires-Dist: flake8 ; extra == "lint"
+Requires-Dist: unify ; extra == "lint"
+Requires-Dist: mypy ; extra == "lint"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-xdist ; extra == "test"
+Requires-Dist: true-north ; extra == "test"
+Project-URL: Source, https://github.com/orsinium-labs/pyrformance
+Provides-Extra: lint
+Provides-Extra: test
+
+# pyrformance
+
+Linter that makes your Python code faster.
+
+Pyrformance is a collection [semgrep](https://semgrep.dev/) rules and a thin wrapper on top of [semgrep CLI](https://github.com/returntocorp/semgrep) for a simple way of running these rules. All rules are non-opinionated and performance-focused.
+
+Features:
+
++ **Non-opinionated**. If pyrformance reports something, changing it will make your code faster. That's it. It won't tell you to change something just because it's a "pythonic", consistent, or whatever else.
++ **Benchmarked**. For each rule, we have a [true-north](https://github.com/orsinium-labs/true-north)-powered benchmark that shows that the rule indeed makes code faster. We don't play guessing or advice something just because a random Medium article says so.
++ **Tested**. We have tests for each rule, which is quite unusual for semgrep rules you can find in the wild.
++ **Never compromises readability**. We do our best to not recommend any changes that would make the code less readable, even if that would be faster.
+
+## Installation
+
+```bash
+python3 -m pip install pyrformance
+```
+
+## Usage
+
+```bash
+python3 -m pyrformance ./your_project/
+```
+
+## License
+
++ The code and rules in pyrformance are licensed under [MIT](./LICENSE).
++ [semgrep](https://github.com/returntocorp/semgrep) is licensed under [GNU LGPL](https://github.com/returntocorp/semgrep/blob/develop/LICENSE).
+
+If you use pyrformance, you should accept both licenses.
+
