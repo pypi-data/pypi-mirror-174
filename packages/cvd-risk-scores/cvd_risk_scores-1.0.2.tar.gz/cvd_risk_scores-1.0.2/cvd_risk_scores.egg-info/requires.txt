@@ -1,0 +1,4 @@
+numpy<2.0.0,>=1.0.0
+pandas<2.0.0,>=1.0.0
+typing-extensions<10.0.0,>=3.0.0
+pydantic<10.0.0,>=1.0.0
