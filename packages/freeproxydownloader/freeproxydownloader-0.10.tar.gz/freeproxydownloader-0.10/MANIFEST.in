@@ -1,0 +1,8 @@
+include freeproxydownloader/requirements.txt
+include freeproxydownloader/thirdparty.json
+include freeproxydownloader/README.MD
+include freeproxydownloader/LICENSE
+include freeproxydownloader/aaa_execute_requests_new.py
+include freeproxydownloader/ad_ping_check.py
+include freeproxydownloader/ad_proxy.py
+include freeproxydownloader/downloader_cpr.py
