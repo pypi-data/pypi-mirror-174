@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: apiogram
+Version: 0.1.5
+Summary: A simple library for easy work with key-value storages and document databases
+Home-page: https://github.com/frontdevops/apiogram
+Download-URL: https://github.com/frontdevops/apiogram/archive/refs/tags/0.1.5.tar.gz
+Author: Alexander Majorov
+Author-email: Alexander Majorov <alexander.majorov@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/frontdevops/apiogram
+Project-URL: Documentation, https://github.com/frontdevops/apiogram/blob/main/README.md
+Project-URL: Bug Tracker, https://github.com/frontdevops/apiogram/issues
+Keywords: aiogram,telegram,storage
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiogram (>=2.22.2)
+Requires-Dist: magic-config (>=0.1.10)
+Requires-Dist: nosql-storage-wrapper (>=0.1.0)
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# Apiogram
+Simple wrapper for aiogram - little framework for comfortable develop telegram bots
+
+[![PyPi Package Version](https://img.shields.io/pypi/v/aiogram.svg?style=flat-square)](https://pypi.python.org/pypi/apiogram)
+[![PyPi status](https://img.shields.io/pypi/status/aiogram.svg?style=flat-square)](https://pypi.python.org/pypi/apiogram)
+[![Supported python versions](https://img.shields.io/badge/Python-3.10.8,3.11-blue)](https://pypi.python.org/pypi/apiogram)
+[![Telegram Bot API](https://img.shields.io/badge/Telegram%20Bot%20API-6.2-blue.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
+[![MIT License](https://img.shields.io/pypi/l/aiogram.svg?style=flat-square)](https://opensource.org/licenses/MIT)
