@@ -1,0 +1,9 @@
+passpy-stubs/METADATA.toml,sha256=am-pxmLmJVYq3_8hg7MiQYW4gYseVn4_lkNHjX5LdoM,63
+passpy-stubs/__init__.pyi,sha256=m4OtDR3Sg2QCcvMphZzLaDmZGeKZ5pZyjMYCSmXzOEM,222
+passpy-stubs/exceptions.pyi,sha256=UnUWeqSvuz1T0VzcJN29SWzWqQVl5pdaR99XHCa6K6Q,98
+passpy-stubs/store.pyi,sha256=YIG8qRW26lKpqvkgQ3bmvq6IghwItkCH7Uq3jVDGWjw,1495
+passpy-stubs/util.pyi,sha256=1-YqxJ6rRgYFbSivV6HHQvElxXcPu1DqBk-a-S_Px14,510
+types_passpy-1.0.2.1.dist-info/METADATA,sha256=oDwAO5Cd66ss8Uyvi6y0tkyRIIOVD7XaipNSvY2GfpI,1165
+types_passpy-1.0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+types_passpy-1.0.2.1.dist-info/top_level.txt,sha256=qQsm-r4nVgZLslgCSmgCM9q3IjRKu_YbsMEmPrKjHXI,13
+types_passpy-1.0.2.1.dist-info/RECORD,,
