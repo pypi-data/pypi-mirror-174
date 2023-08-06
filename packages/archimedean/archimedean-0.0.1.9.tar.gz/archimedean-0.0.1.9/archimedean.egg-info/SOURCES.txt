@@ -1,0 +1,10 @@
+README.md
+setup.py
+archie/__init__.py
+archie/archie.py
+archimedean.egg-info/PKG-INFO
+archimedean.egg-info/SOURCES.txt
+archimedean.egg-info/dependency_links.txt
+archimedean.egg-info/entry_points.txt
+archimedean.egg-info/requires.txt
+archimedean.egg-info/top_level.txt
