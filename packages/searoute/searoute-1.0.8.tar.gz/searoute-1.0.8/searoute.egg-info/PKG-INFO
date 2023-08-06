@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: searoute
+Version: 1.0.8
+Summary: A python package for generating the shortest sea route between two points on Earth.
+Home-page: 
+Author: Gent Halili
+Author-email: genthalili@users.noreply.github.com
+License: MIT
+Project-URL: Documentation, https://github.com/genthalili/searoute-py/blob/main/README.md
+Project-URL: Source, https://github.com/genthalili/searoute-py
+Keywords: searoute map sea route
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# Searoute py
+
+An python package for generating the shortest sea route between two points on Earth. 
+
+If points are on land, the function will attempt to find the nearest point on the sea and calculate the route from there. 
+
+**Not for routing purposes!** This library was developed to generate realistic-looking searoutes for visualizations of maritime routes, not for mariners to route their ships. 
+
+![Searoute map](https://raw.githubusercontent.com/genthalili/searoute-py/main/searoute/assets/searoute.png)
+
+## Installation
+
+~~~bash
+pip install searoute
+~~~
+
+## Usage
+
+~~~py
+import searoute as sr
+
+#Define origin and destination points:
+origin = [0.3515625, 50.064191736659104]
+
+destination = [117.42187500000001, 39.36827914916014]
+
+
+route = sr.searoute(origin, destination)
+# > Returns a GeoJSON LineString Feature
+# show route distance with unit
+print("{:.1f} {}".format(route.properties['length'], route.properties['units']))
+
+# Optionally, define the units for the length calculation included in the properties object.
+# Defaults to km, can be can be 'm' = meters 'mi = miles 'ft' = feets 'in' = inches 'deg' = degrees
+# 'cen' = centimeters 'rad' = radians 'naut' = nauticals 'yd' = yards
+routeMiles = sr.searoute(origin, destination, units="mi")
+
+
+~~~
+
+## Parameters
+
+`origin`    
+Mandatory. An array of 2 floats representing longitude and latitude i.e : `[{lon}, {lat}]`
+
+`destination`    
+Mandatory. An array of 2 floats representing longitude and latitude i.e : `[{lon}, {lat}]`
+
+`units`    
+Optional. Default to `km` = kilometers, can be `m` = meters `mi` = miles `ft` = feets `in` = inches `deg` = degrees `cen` = centimeters `rad` = radians `naut` = nauticals `yd` = yards
+
+`speed_knot`    
+Optional. Speed of the boat, default 24 knots 
+
+`append_orig_dest`    
+Optional. If the origin and destination should be appended to the LineString, default is `False`
+
+## Credits
+
+Based on Eurostat's [Searoute Java library](https://github.com/eurostat/searoute) and Dijkstra's algorithm implemented by [perliedman](https://www.liedman.net/geojson-path-finder/).
+
+Change Log
+==========
+
+1.0.2 (30/09/2022)
+------------------
+- First Release, published module
+
+
+1.0.3 (04/10/2022)
+------------------
+- changed the core of the calculation to osmnx library for better perfomance
+- making 1.0.2 obsolete
+- added duration measurement together with length in the LineString properties
+
+1.0.4 (04/10/2022)
+------------------
+- fix requirements of the module
+
+1.0.5 (04/10/2022)
+------------------
+- Adjusted network (.json) by connecting all LineStrings in order to return a route from any location to any location
+
+1.0.6 (05/10/2022)
+------------------
+- Imporved network connectivity
+
+1.0.7 (13/10/2022)
+------------------
+- Imporved network connectivity
+- Connection points were not adjusted
+
+1.0.8 (25/10/2022)
+------------------
+- Imporved network connectivity
+- Added append_orig_dest parameter as input to append origin and destination points to the LineString
+- Updated README.md
