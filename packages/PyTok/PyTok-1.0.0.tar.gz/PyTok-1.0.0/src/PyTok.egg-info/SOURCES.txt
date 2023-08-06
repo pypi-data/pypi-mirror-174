@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PyTok/__init__.py
+src/PyTok/example.py
+src/PyTok.egg-info/PKG-INFO
+src/PyTok.egg-info/SOURCES.txt
+src/PyTok.egg-info/dependency_links.txt
+src/PyTok.egg-info/top_level.txt
