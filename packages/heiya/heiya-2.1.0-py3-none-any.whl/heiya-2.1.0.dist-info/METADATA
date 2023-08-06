@@ -1,0 +1,143 @@
+Metadata-Version: 2.1
+Name: heiya
+Version: 2.1.0
+Summary: Convert between image and High Efficiency Image (HEIC/AVIF) with ease.
+Home-page: https://github.com/wu-hongjun/heiya
+Download-URL: https://pypi.org/project/heiya/
+Author: Hongjun Wu
+Author-email: hw434@cornell.edu
+License: Apache License 2.0
+Keywords: HEIC,AVIF,TIFF,JPG,ImageConversion
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: piexif
+Requires-Dist: pyheif
+Requires-Dist: pillow-heif
+Requires-Dist: pyperclip
+Requires-Dist: pathlib
+Requires-Dist: Pillow
+
+# Heiya
+
+> **A one-line solution for photographers to simply convert JPEG into High Efficiency Image (AVIF/HEIC) and preserve all the metadata.**
+
+## Introduction
+Heiya allows you to easily translate between JPG/TIFF and AVIF/HEIC, without losing image metadata such as geotag and lens information. All the common operations can be done using one line of code.
+
+It is developed for photographers with a storage budget (like myself, lol) to build an automatic and efficient image storage pipeline.
+
+***
+
+JPEG was invented six years before my existence.
+I'm now 24, graduating from my double Master's degree next summer.
+
+And yet, the majority of cameras in the current age still shoot JPEG.
+
+AVIF and HEIC are what are called "High-Efficiency Images" (You can read about them here: [AVIF vs HEIC](https://www.winxdvd.com/ios-android-mobile/avif-vs-heic.htm)). 
+* These are the future of media formats, JPEG is getting deprecated.
+* They can result in a file size of as much as 100x less than traditional JPEGs.
+* Devices and operating systems now have good support for both formats.
+* However, there are no free and easy-to-use tools out there to simply encode all the JPEGs my camera took into AVIFs while preserving metadata.
+
+## Install Heiya from PyPI
+Heiya is developed and tested on macOS and hasn't been tested on Linux, it doesn't support Windows for now.
+  
+```python
+pip install heiya
+```
+
+## Examples
+* If you just want to convert your JPG to AVIF/HEIF, check out the [Heiya Basic Demo Notebook](https://github.com/wu-hongjun/heiya/blob/main/heiya_basic_demo.ipynb).
+* A complete set of heiya examples can be found in the [Heiya Full Demo Notebook](https://github.com/wu-hongjun/heiya/blob/main/heiya_full_demo.ipynb).
+
+## To-Do & Help Needed
+* Seek alternative for `pyheif` (Which is why Heiya does not support Windows).
+* Attempt an implementation using `imagemagick` to enable bitrate higher than the current 8 bit.
+
+## What does the name mean?
+
+* HEI - High Efficiency Image.
+* Ya - In Chinese, 压(yā) means "to compress".
+
+But mostly just a reference to uncle Roger's "Heiya" when he saw the BBC host rinse and drain cooked rice with tap water (smh... here's the [video](https://youtu.be/53me-ICi_f8)).
+
+## Update History
+
+A complete update log can be found in the [HISTORY.md](https://github.com/wu-hongjun/heiya/blob/main/HISTORY.md).
+
+## License
+Heiya is distributed with the license in [LICENSE.txt](https://github.com/wu-hongjun/heiya/blob/main/LICENSE.txt).
+
+
+# Change log
+
+## [2.1.0] - 2022-11-1
+- Added tools for image to webp pipeline.
+
+## [2.0.0] - 2022-10-30
+- Refactored code for better expandability going forward.
+- Note that this version is not compatible with the previous version, as many functions now have new arguments.
+
+## [1.2.4] - 2022-10-15
+- Fixed an issue for not being able to correctly start batch process for meta transfer.
+
+## [1.2.3] - 2022-10-15
+- Fixed an issue for not being able to detect type list.
+
+## [1.2.2] - 2022-10-15
+- Fixed a minor issue for meta transfer not being able to properly loaded to the machine.
+
+## [1.2.1] - 2022-10-15
+- Fixed a minor issue for meta transfer not being able to properly loaded to the machine. (Fix did not work)
+
+## [1.2.0] - 2022-10-15
+- Added `meta_transfer.batch_img_meta_transfer()` for batch film digitizing workflow.
+
+## [1.1.0] - 2022-10-15
+- Added `meta_transfer.img_meta_transfer()` for easier film digitizing workflow.
+
+## [1.0.0] - 2022-10-04
+- First official release, with all the code cleaned up and properly documented. 
+  
+## [0.1.4] - 2022-10-03
+- Rewrote some of the old comments and docstring that doesn't make sense anymore.
+  
+## [0.1.3] - 2022-10-02
+- Fixed minor bug where the log does not appear properly when transcoding multiple formats.
+  
+## [0.1.2] - 2022-10-02
+- Renamed `he_jpg.py` to `he_img.py` for better file type support. 
+- Fixed a potential issue that can delete all JPG when using the old `heiya.he_jpg`.
+  
+## [0.1.1] - 2022-10-02
+- Wrote a more intuitive `READEME.md`, and updated `haiya_demo.ipynb` on Github.
+
+## [0.1.0] - 2022-10-02
+- Attempting to fix an issue of incorrect param call from `heiya.he_jpg.convert_jpg_to_he_jpg`.
+
+## [0.0.9] - 2022-10-02
+- Unsuccessful fix for an issue of incorrect param call from `heiya.he_jpg.convert_jpg_to_he_jpg`.
+
+## [0.0.8] - 2022-10-02
+- Standarized function names for `from_hei` and `to_hei`.
+
+## [0.0.7] - 2022-10-02
+- Fixed an issue of internal packages not being able to properly import.
+
+## [0.0.6] - 2022-10-02
+- Added extensions and tools to `__init__.py` to fix referencing issue.
+
+## [0.0.5] - 2022-10-02
+- Removed the requirement for `glob`.
+
+## [0.0.4] - 2022-10-02
+- Removed the requirement for `os`.
+
+## [0.0.3] - 2022-10-02
+- Code cleanup.
+
+## [0.0.2] - 2022-10-02
+- Initial upload.
+
+## [0.0.1] - 2022-10-01
+- Created the project.
