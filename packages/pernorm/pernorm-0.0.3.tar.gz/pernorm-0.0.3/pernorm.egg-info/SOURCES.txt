@@ -1,0 +1,8 @@
+setup.py
+pernorm/__init__.py
+pernorm/per_normalizer.py
+pernorm.egg-info/PKG-INFO
+pernorm.egg-info/SOURCES.txt
+pernorm.egg-info/dependency_links.txt
+pernorm.egg-info/requires.txt
+pernorm.egg-info/top_level.txt

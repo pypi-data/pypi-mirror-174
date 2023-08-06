@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pernorm
+Version: 0.0.3
+Summary: Persian Normalizer
+Home-page: https://github.com/HamidRezaAttar/Per-Normalizer
+Author: HamidReza Attar
+Author-email: hamidattar5@gmail.com
+License: UNKNOWN
+Keywords: python,persian,normalizer,text
+Platform: UNKNOWN
+Classifier: Topic :: Text Processing
+Classifier: Natural Language :: Persian
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+A Python library for Persian text preprocessing.
+
