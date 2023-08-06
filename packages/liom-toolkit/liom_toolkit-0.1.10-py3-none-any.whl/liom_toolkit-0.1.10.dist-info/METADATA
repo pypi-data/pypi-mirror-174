@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: liom-toolkit
+Version: 0.1.10
+Summary: Package to support the research of LIOM.
+Home-page: https://github.com/LIOMLab/liom-toolkit
+Author: Laboratoire d’Imagerie Optique et Moléculaire
+Author-email: frederic.lesage@polymtl.ca
+License: GPLv3+
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: antspyx
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: scikit-image
+
