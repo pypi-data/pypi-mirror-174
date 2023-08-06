@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: gunicorn-uvicorn-runner
+Version: 0.1.2
+Summary: Run either gunicorn or uvicorn depending on whether reloading is needed.
+Home-page: https://github.com/Jaza/gunicorn-uvicorn-runner
+License: Apache-2.0
+Author: Jeremy Epstein
+Author-email: jazepstein@gmail.com
+Requires-Python: >=3.10,<4
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: gunicorn
+Requires-Dist: uvicorn[standard]
+Description-Content-Type: text/markdown
+
+# gunicorn-uvicorn-runner
+
+Run either gunicorn or uvicorn depending on whether reloading is needed.
+
+
+## Getting started
+
+1. Install a recent Python 3.x version (if you don't already have one).
+2. Create a Python web project (if you don't already have one) - for example a [FastAPI](https://fastapi.tiangolo.com/) based project.
+3. Install `gunicorn-uvicorn-runner` as a dependency using [Poetry](https://python-poetry.org/), pip, or similar:
+   ```sh
+   poetry add gunicorn-uvicorn-runner
+   ```
+4. Use it:
+   ```python
+   from gunicorn_uvicorn_runner import run_gunicorn_or_uvicorn
+
+
+   if __name__ == "__main__":
+       run_gunicorn_or_uvicorn("myproject.main:app", "1.2.3.4", 8042, True)
+   ```
+
+
+## Developing
+
+To clone the repo:
+
+```sh
+git clone git@github.com:Jaza/gunicorn-uvicorn-runner.git
+```
+
+To automatically fix code style issues:
+
+```sh
+./scripts/format.sh
+```
+
+To verify code style and static typing:
+
+```sh
+./scripts/verify.sh
+```
+
+To run tests:
+
+```sh
+./scripts/test.sh
+```
+
+
+## Building
+
+To build the library:
+
+```sh
+poetry build
+```
+
+
+Built by [Seertech](https://www.seertechsolutions.com/).
+
