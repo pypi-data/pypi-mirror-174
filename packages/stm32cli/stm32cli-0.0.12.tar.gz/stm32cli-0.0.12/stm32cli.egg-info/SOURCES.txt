@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+stm32cli/__init__.py
+stm32cli/__main__.py
+stm32cli/boot.py
+stm32cli/bsp.py
+stm32cli/cmd.py
+stm32cli/uart.py
+stm32cli.egg-info/PKG-INFO
+stm32cli.egg-info/SOURCES.txt
+stm32cli.egg-info/dependency_links.txt
+stm32cli.egg-info/entry_points.txt
+stm32cli.egg-info/requires.txt
+stm32cli.egg-info/top_level.txt
