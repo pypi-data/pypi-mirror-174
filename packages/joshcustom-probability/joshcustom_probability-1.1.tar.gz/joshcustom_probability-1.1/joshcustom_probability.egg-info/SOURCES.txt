@@ -1,0 +1,10 @@
+setup.py
+joshcustom_probability/Binomialdistribution.py
+joshcustom_probability/Gaussiandistribution.py
+joshcustom_probability/Generaldistribution.py
+joshcustom_probability/__init__.py
+joshcustom_probability.egg-info/PKG-INFO
+joshcustom_probability.egg-info/SOURCES.txt
+joshcustom_probability.egg-info/dependency_links.txt
+joshcustom_probability.egg-info/not-zip-safe
+joshcustom_probability.egg-info/top_level.txt
