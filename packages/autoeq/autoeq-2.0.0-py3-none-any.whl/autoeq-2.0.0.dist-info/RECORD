@@ -1,0 +1,12 @@
+README.md,sha256=RfZYdogjgtpAsC-LVAQxkTAvc6Rt2D-cHyHRJoN0q5g,49410
+pyproject.toml,sha256=fMElLu5nglkNAOlT9CppF3RNSrZp1yZ82mG3b1ntyso,1105
+autoeq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoeq/__main__.py,sha256=BUzkkHVW93Mq1F_v6A1RUY6tViGSymYLbo5Z2nRHUAM,14527
+autoeq/batch_processing.py,sha256=2VcucME1gj-UDbGwK4iNLwDiATwsc1EtcAgj5IZ64XM,9600
+autoeq/constants.py,sha256=u0ud0DbYCaOARdLQXSAe9nqaVxvVg9syerghC_2Xyiw,4988
+autoeq/frequency_response.py,sha256=dJ-RUvk95f6ucRxgnbkm_rE-E3b5XP1Zoj1SlNL4KJ4,60237
+autoeq/peq.py,sha256=_spix5gwKml9sS1IbQensT46F9pRTGhp8NzkCZ7lsEo,30461
+autoeq-2.0.0.dist-info/METADATA,sha256=1wjq6RJg-8a0yc95zjk03PA8Abf_UMy--Hmr5sp9_JU,49534
+autoeq-2.0.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+autoeq-2.0.0.dist-info/licenses/LICENSE,sha256=4fku2YcJEHLM5KslpY8ZeLJZ_I7eYmKSOsLsb4bhbdw,1097
+autoeq-2.0.0.dist-info/RECORD,,
