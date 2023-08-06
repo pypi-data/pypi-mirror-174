@@ -1,0 +1,544 @@
+
+This file is processed by make allmanpages in $PETSC_DIR/makefile to create manual pages
+for the types and macros created by PETSC_HASH_SET(). For example, PetscHSetIJ.
+
+/*S
+  PetscHSetI - Hash set with a key of PetscInt
+
+  Level: developer
+
+.seealso:  PETSC_HASH_SET(), PetscHSetICreate(), PetscHSetIDestroy(),  PetscHSetIQueryAdd(), PetscHSetIDel(),
+           PetscHSetIAdd(), PetscHSetIReset()
+S*/
+typedef struct _PetscHashI PetscHSetI;
+
+/*MC
+  PetscHSetICreate - Create a hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetICreate(PetscHSetI *ht)
+
+  Output Parameter:
+. ht - The hash set
+
+  Level: developer
+
+.seealso: PetscHSetIDestroy()
+M*/
+
+/*MC
+  PetscHSetIDestroy - Destroy a hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIDestroy(PetscHSetI *ht)
+
+  Input Parameter:
+. ht - The hash set
+
+  Level: developer
+
+.seealso: PetscHSetICreate()
+M*/
+
+/*MC
+  PetscHSetIReset - Reset a hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIReset(PetscHSetI ht)
+
+  Input Parameter:
+. ht - The hash set
+
+  Level: developer
+
+.seealso: PetscHSetIClear()
+M*/
+
+/*MC
+  PetscHSetIDuplicate - Duplicate a hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIDuplicate(PetscHSetI ht,PetscHSetI *hd)
+
+  Input Parameter:
+. ht - The source hash set
+
+  Output Parameter:
+. ht - The duplicated hash set
+
+  Level: developer
+
+.seealso: PetscHSetICreate()
+M*/
+
+/*MC
+  PetscHSetIUpdate - Add entries from a has set to another
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIUpdate(PetscHSetI ht,PetscHSetI hda)
+
+  Input Parameters:
++ ht - The hash set to which elements are added
+- hta - The hash set from which the elements are retrieved
+
+  Output Parameter:
+. ht - The hash set filled with the elements from the other hash set
+
+  Level: developer
+
+.seealso: PetscHSetICreate(), PetscHSetIDuplicate()
+M*/
+
+/*MC
+  PetscHSetIClear - Clear a hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIClear(PetscHSetI ht)
+
+  Input Parameter:
+. ht - The hash set
+
+  Level: developer
+
+.seealso: PetscHSetIReset()
+M*/
+
+/*MC
+  PetscHSetIResize - Set the number of buckets in a hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIResize(PetscHSetI ht,PetscInt nb)
+
+  Input Parameters:
++ ht - The hash set
+- nb - The number of buckets
+
+  Level: developer
+
+.seealso: PetscHSetICreate()
+M*/
+
+/*MC
+  PetscHSetIGetSize - Get the number of entries in a hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIGetSize(PetscHSetI ht,PetscInt *n)
+
+  Input Parameter:
+. ht - The hash set
+
+  Output Parameter:
+. n - The number of entries
+
+  Level: developer
+
+.seealso: PetscHSetIResize()
+M*/
+
+/*MC
+  PetscHSetIGetCapacity - Get the current size of the array in the hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIGetCapacity(PetscHSetI ht,PetscInt *n)
+
+  Input Parameter:
+. ht - The hash set
+
+  Output Parameter:
+. n - The capacity
+
+  Level: developer
+
+.seealso: PetscHSetIResize(), PetscHSetIGetSize()
+M*/
+
+/*MC
+  PetscHSetIHas - Query for an entry in the hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIHas(PetscHSetI ht,KeyType key,PetscBool *has)
+
+  Input Parameters:
++ ht  - The hash set
+- key - The entry
+
+  Output Parameter:
+. has - Boolean indicating whether the entry is in the hash set
+
+  Level: developer
+
+.seealso:  PetscHSetIAdd(), PetscHSetIDel(), PetscHSetIQueryAdd()
+M*/
+
+/*MC
+  PetscHSetIAdd - Set an entry in the hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIAdd(PetscHSetI ht,KeyType key)
+
+  Input Parameters:
++ ht  - The hash set
+- key - The entry
+
+  Level: developer
+
+.seealso: PetscHSetIDel(), PetscHSetIHas(), PetscHSetIQueryAdd()
+M*/
+
+/*MC
+  PetscHSetIDel - Remove an entry from the hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIDel(PetscHSetI ht,KeyType key)
+
+  Input Parameters:
++ ht  - The hash set
+- key - The entry
+
+  Level: developer
+
+.seealso: PetscHSetIAdd(), PetscHSetIHas()
+M*/
+
+/*MC
+  PetscHSetIQueryAdd - Query and add an entry in the hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIQueryAdd(PetscHSetI ht,KeyType key,PetscBool *missing)
+
+  Input Parameters:
++ ht  - The hash set
+- key - The entry
+
+  Output Parameter:
+. missing - Boolean indicating whether the entry was missing
+
+  Level: developer
+
+.seealso: PetscHSetIQueryDel(), PetscHSetIAdd(), PetscHSetIHas()
+M*/
+
+/*MC
+  PetscHSetIQueryDel - Query and remove an entry from the hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIQueryDel(PetscHSetI ht,KeyType key,PetscBool *present)
+
+  Input Parameters:
++ ht  - The hash set
+- key - The entry
+
+  Output Parameter:
+. present - Boolean indicating whether the entry was present
+
+  Level: developer
+
+.seealso: PetscHSetIQueryAdd(), PetscHSetIDel()
+M*/
+
+/*MC
+  PetscHSetIGetElems - Get all entries from a hash set
+
+  Synopsis:
+  #include <petsc/private/hashseti.h>
+  PetscErrorCode PetscHSetIGetElems(PetscHSetI ht,PetscInt *off,KeyType array[])
+
+  Input Parameters:
++ ht    - The hash set
+. off   - Input offset in array (usually zero)
+- array - Array where to put hash set entries into
+
+  Output Parameters:
++ off   - Output offset in array (output offset = input offset + hash set size)
+- array - Array filled with the hash set entries
+
+  Level: developer
+
+.seealso: PetscHSetIGetSize()
+M*/
+
+This file is processed by make allmanpages in $PETSC_DIR/makefile to create manual pages
+for the types and macros created by PETSC_HASH_SET(). For example, PetscHSetIJ.
+
+/*S
+  PetscHSetIJ - Hash set with a key of struct {PetscInt i,j;}
+
+  Level: developer
+
+.seealso:  PETSC_HASH_SET(), PetscHSetIJCreate(), PetscHSetIJDestroy(),  PetscHSetIJQueryAdd(), PetscHSetIJDel(),
+           PetscHSetIJAdd(), PetscHSetIJReset()
+S*/
+typedef struct _PetscHashIJ PetscHSetIJ;
+
+/*MC
+  PetscHSetIJCreate - Create a hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJCreate(PetscHSetIJ *ht)
+
+  Output Parameter:
+. ht - The hash set
+
+  Level: developer
+
+.seealso: PetscHSetIJDestroy()
+M*/
+
+/*MC
+  PetscHSetIJDestroy - Destroy a hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJDestroy(PetscHSetIJ *ht)
+
+  Input Parameter:
+. ht - The hash set
+
+  Level: developer
+
+.seealso: PetscHSetIJCreate()
+M*/
+
+/*MC
+  PetscHSetIJReset - Reset a hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJReset(PetscHSetIJ ht)
+
+  Input Parameter:
+. ht - The hash set
+
+  Level: developer
+
+.seealso: PetscHSetIJClear()
+M*/
+
+/*MC
+  PetscHSetIJDuplicate - Duplicate a hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJDuplicate(PetscHSetIJ ht,PetscHSetIJ *hd)
+
+  Input Parameter:
+. ht - The source hash set
+
+  Output Parameter:
+. ht - The duplicated hash set
+
+  Level: developer
+
+.seealso: PetscHSetIJCreate()
+M*/
+
+/*MC
+  PetscHSetIJUpdate - Add entries from a has set to another
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJUpdate(PetscHSetIJ ht,PetscHSetIJ hda)
+
+  Input Parameters:
++ ht - The hash set to which elements are added
+- hta - The hash set from which the elements are retrieved
+
+  Output Parameter:
+. ht - The hash set filled with the elements from the other hash set
+
+  Level: developer
+
+.seealso: PetscHSetIJCreate(), PetscHSetIJDuplicate()
+M*/
+
+/*MC
+  PetscHSetIJClear - Clear a hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJClear(PetscHSetIJ ht)
+
+  Input Parameter:
+. ht - The hash set
+
+  Level: developer
+
+.seealso: PetscHSetIJReset()
+M*/
+
+/*MC
+  PetscHSetIJResize - Set the number of buckets in a hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJResize(PetscHSetIJ ht,PetscInt nb)
+
+  Input Parameters:
++ ht - The hash set
+- nb - The number of buckets
+
+  Level: developer
+
+.seealso: PetscHSetIJCreate()
+M*/
+
+/*MC
+  PetscHSetIJGetSize - Get the number of entries in a hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJGetSize(PetscHSetIJ ht,PetscInt *n)
+
+  Input Parameter:
+. ht - The hash set
+
+  Output Parameter:
+. n - The number of entries
+
+  Level: developer
+
+.seealso: PetscHSetIJResize()
+M*/
+
+/*MC
+  PetscHSetIJGetCapacity - Get the current size of the array in the hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJGetCapacity(PetscHSetIJ ht,PetscInt *n)
+
+  Input Parameter:
+. ht - The hash set
+
+  Output Parameter:
+. n - The capacity
+
+  Level: developer
+
+.seealso: PetscHSetIJResize(), PetscHSetIJGetSize()
+M*/
+
+/*MC
+  PetscHSetIJHas - Query for an entry in the hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJHas(PetscHSetIJ ht,KeyType key,PetscBool *has)
+
+  Input Parameters:
++ ht  - The hash set
+- key - The entry
+
+  Output Parameter:
+. has - Boolean indicating whether the entry is in the hash set
+
+  Level: developer
+
+.seealso:  PetscHSetIJAdd(), PetscHSetIJDel(), PetscHSetIJQueryAdd()
+M*/
+
+/*MC
+  PetscHSetIJAdd - Set an entry in the hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJAdd(PetscHSetIJ ht,KeyType key)
+
+  Input Parameters:
++ ht  - The hash set
+- key - The entry
+
+  Level: developer
+
+.seealso: PetscHSetIJDel(), PetscHSetIJHas(), PetscHSetIJQueryAdd()
+M*/
+
+/*MC
+  PetscHSetIJDel - Remove an entry from the hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJDel(PetscHSetIJ ht,KeyType key)
+
+  Input Parameters:
++ ht  - The hash set
+- key - The entry
+
+  Level: developer
+
+.seealso: PetscHSetIJAdd(), PetscHSetIJHas()
+M*/
+
+/*MC
+  PetscHSetIJQueryAdd - Query and add an entry in the hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJQueryAdd(PetscHSetIJ ht,KeyType key,PetscBool *missing)
+
+  Input Parameters:
++ ht  - The hash set
+- key - The entry
+
+  Output Parameter:
+. missing - Boolean indicating whether the entry was missing
+
+  Level: developer
+
+.seealso: PetscHSetIJQueryDel(), PetscHSetIJAdd(), PetscHSetIJHas()
+M*/
+
+/*MC
+  PetscHSetIJQueryDel - Query and remove an entry from the hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJQueryDel(PetscHSetIJ ht,KeyType key,PetscBool *present)
+
+  Input Parameters:
++ ht  - The hash set
+- key - The entry
+
+  Output Parameter:
+. present - Boolean indicating whether the entry was present
+
+  Level: developer
+
+.seealso: PetscHSetIJQueryAdd(), PetscHSetIJDel()
+M*/
+
+/*MC
+  PetscHSetIJGetElems - Get all entries from a hash set
+
+  Synopsis:
+  #include <petsc/private/hashsetij.h>
+  PetscErrorCode PetscHSetIJGetElems(PetscHSetIJ ht,PetscInt *off,KeyType array[])
+
+  Input Parameters:
++ ht    - The hash set
+. off   - Input offset in array (usually zero)
+- array - Array where to put hash set entries into
+
+  Output Parameters:
++ off   - Output offset in array (output offset = input offset + hash set size)
+- array - Array filled with the hash set entries
+
+  Level: developer
+
+.seealso: PetscHSetIJGetSize()
+M*/
