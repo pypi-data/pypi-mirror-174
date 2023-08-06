@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: libreria_correlaciones
+Version: 0.7
+Summary: Esta librería sirve para la deteccion de correlaciones de cara a limpiar los datos para un modelo de clasificacion binaria.
+Home-page: https://github.com/PaulaHermosilla/libreria_correlaciones
+Author: Paula
+Author-email: paula.hermosilla@alumni.mondragon.edu
+License: MIT
+Download-URL: https://github.com/PaulaHermosilla/libreria_correlaciones/archive/refs/tags/v_07.tar.gz
+Description: UNKNOWN
+Keywords: CORRELACIONES,CLASIFICACION_BINARIA,HISTOGRAMAS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
