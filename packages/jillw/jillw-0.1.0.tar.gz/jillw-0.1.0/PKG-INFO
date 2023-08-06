@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: jillw
+Version: 0.1.0
+Summary: The wrapper for jill.py and manage Julia environments with Python virtualenv
+License: MIT
+Author: Suzhou-tongyuan
+Author-email: support@tongyuan.cc
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: jill (>=0.11.1,<0.12.0)
+Requires-Dist: wisepy2 (>=1.3,<2.0)
+Description-Content-Type: text/markdown
+
+# JILL Wrapper
+
+JILL Wrapper (`jillw`) is a lightweight and cross-platform Julia version manager. This work is based on [johnnychen94/jill.py](https://github.com/johnnychen94/jill.py) and [Python venv](https://docs.python.org/3/library/venv.html).
+
+`jillw` targets several different use cases:
+
+1. cross-platform julia installation
+2. cross-platform julia version management
+3. providing the "one Julia, one Python" installation
+
+## Installation
+
+```bash
+pip install -U jillw
+```
+
+## Usage
+
+### Create environments
+
+```shell
+> jillw create --help
+usage: create [-h] [--name NAME] [--upstream UPSTREAM] [--version VERSION] [--confirm CONFIRM] [--unstable UNSTABLE] [name] [upstream] [version] [confirm] [unstable]
+
+# create a new environment using Julia 1.8
+> jillw create myenv --version 1.8
+```
+
+The explanations of the arguments except `name` are referred to [johnnychen94/jill.py](https://github.com/johnnychen94/jill.py).
+
+### Activate environments
+
+```shell
+> jillw switch <envname>
+
+> jillw switch myenv
+```
+
+### Start `julia` under environments
+
+```shell
+> jillw switch myenv
+> julia --compile=min --quiet
+julia> Sys.which("julia")
+"~/.jlenvs/myenv/julia/julia-1.8/bin/julia.exe"
+```
+
+### List environments
+
+```shell
+> jillw list
+myenv => ~/.jlenvs/myenv
+latest => ~/.jlenvs/latest
+```
+
+### Remove environments
+
+```shell
+> jillw remove latest
+Environment latest removed.
+```
+
+### Run commands under environments
+
+```shell
+> jillw switch myenv
+> jillw run 'echo %VIRTUAL_ENV%'
+~/.jlenvs/myenv
+```
+
+## License
+
+See [LICENSE.md](./LICENSE.md).
+
