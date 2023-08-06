@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: varats-core
+Version: 13.0.0
+Home-page: https://github.com/se-sic/vara-tool-suite
+Author: Florian Sattler
+Author-email: sattlerf@cs.uni-saarland.de
+Requires-Python: >=3.7
+Requires-Dist: benchbuild (>=6.4.0)
+Requires-Dist: plumbum (>=1.6.6)
+Requires-Dist: PyGithub (>=1.47)
+Requires-Dist: PyDriller (>=2.0)
+Requires-Dist: requests (>=2.23.0)
+Requires-Dist: packaging (>=20.1)
+Requires-Dist: pygit2 (>=0.28.2)
+
