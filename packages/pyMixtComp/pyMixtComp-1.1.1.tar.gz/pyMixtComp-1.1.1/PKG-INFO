@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyMixtComp
+Version: 1.1.1
+Summary: Mixture models with heterogeneous data sets and partially missing data management.
+Author: Mostafa Abdelrashied
+Keywords: clustering,mixture model,heterogeneous,missing data
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
