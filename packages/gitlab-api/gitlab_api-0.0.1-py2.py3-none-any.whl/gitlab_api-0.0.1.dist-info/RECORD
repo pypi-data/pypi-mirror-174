@@ -1,0 +1,10 @@
+gitlab_api/__init__.py,sha256=jfghj3f5kWtf-K7x3ItjKsakUPGjYz7A-FQPIJokCUg,284
+gitlab_api/decorators.py,sha256=t8J9bZBINo4R3HLgmfEfQsw0Ex2ccaNY5gO3OiiBc98,435
+gitlab_api/exceptions.py,sha256=D2wU4uENRLlLldeplf_qcDpYUVFdq_6L8JxNeIU7soU,463
+gitlab_api/gitlab_api.py,sha256=N7weD-oluCUg_cyi13QzL16KAInFHxOH2IgazNMHidI,94411
+gitlab_api/version.py,sha256=hJIwciEVj2uQ7qFWHIsXgyJ02y3s7j15KbfWIjCXflo,116
+gitlab_api-0.0.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+gitlab_api-0.0.1.dist-info/METADATA,sha256=DEDlVBC1b5Qvks9WrEvEmX5jSpDTCUMPkhd2mIJD91k,1905
+gitlab_api-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+gitlab_api-0.0.1.dist-info/top_level.txt,sha256=nd1ty1-efj5HDc14wL4tzW1k_vF3qni3wPspalPLsR4,11
+gitlab_api-0.0.1.dist-info/RECORD,,
