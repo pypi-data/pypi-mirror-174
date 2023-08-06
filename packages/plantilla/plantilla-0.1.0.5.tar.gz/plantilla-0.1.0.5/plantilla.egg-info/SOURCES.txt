@@ -1,0 +1,22 @@
+MANIFEST.in
+old_setup.cfg
+old_setup.py
+pyproject.toml
+setup.py
+subir a pip.md
+test.py
+__pycache__/setup.cpython-39.pyc
+_old/Plantilla pyfile.ipynb
+_old/plantilla-0.0.1-py3-none-any.whl
+_old/plantilla-0.0.1.tar.gz
+_old/plantilla.do
+_old/plantilla.py
+_old/prueba stata.do
+plantilla/__init__.py
+plantilla.egg-info/PKG-INFO
+plantilla.egg-info/SOURCES.txt
+plantilla.egg-info/dependency_links.txt
+plantilla.egg-info/requires.txt
+plantilla.egg-info/top_level.txt
+plantilla/__pycache__/__init__.cpython-39.pyc
+plantilla/styles/mecon.mplstyle

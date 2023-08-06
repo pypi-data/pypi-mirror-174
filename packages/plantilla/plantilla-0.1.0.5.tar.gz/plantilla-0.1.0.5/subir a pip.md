@@ -1,0 +1,5 @@
+- Cambiar la version en setup.py
+- Borrar la carpeta dist
+- Desde la carpeta en la que esta pyproject.toml, correr  `py -m setup sdist` -> Antes era `py -m build`, pero asi no puede incluir archivos 
+- Correr `py -m twine upload dist/*`
+- Logearse
