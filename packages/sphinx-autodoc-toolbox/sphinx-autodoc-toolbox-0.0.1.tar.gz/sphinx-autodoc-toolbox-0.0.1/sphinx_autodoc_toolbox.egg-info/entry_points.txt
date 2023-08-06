@@ -1,0 +1,2 @@
+[console_scripts]
+abqpy = sphinx_autodoc_toolbox.__main__:cli

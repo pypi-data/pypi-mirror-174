@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: sphinx-autodoc-toolbox
+Version: 0.0.1
+Summary: Extensions for sphinx autodoc
+Author-email: WANG Hailin <hailin.wang@connect.polyu.hk>
+Project-URL: Homepage, https://github.com/haiiliin/sphinx-autodoc-toolbox/
+Project-URL: Documentation, https://sphinx-autodoc-toolbox.readthedocs.io/
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sphinx-autodoc-toolbox
+
+Extensions for sphinx autodoc
+
+- GitHub: https://github.com/haiiliin/sphinx-autodoc-toolbox/
+- Documentation: https://sphinx-autodoc-toolbox.readthedocs.io/en/latest/
+- PyPI: https://pypi.org/project/sphinx-autodoc-toolbox/
+- Read the Docs: https://readthedocs.org/projects/sphinx-autodoc-toolbox/
