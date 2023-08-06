@@ -1,0 +1,7 @@
+wechaty>=0.10.2
+jieba
+aiohttp
+requests
+sqlalchemy
+apscheduler
+feedparser
