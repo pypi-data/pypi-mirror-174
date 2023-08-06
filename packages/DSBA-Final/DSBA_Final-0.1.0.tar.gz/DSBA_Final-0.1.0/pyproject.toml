@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DSBA_Final"
+version = "0.1.0"
+dependencies = [
+                "numpy",
+                "pandas",
+]
+[options]
+zip_safe = true
+include_package_data = true
+
+[options.package_data]
+DSBA_Final = '*.csv'
