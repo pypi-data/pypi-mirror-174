@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: goldbox
+Version: 1.0
+Summary: A package of simple Python utilities and data structures.
+Home-page: https://github.com/XavierFMW/goldbox
+Author: Xavier Mercerweiss
+Author-email: xavifmw@gmail.com
+License: GPLv3
+Keywords: toolbox utilities data structures
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+UNKNOWN
+
