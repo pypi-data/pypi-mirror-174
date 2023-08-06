@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+numcek/__init__.py
+numcek.egg-info/PKG-INFO
+numcek.egg-info/SOURCES.txt
+numcek.egg-info/dependency_links.txt
+numcek.egg-info/top_level.txt
