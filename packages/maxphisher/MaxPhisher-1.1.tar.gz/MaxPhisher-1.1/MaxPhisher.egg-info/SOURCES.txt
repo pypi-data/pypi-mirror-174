@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+maxphisher
+setup.py
+MaxPhisher.egg-info/PKG-INFO
+MaxPhisher.egg-info/SOURCES.txt
+MaxPhisher.egg-info/dependency_links.txt
+MaxPhisher.egg-info/requires.txt
+MaxPhisher.egg-info/top_level.txt
+files/email.json
+files/maxphisher.gif
+files/requirements.txt
+files/version.txt
