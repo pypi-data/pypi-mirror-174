@@ -1,0 +1,4 @@
+typing_extensions<5,>=4.0
+
+[PIL]
+Pillow>=2.7
