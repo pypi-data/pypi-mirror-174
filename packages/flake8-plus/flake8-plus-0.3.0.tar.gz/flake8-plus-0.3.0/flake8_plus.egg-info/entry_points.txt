@@ -1,0 +1,2 @@
+[flake8.extension]
+PLU = flake8_plus:Plugin
