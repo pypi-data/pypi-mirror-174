@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "more-pyspark"
+version = "0.1.0"
+description = ""
+authors = ["Todd Iverson <Tiverson@winona.edu>"]
+readme = "README.md"
+packages = [{include = "more_pyspark"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+composable = "^0.2.5"
+more-itertools = "^9.0.0"
+pandas = "^1.5.1"
+pyspark = "^3.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
