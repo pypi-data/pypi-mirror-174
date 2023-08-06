@@ -1,0 +1,11 @@
+pluginconf/__init__.py,sha256=K_UMwI8n_YbucLKVRPeC8hxNV9xX1oaoM21kHKqJ0yA,22668
+pluginconf/bind.py,sha256=aNYYi53TqCL5t_uy1FlE3KAmB-me3JUfk9XnI5qiUnE,10392
+pluginconf/depends.py,sha256=xk1ApN75XM6O50QcnOnlbI9JbIg3B-k0EgKzGZ133gE,8907
+pluginconf/flit.py,sha256=Tf3-2N5-akkPOYe4mujEgJuN2GsHsoQh6JZVZE8WSDs,6291
+pluginconf/gui.py,sha256=E4qdxBwcJuxBNA1IuJkRxtAT06OVGomPPqhu-pyAHR8,8376
+pluginconf/setup.py,sha256=UQpbMt3g0Ou8CFh-o0glcBECA8RlLgS6TaBjVL4VIRQ,22646
+pluginconf-0.8.0.dist-info/entry_points.txt,sha256=XX_nNBXtd2oVUk4igkN4ws6kLwClda2vWN_wtDvs1wo,56
+pluginconf-0.8.0.dist-info/LICENSE,sha256=jLDORK4xRpgF3x6lFCS1XTlHalMtb9MclZc-B_GsaK0,8064
+pluginconf-0.8.0.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+pluginconf-0.8.0.dist-info/METADATA,sha256=GrKSEkH6dzl0-238zzBCgD6Eh-YaBnPTQnv7YO_DGaM,8572
+pluginconf-0.8.0.dist-info/RECORD,,
