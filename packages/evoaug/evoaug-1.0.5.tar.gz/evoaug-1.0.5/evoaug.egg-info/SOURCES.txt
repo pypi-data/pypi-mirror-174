@@ -1,0 +1,9 @@
+README.md
+setup.py
+evoaug/__init__.py
+evoaug/augment.py
+evoaug/evoaug.py
+evoaug.egg-info/PKG-INFO
+evoaug.egg-info/SOURCES.txt
+evoaug.egg-info/dependency_links.txt
+evoaug.egg-info/top_level.txt
