@@ -1,0 +1,42 @@
+# jupyter.yaml
+
+name: jupyter
+
+resources:
+  cloud: gcp
+  instance_type: n2d-standard-32
+  region: us-west1
+  disk_size: 256
+
+file_mounts:
+  /rs2:
+    source: gs://ecker-cemba-rs2/
+    mode: MOUNT
+  /data:
+    source: gs://ecker-rachel-analysis/
+    mode: MOUNT
+  /cemba:
+    source: gs://ecker-hanqing-wmb-us-west1/
+    mode: MOUNT
+  /ref:
+    source: gs://ecker-hanqing-reference/
+    mode: MOUNT
+  /home/hanliu:
+    source: gs://ecker-hanqing-analysis/
+    mode: MOUNT
+
+setup: |
+  if [ -f /opt/conda/bin/mamba ]
+  then
+    echo "Skip setup"
+  else
+    conda install mamba -y -n base -c conda-forge
+    pip install --upgrade pip
+    gsutil cp gs://ecker-hanqing-wmb-us-west1/wmb/sky/env.yaml ./
+    mamba env update -f env.yaml
+    rm env.yaml
+  fi
+
+run: |
+  cd ~/sky_workdir
+  nohup jupyter-lab --LabApp.token='' --no-browser --port 8898 > ~/jupyter.log 2>&1 &
