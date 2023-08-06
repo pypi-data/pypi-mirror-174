@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: jhu
+Version: 1.0.5
+Summary: jhu是一个工具包,简化或自动化的做一些任务
+Home-page: https://github.com/joestarhu/jhu
+Author: J.Hu
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.9
