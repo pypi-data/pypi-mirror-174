@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup - Copy.py
+setup.py
+aspcmds/__init__.py
+aspcmds.egg-info/PKG-INFO
+aspcmds.egg-info/SOURCES.txt
+aspcmds.egg-info/dependency_links.txt
+aspcmds.egg-info/top_level.txt
