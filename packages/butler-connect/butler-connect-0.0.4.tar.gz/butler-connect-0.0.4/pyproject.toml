@@ -1,0 +1,33 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "butler-connect"
+version = "0.0.4"
+description = "First tag!"
+readme = "README.md"
+authors = [{ name = "Oliver Birkholz", email = "info@aibutler.de" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["feed", "reader", "tutorial"]
+dependencies = [
+    "sseclient",
+    "requests>=2.0.0"
+]
+requires-python = ">=3.6"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "http://aibutler.de/"
+
+[project.scripts]
+#realpython = "butler-connect.__main__:main"
