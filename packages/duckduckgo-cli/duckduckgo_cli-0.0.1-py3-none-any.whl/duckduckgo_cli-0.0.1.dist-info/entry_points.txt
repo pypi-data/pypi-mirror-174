@@ -1,0 +1,2 @@
+[console_scripts]
+ddg = duckduckgo_cli.main:main
