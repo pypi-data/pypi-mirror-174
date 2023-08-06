@@ -1,0 +1,28 @@
+name: napari-annotate
+schema_version: 0.1.0
+contributions:
+  commands:
+  - id: napari-annotate.next_slide
+    title: Create next_slide
+    python_name: napari_annotate._annotate:next_slide
+
+  - id: napari-annotate.review_annotations
+    title: Create review_annotations
+    python_name: napari_annotate._annotate:review_annotations
+
+  - id: napari-annotate.get_reader
+    title: Get Reader
+    python_name: napari_annotate._reader:napari_get_reader
+
+  readers:
+  - command: napari-annotate.get_reader
+    filename_patterns:
+    - '*_pbm'
+    accepts_directories: true
+
+  widgets:
+  - command: napari-annotate.next_slide
+    display_name: Annotate next slide
+
+  - command: napari-annotate.review_annotations
+    display_name: Review next slide

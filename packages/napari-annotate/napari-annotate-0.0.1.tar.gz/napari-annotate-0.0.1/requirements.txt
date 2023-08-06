@@ -1,0 +1,5 @@
+numpy
+napari[all]
+napari_tools_menu
+magic-class
+napari-plugin-engine>=0.1.4
