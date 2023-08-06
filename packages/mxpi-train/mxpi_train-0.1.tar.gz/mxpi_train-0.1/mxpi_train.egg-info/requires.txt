@@ -1,0 +1,17 @@
+numpy
+onnx
+onnx_simplifier
+onnxruntime
+onnxsim
+opencv-python
+pycocotools
+PyYAML
+torchsummary
+tqdm
+pyqt5
+pywin32
+torch
+torchvision
+torchaudio
+future
+tensorboard
