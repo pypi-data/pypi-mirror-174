@@ -1,0 +1,2 @@
+[console_scripts]
+awsipenum = awsipenum.cli:main
