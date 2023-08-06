@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "text-patch"
+version = "0.1.0"
+description = ""
+authors = ["Philip Huang <p208p2002@gmail.com>"]
+include = ["text_patch/*.dict.txt"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+edit-distance = "^1.0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
