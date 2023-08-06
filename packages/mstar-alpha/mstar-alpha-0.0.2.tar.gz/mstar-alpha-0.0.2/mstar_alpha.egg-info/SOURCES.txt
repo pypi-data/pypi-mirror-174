@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+mstar/__init__.py
+mstar/conf.py
+mstar/mstar.py
+mstar/plot.py
+mstar/utils.py
+mstar_alpha.egg-info/PKG-INFO
+mstar_alpha.egg-info/SOURCES.txt
+mstar_alpha.egg-info/dependency_links.txt
+mstar_alpha.egg-info/requires.txt
+mstar_alpha.egg-info/top_level.txt
