@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+jinja2
+custom_inherit
+seaborn
+pulp
+Deprecated
+scikit-learn
+matplotlib!=3.6.1
+importlib_metadata
