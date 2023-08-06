@@ -1,0 +1,7 @@
+{
+    "Sample Images" : "gallery",
+    "Epoch" : "progress",
+    "Batch Progress" : "progress",
+    "Training Loss" : "chart", 
+    "Logs" : "log"
+}
