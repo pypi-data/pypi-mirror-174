@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+FacebookAdsWindsorApi/__init__.py
+FacebookAdsWindsorApi/client.py
+FacebookAdsWindsorApi/enums.py
+FacebookAdsWindsorApi.egg-info/PKG-INFO
+FacebookAdsWindsorApi.egg-info/SOURCES.txt
+FacebookAdsWindsorApi.egg-info/dependency_links.txt
+FacebookAdsWindsorApi.egg-info/not-zip-safe
+FacebookAdsWindsorApi.egg-info/requires.txt
+FacebookAdsWindsorApi.egg-info/top_level.txt
+test/__init__.py
+test/tests.py
