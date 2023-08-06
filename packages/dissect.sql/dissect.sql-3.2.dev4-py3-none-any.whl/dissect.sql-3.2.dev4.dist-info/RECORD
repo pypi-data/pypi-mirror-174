@@ -1,0 +1,10 @@
+dissect/sql/__init__.py,sha256=EyT1eTZfN7GYRvcJydyEM6MWu8dQfBWwXN0byabOk8I,398
+dissect/sql/c_sqlite3.py,sha256=tYch5bgVaDPNZ5IGNIkWCHKjR0i6lnYGOkfhuUUWBzA,2588
+dissect/sql/exceptions.py,sha256=EHDfxK96063VvywQ377ujXWEYNq-UNhkfq_sTD3Axn4,384
+dissect/sql/sqlite3.py,sha256=IzlySaL9La0SAn7sN0QsyyhqMwWwV-4yGSKsEpiKEKI,18299
+dissect/sql/utils.py,sha256=56oBD-GkD5rwOkexS3T5ZvOMkDs-nhcw4_NAG8VI9Co,4147
+dissect.sql-3.2.dev4.dist-info/COPYRIGHT,sha256=R4OtxcyeD1SgI3EqcjERXzyyFCbodU8aNWmBq0_mr9c,298
+dissect.sql-3.2.dev4.dist-info/METADATA,sha256=VguDkQ2jBUXAXO3o-OaaFe9dsCd-T-Y7S5rEhSaI3dE,2327
+dissect.sql-3.2.dev4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dissect.sql-3.2.dev4.dist-info/top_level.txt,sha256=Mn-CQzEYsAbkxrUI0TnplHuXnGVKzxpDw_po_sXpvv4,8
+dissect.sql-3.2.dev4.dist-info/RECORD,,
