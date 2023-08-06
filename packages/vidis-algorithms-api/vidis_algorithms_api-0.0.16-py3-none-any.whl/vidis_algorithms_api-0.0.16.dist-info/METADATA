@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vidis-algorithms-api
+Version: 0.0.16
+Summary: The API for defining an algorithm has to be used in the 'Vidis'
+Home-page: https://github.com/Banayaki
+Author: Artem Mukhin
+Author-email: Mukhin Artem <artemmukhinssau@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: pika (==1.3.1)
+Requires-Dist: mariadb (==1.0.7)
+Requires-Dist: mysqlclient (==2.0.3)
+Requires-Dist: pydantic (==1.10.2)
+Requires-Dist: loguru (==0.6.0)
+Requires-Dist: sqlalchemy (==1.4.42)
+Requires-Dist: numpy (==1.23.4)
+
