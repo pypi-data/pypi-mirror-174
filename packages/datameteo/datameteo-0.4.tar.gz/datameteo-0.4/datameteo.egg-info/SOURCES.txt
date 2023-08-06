@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+datameteo/__init__.py
+datameteo/datos_tiempo.py
+datameteo.egg-info/PKG-INFO
+datameteo.egg-info/SOURCES.txt
+datameteo.egg-info/dependency_links.txt
+datameteo.egg-info/requires.txt
+datameteo.egg-info/top_level.txt

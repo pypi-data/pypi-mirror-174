@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: datameteo
+Version: 0.4
+Summary: Descarga y análisis de los datos metereológicos mediante la API de OpenWeatherMap.
+Home-page: https://github.com/Leirebarturen/meteodata
+Download-URL: https://github.com/Leirebarturen/datameteo/archive/refs/tags/v_04.tar.gz
+Author: Leire Barturen Janire Amesti
+Author-email: janire.amesti@alumni.mondragon.edu
+License: MIT
+Keywords: ANÁLISIS,DATOS,METEREOLÓGICOS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
