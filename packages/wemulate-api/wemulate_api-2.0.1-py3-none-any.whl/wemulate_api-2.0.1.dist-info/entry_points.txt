@@ -1,0 +1,3 @@
+[console_scripts]
+wemulate-api=api.app:main
+
