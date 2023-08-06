@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+import re
+import sys
+import pathlib
+from setuptools import find_packages, setup
+
+WORK_DIR = pathlib.Path(__file__).parent
+
+# Check python version
+MINIMAL_PY_VERSION = (3, 10, 8)
+if sys.version_info < MINIMAL_PY_VERSION:
+    raise RuntimeError('aiogram works only with Python {}+'.format('.'.join(map(str, MINIMAL_PY_VERSION))))
+
+
+def get_description() -> str:
+    """
+    Read full description from 'README.rst'
+    :return: description
+    :rtype: str
+    """
+    with open('README.rst', 'r', encoding='utf-8') as f:
+        return f.read()
+
+
+def get_version() -> list[str]:
+    """
+    Read version
+    :return: str
+    """
+    txt = (WORK_DIR / 'src' / '__init__.py').read_text('utf-8')
+    try:
+        a = re.findall(r"^__version__ = '([^']+)'\r?$", txt, re.M)
+        print("[[[", a, "]]]")
+        return a
+    except IndexError:
+        raise RuntimeError('Unable to determine version.')
+
+
+
+setup(
+    name='magic_config',
+    version=get_version(),
+    license='MIT',
+    author='Alexander Majorov',
+    author_email='alexander.majorov@gmail.com',
+    description=('Is a pretty simple library for working with configuration'
+                 ' files based on the .env files and environment variables'
+                 ),
+    long_description=get_description(),
+    url='https://github.com/frontdevops/magic-config',
+    project_urls={
+        "Homepage": "https://github.com/frontdevops/magic-config",
+        "Bug Tracker": "https://github.com/frontdevops/magic-config/issues",
+    },
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.10.8',
+        'Programming Language :: Python :: 3.11',
+        'Topic :: Software Development :: Libraries :: Application Utilities',
+    ],
+    # package_dir={"": "src"},
+    # packages=find_packages(where="src", exclude=('tests', 'tests.*', 'examples.*', 'docs',)),
+    packages=find_packages(exclude=('tests', 'tests.*', 'examples.*', 'docs',)),
+    include_package_data=False,
+    python_requires='>=3.10.8',
+)
