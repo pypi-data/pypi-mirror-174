@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-plus/dist/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/element-plus"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.3.3/echarts.min.js"></script>
+    <title>测试报告</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    pre {
+        border: 1px solid #dedede;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        margin: 0 20px;
+        padding: 10px;
+    }
+
+    .title {
+        text-align: center;
+        font-weight: bolder;
+        background-color: #42b983;
+        margin: 0;
+        padding: 20px;
+        color: #4b4b4b;
+    }
+
+    .card-header span {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .card-header .el-select {
+        margin-right: 40px;
+    }
+
+    .row-expand {
+        background-color: #f5f5f5;
+        padding: 10px;
+    }
+</style>
+<body>
+<div id="app">
+    <el-scrollbar height="100vh">
+        <h2 class="title">{{sourceData.title}}</h2>
+        <el-row style="margin: 10px;">
+            <el-col :span="20" :push="2">
+                <el-card>
+                    <template #header>
+                        <el-row>
+                            <el-col :span="12">
+                                <span style="font-weight: bolder; line-height: 32px">报告概览</span>
+                            </el-col>
+                        </el-row>
+                    </template>
+                    <el-row :gutter="50">
+                        <el-col :span="6" style="border-right: 1px solid rgba(228,231,237,0.82)">
+                            <el-form :model="form" label-width="100px">
+                                <el-form-item label="报告名称">
+                                    <el-input readonly v-model="sourceData.desc"/>
+                                </el-form-item>
+                                <el-form-item>
+                                    <template #label>
+                                        <span style="color: #0f9165">成功总数</span>
+                                    </template>
+                                    <el-input readonly v-model="sourceData.passed"/>
+                                </el-form-item>
+                                <el-form-item>
+                                    <template #label>
+                                        <span style="color: #94303f">失败总数</span>
+                                    </template>
+                                    <el-input readonly v-model="sourceData.failed"/>
+                                </el-form-item>
+                                <el-form-item>
+                                    <template #label>
+                                        <span style="color: #636363">跳过总数</span>
+                                    </template>
+                                    <el-input readonly v-model="sourceData.skipped"/>
+                                </el-form-item>
+                                <el-form-item>
+                                    <template #label>
+                                        <span style="color: #e6a23c">错误总数</span>
+                                    </template>
+                                    <el-input readonly v-model="sourceData.error"/>
+                                </el-form-item>
+                                <el-form-item label="开始时间">
+                                    <el-input readonly v-model="sourceData.start_time"/>
+                                </el-form-item>
+                                <el-form-item label="结束时间">
+                                    <el-input readonly v-model="sourceData.end_time"/>
+                                </el-form-item>
+                                <el-form-item label="测试人员">
+                                    <el-input readonly v-model="sourceData.tester"/>
+                                </el-form-item>
+                            </el-form>
+                        </el-col>
+                        <el-col :span="7" style="border-right: 1px solid rgba(228,231,237,0.82)">
+                            <div id="echart1" :style="{height: '300px'}"></div>
+                        </el-col>
+                        <el-col :span="11">
+                            <div id="echart2" :style="{height: '300px'}"></div>
+                        </el-col>
+                    </el-row>
+                </el-card>
+                <br/>
+                <!-- table详情 ---------------->
+                <el-card>
+                    <template #header>
+                        <el-row class="card-header">
+                            <el-col :span="20">
+                                <span>所属分类:</span>
+                                <el-select v-model="filterData.model_v" clearable @change="f_selectChange" placeholder="全部" style="width: 400px">
+                                    <el-option v-for="item in filterData.model_options" :key="item" :label="item"
+                                               :value="item"></el-option>
+                                </el-select>
+                                <span>结果:</span>
+                                <el-select v-model="filterData.status_v" clearable @change="f_selectChange"
+                                           placeholder="全部">
+                                    <el-option label="成功" value="passed"></el-option>
+                                    <el-option label="失败" value="failed"></el-option>
+                                    <el-option label="错误" value="skipped"></el-option>
+                                    <el-option label="跳过" value="error"></el-option>
+                                </el-select>
+                            </el-col>
+                            <el-col :span="4" style="text-align: right">
+                                <span style="color: #222236; "><b>用例总数: {{tableData.length}}</b></span>
+                            </el-col>
+                        </el-row>
+                    </template>
+                    <el-table :data="tableData" border style="width: 100%">
+                        <el-table-column type="expand">
+                            <template #default="scope">
+                                <el-row class="row-expand">
+                                    <el-col>
+                                        <el-tabs type="border-card">
+                                            <el-tab-pane label=打印内容 v-if="scope.row.sections">
+                                                <pre>{{scope.row.sections}}</pre>
+                                            </el-tab-pane>
+                                            <el-tab-pane label=详细内容 v-if="scope.row.excinfo">
+                                                <el-tabs>
+                                                    <el-tab-pane v-for="(value, item, i) in scope.row.excinfo"
+                                                                 :key="i" :label="item">
+                                                        <pre>{{value}}</pre>
+                                                    </el-tab-pane>
+                                                </el-tabs>
+                                            </el-tab-pane>
+                                        </el-tabs>
+                                    </el-col>
+                                </el-row>
+                            </template>
+                        </el-table-column>
+                        <el-table-column label="序号" type="index" width="80px"></el-table-column>
+                        <el-table-column label="模块" prop="model" show-overflow-tooltip></el-table-column>
+                        <el-table-column label="类" prop="classed" show-overflow-tooltip></el-table-column>
+                        <el-table-column label="方法" prop="method" show-overflow-tooltip></el-table-column>
+                        <el-table-column label="描述" prop="doc" show-overflow-tooltip></el-table-column>
+                        <el-table-column label="响应时间" prop="duration" width="100px"></el-table-column>
+                        <el-table-column label="结果" width="100px">
+                            <template #default="scope">
+                                <el-tag v-if="scope.row.status==='passed'" type="success">成功</el-tag>
+                                <el-tag v-else-if="scope.row.status==='error'" type="warning">错误</el-tag>
+                                <el-tag v-else-if="scope.row.status==='failed'" type="danger">失败</el-tag>
+                                <el-tag v-else-if="scope.row.status==='skipped'" type="info">跳过</el-tag>
+                            </template>
+                        </el-table-column>
+                    </el-table>
+                </el-card>
+            </el-col>
+        </el-row>
+    </el-scrollbar>
+</div>
+<script>
+    Object.assign(window, Vue)
+    const App = {
+        setup() {
+            const tableData = ref([])
+            const runRespTimeList = ref([])       // 折线图主数据（响应时间）
+            const filterData = reactive({model_v: null, model_options: [], status_v: null,})
+            const form = reactive({passed: 0, failed: 0, error: 0, skipped: 0})
+            const sourceData = reactive(templateData)
+
+            const setupInfo = () => {
+                // 获取组列表
+                sourceData.cases.map(el => {
+                    if (filterData.model_options.indexOf(el['model']) === -1) {
+                        filterData.model_options.push(el['model'])
+                    }
+                })
+                f_selectChange()
+            }
+
+            // 下拉框过滤
+            const f_selectChange = () => {
+                tableData.value = sourceData.cases.filter(el => {
+                    return (filterData.model_v || filterData.model_options).indexOf(el.model) !== -1 && (filterData.status_v || ["passed", "failed", "skipped", "error"]).indexOf(el.status) !== -1
+                })
+                form.passed = tableData.value.filter(el => {
+                    return el.status === "passed"
+                }).length
+                form.failed = tableData.value.filter(el => {
+                    return el.status === "failed"
+                }).length
+                form.error = tableData.value.filter(el => {
+                    return el.status === "error"
+                }).length
+                form.skipped = tableData.value.filter(el => {
+                    return el.status === "skipped"
+                }).length
+                // 响应时间列表
+                runRespTimeList.value = []
+                tableData.value.map(el => {
+                    runRespTimeList.value.push(el.duration)
+                })
+                nextTick(() => {
+                    chart1()
+                    chart2()
+                })
+            }
+
+            // 饼图
+            const chart1 = () => {
+                let seriesData = [
+                    {name: "成功", value: form.passed},
+                    {name: "失败", value: form.failed},
+                    {name: "错误", value: form.error},
+                    {name: "跳过", value: form.skipped}
+                ];
+                // 加载图像
+                let myChart = echarts.init(document.getElementById("echart1"));
+                let option = {
+                    title: {
+                        text: '执行结果',
+                        left: 'center'
+                    },
+                    legend: {
+                        orient: 'vertical',
+                        left: 'left',
+                        top: '150px'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: '{a} <br/>{b}: {c} ({d}%)'
+                    },
+                    color: ['#0f9165', '#94303f', '#e6a23c', '#636363'],
+                    series: [
+                        {
+                            type: 'pie',
+                            name: '测试结果',
+                            radius: ['45%', '70%'],
+                            center: ['50%', '60%'],
+                            data: seriesData,
+                            zlevel: 1,
+                            z: 1,
+                            label: {
+                                show: false,
+                                position: 'center'
+                            },
+                            emphasis: {
+                                label: {
+                                    show: true,
+                                    fontSize: '20',
+                                    fontWeight: 'bold'
+                                }
+                            },
+                        }
+                    ]
+                };
+                myChart.setOption(option, true);
+                window.addEventListener("resize", () => {
+                    myChart.resize()
+                })
+            }
+
+            // 折线图
+            const chart2 = () => {
+                let seriesData = runRespTimeList.value;
+                let xAxisData = Array.from({length: seriesData.length}, (x, i) => i + 1);
+                // 加载图像
+                let myChart = echarts.init(document.getElementById("echart2"));
+                let option = {
+                    color: 'red',
+                    title: [
+                        {
+                            left: 'center',
+                            text: '响应时间'
+                        },
+                    ],
+                    tooltip: {
+                        trigger: 'axis',
+                        formatter: '序号：{b}<br/>响应时间：{c}s'
+                    },
+
+                    xAxis:
+                        {
+                            data: xAxisData,
+                        },
+                    yAxis:
+                        {},
+                    grid: {
+                        show: false,
+                        bottom: '20px',
+                    },
+                    series: [
+                        {
+                            type: 'line',
+                            name: '响应时间',
+                            showSymbol: false,
+                            data: seriesData,
+                            zlevel: 1,
+                            z: 1,
+                        }
+                    ]
+                };
+                myChart.setOption(option, true);
+                window.addEventListener("resize", () => {
+                    myChart.resize()
+                })
+            }
+
+            setupInfo()
+
+            return {
+                sourceData,
+                form,
+                filterData,
+                tableData,
+                f_selectChange,
+            }
+        },
+    }
+    const app = Vue.createApp(App)
+    app.use(ElementPlus)
+    app.mount("#app")
+</script>
+</body>
+</html>
