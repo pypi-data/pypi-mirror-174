@@ -1,0 +1,6 @@
+jswanquan.py
+setup.py
+jswanquan.egg-info/PKG-INFO
+jswanquan.egg-info/SOURCES.txt
+jswanquan.egg-info/dependency_links.txt
+jswanquan.egg-info/top_level.txt
