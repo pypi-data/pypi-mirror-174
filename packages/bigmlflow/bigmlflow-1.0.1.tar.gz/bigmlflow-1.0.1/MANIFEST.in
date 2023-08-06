@@ -1,0 +1,12 @@
+include LICENSE
+include HISTORY.md
+include README.md
+recursive-include tests *
+recursive-exclude tests *.pyc
+recursive-exclude tests *.pyo
+recursive-exclude tests mlruns
+recursive-include examples *
+recursive-exclude examples *.pyc
+recursive-exclude examples *.pyo
+prune tests/mlruns
+prune examples/mlruns
