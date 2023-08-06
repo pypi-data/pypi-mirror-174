@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: open-prime-rando
+Version: 0.2.1
+Summary: An open source randomizer patcher for Metroid Prime 2 and 3.
+Home-page: https://github.com/randovania/open-prime-rando
+Author: Henrique Gemignani
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: retro-data-structures (>=0.14.0)
+Requires-Dist: jsonschema (>=4.0.0)
+Requires-Dist: ppc-asm
+
+# Open Prime Rando
+Open Source randomizer patcher for Prime 2 and eventually 3.
