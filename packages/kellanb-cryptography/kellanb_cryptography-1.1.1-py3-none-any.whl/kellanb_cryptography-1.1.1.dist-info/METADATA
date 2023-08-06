@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kellanb-cryptography
+Version: 1.1.1
+Summary: encryption libray
+Home-page: UNKNOWN
+Author: Kellan Butler
+Author-email: kellanbulter52@gmial.com
+License: UNKNOWN
+Keywords: python,encryption,aes,chacha20,hmac
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Requires-Dist: pycryptodome (==3.15.0)
+
+A library with lots of tools for encryption/decryption, message autentication, key generation, etc
+
+
