@@ -1,0 +1,6 @@
+numpy
+gdal
+
+[fancy feature]
+requests
+earthengine-api
