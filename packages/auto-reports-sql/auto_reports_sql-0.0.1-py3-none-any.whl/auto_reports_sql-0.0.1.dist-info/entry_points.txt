@@ -1,0 +1,2 @@
+[console_scripts]
+auto-reports-sql = auto_reports_sql:main

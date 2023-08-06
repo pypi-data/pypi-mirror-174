@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: auto-reports-sql
+Version: 0.0.1
+Requires-Dist: click
+Requires-Dist: click-config-file
+Requires-Dist: jinja2
+
+This tool automates SQL Reports generation
