@@ -1,0 +1,8 @@
+numpy
+pandas
+urllib3
+request
+logbook
+schedule
+watchdog
+sqlalchemy
