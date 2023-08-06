@@ -1,0 +1,17 @@
+README.md
+setup.py
+csp_advanced/__init__.py
+csp_advanced/admin.py
+csp_advanced/apps.py
+csp_advanced/csp.py
+csp_advanced/middleware.py
+csp_advanced/models.py
+csp_advanced/tests.py
+csp_advanced/utils.py
+csp_advanced/views.py
+csp_advanced/migrations/__init__.py
+django_csp_advanced.egg-info/PKG-INFO
+django_csp_advanced.egg-info/SOURCES.txt
+django_csp_advanced.egg-info/dependency_links.txt
+django_csp_advanced.egg-info/not-zip-safe
+django_csp_advanced.egg-info/top_level.txt
