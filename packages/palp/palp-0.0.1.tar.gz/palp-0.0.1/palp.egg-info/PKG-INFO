@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: palp
+Version: 0.0.1
+Summary: 一个 爬虫框架
+Author: 郭一会儿
+Author-email: 1015295213@qq.com
+License: MIT Licence
+Keywords: palp
+Platform: any
+Description-Content-Type: text/markdown
+
+# 介绍
+Palp 是一个新的爬虫框架
