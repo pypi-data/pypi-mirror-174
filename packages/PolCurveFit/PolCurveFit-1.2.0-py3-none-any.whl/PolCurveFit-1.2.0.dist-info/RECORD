@@ -1,0 +1,10 @@
+polcurvefit/DataImport.py,sha256=_8IqCUlgfy9nTwbH0Or7PZx5iKG83lg8DpP_cdWbQzE,1737
+polcurvefit/__init__.py,sha256=PjMJy67EBmW9lSXJoABZC-7ZSfjH3zXpMSyyn_jX59k,48
+polcurvefit/forward.py,sha256=541LU96u3O3JYMK2EvNPO1yyDCGfT0wGY1rLJtsIXDc,691
+polcurvefit/polcurvefit.py,sha256=4ZYBwgJ6WCOpoJvBxAVi1UuHcHOIzn1si4fhMe1dbwQ,35494
+polcurvefit/data/example_nova.txt,sha256=Z4_nu3xVq5qd98wQaVfjpFI9RBU6f2Z_jBtC_UyIvPE,103736
+polcurvefit/data/example_txt.txt,sha256=Tccja_ucJkDwJsVWTykh1aS5secmBNqqusSLjb1Biso,82874
+PolCurveFit-1.2.0.dist-info/METADATA,sha256=wFq-7bBO7DELdGUwark8vKfMK_MzRTgUwwhHhR4pYcQ,2593
+PolCurveFit-1.2.0.dist-info/WHEEL,sha256=Ni9JGQXk2T4q02tFVwTZ-iAb8m9R1cjnSLMaE4VH1rg,92
+PolCurveFit-1.2.0.dist-info/top_level.txt,sha256=LsZl2fIQAgWxfMKlM815gNkEpSv2gKLItdkbgDRjpp0,12
+PolCurveFit-1.2.0.dist-info/RECORD,,
