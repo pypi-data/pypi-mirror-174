@@ -1,0 +1,7 @@
+license
+setup.py
+discauth.egg-info/PKG-INFO
+discauth.egg-info/SOURCES.txt
+discauth.egg-info/dependency_links.txt
+discauth.egg-info/requires.txt
+discauth.egg-info/top_level.txt

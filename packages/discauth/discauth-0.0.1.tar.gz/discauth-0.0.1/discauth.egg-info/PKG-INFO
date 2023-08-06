@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: discauth
+Version: 0.0.1
+Summary: package(api wrapper) to help using the discord oauth2 api endpoints with less programming 
+Home-page: UNKNOWN
+Author: ui
+Author-email: bitcoin@sexism.cc
+License: UNKNOWN
+Description: View the github repo [here](https://github.com/uiisback/discauth) for more info!
+Keywords: python,discord,oauth,discauth,oauth2
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
