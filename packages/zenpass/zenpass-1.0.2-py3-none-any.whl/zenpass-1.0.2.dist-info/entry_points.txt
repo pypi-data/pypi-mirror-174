@@ -1,0 +1,2 @@
+[console_scripts]
+zenpass = zenpass.__main__:main
