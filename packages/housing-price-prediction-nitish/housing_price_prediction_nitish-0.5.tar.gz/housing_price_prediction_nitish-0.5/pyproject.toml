@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "housing_price_prediction_nitish"
+version = "v0.5"
+authors = [
+  { name="nitishkumarnaramoni", email="nitishkumar.nara@tigeranalytics.com" },
+]
+description = "This package contains code to build multiple models to predict the house price"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Nitish-nara/mle-training"
+"Bug Tracker" = "https://github.com/Nitish-nara/mle-training/issues"

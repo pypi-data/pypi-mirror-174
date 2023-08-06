@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/conf/__init__.py
+src/housing_price_prediction_nitish.egg-info/PKG-INFO
+src/housing_price_prediction_nitish.egg-info/SOURCES.txt
+src/housing_price_prediction_nitish.egg-info/dependency_links.txt
+src/housing_price_prediction_nitish.egg-info/top_level.txt
+src/scripts/__init__.py
+src/scripts/ingest_data.py
+src/scripts/load_constants.py
+src/scripts/logger.py
+src/scripts/main.py
+src/scripts/score.py
+src/scripts/train.py
