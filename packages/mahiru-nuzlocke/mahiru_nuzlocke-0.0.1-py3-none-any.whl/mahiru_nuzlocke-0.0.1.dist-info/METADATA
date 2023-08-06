@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mahiru-nuzlocke
+Version: 0.0.1
+Summary: pokemon nuzlocke module for Mahiru
+Author-email: Henny022 <hen.geheim22@gmail.com>
+Project-URL: repository, https://gitlab.com/henny022/mahiru/nuzlocke
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: mahiru-core
+Requires-Dist: aiohttp-jinja2
+
+# Mahiru Rules
