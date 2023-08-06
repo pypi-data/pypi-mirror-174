@@ -1,0 +1,9 @@
+lpp_parser/__init__.py,sha256=RBfJPLfhxOXnCYtN6jRNMYUR9nx0GhBxQELjfdDxqN8,169
+lpp_parser/lppParser.py,sha256=46CJwI0X3P43EsI9x3KqoNa-SCvUJKfhmGG9jLrJFN8,2573
+lpp_parser/data/__init__.py,sha256=bNN37lPdwVMjXM4RVZelP2hyy7e_FSNYMZvgzdmwZI0,159
+lpp_parser/data/elem_z_map.json,sha256=-nPBCyXyJ4MfD7ODriXjOvYyefgEJVZLWPiXMpuSmII,1176
+lppParser-0.0.3.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+lppParser-0.0.3.dist-info/METADATA,sha256=Ldp5tFG0jW_KnBNqtqKSomudXTNdrCrSNVgswJ_hPlQ,468
+lppParser-0.0.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+lppParser-0.0.3.dist-info/top_level.txt,sha256=Od71_S64w4nWrkYa79uKKzv_tDBMzIkRV0w2gS6SfZU,11
+lppParser-0.0.3.dist-info/RECORD,,
