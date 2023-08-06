@@ -1,0 +1,14 @@
+lygadgets
+flayout
+gdsfactory[full]==5.50.3
+modes==1.0.6
+
+[full]
+jaxlib
+gdsfactory[full]==5.50.3
+flayout
+jax
+modes==1.0.6
+SIPANN==2.0.0
+sax
+lygadgets

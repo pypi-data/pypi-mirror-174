@@ -1,0 +1,4 @@
+lygadgets
+flayout
+gdsfactory[full]==5.50.3
+modes==1.0.6
