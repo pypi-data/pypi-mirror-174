@@ -1,0 +1,8 @@
+mutwo.core<1.0.0,>=0.61.4
+mutwo.music<1.0.0,>=0.17.0
+mido<2,>=1.2.9
+numpy<2.00,>=1.18
+
+[testing]
+nose
+coveralls
