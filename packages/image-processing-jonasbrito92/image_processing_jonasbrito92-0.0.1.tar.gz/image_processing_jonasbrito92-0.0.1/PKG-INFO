@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: image_processing_jonasbrito92
+Version: 0.0.1
+Summary: Image Processing Package using Skimage
+Home-page: https://github.com/jonasbrito92/package-template
+Author: Jonas
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# image_processing_jonasbrito92
+
+Description. 
+The package image_processing is used to:
+	Processing:
+		- Histogram matching 
+		- Structural similarity
+		- Resize image
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install image_processing_jonasbrito92
+
+```bash
+pip install image_processing_jonasbrito92
+```
+
+
+## Author
+Jonas Brito
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
