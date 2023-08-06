@@ -1,0 +1,18 @@
+
+
+
+V 1.0 Ferdig CS50 Final.
+
+
+V 1.1
+
+    - kjør fra en GUI
+X    - save as megasepryte fil --> kjør ut asepritene som en json?
+X    - open megaseprite fil
+X    - import scene fra megasepryte fil
+X    - håndtere sprites på en eller annen måte
+    - lage exe av det hele
+X    - run_test(scene) -> bygge en ferdig rom av det hele   
+        steg 1 
+X    - test_scene --> scroll plane A med A og B knappene
+    - export includes
