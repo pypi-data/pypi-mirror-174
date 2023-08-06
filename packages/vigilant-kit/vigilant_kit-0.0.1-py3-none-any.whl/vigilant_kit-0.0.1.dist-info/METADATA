@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vigilant_kit
+Version: 0.0.1
+Summary: Library that makes functional testing with Selenium WebDriver fast and easy. 
+Project-URL: Homepage, https://github.com/ivpel/vigilant
+Project-URL: Bug Tracker, https://github.com/ivpel/vigilant/issues
+Author-email: Pelykh Ivan <ivan.pelykh@protonmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Vigilant
+# WORK IN PROGRESS
+
+**Vigilant**  is a set of libraries made to simplify writing and running robust functional system tests  
+using Selenium WebDriver. 
+
+Works perfectly well with both **unittest** and **pytest** frameworks.
