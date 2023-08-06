@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: r3e-api
+Version: 0.1.0
+Summary: Python binding for RaceRoom's Shared Memory API.
+Home-page: https://github.com/Yuvix25/r3e-python-api
+Author: Yuval Rosen
+Author-email: yuv.rosen@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
