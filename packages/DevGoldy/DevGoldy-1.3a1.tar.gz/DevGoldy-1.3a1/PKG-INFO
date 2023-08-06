@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: DevGoldy
+Version: 1.3a1
+Summary: My own custom cli software I install on every server/machine.
+Home-page: https://github.com/THEGOLDENPRO/Dev-Goldy-Cli
+Author: Dev Goldy
+Author-email: goldy@novauniverse.net
+License: MIT
+Project-URL: Bug Tracker, https://github.com/THEGOLDENPRO/Dev-Goldy-Cli/issues
+Platform: UNKNOWN
+Requires-Python: >=3.8
+
+UNKNOWN
+
