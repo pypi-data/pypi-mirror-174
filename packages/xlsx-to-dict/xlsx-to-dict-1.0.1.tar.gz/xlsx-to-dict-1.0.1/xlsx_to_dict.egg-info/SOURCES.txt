@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/test.py
+xlsx_to_dict/__init__.py
+xlsx_to_dict/xlsx_to_dict.py
+xlsx_to_dict.egg-info/PKG-INFO
+xlsx_to_dict.egg-info/SOURCES.txt
+xlsx_to_dict.egg-info/dependency_links.txt
+xlsx_to_dict.egg-info/requires.txt
+xlsx_to_dict.egg-info/top_level.txt
