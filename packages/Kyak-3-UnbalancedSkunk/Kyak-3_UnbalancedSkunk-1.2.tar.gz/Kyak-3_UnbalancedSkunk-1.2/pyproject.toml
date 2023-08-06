@@ -1,0 +1,20 @@
+[project]
+name = "Kyak-3_UnbalancedSkunk"
+version = "1.2"
+authors = [
+  { name="UnbalancedSkunk", email="dengesizkokarca@tutanota.com" },
+]
+description = "Python Curses logout shutdown reboot suspend lock app"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Environment :: Console :: Curses",
+     
+]
+
+[project.urls]
+#"Homepage" = "https://github.com/pypa/sampleproject"
+#"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"

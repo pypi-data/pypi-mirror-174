@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Kyak-3_UnbalancedSkunk
+Version: 1.2
+Summary: Python Curses logout shutdown reboot suspend lock app
+Author-email: UnbalancedSkunk <dengesizkokarca@tutanota.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console :: Curses
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1>Requirement<h1><br> <br>
+First install pip for Python and then <br>
+
+<code>
+pip install curses
+</code>
