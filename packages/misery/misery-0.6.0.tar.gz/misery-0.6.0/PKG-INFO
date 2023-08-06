@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: misery
+Version: 0.6.0
+Summary: asyncio-friendly database toolkit
+Author: Anton Evdokimov
+Author-email: meowmeowcode@gmail.com
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: clickhouse
+Provides-Extra: postgres
+Requires-Dist: PyPika (>=0.48.9,<0.49.0); extra == "postgres" or extra == "clickhouse"
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0); extra == "clickhouse"
+Requires-Dist: asyncpg (>=0.25.0,<0.26.0); extra == "postgres"
+Requires-Dist: ipaddress (>=1.0.23,<2.0.0)
+Description-Content-Type: text/markdown
+
+<p align="center">
+    <img src="https://github.com/meowmeowcode/misery/blob/clickhouse/docs/source/_static/misery.png" width="200" alt="misery" />
+</p>
+
+
+# Misery
+
+An **asyncio**-friendly database toolkit that works well with **MyPy**.
+
+## Supported database systems
+
+At the moment, PostgreSQL and ClickHouse are supported.
+
+## Documentation
+
+The latest documentation: https://misery.readthedocs.io
+
+## Usage example
+
+```python
+from dataclasses import dataclass
+from uuid import UUID, uuid4
+
+import asyncpg
+from pypika import Table
+from misery.postgres import PostgresRepo
+
+
+conn = await asyncpg.connect("postgresql://postgres:password@localhost/postgres")
+
+await conn.execute(
+    """
+        CREATE TABLE users (
+            id uuid PRIMARY KEY,
+            name text NOT NULL UNIQUE
+        );
+    """
+)
+
+
+@dataclass
+class User:
+    id: UUID
+    name: str
+
+
+class UsersRepo(PostgresRepo[User]):
+    table = Table("users")
+
+
+users_repo = UsersRepo(conn)
+
+user_id = uuid4()
+bob = User(id=user_id, name="Bob")
+await users_repo.add(bob)
+
+user = await users_repo.get(id=user_id)
+assert user == bob
+```
