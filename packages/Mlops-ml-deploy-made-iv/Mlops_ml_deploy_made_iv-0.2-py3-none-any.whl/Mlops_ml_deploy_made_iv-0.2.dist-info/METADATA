@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: Mlops-ml-deploy-made-iv
+Version: 0.2
+Summary: Mlops-ml-deploy-made-iv
+Home-page: https://github.com/Z5-05/mlops_made_2022/tree/hw01
+Author: iverendeev
+Author-email: ilaverendeev@gmail.com
+License: MIT
+Requires-Dist: pandas (~=1.3.5)
+Requires-Dist: scikit-learn (~=1.0.2)
+Requires-Dist: numpy (~=1.21.6)
+Requires-Dist: jupyter (~=1.0.0)
+Requires-Dist: pip (~=21.3.1)
+Requires-Dist: attrs (~=22.1.0)
+Requires-Dist: wheel (~=0.37.1)
+Requires-Dist: Pillow (~=9.3.0)
+Requires-Dist: tornado (~=6.2)
+Requires-Dist: Jinja2 (~=3.1.2)
+Requires-Dist: setuptools (~=60.2.0)
+Requires-Dist: pytz (~=2022.5)
+Requires-Dist: Faker (~=15.1.1)
+Requires-Dist: python-dateutil (~=2.8.2)
+Requires-Dist: cffi (~=1.15.1)
+Requires-Dist: scipy (~=1.7.3)
+Requires-Dist: matplotlib (~=3.5.3)
+Requires-Dist: joblib (~=1.2.0)
+Requires-Dist: psutil (~=5.9.3)
+Requires-Dist: MarkupSafe (~=2.1.1)
+Requires-Dist: threadpoolctl (~=3.1.0)
+Requires-Dist: six (~=1.16.0)
+Requires-Dist: PyYAML (~=6.0)
+Requires-Dist: click (~=8.1.3)
+Requires-Dist: pyparsing (~=3.0.9)
+Requires-Dist: marshmallow (~=3.18.0)
+Requires-Dist: packaging (~=21.3)
+Requires-Dist: zipp (~=3.10.0)
+Requires-Dist: marshmallow-dataclass
+
+# mlops_made_2022
+
+
+Настраиваем окружение:
+
+1) ```python -m venv .venv```
+2) ```source .venv/bin/activate```
+3) ```pip install -r requirements.txt```
+
+requirements.txt созданы с помощью консольной утилиты:
+1) ```pip freeze | grep -v hw01 > requirements.txt```
+
+Формируем .gitignore файл для проекта + global для всей системы:
+1) ```curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore``` - последней строкой идет закомменченный игнор .idea для pycharm, нужно раскомментить вручную (актуально для меня)
+2) ```curl -o $HOME/.gitignore_global https://raw.githubusercontent.com/github/gitignore/master/Global/Linux.gitignore```
