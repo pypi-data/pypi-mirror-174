@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: norma2
+Version: 0.0.1a4
+Summary: check c epitech coding style
+License: MIT
+Author-email: Xavier Mitault <xavier.mitault@epitech.eu>
+Requires-Python: >=3.10
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Quality Assurance
+Description-Content-Type: text/markdown
+
+# normatrix
+
+check c epitech coding style
+
+## Help
+
+![help](https://github.com/X-R-G-B/norma2/blob/main/assets/images/help.png)
+
+# Example
+
+![run_playground](https://github.com/X-R-G-B/norma2/blob/main/assets/images/run_playground.svg)
+
