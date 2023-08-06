@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: chexapix
+Version: 0.0.1a0
+Summary: Dummy package for the healpix C library
+Home-page: https://github.com/ntessore/healpix
+Maintainer: Nicolas Tessore
+Maintainer-email: n.tessore@ucl.ac.uk
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Meta-package for the `healpix` package.
