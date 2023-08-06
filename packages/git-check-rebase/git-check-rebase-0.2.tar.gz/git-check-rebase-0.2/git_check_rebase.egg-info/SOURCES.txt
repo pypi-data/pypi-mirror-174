@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+git-check-rebase
+setup.py
+git_check_rebase.egg-info/PKG-INFO
+git_check_rebase.egg-info/SOURCES.txt
+git_check_rebase.egg-info/dependency_links.txt
+git_check_rebase.egg-info/requires.txt
+git_check_rebase.egg-info/top_level.txt
