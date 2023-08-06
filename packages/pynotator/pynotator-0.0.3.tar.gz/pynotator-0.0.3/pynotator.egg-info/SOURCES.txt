@@ -1,0 +1,8 @@
+README.md
+setup.py
+pynotator/Pynotator.py
+pynotator/__init__.py
+pynotator.egg-info/PKG-INFO
+pynotator.egg-info/SOURCES.txt
+pynotator.egg-info/dependency_links.txt
+pynotator.egg-info/top_level.txt
