@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vaxmethod
+Version: 0.0.1
+Summary: ??.
+Home-page: https://gitlab.com/popolinneto/exmatrix
+Author: Mario Popolin Neto
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+Platform: UNKNOWN
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: drawSvg (>=1.6.0)
+Requires-Dist: matplotlib (>=2.1.1)
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: scikit-learn (>=0.20.0)
+
+UNKNOWN
+
+
