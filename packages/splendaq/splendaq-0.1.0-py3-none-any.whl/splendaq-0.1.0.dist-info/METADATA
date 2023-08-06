@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: splendaq
+Version: 0.1.0
+Summary: Data Acquisition for SPLENDOR
+Home-page: https://github.com/splendor-collab/splendaq
+Author: SPLENDOR Collaboration
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: moku (>=2.5)
+Requires-Dist: h5py
+
+# `splendaq`
+
+Package for general data acquisition with a focus on the Moku device by [Liquid Instruments](https://www.liquidinstruments.com/).
