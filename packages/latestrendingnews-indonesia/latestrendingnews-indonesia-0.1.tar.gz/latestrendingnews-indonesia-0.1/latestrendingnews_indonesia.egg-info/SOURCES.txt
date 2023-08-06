@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+beritapopuler/__init__.py
+latestrendingnews_indonesia.egg-info/PKG-INFO
+latestrendingnews_indonesia.egg-info/SOURCES.txt
+latestrendingnews_indonesia.egg-info/dependency_links.txt
+latestrendingnews_indonesia.egg-info/top_level.txt
