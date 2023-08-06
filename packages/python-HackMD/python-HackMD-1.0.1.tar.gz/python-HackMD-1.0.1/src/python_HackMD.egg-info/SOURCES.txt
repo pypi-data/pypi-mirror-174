@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/python_HackMD.egg-info/PKG-INFO
+src/python_HackMD.egg-info/SOURCES.txt
+src/python_HackMD.egg-info/dependency_links.txt
+src/python_HackMD.egg-info/requires.txt
+src/python_HackMD.egg-info/top_level.txt
