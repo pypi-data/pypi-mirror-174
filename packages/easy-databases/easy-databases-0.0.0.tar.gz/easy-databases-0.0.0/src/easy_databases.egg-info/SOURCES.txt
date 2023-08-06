@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/easy/databases/__init__.py
+src/easy_databases.egg-info/PKG-INFO
+src/easy_databases.egg-info/SOURCES.txt
+src/easy_databases.egg-info/dependency_links.txt
+src/easy_databases.egg-info/top_level.txt
