@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "emul-robot"
+version = "0.1.0"
+description = ""
+authors = ["Paul Choi <straits9@gmail.com>"]
+readme = "README.md"
+packages = [{include = "emul_robot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aio-pika = "^8.2.4"
+
+[tool.poetry.scripts]
+robot = 'main'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
