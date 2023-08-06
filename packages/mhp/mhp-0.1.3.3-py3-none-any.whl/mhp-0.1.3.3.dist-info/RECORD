@@ -1,0 +1,12 @@
+mhp/MakePolymer.py,sha256=FWSEXd6gc-TD7bsvZkvrZ0ZmaKLoDwSffrObKvTYkdA,38831
+mhp/__init__.py,sha256=1gW6_EccAZGmpjvTn3Ts5JJoO9c7eW0pYuLh4RFHE6Y,105
+mhp/custom_input_to_mol_file.py,sha256=wuGlrpH89J-SyyD7k1GDOOD3-0E4IZqY-EyFBuE1_-c,2228
+mhp/nb.py,sha256=1lQDu-MjW05mbGO4-_w2CsAl4igo-liscvW7JcVfGLY,3372
+mhp/random_polymer_to_mol_file.py,sha256=mYb19Bru7Z4m1z947uFodV-UVYEjfHrrgVJPJJ_d3D4,7496
+mhp/settings.py,sha256=57pwyKRYq_h5V3G5-9p2h1VAApSIwuEw_d1s9gDi3lY,1508
+mhp/smiles.py,sha256=zpqB_n9metYHxb3OWJFeGz7yy2qF-ObFV2xPyDKCdts,5104
+mhp-0.1.3.3.dist-info/METADATA,sha256=plxofmGzQHmoXR018m7gLD1RN1HcsLTplW_5y-oYXPc,16152
+mhp-0.1.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mhp-0.1.3.3.dist-info/entry_points.txt,sha256=oEC-HAGbOf7kuh-u35AsTd--wkeWZaUv6cmzC4AxPcg,172
+mhp-0.1.3.3.dist-info/top_level.txt,sha256=JLXdShacqqD9gfAkpYs1dE9Q9vD-SkZhNSZsoY7TEoQ,4
+mhp-0.1.3.3.dist-info/RECORD,,
