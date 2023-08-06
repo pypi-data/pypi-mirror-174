@@ -1,0 +1,7 @@
+wagtail>=2.15
+Django>=3.2
+
+[testing]
+mock>=1.0.0
+coverage>=3.7.0
+tox~=3.24
