@@ -1,0 +1,9 @@
+agrippa/__init__.py,sha256=vej3nXZCnBBj766_uOHamcyruQ3fUHrWRyhQfm_vBas,71
+agrippa/__main__.py,sha256=HKxvqQ2YS1SfIat69s5dxdRCQETdxR1nBJJFZ9o6mxQ,59
+agrippa/config.toml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agrippa/parse.py,sha256=wK6XZULtY2Ktkw_7tAXmg4bp4aP6YeQs3Zb6eNVwG8k,8134
+agrippa-0.0.1.dist-info/LICENSE,sha256=nKlSSS7srY4lNAYowK9d-TkaNHgWkU8dMWKrxJI58zc,1084
+agrippa-0.0.1.dist-info/METADATA,sha256=Yez6ZE6txl8B3sFFbIRGUcGn4rMt4ZrQva4y5gF-VJw,1459
+agrippa-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+agrippa-0.0.1.dist-info/top_level.txt,sha256=X_3g-mA5rpzJWJ57CeNfaATwAIocrYXcjASamE5pF7w,8
+agrippa-0.0.1.dist-info/RECORD,,
