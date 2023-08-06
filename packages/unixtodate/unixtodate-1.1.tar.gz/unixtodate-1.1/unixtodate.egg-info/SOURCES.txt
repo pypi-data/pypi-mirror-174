@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+unixtodate.egg-info/PKG-INFO
+unixtodate.egg-info/SOURCES.txt
+unixtodate.egg-info/dependency_links.txt
+unixtodate.egg-info/top_level.txt
