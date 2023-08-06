@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ciberc-lg
+Version: 0.4.0
+Summary: Lighting Gale client
+Author: CiberC Dev
+License: GPLv3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests (>=2.28)
+Requires-Dist: pydantic (>=1.9)
+
+# CiberC-LG
+
+SDK for Lighting Gale Cimcon that expose a client to platform.
+
+This package use [ZoneInfo](https://docs.python.org/3/library/zoneinfo.html), python 3.9+ is required or install for compatibility
+[backports](https://pypi.org/project/backports.zoneinfo/)
+
+## Use
+
+```python
+from lg import LGApi, LGAuth
+
+...
+lg_auth = LGAuth(username, password, base_url, ssl_verify=False, ...)
+lg_api - LGApi(lg_auth)
+...
+```
+
+## Changes
+
+v034
+
+- Change Model for SwitchOnOff to CommandData and CommandResponse
+- Implement dimmer set
+
+v033
+
+- rename method getLatitudeLongitudeSLC as get_latitude_longitude_slc
+- StatusParameters add description
+
+v032
+
+- Fix SLCData add alias
+- Fix typo in var names
+
+v031
+
+- Fix setup include subpackage lg/models
