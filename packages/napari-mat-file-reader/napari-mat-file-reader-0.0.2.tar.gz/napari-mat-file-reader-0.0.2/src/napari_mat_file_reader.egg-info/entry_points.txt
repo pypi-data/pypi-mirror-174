@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-mat-file-reader = napari_mat_file_reader:napari.yaml

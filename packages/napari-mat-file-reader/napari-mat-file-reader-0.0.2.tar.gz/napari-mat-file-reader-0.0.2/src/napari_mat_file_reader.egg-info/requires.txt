@@ -1,0 +1,7 @@
+numpy
+mat73
+
+[testing]
+tox
+pytest
+pytest-cov
