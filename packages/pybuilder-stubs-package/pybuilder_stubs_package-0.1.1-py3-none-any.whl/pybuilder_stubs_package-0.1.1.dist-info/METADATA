@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pybuilder-stubs-package
+Version: 0.1.1
+Summary: PyBuilder plugin that creates "*-stubs" package for your project using MyPy's stubgen
+Home-page: https://github.com/chylek/pybuilder-stubs-package
+Author: Adam Chýlek
+Author-email: adam.chylek@amitia-ai.com
+Maintainer: 
+Maintainer-email: 
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+
+This plugin adds stubs_publish and stubs_upload tasks that you can use in your
+build script.
+
+Using MyPy's stubgen it creates type hinting stubs (``*.pyi`` files) as a separate
+package. This stubs-only package is named with the ``stubs`` suffix following PEP
+561. For a pybuilder project foo this would create stubs-only package foo-stubs.
