@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: uptobox
+Version: 1.0.0
+Summary: A simple API wrapper for Uptobox.
+Home-page: UNKNOWN
+Author: Artic#3065
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+UNKNOWN
+
