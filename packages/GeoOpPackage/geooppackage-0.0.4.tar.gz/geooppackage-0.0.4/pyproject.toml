@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "GeoOpPackage"
+version = "0.0.4"
+authors = [
+  { name="Sherin Thomas", email="tsherin140@gmail.com" },
+]
+description = "This is a python library that includes operations on all 1D, 2D and 3D Geometric shapes"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sherinnn/Geometric-Shapes-Package"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
