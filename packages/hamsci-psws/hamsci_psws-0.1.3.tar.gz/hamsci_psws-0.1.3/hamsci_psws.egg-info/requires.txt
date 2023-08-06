@@ -1,0 +1,13 @@
+beautifulsoup4
+matplotlib
+netCDF4
+numpy
+pandas
+plotly
+python_dateutil
+pytz
+requests
+scipy
+suntime
+tqdm
+xarray
