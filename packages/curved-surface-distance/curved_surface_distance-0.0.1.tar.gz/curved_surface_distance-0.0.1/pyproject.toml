@@ -1,0 +1,22 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "curved_surface_distance"
+version = "0.0.1"
+authors = [
+  { name="Hareeharan Elangovan", email="Hareeharan1999@gmail.com" },
+]
+description = "this package can be used to calculate distance between two points in the curved surface"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
