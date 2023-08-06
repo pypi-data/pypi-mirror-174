@@ -1,0 +1,8 @@
+setup.py
+velocity_severity/__init__.py
+velocity_severity/machine_condition.py
+velocity_severity.egg-info/PKG-INFO
+velocity_severity.egg-info/SOURCES.txt
+velocity_severity.egg-info/dependency_links.txt
+velocity_severity.egg-info/requires.txt
+velocity_severity.egg-info/top_level.txt
