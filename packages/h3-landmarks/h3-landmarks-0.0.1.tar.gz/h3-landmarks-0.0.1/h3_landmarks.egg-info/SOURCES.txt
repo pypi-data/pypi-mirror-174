@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+h3_landmarks/__init__.py
+h3_landmarks/_modidx.py
+h3_landmarks/core.py
+h3_landmarks/h3_landmarks.py
+h3_landmarks.egg-info/PKG-INFO
+h3_landmarks.egg-info/SOURCES.txt
+h3_landmarks.egg-info/dependency_links.txt
+h3_landmarks.egg-info/entry_points.txt
+h3_landmarks.egg-info/not-zip-safe
+h3_landmarks.egg-info/requires.txt
+h3_landmarks.egg-info/top_level.txt

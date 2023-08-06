@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+h3_landmarks = h3_landmarks._modidx:d
+
