@@ -1,0 +1,25 @@
+[project]
+name = "mahiru-nuzlocke"
+version = "0.0.1"
+authors = [{ name = "Henny022", email = "hen.geheim22@gmail.com" }]
+description = "pokemon nuzlocke module for Mahiru"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "Unlicense" }
+classifiers = [
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7"
+]
+dependencies = [
+    "mahiru-core",
+    "aiohttp_jinja2"
+]
+[project.urls]
+repository = "https://gitlab.com/henny022/mahiru/nuzlocke"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.setuptools.package-data]
+"mahiru.nuzlocke.templates" = ["*.html"]

@@ -1,0 +1,2 @@
+mahiru-core
+aiohttp_jinja2

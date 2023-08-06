@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/mahiru/nuzlocke/__init__.py
+src/mahiru/nuzlocke/module.py
+src/mahiru/nuzlocke/website.py
+src/mahiru/nuzlocke/templates/rules.html
+src/mahiru_nuzlocke.egg-info/PKG-INFO
+src/mahiru_nuzlocke.egg-info/SOURCES.txt
+src/mahiru_nuzlocke.egg-info/dependency_links.txt
+src/mahiru_nuzlocke.egg-info/requires.txt
+src/mahiru_nuzlocke.egg-info/top_level.txt
