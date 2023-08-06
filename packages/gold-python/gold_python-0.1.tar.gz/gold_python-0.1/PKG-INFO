@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gold_python
+Version: 0.1
+Summary: Library for the developement of finite automata
+Home-page: https://github.com/GOLD-Python/GOLD-Python
+Download-URL: https://github.com/GOLD-Python/GOLD-Python/archive/refs/tags/v01-BETA.zip
+Author: Nicolas Saavedra Gonzalez
+Author-email: personal@nicolassaavedra.com
+License: BSD 3-Clause
+Keywords: automata,gold,transducer,pushdown,deterministic
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt
