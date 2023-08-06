@@ -1,0 +1,12 @@
+jsonschema
+traceutils2>=1.0.0
+pandas
+pb-amarder
+file2
+deprecated
+c
+y
+t
+h
+o
+n
