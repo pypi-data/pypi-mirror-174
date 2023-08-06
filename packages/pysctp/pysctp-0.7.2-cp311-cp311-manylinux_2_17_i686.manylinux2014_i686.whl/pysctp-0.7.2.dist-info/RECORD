@@ -1,0 +1,8 @@
+sctp.py,sha256=TyhrqTzIY2yqZ_6jBhPtpSHjHV2SuSEni_jcj0vLxYI,62756
+_sctp.cpython-311-i386-linux-gnu.so,sha256=5eKuLDUSXAu-nAP_1sA9045k75QtpC5dWST8sKIIMDA,141484
+pysctp-0.7.2.data/data/include/_sctp.h,sha256=ekf1cD7v2Pb6KlEIUySoWwE5piumAuiJa284SRulRm4,2536
+pysctp.libs/libsctp-fc44796d.so.1.0.17,sha256=nb8nF1GGDCmh9SQmpvZy_iXbhd5iCXhRHBexDoH7pxE,12960
+pysctp-0.7.2.dist-info/top_level.txt,sha256=ZCHUwVfnPM2vtZHomug6KoEYU3q-PovlK7Sq1CZR_Ic,11
+pysctp-0.7.2.dist-info/WHEEL,sha256=wllE125-s4xNkSjqpOqFQiDZQstI6MYHavPOEJY74hM,148
+pysctp-0.7.2.dist-info/RECORD,,
+pysctp-0.7.2.dist-info/METADATA,sha256=Xu6I2N6wgx3NYK0DvvKktWDXQkA7DRxMqiLOs7Knl5Y,1093
