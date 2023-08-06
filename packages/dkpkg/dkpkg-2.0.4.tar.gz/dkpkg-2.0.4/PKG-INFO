@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: dkpkg
+Version: 2.0.4
+Summary: dkpkg - standardized package structure names
+Home-page: https://github.com/datakortet/dkpkg
+Author: Bjorn Pettersen
+Author-email: bp@datakortet.no
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+
+
+
+dkpkg - standardized package structure names
+============================================
+..
+  This is a PyPI published package, don't point to private resources!
+
+.. image:: https://codecov.io/gh/datakortet/dkpkg/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/datakortet/dkpkg
+
+.. image:: https://github.com/datakortet/dkpkg/actions/workflows/ci-cd.yml/badge.svg
+   :target: https://github.com/datakortet/dkpkg/actions/workflows/ci-cd.yml
+
+.. image:: https://readthedocs.org/projects/dkpkg/badge/?version=latest
+    :target: https://dkpkg.readthedocs.io/en/latest/?badge=latest
+    :alt: documentation
+
+.. image:: https://img.shields.io/github/license/datakortet/dkpkg
+   :alt: GitHub
+
+.. image:: https://img.shields.io/pypi/wheel/dkpkg
+   :alt: PyPI - Wheel
+
+.. image:: https://img.shields.io/pypi/pyversions/dkpkg
+   :alt: PyPI - Python Version
+
+.. image:: https://img.shields.io/pypi/v/dkpkg
+   :alt: PyPI
+
+.. image:: https://img.shields.io/pypi/dm/dkpkg
+   :alt: PyPI - Downloads
+
+.. image:: https://img.shields.io/pypi/format/dkpkg
+   :alt: PyPI - Format
+
+.. image:: https://img.shields.io/pypi/status/dkpkg
+   :alt: PyPI - Status
+
