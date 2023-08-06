@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: rdwatch-cli
+Version: 0.0.3
+Summary: Client for the RD-WATCH server.
+Home-page: https://github.com/ResonantGeoData/RD-WATCH/django
+License: Apache-2.0
+Keywords: geospatial,machine learning
+Author: Kitware, Inc.
+Author-email: kitware@kitware.com
+Requires-Python: >=3.10.0,<3.11.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Pillow (>=9.2.0,<10.0.0)
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: mercantile (>=1.2.1,<2.0.0)
+Requires-Dist: pillow-avif-plugin (>=1.2.2,<2.0.0)
+Requires-Dist: rich (>=12.5.1,<13.0.0)
+Project-URL: Repository, https://github.com/ResonantGeoData/RD-WATCH/django
+Description-Content-Type: text/markdown
+
+
