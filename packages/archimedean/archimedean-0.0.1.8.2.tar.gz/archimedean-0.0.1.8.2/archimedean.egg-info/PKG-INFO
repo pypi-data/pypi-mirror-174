@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: archimedean
+Version: 0.0.1.8.2
+Summary: The Ultimate Archie CLI
+Home-page: UNKNOWN
+Author: Daniel Li
+Author-email: daniel.miami2005@gmail.com
+License: UNKNOWN
+Description: # archimedean
+        
+        Sends email whenever there is new homework on Archie website. Can download all files from any class in CineMath. Can download any resource posted on Archie. 
+        Still in testing phase.
+        
+        ## Installation
+        
+            pip install archimedean
+        
+        ## Usage
+        
+            usage stuff
+Keywords: python,archimedean,archie,archimedean upper conservatory,cinemath,automate archie
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

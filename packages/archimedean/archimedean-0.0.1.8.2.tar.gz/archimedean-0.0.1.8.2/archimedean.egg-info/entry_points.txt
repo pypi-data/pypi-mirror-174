@@ -1,0 +1,3 @@
+[console_scripts]
+archimedean = archie.archie:main
+
