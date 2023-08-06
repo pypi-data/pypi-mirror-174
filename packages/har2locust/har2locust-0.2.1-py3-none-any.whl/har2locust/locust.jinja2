@@ -1,0 +1,48 @@
+from locust import task, run_single_user, events
+from locust_plugins.listeners import RescheduleTaskOnFail
+from locust_plugins.users import RestUser
+
+class MyUser(RestUser):
+    host = '{{host}}'
+
+    {%- if session.headers %}
+    default_headers = {
+        {%- for (key, value) in session.headers | sort %}
+        '{{ key }}': '{{ value }}',
+        {%- endfor %}
+    }
+    {%- endif %}
+
+    @task
+    def t(self):
+        {% for request in requests -%}
+        {% if request.rest -%}
+        with self.rest("{{ request.method }}", "{{ request.url }}"
+        {%- if request.headers -%}, headers={
+            {%- for (key, value) in request.headers | sort %}
+            {%- if key|lower != "content-type" -%}
+            '{{ key }}': '{{ value }}',
+            {%- endif -%}    
+            {%- endfor %}}
+        {%- endif -%}
+        {%- if request.post_data -%}, json={{ request.post_data }}
+        {%- endif -%}) as resp:
+            pass
+        {%- else -%}
+        self.client.{{ request.method }}("{{ request.url }}"
+        {%- if request.headers -%}, headers={
+            {%- for (key, value) in request.headers | sort %}
+            '{{ key }}': '{{ value }}',
+            {%- endfor %}}
+        {%- endif -%}
+        {%- if request.post_data -%}, data='{{ request.post_data }}'
+        {%- endif -%})
+        {%- endif %}
+        {% endfor %}
+
+@events.init.add_listener
+def on_locust_init(environment, **_kwargs):
+    RescheduleTaskOnFail(environment)
+
+if __name__ == "__main__":
+    run_single_user(MyUser)
