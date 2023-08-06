@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: nvtk-sitesheets
+Version: 0.0.1
+Summary: Tool to create templated metadata sheets for fieldwork experiments
+Keywords: qrcode,fieldwork
+Author-email: kdm9 <foss@kdmurray.id.au>
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: svglue
+Requires-Dist: qrcode
+Requires-Dist: PyPDF2
+Requires-Dist: pillow
+Requires-Dist: qrcode
+Requires-Dist: tqdm
+
+# Tools to generate location sheets
+
+Initially for the KH collection of PathoGenoPredict.
+
+
+
