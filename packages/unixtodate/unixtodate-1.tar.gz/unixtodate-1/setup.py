@@ -1,0 +1,20 @@
+from setuptools import setup, find_packages
+
+with open("README.md", "r") as readme_file:
+    readme = readme_file.read()
+
+setup(
+    name="unixtodate",
+    version="1",
+    author="Network King",
+    author_email="5giziuoq@duck.com",
+    description="A package to convert timestamp to days",
+    long_description=readme,
+    long_description_content_type="text/markdown",
+    url="https://github.com/Gegenwehr/unixtodate",
+    packages=find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3.9",
+        "License :: OSI Approved :: GNU General Public License (GPL)",
+    ],
+)
