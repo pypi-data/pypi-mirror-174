@@ -1,0 +1,2 @@
+[console_scripts]
+runcon = runcon.scripts:main
