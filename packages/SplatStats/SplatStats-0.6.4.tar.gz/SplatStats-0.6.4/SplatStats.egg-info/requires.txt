@@ -1,0 +1,17 @@
+dill
+termcolor
+colorutils
+tqdm
+numpy
+scipy
+pandas
+DateTimeRange
+matplotlib
+pywaffle
+squarify
+
+[dev]
+twine
+wheel
+sphinx
+sphinx-bootstrap-theme
