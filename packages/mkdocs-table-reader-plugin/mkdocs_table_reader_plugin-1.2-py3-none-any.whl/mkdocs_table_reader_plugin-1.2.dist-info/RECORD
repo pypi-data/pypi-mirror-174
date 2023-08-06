@@ -1,0 +1,9 @@
+mkdocs_table_reader_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_table_reader_plugin/plugin.py,sha256=jzF8dw-z3yDgcYkJSmwd-1u-NVioqjt02S9e4WbJFzU,7919
+mkdocs_table_reader_plugin/safe_eval.py,sha256=SD0_R4hk_5jphUxZ4IxYhh0Cod3VvAtXFU1fsPd9w4I,2492
+mkdocs_table_reader_plugin-1.2.dist-info/LICENSE,sha256=iTTHd7_nxqzSXwciZBtJaYlPyR2E70zRsF7zlqwX-pU,1065
+mkdocs_table_reader_plugin-1.2.dist-info/METADATA,sha256=dL9qDTWHMFf6Lc4Sd0fpa1StThoyRFMo2MQyzHqz734,2918
+mkdocs_table_reader_plugin-1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mkdocs_table_reader_plugin-1.2.dist-info/entry_points.txt,sha256=iacij2wpZdqio3CQ7Kt9EA-JwbsWOYF4bHwfcuOFyeg,84
+mkdocs_table_reader_plugin-1.2.dist-info/top_level.txt,sha256=bnI-ssXdccQVdCoH11vKcP-T22aFkAjNjKeGhKqgp1A,27
+mkdocs_table_reader_plugin-1.2.dist-info/RECORD,,
