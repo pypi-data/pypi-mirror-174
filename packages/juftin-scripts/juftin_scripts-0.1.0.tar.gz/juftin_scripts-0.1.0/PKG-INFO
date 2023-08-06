@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: juftin-scripts
+Version: 0.1.0
+Summary: Helpful Python scripts by @juftin
+Home-page: https://github.com/juftin/juftin-scripts
+License: MIT
+Author: Justin Flannery
+Author-email: juftin@juftin.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: parquet
+Requires-Dist: art (>=5.7,<6.0)
+Requires-Dist: click (>=8.1.2,<9.0.0)
+Requires-Dist: pandas (>=1.4)
+Requires-Dist: pyarrow (>=9.0.0,<10.0.0); extra == "parquet"
+Requires-Dist: rich (>=12.6.0,<13.0.0)
+Requires-Dist: rich-click (>=1.5.2,<2.0.0)
+Requires-Dist: textual (>=0.3.0,<0.4.0)
+Project-URL: Changelog, https://github.com/juftin/juftin-scripts/releases
+Project-URL: Documentation, https://juftin.github.io/juftin-scripts
+Project-URL: Repository, https://github.com/juftin/juftin-scripts
+Description-Content-Type: text/markdown
+
+# juftin-scripts
+
+Helpful Python scripts by [@juftin](https://github.com/juftin)
+
+#### Check Out the [Docs](https://juftin.github.io/juftin-scripts/)
+
+___________
+___________
+
+<br/>
+
+<p align="center"><a href="https://github.com/juftin"><img src="https://raw.githubusercontent.com/juftin/juftin/main/static/juftin.png" width="120" height="120" alt="logo"></p>
+
