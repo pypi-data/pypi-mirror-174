@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pynotator
+Version: 0.0.3
+Summary: A python library for annotating data for NER and Question Answering tasks in Natural Language Processsing and Machine Learning
+Author: Innocent Charles
+License: MIT
+
