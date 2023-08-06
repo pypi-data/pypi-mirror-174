@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: collect4easyplot
+Version: 0.14
+Summary: A complementary library for using EasyPlot with Python
+Home-page: https://github.com/RaichelgauzGuy/Collect4EasyPlot
+Author: Guy Raichelgauz
+Author-email: guy.raichelgauz@gmail.com
+Description-Content-Type: text/markdown
+
+Use the collect method to grab data of any type to store it. After collecting, the data will automatically appear in EasyPlot

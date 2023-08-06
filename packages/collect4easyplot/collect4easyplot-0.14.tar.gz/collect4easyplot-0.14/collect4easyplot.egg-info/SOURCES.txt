@@ -1,0 +1,13 @@
+setup.py
+.idea/.gitignore
+.idea/Collect4EasyPlot.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
+collect4easyplot/__init__.py
+collect4easyplot/data_grabber.py
+collect4easyplot.egg-info/PKG-INFO
+collect4easyplot.egg-info/SOURCES.txt
+collect4easyplot.egg-info/dependency_links.txt
+collect4easyplot.egg-info/top_level.txt
