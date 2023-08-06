@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: django-url-filter-fix
+Version: 0.3.15
+Summary: Django URL Filter provides a safe way to filter data via human-friendly URLs.
+Home-page: https://github.com/miki725/django-url-filter
+Author: Miroslav Shubernetskiy
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: django django-rest-framework
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Development Status :: 2 - Pre-Alpha
