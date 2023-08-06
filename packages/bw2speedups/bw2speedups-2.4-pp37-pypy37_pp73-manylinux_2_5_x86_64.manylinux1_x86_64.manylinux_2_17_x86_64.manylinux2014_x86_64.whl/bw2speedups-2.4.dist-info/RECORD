@@ -1,0 +1,9 @@
+bw2speedups-2.4.dist-info/LICENSE,sha256=wCmlIV5n4KDSWhaG5XkuKsh86zDLVRhTUowBl43HBB8,1474
+bw2speedups-2.4.dist-info/top_level.txt,sha256=RDMDVfGferZb4kkxrrWwH_sx_oPKsmVFVGck-Uhjaac,12
+bw2speedups-2.4.dist-info/WHEEL,sha256=A3icTRG3Pitw4LTLQaUO-nfbONcUd5uHbu7WFeET7hA,245
+bw2speedups-2.4.dist-info/RECORD,,
+bw2speedups-2.4.dist-info/METADATA,sha256=UpDCu_7ASUzVSoldUYFIXinIFTiMseYOH7koQfCR-fQ,1962
+bw2speedups/_consolidate.pypy37-pp73-x86_64-linux-gnu.so,sha256=IBfGqgkFqTF0Ze9FRUO9kmRJ-nbAnxao0Yu5ow2zYKg,58352
+bw2speedups/_indexer.pypy37-pp73-x86_64-linux-gnu.so,sha256=cQtLw5eRqEFFHB8mSkn0lBZbZIKBBigA8dBKOWzsrac,51216
+bw2speedups/_find_first.pypy37-pp73-x86_64-linux-gnu.so,sha256=Q9z57YpRPQdzthItOMBnCKcFTIGZ2vvtx2xRH1MPP80,51448
+bw2speedups/__init__.py,sha256=hWldkB75cFpQ3R_0MORVPToiXXaDiEZxnScoc3Mc-C4,126
