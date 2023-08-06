@@ -1,0 +1,5 @@
+pyyaml
+watchdog
+livereload
+
+[dev_or_whatever]
