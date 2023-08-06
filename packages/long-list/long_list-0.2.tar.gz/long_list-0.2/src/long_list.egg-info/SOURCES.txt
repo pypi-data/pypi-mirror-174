@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/example/__init__.py
+src/example/long_list.py
+src/long_list.egg-info/PKG-INFO
+src/long_list.egg-info/SOURCES.txt
+src/long_list.egg-info/dependency_links.txt
+src/long_list.egg-info/top_level.txt
