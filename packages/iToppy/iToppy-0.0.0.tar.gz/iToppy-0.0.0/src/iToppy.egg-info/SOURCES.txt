@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/iToppy/__init__.py
+src/iToppy/__version__.py
+src/iToppy/connection.py
+src/iToppy.egg-info/PKG-INFO
+src/iToppy.egg-info/SOURCES.txt
+src/iToppy.egg-info/dependency_links.txt
+src/iToppy.egg-info/requires.txt
+src/iToppy.egg-info/top_level.txt
+src/iToppy.egg-info/zip-safe
