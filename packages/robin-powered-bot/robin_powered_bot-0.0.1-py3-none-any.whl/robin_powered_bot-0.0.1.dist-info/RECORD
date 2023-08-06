@@ -1,0 +1,14 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/reservations.py,sha256=a3HnOVr2dZCqU3ZPF8H5eNNopQ8OfEcIJhnC-Bvr4rs,4487
+src/robin.py,sha256=j_riU12PSIEwtbLVChJONWP1o47oYAHspmRsXlFyCak,2139
+src/user.py,sha256=0vXJLKnnXhMJzoMQHlUtxT0JggVJuHQGr9Ylov-pLLY,1075
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/constants.py,sha256=6A0DLk50pVTp-tYlMcG49OOw1-b0_69Xv3T8sk8--aQ,6575
+tests/reservantions_test.py,sha256=_R4JRDXbkYdvgommRoApO8dAk8ZgAPX4GpjyO_XOJIk,5841
+tests/robin_test.py,sha256=jJW32lsd71O2RVxdGbaJtl68Q_gIkcX74swvB7NY0qE,2317
+tests/user_test.py,sha256=lXzeTJ3k-GZK0dOdqqwveJ9olf7izqh6WdR328ICVgs,671
+robin_powered_bot-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+robin_powered_bot-0.0.1.dist-info/METADATA,sha256=GA7b3PuFH6w8fBGpeNzWE5s_2ucydE_x0bkDKCjo2R8,354
+robin_powered_bot-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+robin_powered_bot-0.0.1.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+robin_powered_bot-0.0.1.dist-info/RECORD,,
