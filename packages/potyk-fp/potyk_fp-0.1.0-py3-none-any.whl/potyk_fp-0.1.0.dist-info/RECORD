@@ -1,0 +1,9 @@
+potyk_fp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+potyk_fp/either.py,sha256=rki1zWA7mMK6Kv2DYQaZs_MhFv4nfi6j3kccwZaBZCw,759
+potyk_fp/if_.py,sha256=zQh2S564ShgsYi8ZEjqCVQgEya44TSkLTJnwVIznrX8,795
+potyk_fp/maybe.py,sha256=k1Qzjn2rs38I1oPs08G9f71Zt8mOaeMOWo-zo6vgsr0,745
+potyk_fp/pipe.py,sha256=CLOGIlBByWwhr-8fQkQ_C2ysU0UorFp6pGYTZIB-9rY,272
+potyk_fp/result.py,sha256=hRoz-vrrS4Abt_LOpMlGN6AJeno7-HtBPL8VEsv85yg,2903
+potyk_fp-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+potyk_fp-0.1.0.dist-info/METADATA,sha256=noN2lCDbp7U7DPRrBeXZq_Oouftl2GCWFuUx63sSDxA,338
+potyk_fp-0.1.0.dist-info/RECORD,,
