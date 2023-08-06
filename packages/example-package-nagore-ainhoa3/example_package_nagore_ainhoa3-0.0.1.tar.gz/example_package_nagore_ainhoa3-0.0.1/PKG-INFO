@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: example_package_nagore_ainhoa3
+Version: 0.0.1
+Summary: A descriptive analysis package whith statistics and visualizations
+Project-URL: Homepage, https://github.com/nagorebermeosolo/example_package_nagore_ainhoa3
+Project-URL: Bug Tracker, https://github.com/nagorebermeosolo/example_package_nagore_ainhoa3/issues
+Author-email: Nagore y Ainhoa <nagore.bermeosolo@alumni.mondragon.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: itertools
+Requires-Dist: math
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: warnings
+Description-Content-Type: text/markdown
+
+HOLA ES UNA PRUEBAAAAAAAAAAAAAAA

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "example_package_nagore_ainhoa3"
+version = "0.0.1"
+authors = [
+  { name="Nagore y Ainhoa", email="nagore.bermeosolo@alumni.mondragon.edu" },
+]
+description = "A descriptive analysis package whith statistics and visualizations"
+readme = "README.md"
+requires-python = ">=3.7"
+install_requires = [
+    'pandas', 'warnings', 'itertools', 'numpy', 'math', 'seaborn', 'matplotlib'
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = ["pandas", "warnings", "itertools", "numpy", "math", "seaborn", "matplotlib"]
+[tool.setuptools]
+packages = ["example_package_nagore_ainhoa3"]
+
+[project.urls]
+"Homepage" = "https://github.com/nagorebermeosolo/example_package_nagore_ainhoa3"
+"Bug Tracker" = "https://github.com/nagorebermeosolo/example_package_nagore_ainhoa3/issues"
