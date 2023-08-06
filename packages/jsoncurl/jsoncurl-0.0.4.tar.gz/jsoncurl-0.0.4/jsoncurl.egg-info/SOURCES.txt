@@ -1,0 +1,9 @@
+README.md
+setup.py
+jsoncurl/__init__.py
+jsoncurl.egg-info/PKG-INFO
+jsoncurl.egg-info/SOURCES.txt
+jsoncurl.egg-info/dependency_links.txt
+jsoncurl.egg-info/entry_points.txt
+jsoncurl.egg-info/requires.txt
+jsoncurl.egg-info/top_level.txt

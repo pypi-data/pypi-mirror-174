@@ -1,0 +1,3 @@
+[console_scripts]
+jcurl = jsoncurl:jsoncurl
+jsoncurl = jsoncurl:jsoncurl
