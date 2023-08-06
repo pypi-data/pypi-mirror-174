@@ -1,0 +1,24 @@
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+)/
+'''
+[tool.isort]
+profile = "black"
+py_version=37
+known_first_party= ['kili']
+
+
+
+[tool.pyright]
+exclude = [
+    "**/__pycache__",
+]
+
+pythonVersion = "3.7"
+typeCheckingMode = "basic"
