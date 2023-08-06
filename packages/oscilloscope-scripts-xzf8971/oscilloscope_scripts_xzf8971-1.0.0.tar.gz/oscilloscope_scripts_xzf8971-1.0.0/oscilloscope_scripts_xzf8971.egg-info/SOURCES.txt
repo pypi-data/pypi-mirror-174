@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Tektronix_TBS2000B_analysis/QuickAnalysis.py
+Tektronix_TBS2000B_analysis/__init__.py
+Tektronix_TBS2000B_analysis/__main__.py
+Tektronix_TBS2000B_control/__init__.py
+Tektronix_TBS2000B_control/oscilloscope_control.py
+Tektronix_TBS2000B_scripts/__init__.py
+Tektronix_TBS2000B_scripts/__main__.py
+Tektronix_TBS2000B_scripts/helper_function.py
+oscilloscope_scripts_xzf8971.egg-info/PKG-INFO
+oscilloscope_scripts_xzf8971.egg-info/SOURCES.txt
+oscilloscope_scripts_xzf8971.egg-info/dependency_links.txt
+oscilloscope_scripts_xzf8971.egg-info/not-zip-safe
+oscilloscope_scripts_xzf8971.egg-info/top_level.txt
