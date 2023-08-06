@@ -1,0 +1,5 @@
+backports/pathlib/__init__.py,sha256=P5aLaPhO2PRdvdGHJ6RPeT1IBIJ5OTfCgzu4rMw5E4g,2344
+backports/pathlib/_tests.py,sha256=sEL6ZYO_hqn5AkrxySEXmpFuNUfTyULkhrNa0e1YDf4,13011
+backports_pathlib_relative_to-0.1.0.dist-info/METADATA,sha256=y_yUQ1vE07uLTnxnCYgVBm2mSLjo8BMFMaJx9Xjvuqg,1126
+backports_pathlib_relative_to-0.1.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+backports_pathlib_relative_to-0.1.0.dist-info/RECORD,,
