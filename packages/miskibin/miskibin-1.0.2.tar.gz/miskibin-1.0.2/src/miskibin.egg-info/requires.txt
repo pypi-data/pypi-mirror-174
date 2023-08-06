@@ -1,0 +1,9 @@
+logging.config
+PyYaml
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
