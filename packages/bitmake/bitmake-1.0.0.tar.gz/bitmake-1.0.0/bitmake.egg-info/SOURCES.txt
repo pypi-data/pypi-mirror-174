@@ -1,0 +1,14 @@
+README.md
+setup.py
+bitmake/__init__.py
+bitmake/rest.py
+bitmake/ws.py
+bitmake.egg-info/PKG-INFO
+bitmake.egg-info/SOURCES.txt
+bitmake.egg-info/dependency_links.txt
+bitmake.egg-info/requires.txt
+bitmake.egg-info/top_level.txt
+tests/__init__.py
+tests/test_apiclient.py
+tests/test_restapi.py
+tests/test_wsapi.py
