@@ -1,0 +1,8 @@
+license_manager/command.py,sha256=Ml-6I7kifirZYncSOfO_xi3Ann6SIOKmLpoWpLDMt14,2229
+license_manager/license.py,sha256=P3SEH1lOeTQrJIGf3yg5sg0VrNdoWWXh8vfjxpC9KIk,6581
+license_manager/main.py,sha256=RrnOGEa3px-Co2VCOiEOkY_qFu__dWpTo3XzSMtnWxI,382
+license_manager/utils.py,sha256=-ZSz7CSn0Sbgq9melABmqF3EfISK0OIBP_sm8Y_puf8,2132
+license_manager-0.2.3.dist-info/entry_points.txt,sha256=bHw2s0dZpizLmJX0AK09Q3RSWEa3mhZ4_iY7RGreXgY,55
+license_manager-0.2.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+license_manager-0.2.3.dist-info/METADATA,sha256=j0_nVREzH3O4KrjqQbLM2G1E8Am4u4wc55av1-wAYmI,521
+license_manager-0.2.3.dist-info/RECORD,,
