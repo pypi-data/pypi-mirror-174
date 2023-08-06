@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: wdl-viewer
+Version: 0.0.1
+Summary: The REST API for WDL viewer.
+Home-page: https://github.com/w-gao/wdl-viewer
+Author: William Gao
+Author-email: me@wlgao.com
+License: MIT
+Keywords: WDL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask (==2.0.2)
+Requires-Dist: requests (<3,>=2)
+Requires-Dist: wdl-parsers (==0.2.0)
+
+# wdl-viewer-api
+
+The REST API for WDL viewer. Handles WDL file parsing and conversion to a
+simplified DAG for display.
+
+## Developer notes
+
+NOTE: this is written in Python because ANTLR4 does not provide official support for TypeScript
+yet. So, instead of dealing with mixing JavaScript and TypeScript with Node.js, let's use Flask
+for now.
+
+
