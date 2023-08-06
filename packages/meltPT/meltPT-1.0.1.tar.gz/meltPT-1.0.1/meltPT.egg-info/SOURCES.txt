@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+meltPT/__init__.py
+meltPT/backtrack_compositions.py
+meltPT/fit_melting_paths.py
+meltPT/meltPT
+meltPT/parse.py
+meltPT/suite.py
+meltPT/thermobarometry.py
+meltPT.egg-info/PKG-INFO
+meltPT.egg-info/SOURCES.txt
+meltPT.egg-info/dependency_links.txt
+meltPT.egg-info/requires.txt
+meltPT.egg-info/top_level.txt
