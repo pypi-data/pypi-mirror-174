@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/vtofg/__init__.py
+src/vtofg/_run.py
+src/vtofg/_tools.py
+src/vtofg/funcgen.py
+src/vtofg/plotter.py
+src/vtofg/waves.py
+src/vtofg.egg-info/PKG-INFO
+src/vtofg.egg-info/SOURCES.txt
+src/vtofg.egg-info/dependency_links.txt
+src/vtofg.egg-info/requires.txt
+src/vtofg.egg-info/top_level.txt
