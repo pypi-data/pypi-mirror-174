@@ -1,0 +1,12 @@
+encrawler/__init__.py,sha256=kfZ8At73btVbmAfy0JNF_QFABDL-4KHmXUlk0rvxaME,784
+encrawler/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+encrawler/models/result.py,sha256=wgs2B2_1zZslgfkMYmL6VznnJ6oM9GidBmHorwx1KN0,612
+encrawler/spiders/__init__.py,sha256=52reEeksDEb2qEz0E4swmjeykezJ2dLe1K2Qw6ndMHI,43
+encrawler/spiders/bing.py,sha256=x0IVALByp_xVt4VROmHXl4cWK-51jd78AfgLF45d290,9647
+encrawler/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+encrawler/utils/proxies.py,sha256=z8pWgfh387Zj9ehTHnEtEAYcnCRKcRNHfgkB6wJQWbM,928
+Encrawler-0.1.5.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+Encrawler-0.1.5.dist-info/METADATA,sha256=pLHWMC9-ON8btCdHsJ8WNZ8RilZ_M1CgXrmpha_BYHM,175
+Encrawler-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Encrawler-0.1.5.dist-info/top_level.txt,sha256=KDLW03gMRHq_RR9z8lHBGjEpp0aW_i9DSWbBy2PS3Nc,10
+Encrawler-0.1.5.dist-info/RECORD,,
