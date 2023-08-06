@@ -1,0 +1,8 @@
+README.md
+setup.py
+RecruitPlotEasy.egg-info/PKG-INFO
+RecruitPlotEasy.egg-info/SOURCES.txt
+RecruitPlotEasy.egg-info/dependency_links.txt
+RecruitPlotEasy.egg-info/entry_points.txt
+RecruitPlotEasy.egg-info/requires.txt
+RecruitPlotEasy.egg-info/top_level.txt
