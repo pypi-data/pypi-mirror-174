@@ -1,0 +1,13 @@
+/*p > img:only-child, p > svg:only-child {*/
+.centerblock {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	width: auto;
+	max-width: 100%;
+}
