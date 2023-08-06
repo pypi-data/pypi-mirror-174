@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+ssj/__init__.py
+ssj/ssj.py
+ssj.egg-info/PKG-INFO
+ssj.egg-info/SOURCES.txt
+ssj.egg-info/dependency_links.txt
+ssj.egg-info/requires.txt
+ssj.egg-info/top_level.txt

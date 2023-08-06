@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ssj
+Version: 1.1.0
+Summary: Servidor ou gestor de dados em JSON.
+Home-page: UNKNOWN
+Author: Jonathan N. Nagel
+Author-email: jinnascimento81@gmail.com
+License: MIT
+Description: Um servidor de NoSQL baseado em JSON e dicionarios Python que facilita o uso em rede local ou em maquina local.
+Keywords: ssj
+Platform: UNKNOWN
