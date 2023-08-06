@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: django-robust
+Version: 0.5.0
+Summary: robust background queue for django
+Home-page: https://github.com/barbuza/django-robust
+Author: Victor Kotseruba
+Author-email: barbuzaster@gmail.com
+Requires-Python: >=3.8
