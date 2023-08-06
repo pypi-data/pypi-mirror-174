@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: zigpackagen2
+Version: 0.3
+Summary: zigzag calculation
+Home-page: UNKNOWN
+Author: Anuruddh Kumar
+Author-email: anuruddh07@domain.com
+License: MIT
+Description: UNKNOWN
+Keywords: zigzag,candle
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9

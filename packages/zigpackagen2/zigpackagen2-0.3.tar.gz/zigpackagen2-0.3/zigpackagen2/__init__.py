@@ -1,0 +1,1 @@
+from .zigzagc import zigzag
