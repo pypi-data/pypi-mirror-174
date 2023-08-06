@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ovos-PHAL
+Version: 0.0.4a2
+Summary: UNKNOWN
+Home-page: https://github.com/OpenVoiceOS/ovos-PHAL
+Author: jarbasAi
+Author-email: jarbasai@mailfence.com
+License: apache-2.0
+Platform: UNKNOWN
+Requires-Dist: ovos-utils (>=0.0.21,~=0.0)
+Requires-Dist: ovos-workshop (>=0.0.8,~=0.0)
+Requires-Dist: ovos-plugin-manager
+
+UNKNOWN
+
+
