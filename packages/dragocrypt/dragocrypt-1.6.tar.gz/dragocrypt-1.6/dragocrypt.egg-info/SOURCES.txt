@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dragocrypt/__init__.py
+dragocrypt/dragocrypt.py
+dragocrypt.egg-info/PKG-INFO
+dragocrypt.egg-info/SOURCES.txt
+dragocrypt.egg-info/dependency_links.txt
+dragocrypt.egg-info/top_level.txt
