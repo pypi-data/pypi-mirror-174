@@ -1,0 +1,13 @@
+rules:
+  - id: str-removeprefix
+    languages:
+      - python
+    severity: ERROR
+    message: Use `str.removeprefix`.
+    pattern-either:
+      - pattern: |
+          if $TARGET.startswith($PREFIX):
+            ... = $TARGET[len($PREFIX):]
+      - pattern: |
+          if $TARGET.startswith($PREFIX):
+            ... = $TARGET[$LEN:]

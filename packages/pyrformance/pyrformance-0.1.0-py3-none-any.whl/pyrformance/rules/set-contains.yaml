@@ -1,0 +1,7 @@
+rules:
+  - id: set-contains
+    languages:
+      - python
+    severity: ERROR
+    message: Do not convert to `set` here.
+    pattern: $X in set($Y)
