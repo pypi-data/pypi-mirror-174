@@ -1,0 +1,9 @@
+covdefaults
+GitPython
+lenses
+pre-commit
+pylint==2.15.5
+pytest
+pytest-cov
+python-gitlab
+PyYAML

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+#[project]
+#name = "gitlab-precommit"
+#description = "Gitlab precommit tools"
+#readme = "README.md"
+#requires-python = ">=3.7"
+#keywords = ["gitlab", "shellcheck"]
+#classifiers = [
+#    "Environment :: Console",
+#    "Development Status :: 4 - Beta",
+#    "Programming Language :: Python :: 3",
+#    "License :: OSI Approved :: MIT License",
+#]
+##dependencies = [
+##    "requests",
+##    'importlib-metadata; python_version<"3.8"',
+##]
+#dynamic = ["version"]
+#
+#[project.urls]
+#"Homepage" = "https://github.com/jacobdonenfeld/gitlab-lint-hooks"
+
+[tool.black]
+py36 = false
+include = '\.pyi?$'
+exclude = '''
+    /(
+        \.git
+      | \.hg
+      | \.mypy_cache
+      | \.tox
+      | \.venv
+      | _build
+      | buck-out
+      | build
+      | dist
+
+      # The following are specific to Black, you probably don't want those.
+      | blib2to3
+      | tests/data
+    )/'''

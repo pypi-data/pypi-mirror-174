@@ -1,0 +1,59 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+change-template: '- #$NUMBER $TITLE @$AUTHOR'
+sort-direction: ascending
+categories:
+  - title: '🚀 Features'
+    labels:
+      - 'feature'
+      - 'enhancement'
+      - 'feat'
+
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+
+  - title: '🧰 Maintenance'
+    label: 'patch'
+
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  ## Changes
+
+  $CHANGES
+
+  ## ⭐️ Thank you for helping out!
+  $CONTRIBUTORS
+autolabeler:
+  - label: 'bug'
+    title:
+      - '/bug/i'
+      - '/fix/i'
+    branch:
+      - '/fix\/.+/'
+      - '/bug\/.+/'
+  - label: 'enhancement'
+    branch:
+      - '/feature\/.+/'
+    title:
+      - '/feat/i'
+      - '/feature/i'
+  - label: 'patch'
+    branch:
+      - '/patch\/.+/'
+      - '/refactor\/.+/'
+    title:
+      - '/patch/i'
+      - '/refactor/i'
