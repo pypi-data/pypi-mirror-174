@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+adc64format/__init__.py
+adc64format/adc64reader.py
+adc64format.egg-info/PKG-INFO
+adc64format.egg-info/SOURCES.txt
+adc64format.egg-info/dependency_links.txt
+adc64format.egg-info/requires.txt
+adc64format.egg-info/top_level.txt
