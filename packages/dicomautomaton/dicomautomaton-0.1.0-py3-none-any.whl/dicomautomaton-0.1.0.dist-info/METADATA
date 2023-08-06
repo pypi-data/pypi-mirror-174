@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dicomautomaton
+Version: 0.1.0
+Summary: A multipurpose tool for analyzing medical physics data with a focus on automation.
+License: GPL-3.0-or-later
+Author: Hal Clark
+Author-email: haley.clark@bccancer.bc.ca
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# DICOMautomaton
+
+This is a placeholder readme for the Python library for DICOMautomaton
+
