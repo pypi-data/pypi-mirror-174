@@ -1,0 +1,16 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+Translator/__init__.py
+Translator/translator.py
+Translator/ui.py
+Translator/arpanKaModel/keras_metadata.pb
+Translator/arpanKaModel/saved_model.pb
+Translator/arpanKaModel/variables/variables.data-00000-of-00001
+Translator/arpanKaModel/variables/variables.index
+Ubersetzer.egg-info/PKG-INFO
+Ubersetzer.egg-info/SOURCES.txt
+Ubersetzer.egg-info/dependency_links.txt
+Ubersetzer.egg-info/top_level.txt
