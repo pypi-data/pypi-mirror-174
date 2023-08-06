@@ -1,0 +1,6 @@
+discord.py
+pydantic
+
+[deploy]
+flask
+flask_sqlalchemy
