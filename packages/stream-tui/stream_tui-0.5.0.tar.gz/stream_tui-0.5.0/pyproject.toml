@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "stream-tui"
+version = "0.5.0"
+description = "Easily create pretty user interfaces for your CLI apps"
+authors = ["Jakob Pinterits <jakob.pinterits@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^12.6.0"
+blessed = "^1.19.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+skip = ".venv"
+
+[tool.isort]
+profile = "black"
+skip = ".venv"
