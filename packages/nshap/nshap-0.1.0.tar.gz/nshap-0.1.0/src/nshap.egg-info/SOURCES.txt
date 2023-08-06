@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/nshap/__init__.py
+src/nshap/functions.py
+src/nshap/nShapleyValues.py
+src/nshap/plot.py
+src/nshap/util.py
+src/nshap/vfunc.py
+src/nshap.egg-info/PKG-INFO
+src/nshap.egg-info/SOURCES.txt
+src/nshap.egg-info/dependency_links.txt
+src/nshap.egg-info/requires.txt
+src/nshap.egg-info/top_level.txt
