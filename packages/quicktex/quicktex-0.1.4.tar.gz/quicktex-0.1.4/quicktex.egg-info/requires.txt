@@ -1,0 +1,15 @@
+Pillow
+click
+
+[docs]
+Sphinx>=3.5
+sphinx-click>=2.7
+sphinx-rtd-theme
+myst-parser>=0.14
+
+[stubs]
+pybind11-stubgen
+
+[tests]
+parameterized
+pytest

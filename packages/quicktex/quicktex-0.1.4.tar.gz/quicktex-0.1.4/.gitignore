@@ -1,0 +1,35 @@
+# Python
+env/
+dist/
+build/
+*.egg-info
+*.pyc
+*.pyi
+*.whl
+*.tar.gz
+
+#sphinx
+docs/_build/
+
+#mypy
+out
+
+# IDEs
+**/.idea
+
+# binaries
+*.so
+
+# cmake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+cmake-build-*
