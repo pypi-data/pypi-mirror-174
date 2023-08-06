@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+le_logging/__init__.py
+le_logging.egg-info/PKG-INFO
+le_logging.egg-info/SOURCES.txt
+le_logging.egg-info/dependency_links.txt
+le_logging.egg-info/entry_points.txt
+le_logging.egg-info/top_level.txt
