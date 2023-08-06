@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: DokkuSD
+Version: 0.2.0
+Summary: DokkuSD
+Home-page: https://github.com/OpenDataServices/dokkusd-client
+Author: Open Data Services
+Author-email: code@opendataservices.coop
+License: MIT
+Project-URL: Documentation, https://dokkusd-client.readthedocs.io/en/latest/
+Project-URL: Issues, https://github.com/OpenDataServices/dokkusd-client/issues
+Project-URL: Source, https://github.com/OpenDataServices/dokkusd-client
+Requires-Python: >=3.7
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: black (==22.8.0) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+Requires-Dist: flake8 (==5.0.4) ; extra == 'dev'
+Requires-Dist: mypy (==0.981) ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+DokkuSD
