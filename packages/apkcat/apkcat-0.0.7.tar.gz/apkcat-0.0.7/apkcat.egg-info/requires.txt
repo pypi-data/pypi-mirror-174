@@ -1,0 +1,3 @@
+prettytable
+androguard==3.4.0a1
+click
