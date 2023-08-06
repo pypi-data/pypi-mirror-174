@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+binary_packer/__init__.py
+binary_packer/factory.py
+binary_packer/fields_structs.py
+binary_packer/packer.py
+binary_packer/types.py
+binary_packer.egg-info/PKG-INFO
+binary_packer.egg-info/SOURCES.txt
+binary_packer.egg-info/dependency_links.txt
+binary_packer.egg-info/top_level.txt

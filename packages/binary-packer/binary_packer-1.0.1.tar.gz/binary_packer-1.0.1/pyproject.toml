@@ -1,0 +1,95 @@
+[tool.poetry]
+name = "packer"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.982"
+pylint = "^2.13.9"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+coverage = "^6.5.0"
+
+[tool.isort]
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+skip-string-normalization = true
+
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = true
+no_warn_no_return = true
+plugins = [
+]
+namespace_packages = true
+show_error_codes = true
+pretty = true
+
+no_implicit_reexport = true
+no_implicit_optional = true
+strict_equality = true
+warn_unused_ignores = true
+warn_unreachable = true
+warn_redundant_casts = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+
+
+[tool.pylint.MASTER]
+load-plugins = [
+]
+
+[tool.pylint.'SIMILARITIES']
+ignore-imports = true
+ignore-signatures = true
+
+
+[tool.pylint.'MESSAGES CONTROL']
+extension-pkg-whitelist=[
+]
+
+[tool.pylint.'FORMAT']
+min-similarity-lines = 10
+fail-under = 9.7
+py-version = 3.9
+good-names=[
+    'bp',
+    'db',
+    'i',
+    'j',
+    'k',
+    'ex',
+    'Run',
+    'x', 'x1', 'x2', 'x3', 'x4', 'x5',
+    'y',
+    'G',
+    'H',
+    'h',
+    'df',
+    'MLP',
+]
+max-line-length = 120
+ignored-classes = [
+]
+disable = [
+    'locally-disabled', 'suppressed-message',
+    'missing-module-docstring', 'missing-class-docstring',
+    'missing-function-docstring', 'too-few-public-methods',
+    'wrong-import-position', 'import-outside-toplevel',
+    'fixme', 'too-many-locals', 'too-many-arguments',
+    'too-many-instance-attributes', 'c-extension-no-member'
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
