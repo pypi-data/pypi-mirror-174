@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: judyb
+Version: 0.0.2
+Summary: A pure Python judyb module.
+Home-page: https://sr.ht/~cedric/judyb
+Author: Cédric Bonhomme
+Author-email: cedric@cedricbonhomme.org
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8,<3.11
+License-File: COPYING
+
+# judyb
+
+[![builds.sr.ht status](https://builds.sr.ht/~cedric/judyb.svg)](https://builds.sr.ht/~cedric/judyb)
+
+
+[judyb](https://sr.ht/~cedric/judyb), a pure Python judyb
+module.
+
+judyb is the art and science of writing hidden messages in such a way
+that no one, apart from the sender and intended recipient, suspects the
+existence of the message, a form of security through obscurity. Consequently,
+functions provided by judyb only hide messages, without encryption.
+judybgraphy is often used with cryptography.
+
+For reporting issues, visit the tracker here:
+https://todo.sr.ht/~cedric/judyb
+
+
+## Installation
+
+
+```bash
+$ poetry install judyb
+```
+
+You will be able to use judyb in your Python programs.
+
+If you only want to install judyb as a command line tool:
+
+```bash
+$ pipx install judyb
+```
+
+pipx installs scripts (system wide available) provided by Python packages into
+separate virtualenvs to shield them from your system and each other.
+
+
+## Usage
+
+A [tutorial](https://judyb.readthedocs.io) is available.
+
+
+## Use judyb as a library in your Python program
+
+If you want to use judyb in your Python program you just have to import the
+appropriate judybgraphy technique. For example:
+
+```python
+>>> from judyb import lsb
+>>> secret = lsb.hide("./tests/sample-files/Lenna.png", "Hello World")
+>>> secret.save("./Lenna-secret.png")
+>>>
+>>> clear_message = lsb.reveal("./Lenna-secret.png")
+```
+
+
+## Use judyb as a command line tool
+
+### Hide and reveal a message
+
+```bash
+$ judyb-lsb hide -i ./tests/sample-files/Lenna.png -m "Secret Message" -o Lena1.png
+$ judyb-lsb reveal -i Lena1.png
+Secret Message
+```
+
+
+### Hide the message with the Sieve of Eratosthenes
+
+```bash
+$ judyb-lsb-set hide -i ./tests/sample-files/Lenna.png -m 'Secret Message' --generator eratosthenes -o Lena2.png
+```
+
+The message will be scattered in the picture, following a set described by the
+Sieve of Eratosthenes. Other sets are available. You can also use your own
+generators.
+
+This will make a steganalysis more complicated.
+
+
+## Running the tests
+
+```bash
+$ python -m unittest discover -v
+```
+
+Running the static type checker:
+
+```bash
+$ mypy judyb
+```
+
+
+## Contributions
+
+Contributions are welcome. If you want to contribute to judyb I highly
+recommend you to install it in a Python virtual environment with poetry.
+
+
+## License
+
+This software is licensed under
+[GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.html)
+
+Copyright (C) 2010-2022 [Cédric Bonhomme](https://www.cedricbonhomme.org)
+
+For more information, [the list of authors and contributors](CONTRIBUTORS.md) is available.
+
+
