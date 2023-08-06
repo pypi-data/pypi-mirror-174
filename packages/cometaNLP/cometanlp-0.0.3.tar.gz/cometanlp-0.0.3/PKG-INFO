@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cometaNLP
+Version: 0.0.3
+Summary: A NLP data and text analysis tool for Italian, Dutch, and English social media comments.
+Project-URL: Homepage, https://github.com/corvusMidnight/cometa
+Project-URL: Bug Tracker, https://github.com/corvusMidnight/cometa/issues
+Author-email: Leonardo Grotti <grottileonardo@hotmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: emoji>=1.7.0
+Requires-Dist: matplotlib>=3.5.1
+Requires-Dist: nltk>=3.7
+Requires-Dist: numpy>=1.21.4
+Requires-Dist: pandas>=1.3.4
+Requires-Dist: pyphen>=0.13.0
+Requires-Dist: regex>=2.5.121
+Requires-Dist: spacy>=3.2.3
+Requires-Dist: textstat>=0.7.2
+Description-Content-Type: text/markdown
+
+# COMETA
+Comments Extraction and Text Analysis:
+An NLP data and text analysis tool for Italian, Dutch, and English social media comments.
