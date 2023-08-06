@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: tkscrollutil
+Version: 1.0.71
+Summary: tkinter scroll extra
+Author: XiangQinxi
+Author-email: XiangQinxi@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# tkwinico
+为Windows系统提供开发系统托盘的功能。
+
+---
+
+## 示例
+```python
+from tkwinico import *
+import tkinter as tk
+
+
+Window = tk.Tk()
+
+
+def CallBack(Message, X, Y):
+    if Message == WM_RBUTTONDOWN:
+        Menu = tk.Menu(tearoff=False)
+        Menu.add_command(label="Quit", command=Window.quit)
+        Menu.tk_popup(X, Y)
+
+
+taskbar(ADD, load(APPLICATION), (Window.register(CallBack), MESSAGE, X, Y))
+
+Window.mainloop()
+```
