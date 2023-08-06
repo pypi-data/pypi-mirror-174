@@ -1,0 +1,2 @@
+[nbdev]
+assembly_ai_plus = assembly_ai_plus._modidx:d
