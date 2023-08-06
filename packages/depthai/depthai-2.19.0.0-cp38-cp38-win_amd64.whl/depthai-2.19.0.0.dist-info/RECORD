@@ -1,0 +1,10 @@
+depthai.cp38-win_amd64.pyd,sha256=XKMhAfvzEzn0dEHk3-we80yCKkcTQPMPhi_rW5CMDjY,12694528
+libusb-1.0.dll,sha256=HziK7z2kTeAd6Qjxp1e_IAIDK_EzNEpyPLuuEV-B2k4,301568
+depthai/__init__.pyi,sha256=nDS3fAAAjw93vlAsSGT5QdDCBJDdZCIrS3barXqIbuw,165861
+depthai/node.pyi,sha256=UUMcyNMsdf0SXafatQ4Pp7TfPKT4dzEMQ9gEOfSdhOM,40203
+depthai/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depthai-2.19.0.0.dist-info/LICENSE,sha256=avvRRZzWsmEX1JDi9FFNegGM-BYlwsUUHJfh-M5UMr0,1089
+depthai-2.19.0.0.dist-info/METADATA,sha256=HMBRdp-pdUXS4EElVY0p1k-wmDBU5leq_r4wuW34hmk,8612
+depthai-2.19.0.0.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+depthai-2.19.0.0.dist-info/top_level.txt,sha256=39NG_7OEgvQ5PKU-ilUsp81cr2azecT6E-c1oCTbufM,8
+depthai-2.19.0.0.dist-info/RECORD,,
