@@ -1,0 +1,3 @@
+[pantsbuild.plugin]
+remote_auth = toolchain.pants.auth.plugin:toolchain_auth_plugin
+rules = toolchain.pants.register:rules
