@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+bendu.py
+pyproject.toml
+setup.cfg
+setup.py
+bendu.egg-info/PKG-INFO
+bendu.egg-info/SOURCES.txt
+bendu.egg-info/dependency_links.txt
+bendu.egg-info/entry_points.txt
+bendu.egg-info/requires.txt
+bendu.egg-info/top_level.txt
