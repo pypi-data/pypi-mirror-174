@@ -1,0 +1,14 @@
+freeproxydownloader/LICENSE,sha256=q5AZUyTwx8nlW-2D2bxuQd36rLJ9EDulKh76xA09pj8,1069
+freeproxydownloader/README.MD,sha256=Lrq4s6xdjxk-bytxIW9PqCVVztWC0F31qXOvgOK_nYw,1914
+freeproxydownloader/__init__.py,sha256=9pd8se2J9eX-yZ7T6ge-skWahV9rYBUEOUj5zWBwc8w,15900
+freeproxydownloader/aaa_execute_requests_new.py,sha256=07FDKntDKMrKBrKA4TuKVGAFcYT5koiH_xgaHXcZFKc,8750
+freeproxydownloader/ad_ping_check.py,sha256=wUn2vMo-duSyh3_LEJd4SnFkY1KGF2mzjJgiyfL441w,8229
+freeproxydownloader/ad_proxy.py,sha256=pJKwGbXbvB5PafBXkPImo8a6spw1XN5HF3eoHNh7jxs,11470
+freeproxydownloader/downloader_cpr.py,sha256=GhfAWFabyeSDDRe_GYWSkquasDH6VUWlm5TJUwe1cmM,3987
+freeproxydownloader/requirements.txt,sha256=pG-2n-z0en1JN4Mq-9QSpozFt9EpCXuzf6cJZncypQ8,110
+freeproxydownloader/thirdparty.json,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+freeproxydownloader-0.10.dist-info/LICENSE.rst,sha256=mUm-wCZOuzvKLxt9Gac_Zo5cah8QOM0gqn2Z-AluELM,1148
+freeproxydownloader-0.10.dist-info/METADATA,sha256=Bvbku8Kpn3ZqZLy5VFbUZ-NuIH1jFnrAQ3bgT5gq2PA,3089
+freeproxydownloader-0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+freeproxydownloader-0.10.dist-info/top_level.txt,sha256=CoL00VM1QFi8CEfvnhQWEPNqqdS0gEmStKIUL1HUMko,20
+freeproxydownloader-0.10.dist-info/RECORD,,
