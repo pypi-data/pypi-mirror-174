@@ -1,0 +1,6 @@
+__pycache__
+/dist/
+.*_cache/
+/.task/
+/.venvs/
+/docs/build/
