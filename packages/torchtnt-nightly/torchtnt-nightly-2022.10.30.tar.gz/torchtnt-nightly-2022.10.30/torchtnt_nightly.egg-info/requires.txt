@@ -1,0 +1,14 @@
+torch
+numpy
+fsspec
+tensorboard
+psutil
+typing_extensions
+setuptools
+tqdm
+
+[dev]
+parameterized
+pytest
+pytest-cov
+torchsnapshot-nightly
