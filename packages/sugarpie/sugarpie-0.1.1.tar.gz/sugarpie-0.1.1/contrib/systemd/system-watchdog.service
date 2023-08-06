@@ -1,0 +1,14 @@
+[Unit]
+Description=System watchdog that restarts UPS in case of system unresponsiveness
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/local/lib
+ExecStart=/usr/bin/python -m sugarpie.contrib.systemd.system-watchdog-start-service
+ExecStop=/usr/bin/python -m sugarpie.contrib.systemd.system-watchdog-stop-service
+Environment=PYTHONUNBUFFERED=1
+StandardOutput=journal
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
