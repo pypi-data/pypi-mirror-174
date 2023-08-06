@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+
+{% for cmd, metadata in commands.items() %}
+### {{metadata.invocation_sample}}
+
+```
+{{metadata.help}}
+```
+{%endfor%}
