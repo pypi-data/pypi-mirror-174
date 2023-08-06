@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+iris = sqlalchemy_iris.iris:IRISDialect_iris
