@@ -1,0 +1,2 @@
+setuptools>=47.3.1
+proces>=0.1.3
