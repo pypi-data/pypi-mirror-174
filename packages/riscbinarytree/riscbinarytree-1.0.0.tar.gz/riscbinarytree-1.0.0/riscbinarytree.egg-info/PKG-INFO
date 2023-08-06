@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: riscbinarytree
+Version: 1.0.0
+Home-page: https://github.com/RISC-Capstone/risc-binarytree
+Author: e11i0t
+Author-email: mpkarthick2002@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Education
+Requires-Python: >=3.7
+Provides-Extra: dev
+License-File: LICENSE
