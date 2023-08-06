@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+uipyqt2/UIpyqt2.py
+uipyqt2/__init__.py
+uipyqt2.egg-info/PKG-INFO
+uipyqt2.egg-info/SOURCES.txt
+uipyqt2.egg-info/dependency_links.txt
+uipyqt2.egg-info/requires.txt
+uipyqt2.egg-info/top_level.txt
