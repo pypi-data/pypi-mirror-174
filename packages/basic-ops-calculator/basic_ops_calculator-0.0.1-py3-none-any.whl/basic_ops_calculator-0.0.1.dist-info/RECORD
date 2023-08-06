@@ -1,0 +1,8 @@
+basic_ops_calculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basic_ops_calculator/operations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basic_ops_calculator/operations/advanced.py,sha256=G23VvHL2LDZpcnymBsyZywCgDDXTymkdAfNaf0PyniU,168
+basic_ops_calculator/operations/basic.py,sha256=9WnWBsXcxaOc-MYPliLkW8i1ZfwS_NxdrxFlxDsxDJI,277
+basic_ops_calculator-0.0.1.dist-info/METADATA,sha256=rPzLcqXx2CKrda5Mz7KZejm3KvoxLg5_nKliQ_7LCQQ,956
+basic_ops_calculator-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+basic_ops_calculator-0.0.1.dist-info/top_level.txt,sha256=UKVaI3ahOdX_ehTEw-yRUhqTnkYMiCJ9IrdjQyMRIqI,21
+basic_ops_calculator-0.0.1.dist-info/RECORD,,
