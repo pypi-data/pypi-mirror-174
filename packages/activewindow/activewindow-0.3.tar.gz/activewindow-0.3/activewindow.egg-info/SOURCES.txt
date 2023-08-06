@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+activewindow/__init__.py
+activewindow/winInfo.py
+activewindow.egg-info/PKG-INFO
+activewindow.egg-info/SOURCES.txt
+activewindow.egg-info/dependency_links.txt
+activewindow.egg-info/not-zip-safe
+activewindow.egg-info/requires.txt
+activewindow.egg-info/top_level.txt
