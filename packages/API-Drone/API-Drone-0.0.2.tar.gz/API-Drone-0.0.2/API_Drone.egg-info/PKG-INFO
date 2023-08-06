@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: API-Drone
+Version: 0.0.2
+Summary: PyMAVLink drone control via simple functions
+Home-page: UNKNOWN
+Author: Joel Johera I Izquierdo
+Author-email: joel.johera.i@estudiantat.upc.edu
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: pymavlink,ArduPilot
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
