@@ -1,0 +1,5 @@
+cmake
+fasteners
+numpy
+pybind11
+
