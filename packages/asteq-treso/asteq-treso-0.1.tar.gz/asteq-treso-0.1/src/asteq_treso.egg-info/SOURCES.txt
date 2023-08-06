@@ -1,0 +1,13 @@
+LICENSE
+setup.cfg
+setup.py
+src/cli.py
+src/excel.py
+src/functions.py
+src/operations.py
+src/asteq_treso.egg-info/PKG-INFO
+src/asteq_treso.egg-info/SOURCES.txt
+src/asteq_treso.egg-info/dependency_links.txt
+src/asteq_treso.egg-info/entry_points.txt
+src/asteq_treso.egg-info/requires.txt
+src/asteq_treso.egg-info/top_level.txt
