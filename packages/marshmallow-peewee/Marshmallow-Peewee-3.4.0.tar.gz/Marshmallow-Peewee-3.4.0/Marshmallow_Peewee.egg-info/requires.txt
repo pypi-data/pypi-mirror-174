@@ -1,0 +1,11 @@
+peewee>3
+marshmallow>3
+
+[build]
+bump2version
+wheel
+
+[tests]
+pytest
+pytest-cov
+pytest-mypy
