@@ -1,0 +1,2 @@
+recursive-include algo_beast/cmd/auth *
+recursive-include algo_beast/cmd/stubs *
