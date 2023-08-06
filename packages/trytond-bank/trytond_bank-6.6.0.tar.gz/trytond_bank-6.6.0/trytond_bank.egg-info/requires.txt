@@ -1,0 +1,11 @@
+python-stdnum
+python-sql>=0.4
+trytond_party<6.7,>=6.6
+trytond_currency<6.7,>=6.6
+trytond<6.7,>=6.6
+
+[SWIFT]
+schwifty>=2020.01.0
+
+[test]
+schwifty
