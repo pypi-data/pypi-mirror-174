@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: mywebkraken-package
+Version: 0.1.2
+Summary: 
+License: MIT
+Author: LADM
+Author-email: you@example.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dash (>=2.6.2,<3.0.0)
+Requires-Dist: pykrakenapi (>=0.3.1,<0.4.0)
+Description-Content-Type: text/markdown
+
+# myWebKraken
+PRoyecto prueba que se conecta a Kraken,  descarga precios de kripro activos y los uestra en web
+
+PAra instalar:
+```
+pip install -r requirements.txt
+```
+
+Para ejecutar
+
+```
+No lo se todavia
+```
