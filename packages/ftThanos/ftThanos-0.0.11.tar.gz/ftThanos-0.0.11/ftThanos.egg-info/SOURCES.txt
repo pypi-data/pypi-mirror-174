@@ -1,0 +1,7 @@
+setup.py
+ftThanos/connector.py
+ftThanos.egg-info/PKG-INFO
+ftThanos.egg-info/SOURCES.txt
+ftThanos.egg-info/dependency_links.txt
+ftThanos.egg-info/requires.txt
+ftThanos.egg-info/top_level.txt
