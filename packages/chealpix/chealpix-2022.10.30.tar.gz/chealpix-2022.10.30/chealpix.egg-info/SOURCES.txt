@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+chealpix.egg-info/PKG-INFO
+chealpix.egg-info/SOURCES.txt
+chealpix.egg-info/dependency_links.txt
+chealpix.egg-info/requires.txt
+chealpix.egg-info/top_level.txt
