@@ -1,0 +1,3 @@
+[console_scripts]
+arcana = arcana.cli:cli
+run-arcana-pipeline = arcana.cli.deploy:run_pipeline
