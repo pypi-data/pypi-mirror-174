@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+
+{% for cmd,docs in commands.items() %}
+{% set section=docs.split('\n')[0].replace('Usage: ','').replace('...', '').replace('[OPTIONS]','').replace('COMMAND','').replace('[ARGS]','') %}
+
+### {{section}}
+
+```
+{{docs}}
+```
+
+ -------------------------------------------------------------------------------
+{%endfor%}
