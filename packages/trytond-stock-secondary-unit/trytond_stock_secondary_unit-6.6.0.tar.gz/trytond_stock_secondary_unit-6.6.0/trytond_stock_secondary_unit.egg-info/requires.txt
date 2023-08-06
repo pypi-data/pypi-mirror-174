@@ -1,0 +1,5 @@
+trytond_stock<6.7,>=6.6
+trytond_product<6.7,>=6.6
+trytond<6.7,>=6.6
+
+[test]
