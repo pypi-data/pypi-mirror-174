@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: rsyncmanager
+Version: 0.1.2
+Summary: utilitary to access tomography data at esrf
+Home-page: https://gitlab.esrf.fr/payno/rsyncmanager.git
+Author: data analysis unit
+Author-email: henri.payno@esrf.fr
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: setuptools
+Requires-Dist: silx (>=0.9)
+Requires-Dist: lxml
+Provides-Extra: full
+
+This library is a binder for rsync.
+It also include a 'controler' of the rsync command launch.
