@@ -1,0 +1,14 @@
+noapi/__init__.py,sha256=Is5e6ppQnGvPY_pLdF08SsTpn1dGDtUD3ekpN96j-qQ,312
+noapi/client/__init__.py,sha256=OZXBdNjweV5-CJwuVX67qZheufpm4gcsSrxc7ed2Ri4,86
+noapi/client/connector.py,sha256=k36byJsO15pLfcDe0zNs3La0kHku4GgvSfDIprhKSYY,1965
+noapi/client/entry_point.py,sha256=lbIh29zYWqr9qqa7mC1qsVwUyIyT8AmNHPsv2b1nyVI,701
+noapi/client/remote_objects.py,sha256=VC0BdHFK7028yIl1siiriBUvGFZ_xD1ybgqdGqamMMY,3445
+noapi/server/__init__.py,sha256=3jQ25sOuSzoVdfiUbZyK9wF8JV0pQhHLMG9XhYUuSxc,68
+noapi/server/object_controller.py,sha256=jAz_wMZGpsnltrP6LfAkpIY5Dbmt-HAC4h-XJhDK5JA,1263
+noapi/server/server.py,sha256=sRIk5P8oYskFGMXZuOdv2Wffv-_xrOjojaLYWJwHeK0,1189
+noapi/shared/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+noapi/shared/models.py,sha256=_TVHGS8QBo3qExSue6BGkWArdft8suQONiCEnQIPn78,1233
+NoApi-0.5.dist-info/METADATA,sha256=EFZKhzvYCjo9_o1u19QRr9ws0Dm6twfZumuI3pfD82U,1695
+NoApi-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+NoApi-0.5.dist-info/top_level.txt,sha256=-M2LgcU6-MmJVAfJI0JL4aEvOhKMbBFcWuBVngGD8L0,6
+NoApi-0.5.dist-info/RECORD,,
