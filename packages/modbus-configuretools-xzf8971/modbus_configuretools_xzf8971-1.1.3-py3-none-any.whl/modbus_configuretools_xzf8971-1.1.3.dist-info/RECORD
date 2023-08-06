@@ -1,0 +1,10 @@
+modbus_configuretools/__init__.py,sha256=2kCW38eWPCpEiJMmWJcoCz6Jdb6fviliohSoqhbzq3g,132
+modbus_configuretools/derived_modbus_wrapper.py,sha256=yrQ4iApZUvsFqnaN_C0QGG7-zH0Uqh5dsvMrVZCg-io,1940
+modbus_configuretools/helper_function.py,sha256=O88N6cbEgALebFYtfJEStROlIPQbjP7cqS8yh0X5OPM,3379
+modbus_configuretools/modbus_wrapper.py,sha256=DWN-YCAcMfXPvqQ9uCP28SgUWexLk1Ku7ZbF9xePw8M,1279
+modbus_configuretools/temperature_sensor.py,sha256=TImwB0Ltt2mQsYRfQ3u7GfnUhNeFZddxYeGPPq8G5kY,6511
+modbus_configuretools_xzf8971-1.1.3.dist-info/LICENSE,sha256=J6ncyl5iyuYSp0gksp8Q5CDQFzgSrV3O_iMmluH7xvw,1067
+modbus_configuretools_xzf8971-1.1.3.dist-info/METADATA,sha256=Eg66MYGPQbnAfDwr8dzdR5YfBENPE-8eDaW_lf3-gUM,3319
+modbus_configuretools_xzf8971-1.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+modbus_configuretools_xzf8971-1.1.3.dist-info/top_level.txt,sha256=it1Q8CzLCzI7n-MO6zB8_j8LMTSPumrA4VQzFW3aiT0,22
+modbus_configuretools_xzf8971-1.1.3.dist-info/RECORD,,
