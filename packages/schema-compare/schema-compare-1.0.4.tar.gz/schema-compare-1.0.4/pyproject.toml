@@ -1,0 +1,36 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "schema-compare"
+version = "1.0.4"
+description = "Compare database schemas"
+readme = "README.md"
+authors = [{ name = "Miguel Cardoso", email = "msd.cardoso@hotmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["database", "schema"]
+dependencies = [
+    "psycopg2==2.9.5",
+    "SQLAlchemy==1.4.42",
+    "pandas==1.5.1",
+    "tomli==2.0.1"
+]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/Tekaichi/schema-compare"
+
+[project.scripts]
+schema-compare = "schema_compare.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mypkg = ["*.html"]

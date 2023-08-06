@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: schema-compare
+Version: 1.0.4
+Summary: Compare database schemas
+Author-email: Miguel Cardoso <msd.cardoso@hotmail.com>
+License: Copyright 2022 Miguel Cardoso
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Homepage, https://github.com/Tekaichi/schema-compare
+Keywords: database,schema
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Schema Compare
+Schema compare is a simple utility tool with the sole goal of comparing schemas between two databases. Currently it only supports postgresql.
+
+
+### Installation
+You can install Schema Compare from PyPi:
+
+    pip install schema-compare
+
+### How to use
+
+1. Define config.toml file
+2. python schema-compare {{config.toml path}}
+
+
+### Configuration file
+
+    [source]
+    username = ....
+    password = ....
+    hostname = ....
+    database = ....
+
+    [target]
+    username = ....
+    password = ....
+    hostname = ....
+    database = ....
