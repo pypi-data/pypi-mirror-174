@@ -1,0 +1,2 @@
+[console_scripts]
+archctl = archctl.__main__:main
