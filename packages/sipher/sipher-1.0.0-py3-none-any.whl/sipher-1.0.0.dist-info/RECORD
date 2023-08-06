@@ -1,0 +1,9 @@
+sipher/__init__.py,sha256=ud9MkAjsNW9IATa-6X09kELwQlR1VyVNEORnaoP15QA,121
+sipher/__main__.py,sha256=4md_y0pJOLXfS6SQRaw6eFbC7haTd4Ov0G8VzhV_qKU,2673
+sipher/morse.py,sha256=PvDYRcBeogEdJGzWMbpNSsCREhLJIiddHSEasanaM4s,3250
+sipher-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+sipher-1.0.0.dist-info/METADATA,sha256=9o48xzDoBPY4VIplYzDES3-j_IQ-4ZrLtt9YcL3F8qU,2088
+sipher-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sipher-1.0.0.dist-info/entry_points.txt,sha256=wM7wMjjJK8NUjNqhHhZgDE7DUTu2ZnZfju6NH59EDiE,49
+sipher-1.0.0.dist-info/top_level.txt,sha256=F4mkI6HXwgByAuu0SOM_qe4xVZu-VRxtZ565BnoEcpg,7
+sipher-1.0.0.dist-info/RECORD,,
