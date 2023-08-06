@@ -1,0 +1,16 @@
+inigo_py/VERSION,sha256=NVouFPan8ss4fZ07daNVCYDQIO4dAFsTm2IpDBZFBoo,7
+inigo_py/__init__.py,sha256=xc4fhr09foia4DtSztyMw2HxywVrQkiqHkLo39FyB_U,282
+inigo_py/ffi.py,sha256=A0M07jOdBTWsUZ_GvtnOVA7u2JqRgj7jJka-lVQLdWo,2412
+inigo_py/middleware.py,sha256=4CpIjdMukFXbwDTtq5jUCNk9Pu_hAa9y13J0lbGV768,7514
+inigo_py/lib/inigo-alpine-amd64.so,sha256=CyW4P9vh1-Tb15DHqBQG2DXY3sKFVH5OhCoS-1o0bVA,34231760
+inigo_py/lib/inigo-alpine-arm64.so,sha256=C3d2f4WAtH_uqYeMZdM5mmqTrMzd0qOMZoPE3ux_CXU,32732008
+inigo_py/lib/inigo-darwin-amd64.dylib,sha256=vPuEsbH8ww8-eev8cFngdnjyuuhWjkojnagN4D9dQ5Y,31467960
+inigo_py/lib/inigo-darwin-arm64.dylib,sha256=GtHh976OnVQQonfLZNjPun9JtxMFG_73244hpfXpKjU,34484610
+inigo_py/lib/inigo-linux-amd64.so,sha256=RSZ3R-4mIq2gx0Rphgt1ZOnqa8XcP2eUBlo2HmQw2rg,34254000
+inigo_py/lib/inigo-linux-arm64.so,sha256=XukA8s4vx3He3FoEpSLZBdbBRKoMDQrfwHJScKG-FxU,32732008
+inigo_py/lib/inigo-windows-amd64.dll,sha256=_qKlilgO3BTnLJv184TKcPhbPi9X63ER6avVly5_aAE,31741952
+inigo_py-0.15.2.dist-info/LICENSE,sha256=O4xtdZWpFRdMPVNz5doLEwiVg7T3WLk4IxEePVs3cP8,1074
+inigo_py-0.15.2.dist-info/METADATA,sha256=04OajQ8o4xJZ7MGJEK7sPcLjIdc7zaWiI8BWyegudZs,751
+inigo_py-0.15.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+inigo_py-0.15.2.dist-info/top_level.txt,sha256=5jWGApMfqq779OG19l-vj5qifwYq76vXnkm-jpb2qdE,9
+inigo_py-0.15.2.dist-info/RECORD,,
