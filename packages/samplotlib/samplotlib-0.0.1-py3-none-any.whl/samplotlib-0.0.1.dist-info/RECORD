@@ -1,0 +1,11 @@
+samplotlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+samplotlib/baseplot.py,sha256=kyR1Prh94Nkzef-IDW-fgW0s-iauFtnv-mXggcHuuN4,12392
+samplotlib/circusboy.py,sha256=1QFqxakQnHdIs4RQxhz87G5XDQFJya1hB2o2cw4Jqz0,2573
+samplotlib/colors.py,sha256=398ibPizgKZpYoeJL9swTI_ILiZ2KoiVaUviISrhUfI,6958
+samplotlib/graylady.py,sha256=A80KaILzQj7LkmtgWwvbEjW9BKMX1XoY2T0EKB6asSs,2948
+samplotlib/utils.py,sha256=FTKCt4LfiGlIEFDr6ZVBulyosft5Opt6GXflgL-4c4Q,13555
+samplotlib-0.0.1.dist-info/LICENSE.md,sha256=ZLckTz_rt-KRFL3nfGcAEapnoXvJiAK2GXT7YbfPF-U,15579
+samplotlib-0.0.1.dist-info/METADATA,sha256=SllZ3nMNCkKZYVheYX93M_36BotY1p7WlZWkP5u6dX4,209
+samplotlib-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+samplotlib-0.0.1.dist-info/top_level.txt,sha256=jBvnk4rvVlH9L52TNx7s6do0HPyO_iiZ--koEOuEiXM,11
+samplotlib-0.0.1.dist-info/RECORD,,

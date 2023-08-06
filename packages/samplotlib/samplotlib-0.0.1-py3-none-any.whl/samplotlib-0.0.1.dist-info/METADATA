@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: samplotlib
+Version: 0.0.1
+Summary: Plotting scripts extending matplotlib
+Author: Sam Passaglia
+License: MIT
+License-File: LICENSE.md
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
