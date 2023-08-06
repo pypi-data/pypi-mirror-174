@@ -1,0 +1,7 @@
+setup.py
+tomspdb.py
+tomspdb.egg-info/PKG-INFO
+tomspdb.egg-info/SOURCES.txt
+tomspdb.egg-info/dependency_links.txt
+tomspdb.egg-info/entry_points.txt
+tomspdb.egg-info/top_level.txt
