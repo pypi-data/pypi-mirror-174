@@ -1,0 +1,96 @@
+[
+    {
+        "component": "section",
+        "type": "basic",
+        "header": "Settings"
+    },
+    {
+        "component": "file_select",
+        "id": "model",
+        "name": "Model",
+        "count": 1,
+        "help": "Select a trained model",
+        "validation": "required",
+        "namespace": "args"
+    },
+    {
+        "component": "file_select",
+        "id": "data",
+        "name": "Data",
+        "count": 1,
+        "help": "Select one or more HDF5 or multi-page TIFF files with corresponding labels",
+        "validation": "required",
+        "namespace": "args"
+    },
+    {
+        "component": "select",
+        "id": "quality",
+        "name": "Quality",
+        "help": "low = Single axis, medium = 3 axis, high = 12 ways",
+        "validation": "required",
+        "options": [{ "label": "Low", "value": "low" },{ "label": "Medium", "value": "medium" },{ "label": "High", "value": "high" }],
+        "namespace": "settings"
+    },
+    {
+        "component": "select",
+        "id": "output_probs",
+        "name": "Output Probabilities?",
+        "help": "If set to True a separate volume of probabilty values for the predictions will be saved alongside the labels.",
+        "validation": "required",
+        "options": [{ "label": "True", "value": "true"},{ "label": "False", "value": "false" }],
+        "namespace": "settings"
+    },
+    {
+        "component": "select",
+        "id": "clip_data",
+        "name": "Clip Data?",
+        "help": "If set to True, the image data intensities will be clipped and rescaled before prediction. Set to False if data is already clipped.",
+        "validation": "required",
+        "options": [{ "label": "True", "value": "true"},{ "label": "False", "value": "false" }],
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "st_dev_factor",
+        "name": "Standard Deviations to Clip",
+        "help": "The number of standard deviations from the mean to clip data to.",
+        "validation": "required float",
+        "namespace": "settings"
+    },
+    {
+        "component": "text",
+        "id": "data_hdf5_path",
+        "name": "HDF5 Image Path",
+        "help": "The internal HDF5 path to the image data.",
+        "validation": "required filepath",
+        "namespace": "settings"
+    },
+    {
+        "component": "number",
+        "id": "cuda_device",
+        "name": "Graphics Device",
+        "help": "The graphics card to use (between 0 and 3 for a machine with 4 GPUs).",
+        "validation": "required integer",
+        "step": "1",
+        "min": "0",
+        "namespace": "settings"
+    },
+    {
+        "component": "select",
+        "id": "downsample",
+        "name": "Downsample?",
+        "help": "If True, data will be downsampled by 2 and segmentation will be upsampled by 2.",
+        "validation": "required",
+        "options": [{ "label": "True", "value": "true"},{ "label": "False", "value": "false" }],
+        "namespace": "settings"
+    },
+    {
+        "component": "select",
+        "id": "one_hot",
+        "name": "One Hot Encoding",
+        "help": "Output one-hot encoded data",
+        "validation": "required",
+        "options": [{ "label": "True", "value": "true"},{ "label": "False", "value": "false" }],
+        "namespace": "settings"
+    }
+]
