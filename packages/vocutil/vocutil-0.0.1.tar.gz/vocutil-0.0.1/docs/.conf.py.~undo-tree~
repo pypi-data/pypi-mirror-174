@@ -1,0 +1,28 @@
+(undo-tree-save-format-version . 1)
+"f100940d7b8b6d5a5448d26225cb547a99cc623c"
+[nil nil nil nil (25442 65450 665925 427000) 0 nil]
+([nil nil ((nil rear-nonsticky nil 341 . 342) (nil fontified nil 341 . 342) (nil fontified nil 340 . 341) (nil fontified nil 263 . 340) (nil fontified nil 261 . 263) (nil fontified nil 260 . 261) (nil fontified nil 259 . 260) (nil fontified nil 258 . 259) (nil fontified nil 257 . 258) (nil fontified nil 256 . 257) (nil fontified nil 241 . 256) (nil fontified nil 216 . 241) (nil fontified nil 215 . 216) (nil fontified nil 214 . 215) (nil fontified nil 213 . 214) (nil fontified nil 212 . 213) (nil fontified nil 203 . 212) (nil fontified nil 202 . 203) (nil fontified nil 201 . 202) (nil fontified nil 192 . 201) (nil fontified nil 191 . 192) (nil fontified nil 190 . 191) (nil fontified nil 189 . 190) (nil fontified nil 188 . 189) (nil fontified nil 187 . 188) (nil fontified nil 186 . 187) (nil fontified nil 133 . 186) (nil fontified nil 132 . 133) (nil fontified nil 131 . 132) (nil fontified nil 130 . 131) (nil fontified nil 129 . 130) (nil fontified nil 128 . 129) (nil fontified nil 127 . 128) (nil fontified nil 95 . 127) (nil fontified nil 94 . 95) (nil fontified nil 93 . 94) (nil fontified nil 86 . 93) (nil fontified nil 85 . 86) (nil fontified nil 84 . 85) (nil fontified nil 83 . 84) (nil fontified nil 82 . 83) (nil fontified nil 4 . 82) (nil fontified nil 2 . 4) (nil fontified nil 1 . 2) (1 . 342) (t 25250 38025 878857 366000)) nil (25442 65450 665922 96000) 0 nil])
+([nil nil ((#("# ******************************************************************************
+#
+# pdflatex2, a Python/PDFLaTeX interface.
+#
+# Copyright 2022 Jeremy A Gray <gray@flyquackswim.com>.  All rights
+# reserved.
+# Copyright 2019 Marcelo Bello.
+#
+# SPDX-License-Identifier: MIT
+#
+# ******************************************************************************
+
+" 0 2 (fontified t face font-lock-comment-delimiter-face) 2 81 (fontified t face font-lock-comment-face) 81 82 (fontified t face font-lock-comment-delimiter-face) 82 83 (fontified t face font-lock-comment-face) 83 85 (fontified t face font-lock-comment-delimiter-face) 85 125 (fontified t face font-lock-comment-face) 125 126 (fontified t face font-lock-comment-delimiter-face) 126 127 (fontified t face font-lock-comment-face) 127 129 (fontified t face font-lock-comment-delimiter-face) 129 195 (fontified t face font-lock-comment-face) 195 197 (fontified t face font-lock-comment-delimiter-face) 197 207 (fontified t face font-lock-comment-face) 207 209 (fontified t face font-lock-comment-delimiter-face) 209 239 (fontified t face font-lock-comment-face) 239 240 (fontified t face font-lock-comment-delimiter-face) 240 241 (fontified t face font-lock-comment-face) 241 243 (fontified t face font-lock-comment-delimiter-face) 243 272 (fontified t face font-lock-comment-face) 272 273 (fontified t face font-lock-comment-delimiter-face) 273 274 (fontified t face font-lock-comment-face) 274 276 (fontified t face font-lock-comment-delimiter-face) 276 355 (fontified t face font-lock-comment-face) 355 356 (fontified t)) . 342) (undo-tree-id2 . -356) (undo-tree-id3 . -356) (undo-tree-id4 . -356) 698) nil (25442 65450 665912 369000) 0 nil])
+([nil nil ((#("; 2019" 0 6 (fontified t face font-lock-string-face)) . 504)) nil (25442 65450 665908 664000) 0 nil])
+([nil nil ((#(" Marcelo" 0 1 (fontified t ws-butler-chg delete face font-lock-string-face) 1 8 (fontified t face font-lock-string-face)) . 504)) nil (25442 65450 665907 730000) 0 nil])
+([nil nil ((#(" Belo" 0 1 (fontified t ws-butler-chg delete face font-lock-string-face) 1 5 (fontified t face font-lock-string-face)) . 504)) nil (25442 65450 665906 834000) 0 nil])
+([nil nil ((#(", Marcelo" 0 9 (fontified t face font-lock-string-face)) . 529)) nil (25442 65450 665905 914000) 0 nil])
+([nil nil ((#(" Belo" 0 1 (fontified t ws-butler-chg delete face font-lock-string-face) 1 5 (fontified t face font-lock-string-face)) . 529)) nil (25442 65450 665905 57000) 0 nil])
+([nil nil ((#("1" 0 1 (fontified t face font-lock-string-face)) . -544) (undo-tree-id1 . -1) 545) nil (25442 65450 665903 801000) 0 nil])
+([nil nil ((544 . 545)) nil (25442 65450 665901 228000) 0 nil])
+([nil nil ((#("4" 0 1 (fontified t face font-lock-string-face)) . -546) (undo-tree-id0 . -1) 547) nil (25442 65450 665898 956000) 0 nil])
+([nil nil ((546 . 547)) nil (25442 65450 665878 185000) 0 nil])
+([nil current ((#("pdflatex2" 0 9 (fontified t face font-lock-string-face)) . -461) (t 25442 65450 666128 788000) (470 . 477) (t 25442 65450 666128 788000)) nil (25443 3 797772 915000) 0 nil])
+nil

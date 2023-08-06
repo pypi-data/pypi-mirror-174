@@ -1,0 +1,2 @@
+[console_scripts]
+vocutil = vocutil:main
