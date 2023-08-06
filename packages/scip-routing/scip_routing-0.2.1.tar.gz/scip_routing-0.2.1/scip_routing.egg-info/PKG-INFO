@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scip-routing
+Version: 0.2.1
+Summary: A basic VRPTW Branch-and-Price solver
+Home-page: https://github.com/mmghannam/scip-routing
+Author: Mohammed Ghannam
+Author-email: mohammad.m.ghannam@gmail.com
+License: MIT License
+Description: # scip-routing [WIP]
+        A basic VRPTW Branch-and-Price solver using PySCIPOpt.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
