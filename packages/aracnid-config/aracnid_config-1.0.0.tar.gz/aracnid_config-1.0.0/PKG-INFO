@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: aracnid-config
+Version: 1.0.0
+Summary: Custom configuration class that uses MongoDB as the backend database
+Home-page: https://github.com/aracnid/aracnid-config
+License: MIT
+Keywords: python,mongodb,config
+Author: Jason Romano
+Author-email: aracnid@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aracnid-logger (>=1.0,<2.0)
+Requires-Dist: i-mongodb (>=1.0,<2.0)
+Project-URL: Repository, https://github.com/aracnid/aracnid-config
+Description-Content-Type: text/markdown
+
+# Aracnid Config
+
+This is a custom configuration class that uses MongoDB as the backeng database.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+This package supports the following version of Python. It probably supports older versions, but they have not been tested.
+
+- Python 3.10 or later
+
+### Installing
+
+Install the latest package using pip.
+
+```
+$ pip install aracnid-config
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+```
+$ python -m pytest
+```
+
+## Usage
+
+TODO
+
+## Authors
+
+- **Jason Romano** - [Aracnid](https://github.com/aracnid)
+
+See also the list of [contributors](https://github.com/aracnid/aracnid-config/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
