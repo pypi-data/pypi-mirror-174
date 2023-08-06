@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/clld_markdown_plugin/__init__.py
+src/clld_markdown_plugin.egg-info/PKG-INFO
+src/clld_markdown_plugin.egg-info/SOURCES.txt
+src/clld_markdown_plugin.egg-info/dependency_links.txt
+src/clld_markdown_plugin.egg-info/not-zip-safe
+src/clld_markdown_plugin.egg-info/requires.txt
+src/clld_markdown_plugin.egg-info/top_level.txt

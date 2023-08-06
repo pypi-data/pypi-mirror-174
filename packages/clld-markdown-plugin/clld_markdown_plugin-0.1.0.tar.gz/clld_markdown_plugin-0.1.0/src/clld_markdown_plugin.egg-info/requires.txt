@@ -1,0 +1,15 @@
+cldfviz
+clld
+markdown
+
+[dev]
+build
+flake8
+twine
+wheel
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+tox

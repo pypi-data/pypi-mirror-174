@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: clld-markdown-plugin
+Version: 0.1.0
+Summary: Render CLDF markdown in clld apps.
+Home-page: https://github.com/clld/clld-markdown-plugin
+Author: Robert Forkel, Florian Matter
+Author-email: forkel@shh.mpg.de, florianmatter@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/clld/clld-markdown-plugin/issues
+Description: # clld-markdown-plugin
+        
+        Render CLDF markdown in clld apps
+        
+        ## Usage
+        
+        Include (and configure the plugin) in your app's `main` function:
+        ```python
+        def main(global_config, **settings):
+            settings['clld_markdown_plugin'] = {
+                'model_map': {'ValueTable': common.ValueSet},
+                'function_map': {}
+            }
+            config = Configurator(settings=settings)
+            config.include('clld.web.app')
+            ...
+            config.include('clld_markdown_plugin')
+        ```
+        
+        Then you can use `clld_markdown_plugin.markup` as follows in your templates:
+        ```html
+        <%! from clld_markdown_plugin import markdown %>
+        
+        ${markdown(req, '[x](LanguageTable#cldf:abad1241)')|n}
+        ```
+        
+        
+        ### Renderer callables
+        
+        The `renderer_map` configuration option for `clld_markdown_plugin` accepts a `dict` mapping
+        CLDF component names to Python callables with the following signature:
+        
+        ```python
+        import clld.web.app
+        
+        
+        def renderer(req: clld.web.app.ClldRequest, objid: str, table, session: clld.db.meta.DBSession, ids=None) -> str:
+            """
+            The returned `str` is interpreted as Markdown, so it may also include HTML.
+            """
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
