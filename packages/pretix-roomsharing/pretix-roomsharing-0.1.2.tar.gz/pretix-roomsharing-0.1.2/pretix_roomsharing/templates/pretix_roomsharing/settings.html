@@ -1,0 +1,23 @@
+{% extends "pretixcontrol/event/settings_base.html" %}
+{% load i18n %}
+{% load bootstrap3 %}
+{% block title %} {% trans "Roomsharing Settings" %} {% endblock %}
+{% block inside %}
+  <h1>{% trans "Roomsharing Settings" %}</h1>
+   <p>{% trans "You can setup the roomsharing feature here." %}</p>
+    <form action="" method="post" class="form-horizontal" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset>
+            {% bootstrap_form_errors form %}
+            <p>{% trans "Selecting a product here requires room shares to be the same product. You can get around this by using bundled products and selecting one of those here." %}</p>
+            {% bootstrap_field form.roomsharing__products layout="control" %}
+            <p>{% trans "This is the name field that will be shown to other users." %}</p>
+            {% bootstrap_field form.roomsharing__questions layout="control" %}
+        </fieldset>
+        <div class="form-group submit-group">
+            <button type="submit" class="btn btn-primary btn-save">
+                {% trans "Save" %}
+            </button>
+        </div>
+    </form>
+{% endblock %}
