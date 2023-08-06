@@ -1,0 +1,2 @@
+[console_scripts]
+radiotray-ng-mpris = radiotray_ng_mpris.cli:main
