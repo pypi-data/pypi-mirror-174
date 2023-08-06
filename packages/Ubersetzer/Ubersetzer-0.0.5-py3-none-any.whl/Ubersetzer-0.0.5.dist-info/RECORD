@@ -1,0 +1,14 @@
+Translator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Translator/deu_tokenizer.pickle,sha256=SHx2g4uyY8nHLt6vXWwtr7i3unl3btJMiBXwaMyrYG0,411301
+Translator/eng_tokenizer.pickle,sha256=OQqSudy-Qu22Jel3ay9K3B7dE_2P-zJ_29hl3RsmjSM,239266
+Translator/translator.py,sha256=-R57kGiXHaKxWDWB84EvAIStM6DiVLEL7qTVdAH9blU,2325
+Translator/ui.py,sha256=BVD6nAt6kfPxFdzatrYTN8KhNNlMm6ih3mHtLXANmBc,431
+Translator/arpanKaModel/keras_metadata.pb,sha256=MyUovQwNbLlgxykKu9gGW_OmPsUFHEFYc9jteIJXwP0,15829
+Translator/arpanKaModel/saved_model.pb,sha256=P81BF-BDR7ZEKrdYpJ6CpOsW9emyFLTLduAupo5DJ0E,3375430
+Translator/arpanKaModel/variables/variables.data-00000-of-00001,sha256=2IJcpA_xbFX7OHPiCMdPZOgJNI_q7P4R6o_kfsyD7-U,99934200
+Translator/arpanKaModel/variables/variables.index,sha256=o1qmJzvbeBngvpFGml0k-u2AoflkMq6h1LLBD1c9pMw,1891
+Ubersetzer-0.0.5.dist-info/LICENCE,sha256=CbXAh9ZaJp0Ia7cYY8k9fMvxpxOkvBTkCyDwjQSxxLs,1090
+Ubersetzer-0.0.5.dist-info/METADATA,sha256=6_rkQLsNBbQ57UITZrnNdk2cq6Yg_4l4NgYHqnQJt7A,451
+Ubersetzer-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Ubersetzer-0.0.5.dist-info/top_level.txt,sha256=NHUm82l-S5lu1rLWHjwtmnIZCjc8FvsiVGzW_wFLOig,11
+Ubersetzer-0.0.5.dist-info/RECORD,,
