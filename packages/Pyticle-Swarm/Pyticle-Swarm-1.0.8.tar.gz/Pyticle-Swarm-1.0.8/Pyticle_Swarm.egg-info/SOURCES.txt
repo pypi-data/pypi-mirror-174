@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Pyticle_Swarm.egg-info/PKG-INFO
+Pyticle_Swarm.egg-info/SOURCES.txt
+Pyticle_Swarm.egg-info/dependency_links.txt
+Pyticle_Swarm.egg-info/requires.txt
+Pyticle_Swarm.egg-info/top_level.txt
+pyticleswarm/PSO.py
+pyticleswarm/__init__.py
+pyticleswarm/res.py
+pyticleswarm/run_PSO.py
