@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "texasholdem"
+version = "0.8-alpha.0"
+description = "A texasholdem python package"
+authors = ["Evyn Machi <evyn.machi@gmail.com>"]
+keywords = ['texasholdem', 'holdem', 'poker']
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/SirRender00/texasholdem"
+repository = "https://github.com/SirRender00/texasholdem"
+documentation = "https://texasholdem.readthedocs.io/en/stable/"
+include = [
+    "texasholdem",
+    "LICENSE",
+    "README.md",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/SirRender00/texasholdem/issues"
+"Wiki" = "https://github.com/SirRender00/texasholdem/wiki"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Deprecated = "^1.2.13"
+windows-curses = { version = "^2.3.1a2", markers = "sys_platform == 'win32'" }
+
+[tool.poetry.dev-dependencies]
+py = "^1.11.0"
+pytest = "^7.2.0"
+pytest-parallel = "^0.1.1"
+pylint = "^2.15.5"
+sphinx-rtd-theme = "^1.0.0"
+black = "^22.10.0"
+coverage = "^6.5.0"
+
+[tool.pylint.master]
+disable = ["import-error", "missing-module-docstring", "unknown-option-value"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
