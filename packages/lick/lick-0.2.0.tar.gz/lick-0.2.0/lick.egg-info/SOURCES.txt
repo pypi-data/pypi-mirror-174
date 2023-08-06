@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+lick/__init__.py
+lick/__version__.py
+lick/lick.py
+lick.egg-info/PKG-INFO
+lick.egg-info/SOURCES.txt
+lick.egg-info/dependency_links.txt
+lick.egg-info/entry_points.txt
+lick.egg-info/requires.txt
+lick.egg-info/top_level.txt
+lick/_vendor/vectorplot/core.c
