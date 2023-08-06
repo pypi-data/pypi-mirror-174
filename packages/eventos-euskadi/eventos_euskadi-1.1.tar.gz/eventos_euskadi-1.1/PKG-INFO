@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: eventos_euskadi
+Version: 1.1
+Summary: Trabajando con eventos culturales en Euskadi
+Home-page: https://github.com/naroabarrutia/eventos_euskadi
+Author: Mikel Madariaga & Naroa Barrutia
+Author-email: naroa.barrutia@alumni.mondragon.edu
+License: MIT
+Download-URL: https://github.com/naroabarrutia/eventos_euskadi/archive/refs/tags/v_1.1.tar.gz
+Description: UNKNOWN
+Keywords: EVENTOS,EUSKADI,OPENDATA
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
