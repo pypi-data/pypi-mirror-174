@@ -1,0 +1,13 @@
+nordic_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nordic_bot/constant.py,sha256=ZpFEhntgWivEHSqknGL6_lMZfYJ_dJTfmhbk_C4LM60,1830
+nordic_bot/main.py,sha256=9rmNSvpWc1EXxDYEb_t9wAKSv6r-JO7STSlQLiiHmII,2158
+nordic_bot/modals.py,sha256=9Gh8L4lkZZBR_9NKfttoi9kno-PcvP8N3I6pyClBqfs,104
+nordic_bot/ntbot.py,sha256=Fboef0gcVjE9cTxQ-P6NnO1OzC2GRyVZQOTJ6_c3D90,15652
+nordic_bot/test.py,sha256=idRZOGEJAj_zOwl7jwIQ5jyWGniInr-O36dNIQAsKBs,231
+nordic_bot/timerole.py,sha256=3Ac7S2d9IpJbHaVbjM4JOnFhV4CGSaEIL9czyYg6bOA,4094
+nordic_bot/utility.py,sha256=G3zipnrpq6NmJyNuH2E7zD55A4dZKJ4yc69RBC-F2Ks,2124
+nordic_bot/views.py,sha256=76J1UxyvNU7ZEAxgpwT0-eCxJq7ap7HmVRk8YXa8uPM,1434
+nordic_bot-1.0.4.dist-info/METADATA,sha256=nqGriLW_pFueFQIfVuiS1Azv1mCTfzHxtmXoSzxAYW0,238
+nordic_bot-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nordic_bot-1.0.4.dist-info/top_level.txt,sha256=uqM2X7hQfUJofUazYZcItV2b6s5TTyTdnUQ97flMFf0,11
+nordic_bot-1.0.4.dist-info/RECORD,,

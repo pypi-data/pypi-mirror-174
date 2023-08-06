@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: nordic-bot
+Version: 1.0.4
+Summary: Nordic Tribe Alliance bot
+Author-email: Roman Demidov <nt-bot@demidov.moscow>
+Requires-Dist: colorama
+Requires-Dist: py-cord
+Requires-Dist: jsonpickle
+Requires-Dist: asyncio
+
