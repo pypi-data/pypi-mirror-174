@@ -1,0 +1,5 @@
+sr25519/__init__.py,sha256=aA8QkBQ61epDv6PJ524wai97ugO6BidbYejYj5v3kU0,111
+sr25519/sr25519.cpython-310-aarch64-linux-gnu.so,sha256=ZBX2KV8u5y3JnlnGMQ14wazOW_y5MLT9nnynrR1WHT8,4666584
+py_sr25519_bindings-0.2.0.dist-info/RECORD,,
+py_sr25519_bindings-0.2.0.dist-info/METADATA,sha256=bgGDYIcQUoZ19bG0cGj68aDXZ9uj8un0PsnI3TtXOl0,2197
+py_sr25519_bindings-0.2.0.dist-info/WHEEL,sha256=s9Y46j4P1tHAytGL8YdnoCdGNE3kGjjZmWVs38CbSGw,151
