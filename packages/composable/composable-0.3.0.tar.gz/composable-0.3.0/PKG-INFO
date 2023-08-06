@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: composable
+Version: 0.3.0
+Summary: Callable functions that be composed/piped using >> and <<
+License: MIT
+Author: Todd Iverson
+Author-email: tiverson@winona.edu
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-forge (>=18.6,<19.0)
+Requires-Dist: toolz (>=0.11.1,<0.12.0)
