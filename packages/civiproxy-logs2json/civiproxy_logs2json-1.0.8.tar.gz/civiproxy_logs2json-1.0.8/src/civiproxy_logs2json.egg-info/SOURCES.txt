@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/civiproxy_logs2json/__init__.py
+src/civiproxy_logs2json/__main__.py
+src/civiproxy_logs2json/config.toml
+src/civiproxy_logs2json.egg-info/PKG-INFO
+src/civiproxy_logs2json.egg-info/SOURCES.txt
+src/civiproxy_logs2json.egg-info/dependency_links.txt
+src/civiproxy_logs2json.egg-info/entry_points.txt
+src/civiproxy_logs2json.egg-info/requires.txt
+src/civiproxy_logs2json.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+cpl2j = civiproxy_logs2json.__main__:main
