@@ -1,0 +1,16 @@
+scipy
+tensorflow
+imageio
+h5py
+matplotlib
+cv2
+numpy
+keras
+torch
+torchvision
+
+[dev]
+check-manifest
+
+[test]
+coverage

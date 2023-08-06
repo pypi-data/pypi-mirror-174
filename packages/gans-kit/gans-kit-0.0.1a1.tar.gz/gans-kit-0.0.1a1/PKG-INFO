@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: gans-kit
+Version: 0.0.1a1
+Summary: A toolkit to train and test various GAN models
+Home-page: https://github.com/dhchenx/gans-kit
+Author: Donghua Chen
+Author-email: douglaschan@126.com
+Project-URL: Bug Reports, https://github.com/dhchenx/gans-kit/issues
+Project-URL: Source, https://github.com/dhchenx/gans-kit
+Keywords: generative adversarial network,GAN,gans toolkit,image generation
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+# GANs Toolkit
+
+A toolkit to train and use various GAN models
+
+## Installation
+```pip
+pip install gans-kit
+```
+
+## License
+The `GANs-Kit` project is provided by [Donghua Chen](https://github.com/dhchenx). 
+
