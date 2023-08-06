@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/simple_editor/__init__.py
+src/simple_editor/changefont.py
+src/simple_editor/editor.png
+src/simple_editor/help.txt
+src/simple_editor/hen.egg
+src/simple_editor/moon.egg
+src/simple_editor.egg-info/PKG-INFO
+src/simple_editor.egg-info/SOURCES.txt
+src/simple_editor.egg-info/dependency_links.txt
+src/simple_editor.egg-info/top_level.txt
