@@ -1,0 +1,1 @@
+# GZS-TV: A Generalizable zero-shot speaker adaptive text-to-speech and voice conversion model
