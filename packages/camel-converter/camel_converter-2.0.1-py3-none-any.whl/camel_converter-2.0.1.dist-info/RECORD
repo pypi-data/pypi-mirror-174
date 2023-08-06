@@ -1,0 +1,8 @@
+camel_converter/__init__.py,sha256=mDaedAZla9f9m_Ise1pu2aLAFaV4yHhIGTtk4Jvtjm8,4296
+camel_converter/decorators.py,sha256=zfYkvAhNRDQujIprJ2bcel-DXeTbEoTQnQYY_zb9uqg,1128
+camel_converter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+camel_converter/pydantic_base.py,sha256=cxnueLjQbMZUgx6skmnT5pEiuD1OXSxHzBpGam4RH04,648
+camel_converter-2.0.1.dist-info/LICENSE,sha256=xVzevI1TrlKfM0plmJ7vfK1Muu0V9n-dGE8RnDrOFlM,1069
+camel_converter-2.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+camel_converter-2.0.1.dist-info/METADATA,sha256=q0Qu690us4mhagD0huEE7rGYbNZIUz-GMeWDdIsHIK4,5524
+camel_converter-2.0.1.dist-info/RECORD,,
