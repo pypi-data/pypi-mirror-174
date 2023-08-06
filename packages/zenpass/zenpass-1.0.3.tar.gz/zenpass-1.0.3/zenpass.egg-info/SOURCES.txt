@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+zenpass/__init__.py
+zenpass/__main__.py
+zenpass/constant.py
+zenpass/exception.py
+zenpass/password.py
+zenpass.egg-info/PKG-INFO
+zenpass.egg-info/SOURCES.txt
+zenpass.egg-info/dependency_links.txt
+zenpass.egg-info/entry_points.txt
+zenpass.egg-info/requires.txt
+zenpass.egg-info/top_level.txt

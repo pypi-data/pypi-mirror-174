@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zenpass"
+version = "1.0.3"
+description = "To generate random and strong passwords."
+readme = "README.md"
+requires-python = ">=3.6"
+license = {file = "LICENSE"}
+authors = [
+    { name="srg", email="srg.code@pm.me" },
+]
+dependencies = [
+	"pyperclip",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+keywords = [
+    "zenpass",
+    "genpasswd"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/codesrg/zenpass"
+"Bug Tracker" = "https://github.com/codesrg/zenpass/issues"
+
+[project.scripts]
+zenpass = "zenpass.__main__:main"
