@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+envee/__init__.py
+envee/envee.py
+envee/py.typed
+envee.egg-info/PKG-INFO
+envee.egg-info/SOURCES.txt
+envee.egg-info/dependency_links.txt
+envee.egg-info/requires.txt
+envee.egg-info/top_level.txt
