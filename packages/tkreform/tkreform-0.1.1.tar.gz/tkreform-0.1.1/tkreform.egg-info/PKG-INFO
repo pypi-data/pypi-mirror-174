@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: tkreform
+Version: 0.1.1
+Summary: Reformed tkinter coding tool.
+Home-page: https://github.com/tkinguist/tkreform
+Author: HivertMoZara
+Author-email: worldmozara@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: PIL
+License-File: LICENSE
+
+# TkReform
+
+Reformed tkinter coding tool.
+
+## Installation
+
+Install TkReform via this command:
+
+```console
+pip install tkreform
+```
+
+## Usage
+
+TkReform include two different styles of coding - `Imperative` and
+`Declarative`.
+
+For the former, you can view [this test script](tests/test.py), or
+[this test script](tests/test_declarative.py) for the latter.
+
+## Licensing
+
+TkReform is totally under `MIT License`. You can do everything under
+this license.
+
+
