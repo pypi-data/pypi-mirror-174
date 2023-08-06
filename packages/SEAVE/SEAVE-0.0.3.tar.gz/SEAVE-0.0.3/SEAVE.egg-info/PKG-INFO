@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: SEAVE
+Version: 0.0.3
+Summary: Python package for a synthetic EAVE
+Home-page: https://github.com/EAVE-II/synthetic-eave
+Author: Calum Macdonald
+Author-email: calmacx@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# SEAVE
+
+Synthetic EAVE generator 
+
+
+## Update package
+
+```
+python -m build
+```
+
+```
+python -m twine upload --repository pypi dist/*
+```
+
