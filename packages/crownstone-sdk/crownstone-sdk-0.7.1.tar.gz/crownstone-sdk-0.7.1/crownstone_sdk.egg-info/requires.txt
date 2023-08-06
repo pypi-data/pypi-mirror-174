@@ -1,0 +1,4 @@
+crownstone-ble~=2.5
+crownstone-uart~=2.6
+bluenet-logs~=1.2
+bleak==0.10
