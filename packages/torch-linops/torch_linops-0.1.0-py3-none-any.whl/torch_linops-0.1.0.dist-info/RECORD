@@ -1,0 +1,13 @@
+linops/__init__.py,sha256=FGDX-mox10d2AyQRM6Khi8IFK-jdT7BZg4yM4DQTbzw,372
+linops/blocks.py,sha256=_59LtursygeVgbbyB1p6Zzmd9iQTLNtt6pXbgqkzT-k,2488
+linops/cg.py,sha256=jZxV00CAKhABnVOB0iBUEQul4uk9rAuUtj7aTgyjV3c,5240
+linops/equilibration.py,sha256=RmQ9HPgsIWwN8CirYKTk4sXkUM7l1P6c6uFvr1U0YTc,1978
+linops/linops.py,sha256=oq-2fhgizSB8Jj5ed2qyK7wMRm1LQQj2cZiBSYw4xiI,11584
+linops/minres.py,sha256=yZgHBmpyS1F-HCJlJvISlg6_K1Y0GXJoHFN9mZmAL5c,5003
+linops/nystrom_precondition.py,sha256=f2JEih6Lbao7K2LJ9OQopevJfzITy33LCVVYUGqnv0E,2285
+linops/trace.py,sha256=nLjiiWmOJczdMnvbiyw-wnwYlqM_wub-hfy2JCTh4PI,1456
+torch_linops-0.1.0.dist-info/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+torch_linops-0.1.0.dist-info/METADATA,sha256=wxkA8OWW158bKVX6_sPC5IJJSoudX9HA2n8sE3eyJUQ,5631
+torch_linops-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+torch_linops-0.1.0.dist-info/top_level.txt,sha256=x-vz99zvUc19svRCjquLL-QbglbRZynFuoO0bfv1r5I,7
+torch_linops-0.1.0.dist-info/RECORD,,
