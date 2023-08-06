@@ -1,0 +1,14 @@
+requirements.txt,sha256=aSZ0J8cOS0gaI_PphzcAcjMNDfPFdKES5Je03lmFJQI,87
+PyRuSH/PyRuSHSentencizer.py,sha256=vJ9IGzPtcg653qnufWrb1z10ciRZjXj5ZDbTcGd2UNg,3422
+PyRuSH/RuSH.py,sha256=UDgiI5RHvoAvaILwjBc7crmuMONID2YrCH_tAPMmbCc,9741
+PyRuSH/StaticSentencizerFun.cp39-win_amd64.pyd,sha256=lXRo5AwqEGbTP8uUEZrl3A3S7YuGvYhbovp4hzE_sYI,32256
+PyRuSH/StaticSentencizerFun.cpp,sha256=2VDifiS7UV94iNR-KHDYbHkmybANxiJMple9hhXFkSE,187937
+PyRuSH/StaticSentencizerFun.pyx,sha256=NlyxLfoRdwwQGyaFNtyD3MSH8suTAK6kTi_i0ezxlAs,3170
+PyRuSH/__init__.py,sha256=-T0GbBCWGgiR4zGKfr8XUGfkU5nENv_6W744nbfV0YY,1966
+PyRuSH/version.py,sha256=mJkKIL9KKBmgQz4pLb8LOXMcR-2gHYomIataNEbejj4,1364
+conf/rush_rules.tsv,sha256=QvMTNna172kv-S6J9mn_45RlfqylroMNKB8zInpax4A,24473
+PyRuSH-1.0.8.dev5.dist-info/LICENSE,sha256=i_JEfXj4XfI37WFjoGkLdivJBDJPLIM5YxyoOXd4f34,1089
+PyRuSH-1.0.8.dev5.dist-info/METADATA,sha256=akNYwYu-DMnxE92bDLy8y9v-HAhJy7kCzj0YqsR4e_4,3983
+PyRuSH-1.0.8.dev5.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+PyRuSH-1.0.8.dev5.dist-info/top_level.txt,sha256=mDC4jvH8bg0RBDMXZmCTta49aOWJP22D2uMcu0hE1NM,7
+PyRuSH-1.0.8.dev5.dist-info/RECORD,,
