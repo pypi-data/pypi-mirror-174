@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dowonpackage
+Version: 0.0.8
+Summary: This is a package that modified the user dictionary of the okt part of konlpy. If it is a problem, we will delete it.
+Home-page: https://github.com/Team-Dowon/dowonpackage
+Author: Team-Dowon
+Author-email: ncb6206@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+
+UNKNOWN
+
