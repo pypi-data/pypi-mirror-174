@@ -1,0 +1,11 @@
+HummingbirdRobot.py,sha256=ErPjhL_bRssidTM6I6e7-CqS5V3iLq_4qh9uekhHRG0,3109
+hummingbird_robot/__init__.py,sha256=VkqKNhCu7_SPtm2SJjQ7vIeLd6wBQJZl_t1N5uPUZuc,22
+hummingbird_robot/__main__.py,sha256=czRAtvwWk7oe1dU0sGQbVFAQHAWCSG-5Ni9GR0XynHo,403
+hummingbird_robot/cli.py,sha256=OgvzMa_Tt8kRJfdoTSmdaz7VGak18i-3hu3SKBnnRtA,840
+hummingbird_robot-0.0.9.dist-info/AUTHORS.rst,sha256=5xsWTHF2_jQ9pqp5v9Hh27s-60IkJQXDB81aoIowc78,60
+hummingbird_robot-0.0.9.dist-info/LICENSE,sha256=f-z3TDlFdm1g1zfywea5jJL47iGeFCdEUHPrTT-kMRY,1100
+hummingbird_robot-0.0.9.dist-info/METADATA,sha256=AJ7KxM9kE4a0n_zFJ5FkZsn5gdnrakjM7NUWLKn897g,2365
+hummingbird_robot-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hummingbird_robot-0.0.9.dist-info/entry_points.txt,sha256=nZT_hKM7NVbYBVnh9q9ud_tnbi9X7CAYiqqtcNzsMsc,65
+hummingbird_robot-0.0.9.dist-info/top_level.txt,sha256=t6T0J2WjgWFPOFwL5PcS0nGK7Pxq2bATyGA-zmB5rzM,35
+hummingbird_robot-0.0.9.dist-info/RECORD,,
