@@ -1,0 +1,17 @@
+docker
+gitpython
+httpx
+kubernetes
+pydantic
+python-dotenv
+pyyaml
+rich
+typer
+typing-extensions
+tomli
+
+[dev]
+mypy
+black
+pytest
+types-PyYAML
