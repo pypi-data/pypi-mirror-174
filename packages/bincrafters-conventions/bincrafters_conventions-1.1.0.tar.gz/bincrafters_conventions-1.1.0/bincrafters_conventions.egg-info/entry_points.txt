@@ -1,0 +1,4 @@
+[console_scripts]
+bcon = bincrafters_conventions.main:run
+bincrafters-conventions = bincrafters_conventions.main:run
+
