@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pycparserext-gnuc
+Version: 2022.10
+Summary: GNU C extension for pycparser, based on inducer/pycparseext
+Home-page: http://pypi.python.org/pypi/pycparserext
+Author: Andreas Kloeckner
+Author-email: inform@tiker.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Requires-Dist: ply (>=3.4)
+Requires-Dist: pycparser (>=2.18)
+
+GNU C extension for pycparser
+====================================
+
+.. image:: https://badge.fury.io/py/pycparserext.png
+    :alt: Python Package Index Release Page
+    :target: https://pypi.org/project/pycparserext_gnuc/
+
+Extended functionality for Eli Bendersky's 
+`pycparser <http://pypi.python.org/pypi/pycparser>`_,
+in particular support for parsing GNU extensions.
+
+This module is a fork of `github code repository <http://github.com/inducer/pycparserext>`_.
+
+
