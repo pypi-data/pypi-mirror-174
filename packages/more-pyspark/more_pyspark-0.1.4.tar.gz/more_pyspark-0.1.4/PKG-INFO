@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: more-pyspark
+Version: 0.1.4
+Summary: 
+Author: Todd Iverson
+Author-email: Tiverson@winona.edu
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: composable (>=0.4.0)
+Requires-Dist: more-itertools (>=9.0.0,<10.0.0)
+Requires-Dist: pandas (>=1,<2)
+Requires-Dist: pyspark (>=3,<4)
+Description-Content-Type: text/markdown
+
+
