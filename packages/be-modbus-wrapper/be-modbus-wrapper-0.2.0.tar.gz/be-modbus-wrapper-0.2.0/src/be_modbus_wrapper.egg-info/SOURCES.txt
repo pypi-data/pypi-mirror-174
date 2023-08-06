@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/be_modbus_wrapper/__init__.py
+src/be_modbus_wrapper/modbus_wrapper.py
+src/be_modbus_wrapper/version.py
+src/be_modbus_wrapper.egg-info/PKG-INFO
+src/be_modbus_wrapper.egg-info/SOURCES.txt
+src/be_modbus_wrapper.egg-info/dependency_links.txt
+src/be_modbus_wrapper.egg-info/requires.txt
+src/be_modbus_wrapper.egg-info/top_level.txt
