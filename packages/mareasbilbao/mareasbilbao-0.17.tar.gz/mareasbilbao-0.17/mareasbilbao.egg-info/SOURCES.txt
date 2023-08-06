@@ -1,0 +1,12 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+mareasbilbao/__init__.py
+mareasbilbao/mareasbilbao.py
+mareasbilbao.egg-info/PKG-INFO
+mareasbilbao.egg-info/SOURCES.txt
+mareasbilbao.egg-info/dependency_links.txt
+mareasbilbao.egg-info/requires.txt
+mareasbilbao.egg-info/top_level.txt

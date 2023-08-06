@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mareasbilbao
+Version: 0.17
+Summary: Get to know the tides of bilbao
+Home-page: https://github.com/mikeljuarez/mareasbilbao
+Download-URL: https://github.com/mikeljuarez/mareasbilbao/archive/refs/tags/0.17.tar.gz
+Author: Mikel Juarez and Ander Rodriguez
+Author-email: mikel.juarez@alumni.mondragon.edu
+License: MIT
+Keywords: bilbao,tides,water,surf
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education :: Testing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+License-File: LICENSE.txt
