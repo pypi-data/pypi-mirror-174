@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "alltrees"
+version = "1.2.3"
+authors = [
+  { name="Madhur Thakkar", email="madhurthakkar247@gmail.com" },
+  { name="Shantanu Tondlekar", email="tondlekar88@gmail.com" },
+  { name="Amay Tripathi", email="amaytripathi16@gmail.com" },
+  { name="Sam Thomas", email="samthomasv22@gmail.com" },
+]
+description = "A package implementing BST,AVL,Red Black,B-Tree and B+ Tree"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
