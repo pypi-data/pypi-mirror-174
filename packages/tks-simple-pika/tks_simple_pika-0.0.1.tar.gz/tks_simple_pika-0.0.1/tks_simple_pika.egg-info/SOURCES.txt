@@ -1,0 +1,7 @@
+README.md
+setup.py
+tks_simple_pika.egg-info/PKG-INFO
+tks_simple_pika.egg-info/SOURCES.txt
+tks_simple_pika.egg-info/dependency_links.txt
+tks_simple_pika.egg-info/requires.txt
+tks_simple_pika.egg-info/top_level.txt
