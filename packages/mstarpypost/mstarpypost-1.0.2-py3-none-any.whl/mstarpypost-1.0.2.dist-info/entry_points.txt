@@ -1,0 +1,4 @@
+[console_scripts]
+mstar-batch-post = mstarpypost.batch_post:run
+mstar-convert-particles = mstarpypost.particles:cli
+mstar-stats-gui = mstarpypost.gui_plot:run
