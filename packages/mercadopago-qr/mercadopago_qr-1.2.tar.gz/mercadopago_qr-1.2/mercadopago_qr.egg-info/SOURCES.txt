@@ -1,0 +1,10 @@
+setup.py
+mercadopago_qr.egg-info/PKG-INFO
+mercadopago_qr.egg-info/SOURCES.txt
+mercadopago_qr.egg-info/dependency_links.txt
+mercadopago_qr.egg-info/requires.txt
+mercadopago_qr.egg-info/top_level.txt
+mercadopago_qr/http/http.py
+mercadopago_qr/http/queries.py
+mercadopago_qr/http/server.py
+mercadopago_qr/qr/qr.py
