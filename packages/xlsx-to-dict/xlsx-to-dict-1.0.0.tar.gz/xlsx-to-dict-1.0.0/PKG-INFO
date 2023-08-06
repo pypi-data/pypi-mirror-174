@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xlsx-to-dict
+Version: 1.0.0
+Summary: Transforma xlsx file e dict python
+Author: Jonatan Rodrigues da Silva
+Author-email: jonatanjrss@gmail.com
+License: MIT License
+Keywords: xlsx dict
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# XLSX to DICT
+
+Convert xlsx file to dict python object
