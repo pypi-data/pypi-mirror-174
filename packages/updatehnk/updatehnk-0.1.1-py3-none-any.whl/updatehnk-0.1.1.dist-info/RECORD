@@ -1,0 +1,9 @@
+process/Load.py,sha256=lnZx9x_evyo2KkSTtzkLFkmkgx3dlgygGUHunXFjSLk,1539
+process/__init__.py,sha256=XHhKeuNC4qeLhTb_qxqg5EhgGsBVWMfclBZujF00mlY,110
+process/fields.py,sha256=DHWIi13uptfokSRW-Inauqhmr7SmPKnFLviU8ZvvQvM,2476
+process/util.py,sha256=tGSsIihnSbvQLTg28qT8xFK9WvzdMy3fLqfag66KFVY,4976
+updatehnk-0.1.1.dist-info/LICENSE.txt,sha256=M5OKDc3ZOmWLs9JiXicNdBz3LoIlZ36AfvzdrD-IlEM,1056
+updatehnk-0.1.1.dist-info/METADATA,sha256=_kKuIX9Xw7NP3qts_tGOlOrm4Bz4wHd41ujMLvOia68,392
+updatehnk-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+updatehnk-0.1.1.dist-info/top_level.txt,sha256=uOBF9vRsq0O49Mc-HVKjbn_VzZ-X-GDcq5Zs3UyiXi0,8
+updatehnk-0.1.1.dist-info/RECORD,,
