@@ -1,0 +1,5 @@
+[console_scripts]
+felt-aggregate = feltlabs.algorithm.aggregate:main
+felt-export = feltlabs.model:main
+felt-train = feltlabs.algorithm.train:main
+
