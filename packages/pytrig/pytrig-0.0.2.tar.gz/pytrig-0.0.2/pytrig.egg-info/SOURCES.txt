@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+pytrig/__init__.py
+pytrig.egg-info/PKG-INFO
+pytrig.egg-info/SOURCES.txt
+pytrig.egg-info/dependency_links.txt
+pytrig.egg-info/top_level.txt
