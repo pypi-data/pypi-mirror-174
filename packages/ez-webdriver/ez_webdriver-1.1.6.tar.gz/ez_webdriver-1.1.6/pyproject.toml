@@ -1,0 +1,27 @@
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ez-webdriver"
+version = "1.1.6"
+authors = [
+  { name="wzzxx", email="wz_wong@qq.com" },
+]
+description = "简单,快速的获取浏览器驱动,优先使用国内镜像,对标webdriver_manager模块(Quickly obtain the browser driver for China's Network Environment)"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/wz-wong/ez-webdriver"
+"Bug Tracker" = "https://github.com/wz-wong/ez-webdriver/issues"
+
+
+
