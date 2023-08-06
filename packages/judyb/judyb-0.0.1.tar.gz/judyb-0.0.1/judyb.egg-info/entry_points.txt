@@ -1,0 +1,7 @@
+[console_scripts]
+judyb-lsb = bin.lsb:main
+judyb-lsb-set = bin.lsbset:main
+judyb-red = bin.red:main
+judyb-steganalysis-parity = bin.parity:main
+judyb-steganalysis-statistics = bin.statistics:main
+
