@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PolicyParrot
+Version: 0.0.2
+Summary: Abstract base classes for control policies
+Project-URL: Homepage, https://github.com/WillDudley/PolicyParrot
+Project-URL: Bug Tracker, https://github.com/WillDudley/PolicyParrot/issues
+Author-email: WillDudley <will2346@live.co.uk>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: gymnasium==0.26.2
+Description-Content-Type: text/markdown
+
+# PolicyParrot
+PolicyParrot aims to provide a light guidance in coding RL algorithms. It doesn't expect you to code RL from scratch, but equally it doesn't confuse you with lots of inheritance.
+
+- PolicyParrot doesn't confuse and allows flexibility - classes are totally flat,
+- PolicyParrot encourages standardisation across algorithms - all SOTA algorithms follow PolicyParrot's class schemas.
+
+![Diagram showing that PolicyParrot aims to minimise how difficult it can be to implement RL algorithms](./charter.png)
