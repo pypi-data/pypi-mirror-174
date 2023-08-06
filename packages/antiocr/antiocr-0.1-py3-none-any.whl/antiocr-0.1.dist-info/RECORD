@@ -1,0 +1,16 @@
+antiocr/__init__.py,sha256=MFRAjLQs8rCA7DKoTz3Y00G7KwbNKM-bBCa4Dp3wnw0,1012
+antiocr/__version__.py,sha256=Z_IilS6MsbvLTbz6nP9LHQqqUhL3aQ5e148VGEpS4dw,889
+antiocr/anti_ocr.py,sha256=jZR43UHe5Ad3u8nSPSLiD-JOrFofMVByET0vNeY2970,4352
+antiocr/app.py,sha256=91WROaHlrfi5gh19OuRW4SMUTihu9DXG1AWzieWLThQ,6357
+antiocr/bg_generator.py,sha256=ubRV1ZfNbGmunw9KxGzcu6jZWXZFLkBIFXxN1yPIGGU,2620
+antiocr/consts.py,sha256=l0OZ3fG1AlGIWmOnPOcBsZlnMXQdMt_Qbb0041DzCGY,1357
+antiocr/renderer.py,sha256=5Nc4ZiZAskdrramDsx1XgKxR7WbKUf5V3mBBF2IoXdk,4646
+antiocr/utils.py,sha256=UpNOyZlnROEF5uf_3i1O9RuUoWp45zLysxLWeneuztI,6148
+antiocr/resources/bg.jpeg,sha256=_887BEkrIncsUKEDXgUJ8r2EJqbtkXGYNMrlFmWEDpg,268421
+antiocr-0.1.data/data/bg.jpeg,sha256=_887BEkrIncsUKEDXgUJ8r2EJqbtkXGYNMrlFmWEDpg,268421
+antiocr-0.1.dist-info/LICENSE,sha256=pwB8QIJy_YfO6c5QcQV5YylKzCZPp3BJfUAwnOSCnb8,41980
+antiocr-0.1.dist-info/METADATA,sha256=JMLmqNmEjLWyQa5b8KKje8aqHeHwRDmw6AxuqobwFO4,4075
+antiocr-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+antiocr-0.1.dist-info/entry_points.txt,sha256=8cd-0WHAPxd6oIe4J4EK12K4jR7inmYFBeKeIVmU8ow,19
+antiocr-0.1.dist-info/top_level.txt,sha256=dC4L0QSOetIq04cwkYQdHOutcoZqEeVYev9pkTenezI,8
+antiocr-0.1.dist-info/RECORD,,
