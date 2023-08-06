@@ -1,0 +1,8 @@
+[net]
+downloader = py621dl.downloader:E621Downloader
+
+[reader]
+downloader = py621dl.reader:E621Reader
+
+[setup]
+downloader = py621dl.__init__:enable_logging

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/py621dl/__init__.py
+src/py621dl/__main__.py
+src/py621dl/downloader.py
+src/py621dl/exceptions.py
+src/py621dl/net.py
+src/py621dl/reader.py
+src/py621dl.egg-info/PKG-INFO
+src/py621dl.egg-info/SOURCES.txt
+src/py621dl.egg-info/dependency_links.txt
+src/py621dl.egg-info/entry_points.txt
+src/py621dl.egg-info/requires.txt
+src/py621dl.egg-info/top_level.txt
