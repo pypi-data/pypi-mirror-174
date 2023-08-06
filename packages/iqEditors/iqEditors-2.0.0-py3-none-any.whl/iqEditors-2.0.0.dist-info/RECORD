@@ -1,0 +1,11 @@
+iqEditors/__init__.py,sha256=EjxWHiu1W4PwXf7BFtrxCe16GAqV3UMvQ696E7-dPkM,401
+iqEditors/commons.py,sha256=_taf88DAY_5fZhE8RwN6T1BBX3Qac3W4hrZvpNSnzxs,163496
+iqEditors/noteEditor.py,sha256=G5Ts60avaFkhhm3nxn6hx7qQiW8JjeGGtwGa1GHAOKw,17826
+iqEditors/providers.py,sha256=QeEO5kawMjS-W6iVcroPJdczpwvs_sXubILrxaBglr8,4451
+iqEditors/simpleEditor.py,sha256=an2kkENwIoFEixXgaVRawftKMolBbVjm4hD1UwnBH1A,47935
+iqEditors/styles.py,sha256=geBIPVp1C88ud7KVBoCsUdJkhBU2iFjJuaDnTx60pNY,1468
+iqEditors-2.0.0.dist-info/LICENSE,sha256=j46B0O6b2rXBv9d6cwEjfAkBm7-OkGw7o2AZ6ty47Rs,99895
+iqEditors-2.0.0.dist-info/METADATA,sha256=3XydG18E8Evao0Se0V4Sn58T0N55b5y-FHgtlMQpIsQ,3297
+iqEditors-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+iqEditors-2.0.0.dist-info/top_level.txt,sha256=5fWWgPGou6GqkLUFLkpFyt_K9bjbtXJ_4MWLFuynW6A,10
+iqEditors-2.0.0.dist-info/RECORD,,
