@@ -1,0 +1,4 @@
+opencv_python_headless==4.5.4.60
+paddleocr==2.6.1.0
+paddlepaddle
+opencv-python==4.5.5.64
