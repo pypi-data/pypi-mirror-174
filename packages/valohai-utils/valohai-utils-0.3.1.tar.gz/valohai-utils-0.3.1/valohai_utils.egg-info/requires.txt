@@ -1,0 +1,4 @@
+tqdm
+requests
+valohai-yaml>=0.22.0
+valohai-papi>=0.1.1
