@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: conbuddy
+Version: 0.1.1a0
+Summary: The conbuddy package makes it easy to manage environment specific configuration values.
+Home-page: https://github.com/samedwardes/conbuddy
+License: MIT
+Author: SamEdwardes
+Author-email: edwardes.s@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Project-URL: Documentation, https://github.com/samedwardes/conbuddy
+Project-URL: Repository, https://github.com/samedwardes/conbuddy
+Description-Content-Type: text/markdown
+
+# conbuddy
+
+The conbuddy package makes it easy to manage environment specific configuration values. Inspired by <https://rstudio.github.io/config/articles/introduction.html>.
+
