@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: voxbloxpy
+Version: 0.0.1
+Summary: standalone voxblox python
+Home-page: UNKNOWN
+Author: Hirokazu Ishida
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: plotly
+
+UNKNOWN
+
