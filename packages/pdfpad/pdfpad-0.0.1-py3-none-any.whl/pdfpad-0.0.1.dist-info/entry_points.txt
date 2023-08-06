@@ -1,0 +1,2 @@
+[console_scripts]
+pdfpad = pdfpad.entrypoint:entrypoint
