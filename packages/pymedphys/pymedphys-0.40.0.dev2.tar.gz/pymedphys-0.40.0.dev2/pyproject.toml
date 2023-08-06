@@ -1,0 +1,361 @@
+[tool.poetry]
+name = "pymedphys"
+version = "0.40.0-dev2"
+readme = "README.rst"
+description = "Medical Physics library"
+authors = [
+    "PyMedPhys Contributors <developers@pymedphys.com>",
+    "Simon Biggs <sbiggs@pymedphys.com>",
+    "Stuart Swerdloff",
+    "Matthew Jennings <mjennings@pymedphys.com>",
+    "Phillip Chlap",
+    "Derek Lane",
+    "Jake Rembish",
+    "Matthew Cooper <mcooper@pymedphys.com>",
+    "Pedro Martinez",
+    "Rafael Ayala",
+]
+license = "Apache-2.0"
+homepage = "https://pymedphys.com"
+repository = "https://github.com/pymedphys/pymedphys"
+documentation = "https://docs.pymedphys.com"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry",
+]
+
+packages = [{ include = "pymedphys", from = "lib" }]
+include = ["lib/pymedphys/docs/_build/html/**/*"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+typing-extensions = "*"
+
+
+# ------- #
+# Library #
+# ------- #
+tqdm = { version = "*", optional = true }     # groups = ["user", "all", "tests", "docs"]
+attrs = { version = "*", optional = true }    # groups = ["user", "all"]
+watchdog = { version = "*", optional = true } # groups = ["user", "all"]
+
+keyring = { version = "*", optional = true }         # groups = ["user", "all"]
+packaging = { version = "*", optional = true }       # groups = ["user", "all"]
+PyYAML = { version = "*", optional = true }          # groups = ["user", "all"]
+requests = { version = "*", optional = true }        # groups = ["user", "all"]
+python-dateutil = { version = "*", optional = true } # groups = ["user", "all", "tests"]
+
+matplotlib = { version = "*", optional = true } # groups = ["user", "all", "docs"]
+scipy = { version = "*", optional = true }      # groups = ["user", "all", "docs"]
+
+xarray = { version = "*", optional = true } # groups = ["user", "all"]
+
+pymssql = { version = "*", optional = true }    # groups = ["user", "all", "mosaiq"]
+sqlalchemy = { version = "*", optional = true } # groups = ["user", "all", "mosaiq"]
+natsort = { version = "*", optional = true }    # groups = ["user", "all"]
+tomlkit = { version = "*", optional = true }    # groups = ["user", "all", "propagate"]
+toml = { version = "*", optional = true }       # groups = ["user", "cli", "all", "mosaiq", "docs"]
+
+pynetdicom = { version = "*", optional = true } # groups = ["user", "all", "dicom"]
+
+dbfread = { version = "*", optional = true }         # groups = ["user", "all"]
+xmltodict = { version = "*", optional = true }       # groups = ["user", "all"]
+timeago = { version = "*", optional = true }         # groups = ["user", "all"]
+xlsxwriter = { version = "*", optional = true }      # groups = ["user", "all"]
+plotly = { version = "*", optional = true }          # groups = ["user", "all"]
+fsspec = { version = "*", optional = true }          # groups = ["user", "all"]
+dicompyler-core = { version = "*", optional = true } # groups = ["user", "all"]
+scikit-learn = { version = "*", optional = true }    # groups = ["user", "all", "mosaiq"]
+imageio = { version = "*", optional = true }         # groups = ["user", "all"]
+
+streamlit = { version = "<1.12.0", optional = true } # groups = ["user", "all"]
+streamlit-ace = { version = "*", optional = true }   # groups = ["user", "all"]
+
+# NumPy's lower bound here is for typing support
+numpy = { version = ">=1.20.2", optional = true } # groups = ["user", "all", "icom", "docs"]
+
+# It looks like eval_linear() was added to the API from v2.1.0
+interpolation = { version = "^2.1.0", optional = true } # groups = ["user", "all"]
+
+# The following lower bounded packages are due to certain APIs utilised
+pandas = { version = ">=1.0.0", optional = true }  # groups = ["user", "all", "mosaiq"]
+pydicom = { version = ">=2.0.0", optional = true } # groups = ["user", "all", "dicom", "docs"]
+
+
+# The following lower bounds are so that the versions with wheels are utilised
+# for the installation
+shapely = { version = ">=1.7.0", optional = true }       # groups = ["user", "all"]
+scikit-image = { version = ">=0.18.1", optional = true } # groups = ["user", "all"]
+
+# Utilising the pymedphys fork of pylibjpeg-libjpeg to fix the following issue:
+# https://github.com/pymedphys/pymedphys/issues/1556#issuecomment-1152821285
+# pymedphys-pylibjpeg-libjpeg = { version = "1.3.1", optional = true } # groups = ["user", "all"]
+pylibjpeg-libjpeg = { version = ">=1.3.2", optional = true } # groups = ["user", "all"]
+
+
+# PyLinac is pinned due to historical algorithm changes with both minor and
+# patch version bumps.
+pylinac = { version = "2.3.2", optional = true } # groups = ["user", "all", "doctests"]
+
+# ---- #
+# CVEs #
+# ---- #
+
+# CVE-2020-28463 <https://github.com/advisories/GHSA-mpvw-25mg-59vx>
+reportlab = { version = ">=3.6", optional = true } # groups = ["user", "all"]
+# CVE-2021-32559 <https://github.com/advisories/GHSA-hwfp-hg2m-9vr2>
+pywin32 = { version = ">=301", optional = true, platform = "win32" } # groups = ["user", "all"]
+# CVE-2022-21699 <https://github.com/advisories/GHSA-pq7m-3gw7-gq5x>
+ipython = { version = ">=7.31.1", optional = true } # groups = ["docs", "all"]
+# CVE-2022-22817 <https://github.com/advisories/GHSA-8vj2-vxx3-667w>
+Pillow = { version = ">=9.0.0", optional = true } # groups = ["user", "all"]
+
+
+# ----------- #
+# Comparables #
+# ----------- #
+flashgamma = { version = "*", optional = true } # groups = ["comparables"]
+
+# ---------------- #
+# Machine Learning #
+# ---------------- #
+# The following dependency was removed due to it coming with a numpy upper
+# bound. I don't want dependencies that have an upper bound on numpy.
+
+# tensorflow = { version = ">=2.4.0", optional = true }  # groups = ["ml", "doctests"]
+
+# ------------- #
+# Documentation #
+# ------------- #
+sphinx-argparse = { version = "*", optional = true } # groups = ["all", "docs"]
+# sphinx-ext-napoleon = { version = "*", optional = true }  # groups = ["all", "docs"]
+sphinx-book-theme = { version = "*", optional = true }   # groups = ["all", "docs", "doctests"]
+jupyter-book = { version = ">=0.12.0", optional = true } # groups = ["all", "docs"]
+networkx = { version = "*", optional = true }            # groups = ["all", "docs"]
+
+# ----- #
+# Tests #
+# ----- #
+pytest = { version = "*", optional = true }               # groups = ["all", "tests"]
+pytest-sugar = { version = "*", optional = true }         # groups = ["all", "tests"]
+hypothesis = { version = "<6", optional = true }          # groups = ["all", "tests"]
+astroid = { version = "*", optional = true }              # groups = ["all", "tests"]
+psutil = { version = "*", optional = true }               # groups = ["all", "tests"]
+pylint = { version = "*", optional = true }               # groups = ["all", "tests"]
+pytest-rerunfailures = { version = "*", optional = true } # groups = ["all", "tests"]
+
+# ---------------- #
+# Development Only #
+# ---------------- #
+pre-commit = { version = "*", optional = true }      # groups = ["dev", "all"]
+black = { version = "^22.3.0", optional = true }     # groups = ["dev", "all", "propagate", "doctests"]
+mypy = { version = "*", optional = true }            # groups = ["dev", "all"]
+rope = { version = "*", optional = true }            # groups = ["dev", "all"]
+doc8 = { version = "*", optional = true }            # groups = ["dev", "all"]
+readme-renderer = { version = "*", optional = true } # groups = ["dev", "all"]
+tabulate = { version = "*", optional = true }        # groups = ["dev", "all", "doctests"]
+pyoxidizer = { version = "*", optional = true }      # groups = ["dev", "all", "build"]
+
+
+[tool.poetry.extras]
+all = [
+    "Pillow",
+    "PyYAML",
+    "astroid",
+    "attrs",
+    "black",
+    "dbfread",
+    "dicompyler-core",
+    "doc8",
+    "fsspec",
+    "hypothesis",
+    "imageio",
+    "interpolation",
+    "ipython",
+    "jupyter-book",
+    "keyring",
+    "matplotlib",
+    "mypy",
+    "natsort",
+    "networkx",
+    "numpy",
+    "packaging",
+    "pandas",
+    "plotly",
+    "pre-commit",
+    "psutil",
+    "pydicom",
+    "pylibjpeg-libjpeg",
+    "pylinac",
+    "pylint",
+    "pymssql",
+    "pynetdicom",
+    "pyoxidizer",
+    "pytest",
+    "pytest-rerunfailures",
+    "pytest-sugar",
+    "python-dateutil",
+    "pywin32",
+    "readme-renderer",
+    "reportlab",
+    "requests",
+    "rope",
+    "scikit-image",
+    "scikit-learn",
+    "scipy",
+    "shapely",
+    "sphinx-argparse",
+    "sphinx-book-theme",
+    "sqlalchemy",
+    "streamlit",
+    "streamlit-ace",
+    "tabulate",
+    "timeago",
+    "toml",
+    "tomlkit",
+    "tqdm",
+    "watchdog",
+    "xarray",
+    "xlsxwriter",
+    "xmltodict",
+]
+build = ["pyoxidizer"]
+cli = ["toml"]
+comparables = ["flashgamma"]
+dev = [
+    "black",
+    "doc8",
+    "mypy",
+    "pre-commit",
+    "pyoxidizer",
+    "readme-renderer",
+    "rope",
+    "tabulate",
+]
+dicom = ["pydicom", "pynetdicom"]
+docs = [
+    "ipython",
+    "jupyter-book",
+    "matplotlib",
+    "networkx",
+    "numpy",
+    "pydicom",
+    "scipy",
+    "sphinx-argparse",
+    "sphinx-book-theme",
+    "toml",
+    "tqdm",
+]
+doctests = ["black", "pylinac", "sphinx-book-theme", "tabulate"]
+icom = ["numpy"]
+mosaiq = ["pandas", "pymssql", "scikit-learn", "sqlalchemy", "toml"]
+propagate = ["black", "tomlkit"]
+tests = [
+    "astroid",
+    "hypothesis",
+    "psutil",
+    "pylint",
+    "pytest",
+    "pytest-rerunfailures",
+    "pytest-sugar",
+    "python-dateutil",
+    "tqdm",
+]
+user = [
+    "Pillow",
+    "PyYAML",
+    "attrs",
+    "dbfread",
+    "dicompyler-core",
+    "fsspec",
+    "imageio",
+    "interpolation",
+    "keyring",
+    "matplotlib",
+    "natsort",
+    "numpy",
+    "packaging",
+    "pandas",
+    "plotly",
+    "pydicom",
+    "pylibjpeg-libjpeg",
+    "pylinac",
+    "pymssql",
+    "pynetdicom",
+    "python-dateutil",
+    "pywin32",
+    "reportlab",
+    "requests",
+    "scikit-image",
+    "scikit-learn",
+    "scipy",
+    "shapely",
+    "sqlalchemy",
+    "streamlit",
+    "streamlit-ace",
+    "timeago",
+    "toml",
+    "tomlkit",
+    "tqdm",
+    "watchdog",
+    "xarray",
+    "xlsxwriter",
+    "xmltodict",
+]
+
+[tool.poetry.scripts]
+pymedphys = "pymedphys.__main__:main"
+
+[tool.isort]
+multi_line_output = 3
+line_length = 88
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+known_third_party = ["pymedphys._imports"]
+known_general_scientific = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "imageio",
+    "PIL",
+    "skimage",
+    "matplotlib",
+    "mpl_toolkits",
+    "shapely",
+    "altair",
+    "sklearn",
+    "plotly",
+]
+known_machine_learning = ["tensorflow", "pytorch"]
+known_streamlit = ["streamlit", "streamlit_ace", "streamlit_analytics"]
+known_medphys = [
+    "pydicom",
+    "pylinac",
+    "pynetdicom",
+    "libjpeg",
+    "dicompylercore",
+]
+known_first_party = ["pymedphys"]
+known_experimental = ["pymedphys._experimental"]
+sections = [
+    "FUTURE",
+    "STDLIB",
+    "THIRDPARTY",
+    "GENERAL_SCIENTIFIC",
+    "MACHINE_LEARNING",
+    "STREAMLIT",
+    "MEDPHYS",
+    "FIRSTPARTY",
+    "EXPERIMENTAL",
+    "LOCALFOLDER",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
