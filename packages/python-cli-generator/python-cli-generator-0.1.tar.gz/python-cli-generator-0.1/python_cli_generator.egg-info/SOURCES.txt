@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+examples/test.py
+python_cli_generator/__init__.py
+python_cli_generator/cli.py
+python_cli_generator/cli_builtin.py
+python_cli_generator/cli_generator.py
+python_cli_generator/output_printer.py
+python_cli_generator/output_processor.py
+python_cli_generator/parsing_processor.py
+python_cli_generator.egg-info/PKG-INFO
+python_cli_generator.egg-info/SOURCES.txt
+python_cli_generator.egg-info/dependency_links.txt
+python_cli_generator.egg-info/top_level.txt
