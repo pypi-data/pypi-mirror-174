@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sorzun"
+description = "A BIP32/39/44 key generation CLI utility"
+version = "0.1.0"
+authors = [
+  {name="pezcore", email="tvboyd23@gmail.com"}
+]
+requires-python = ">=3.7"
+keywords = ["BIP32", "BIP39", "Bitcoin", "Mnemonic"]
+license = {text = "MIT"}
+urls = { gitlab = "https://gitlab.com/pezcore/sorzun" }
+dependencies = [
+    "based58==0.1.1"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+szn = "sorzun.__main__:main"
+cashaddrconv = "sorzun.cashaddrconv:main"
