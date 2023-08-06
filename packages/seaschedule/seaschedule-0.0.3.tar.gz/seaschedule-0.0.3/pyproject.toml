@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "seaschedule"
+version = "0.0.3"
+description = "Get sea schedules from Maersk and other shipping lines."
+authors = ["Alex Cheng <alex28.biz@gmail.com>"]
+maintainers = ["Alex Cheng <alex28.biz@gmail.com>"]
+readme = "README.md"
+license = "Proprietary"
+homepage = "https://github.com/alexcheng628/seaschedule"
+repository = "https://github.com/alexcheng628/seaschedule"
+documentation = "https://github.com/alexcheng628/seaschedule"
+#keywords = ["sea schedule"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tomli = "^2.0.1"
+requests = "^2.28.1"
+pandas = "^1.5.1"
+paramiko = "^2.11.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ss = "seaschedule.__main__:main"
