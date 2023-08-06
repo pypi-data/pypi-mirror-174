@@ -1,0 +1,12 @@
+COPYING
+README.md
+cosoensis
+cosoensis.py
+pyproject.toml
+setup.cfg
+setup.py
+cosoensis.egg-info/PKG-INFO
+cosoensis.egg-info/SOURCES.txt
+cosoensis.egg-info/dependency_links.txt
+cosoensis.egg-info/requires.txt
+cosoensis.egg-info/top_level.txt

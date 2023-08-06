@@ -1,0 +1,415 @@
+#!/usr/bin/python3
+""" Command-line Mastodon tool """
+
+# Copyright (C) 2021 Gwyn Ciesla
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import os
+import getpass
+import configparser
+import socket
+import sys
+import argparse
+import readline
+from mastodon import Mastodon
+from cosoensis import *
+
+# Default config values
+URL = 'https://mastodon.social'
+VISIBILITY = 'direct'
+VERSION = '0.9.5'
+
+URLCHANGE = 0
+
+# Config file
+CONFIGFILENAME = os.path.join(os.path.expanduser('~' +  getpass.getuser()), '.cosoensis.conf')
+
+if not os.path.isfile(CONFIGFILENAME):
+    open(CONFIGFILENAME, 'a').close()
+
+CONFIG = configparser.ConfigParser()
+CONFIG.read(CONFIGFILENAME)
+SECTIONS = CONFIG.sections()
+
+if "Options" not in SECTIONS:
+    CONFIG.add_section("Options")
+    CONFIG.set("Options", "url", URL)
+    CONFIG.set("Options", "visibility", VISIBILITY)
+
+URL = str(CONFIG.get("Options", "url"))
+VISIBILITY = str(CONFIG.get("Options", "visibility"))
+
+INSTOK = input('Use ' + URL + '?: [Y/n]')
+if INSTOK == 'n':
+    URL = input('Enter URL for your instance ( https://host.tld ):')
+    URLCHANGE = 1
+
+with open(CONFIGFILENAME, 'w') as CONFIG.file:
+    CONFIG.write(CONFIG.file)
+
+# Authentication
+HOST = URL.rstrip('/').split('/')[-1]
+CLIENTAUTH = os.path.join(os.path.expanduser('~' +  \
+    getpass.getuser()), '.cosoensis-' + HOST + '_client_auth')
+USERAUTH = os.path.join(os.path.expanduser('~' + \
+    getpass.getuser()), '.cosoensis-' + HOST + '_user_auth')
+
+if not os.path.isfile(CLIENTAUTH):
+    try:
+        Mastodon.create_app('cosoensis-' + \
+            socket.gethostname(), api_base_url=URL, to_file=CLIENTAUTH)
+    except IOError:
+        print('Unable to register application with ' + URL)
+        sys.exit(0)
+
+if not os.path.isfile(USERAUTH):
+    MASTODON = Mastodon(client_id=CLIENTAUTH, api_base_url=URL)
+    METHOD = input('Username/password or OATH? [u/O]')
+    if METHOD == 'u':
+        USERNAME = input('Username/email for ' + URL + ': ')
+        PASSWORD = getpass.getpass('Password: ')
+        try:
+            MASTODON.log_in(USERNAME, PASSWORD, to_file=USERAUTH)
+        except IOError:
+            print('Unable to log in to ' + URL)
+            sys.exit(0)
+    else:
+        TFACODE = input(" Visit " + MASTODON.auth_request_url() + ", copy the code, and paste it here: ")
+        try:
+            MASTODON.log_in(code=TFACODE, to_file=USERAUTH)
+        except IOError:
+            print('Unable to log in to ' + URL)
+            sys.exit(0)
+
+if URLCHANGE == 1:
+    CONFIG.set("Options", "url", URL)
+    with open(CONFIGFILENAME, 'w') as CONFIG.file:
+        CONFIG.write(CONFIG.file)
+
+PARSER = argparse.ArgumentParser(description="Command-line Mastodon client")
+PARSER.add_argument("-v", "--version", action="version", version=VERSION)
+PARSER.add_argument("-t", "--tootlimit", action="store", dest="toot_limit", \
+    help="Maximum number of items to display")
+PARSER.add_argument("-n", "--notifications", action="store_true", dest="notifications", \
+    help="Scope: notifications")
+PARSER.add_argument("-H", "--home", action="store_true", dest="home", help="Scope: home")
+PARSER.add_argument("-l", "--local", action="store_true", dest="local", help="Scope: local")
+PARSER.add_argument("-p", "--public", action="store_true", dest="public", help="Scope: public")
+PARSER.add_argument("-#", "--hashtag", action="store", dest="hashtag", help="Search by hashtag")
+PARSER.add_argument("-s", "--search", action="store", dest="search", \
+    help="Search hashtags and accounts")
+PARSER.add_argument("-f", "--follows", action="store_true", dest="follows", \
+    help="Show who you follow")
+PARSER.add_argument("-F", "--followers", action="store_true", dest="followers", \
+    help="Show who follows you")
+PARSER.add_argument("-cw", "--content-warnings", action="store_true", dest="cws", \
+    help="Display text behind Content Warnings")
+PARSER.add_argument("-*", "--favourite", action="store", dest="favourite", \
+    help="Favourite or unfavourite a status")
+PARSER.add_argument("-b", "--boost", action="store", dest="boost", \
+    help="Boost or unboost a status")
+PARSER.add_argument("-c", "--convo", action="store", dest="convo", \
+    help="Show the entire conversation for a status")
+PARSER.add_argument("-q", "--quick", action="store", dest="quick", \
+    help="Send a quick direct toot. (enclose toot in quotes)")
+PARSER.add_argument("-sp", "--spoilertext", action="store", dest="spoilertext", \
+    help="Pre-fill Spoiler Text field.")
+PARSER.add_argument('FILE', nargs=argparse.REMAINDER)
+ARGS = PARSER.parse_args()
+
+ARGLEN = len(ARGS.FILE)
+MEDIAFILE = ''
+if ARGLEN > 0:
+    MEDIAFILE = ARGS.FILE[0]
+
+MASTODON = Mastodon(client_id=CLIENTAUTH, access_token=USERAUTH, api_base_url=URL)
+
+SYSARG_LEN = len(sys.argv)
+
+if SYSARG_LEN > 1 and not ARGS.FILE and not ARGS.spoilertext:
+    HASHTAG = ''
+    TOOTLIMIT = 5
+    SCOPE = ''
+    SEARCH = ''
+
+    if ARGS.quick:
+        try:
+            MASTODON.status_post(ARGS.quick, visibility='direct')
+            sys.exit(0)
+        except IOError:
+            print('Cannot send toot to ' + URL)
+            sys.exit(0)
+
+    if ARGS.toot_limit:
+        TOOTLIMIT = ARGS.toot_limit
+
+    if ARGS.home:
+        SCOPE = 'home'
+    if ARGS.local:
+        SCOPE = 'local'
+    if ARGS.public:
+        SCOPE = 'public'
+
+    if ARGS.follows:
+        try:
+            ACCOUNT = MASTODON.account_verify_credentials()
+            ID = ACCOUNT['id']
+            paged_count = 0
+            print('------------------------------------------------------')
+            FOLLOW_PAGES = MASTODON.account_following(ID)
+            for FOLLOWING in MASTODON.fetch_remaining(FOLLOW_PAGES):
+                display_user(FOLLOWING)
+                paged_count += 1
+                print('------------------------------------------------------')
+            print('Accounts you follow (' + str(paged_count) + '):')
+            sys.exit(0)
+        except IOError:
+            print('Cannot retrieve accounts from ' + URL)
+            sys.exit(0)
+
+    if ARGS.followers:
+        try:
+            ACCOUNT = MASTODON.account_verify_credentials()
+            ID = ACCOUNT['id']
+            paged_count = 0
+            print('------------------------------------------------------')
+            FOLLOWER_PAGES = MASTODON.account_followers(ID)
+            for FOLLOWERS in MASTODON.fetch_remaining(FOLLOWER_PAGES):
+                display_user(FOLLOWERS)
+                paged_count += 1
+                print('------------------------------------------------------')
+            print('Accounts that follow you (' + str(paged_count) + '):')
+            sys.exit(0)
+        except IOError:
+            print('Cannot retrieve accounts from ' + URL)
+            sys.exit(0)
+
+    if ARGS.favourite:
+        FAVTOOT = MASTODON.status(ARGS.favourite)
+        try:
+            if FAVTOOT.get('favourited'):
+                MASTODON.status_unfavourite(ARGS.favourite)
+                print('Unfavourited ' + str(ARGS.favourite))
+            else:
+                MASTODON.status_favourite(ARGS.favourite)
+                print('Favourited ' + str(ARGS.favourite))
+            sys.exit(0)
+        except IOError:
+            print('Cannot (un)favourite status on ' + URL)
+            sys.exit(0)
+
+    if ARGS.boost:
+        BOOSTTOOT = MASTODON.status(ARGS.boost)
+        try:
+            if BOOSTTOOT.get('reblogged'):
+                MASTODON.status_unreblog(ARGS.boost)
+                print('Unboosted ' + str(ARGS.boost))
+            else:
+                MASTODON.status_reblog(ARGS.boost)
+                print('Boosted ' + str(ARGS.boost))
+            sys.exit(0)
+        except IOError:
+            print('Cannot (un)boost status on ' + URL)
+            sys.exit(0)
+
+    if ARGS.convo:
+        CONTOOT = MASTODON.status(ARGS.convo)
+        CONTEXT = MASTODON.status_context(ARGS.convo)
+        TOOTSET = []
+        if CONTEXT.get('descendants'):
+            for TOOT in reversed(CONTEXT.get('descendants')):
+                TOOTSET.append(TOOT)
+        TOOTSET.append(CONTOOT)
+        if CONTEXT.get('ancestors'):
+            for TOOT in reversed(CONTEXT.get('ancestors')):
+                TOOTSET.append(TOOT)
+        for TOOT in TOOTSET:
+            display_status(MASTODON, TOOT, ARGS.cws)
+        sys.exit(0)
+
+    if ARGS.hashtag:
+        HASHTAG = ARGS.hashtag
+        try:
+            TOOTS = MASTODON.timeline_hashtag(HASHTAG, limit=TOOTLIMIT)
+        except IOError:
+            print('Cannot retrieve timeline from ' + URL)
+            sys.exit(0)
+    if ARGS.notifications:
+        try:
+            NOTIFS = MASTODON.notifications(limit=TOOTLIMIT)
+        except IOError:
+            print('Cannot retrieve notifications from ' + URL)
+            sys.exit(0)
+    elif SCOPE != '':
+        try:
+            TOOTS = MASTODON.timeline(timeline=SCOPE, limit=TOOTLIMIT)
+        except IOError:
+            print('Cannot retrieve timeline from ' + URL)
+            sys.exit(0)
+
+    if ARGS.search:
+        try:
+            RESULTS = MASTODON.search(ARGS.search, resolve=False)
+            print('Hashtags:')
+            print('----------------------')
+            for hashtag in RESULTS['hashtags']:
+                print('#' + hashtag['name'] + ' : ' + hashtag['url'])
+            print('\n')
+            print('Accounts:')
+            print('----------------------')
+            for account in RESULTS['accounts']:
+                display_user(account)
+            print('\n')
+            sys.exit(0)
+        except IOError:
+            print('Cannot search ' + URL)
+            sys.exit(0)
+    try:
+        for status in TOOTS:
+            display_status(MASTODON, status, ARGS.cws)
+        sys.exit(0)
+    except NameError:
+        try:
+            for notif in NOTIFS:
+                account = notif.get('account').get('acct')
+                dname = notif.get('account').get('display_name')
+                print(dname + '('+ account + ') | ' + \
+                    str(notif.get('created_at').astimezone().ctime()) + \
+                    ' | ' + str(notif.get('type')))
+                if 'status' in notif:
+                    display_status(MASTODON, notif.get('status'), ARGS.cws)
+                else:
+                    print('\n')
+            sys.exit(0)
+        except NameError:
+            print('No toots or notifications.')
+            sys.exit(0)
+
+if MEDIAFILE != '' and not os.path.isfile(MEDIAFILE):
+    print('File specified not found.')
+    sys.exit(0)
+
+try:
+    EMOJI = MASTODON.custom_emojis()
+except:
+    print('Unable to retrieve custom emoji.')
+    sys.exit(0)
+
+def emoji_completer(text, state):
+    """ readline completer function for emoji """
+    commands = []
+    for emojus in EMOJI:
+        commands.append(emojus.shortcode + ':')
+    options = [i for i in commands if i.startswith(text)]
+    if state < len(options):
+        return options[state]
+    else:
+        return None
+
+INKEY = ''
+MESSAGE = ''
+REPLY = ''
+SENSITIVE = False
+if ARGS.spoilertext:
+    SPOILER_TEXT = ARGS.spoilertext
+else:
+    SPOILER_TEXT = ''
+ACCOUNT = MASTODON.account_verify_credentials()
+#Message
+while INKEY == '':
+    if REPLY != '':
+        try:
+            display_status(MASTODON, MASTODON.status(int(REPLY)), ARGS.cws)
+        except IOError:
+            print('Cannot display status from ' + URL)
+            sys.exit(0)
+    print('---------------------------- ' \
+        + ACCOUNT['acct'] + ' @ ' + URL + ' -------------------------------')
+    print('(m)essage: ' + MESSAGE)
+    print('(r)eplying to: ' + REPLY)
+    print('(v)isibility: ' + VISIBILITY)
+    print('(SP)oiler text: ' + SPOILER_TEXT)
+    if MEDIAFILE != '':
+        print('Media: ' + MEDIAFILE)
+        print('(S)ensitive: ' + str(SENSITIVE))
+    print('(s)end')
+    print('(q)uit')
+    INKEY = input('$>: ')
+
+    if INKEY == 'm':
+        readline.set_startup_hook(lambda: readline.insert_text(MESSAGE))
+        readline.set_auto_history(False)
+        readline.parse_and_bind("tab: complete")
+        readline.set_completer(emoji_completer)
+        MESSAGE = input('Message: ')
+        readline.set_startup_hook()
+        readline.set_auto_history(True)
+        readline.parse_and_bind("tab: ")
+        readline.set_completer()
+
+    if INKEY == 'r':
+        REPLY = input('Status ID to reply to: ')
+
+    if INKEY == 'v':
+        NEWVIS = input('Visibility [(d)irect, (p)ublic, (u)nlisted, (P)rivate]: ')
+        if NEWVIS == 'd':
+            VISIBILITY = 'direct'
+        if NEWVIS == 'p':
+            VISIBILITY = 'public'
+        if NEWVIS == 'u':
+            VISIBILITY = 'unlisted'
+        if NEWVIS == 'P':
+            VISIBILITY = 'private'
+
+    if MEDIAFILE != '':
+        if INKEY == 'S':
+            SENSITIVE = bool(not SENSITIVE)
+
+    if INKEY == 'SP':
+        SPOILER_TEXT = input('Spoiler text: ')
+
+    if INKEY == 's':
+        if MEDIAFILE == '':
+            MESSAGE_LENGTH = len(MESSAGE)
+            if MESSAGE_LENGTH <= 0:
+                print("MESSAGE CANNOT BE BLANK")
+            else:
+                break
+        else:
+            break
+
+    if INKEY == 'q':
+        sys.exit(0)
+
+    INKEY = ''
+
+MEDIA_ID = []
+
+# Upload media file
+if MEDIAFILE != '':
+    try:
+        MEDIADICT = MASTODON.media_post(MEDIAFILE)
+        MEDIA_ID.append(MEDIADICT.get('id'))
+    except IOError:
+        print('Unable to upload media file ' + MEDIAFILE)
+        sys.exit(0)
+
+try:
+    if REPLY == '':
+        REPLY = None
+    MASTODON.status_post(MESSAGE, in_reply_to_id=REPLY, media_ids=MEDIA_ID, sensitive=SENSITIVE, \
+        visibility=VISIBILITY, spoiler_text=SPOILER_TEXT)
+except IOError:
+    print('Unable to send message to ' + URL)
