@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        kluff = kluff.main:main
+    
