@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: poseidon-python
+Version: 1.0.4
+Summary: CTF 解题快速利用工具，是攻克 Blockchain 方向的得力助手，也包含一些 Crypto 方向的功能，可用于快速编写解题脚本而免去以往繁琐的步骤。
+Home-page: https://github.com/B1ue1nWh1te/Poseidon
+Author: B1ue1nWh1te
+Author-email: b1ue1nwh1te@skiff.com
+License: GPL-3.0
+Keywords: POSEIDON,BLOCKCHAIN,ETHEREUM,CRYPTO,CTF,TOOLS
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: web3
+Requires-Dist: py-solc-x
+Requires-Dist: loguru
+Requires-Dist: pycryptodome
+Requires-Dist: gmpy2
+Requires-Dist: pwntools
+
+UNKNOWN
+
+
