@@ -1,0 +1,8 @@
+requests
+ruamel.yaml
+attackcti
+python-dateutil
+msal
+stix2
+openpyxl
+suricataparser
