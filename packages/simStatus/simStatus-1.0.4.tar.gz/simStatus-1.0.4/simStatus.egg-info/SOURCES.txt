@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+simStatus.py
+simStatus.egg-info/PKG-INFO
+simStatus.egg-info/SOURCES.txt
+simStatus.egg-info/dependency_links.txt
+simStatus.egg-info/requires.txt
+simStatus.egg-info/top_level.txt
