@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Dmr
+Version: 0.1.0
+Summary: ESTHDMR utility
+Author: Angkana Suchaimanacharoen
+Author-email: angkana.suc@eastspring.com
+License: LICENSE
+License-File: LICENSE
+
+This is dmr utils
+help(package) for more infomation

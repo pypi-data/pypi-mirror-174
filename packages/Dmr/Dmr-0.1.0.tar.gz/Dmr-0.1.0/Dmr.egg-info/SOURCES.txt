@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+Dmr.egg-info/PKG-INFO
+Dmr.egg-info/SOURCES.txt
+Dmr.egg-info/dependency_links.txt
+Dmr.egg-info/requires.txt
+Dmr.egg-info/top_level.txt
+dmr/singleton.py
