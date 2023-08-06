@@ -1,0 +1,4 @@
+[console_scripts]
+pynb_log_parser = otel_output_parser.cli:entry_point
+static_builder = otel_output_parser.static_builder.cli:entry_point
+
