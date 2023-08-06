@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ifly_atp_sdk"
+version = "0.1.0"
+description = ""
+authors = ["ybyang <ybyang7@iflytek.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+jsonpath_rw = ">=1.4.0"
+requests = ">=2.26.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+python = ">=3.6"
+jsonpath_rw = ">=1.4.0"
+requests = ">=2.26.0"
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
