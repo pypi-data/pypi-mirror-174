@@ -1,0 +1,58 @@
+{% from 'navigation.tmpl' import match %}
+{% set type = LISBON | get_type %}
+type: {{type}}
+markFeature: Word
+registrationOfficeCode: WO
+designatedCountries:
+  - XX
+st13: {{ LISBON | get_st13_lisbon(LISBON.REG.DATE | convertdate('%d/%m/%Y')) }}
+registrationNumber: {{ LISBON.NUMBER.__value }}
+registrationDate: {{ LISBON.REG.DATE | convertdate('%d/%m/%Y') }}
+applicationLanguageCode: {{ LISBON.NUMBER._ORGLANG | lower}}
+officeStatus: {{ LISBON.NUMBER._STATUS }}
+gbdStatus: {{ LISBON.NUMBER._STATUS | get_gbd_status }}
+markDisclaimerDetails:
+  {% call(desc) match('LEGAL', LISBON.LEGALGR) %}
+  {% call(tmp) match('TEXT', desc) %}
+  - text: {{ tmp  }}
+    languageCode: {{ tmp | guess_language(desc._LANG) }}
+    {% endcall %}
+  {% endcall %}
+wordMarkSpecification:
+  {% call(verbal) match('APP', LISBON.APPGR) %}
+  markVerbalElement:
+    - languageCode: {{ verbal | guess_language(verbal._LANG, LISBON.NUMBER._ORGLANG) }}
+      text: {{ verbal }}
+  {% endcall %}
+  {% call(verbal) match('TRANSLAT', LISBON.TRANSLATGR) %}
+  markTranslation:
+    - languageCode: {{ verbal | guess_language(verbal._LANG, LISBON.NUMBER._ORGLANG) }}
+      text: {{ verbal }}
+  {% endcall %}
+  markTransliteration:
+  {% call(verbal) match('TRANSLIT', LISBON) %}
+    - {{ verbal }}
+  {% endcall %}
+goodsServicesUnclassified:
+  {% call(verbal) match('PRODUCT', LISBON.PRODUCTGR) %}
+    {{ verbal._LANG | lower | field_name }}:
+    - {{ verbal }}
+  {% endcall %}
+publications:
+  {% set pub, date = LISBON | get_pub %}
+    - identifier: {{ pub }}
+      date: {{date}}
+applicants:
+  {% call(HOL) match('HOL', LISBON.HOLGR) %}
+  - fullName:
+      - text: {{ HOL.__value }}
+        languageCode: {{ HOL.__value | guess_language(HOL._LANG) }}
+  {% endcall %}
+events:
+  {% for event in LISBON | get_events %}
+  - officeKind: {{ event.kind }}
+    gbdKind: {{ event.gbd_kind }}
+    date: {{ event.date | convertdate('%d.%m.%Y') }}
+    country: {{ event.country }}
+    extra: {{ event.extra }}
+  {% endfor %}

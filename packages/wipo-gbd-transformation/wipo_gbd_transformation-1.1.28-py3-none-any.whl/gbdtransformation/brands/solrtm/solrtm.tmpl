@@ -1,0 +1,82 @@
+{% from 'navigation.tmpl' import match %}
+
+<RECORD>
+  <ID>{{ brand.registrationOfficeCode }}TM.{{ brand.applicationNumber }}</ID>
+  <TYPE>{{ brand.type }}</TYPE>
+  <OFFICE>{{ brand.receivingOfficeCode }}</OFFICE>
+
+  {% for ds in brand.registrationOfficeCode | expand_territories %}
+  <DS>{{ ds }}</DS>
+  {% endfor %}
+
+  <KIND>{{ brand.kind }}</KIND>
+
+  <AN>{{ brand.applicationNumber }}</AN>
+  {% for ans in brand.applicationNumber | create_synonyms %}
+  <ANS>{{ ans }}</ANS>
+  {% endfor %}
+
+  <RN>{{ brand.registrationNumber }}</RN>
+  {% for rns in brand.registrationNumber | create_synonyms %}
+  <RNS>{{ rns }}</RNS>
+  {% endfor %}
+
+  <STAT>{{ brand.gbdStatus | validate_status }}</STAT>
+
+  <SD>{{ brand.statusDate       | append('T23:59:59Z') }}</SD>
+  <AD>{{ brand.applicationDate  | append('T23:59:59Z') }}</AD>
+  <RD>{{ brand.registrationDate | append('T23:59:59Z') }}</RD>
+  <ED>{{ brand.expiryDate       | append('T23:59:59Z') }}</ED>
+
+  {% for ity in  brand.markFeature | get_image_type %}
+  <ITY>{{ ity }}</ITY>
+  {% endfor %}
+  <MTY>{{ brand.markFeature }}</MTY>
+
+  {% call(verbal) match('wordMarkSpecification.markVerbalElement', brand) %}
+  <BRAND_{{ verbal.languageCode | upper }}>{{ verbal.text }}</BRAND_{{ verbal.languageCode | upper }}>
+  {% endcall %}
+
+  {% call(tlit) match('wordMarkSpecification.markTransliteration') %}
+  <TLIT>{{ tlit.text }}</TLIT>
+  {% endcall %}
+
+
+  {% call(applicant) match('applicants', brand) %}
+  {% call(name) match('fullName', applicant) %}
+  <HOL_{{ name.languageCode | upper }}>{{ name.text }}</HOL_{{ name.languageCode | upper }}>
+  {% endcall %}
+  <HOLC>{{ applicant.countryCode }}</HOLC>
+  {% endcall %}
+
+  {% call(representative) match('representatives', brand) %}
+  {% call(name) match('fullName', representative) %}
+  <RP_{{ name.languageCode | upper }}>{{ name.text }}</RP_{{ name.languageCode | upper }}>
+  {% endcall %}
+  <RPC>{{ representative.countryCode }}</RPC>
+  {% endcall %}
+
+  {% call(img) match('markImageDetails', brand) %}
+  {% if img.colourIndicator %}
+  <CLRC>{{ img.colourIndicator }}</CLRC>
+  {% endif %}
+  {% call(imgclass) match('classification', img) %}
+  <ICLT>{{ imgclass.kind }}</ICLT>
+  <ICLV>{{ imgclass.version }}</ICLV>
+  {% for(cl) in imgclass.code | unique  %}
+  <ICL>{{ cl }}</ICL>
+  {% endfor %}
+  {% for(cl) in imgclass.code | cl_top2 | unique %}
+  <ICL2>{{ cl }}</ICL2>
+  {% endfor %}
+  {% endcall %}
+  {% endcall %}
+
+  {% call(gs) match('goodsServices', brand) %}
+  <NCL>{{ gs.nice }}</NCL>
+  {% call(term) match('terms', gs) %}
+  <GS_{{ gs.nice }}_{{ term.languageCode | upper }}>{{ term.text }}</GS_{{ gs.nice }}_{{ term.languageCode | upper }}>
+  {% endcall %}
+  {% endcall %}
+
+</RECORD>

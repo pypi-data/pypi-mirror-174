@@ -1,0 +1,119 @@
+brand:
+  type:
+  registrationOfficeCode:
+  receivingOfficeCode:
+
+  applicationNumber:
+  applicationDate:
+
+  registrationNumber:
+  registrationDate:
+
+  applicationLanguageCode:
+  secondLanguageCode:
+
+  expiryDate:
+  terminationDate:
+
+  officeStatus:
+  gbdStatus:  # [Ended|Expired|Pending|Registered]
+  statusDate:
+
+  kindMark:
+  markFeature:
+
+  filingPlace:
+  applicationReference:
+
+  markDisclaimerDetails:
+    - languageCode:
+      text:
+
+  wordMarkSpecification:
+    markVerbalElement:
+      - languageCode:
+        text:
+    markSignificantVerbalElement:
+      - languageCode:
+        text:
+    markTransliteration:
+      - string
+
+  markImageDetails:
+    - name:
+      colourIndicator:
+      colourClaimed:
+        - languageCode:
+          text:
+      classification:
+        kind:
+        version:
+        code:
+          - string
+
+  markSoundDetails:
+    - filename:
+      fileformat:
+
+  goodsServices:
+    - nice:
+      terms:
+        - languageCode
+          text
+
+  priorities:
+    - countrycode:
+      number:
+      date:
+      comment:
+
+  publications:
+    - identifier:
+      date:
+      section:
+
+  applicants:
+    - identifier:
+      fullName:
+        values:
+          - languageCode
+            text
+        kind:
+      fullAddress:
+        values:
+          - languageCode
+            text
+        countrycode:
+
+  representatives:
+    - identifier:
+      fullName:
+        values:
+          - languageCode
+            text
+        kind:
+      fullAddress:
+        values:
+          - languageCode
+            text
+        countrycode:
+
+  correspondence:
+      fullName:
+        values:
+          - languageCode
+            text
+        kind:
+      fullAddress:
+        values:
+          - languageCode
+            text
+        countrycode:
+
+  events:
+    - officeKind:
+      gbdKind:
+      date:
+
+  # here goes extra information that is office specific and that is pertinent for us to retain.
+  extra:

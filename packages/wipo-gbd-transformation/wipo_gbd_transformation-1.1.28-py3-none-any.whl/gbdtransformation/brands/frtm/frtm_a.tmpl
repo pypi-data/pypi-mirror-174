@@ -1,0 +1,119 @@
+brand:
+  type: # (TRADEMARK|EMBLEM|AOP|INN)
+  kind: # (Individual|Collective|Certificate|Guarantee|Defensive|Other)
+  markFeature: {{trademark.MarkFeature}} # (Word|Stylized characters|Figurative|Combined|3-D|Colour|Sound|Hologram|Olfactory|Motion|Municipal|Chimney|Kennfaden|Other|Undefined)
+
+  registrationOfficeCode: {{trademark.RegistrationOfficeCode }}
+  designatedCountries:
+    - str (CountryCode)
+
+  filingPlace: {{trademark.FilingPlace }}
+
+  applicationRefNumber:
+  applicationRefOrigin:
+
+  applicationNumber: {{ApplicationNumber}}
+  applicationDate: {{ApplicationDate}}
+
+  registrationNumber:{{trademark. }}
+  registrationDate:{{trademark. }}
+
+  applicationLanguageCode:{{trademark. }}
+  secondLanguageCode:
+
+  expiryDate: {{ExpiryDate}}
+  terminationDate:
+
+  officeStatus:
+  gbdStatus: {{ MarkCurrentStatusCode | translate_status(MarkCurrentStatusCode) }} # (Ended|Expired|Pending|Registered|Unknown)
+  statusDate:
+
+  markDisclaimerDetails:
+    - languageCode:
+      text:
+
+  wordMarkSpecification:
+    markVerbalElement:
+      - languageCode:
+        text:
+    markSignificantVerbalElement:
+      - languageCode:
+        text:
+    markTranslation:
+      - languageCode:
+        text:
+    markTransliteration:
+
+  markImageDetails:
+    - name:
+      colourIndicator:
+      colourClaimed:
+        - languageCode:
+          text:
+      classification:
+        kind:
+        version:
+        code:
+          - string
+
+  markSoundDetails:
+    - filename:
+      fileformat:
+
+  goodsServices:
+    - nice:
+      version:
+      terms:
+        - languageCode:
+          text:
+
+   priorities:
+     - countryCode:
+       number:
+       date:
+       comment:
+
+   publications:
+     - identifier:
+       date:
+       section:
+
+   applicants:
+     - identifier:
+       kind:
+       fullName:
+         - languageCode:
+           text:
+       fullAddress:
+         - languageCode:
+           text:
+       countryCode:
+
+   representatives:
+     - identifier:
+       kind:
+       fullName:
+         - languageCode:
+           text:
+       fullAddress:
+         - languageCode:
+           text:
+       countryCode:
+
+   correspondence:
+     - fullName:
+         - languageCode:
+           text:
+       fullAddress:
+         - languageCode:
+           text:
+       countryCode:
+
+   events:
+     - officeKind:
+       gbdKind: # (Filed|Registered|Published|Opposed|Withdrawn)
+       date:
+
+
+   # here goes extra information that is office specific and that is pertinent for us to retain.
+   extra:

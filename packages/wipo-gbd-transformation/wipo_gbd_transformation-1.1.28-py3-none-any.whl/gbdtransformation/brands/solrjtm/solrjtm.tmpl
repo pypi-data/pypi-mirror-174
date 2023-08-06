@@ -1,0 +1,137 @@
+{% from 'navigation.tmpl' import match %}
+
+id: {{ brand.registrationOfficeCode | suffix('TM.') | suffix(brand.applicationNumber) }}
+st13: {{ brand.st13 }}
+type: {{ brand.type }}
+kind: {{ brand.kind }}
+office: {{ brand.registrationOfficeCode }}
+
+designation:
+{% for ds in brand.designatedCountries %}
+{% for exp_ds in  ds | expand_territories  %}
+  - {{ exp_ds }}
+{% endfor %}
+{% endfor %}
+
+status: {{ brand.gbdStatus | validate_status }}
+
+applicationRefNumber: {{ brand.applicationRefNumber }}
+applicationRefOrigin: {{ brand.applicationRefOrigin }}
+
+applicationNumber: {{ brand.applicationNumber }}
+applicationNumberSynonyms:
+{% for ans in brand.applicationNumber | create_synonyms %}
+  - {{ ans }}
+{% endfor %}
+
+registrationNumber: {{ brand.registrationNumber }}
+registrationNumberSynonyms:
+{% for rns in brand.registrationNumber | create_synonyms %}
+  - {{ rns }}
+{% endfor %}
+
+lastUpdateDate: {{ brand.statusDate | suffix('T23:59:59Z') }}
+applicationDate: {{ brand.applicationDate | suffix('T23:59:59Z') }}
+registrationDate: {{ brand.registrationDate | suffix('T23:59:59Z') }}
+expiryDate: {{ brand.expiryDate | suffix('T23:59:59Z') }}
+
+imageType:
+{% for ity in  brand.markFeature | get_image_type %}
+  - {{ ity }}
+{% endfor %}
+brandType: {{ brand.markFeature }}
+
+{% call(verbal) match('wordMarkSpecification.markVerbalElement', brand) %}
+brandName_{{ verbal.languageCode | field_name }}: {{ verbal.text }}
+{% endcall %}
+
+{% call(trans) match('wordMarkSpecification.markTranslation', brand) %}
+
+
+translation_{{ trans.languageCode | field_name }}:
+  - {{ trans.text }}
+{% endcall %}
+
+{% call(tlit) match('wordMarkSpecification.markTransliteration') %}
+transliteration: {{ tlit }}
+{% endcall %}
+
+{% set applicants_info = brand.applicants | transform_name_address(brand.applicationLanguageCode) %}
+{% for k,v in applicants_info.names.items() %}
+applicant_{{ k | field_name }}: {% for x in v %}
+  - {{ x }}
+{% endfor %}
+{% endfor %}
+applicantCountryCode:
+{% for cc in applicants_info.cc %}
+  - {{ cc }}
+{% endfor %}
+
+{% set representatives_info = brand.representatives | transform_name_address(brand.applicationLanguageCode) %}
+{% for k,v in representatives_info.names.items() %}
+representative_{{ k | field_name }}: {% for x in v %}
+  - {{ x }}
+{% endfor %}
+{% endfor %}
+representativeCountryCode:
+{% for cc in representatives_info.cc %}
+  - {{ cc }}
+{% endfor %}
+
+{% call(img) match('markImageDetails', brand) %}
+{% if img.colourIndicator %}
+colour: {{ img.colourIndicator }}
+{% endif %}
+{% call(imgclass) match('classification', img) %}
+imgClassKind: {{ imgclass.kind }}
+imgClassVersion: {{ imgclass.version }}
+imgClass:
+{% for(cl) in imgclass.code | unique %}
+  - {{ cl }}
+{% endfor %}
+imgClassTop2:
+{% for(cl) in imgclass.code | cl_top2 | unique %}
+  - {{ cl }}
+{% endfor %}
+{% endcall %}
+{% endcall %}
+
+niceClass:
+{% call(gs) match('goodsServices', brand) %}
+  - {{ gs.nice | int }}
+{% endcall %}
+
+{% set gservices_info = brand.goodsServices | transform_goods_services(brand.applicationLanguageCode) %}
+
+{% for class,langs in gservices_info.items() %}
+{% set name = 'goodsServices_' + class %}
+
+{% for lang,terms in gservices_info[class].items() %}
+{% set name = name + '_' + lang %}
+{{ name | field_name }}:
+{% for term in terms %}
+  - {{ term | remove_trailing(',', '.') }}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+
+events:
+{% for event in brand.events | filter_events %}
+  - {{ event }}
+{% endfor %}
+
+{% if lire %}
+sf_hi: {{ lire.modelClassifs.usc.sf_hi}}
+ph_hi: {{ lire.ph_hi}}
+jc_hi: {{ lire.jc_hi}}
+cl_hi: {{ lire.cl_hi}}
+imgClassIC:
+    {% for cl in lire.topClasses %}
+    - {{ cl }}
+    {% endfor %}
+imgClassICTop2:
+    {% for cl in lire.topClasses %}
+    - {{ cl|cl_top2 }}
+    {% endfor %}
+active_ifc: {{ lire.ifc }}
+{% endif %}

@@ -1,0 +1,148 @@
+{
+    "brand": {
+        "type": "TRADEMARK",
+        "registrationOfficeCode": "MY",
+        "receivingOfficeCode": "MY",
+        "applicationNumber": "2012060000",
+        "applicationDate": "2012-12-13",
+        "registrationDate": "2012-06-13",
+        "applicationLanguageCode": "en",
+        "expiryDate": "2022-06-13",
+        "gbdStatus": "Registered",
+        "officeStatus": "Registered",
+        "statusDate": "2019-02-07",
+        "kindMark": "Individual",
+        "markFeature": "Combined",
+        "markDisclaimer": [
+            {
+                "disclaimer": "REGISTRATION OF THIS TRADE MARK SHALL GIVE NO RIGHT TO THE EXCLUSIVE USE OF THE LETTER 'P'.",
+                "languageCode": "en"
+            }
+        ],
+        "wordMarkSpecification": {
+            "markVerbalElement": [
+                {
+                    "languageCode": "en",
+                    "text": "P"
+                }
+            ]
+        },
+        "markImageDetails": [
+            {
+                "name": "ATTACHMENT/logo"
+            }
+        ],
+        "goodsServices": [
+            {
+                "nice": "9",
+                "terms": [
+                    {
+                        "languageCode": "en",
+                        "term": "Downloadable software in the nature of a mobile application for creating, sharing, disseminating and posting photos, videos, personal and general information for the purposes of social, personal and professional networking"
+                    },
+                    {
+                        "languageCode": "en",
+                        "term": "downloadable software in the nature of a mobile application for social and personal networking"
+                    },
+                    {
+                        "languageCode": "en",
+                        "term": "downloadable software in the nature of a mobile application for displaying and sharing a user's location and personal preferences and finding, locating, and interacting with other users and places"
+                    },
+                    {
+                        "languageCode": "en",
+                        "term": "application programming interface (API) software for allowing data retrieval, upload, access and management"
+                    },
+                    {
+                        "languageCode": "en",
+                        "term": "API software for use in building software applications"
+                    },
+                    {
+                        "languageCode": "en",
+                        "term": "software for geo-location based advertising and product and service promotions"
+                    },
+                    {
+                        "languageCode": "en",
+                        "term": "all included in Class 9."
+                    }
+                ]
+            }
+        ],
+        "applicants": [
+            {
+                "fullName": {
+                    "values": [
+                        {
+                            "name": "Path Mobile Inc Pte. Ltd.",
+                            "languageCode": "en"
+                        }
+                    ]
+                },
+                "fullAddress": {
+                    "values": [
+                        {
+                            "address": "22 Malacca Street, #07-02, RB Capital Building, 048980",
+                            "languageCode": "en"
+                        }
+                    ],
+                    "countrycode": "SG"
+                }
+            }
+        ],
+        "representatives": [
+            {
+                "fullName": {
+                    "values": [
+                        {
+                            "name": "Indran A/L Shanmuganathan",
+                            "languageCode": "en"
+                        }
+                    ]
+                },
+                "fullAddress": {
+                    "values": [
+                        {
+                            "address": "Shearn Delamore &amp; Co. 7th. Floor, Wisma Hamzah-Kwong Hing No. 1, Leboh Ampang 50100",
+                            "languageCode": "en"
+                        }
+                    ],
+                    "countrycode": "MY"
+                }
+            }
+        ],
+        "priorities": [
+            {
+                "countrycode": "US",
+                "number": "85651317",
+                "date": "2012-06-13"
+            }
+        ],
+        "publications": [
+            {
+                "identifier": "2012060000",
+                "date": "2018-11-29"
+            }
+        ],
+        "events": [
+            {
+                "officeKind": "Registered",
+                "gbdKind": "Registered",
+                "date": "2012-06-13"
+            },
+            {
+                "officeKind": "Filed",
+                "gbdKind": "Filed",
+                "date": "2012-12-13"
+            },
+            {
+                "officeKind": "Published",
+                "gbdKind": "Published",
+                "date": "2018-11-29"
+            },
+            {
+                "officeKind": "Registered",
+                "gbdKind": "Registered",
+                "date": "2019-02-07"
+            }
+        ]
+    }
+}
