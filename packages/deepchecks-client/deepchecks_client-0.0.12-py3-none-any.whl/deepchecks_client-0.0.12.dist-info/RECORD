@@ -1,0 +1,15 @@
+deepchecks_client/__init__.py,sha256=ZGuXrz0Ry_tvXGEki0yQlyUI385Hw36YP0BzIqO3rac,771
+deepchecks_client/core/AmazonRootCA1.cer,sha256=LEOVLungAP8qzE4u0Il8CnKtX6csPZNOgXQcvVTwW9E,1188
+deepchecks_client/core/__init__.py,sha256=JmOohVGkIfHSMvRpSMGyaN_v69gLv2cMOKNF8D-wL2c,749
+deepchecks_client/core/client.py,sha256=DUEjPiWcJxAlDTdx2_MRoObuw0o6zhjV32uWx_9hw8Y,28224
+deepchecks_client/core/utils.py,sha256=tBA-IWDGzT9urYS5AAN5xaFEV5-2ItnQkrsOPbh89tk,5787
+deepchecks_client/tabular/__init__.py,sha256=3QMgJsXuHpSZyB485cszFFEUaXRxdcjcdo69izxgQhg,689
+deepchecks_client/tabular/client.py,sha256=0oymF9AFpEMXPWo4yCKodHIqpuXLbAfYi3SMQQAniSU,22160
+deepchecks_client/tabular/utils.py,sha256=Ip4eu1ghtFqgIqp6_tVInMFf9FxYa-xExSNSOFDDj20,5797
+deepchecks_client/vision/__init__.py,sha256=CKWQQ7GXm9ORA4Oq5alEUumX8_ZYYYix13PV_3fWxfM,572
+deepchecks_client/vision/client.py,sha256=8kpgo9DYEcDVKTH5DP3X_tYtADBoRCFoiKKGwS6RujY,19452
+deepchecks_client/vision/utils.py,sha256=3TTt5k76Yy3SY71i56rg17JPYhbGcMOcEt7wCMkjbIQ,3230
+deepchecks_client-0.0.12.dist-info/METADATA,sha256=0l3zy2BRFpYLkaGOOKQbrnv0rSCxXIkFfhs7OZynzf4,573
+deepchecks_client-0.0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deepchecks_client-0.0.12.dist-info/top_level.txt,sha256=AX41JSwLA_Aoyd1jG4xZ4CyKF-WfjHFYRPgunpTGA18,18
+deepchecks_client-0.0.12.dist-info/RECORD,,
