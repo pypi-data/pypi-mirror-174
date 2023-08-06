@@ -1,0 +1,17 @@
+sdkite/__init__.py,sha256=FjHs8EmEMLw8DO64JNIo_KpHB1qkox_mCWIlEJryF1o,380
+sdkite/_version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+sdkite/adapter.py,sha256=sykAP9vzI73lop4XbkYcE-HW0iCf2cziX7i8Rx2_q-I,5879
+sdkite/client.py,sha256=2BG3Wv1pYhlZK-AII4YUmq8ZmiueOvLIHxnLBl24jf8,1025
+sdkite/pagination.py,sha256=8cKUD7bZB2LNLdepkkZ5lxzf1Nr8ZpN-ZgaS3VkC60c,5848
+sdkite/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdkite/utils.py,sha256=2slyi6dmHpgnLZgTnxmswdABwy8Aydfhym5axVB1eMI,661
+sdkite/http/__init__.py,sha256=bBdqi8AXAKulNnChIcJLK1T5G1PPjYLxYIP3r2Fcjw8,314
+sdkite/http/adapter.py,sha256=1SuB4WBip11n80dmZzcASCUsxjr41cqSSx80T0GwV1Q,6215
+sdkite/http/impl_requests.py,sha256=vmRDp2os7CwnmYVuiD1CQqLEIq6FO-46cz69KjSzSmI,2057
+sdkite/http/model.py,sha256=tACjKrfBcvwLLdyCzai29j4-uZHJPo9RKaWXW6iEJts,3271
+sdkite/http/utils.py,sha256=TeXFfXv826cauaZWZxtLZXk2HApoOfL62PH_wTvywIU,2252
+sdkite-0.1.0.dist-info/LICENSE.txt,sha256=c4bgarJmqrbV_Q3jYaW2_7wji8kUjs0BepyP8r-DMpY,1074
+sdkite-0.1.0.dist-info/METADATA,sha256=iVQ5FBQfamLQkhcjdJ3QZ70tbQKNk3CsC2BGs1yxTm4,2827
+sdkite-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sdkite-0.1.0.dist-info/top_level.txt,sha256=DsF2QhPW7FivvSeFTa-_R9XqIKgNofVU3xpVTzP8guk,7
+sdkite-0.1.0.dist-info/RECORD,,
