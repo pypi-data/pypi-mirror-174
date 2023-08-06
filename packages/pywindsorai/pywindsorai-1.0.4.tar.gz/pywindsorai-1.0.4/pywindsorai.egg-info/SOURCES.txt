@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+pywindsorai/__init__.py
+pywindsorai/client.py
+pywindsorai/enums.py
+pywindsorai.egg-info/PKG-INFO
+pywindsorai.egg-info/SOURCES.txt
+pywindsorai.egg-info/dependency_links.txt
+pywindsorai.egg-info/not-zip-safe
+pywindsorai.egg-info/requires.txt
+pywindsorai.egg-info/top_level.txt
+test/__init__.py
+test/tests.py
