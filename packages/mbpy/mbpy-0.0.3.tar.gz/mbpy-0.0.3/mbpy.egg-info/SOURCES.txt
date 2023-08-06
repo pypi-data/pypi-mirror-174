@@ -1,0 +1,8 @@
+README.md
+setup.py
+mbpy/__init__.py
+mbpy/mb.py
+mbpy.egg-info/PKG-INFO
+mbpy.egg-info/SOURCES.txt
+mbpy.egg-info/dependency_links.txt
+mbpy.egg-info/top_level.txt

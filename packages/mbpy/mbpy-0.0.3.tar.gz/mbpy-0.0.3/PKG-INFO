@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: mbpy
+Version: 0.0.3
+Summary: microBees Python Library
+Author: microbeestech
+License: MIT
+Requires-Python: >=3.6
