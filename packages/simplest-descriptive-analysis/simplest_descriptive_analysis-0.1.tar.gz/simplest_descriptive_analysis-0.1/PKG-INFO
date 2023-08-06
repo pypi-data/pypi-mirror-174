@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: simplest_descriptive_analysis
+Version: 0.1
+Summary: Esta librería permite generar un análisis descriptivo de forma rápida y sencilla
+Home-page: https://github.com/nagorebermeosolo/simplest_descriptive_analysis
+Author: Nagore Bermeosolo y Ainhoa Paredes
+Author-email: nagore.bermeosolo@alumni.mondragon.edu
+License: MIT
+Download-URL: https://github.com/nagorebermeosolo/simplest_descriptive_analysis/archive/refs/tags/0.1.tar.gz
+Description: UNKNOWN
+Keywords: EDA,Descriptive Analysis,Statistical Analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
