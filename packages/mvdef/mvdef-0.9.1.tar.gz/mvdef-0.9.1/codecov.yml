@@ -1,0 +1,13 @@
+---
+comment: false
+ignore:
+  - "**/log_utils.py"
+  - "**/legacy"
+coverage:
+    status:
+        patch:
+            default:
+                informational: true
+        project:
+            default:
+                informational: true
