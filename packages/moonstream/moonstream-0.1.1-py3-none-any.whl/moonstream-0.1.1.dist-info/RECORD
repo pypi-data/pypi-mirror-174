@@ -1,0 +1,13 @@
+moonstream/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moonstream/client.py,sha256=B1zQ_8vO680YKLiRpwbpAfEcmdWbXUEjSe27QUolM9o,7108
+moonstream/data.py,sha256=KGIo4jQgpujBZzu6M0imNXQtKqVst4KVE0QJq3ml1AI,982
+moonstream/exceptions.py,sha256=J0AyxvIXCo8fNo_NmfUW5SNP5Ch4XWVeHCA9W40Soco,560
+moonstream/settings.py,sha256=q9VIMruIz3j8p9_XdYd8gPmTN0qpEaLORbzSHAy0bGU,489
+moonstream/test_client.py,sha256=3GN64nVGku13-hSrDdZ8JGKaSlZwDln91CY0MUhUlVM,2053
+moonstream/version.py,sha256=2D7H5U-7ZPqU-V5jvC36Aj9VwrrsSmkQ74zuu7npi6k,36
+moonstream/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moonstream/aws/bucket.py,sha256=wy9CihbhbacPJvS59ZVYrEbsvSzbLZ_04H-MR82GOz0,447
+moonstream-0.1.1.dist-info/METADATA,sha256=U6hJEIXjxdmiEv53fJT_6YEtWshZ7Q4BgxGrvVvVDwk,3568
+moonstream-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+moonstream-0.1.1.dist-info/top_level.txt,sha256=gtTtOmt_V85OcX0G9psHfGaZppRxCdw0aqPsC-QvZuU,11
+moonstream-0.1.1.dist-info/RECORD,,
