@@ -1,0 +1,115 @@
+{
+    "name": "FAT12/16 Volume Boot Record Examiner",
+    "description": "Examines FAT12/16-specific part of FAT volume boot record",
+    "ntrprtr": [
+        {
+            "name": "driveNumber",
+            "description": "INT 0x13 Drive Number",
+            "start": 36,
+            "end": 36,
+            "action": [
+                {
+                    "type": "equals",
+                    "endianess": "big",
+                    "cmp": [
+                        {
+                            "value": "00",
+                            "description": "Floppy Disk"
+                        },
+                        {
+                            "value": "80",
+                            "description": "Hard Disk"
+                        }
+                    ],
+                    "noMatch": "No match found!"
+                }
+            ]
+        },
+        {
+            "name": "reserved",
+            "description": "Reserved",
+            "start": 37,
+            "end": 37
+        },
+        {
+            "name": "extendedBootSignature",
+            "description": "Extended Boot Signature",
+            "start": 38,
+            "end": 38,
+            "action": [
+                {
+                    "type": "equals",
+                    "endianess": "big",
+                    "cmp": [
+                        {
+                            "value": "29",
+                            "description": "Drive Serial Number, Drive Descriptor and \n    FAT Type are available"
+                        }
+                    ],
+                    "noMatch": "No additional fields"
+                }
+            ]
+        },
+        {
+            "name": "driveSerialNumber",
+            "description": "Drive Serial Number",
+            "start": 39,
+            "end": 42
+        },
+        {
+            "name": "driveLabel",
+            "description": "Drive Label",
+            "start": 43,
+            "end": 53,
+            "action": [
+                {
+                    "type": "ascii",
+                    "nonAsciiPlaceholder": "."
+                }
+            ]
+        },
+        {
+            "name": "fatType",
+            "description": "FAT Type",
+            "start": 54,
+            "end": 61,
+            "action": [
+                {
+                    "type": "ascii",
+                    "nonAsciiPlaceholder": "."
+                }
+            ]
+        },
+        {
+            "name": "notUsed",
+            "description": "Not Used",
+            "start": 62,
+            "end": 509,
+            "action": [
+                {
+                    "type": "hexdump",
+                    "nonAsciiPlaceholder": "."
+                }
+            ]
+        },
+        {
+            "name": "signature",
+            "description": "Signature - 55 AA",
+            "start": 510,
+            "end": 511,
+            "action": [
+                {
+                    "type": "equals",
+                    "endianess": "big",
+                    "noMatch": "Signature invalid!",
+                    "cmp": [
+                        {
+                            "value": "55AA",
+                            "description": "Signature valid!"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

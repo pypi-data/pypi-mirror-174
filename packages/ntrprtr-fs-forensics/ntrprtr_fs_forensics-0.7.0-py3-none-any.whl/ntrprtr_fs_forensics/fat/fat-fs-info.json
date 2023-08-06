@@ -1,0 +1,131 @@
+{
+    "name": "FAT FSInfo Examiner",
+    "description": "Examines FSInfo structures in FAT file systems",
+    "ntrprtr": [
+        {
+            "name": "signature01",
+            "description": " Signature Value - 41 61 52 52",
+            "start": 0,
+            "end": 3,
+            "action": [
+                {
+                    "type": "endianess",
+                    "endianess": "little"
+                },
+                {
+                    "type": "equals",
+                    "endianess": "big",
+                    "noMatch": "Signature invalid!",
+                    "cmp": [
+                        {
+                            "value": "52526141",
+                            "description": "Signature valid!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "notUsed1",
+            "description": "Not used",
+            "start": 4,
+            "end": 483,
+            "action": [
+                {
+                    "type": "hexdump",
+                    "nonAsciiPlaceholder": "."
+                }
+            ]
+        },
+        {
+            "name": "signature02",
+            "description": " Signature Value - 61 41 72 72",
+            "start": 484,
+            "end": 487,
+            "action": [
+                {
+                    "type": "endianess",
+                    "endianess": "little"
+                },
+                {
+                    "type": "equals",
+                    "endianess": "big",
+                    "noMatch": "Signature invalid!",
+                    "cmp": [
+                        {
+                            "value": "72724161",
+                            "description": "Signature valid!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "freeDataUnit",
+            "description": "Number of Free Data Units",
+            "start": 488,
+            "end": 491,
+            "action": [
+                {
+                    "type": "endianess",
+                    "endianess": "little"
+                },
+                {
+                    "type": "decimal",
+                    "endianess": "little"
+                }
+            ]
+        },
+        {
+            "name": "positionNextFreeDataUnit",
+            "description": "Position of next free Data Unit",
+            "start": 492,
+            "end": 495,
+            "action": [
+                {
+                    "type": "endianess",
+                    "endianess": "little"
+                },
+                {
+                    "type": "decimal",
+                    "endianess": "little"
+                }
+            ]
+        },
+        {
+            "name": "notUsed2",
+            "description": "Not used",
+            "start": 496,
+            "end": 507,
+            "action": [
+                {
+                    "type": "hexdump",
+                    "nonAsciiPlaceholder": "."
+                }
+            ]
+        },
+        {
+            "name": "signatureValue",
+            "description": "Signature Value - AA 55 00 00",
+            "start": 508,
+            "end": 511,
+            "action": [
+                {
+                    "type": "endianess",
+                    "endianess": "little"
+                },
+                {
+                    "type": "equals",
+                    "endianess": "big",
+                    "noMatch": "Signature invalid!",
+                    "cmp": [
+                        {
+                            "value": "000055AA",
+                            "description": "Signature valid!"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
