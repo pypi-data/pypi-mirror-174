@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/module_python/deepdriver.egg-info/PKG-INFO
+src/module_python/deepdriver.egg-info/SOURCES.txt
+src/module_python/deepdriver.egg-info/dependency_links.txt
+src/module_python/deepdriver.egg-info/top_level.txt
+src/module_python/deepdriver/__init__.py
+src/module_python/deepdriver.egg-info/SOURCES.txt
