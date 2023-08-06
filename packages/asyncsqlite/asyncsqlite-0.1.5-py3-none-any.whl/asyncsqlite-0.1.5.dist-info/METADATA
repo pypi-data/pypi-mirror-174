@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: asyncsqlite
+Version: 0.1.5
+Summary: 
+Home-page: https://github.com/Snowie-ORG/asyncsqlite
+License: Apache-2.0
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.7.2,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: aiosqlite (>=0.17.0,<0.18.0)
+Project-URL: Repository, https://github.com/Snowie-ORG/asyncsqlite
+Description-Content-Type: text/markdown
+
+# asyncsqlite
+An async sqlite library with pooling support
+
+## Requirements
+Python 3.7.2+
+## Installation
+* `pip install asyncsqlite`
+#
+
