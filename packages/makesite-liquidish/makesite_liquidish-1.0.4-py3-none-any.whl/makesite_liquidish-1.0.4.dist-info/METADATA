@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: makesite-liquidish
+Version: 1.0.4
+Summary: A 'makesite' script that can handle {% if %} and {% for %} blocks as well as {{ name }} expressions.
+Author: Patrick Pfeifer
+License: MIT
+Project-URL: Source, https://github.com/Pfiver/makesite-liquidish
+Project-URL: PyPi, https://pypi.org/project/makesite-liquidish/
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: watchdog
+Requires-Dist: livereload
+Provides-Extra: dev_or_whatever
+
+# makesite-liquidish
+
+Based on the great work of Sunaina Pai: https://github.com/sunainapai/makesite
+
+Usage:
+
+    $ makesite                                                                               
+    Config file not found. Do you want to create an example site ? [Y/n]
+    
+    copied example site to 'example_site'.
+    Now you can 'cd' into it and run 'makesite' again.
+    
+    $ cd example_site
+    $ makesite
+    Rendering index.html => site/index.html ...
+    Rendering contact.html => site/contact.html ...
+    Rendering galleries.html => site/galleries.html ...
+
+    $ open site/index.html 
+
+Release process:
+
+1. get a pypi token:
+
+        $ cat ~/.pypirc
+        [pypi]
+        username = __token__
+        password = pypi-...
+
+2. `$ setopt nonomatch (on zsh)`
+2. `$ rm -rf dist build *.egg-info */__pycache__ */example_site/_site`
+3. `$ git clean -ndx`
+4. `$ python -m build`
+5. `$ twine upload dist/*`
