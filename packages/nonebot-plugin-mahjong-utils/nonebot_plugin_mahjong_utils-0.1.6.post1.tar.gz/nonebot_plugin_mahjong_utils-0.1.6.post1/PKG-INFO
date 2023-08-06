@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-mahjong-utils
+Version: 0.1.6.post1
+Summary: 
+Home-page: https://github.com/ssttkkl/nonebot-plugin-mahjong-utils
+License: MIT
+Author: ssttkkl
+Author-email: huang.wen.long@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: mahjong-utils (>=0.1.0a4,<0.2.0)
+Requires-Dist: nonebot2 (>=2.0.0rc1,<3.0.0)
+Project-URL: Repository, https://github.com/ssttkkl/nonebot-plugin-mahjong-utils
+Description-Content-Type: text/plain
+
+nonebot-plugin-mahjong-utils
+========
+
+手牌分析：
+- 输入手牌代码，输出向听数（未摸牌状态）、牌理（已摸牌、未和牌状态）或和牌分析（已摸牌、已和牌状态）。
+- 手牌代码的最后一张牌作为所和的牌，手牌代码后可通过空格分割输入副露、自风、场风、dora、额外役。暗杠通过0990m的格式输入。
+- 例：23445633p777s 0990m 立直 一发 dora3
+
+番符点数查询：
+- 输入x番y符，输出亲家/子家的自摸/荣和得点
+
+## Special Thanks
+
+-  [nonebot/nonebot2](https://github.com/nonebot/nonebot2)
+-  [ssttkkl/mahjong-utils](https://github.com/ssttkkl/mahjong-utils) ~~我谢我自己~~
+
+## LICENSE
+
+MIT
+
