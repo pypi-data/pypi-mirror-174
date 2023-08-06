@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+cim_optimizer/cim_optimizer.egg-info/PKG-INFO
+cim_optimizer/cim_optimizer.egg-info/SOURCES.txt
+cim_optimizer/cim_optimizer.egg-info/dependency_links.txt
+cim_optimizer/cim_optimizer.egg-info/requires.txt
+cim_optimizer/cim_optimizer.egg-info/top_level.txt
