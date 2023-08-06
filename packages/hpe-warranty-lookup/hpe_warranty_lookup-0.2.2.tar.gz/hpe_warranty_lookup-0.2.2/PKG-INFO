@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: hpe_warranty_lookup
+Version: 0.2.2
+Summary: Simple script to check HPE warranty status
+Author: Paul Scherrer Institute
+Author-email: science-it@psi.ch
+License: GPLv3
