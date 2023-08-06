@@ -1,0 +1,99 @@
+---
+output:
+  html_document: default
+  pdf_document:
+    keep_tex: yes
+    includes:
+      in_header: preamble.tex
+  word_document: default
+---
+
+```{r include=FALSE, echo = FALSE, code=xfun::read_utf8('preamble.R')}
+```
+
+
+```{python}
+from book_funs21 import *
+```
+
+# Application to partial differential equations
+
+## Automatic algorithmic differentiation. 
+
+AAD is a family of techniques for algorithmically computing **exact** derivatives of compositions of differentiable functions. It is a useful tool for several applications in this book, hence we describe it succintly in this section.
+
+Techniques for AAD have been known since at least the 1950s. There are two main variants of AAD: reverse-mode and forward-mode. Reverse-mode AAD computes the derivative of a composition of atomic differentiable functions by computing the sensitivity of an output with respect to the intermediate variables (without materializing the matrices for the intermediate derivatives). In this way, reverse-mode can efficiently compute the derivatives of scalar-valued functions. Forward-mode AAD computes the derivative by calculating the sensitivity of the intermediate variables with respect to an input variable \cite{GW:2008}.
+
+There are number of high quality implementations of AAD in the libraries, such as[^2] TensorFlow , PyTorch, autograd, Zygote and JAX. The JAX supports both reverse-mode and forward-mode AAD.
+
+[^2]: [TensorFlow url](https://www.tensorflow.org/), [PyTorch url](https://www.pytorch.org/), [autograd url](https://github.com/HIPS/autograd), [Zygote url](https://fluxml.ai/Zygote.jl/latest/), [JAX url](https://github.com/google/jax)
+
+Codpy provides a simple interface to the Pytorch AAD differentiation framework. Figure \@ref(fig:testAAD) illustrates the computations of first and second derivatives of a function $f(X)=\frac{1}{6}X^3$ using AAD.
+
+```{python, label = testAAD, fig.cap="A cubic function, exact AAD first order and second order derivatives", warning = FALSE, message = FALSE, results = "hide"}
+testAAD(lambda x: 1/6 * x**3, torch.randn((100,1), requires_grad=True))
+```
+
+
+## Differential machines benchmarks
+
+AAD is a natural tool to define a differential machine (\#eq:dm) starting from any predictive machine \@ref(eq:Pm). In this section, we illustrate a general multi-dimensional benchmark of two  differential machines methods. The first one uses the kernel gradient operator (see \@ref(eq:nabla) ). The second one uses a neural network defined with Pytorch together with AAD tools.    
+
+An example of one-dimensional testing is shown at figure \@ref(fig:differentialMlBenchmarks1), using the same benchmark methodology as in chapter 2. The first row is quite similar to our one-dimensional test. The second row provides also four plots: the first one is the exact gradient of the considered function on the test set, computed using AAD. The second one plot the kernel gradient operator. The two remaining ones plot two different run of the neural network differential machine.
+
+```{python, label = differentialMlBenchmarks1, fig.cap="A benchmark of one-dimensional differential machines", warning = FALSE, message = FALSE, results = "hide"}
+differentialMlBenchmarks(D=1,N=500)
+```
+
+The same benchmark can be used in any dimension, and we plot the two dimensional test at figure \@ref(fig:differentialMlBenchmarks2)
+
+```{python, label = differentialMlBenchmarks2, fig.cap="A benchmark of two-dimensional differential machines", warning = FALSE, message = FALSE, results = "hide"}
+differentialMlBenchmarks(D=2,N=500)
+```
+
+As noticed in these figures
+
+* Two runs of AAD computations leads to two different results (pytorch-grad1 and 2) : NNs do not define deterministic differential learning machines, due to the stochastic descent algorithm, here Adam optimizer.
+* Differential neural networks tends to be less accurate than a kernel-based gradient operator.
+
+## Taylor expansions using differential learning machines
+
+Taylor expansions using differential learning machines are common for several applications, hence we propose a general function to compute them, that we describe in this section. We start to make a reminder of Taylor expansions.
+
+
+Let us consider a smooth, vector-valued function $f$, defined over $\RR^D$. Considering any sequences of points $Z,X$ having the same length, the following formula is called a Taylor's expansion of order $p$:
+
+$$
+f(Z) = f(X) + (Z-X)\cdot (\nabla f)(X) + \frac{1}{2}\Big( (Z-X)(Z-X)^T \Big)\cdot (\nabla^2 f)(X) +\ldots+ |Z-X|^p\epsilon(f) (\#eq:taylor)
+$$
+
+where :
+
+- $(z-x) := \Big( z_i-x_i\Big)_{i,j=0..D}$ is a $D$-dimensional vector.
+- $(z-x)(z-x)^T := \Big( (z_i-x_i)(z_j-x_j)\Big)_{i,j=0..D}$ is a $D\times D$ matrix.
+- $a \cdot b$ denotes the usual Frobenius inner product.
+- $\nabla f$,$\nabla^2 f$ holds for the gradient ($D$-dimensional vector) and the Hessian ($D\times D$ matrix).
+- $|z-x|$ is the standard Euclidean distance, $\epsilon(f)$ is a function depending on $f$ and its derivatives that we do not detail here. The term $|Z-X|^3\epsilon(f)$ represents the error committed by this approximation formula.
+
+
+In this section, we study Taylor formulas using differential learning machines to approximate the derivatives, that is approximating $\nabla f(x)$,$\nabla^2 f(x)$ with
+$$ 
+ \nabla f_x = \nabla_Z \mathcal{P}_m\big(X,Y,Z=x,f(X)\big), \nabla^2 f_x = \nabla^2_Z \mathcal{P}_m\big(X,Y,Z=x,f(X)\big).
+$$
+
+following the previous section, we performed a benchmark of a second-order Taylor formula using three approaches
+
+- The first one is the reference value for this test. It uses the AAD to compute both $\nabla f_x,\nabla^2 f_x$.
+- The second one, uses a neural network defined with Pytorch together with AAD tools.
+- The third one uses the hessian operator from codpy.
+
+The test is genuinely multi-dimensional. We illustrate the results starting from the one-dimensional case in figure \@ref(fig:taylortest1) and Figure \@ref(fig:taylortest2) illustrate the two dimensional case.
+
+```{python, label = taylortest1, fig.cap="A benchmark of one-dimensional learning machine second-order Taylor expansion", warning = FALSE, message = FALSE, results = "hide"}
+taylor_test(**get_param21(),taylor_order = 2)
+```
+
+<!-- ```{python, label = taylortest2, fig.cap="A benchmark of two-dimensional learning machine second-order Taylor expansion", warning = FALSE, message = FALSE, results = "hide"} -->
+<!-- taylor_test(**get_param21(),taylor_order = 2,numbers = (2, 500, 500, 500 ), Z_min=-1.1,Z_max=1.1,) -->
+<!-- ``` -->
+

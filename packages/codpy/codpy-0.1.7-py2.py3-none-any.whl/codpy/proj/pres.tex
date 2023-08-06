@@ -1,0 +1,854 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={Generative Models and Time Series Predictions for Financial Applications with Kernels Methods},
+            pdfauthor={Jean-Marc Mercier \^{}\textbackslash{}ddag},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{graphics}
+\usepackage{amsmath, amsfonts, amsthm, amssymb, amscd,a4wide}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{float}
+\usepackage{epstopdf}
+\usepackage{subcaption}
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\footnotesize #1]%
+{\raggedright\footnotesize #1}}
+
+%\usepackage[linesnumbered,ruled]{algorithm2e}
+
+%%
+
+% ces lignes permet de ne pas mettre en couleurs les liens hypertextes dans le fichier PDF
+% cependant il est toujours possible de cliquer dessus
+%
+
+\usepackage{xcolor} %package pour les couleurs
+\usepackage{tikz} % package principal TikZ
+\usetikzlibrary{arrows} %librairieoptionnelle PGF
+\usepackage{adjustbox}
+
+\usepackage{slashed}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{linktoc = all}                % hyperref settings
+%\hypersetup{pdfborderstyle={/S/U/W 0.5}}  % hyperref settings
+\hypersetup{hidelinks}
+\hypersetup{bookmarksnumbered}
+\pdfstringdefDisableCommands{%
+  \def\({}%
+  \def\){}%
+  \def\\{}%
+  \def\infty{\042\036}%
+  \def\Tr{Tr }%
+}
+%%%%%%%%% 
+\newtheorem{definition}{Definition}[section]
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theoremdefinition}[definition]{Theorem and Definition}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}[definition]{Example}
+\newtheorem{HP}{Highlighted point}
+% 
+\numberwithin{equation}{section}
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+\newcommand \be   {\begin{equation}}
+\newcommand \bel {\begin{equation}\label}
+\newcommand \ee   {\end{equation}}
+\newcommand \dist {{\mbox{\em dist }}}
+\newcommand \sgn {{\text{sgn }}}
+\newcommand \meas {{\text{meas }}}
+\newcommand \supp {{\text{supp }}}
+\newcommand \Id   {{\text{Id}}}
+\newcommand \smin {s^{\text{min}}}
+\newcommand \smax {s^{\text{max}}}
+\newcommand \lmin {{\lam^{\text{min}}}}
+\newcommand \lmax {{\lam^{\text{max}}}}
+\newcommand \RR    {\mathbb{R}}
+\newcommand \NN    {\mathbb{N}}
+\newcommand \ZZ    {\mathbb{Z}}
+\newcommand \QQ    {\mathbb{Q}}
+\newcommand \PP    {\mathbb{P}}
+\newcommand \EE    {\mathbb{E}}
+\newcommand \Rp    {\mathbb{R}^\plus }
+\newcommand \RRR    {\mathbf{R}}
+\newcommand \SSS    {\mathbf{S}}
+\newcommand \Scal    {\mathcal{S}}
+\newcommand \Pcal    {\mathcal{P}}
+\newcommand \Tbar {\overline T}
+\newcommand \Acal {\mathcal A}
+\newcommand \Bcal {\mathcal B}
+\newcommand \Ccal    {\mathcal{C}}
+\newcommand \Mcal    {\mathcal{M}}
+\newcommand \Lcal    {\mathcal{L}}
+\newcommand \Jcal    {\mathcal{J}}
+\newcommand \Kcal    {\mathcal{K}}
+\newcommand \Wbf {\mathbf W}
+\newcommand \Hcal    {\mathcal{H}}
+\newcommand \Tcal    {\mathcal{T}}
+\newcommand \lam   {\lambda}
+\newcommand \sig   {\sigma}
+\newcommand \gam   {\gamma}
+\newcommand \ubar   {\overline u}
+\newcommand \HH    {\mathcal{H}}
+\newcommand \CC    {\mathcal{C}}
+\newcommand \Ncal    {\mathcal{N}}
+\newcommand \DDD    {\mathcal{D}}
+\newcommand \RN    {{\RR^N}}
+\newcommand \eps   {\epsilon}
+\newcommand \Lam   {\Lambda}
+\newcommand \BB    {{\mathcal B}}
+\newcommand \WW    {{\mathcal W}}
+\newcommand \MM    {{M}}
+\newcommand \AAA    {{\mathcal A}}
+\newcommand \JJ    {{\mathcal J}}
+\newcommand \II    {{\mathcal I}}
+\newcommand \LLL    {{\mathbf L}}
+\newcommand \VVV    {{\mathbf V}}
+\newcommand \QQQ    {{\mathbf Q}}
+\newcommand \Rd    {{\mathbb{R}^d}}
+\newcommand \CCD    {{\mathbb{C}^D}}
+%
+\newcommand \del   {\partial}
+\newcommand \blam  {{\underline\lambda}}
+\newcommand \lamb  {{\overline\lambda}}
+\newcommand \Bzero    {{\mathcal{B}_{\delta_0}}}
+\newcommand \Bone    {{\mathcal{B}_{\delta_1}}}
+\newcommand \Btwo    {{\mathcal{B}_{\delta_2}}}
+\newcommand \la         \langle
+\newcommand \ra     \rangle
+\newcommand \ab     {\overline a}
+\newcommand \mmm  {p}
+
+\newcommand \Ybf {\mathbf Y} 
+\newcommand \Sbf {\mathbf S} 
+\newcommand \hbf {\mathbf h} 
+
+\newcommand \Sbar {\overline S}
+\newcommand \Aund {\underline{\Acal}}
+\newcommand \Aove {\overline{\Acal}}
+
+\newcommand \plus {+}
+
+\newcommand \RD {{\mathbb R}^D}
+
+
+\usepackage{mathrsfs}
+
+%*************************************************************************************
+\usepackage{authblk}
+
+
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+
+
+ 
+ 
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black ]
+\tikzstyle{io} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black] 
+%\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, text - white, draw=black, fill=black!30] 
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{bbox} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text = white, draw=black, fill=black]
+\tikzstyle{pp} = [rectangle, minimum width=3cm, minimum height=0.5cm, text centered, draw=black] 
+\tikzstyle{pp1} = [rectangle, draw=black!50, thick, minimum width=0.5cm, minimum height = 0.5cm]
+\tikzstyle{crl} = [circle, draw=black!50, thick, minimum size = 1.5cm]
+\tikzstyle{crl1} = [circle, draw=black!50, thick, minimum size = 0.7cm]
+\tikzstyle{line} = [draw, -latex']
+\newsavebox{\tempbox}
+
+\tikzstyle{block} = [draw, rectangle, 
+    minimum height=3em, minimum width=6em]
+\tikzstyle{sum} = [draw, fill=blue!20, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+\title{Generative Models and Time Series Predictions for Financial Applications
+with Kernels Methods}
+\author{Jean-Marc Mercier \(^\ddag\)
+\footnote{MPG-Partners, 136 Boulevard Haussmann, 75008 Paris, France. jean-marc.mercier@mpg-partners.com}}
+\date{31 10 2022}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This presentation deals with generative and predictive models based on
+kernel methods. After introducing our kernel library, We illustrate
+these models with a toy-example of risk framework based on time series
+forecasting, that could be used for real-time P\&L explanation of large
+derivative portfolios, or other risk measures as Expected Positive
+Exposure or Credit Valuation Risk.
+\end{abstract}
+
+\section{Introduction}\label{introduction}
+
+In this jupyter notebook presentation, we would like to introduce our
+internal AI library, highlighting it with two interesting applications
+of machine learning to finance, namely:
+
+\begin{itemize}
+\item Synthetic data generation. For finance applications, there exists numerous applications, among them are time series forecast of risk sources that we illustrate in this presentation. The most-known technologies for producing synthetic datas are neural networks based, as for instance GAN, WGAN, CLGAN, that are at heart of synthetic images or videos production.
+\item Predictives methods. Here too, applications for finance are numerous, and we illustrate here an application to real-time P\&L computations. The most-known technologies for predictive methods are for instance neural networks, decision trees, etc...
+\end{itemize}
+
+For this presentation, we used our open source library, codpy
+\footnote{The codpy user manual is accessible 
+\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4077158}{clicking here}. For installation, follow the guidelines \href{https://pypi.org/project/codpy/}{clicking here}.}.
+Codpy is a kernel based technology (RHKS - Reproducing Kernel Hilbert
+Space theory), that we have developped and are using for the internal
+needs at MPG-Partners. Codpy is an alternative library to other AI
+libraries (pytorch, theano, tensorflow, etc\ldots{}) that has some nice
+properties for finance applications:
+
+\begin{itemize}
+\item It is an explainable method. All produced results come with computable error estimates allowing to qualify them. Error estimates allow moreover to link naturally to Optimal Transport Theory based tools, used thoroughly by this library.  
+\item It is a performing and accurate library, particularly while dealing with sparse input data (small training set).
+\item It can compute efficiently a wide zoo of differential operators. Indeed, this library was thought primarily to solve mathematical physics based problems, and is used to approximate some dynamical systems described by a PDE (Partial Differential Equations) model.
+\end{itemize}
+
+\newpage
+
+This presentation is structured as follows :
+
+\tableofcontents
+
+\newpage
+
+\section{A quick tour to kernels
+methods}\label{a-quick-tour-to-kernels-methods}
+
+\subsection{Predictive methods with
+kernels}\label{predictive-methods-with-kernels}
+
+Artificial Intelligence (AI) is mainly based over predictions, that are
+nothing else but extrapolation methods.
+
+\textbf{AI Vocabulary:}. \(X,f(X)\) is the \textbf{training set}. \(Z\)
+is the \textbf{test set}, \(f_z\) is the \textbf{prediction set},
+\(f(Z)\) is the reference (ground truth) value. \(Y\) is the
+\textbf{parameter set}, that are internal parameters to a prediction
+algorithm.
+
+\subsubsection{Projection (extrapolation) and differential
+operators}\label{projection-extrapolation-and-differential-operators}
+
+Kernel methods define a quite simple prediction operator, that we
+present now briefly. Let \(X\) (resp. \(Y,Z\)) be a set of \(N_x\)
+(resp. \(N_y,N_Z\)) \textbf{distinct} points in dimension \(D\), \(f\)
+any continuous, vector valued, function. Notations
+
+\begin{equation}\label{X}
+X :=\{x^n_d\}_{n,d=1}^{N_x,D} \in \RR^{N_x,D}, \quad f(X) \in \RR^{N_x,D_f}
+\end{equation}
+
+Let \(k\) be a kernel, that is a symmetric and positive definite (see
+\cite{BTA} for a definition) scalar function
+\(k: \mathcal{X} \times \mathcal{X} \mapsto \mathbb{R}\). Consider
+\(K(X,Y)\) the Gram matrix, i.e.
+\(K(X,Y):=(k(x^n,y^m))_{n,m = 1}^{N_x,N_y}\). We define a
+\textbf{prediction} as
+
+\begin{equation} \label{projection}
+f_Z := \mathcal{P}_{k}(X,Y,Z)f(X), \quad \mathcal{P}_{k}(X,Y,Z) := K(Y,Z) K(X,Y)^{-1}.
+\end{equation}
+
+The inverse is computed using a least-squares approach, as follows,
+\(K(X,Y)^{-1} = ( K(Y,X)K(X,Y)+ \epsilon)^{-1}K(Y,X)\), where
+\(\epsilon\) is a (optional) regularization term, as is the Tychonov
+regularization method, or other ones. A classical choice for the
+parameter set are \(Y=X\) (extrapolation), or \(Y \subset X\)
+(interpolation - Nystrom method). Starting from the formula
+\eqref{projection}, we can define all kind of differential operators, as
+for instance the gradient
+
+\begin{equation} \label{grad}
+\nabla f_Z = (\nabla_Z K)(Y,Z) K(X,Y)^{-1} f(X).
+\end{equation}
+
+CoDpy function:
+\(f_z = \text{ op.projection}(X,Y,Z,f(X), k,...),\nabla f_Z = \text{op.nabla}(X,Y,Z,f(X), k,...)\).
+
+\subsubsection{Illustration with MNIST : hand-written
+recognition}\label{illustration-with-mnist-hand-written-recognition}
+
+\subsection{Error estimates}\label{error-estimates}
+
+The projection operator \eqref{projection} benefits from the following
+error estimate (see \cite{PLF-JMM-estimate}), that are confidence levels
+
+\begin{equation} \label{error}
+\| f(Z) - f_Z \|_{\ell^2} \le D_k(X,Y,Z) \| f \|_{\mathcal{H}_k},
+\end{equation}
+
+where \(D_k(X,Y,Z) := D_k(X,Y)+D_k(Y,Z)\), and where the discrepancy
+between two discrete probability measures \(X\) and \(Y\), induced by a
+kernel \(k\) is
+
+\begin{equation}\label{Dk}
+    D_k\big(X,Y\big)^2 := \frac{ \sum_{n,m=1}^{N_x}  k(x^n,x^m)}{N_x^2} + \frac{\sum_{n,m}^{N_y} k(y^n,y^m)}{N_y^2} - \frac{2 \sum_{n,m=1}^{N_x,N_y} k(x^n,y^m)}{N_x N_y}, 
+\end{equation}
+
+CoDpy function:
+\(D_k\big(X,Y\big)^2 = \text{ op.Dnm}(X,Y,k),\| f \|_{\mathcal{H}_k}=\text{ op.norm}(X, f(X),k)\)
+
+\subsubsection{Illustration with MNIST : discrepancy errors and
+scores}\label{illustration-with-mnist-discrepancy-errors-and-scores}
+
+\subsection{Clustering method}\label{clustering-method}
+
+CoDpy defines a clustering method as follows:
+
+\begin{equation} \label{cluster}
+ \bar{Y} = \arg \inf_{Y \in \RR^{D,N_Y}} D_k(X,Y),
+\end{equation}
+
+called \textbf{sharp discrepancy sequences}. This approach is an
+alternative to more classical clustering algorithms as K-means ones.
+CoDpy function: op.sharp\_discrepancy(X,Y,k,\ldots{}).
+
+\subsubsection{Illustration with the MNIST : clustering and scores
+enhancement}\label{illustration-with-the-mnist-clustering-and-scores-enhancement}
+
+In this section, we would like to illustrate some benchmarks
+capabilities of our framework, as well as illustrating a first method to
+synthetic data generation, that is clustering.
+
+\textbf{A comparison between methods}. Clustering provides an
+alternative, and interesting way to synthetic data generation. Codpy
+provides facilities to plug painlessly other algorithms libraries. We
+take advantages to benchmark scikit's k-means algorithm implementation,
+based over minimization of the ``inertia'' functional, that is the sum
+of distances of all points to the centroid in a cluster. We compare
+k-means to codpy clustering method (sharp dicrepancy sequences) in what
+follows.
+
+\begin{verbatim}
+## C:\informatique\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:1334: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=4.
+##   warnings.warn(
+## C:\informatique\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:1334: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=4.
+##   warnings.warn(
+## C:\informatique\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:1334: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=4.
+##   warnings.warn(
+## C:\informatique\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:1334: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=4.
+##   warnings.warn(
+## C:\informatique\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:1334: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=4.
+##   warnings.warn(
+## C:\informatique\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:1334: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=4.
+##   warnings.warn(
+## C:\informatique\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:1334: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=4.
+##   warnings.warn(
+## C:\informatique\Python39\lib\site-packages\sklearn\cluster\_kmeans.py:1334: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=4.
+##   warnings.warn(
+\end{verbatim}
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-3-1.pdf}
+\caption{\label{plot13}Scikit and codpy clusters interpreted as images}
+\end{figure}
+
+Note that the cluster centroids themselves are 784-dimensional points,
+and can themselves be interpreted as the ``typical'' digit within the
+cluster. Figure \ref{plot13} plots some examples of computed clusters,
+interpreted as images. As can be seen, they are perfectly recognizable.
+
+We illustrate a benchmark plot, displaying the computed performance
+indicator of scikit's k-means and codpy's MMD minimization-based
+algorithm in terms of MMD, inertia, accuracy scores (when applicable)
+and execution time. The higher the scores and the lower are the inertia
+and MMD the better.
+
+\includegraphics{./CodPyTempFigs/tMNIST-1.pdf}
+
+The scores are quite high, compared to supervised methods for similar
+size of training set.
+
+\newpage 
+
+\newpage
+
+\subsection{Generative methods with kernels - A quick introduction to
+the sampler
+method}\label{generative-methods-with-kernels---a-quick-introduction-to-the-sampler-method}
+
+A generative method is a method that take as input discrete samples of a
+given distribution, and reproduce it, hypothesizing that this
+distribution is continuous. CoDpy function: alg.sampler(X,Y,k,\ldots{})
+
+For illustration goals, we apply this algorithm for two bi-modal
+distributions based on a Gaussian and a Student's distribution namely
+\(\mathcal{N}(0,1)\) and \(t(\nu=5)\). We use here two distinct sets
+(training set \(X\) and test set \(Z\)) to highlight some convergence
+properties of the sampler algorithm:
+
+\begin{itemize}\setlength{\itemsep}{0pt}
+    \item IID : $X,Z$ are iid samples of $\mathbb{X}$.
+    \item SDS : $X,Z$ are sharp discrepancy sequences (SDS) of $\mathbb{X}$.
+\end{itemize}
+
+For both sets, the size of the training set is \(N_x = 1000\), whereas
+the size of the test set is \(N_z=500\). We plot the results computed by
+the sampler algorithm in Figure \ref{plotiid} (resp. Figure
+\ref{plotsds}) for the IID case (resp. SDS case).
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-4-1.pdf}
+\caption{\label{plotiid} Density of generated IID distributions}
+\end{figure}
+
+Once generated, we compute various statistic indicators to check the
+similarities between both distributions (historical and generated)
+
+\begin{table}[H]
+
+\caption{\label{tab:101iid}Statistics of IID-generated distributions}
+\centering
+\begin{tabular}{l|l|l|l|l}
+\hline
+Mean & Variance & Skewness & Kurtosis & KS test\\
+\hline
+-0.047(0.39) & 0.0047(-0.077) & 26(26) & -1.9(-1.9) & 0.0024(0.05)\\
+\hline
+\end{tabular}
+\end{table}
+
+As can be seen, these algorithms are sensitive to input data. In
+particular, using clustering methods improves algorithm performances.
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-5-1.pdf}
+\caption{\label{plotsds} Density of generated SDS distributions}
+\end{figure}
+
+\begin{table}[H]
+
+\caption{\label{tab:101sds}Statistics of SDS-generated distributions}
+\centering
+\begin{tabular}{l|l|l|l|l}
+\hline
+Mean & Variance & Skewness & Kurtosis & KS test\\
+\hline
+0.013(0.17) & 0.0013(-0.068) & 26(26) & -1.9(-1.9) & 0.15(0.05)\\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+\subsubsection{Retrieve any distribution, in any
+dimension\ldots{}}\label{retrieve-any-distribution-in-any-dimension}
+
+The previous distribution is a 3-dimensional one, with three stocks
+market data. We outlight here that synthetic data generation is a
+general approach, and one can consider any distributions, as for
+instance the MNIST database, consisting of 60000 hand-written digits,
+having 28x28=784 pixels resolution. We consider it as a discrete
+784-dimensional distribution having 60000 samples, the figure
+\ref{mnist} showing the first hundred ones
+
+The incentive to use this data set is to illustrate how our algorithms
+scale with dimensionalities, as well as linking towards classical
+learning machine problems.
+
+\newpage
+
+\newpage
+
+\subsubsection{Illustration : resample the
+MNIST}\label{illustration-resample-the-mnist}
+
+Note that this resampling function is a general one, and one can
+generate from any distribution. For instance, the same algorithm applied
+to the hand-written digits distribution \ref{mnist} produced the
+following resampling examples
+\footnote{We learnt from a distribution consisting of the first 500 over the 60000 hand-written digits of the MNIST database images for performance purposes.}
+
+\section{Application settings - Input
+data}\label{application-settings---input-data}
+
+\subsection{Retrieve market data}\label{retrieve-market-data}
+
+Let us download real market data, retrieved from January 1, 2016 to
+December 31, 2021, for three assets: Google, Apple and Amazon. These
+data are plot Figure \ref{plot1}.
+
+\includegraphics{./CodPyTempFigs/unnamed-chunk-8-1.pdf} To produce this
+figure, we use the following global settings:
+
+\begin{table}[H]
+
+\caption{\label{tab:101}Global settings}
+\centering
+\begin{tabular}{l|l|l|l}
+\hline
+begin date & end date & pricing date & symbols\\
+\hline
+01/06/2016 & 01/06/2022 & 01/06/2022 & c("AAPL", "GOOGL", "AMZN")\\
+\hline
+\end{tabular}
+\end{table}\newpage
+
+\subsection{Set a portfolio of
+instruments}\label{set-a-portfolio-of-instruments}
+
+We define a payoff function as \(P(t,x) \mapsto P(t,x) \in \RR^{D_P}\),
+with \(D_P\) corresponding to the number of instrument. We consider here
+a single instrument \(D_P=1\), the instrument being a basket option
+written on our underlyings. We represent this payoff in a
+two-dimensional figure with axis basket values in Figure \ref{plot2}.
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-9-1.pdf}
+\caption{\label{plot2} A payoff of an basket option}
+\end{figure}
+
+\newpage
+
+\subsection{Set a pricing engine}\label{set-a-pricing-engine}
+
+We define a pricing function as a payoff, that is a vector-valued
+function \((t,x) \mapsto P(t,x) \in \RR^{D_P}\). We represent this
+pricing function in a two-dimensional figure \ref{plot3} with axis
+basket values.
+
+The pricing function here is selected as a simple Black and Scholes
+formula, hence hypothesizing that the basket values are log normal
+\footnote{this choice is made for performance purposes here, but any pricing function can be plugged in.}
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-10-1.pdf}
+\caption{\label{plot3} Pricing as a function of time}
+\end{figure}
+
+\newpage
+
+\section{Synthetic market data
+generation}\label{synthetic-market-data-generation}
+
+\subsection{Fit a model to the historical
+distribution}\label{fit-a-model-to-the-historical-distribution}
+
+A model can be described by a stochastic differential equation. For
+instance consider a log-normal process, described by
+\(X_t = \mu X_t + X_t \sigma dB_t\), \(B_t\) being the standard Brownian
+motion, having solution
+\(X_t = X_s \exp( (t-s) (\mu - \sigma^2 /2) + \sqrt{t-s} \sigma \mathcal{N}(0,1))\),
+\(\mathcal{N}(0,1)\) being the normal law. Fitting this model to
+historical data plot at figure \ref{plot1} would consist in fitting the
+parameters \(\mu,\sigma\) to the historical data.
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-11-1.pdf}
+\caption{\label{plot4} Log return distribution of historical market
+data}
+\end{figure}
+
+Synthetic data generation introduces somehow a new paradigm, where known
+processes (as the standard Brownian \(B_t\)), are replaced by unknown
+random variable to fit. So instead of \eqref{SDE}, consider the
+following problem : define a process, having form
+
+\begin{equation}\label{PLR}
+  X_t = X_s \exp( (t-s) \mu + \sqrt{t-s} \mathbb{X}),
+\end{equation}
+
+where \(\mathbb{X}\) is an unknown random variable to fit to historical
+data. To that aim, consider the log transformation
+
+\begin{equation}\label{LOG}
+  \mathbb{X} = \frac{\ln(X_t) - \ln(X_s) - (t-s) \mu}{\sqrt{t-s}},
+\end{equation}
+
+in order to separate the random variable \(\mathbb{X}\) to fit to
+historical data. Figure \ref{plot4} plots the ditribution retrieved from
+our historical data after the transformation \eqref{PLR}.
+
+\newpage
+
+\subsection{Generate the distribution}\label{generate-the-distribution}
+
+We then provide a function, producing a continuous sampling function
+from any discrete input distribution. Figure \ref{plot5} is a result of
+a resample of the historical distribution
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-12-1.pdf}
+\caption{\label{plot5} Log return distribution of generated market data}
+\end{figure}
+
+\subsubsection{Check generated paths}\label{check-generated-paths}
+
+In the table \ref{tab:102}, we compute various statistical indicators,
+as the fourth moments and Kolmogorov-Smirnov tests, to challenge our
+generated data against the original one.
+
+\begin{table}[H]
+
+\caption{\label{tab:102}Stats for historical (generated) data }
+\centering
+\begin{tabular}{l|l|l|l}
+\hline
+  & AAPL & AMZN & GOOGL\\
+\hline
+Mean & 0.0013(0.002) & 0.001(0.0018) & 0.00073(0.0012)\\
+\hline
+Variance & -0.48(-0.26) & -0.14(0.026) & -0.48(-0.26)\\
+\hline
+Skewness & 0.0003(0.00025) & 0.00031(0.00027) & 0.00025(0.00019)\\
+\hline
+Kurtosis & 7.4(4.2) & 3.7(3) & 6.5(3.5)\\
+\hline
+KS test & 0.41(0.05) & 0.36(0.05) & 0.49(0.05)\\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+\subsection{Build and check generated
+paths}\label{build-and-check-generated-paths}
+
+Ten examples of re-generated paths in figure \ref{plot6}. These paths
+can be used for Monte-Carlo sampling, and we can also build PDE (Partial
+Differential Equations) pricers, whatever the dimensions are.
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-13-1.pdf}
+\caption{\label{plot6} Ten examples of generated paths}
+\end{figure}
+
+\newpage
+
+\section{Predictive pricing methods}\label{predictive-pricing-methods}
+
+\subsection{Training set - VaR
+scenarios}\label{training-set---var-scenarios}
+
+According to \eqref{error}, the interpolation error committed by the
+projection operator \(P_k\) \eqref{projection}, defined on a set \(X\),
+is driven at any point \(z\) by the quantity \(D_k(z,X)\). We plot at
+Figure \ref{plot10} the isocontours of this error function for two
+distinct sets (red dots).
+
+\begin{itemize}
+\item (right) $X$ is generated as VaR scenarios for three dates $t^0-1,t^0,t^0+1$, with 10 days horizon.
+\item (left) $X$ is the historical data set.
+\end{itemize}
+
+The test set is generated as VaR scenarios with 5 days horizon (blue
+dots).
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-14-1.pdf}
+\caption{\label{plot10} Training and test set}
+\end{figure}
+
+The blue dots in Figure \ref{plot10} is the test set \(Z\), and
+corresponds to simulated, intraday, market values. This figure motivates
+the VaR-type scenario dataset on the left-hand side to minimize the
+interpolation error. Note that using the historical data set, might be
+of interest, if only historical data are available.
+
+Notice finally that there are three sets of red points at Figure
+\ref{plot10}-(a), as we considered VaR scenarios at three different
+times \(t^0-1,t^0,t^0+1\), because we are interested in approximating
+time derivatives for risk management, as the theta \(\partial_t P\).
+
+\newpage
+
+\subsection{Predict prices}\label{predict-prices}
+
+We plot the results of two methods to extrapolate the pricer function on
+the test set \(Z\) (codpy = kernel prediction, taylor = Taylor second
+order approximation) in Figure \ref{plot11}.We also plot the reference
+price (exact = reference price).
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-15-1.pdf}
+\caption{\label{plot11} Prices output}
+\end{figure}
+
+\newpage
+
+\subsection{Predict greeks}\label{predict-greeks}
+
+We can also compute greeks, using the operator \((\nabla P)_Z\) defined
+at \eqref{grad}. Here too, we plot the results of two methods to
+extrapolate the gradient of the pricer function on the test set \(Z\)
+(codpy = kernel prediction, taylor = Taylor second order approximation)
+in Figure \ref{plot12}. We also plot the reference greeks (exact =
+reference greeks). This figure should thus produce
+\((\nabla P)_Z=\big((\partial_t P)_Z, (\partial_{x_0} P)_Z, \ldots, (\partial_{x_D} P)_Z\big)\),
+that are \(D+1\) plots.
+
+\begin{figure}
+\centering
+\includegraphics{./CodPyTempFigs/unnamed-chunk-16-1.pdf}
+\caption{\label{plot12} Greeks output}
+\end{figure}
+
+\newpage
+
+\section{Conclusions}\label{conclusions}
+
+\subsection{What are the main points highlighted by this
+presentation}\label{what-are-the-main-points-highlighted-by-this-presentation}
+
+\begin{itemize}
+\item Synthetic data generation is a general, very handy tool, allowing to model and resample not only any given random variables, but also conditionally to other variables. For instance, we use our algorithms to generate synthetic risk measures conditioned to customers data.
+
+\item In this presentation, we start exploring a quite interesting application to risk modelling : we can revisit existing diffusion models, based usually on simple processes as Brownian motions, and propose a general method to calibration. Doing so, we hope to model risk sources more accurately.
+
+\item Predictive methods allow to approximate computationally expensive risk valuation functions by learning them from quite few discrete examples. This allows to build fast, real-time, pricing solutions, even for huge portfolios.
+
+\item However, one must be very careful as predictive methods, in the context of synthetic data generation, can be quite challenging, particularly while computing derivatives (greeks). We provide solutions, as clustering methods, to enhance the accuracy of such indicators.
+
+
+\end{itemize}
+
+\subsection{Going further}\label{going-further}
+
+\begin{itemize}
+
+\item As we can resample from historical data, calibrating  these data to quite general model, we can generate our own Monte-Carlo pricers built on top of these models.
+
+
+\item In the same vein, we can also build high dimensional PDE pricers using these models, a technology similar to Cox trees, but working whatever the number of risk sources are.
+
+\item PDE pricers avoid the "Monte-Carlo of Monte-Carlo" trap for risk-management systems. They allow to estimate risk measures as EEPE, or CVA, in very efficient manner.
+
+\item This presentation can be seen as a toy-prototype of a risk management system based on these ideas.
+
+\end{itemize}
+
+\begin{thebibliography}{00}
+
+\bibitem{GBRS}
+{\sc A. Gretton, K.M. Borgwardt, M. Rasch, B. Sch\"{o}lkopf, and A.J. Smola,}
+% {\sc Gretton, Arthur and Borgwardt, Karsten M. and Rasch, Malte and Sch\"{o}lkopf, Bernhard and Smola, Alexander J.}
+A kernel method for the two sample problems,
+Proc. 19th Int. Conf. on Neural Information Processing Systems, 2006, pp.~513--520.
+
+\bibitem{BTA}
+{\sc A. Berlinet and C. Thomas-Agnan,}
+{\it Reproducing kernel Hilbert spaces in probability and statistics,}
+Springer Science, Business Media, LLC, 2004.
+
+\bibitem{B2001} Bernhard Sch\"{o}lkopf, Ralf Herbrich, and Alexander J. Smola. A generalized representer theorem. In Computational learning theory, pages 416?426. Springer, 2001.
+\bibitem{LMM}
+{\sc LeFloch, Philippe G. and Mercier, Jean-Marc and Miryusupov, Shohruh}
+CodPy: A Python Library for Machine Learning, Mathematical Finance, and Statistics,  (April 6, 2022). Available at SSRN: https://ssrn.com/abstract=4077158 or http://dx.doi.org/10.2139/ssrn.4077158. CoDpy is available at
+\url{https://pypi.org/project/codpy/}
+
+
+\bibitem{PLF-JMM-estimate}
+{\sc P.G. LeFloch and J.-M. Mercier,}
+Mesh-free error integration in arbitrary dimensions: a numerical study of discrepancy functions,
+{\it Comput. Methods Appl. Mech. Engrg.} 369 (2020), 113245.
+
+\bibitem{PLF-JMM-Wilmott}
+{\sc P.G. LeFloch and J.-M. Mercier,}
+The transport‐based mesh‐free method: a short review,
+{\it Wilmott} vol. 2020, iss. 109, p. 52–57, 2020.
+
+
+\bibitem{EFO}
+{\sc Eckerli, Florian and Osterrieder, Joerg,}
+Generative Adversarial Networks in finance: an overview,
+{\it Comput. Methods Appl. Mech. Engrg.} http://dx.doi.org/10.48550/ARXIV.2106.06364 (2021).
+
+\end{thebibliography}
+
+\end{document}

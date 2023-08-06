@@ -1,0 +1,421 @@
+---
+title: "Generative Models and Time Series Predictions for Financial Applications with Kernels Methods"
+author: Jean-Marc Mercier $^\ddag$ \footnote{MPG-Partners, 136 Boulevard Haussmann, 75008 Paris, France. jean-marc.mercier@mpg-partners.com}
+date: "`r format(Sys.time(), '%d %m %Y')`"
+abstract: This presentation deals with generative and predictive models based on kernel methods. After introducing our kernel library, We illustrate these models with a toy-example of risk framework based on time series forecasting, that could be used for real-time P\&L explanation of large derivative portfolios, or other risk measures as Expected Positive Exposure or Credit Valuation Risk. 
+output:
+  pdf_document:
+    keep_tex: yes
+    includes:
+      in_header: article_sty.sty
+    number_sections: yes
+  html_document: default
+  word_document: default
+---
+
+```{r include=FALSE, echo = FALSE, code=xfun::read_utf8('preamble.R')}
+```
+
+
+```{python, results = 'hide'}
+from pres import *
+```
+
+
+# Introduction 
+
+In this jupyter notebook presentation, we would like to introduce our internal AI library, highlighting it with two interesting applications of machine learning to finance, namely:
+
+\begin{itemize}
+\item Synthetic data generation. For finance applications, there exists numerous applications, among them are time series forecast of risk sources that we illustrate in this presentation. The most-known technologies for producing synthetic datas are neural networks based, as for instance GAN, WGAN, CLGAN, that are at heart of synthetic images or videos production.
+\item Predictives methods. Here too, applications for finance are numerous, and we illustrate here an application to real-time P\&L computations. The most-known technologies for predictive methods are for instance neural networks, decision trees, etc...
+\end{itemize}
+For this presentation, we used our open source library, codpy \footnote{The codpy user manual is accessible 
+\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4077158}{clicking here}. For installation, follow the guidelines \href{https://pypi.org/project/codpy/}{clicking here}.}. Codpy is a kernel based technology (RHKS - Reproducing Kernel Hilbert Space theory), that we have developped and are using for the internal needs at MPG-Partners. Codpy is an alternative library to other AI libraries (pytorch, theano, tensorflow, etc...) that has some nice properties for finance applications:
+
+\begin{itemize}
+\item It is an explainable method. All produced results come with computable error estimates allowing to qualify them. Error estimates allow moreover to link naturally to Optimal Transport Theory based tools, used thoroughly by this library.  
+\item It is a performing and accurate library, particularly while dealing with sparse input data (small training set).
+\item It can compute efficiently a wide zoo of differential operators. Indeed, this library was thought primarily to solve mathematical physics based problems, and is used to approximate some dynamical systems described by a PDE (Partial Differential Equations) model.
+\end{itemize}
+
+\newpage
+
+This presentation is structured as follows :
+
+\tableofcontents
+
+\newpage
+
+# A quick tour to kernels methods 
+
+
+## Predictive methods with kernels 
+
+Artificial Intelligence (AI) is mainly based over predictions, that are nothing else but extrapolation methods. 
+
+\textbf{AI Vocabulary:}. $X,f(X)$ is the \textbf{training set}. $Z$ is the \textbf{test set}, $f_z$ is the \textbf{prediction set}, $f(Z)$ is the reference (ground truth) value. $Y$ is the \textbf{parameter set}, that are internal parameters to a prediction algorithm. 
+
+### Projection (extrapolation) and differential operators
+
+Kernel methods define a quite simple prediction operator, that we present now briefly. Let $X$ (resp. $Y,Z$) be a set of $N_x$ (resp. $N_y,N_Z$) **distinct** points in dimension $D$, $f$ any continuous, vector valued, function. Notations
+\begin{equation}\label{X}
+X :=\{x^n_d\}_{n,d=1}^{N_x,D} \in \RR^{N_x,D}, \quad f(X) \in \RR^{N_x,D_f}
+\end{equation} 
+Let $k$ be a kernel, that is a symmetric and positive definite (see \cite{BTA} for a definition) scalar function $k: \mathcal{X} \times \mathcal{X} \mapsto \mathbb{R}$.
+Consider $K(X,Y)$ the Gram matrix, i.e. $K(X,Y):=(k(x^n,y^m))_{n,m = 1}^{N_x,N_y}$. We define a \textbf{prediction} as
+\begin{equation} \label{projection}
+f_Z := \mathcal{P}_{k}(X,Y,Z)f(X), \quad \mathcal{P}_{k}(X,Y,Z) := K(Y,Z) K(X,Y)^{-1}.
+\end{equation}
+The inverse is computed using a least-squares approach, as follows, $K(X,Y)^{-1} = ( K(Y,X)K(X,Y)+ \epsilon)^{-1}K(Y,X)$, where $\epsilon$ is a (optional) regularization term, as is the Tychonov regularization method, or other ones. A classical choice for the parameter set are $Y=X$ (extrapolation), or $Y \subset X$ (interpolation - Nystrom method). Starting from the formula \eqref{projection}, we can define all kind of differential operators, as for instance the gradient
+\begin{equation} \label{grad}
+\nabla f_Z = (\nabla_Z K)(Y,Z) K(X,Y)^{-1} f(X).
+\end{equation}
+CoDpy function:
+$f_z = \text{ op.projection}(X,Y,Z,f(X), k,...),\nabla f_Z = \text{op.nabla}(X,Y,Z,f(X), k,...)$.
+
+
+### Illustration with MNIST : hand-written recognition
+
+
+## Error estimates
+
+The projection operator \eqref{projection} benefits from the following error estimate (see \cite{PLF-JMM-estimate}), that are  confidence levels
+\begin{equation} \label{error}
+\| f(Z) - f_Z \|_{\ell^2} \le D_k(X,Y,Z) \| f \|_{\mathcal{H}_k},
+\end{equation}
+where $D_k(X,Y,Z) := D_k(X,Y)+D_k(Y,Z)$, and where the discrepancy between two discrete probability measures $X$ and $Y$, induced by a kernel $k$ is
+\begin{equation}\label{Dk}
+    D_k\big(X,Y\big)^2 := \frac{ \sum_{n,m=1}^{N_x}  k(x^n,x^m)}{N_x^2} + \frac{\sum_{n,m}^{N_y} k(y^n,y^m)}{N_y^2} - \frac{2 \sum_{n,m=1}^{N_x,N_y} k(x^n,y^m)}{N_x N_y}, 
+\end{equation}
+CoDpy function: $D_k\big(X,Y\big)^2 = \text{ op.Dnm}(X,Y,k),\| f \|_{\mathcal{H}_k}=\text{ op.norm}(X,
+f(X),k)$
+
+### Illustration with MNIST : discrepancy errors and scores
+
+
+## Clustering method
+
+CoDpy defines a clustering method as follows:
+\begin{equation} \label{cluster}
+ \bar{Y} = \arg \inf_{Y \in \RR^{D,N_Y}} D_k(X,Y),
+\end{equation}
+called \textbf{sharp discrepancy sequences}. This approach is an alternative to more classical clustering algorithms as K-means ones. CoDpy function: op.sharp_discrepancy(X,Y,k,...).
+
+### Illustration with the MNIST : clustering and scores enhancement
+
+In this section, we would like to illustrate some benchmarks capabilities of our framework, as well as illustrating a first method to synthetic data generation, that is clustering.
+
+**A comparison between methods**. Clustering provides an alternative, and interesting way to synthetic data generation. Codpy provides facilities to plug painlessly other algorithms libraries. We take advantages to benchmark scikit's k-means algorithm implementation, based over minimization of the "inertia" functional, that is the sum of distances of all points to the centroid in a cluster. We compare k-means to codpy clustering method (sharp dicrepancy sequences) in what follows. 
+
+```{python,fig.width=10, fig.height=0.1, fig.fullwidth=TRUE, fig.cap = "\\label{plot13}Scikit and codpy clusters interpreted as images"}
+scenario_generator_, mnist_results = MNIST_clustring(scenarios_list = [ (-1, 1000, 2**i,-1) for i in np.arange(5,9,1)])
+```
+
+Note that the cluster centroids themselves are 784-dimensional points, and can themselves be interpreted as the "typical" digit within the cluster. Figure \ref{plot13} plots some examples of computed clusters, interpreted as images. As can be seen, they are perfectly recognizable.
+
+We illustrate a benchmark plot, displaying the computed performance indicator of scikit's k-means and codpy's MMD minimization-based algorithm in terms of MMD, inertia, accuracy scores (when applicable) and execution time. The higher the scores and the lower are the inertia and MMD the better.
+
+```{python, label = tMNIST,results = "hide"}
+kwargs = {"mp_max_items" :3, "mp_ncols" : 3 }
+scenario_generator_.compare_plots(
+    axis_field_labels = [("Ny","scores"),("Ny","discrepancy_errors"),("Ny","inertia")], **kwargs)
+```
+
+The scores are quite high, compared to supervised methods for similar size of training set.
+
+\newpage 
+
+
+\newpage
+
+## Generative methods with kernels - A quick introduction to the sampler method
+
+A generative method is a method that take as input discrete samples of a given distribution, and reproduce it, hypothesizing that this distribution is continuous. CoDpy function: alg.sampler(X,Y,k,...)
+
+For illustration goals, we apply this algorithm for two bi-modal distributions based on a Gaussian and a Student's distribution namely $\mathcal{N}(0,1)$ and  $t(\nu=5)$. We use here two distinct sets (training set $X$ and test set $Z$) to highlight some convergence properties of the sampler algorithm:
+
+\begin{itemize}\setlength{\itemsep}{0pt}
+    \item IID : $X,Z$ are iid samples of $\mathbb{X}$.
+    \item SDS : $X,Z$ are sharp discrepancy sequences (SDS) of $\mathbb{X}$.
+\end{itemize}
+For both sets, the size of the training set is $N_x = 1000$, whereas the size of the test set is $N_z=500$. We plot the results computed by the sampler algorithm in Figure \ref{plotiid} (resp. Figure \ref{plotsds}) for the IID case (resp. SDS case).
+
+```{python, fig.cap="\\label{plotiid} Density of generated IID distributions",results="hide"}
+params = get_cdnordea_param()    
+params['grid_projection']=False
+params = generative_methods(params)
+table1 = params['table'][0]
+params['graphic'](**params)
+```
+
+Once generated, we compute various statistic indicators to check the similarities between both distributions (historical and generated)
+
+```{r, results = 'asis',label = '101iid'}
+pyresults <- py$table1
+knitr::kable(pyresults, caption = "Statistics of IID-generated distributions", escape = FALSE)  %>%
+      kable_styling(latex_options = c("repeat_header","HOLD_position"))
+```
+
+As can be seen, these algorithms are sensitive to input data. In particular, using clustering methods improves algorithm performances.
+
+```{python, fig.cap="\\label{plotsds} Density of generated SDS distributions",results="hide"}
+params['grid_projection']=True
+params = generative_methods(params)
+tablesds = params['table'][0]
+params['graphic'](**params)
+```
+
+
+```{r, results = 'asis',label = "101sds"}
+pyresults <- py$tablesds
+knitr::kable(pyresults, caption = "Statistics of SDS-generated distributions", escape = FALSE)  %>%
+      kable_styling(latex_options = c("repeat_header","HOLD_position"))
+```
+
+\newpage
+
+### Retrieve any distribution, in any dimension...
+
+The previous distribution is a 3-dimensional one, with three stocks market data. We outlight here that synthetic data generation is a general approach, and one can consider any distributions, as for instance the MNIST database, consisting of 60000 hand-written digits, having 28x28=784 pixels resolution. We consider it as a discrete 784-dimensional distribution having 60000 samples, the figure \ref{mnist} showing the first hundred ones
+```{python,fig.cap = "\\label{mnist} MNIST - distribution of 60 000 hand-written digits", results = 'hide'}
+mnist = kernel_image_generator()
+imshow(mnist['imx'], cmap='gray')
+```
+
+The incentive to use this data set is to illustrate how our algorithms scale with dimensionalities, as well as linking towards classical learning machine problems.
+
+\newpage
+
+\newpage
+
+### Illustration : resample the MNIST
+
+Note that this resampling function is a general one, and one can generate from any distribution. For instance, the same algorithm applied to the hand-written digits distribution \ref{mnist} produced the following resampling examples \footnote{We learnt from a distribution consisting of the first 500 over the 60000 hand-written digits of the MNIST database images for performance purposes.}
+
+```{python,fig.cap = "\\label{plotmnistg} Generated distribution of hand-written digits", results = 'hide'}
+imshow(mnist['imfz'], cmap='gray')
+```
+
+# Application settings - Input data
+
+## Retrieve market data
+
+Let us download real market data, retrieved from January 1, 2016 to December 31, 2021, for three assets: Google, Apple and Amazon. These data are plot Figure \ref{plot1}.
+
+```{python,fig.cap = "\\label{plot1} charts for Apple Amazon Google", results = 'hide'}
+params = retrieve_market_data()
+params['graphic'](**params)
+table1 = pd.DataFrame().append({'begin date': params['begin_date'], 'end date': params['end_date'],'pricing date': params['today_date'],'symbols': params['symbols']}, ignore_index=True)
+```
+To produce this figure, we use the following global settings:
+
+```{r, results = 'asis',label = 101}
+pyresults <- py$table1
+knitr::kable(pyresults, caption = "Global settings", escape = FALSE)  %>%
+      kable_styling(latex_options = c("repeat_header","HOLD_position"))
+```
+\newpage
+
+## Set a portfolio of instruments
+
+We define a payoff function as $P(t,x) \mapsto P(t,x) \in \RR^{D_P}$, with $D_P$ corresponding to the number of instrument. We consider here a single instrument $D_P=1$, the instrument being a basket option written on our underlyings. We represent this payoff in a two-dimensional figure with axis basket values in Figure \ref{plot2}.
+
+
+```{python,fig.cap = "\\label{plot2} A payoff of an basket option", results = 'hide'}
+params = get_instrument_param()
+params['graphic'](**params)
+```
+
+\newpage
+
+
+## Set a pricing engine
+
+We define a pricing function as a payoff, that is a vector-valued function $(t,x) \mapsto P(t,x) \in \RR^{D_P}$. We represent this pricing function in a two-dimensional figure \ref{plot3} with axis basket values.
+
+The pricing function here is selected as a simple Black and Scholes formula, hence hypothesizing that the basket values are log normal \footnote{this choice is made for performance purposes here, but any pricing function can be plugged in.}
+
+```{python,fig.cap = "\\label{plot3} Pricing as a function of time", results = 'hide'}
+params = get_pricer_param()
+params['graphic'](**params)
+```
+
+\newpage
+
+# Synthetic market data generation
+
+## Fit a model to the historical distribution
+
+A model can be described by a stochastic differential equation. For instance consider a log-normal process, described by
+$X_t = \mu X_t + X_t \sigma dB_t$, $B_t$ being the standard Brownian motion, having solution $X_t = X_s \exp( (t-s) (\mu - \sigma^2 /2) + \sqrt{t-s} \sigma \mathcal{N}(0,1))$, $\mathcal{N}(0,1)$ being the normal law. Fitting this model to historical data plot at figure \ref{plot1} would consist in fitting the parameters $\mu,\sigma$ to the historical data.
+
+```{python,fig.cap = "\\label{plot4} Log return distribution of historical market data", results = 'hide'}
+params = get_model_param()
+params['graphic'](**params)
+```
+
+Synthetic data generation introduces somehow a new paradigm, where known processes (as the standard Brownian $B_t$), are replaced by unknown random variable to fit. So instead of \eqref{SDE}, consider the following problem : define a process, having form
+\begin{equation}\label{PLR}
+  X_t = X_s \exp( (t-s) \mu + \sqrt{t-s} \mathbb{X}),
+\end{equation}
+where $\mathbb{X}$ is an unknown random variable to fit to historical data. To that aim, consider the log transformation
+\begin{equation}\label{LOG}
+  \mathbb{X} = \frac{\ln(X_t) - \ln(X_s) - (t-s) \mu}{\sqrt{t-s}},
+\end{equation}
+in order to separate the random variable $\mathbb{X}$ to fit to historical data. Figure \ref{plot4} plots the ditribution retrieved from our historical data after the transformation \eqref{PLR}.
+
+\newpage
+
+## Generate the distribution
+
+We then provide a function, producing a continuous sampling function from any discrete input distribution. Figure \ref{plot5} is a result of a resample of the historical distribution
+
+```{python,fig.cap = "\\label{plot5} Log return distribution of generated market data", results = 'hide'}
+params = get_generated_param()
+params['graphic'](**params)
+stats = stats_df(params['transform_h'], params['transform_g']).T
+```
+
+### Check generated paths
+
+In the table \ref{tab:102}, we compute various statistical indicators, as the fourth moments and Kolmogorov-Smirnov tests, to challenge our generated data against the original one.
+
+```{r, results = 'asis',label = 102}
+pyresults <- py$stats
+knitr::kable(pyresults, caption = "Stats for historical (generated) data ", escape = FALSE)  %>%
+      kable_styling(latex_options = c("repeat_header","HOLD_position"))
+```
+
+\newpage
+
+## Build and check generated paths
+
+Ten examples of re-generated paths in figure \ref{plot6}. These paths can be used for Monte-Carlo sampling, and we can also build PDE (Partial Differential Equations) pricers, whatever the dimensions are.
+
+```{python,fig.cap = "\\label{plot6} Ten examples of generated paths", results = 'hide'}
+params = generated_paths()
+params['graphic'](**params)
+```
+
+\newpage
+
+# Predictive pricing methods
+
+
+## Training set - VaR scenarios
+
+According to \eqref{error}, the interpolation error committed by the projection operator \(P_k\) \eqref{projection}, defined on a set \(X\), is driven at any point \(z\) by the quantity \(D_k(z,X)\). We plot at Figure \ref{plot10} the isocontours of this error function for two distinct sets (red dots).
+
+\begin{itemize}
+\item (right) $X$ is generated as VaR scenarios for three dates $t^0-1,t^0,t^0+1$, with 10 days horizon.
+\item (left) $X$ is the historical data set.
+\end{itemize}
+
+The test set is generated as VaR scenarios with 5 days horizon (blue dots).
+
+```{python, results = "hide", fig.cap="\\label{plot10} Training and test set", fig.height=5, fig.width=15 }
+params = get_var_data()
+params['graphic'](**params)
+```
+
+The blue dots in Figure \ref{plot10} is the test set $Z$, and corresponds to simulated, intraday, market values. This figure motivates the VaR-type scenario dataset on the left-hand side to minimize the interpolation error. Note that using the historical data set,  might be of interest, if only historical data are available.
+
+Notice finally that there are three sets of red points at Figure \ref{plot10}-(a), as we considered VaR scenarios at three different times $t^0-1,t^0,t^0+1$, because we are interested in approximating time derivatives for risk management, as the theta $\partial_t P$.
+
+\newpage
+
+## Predict prices
+
+We plot the results of two methods to extrapolate the pricer function on the test set $Z$ (codpy = kernel prediction, taylor = Taylor second order approximation) in Figure \ref{plot11}.We also plot the reference price (exact = reference price).
+
+```{python, results = "hide",fig.cap="\\label{plot11} Prices output" }
+params = predict_prices(params)
+params['graphic'](**params)
+```
+
+\newpage
+
+## Predict greeks
+
+We can also compute greeks, using the operator $(\nabla P)_Z$ defined at \eqref{grad}. Here too, we plot the results of two methods to extrapolate the gradient of the pricer function on the test set $Z$ (codpy = kernel prediction, taylor = Taylor second order approximation) in Figure \ref{plot12}. We also plot the reference greeks (exact = reference greeks). This figure should thus produce $(\nabla P)_Z=\big((\partial_t P)_Z, (\partial_{x_0} P)_Z, \ldots, (\partial_{x_D} P)_Z\big)$, that are $D+1$ plots.
+
+
+```{python, results = "hide",fig.cap="\\label{plot12} Greeks output" }
+params = predict_greeks()
+params['graphic'](**params)
+```
+
+
+\newpage
+
+# Conclusions
+
+## What are the main points highlighted by this presentation
+
+\begin{itemize}
+\item Synthetic data generation is a general, very handy tool, allowing to model and resample not only any given random variables, but also conditionally to other variables. For instance, we use our algorithms to generate synthetic risk measures conditioned to customers data.
+
+\item In this presentation, we start exploring a quite interesting application to risk modelling : we can revisit existing diffusion models, based usually on simple processes as Brownian motions, and propose a general method to calibration. Doing so, we hope to model risk sources more accurately.
+
+\item Predictive methods allow to approximate computationally expensive risk valuation functions by learning them from quite few discrete examples. This allows to build fast, real-time, pricing solutions, even for huge portfolios.
+
+\item However, one must be very careful as predictive methods, in the context of synthetic data generation, can be quite challenging, particularly while computing derivatives (greeks). We provide solutions, as clustering methods, to enhance the accuracy of such indicators.
+
+
+\end{itemize}
+
+## Going further
+
+
+\begin{itemize}
+
+\item As we can resample from historical data, calibrating  these data to quite general model, we can generate our own Monte-Carlo pricers built on top of these models.
+
+
+\item In the same vein, we can also build high dimensional PDE pricers using these models, a technology similar to Cox trees, but working whatever the number of risk sources are.
+
+\item PDE pricers avoid the "Monte-Carlo of Monte-Carlo" trap for risk-management systems. They allow to estimate risk measures as EEPE, or CVA, in very efficient manner.
+
+\item This presentation can be seen as a toy-prototype of a risk management system based on these ideas.
+
+\end{itemize}
+
+
+\begin{thebibliography}{00}
+
+\bibitem{GBRS}
+{\sc A. Gretton, K.M. Borgwardt, M. Rasch, B. Sch\"{o}lkopf, and A.J. Smola,}
+% {\sc Gretton, Arthur and Borgwardt, Karsten M. and Rasch, Malte and Sch\"{o}lkopf, Bernhard and Smola, Alexander J.}
+A kernel method for the two sample problems,
+Proc. 19th Int. Conf. on Neural Information Processing Systems, 2006, pp.~513--520.
+
+\bibitem{BTA}
+{\sc A. Berlinet and C. Thomas-Agnan,}
+{\it Reproducing kernel Hilbert spaces in probability and statistics,}
+Springer Science, Business Media, LLC, 2004.
+
+\bibitem{B2001} Bernhard Sch\"{o}lkopf, Ralf Herbrich, and Alexander J. Smola. A generalized representer theorem. In Computational learning theory, pages 416?426. Springer, 2001.
+\bibitem{LMM}
+{\sc LeFloch, Philippe G. and Mercier, Jean-Marc and Miryusupov, Shohruh}
+CodPy: A Python Library for Machine Learning, Mathematical Finance, and Statistics,  (April 6, 2022). Available at SSRN: https://ssrn.com/abstract=4077158 or http://dx.doi.org/10.2139/ssrn.4077158. CoDpy is available at
+\url{https://pypi.org/project/codpy/}
+
+
+\bibitem{PLF-JMM-estimate}
+{\sc P.G. LeFloch and J.-M. Mercier,}
+Mesh-free error integration in arbitrary dimensions: a numerical study of discrepancy functions,
+{\it Comput. Methods Appl. Mech. Engrg.} 369 (2020), 113245.
+
+\bibitem{PLF-JMM-Wilmott}
+{\sc P.G. LeFloch and J.-M. Mercier,}
+The transport‐based mesh‐free method: a short review,
+{\it Wilmott} vol. 2020, iss. 109, p. 52–57, 2020.
+
+
+\bibitem{EFO}
+{\sc Eckerli, Florian and Osterrieder, Joerg,}
+Generative Adversarial Networks in finance: an overview,
+{\it Comput. Methods Appl. Mech. Engrg.} http://dx.doi.org/10.48550/ARXIV.2106.06364 (2021).
+
+\end{thebibliography}

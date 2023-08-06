@@ -1,0 +1,313 @@
+
+\begin{thebibliography}{1}
+
+
+
+\bibitem{AntonovKonikovSpector:2015} 
+{\sc A. Antonov and M. Konikov and M. Spector,} 
+The free boundary SABR: natural extension to negative rates, 
+unpublished report, 
+January 2015, available at https://ssrn.com/abstract=2557046. 
+
+\bibitem{BabuskaBanerjeeOsborn:2003}
+{\sc I. Babuska, U. Banerjee, and J.E. Osborn,}
+Survey of mesh-less and generalized finite element methods: a unified approach,
+{Acta Numer.} 12 (2003), 1--125.  
+
+\bibitem{BerlinetThomasAgnan:2004} 
+{\sc A. Berlinet and C. Thomas-Agnan,} 
+{\it Reproducing kernel Hilbert spaces in probability and statistics,} 
+Springer US, Kluwer Academic Publishers, 2004.
+
+\bibitem{BessaFosterBelytschkoLiu:2014}
+{\sc M.A. Bessa, and J.T. Foster, T. Belytschko, and W.K. Liu,}
+A mesh-free unification: reproducing kernel peridynamics,
+{Comput. Mech. }53 (2014), 1251--1264.  
+
+\bibitem{BraceGatarekMusiela:1997} 
+{\sc A. Brace, and D. Gatarek and M. Musiela,} 
+The market model of interest rate dynamics, 
+{Math. Finance 7} (1997), 127--154.
+
+\bibitem{Brezis:2018} 
+{\sc H. Brezis,}
+Remarques sur le probl\`eme de Monge–Kantorovich dans le cas discret, 
+Comptes Rendus Mathematique 356 (2018), 207--213.
+
+\bibitem{Brenier:1991} 
+{\sc Y. Brenier,}
+Polar factorization and monotone rearrangement of vector-valued functions, 
+Comm. Pure  Applied Math. XLIV (1991), 375--417.
+
+\bibitem{Buehler:2010} 
+{\sc H. Buehler},
+Volatility and dividends: volatility modeling with cash dividends and simple credit risk,
+February 2010, available at: https://ssrn.com/abstract=1141877.
+
+\bibitem{EFO:2021} 
+{\sc Eckerli, Florian and Osterrieder, Joerg,} 
+Generative Adversarial Networks in finance: an overview, 
+{\it Comput. Methods Appl. Mech. Engrg.} http://dx.doi.org/10.48550/ARXIV.2106.06364 (2021). 
+
+\bibitem{Fasshauer:2006} 
+{\sc G.E. Fasshauer,} 
+{\sl Mesh-free methods,} 
+in ``Handbook of Theoretical and Computational Nanotechnology'', 
+Vol. 2, 2006. 
+
+\bibitem{Fasshauer:2007}
+{\sc G.E. Fasshauer,}
+{\sl Mesh-free approximation methods with Matlab,}
+Interdisciplinary Math. Sciences, Vol. 6,
+World Scientific Publishing Co. Pte. Ltd., Hackensack, NJ, 2007.  
+
+\bibitem{Fasshauer}
+{\sc G.E. Fasshauer,}
+{Positive definite kernels: past, present and future,} 
+unpublished report, available at http://www.math.iit.edu/~fass/PDKernels.pdf.
+
+\bibitem{GORT:2021}
+{\sc O. Teymur, J. Gorham, M. Riabiz, and C.J. Oates}
+% {\sc Onur Teymur, Jackson Gorham, Marina Riabiz, Chris. J. Oates}
+Proc. 24th Int. Conf. on Artificial Intelligence and Statistics (AISTATS) 2021, San Diego,
+California, USA, Volume 130, pp.~1027--1035.
+
+\bibitem{GR:2006}
+{\sc A. Gretton, K.M. Borgwardt, M. Rasch, B. Sch\"{o}lkopf, and A.J. Smola,}
+A kernel method for the two sample problems, 
+Proc. 19th Int. Conf. on Neural Information Processing Systems, 2006, pp.~513--520. arXiv:0805.2368
+
+\bibitem{SHS:2001} Bernhard Sch\"{o}lkopf, Ralf Herbrich, and Alexander J. Smola. A generalized representer theorem. In Computational learning theory, 416--426, Springer, 2001.
+
+
+\bibitem{GuntherLiu:1998}
+{\sc F.C. G\" unther and W.K. Liu,} 
+Implementation of boundary conditions for mesh-less methods,
+{Comput. Methods Appl. Mech. Engrg.} 163 (1998), 205--230.  
+
+\bibitem{GW:2008} 
+{\sc A. Griewank, A. Walther,}
+Evaluating Derivatives: Principles and Techniques of Algorithmic Differentiation, SIAM, 2008.
+
+\bibitem{HaghighatRaissibMoureGomezJuanes:2021}
+{\sc E. Haghighat, M. Raissib, A. Moure, H. Gomez, and R. Juanes,}
+A physics-informed deep learning framework for inversion and surrogate modeling in solid mechanics, 
+{Comput. Methods Appl. Mech. Engrg.} 379 (2021), 113741
+
+\bibitem{HSS:2008}
+{\sc T. Hofmann, B. Schölkopf, and A. J. Smola,}
+Kernel methods in machine learning, Ann. Statist. 36 (2008), 1171--1220. 
+% \url{https://doi.org/10.1214/009053607000000677}
+
+\bibitem{HugeSavine:2020} 
+{\sc B.N. Huge and A. Savine,} 
+Differential machine learning, 
+unpublished report, January 2020, available at https://ssrn.com/abstract=3591734
+
+\bibitem{CGJacobi:1890} 
+{\sc Charles Gustave Jacob Jacobi,} 
+«De investigando ordine systematis aequationum differentialum vulgarium cujuscunque», herausgegeben von K. Weierstrass, Berlin, Bruck und Verlag von Georg Reimer, 1890, p.193-216
+
+\bibitem{KorzeniowskiWeinberg:2021}
+{\sc T.F. Korzeniowski and K. Weinberg,}
+A multi-level method for data-driven finite element computations, 
+{Comput. Methods Appl. Mech. Engrg.}  379  (2021),  113740. 
+ 
+\bibitem{KoesterChen:2019}
+{\sc J.J. Koester and J.-S. Chen,}
+Conforming window functions for mesh-free methods, 
+{\it Comm. Numer. Methods Engrg.} 347 (2019), 588--621.
+
+\bibitem{LeCunCortesBurges}
+{\sc Y. LeCun,  C. Cortes, and C.J.C. Burges,}
+The MNIST database of handwritten digits, 
+\\
+http://yann.lecun.com/exdb/mnist/
+
+\bibitem{McCann:2001} 
+{\sc R. McCann,}
+Polar factorization of maps on Riemannian manifolds,
+Geom. Funct. Anal. 11 (2001), 589--608.
+
+\bibitem{Mercier:2009} 
+{\sc J.-M. Mercier}, 
+Optimally Transported schemes. Applications to Mathematical Finance, unpublished, \url{https://www.researchgate.net/publication/228689632_Optimally_Transported_schemes_Applications_to_Mathematical_Finance}
+
+\bibitem{Mercier:2014} 
+{\sc J.-M. Mercier}, 
+A High-Dimensional Pricing Framework for Financial Instruments Valuation, DOI:10.2139/ssrn.2432019
+
+\bibitem{LeFloch-Mercier:2015} 
+{\sc P.G. LeFloch and J.-M. Mercier}, 
+Revisiting the method of characteristics via a convex hull algorithm, 
+{J. Comput. Phys. } 298 (2015), 95--112.  
+
+\bibitem{LeFloch-Mercier:2017} 
+{\sc P.G. LeFloch and J.-M. Mercier,}
+A new method for solving Kolmogorov equations in mathematical finance,
+{C. R. Math. Acad. Sci. Paris} 355 (2017), 680--686.   
+
+\bibitem{LeFloch-Mercier:2020a} 
+{\sc P.G. LeFloch and J.-M. Mercier,}
+The Transport-based Mesh-free Method (TMM). A short review, 
+{The Wilmott journal} 109 (2020), 52--57. Available at ArXiv:1911.00992. 
+
+\bibitem{LeFloch-Mercier:2020b} 
+{\sc P.G. LeFloch and J.-M. Mercier,} 
+Mesh-free error integration in arbitrary dimensions: a numerical study of discrepancy functions, 
+{Comput. Methods Appl. Mech. Engrg.} 369 (2020), 113245. 
+
+\bibitem{LeFloch-Mercier:2021} 
+{\sc P.G. LeFloch and J.-M. Mercier,}  
+A class of mesh-free algorithms for mathematical finance, machine learning, and fluid dynamics, 
+Preprint February 2021. Available at ssrn.com/abstract=3790066.
+
+\bibitem{LeFlochMercierMiryusupov:2021a} 
+{\sc P.G. LeFloch, J.-M. Mercier, and S. Miryusupov,}
+CodPy: a tutorial, 
+January 2021, available at ssrn.com/abstract=3769804. 
+
+\bibitem{LeFlochMercierMiryusupov:2021b} 
+{\sc P.G. LeFloch, J.-M. Mercier, and S. Miryusupov,}
+CodPy: an advanced tutorial, 
+January 2021, available at ssrn.com/abstract=3769804.
+
+\bibitem{LeFlochMercierMiryusupov:2021c} 
+{\sc P.G. LeFloch, J.-M. Mercier, and S. Miryusupov,} 
+CodPy: a kernel-based reordering algorithm, 
+January 2021, available at ssrn.com/abstract=3770557.
+
+\bibitem{LeFlochMercierMiryusupov:2021d} 
+{\sc P.G. LeFloch, J.-M. Mercier, and S. Miryusupov,} 
+CodPy: RKHS-based polar factorization and sampling algorithm, 
+in preparation.
+
+\bibitem{LeFlochMercierMiryusupov:2021e} 
+{\sc P.G. LeFloch, J.M. Mercier, and Sh. Miryusupov,}
+CodPy: RKHS-based algorithms and conditional expectations, 
+in preparation.
+
+\bibitem{LeFlochMercierMiryusupov:2021f} 
+{\sc P.G. LeFloch, J.-M. Mercier, and S. Miryusupov,} 
+CodPy:  Support Vector Machines (SVM) for (reverse) stress tests in finance, 
+in preparation.
+
+\bibitem{LiLiu:2004}
+{\sc S.F. Li and W.K. Liu,}
+{\sl Mesh-free particle methods,} 
+Springer Verlag, Berlin, 2004. 
+
+\bibitem{Liu:2003}
+{\sc G.R. Liu,}
+{\sl Mesh-free methods: moving beyond the finite element method,} 
+CRC Press, Boca Raton, FL, 2003.  
+
+\bibitem{Liu:2016}
+{\sc G.R. Liu,}
+An overview on mesh-free methods for computational solid mechanics,
+{\it Int. J. Comp. Methods} 13 (2016), 1630001.
+
+\bibitem{MercierMiryusupov:2019} 
+{\sc J.-M. Mercier and Sh. Miryusupov,} 
+Hedging strategies for net interest income and economic values of equity, 
+unpublished report, September 2019, available at: https://ssrn.com/abstract=3454813. 
+
+\bibitem{Nakano:2017}
+{\sc Y. Nakano,}
+Convergence of mesh-free collocation methods for fully nonlinear parabolic equations,
+{Numer. Math.} 136 (2017), 703--723. 
+
+\bibitem{NarcowichWardWendland:2005} 
+{\sc F. Narcowich, J. Ward, and H. Wendland,} 
+Sobolev bounds on functions with scattered zeros, with applications to radial basis function surface fitting, 
+{\it Math. of Comput.} 74 (2005), 743--763.
+
+\bibitem{Niederreiter:1992} 
+{\sc H. Niederreiter}, 
+{\sl Random number generation and quasi-Monte Carlo methods,}
+CBMS-NSF Regional Conf. Series in Applied Math., Soc. Industr. Applied Math., 1992. 
+
+\bibitem{OhDavisJeong:2012}
+{\sc H.S. Oh, C. Davis, and J.W. Jeong,}
+Mesh-free particle methods for thin plates,
+{\it Comput. Methods Appl. Mech. Engrg.} 209/212 (2012), 156--171.  
+
+\bibitem{Opfer:2006} 
+{\sc R. Opfer,}
+Multiscale kernels, 
+{Adv. Comput. Math.} 25 (2006), 357--380.
+
+\bibitem{SalehiDehghan:2013}
+{\sc R. Salehi and M. Dehghan,}
+A moving least square reproducing polynomial mesh-less method,
+{Appl. Numer. Math.} 69 (2013), 34--58. 
+
+\bibitem{SathyapriyaThiagarasu:2019} 
+{\sc M. Sathyapriya, Dr. V. Thiagarasu,}
+A cluster-based approach for credit card fraud detection system using Hmm with the implementation of big data technology, 
+Report 2019.
+
+\bibitem{SK:1967} 
+{\sc R. Sinkhorn and P. Knopp,}
+% {\sc Sinkhorn, Richard, Knopp, Paul.}
+Concerning nonnegative matrices and doubly stochastic matrices,
+ Pacific J. Math. 21 (1967), 343--348.
+
+\bibitem{SGFL:2010}
+{\sc B.K. Sriperumbudur, A. Gretton, K. Fukumizu, B. Scholkopf, and G.R. Lanckriet,} 
+% {\sc Sriperumbudur, B. K., Gretton, A., Fukumizu, K.,Scholkopf, B., and Lanckriet, G. R.} 
+Hilbert space embeddings and metrics on probability measures,
+J. Mach. Learn. Res. 11 (2010), 1517--1561. 
+
+\bibitem{SirignanoSpiliopoulos:2018}
+{\sc J. Sirignano and K. Spiliopoulos,}
+DGM: a deep learning algorithm for solving partial differential equations,
+{J. Comput. Phys. } 375 (2018), 1339--1364.  
+
+\bibitem{Sobol:1967}
+{\sc I.M. Sobol,}
+ Distribution of points in a cube and approximate evaluation of integrals,
+ U.S.S.R Comput. Maths. Math. Phys. 7  (1967), 86--112.
+
+\bibitem{TDGJ} 
+{\sc P. Traccucci, L. Dumontier, G. Garchery, B. Jacot,}
+A Triptych Approach for Reverse Stress Testing of Complex Portfolios. 
+{arXiv:1906.11186}
+
+\bibitem{Varga:2000}
+{\sc R.S. Varga,}
+{\sl Matrix iterative analysis,}
+ Springer Verlag, 2000.
+ 
+\bibitem{Villani:2009}
+{\sc C. Villani,}
+{\it Optimal transport, old and new,}
+Springer Verlag, 2009. 
+  
+\bibitem{Wendland:1997} 
+{\sc H. Wendland,}
+Sobolev-type error estimates for interpolation by radial basis functions, 
+in ``Surface fitting and multiresolution methods'' (Chamonix-Mont-Blanc, 1996), 
+Vanderbilt Univ. Press, Nashville, TN, 1997, pp.~337--344. 
+
+\bibitem{Wendland:2005} 
+{\sc H. Wendland,}
+{\sl Scattered data approximation,} 
+Cambridge Monograph, Applied Comput. Math., 
+Cambridge University, 2005. 
+
+\bibitem{ZhouLi:2006}
+{\sc J.X. Zhou and M.E. Li,}
+Solving phase field equations using a mesh-less method,
+{Comm. Numer. Methods Engrg.} 22 (2006), 1109--1115.  
+
+\bibitem{Zwicknagl:2008} 
+{\sc B. Zwicknagl,} 
+Power series kernels, 
+{Constructive Approx.} 29 (2008), 61--84.
+
+\end{thebibliography}
+
+
+
+

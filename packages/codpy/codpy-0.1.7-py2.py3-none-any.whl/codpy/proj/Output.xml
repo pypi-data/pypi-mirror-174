@@ -1,0 +1,908 @@
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1512, Ny:1512, D:3
+Kernel::Dnm Nx:1512, Ny:1512, D:3
+0.04110
+</elapsed_time>
+Dnm::out Nx:1512, Ny:1512
+0.05141
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:1512, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "linear_regressor::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.33968
+</elapsed_time>
+0.36525
+</elapsed_time>
+0.36587
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:500, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "linear_regressor::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.33071
+</elapsed_time>
+0.33995
+</elapsed_time>
+0.34070
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(materntensor)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:500, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.33619
+</elapsed_time>
+0.34583
+</elapsed_time>
+0.34632
+</elapsed_time>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1512, Ny:1512, D:3
+Kernel::Dnm Nx:1512, Ny:1512, D:3
+0.05489
+</elapsed_time>
+Dnm::out Nx:1512, Ny:1512
+0.06712
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:1512, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "linear_regressor::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.32384
+</elapsed_time>
+0.35439
+</elapsed_time>
+0.35493
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:500, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "linear_regressor::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.27886
+</elapsed_time>
+0.28739
+</elapsed_time>
+0.28804
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(materntensor)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:500, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.34536
+</elapsed_time>
+0.35555
+</elapsed_time>
+0.35601
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0175701 </info>
+
+<info cost ="0.00588703" count = "6"/>
+0.02914
+</elapsed_time>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1000, Ny:32, Nz:10000, Dfx:10, D:784  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.06517
+</elapsed_time>
+0.63449
+</elapsed_time>
+0.79052
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.00956421 </info>
+
+<info cost ="0.00242335" count = "7"/>
+0.10243
+</elapsed_time>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1000, Ny:64, Nz:10000, Dfx:10, D:784  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.06470
+</elapsed_time>
+0.66868
+</elapsed_time>
+0.82824
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.00599054 </info>
+
+<info cost ="0.000945716" count = "7"/>
+0.44743
+</elapsed_time>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1000, Ny:128, Nz:10000, Dfx:10, D:784  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.08684
+</elapsed_time>
+0.87990
+</elapsed_time>
+1.05664
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.00356245 </info>
+
+<info cost ="0.000326404" count = "13"/>
+2.96192
+</elapsed_time>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1000, Ny:256, Nz:10000, Dfx:10, D:784  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.11499
+</elapsed_time>
+1.08256
+</elapsed_time>
+1.24582
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1000, Ny:1000, D:1
+Kernel::Dnm Nx:1000, Ny:1000, D:1
+0.01867
+</elapsed_time>
+Dnm::out Nx:1000, Ny:1000
+0.02479
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1000, Ny:1000, Nz:1000, Dfx:1, D:1  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01125
+</elapsed_time>
+0.10531
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.00979
+</elapsed_time>
+0.11528
+</elapsed_time>
+0.11547
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1000, Ny:1000, D:1
+Kernel::Dnm Nx:1000, Ny:1000, D:1
+0.02369
+</elapsed_time>
+Dnm::out Nx:1000, Ny:1000
+0.02915
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1000, Ny:1000, Nz:1000, Dfx:1, D:1  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01108
+</elapsed_time>
+0.11960
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.00762
+</elapsed_time>
+0.12739
+</elapsed_time>
+0.12758
+</elapsed_time>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1000, Ny:1000, D:1
+Kernel::Dnm Nx:1000, Ny:1000, D:1
+0.01825
+</elapsed_time>
+Dnm::out Nx:1000, Ny:1000
+0.02344
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1000, Ny:1000, Nz:1000, Dfx:1, D:1  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01009
+</elapsed_time>
+0.09558
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.00777
+</elapsed_time>
+0.10352
+</elapsed_time>
+0.10371
+</elapsed_time>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1000, Ny:1000, D:1
+Kernel::Dnm Nx:1000, Ny:1000, D:1
+0.01863
+</elapsed_time>
+Dnm::out Nx:1000, Ny:1000
+0.02352
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1000, Ny:1000, Nz:1000, Dfx:1, D:1  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01161
+</elapsed_time>
+0.11968
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.00833
+</elapsed_time>
+0.12820
+</elapsed_time>
+0.12840
+</elapsed_time>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(maternnorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:500, Ny:500, D:784
+
+<info>user distance:norm1</info>
+0.03882
+</elapsed_time>
+Dnm::out Nx:500, Ny:500
+0.05416
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(maternnorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:59500, Ny:500, D:784
+
+<info>user distance:norm1</info>
+4.50846
+</elapsed_time>
+Dnm::out Nx:59500, Ny:500
+5.57135
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(maternnorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:60000, Ny:500, Nz:100, Dfx:784, D:784  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+9.79075
+</elapsed_time>
+9.86050
+</elapsed_time>
+11.66561
+</elapsed_time>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1512, Ny:1512, D:3
+Kernel::Dnm Nx:1512, Ny:1512, D:3
+0.05129
+</elapsed_time>
+Dnm::out Nx:1512, Ny:1512
+0.06986
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:1512, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.02482
+</elapsed_time>
+0.37184
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.02556
+</elapsed_time>
+0.39780
+</elapsed_time>
+0.39834
+</elapsed_time>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1512, Ny:1512, D:3
+Kernel::Dnm Nx:1512, Ny:1512, D:3
+0.05366
+</elapsed_time>
+Dnm::out Nx:1512, Ny:1512
+0.06754
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:1512, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "linear_regressor::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.33005
+</elapsed_time>
+0.35704
+</elapsed_time>
+0.35788
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:15120, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "linear_regressor::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.33218
+</elapsed_time>
+0.59300
+</elapsed_time>
+0.59579
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(materntensor)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:15120, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.34386
+</elapsed_time>
+0.59460
+</elapsed_time>
+0.59637
+</elapsed_time>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1512, Ny:1512, D:3
+Kernel::Dnm Nx:1512, Ny:1512, D:3
+0.04909
+</elapsed_time>
+Dnm::out Nx:1512, Ny:1512
+0.06145
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:1512, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "linear_regressor::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.35264
+</elapsed_time>
+0.38350
+</elapsed_time>
+0.38423
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:500, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "linear_regressor::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.37623
+</elapsed_time>
+0.38479
+</elapsed_time>
+0.38568
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(materntensor)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:500, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.33962
+</elapsed_time>
+0.34859
+</elapsed_time>
+0.34936
+</elapsed_time>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1512, Ny:1512, D:3
+Kernel::Dnm Nx:1512, Ny:1512, D:3
+0.04559
+</elapsed_time>
+Dnm::out Nx:1512, Ny:1512
+0.05774
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:1512, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "linear_regressor::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.27667
+</elapsed_time>
+0.30010
+</elapsed_time>
+0.30067
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:500, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "linear_regressor::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.31041
+</elapsed_time>
+0.32087
+</elapsed_time>
+0.32134
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(materntensor)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_erfinv</info>
+<info value = "kernel.op.pipe_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1512, Ny:1512, Nz:500, Dfx:3, D:3  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+0.35101
+</elapsed_time>
+0.35971
+</elapsed_time>
+0.36027
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:10000, Ny:1512, D:2
+Kernel::Dnm Nx:10000, Ny:1512, D:2
+0.25246
+</elapsed_time>
+Dnm::out Nx:10000, Ny:1512
+0.32105
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:10000, Ny:1500, D:2
+Kernel::Dnm Nx:10000, Ny:1500, D:2
+0.24507
+</elapsed_time>
+Dnm::out Nx:10000, Ny:1500
+0.31235
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "Dnm(pi_array_type& x, pi_array_type& y)">
+shared_basis::Dnm Nx:1, Ny:500, D:4
+Kernel::Dnm Nx:1, Ny:500, D:4
+0.00035
+</elapsed_time>
+Dnm::out Nx:1, Ny:500
+0.00057
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+Kernel::projection Nx:1500, Ny:1500, Nz:500, Dfx:1, D:4  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.02071
+</elapsed_time>
+0.30905
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.00674
+</elapsed_time>
+0.31597
+</elapsed_time>
+0.31687
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "op.nabla(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx, pi_array_type& reg = pi_array_type())">
+Kernel::nabla Nx:1500, Ny:1500, Nz:500, Dfx:1, D:4  nRow(reg):0  nCol(reg):0
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_, const Matrix_type& reg = Matrix_type())">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.02136
+</elapsed_time>
+0.29404
+</elapsed_time>
+</info>

@@ -1,0 +1,22 @@
+--- 
+title: "CodPy : a Python library for machine learning, \\  mathematical finance, and statistics"
+author: Philippe G. LeFloch\footnote{Laboratoire J.-L. Lions, Sorbonne Universit\'e
+  and Centre National de la Recherche Scientifique, 4 Place Jussieu, 75258 Paris,
+  France. Email:contact@philippelefloch.org} , Jean-Marc Mercier, and Shohruh Miryusupov\footnote{MPG-Partners,
+  136 Boulevard Haussmann, 75008 Paris, France. Email:jean-marc.mercier@mpg-partners.com, 
+  shohruh.miryusupov@mpg-partners.com \footnote{This is a preliminary document, presenting an ongoing project which will be augmented by further material in the near future.}}
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+link-citations: yes
+github-repo: github.com/JohnLeM/codpy
+description: "CodPy : a Python library for machine learning, mathematical finance, and statistics."
+---
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

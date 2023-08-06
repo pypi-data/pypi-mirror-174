@@ -1,0 +1,404 @@
+---
+output:
+  html_document: default
+  pdf_document:
+    keep_tex: yes
+    includes:
+      in_header: preamble.tex
+  word_document: default
+---
+
+```{r include=FALSE, echo = FALSE, code=xfun::read_utf8('preamble.R')}
+```
+
+
+```{python, echo = FALSE, results = "hide"}
+from book_funs4 import *
+```
+
+# Kernel methods for optimal transport
+
+## A brief overview of discrete optimal transport 
+
+In this short introduction we recall basic facts concerning optimal transport, by focusing on the discrete cases discussed in \cite{Brezis:2018}, and we explain describe how we connect these standard tools to our error-based learning machines. For a complete review of optimal transport theory, see \cite{Villani:2009}.
+
+Consider a probability measure $\nu \in \mathcal{M}$ on $\mathbb{R}^D$, and a mapping $S : \mathbb{R}^D \mapsto \mathbb{R}^D$. Denote by $\mu \in \mathcal{M}$ the measure defined by the change of variable
+$$
+	\int_{\mathbb{R}^D} \varphi(x)d \mu = \int_{\mathbb{R}^D} (\varphi \circ S)(x) d \nu, 
+	\qquad
+	\quad   \varphi \in \mathcal{C}(\mathbb{R}^D).(\#eq:M)
+$$
+One then says that $S$ transports $\nu$ into $\mu$, and $S_\# \nu = \mu$ is referred to as the push-forward. Consider a cost function, that is a positive, scalar-valued, symmetric, $\mathcal{C}^1$-regular function $c=c(\cdot,\cdot)$. 
+The \textsl{Monge problem}, given $\nu,\mu$, consists in finding a mapping $S$ minimizing the transportation cost from $\nu$ to $\mu$, that is
+$$
+\overline{S}  = \arg \inf_{S_\# \nu = \mu} \int_{\mathbb{R}^D} c(x,S(x)) d\nu.
+$$
+In a discrete point of view, we consider two discrete measures $\mu,\nu = \delta_X,\delta_Z$, in which $X=(x^1,\ldots,x^N)$ and $Z=(z^1,\ldots,z^N)$ are two sequences of distinct points with the same length. Then the Monge problem \@ref(eq:M) amounts to determine a permutation $\overline{\sigma}:[1\ldots N]\mapsto [1\ldots N]$ satisfying
+$$
+ \overline{S}(x^n)=z^{\overline{\sigma}(n)}
+ \quad
+ \text{ with}\quad \overline{\sigma}  = \arg \inf_{\sigma \in \Sigma} \sum_{n=1}^{N} c(x^n,z^{\sigma(n)}).  (\#eq:MD)
+$$
+Here, $\Sigma$ is the set of all permutations, and we simply write $\overline{S}(X)=Z^{\overline{\sigma}}$. Consider the matrix $C(X,Z) =\Big(c(x^i,z^j)\Big)_{i=1\ldots N}^{j=1\ldots N}$. Then the following problem is called the discrete \textsl{Kantorovitch problem}
+$$
+\bar{\gamma} = \arg \inf_{\gamma \in \Gamma} C(X,Z)\cdot \gamma, (\#eq:K)
+$$
+where $A \cdot B$ denotes the Frobenius scalar matrix product, $\Gamma$ is the set of all bi-stochastic matrix $\gamma \in \mathbb{R}^{N \times N}$, i.e. satisfying
+$\sum_{n=1}^N \gamma_{m,n} =  \sum_{n=1}^N \gamma_{n,m} = 1$ and $\gamma_{n,m}\ge 0$ for all $m = 1,\ldots,N$. The minimization problem \@ref(eq:K) admits a dual expression, called the dual-Kantorovich problem: 
+$$
+ \overline{\varphi}, \overline{\psi} =\arg  \sup_{\varphi, \psi } \sum_{n=1}^N \varphi(x^n) - \psi(z^n),\quad
+ \qquad
+  \varphi(x^n) - \psi(z^m) \le c(x^n,z^m), (\#eq:D)
+$$
+where $\varphi:X\mapsto \mathbb{R},\psi:Z\mapsto \mathbb{R}$ are discrete functions. As stated in \cite{Brezis:2018}, the three discrete problems above are equivalent. We observe that the discrete Monge problem \@ref(eq:MD) is also known as the **linear sum assignment problem (LSAP)**, and was solved in the 50's by an algorithm due to H.W. Kuhn; it is also known as the Hungarian method\footnote{this algorithm seems nowadays credited to a 1890 posthumous paper by Jacobi.}.
+
+For the continuous case, under suitable conditions on $\nu,\mu$ (namely, with compact, connected, and smooth support), any transport map $S_\# \nu = \mu$ can be \textsl{polar-factorized} as
+$$
+  S(X) =\overline{S}\circ T(X), 
+  \qquad
+  \quad T_\# \nu = \nu ,(\#eq:PF)
+$$
+where $\overline{S}$ is the unique solution to the Monge problem \@ref(eq:M), and is the gradient of a $c-$convex potential $\overline{S}(X) = \exp_x\big(- \nabla h(X)\big)$. Here, $\exp_x$ is the standard notation for the exponential map (used in Riemannian geometry). A scalar function is said to be $c$-convex if $h^{cc} = h$, where $h^{c}(Z)  = \inf_{x} c(X,Z) - h(X)$ is called the infimal $c-$convolution. Standard convexity coincides with $c$-convexity for convex cost functions such as the Euclidean function, in which case the following polar factorization holds: $S(X) = (\nabla h)\circ T(X)$ with a convex $h$. These results go back to \cite{Brenier:1991} (convex distance case) and \cite{McCann:2001} (general Riemannian distance) in the continuous setting.
+
+We now describe the main connection between these techniques and learning machines \@ref(preliminaries). Indeed, consider the cost function defined as $c(X,Z) = d_K(\delta_X,\delta_Z)$, where the discrepancy functional $d_k$ is described in \@ref(error-estimates-based-on-the-generalized-maximum-mean-discrepancy). Consider, as above, two discrete measures $\mu,\nu = \delta_X,\delta_Z$, defining the map $S(x^n)= z^n$. With this notation, finding the map $T$ appearing in the right-hand side of the polar factorization \@ref(eq:PF) consists in finding the permutation
+$$
+ \overline{\sigma}  = \arg \inf_{\sigma \in \Sigma} \sum_{n=1}^{N} d_K(\delta_{x^n},\delta_{z^{\sigma(n)}}).(\#eq:sigma) 
+$$
+Then, considering a differential learning machine \@ref(preliminaries), a discrete polar factorization consists in solving the following equation for the unknown potential $h$
+$$
+Z^{ \overline{\sigma}} = \exp_X\Big(-\nabla_X \mathcal{P}_{m}(X,Y,X, h(X))\Big).(\#eq:PFK)
+$$
+Such algorithms can be implemented for any differential, error-based learning machines.
+
+## Linear Sum Assignment Problems (LSAP)
+
+**LSAP**. The "linear assignment value" problem is a fundamental combinatorial optimization problem, which is used in a number of academic and industrial applications. It is an old and well-documented problem \footnote{see the Wikipedia page \url{https://en.wikipedia.org/wiki/Assignment_problem}}.
+
+**An illustration of the LSAP problem**. Let $A \in \mathbb{R}^{N,M}$ be any, real-valued matrix. A standard way to describe the LSAP problem is to find a permutation $\sigma : [0,..,min(N,M)] \mapsto [0,..,min(N,M)]$ s.t.
+$$
+  \sigma = \arg \inf_{\sigma \in \Sigma} Tr(A^\sigma), \quad A^{\sigma }:= A(\sigma(n),m)_{n,m}
+$$
+where $\Sigma$ is the set of all permutations.
+
+Let us give a quick illustration for better understanding to this problem. We fill out a matrix with random values in Table \@ref(tab:512), and output also its cost, that is $Tr(M)$.
+
+```{python}
+N = 4
+M = np.random.rand(N,N)
+M_df = pd.DataFrame(M)
+costM = cost(M)
+```
+
+```{r, label= 512}
+knitr::kable(py$M_df, caption = "a 4x4 random matrix", col.names = NULL) %>%
+        kable_styling(latex_options = c("repeat_header","HOLD_position"))
+```
+
+```{r, results = 'asis'}
+pyresults <- py$costM
+knitr::kable(pyresults,  longtable = T, caption = "Total cost before permutation", escape = FALSE, col.names = NULL)  %>%
+    kable_styling(latex_options = c("repeat_header","HOLD_position"),
+              repeat_header_continued = "\\textit{(Continued on Next Page...)}")
+``` 
+
+Then we compute the permutation $\sigma$. The python interface to this function is simply $\sigma = \text{lsap}(M)$.
+
+```{python}
+permutation = alg.lsap(M)
+```
+
+```{r, results = 'asis'}
+pyresults <- py$permutation
+knitr::kable(t(pyresults),  longtable = T, caption = "Permutation", escape = FALSE, col.names = NULL)  %>%
+    kable_styling(latex_options = c("repeat_header","HOLD_position"),
+              repeat_header_continued = "\\textit{(Continued on Next Page...)}")
+``` 
+
+We use this permutation for the row of the matrix $M^\sigma := M[\sigma]$, and we output the new cost after ordering, that is $Tr(M^\sigma)$. we check in the following that the LSAP algorithm decreased the total cost.
+```{python}
+M = M[permutation]
+costM = cost(M)
+```
+
+```{r, results = 'asis'}
+pyresults <- py$costM
+knitr::kable(t(pyresults),  longtable = T, caption = "Total cost after ordering", escape = FALSE, col.names = NULL)  %>%
+    kable_styling(latex_options = c("repeat_header","HOLD_position"),
+              repeat_header_continued = "\\textit{(Continued on Next Page...)}")
+``` 
+
+**An illustration of a discrepancy based reordering algorithm**. The ordering algorithm takes two distributions in input, and output a permutation of one of its input data ($X$ or $Y$), as well as the permutation $\sigma$:
+
+$$
+  X^\sigma,Y^\sigma,\sigma = alg.reordering(X,Y,set\_codpy\_kernel, rescale,distance = None)
+$$
+
+This python function takes as input the following:
+
+* Two distributions of points having shapes
+$$
+  X := (x^1,\ldots,x^{N_x}) \in \mathbb{R}^{N_x \times D}, \quad Y:=(y^1,\ldots,y^{N_y}) \in \mathbb{R}^{N_y \times D}
+$$
+* A positive kernel $k(x,y)$, defined through the input variable set\_codpy\_kernel. This defines the cost matrix as being $M = d_k(x,y)$, where the distance matrix is defined in \@ref(preliminaries).
+
+* Alternatively an optional parameter $distance$ taking values among
+  * "norm1", in which case the sorting is done accordingly to the Manhattan distance $d(x,y) = |x-y|_1$
+  * "norm2", in which case the sorting is done accordingly to the Euclidean distance $d(x,y) = |x-y|_2$
+  * "normifty", in which case the sorting is done accordingly to the Chebyshev distance $d(x,y) = |x-y|_\infty$
+
+This function outputs :
+
+* Two distributions $X^\sigma,Y^ \sigma$ having length $N_y$. If $N_x > N_y$, then $Y^\sigma=Y$.
+The case $N_y>N_x$ is symmetric, letting the original distribution $X$ unchanged.
+* A permutation $\sigma$, represented as a vector $i \mapsto \sigma_i$, $0 \le i \le \min(N_x,N_y)$.
+
+**A quantitative illustration**. We show first the results given by our ordering algorithm on a simple example. We generate two random variables $X \in \mathbb{R}^{4\times5}$, $Y \in \mathbb{R}^{4\times 5}$, such that $X \sim \mathcal{N}(\mu,I_5)$ and $Y \sim Unif([0,1]^{4\times5})$ with $\mu = [5,...,5]$. The first is generated by multivariate Gaussian distribution centered at $\mu$, the second one by a uniform distribution supported into the unit cube.
+
+```{python}
+N = 4
+D = 5
+x0,y0 = np.random.normal(5., 1., (N,D)),np.random.rand(N,D)
+```
+
+Table \@ref(tab:681) shows the distance matrix $D_k$ induced by the Matern kernel $k$, and the transportation cost is the trace of the matrix, i.e. $Trace(D_k)$.
+
+```{python}
+set_codpy_kernel = kernel_setters.kernel_helper(kernel_setters.set_matern_tensor_kernel,2,1e-8,map_setters.set_mean_distance_map)
+Dnm = op.Dnm(x0,y0,set_codpy_kernel = set_codpy_kernel,rescale=True)
+Dnm_df = pd.DataFrame(Dnm)
+costM = cost(Dnm)
+```
+
+```{r, label=681}
+knitr::kable(py$Dnm_df, caption = "Distance matrix before ordering", col.names = NULL) %>%
+        kable_styling(latex_options = c("repeat_header","HOLD_position"))
+```
+
+```{r, results = 'asis'}
+pyresults <- py$permutation
+knitr::kable(t(pyresults),  longtable = T, caption = "Permutation before ordering", escape = FALSE, col.names = NULL)
+``` 
+
+```{r, label=684, caption = "Cost matrix before ordering"}
+knitr::kable(py$costM,caption = "Cost", col.names = NULL)
+```
+
+We then invoke the ordering algorithm and output the cost after ordering. 
+
+```{python}
+x,y,permutation = alg.reordering(x0,y0,set_codpy_kernel = None, rescale = False)
+Dnm = op.Dnm(x,y,set_codpy_kernel = None, rescale = False)
+Dnm_df = pd.DataFrame(Dnm)
+costM =  cost(Dnm)
+permutation = np.asarray(permutation)[0:4].reshape(1,4)
+```
+
+Finally, we output the distance matrix again after ordering in Table \@ref(tab:682), as well as the permutation $\sigma$ in Table \@ref(tab:683)
+
+```{r, label=682}
+knitr::kable(py$Dnm_df,caption = "Distance matrix after ordering", col.names = NULL) %>%
+        kable_styling(latex_options = c("repeat_header","HOLD_position"))
+```
+
+```{r, label=683}
+knitr::kable(py$permutation,caption = "Permutation")
+```
+
+```{r, label = 685}
+knitr::kable(py$costM,caption = "Total cost after ordering", col.names = NULL)
+```
+
+One can check that the sum of the diagonal elements, i.e. the total cost has decreased.
+
+**A qualitative illustration**. This algorithm can be best illustrated in the two-dimensional case. First we consider a Euclidean distance function $d(x,y) = |x-y|_2$, in which case this algorithm  corresponds to a classical rearrangement, i.e. the one corresponding to the Wasserstein distance. To illustrate this behavior, let us generate a bi-modal type distribution $X \in \mathbb{R}^{N_x \times D}$ and a random uniform one $Y \in [0,1]^{N_y \times D}$. 
+
+For a convex distance, this algorithm is characterized by a ordering where characteristic lines do not cross each others, as plot in Figure \@ref(fig:185), plotting both edges $x^i \mapsto y^i$, before and after the ordering algorithm.
+
+```{python, label = 185, fig.cap = "LSAP with different input sizes"}
+xo, yo = LSAP_example()
+```
+
+Note however that kernels based distance might lead to different permutations. This is due to the fact that kernels defines distance that might not be Euclidean. Indeed, kernel distance might not respect the triangular inequality. For instance, the kernel selected above defines a distance equivalent to $d(x,y) = \Pi_d |x_d-y_d|$, and leads to a ordering for which some characteristics should cross
+
+```{python}
+x,y,permutation = alg.reordering(x=x0,y=y0, set_codpy_kernel = set_codpy_kernel, rescale = True)
+reordering_plot(x0,y0,x,y,plot_fun = graph_plot)
+```
+
+### LSAP extensions
+
+**Different input sizes**. Next we describe some extensions of the LSAP algorithms that we use in our library.  A first quite straightforward extension of the LSAP problem can be found for inputs set of different sizes, without loss of generality $N_y\le N_x$. Figure \@ref(fig:184) illustrates the behavior of our LSAP algorithm in this setting
+
+```{python, label = 184, fig.cap = "LSAP with different input sizes"}
+LSAP_ext()
+```
+
+
+**General cost functions and motivations**. Consider any  real-valued matrix $M \in \mathbb{R}^{N \times N}$. In situations of interests, we consider cost functional $c(M)$ that generalizes the classical cost functional for LSAP problem $c(M) = \sum_{n} M(n,n)$. Our algorithm generalizes to these cases, finding a permutation $\sigma : [1 \ldots N] \mapsto [1 \ldots N]$ such that
+
+
+$$
+  \bar{\sigma} = \arg \inf_{\sigma \in \Sigma} c( M^\sigma),\quad M^\sigma = m(n,\sigma(n)) 
+$$
+
+
+An example of such a LSAP problem extension arised with kernel methods in Section \@ref(sharp-discrepancy-sequences). It corresponds to compute the minimum of the discrepancy functional \@ref(sharp-discrepancy-sequences), for the particular choice where $X^\sigma \subset X$ is a subset of $X$ having length $N_y<N_x$. We used the notations $X^\sigma=(x^{\sigma_1},\ldots,x^{\sigma_{N_y}})$, with $\sigma : [1\ldots N_y] \mapsto [1\ldots N_x]$. In this context, the matrix is defined as $M(n,m) = k\big(x^n,x^m\big)$, and the cost function is
+
+$$
+d_k\big(x,x^\sigma\big)^2 = c(M) = \frac{1}{N_x^2}\sum_{n=1,m=1}^{N_x,N_x} M(n,m) + \frac{1}{N_y^2}\sum_{n=1,m=1}^{N_y,N_y} M(\sigma(n),\sigma(m)) - \frac{2}{N_x N_y}\sum_{n=1,m=1}^{N_x,N_y} k\big(n,\sigma(m)\big).
+$$
+
+So that our target minimization problem can be described as finding a permutation $\bar{\sigma}$ such that
+
+$$
+ \overline{\sigma} = \arg \inf_{\sigma : [1\ldots N_y] \mapsto [1\ldots N_x]} c(M^\sigma\big),\quad M^\sigma(n,m) = k(x^n,x^{\sigma(m)})
+$$
+
+## Conditional expectation algorithm
+
+**Motivation**. Kernel methods to compute conditional expectations were considered a decade ago, see for instance \cite{Mercier:2014}. Indeed, these algorithms are central, in particular, for financial applications, as they are at the heart of pricing technologies. They also have numerous other applications. In this subsection, we propose a general python interface to a function computing conditional expectations problems in arbitrary dimensions, that we named Pi. We also propose a kernel-based implementation of these problems, which is described in \cite{LeFloch-Mercier:2017} - \cite{LeFloch-Mercier:2020b}. 
+
+Benchmarking such algorithms is a difficult task, as the literature did not provide competitor algorithms to compute conditional expectations to kernel-based methods, for arbitrary dimensions, to our knowledge. Indeed, these algorithms are tightly concerned with the so called \textit{curse of dimensionality}, as we are dealing with arbitrary dimensions algorithms. 
+
+However, there is a recent, but impressively fast-growing, literature, devoted to the study of machine learning methods, particularly in the mathematical finance applications, see \cite{GW:2008} and ref. therein for instance. In particular, a neural networks approach has been proposed to compute conditional expectation in \cite{HugeSavine:2020} that we can use as benchmark. Hence a first benchmark is conducted in section \@ref(the-bachelier-problem).
+
+**The Pi function**. Consider any martingale process $t \mapsto X(t)$, and any positive definite kernel $k$, we define the operator $\Pi$ - using python notations -
+
+$$
+  f_{Z | X} = \Pi(X,Z,f(Z)) (\#eq:Pi)
+$$
+
+where 
+
+- $X \in \mathbb{R}^{ N_x \times D}$ is any set of points generated by a i.i.d sample of $X(t^1)$ where $t^1$ is any time.
+
+- $Z \in \mathbb{R}^{ N_z \times D}$ is any set of points, generated by a i.i.d sample of $X(t^2)$ at any time $t^2>t^1$.
+
+- $f(Z) \in \mathbb{R}^{ N_z \times D_f}$ is any, optional, function. 
+
+The output is a matrix $f_{Z | X}$, representing the conditional expectation 
+\begin{equation}
+f_{Z | X} \sim \mathbb{E}^{X(t^2)}( f( \cdot ) | X(t^1)) \in \mathbb{R}^{ N_x \times D_f} =:^{not.} f( Z | X). (\#eq:CE)
+\end{equation}
+
+- if $f(Z)$ is let empty, the output $f_{Z | X} \in \mathbb{R}^{ N_z \times N_x}$ is a matrix, representing a convergent approximation of the stochastic matrix $\mathbb{E}^{X(t^1)}(Z | X)$.
+
+- if $f(Z) \in \mathbb{R}^{ N_z \times D_f}$ is not empty, $f_{Z | X} \in \mathbb{R}^{ N_z \times D_f}$ is a matrix, representing the conditional expectation $f(Z |X) := \mathbb{E}^{X(t^1)}( f(Z) | X)$.
+
+## The sampler function and discrete polar factorization
+
+**Sampler function**. In this paragraph, we illustrate the polar factorization \@ref(eq:PF) through a quite simple algorithm, the sampler function. In many applications we would like to fit the scattered data to a given model that best represents them. To be specific, consider any distributions of points $X \in \mathbb{R}^{N_x \times D}$, representing i.i.d. samples of a random variable $X$, $Z \in \mathbb{R}^{[0,1]^{N_z \times D}}$, any i.i.d. of the uniform distribution into the unit cube, and suppose that we solved \@ref(eq:PF) in the following, discrete, sense
+
+$$
+  X = \Big(\nabla f\Big)(Z),\quad f \text{ convex}, \quad X \in \mathbb{R}^{N_x \times D}, Z \in [0,1]^{N_z \times D}.  (\#eq:fxz)
+$$
+
+Then the function 
+$$
+  Y \mapsto \Big(\nabla f\Big)(Y), (\#eq:fy)
+$$
+where $Y \in \mathbb{R}^{[0,1]^{N_y \times D}}$ provides us with a natural candidate for others i.i.d. realization of the random variable $X$.
+
+Hence this section illustrates the following python function
+$$ 
+    Y = sampler(X,N_y, seed) (\#eq:sampler)
+$$
+that outputs $N_y$ values $Y \in \mathbb{R}^{N_y\times D}$ of a distribution sharing close statistical properties with the discrete distribution $X$, that we discuss in the next paragraph.
+
+
+### Examples
+
+**One dimensional distributions**. Consider two one-dimensional distributions :  a bi-modal Gaussian and bi-modal Student's $t-$distribution. The experiment consists of comparing the truth distribution $X\in \mathbb{R}^{1000\times 1}$ and a computed distribution $Y \in \mathbb{R}^{1000\times 1}$ using a a sampling function. 
+
+Figure \@ref(fig:186) compares kernel desnity estimates and histogram of the original sample and the distribution generated using a sampling function, the first plot compares to a Gaussian and second to $t-$distribution.
+
+```{python, label = 186, results = "hide", fig.cap = "Histograms of Bi-modal Gaussian vs sampled (left) and Student's t distribution vs sampled (right)"}
+xy, f_x, f_z = data_for_static_dist(**get_codpy_param_chap4(), N=1000,M=501,f_names = ["Gaussian bimodal", "t-bimodal"])
+figure1D(xy, **get_codpy_param_chap4())
+table1 = table(f_x, f_z, xy, f_names = ["Gaussian bimodal", "t-bimodal"])
+```
+
+Tables \@ref(tab:Ga2Dks) and \@ref(tab:Ga1Dks) in Appendix show that sampling algorithm generated samples that are very close in skewness, kurtosis and in terms of KL divergence and MMD.
+
+**Two dimensional distributions**. Next we simply repeat the experiment for a two-dimensional case. Figure \@ref(fig:187) compares the distributions of $X\in \mathbb{R}^{1000\times 2}$ and $Y\in \mathbb{R}^{1000\times 2}$ (original and the computed distribution), the first scatter plot compares to a Gaussian, second to $t-$distribution and third and forth scatters plots are bimodal Gaussian and $t-$distribution respectively with $N_x=N_y=1000$.
+
+```{python, label = 187, results = "hide", , fig.cap = "2D Gaussian vs sampled (left) and 2D Student's t distribution vs sampled (center) and 2D bimodal Gaussian vs sampled (right)"}
+xy, f_x, f_z = data_for_static_dist(D=2, N=1000, M=501,**get_codpy_param_chap4(), f_names = ["Gaussian","t-distribution", "Gaussian bimodal", "t-bimodal"])
+figure2D(xy, **get_codpy_param_chap4())
+table2 = table(f_x, f_z, xy, **get_codpy_param_chap4(),f_names = ["Gaussian","t-distribution", "Gaussian bimodal", "t-bimodal"])
+```
+
+Tables \@ref(tab:Ga2Dks) and \@ref(tab:Ga3Dks) in Appendix to this chapter output third and forth moments of the truth and sampled distributions. On the one hand, the sampling algorithm can not capture the forth moment for heavy-tailed unimodal distribution, we chose a degree of freedom $df=3$ for $t$-distribution. On  the other hand, it can capture third and forth moments of light and heavy-tailed distributions, but we can see in Figure \@ref(fig:187) that there are some samples between two modes. 
+
+## Bibliography
+There many realizations of LSAP that are available with a python interface. For example, Scipy's optimization and root finding module[^402] allows to find LSAP using a Hungarian algorithm when the cost matrix is unbalanced. A python library Lapjv[^403] allows to find LSAP using Jonker-Volgenant algorithm[^404]. The Sinkhorn algorithm[^405],[^406] is fast heuristic for the Kantorovich problem, that allows to solve efficiently LSAP, but the matrix obtained by using the Sinkhorn algorithm is not always a permutation matrix. It was implemented for some cases in POT library[^407].
+
+[^402]: [Scipy, see this url](https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.optimize.linear_sum_assignment.html).
+https://github.com/src-d/lapjv
+[^403]: [Lapjv, see this url](https://github.com/src-d/lapjv)
+[^404]: R. Jonker and A. Volgenant, "A Shortest Augmenting Path Algorithm for Dense and Sparse Linear Assignment Problems," Computing, vol. 38, pp. 325-340, 1987.
+[^405]: Richard Sinkhorn and Paul Knopp. Concerning nonnegative matrices and doubly stochastic matrices. Pacific Journal of Mathematics,
+21-343-348, 1967.
+[^406]: Jason Altschuler, Jonathan Weed, and Philippe Rigollet. Near-linear time approximation algorithms for optimal transport via sinkhorn iteration. CoRR, 2017.(https://arxiv.org/abs/1705.09634)
+[^407]: [POT, see this url](https://pythonot.github.io/).
+
+
+
+## Appendix to Chapter 4
+
+**1D distributions**. Table \@ref(tab:Ga1Dsum) illustrates the skewness, the kurtosis between $X\in \mathbb{R}^{1000\times 1}$ and $Y\in \mathbb{R}^{1000\times 1}$ for the Gaussian and Student's $t-$distributions from Section \@ref(the-sampler-function-and-discrete-polar-factorization).
+
+```{r, label = Ga1Dsum, echo = FALSE,include=TRUE}
+pyresults <- py$table1
+knitr::kable(pyresults, caption = "Stats", escape = FALSE)  %>% 
+      kable_styling(latex_options = c("repeat_header","HOLD_position"))
+```
+
+<!-- KL divergence and MMD are reported in Table \@ref(tab:Ga1Dks). -->
+<!-- ```{r, label = Ga1Dks, echo = FALSE,include=TRUE} -->
+<!-- knitr::kable(t(head(py$ds_)), caption = 'KL divergence and MMD', col.names = NULL, label = 'Ga1Dks') %>% -->
+<!--         kable_styling(latex_options = c("repeat_header","HOLD_position")) -->
+<!-- ``` -->
+
+
+<!-- In the sequel, we also visualized the histogram of Gaussian, $t$-distribution and computed using a sampling function for $N_x \ne N_y$.  Figure \@ref(fig:189) shows the distribution for the case $X\in \mathbb{R}^{1000\times 1}$, $Y \in \mathbb{R}^{500\times 1}$ and $X\in \mathbb{R}^{500\times 1}$, $Y \in \mathbb{R}^{1000\times 1}$: -->
+
+<!-- ```{python, label = 189, results = "hide", fig.cap = "Histograms of Bi-modal Gaussian vs sampled (left) and Student's t distribution vs sampled (right), Nx = 500, Ny=1000 and  Nx = 1000, Ny=500"} -->
+<!-- # xb1,yb1,xt1,yt1, summary_, ks_ = Gaus1d(N = 1000, M = 500) -->
+<!-- # xb1a,yb1a,xt1a,yt1a, summary_a, ks_a = Gaus1d(N = 500, M = 1000) -->
+<!-- f_names=["Gaussian vs sampling","t-distribution vs sampling","Gaussian vs sampling","t-distribution vs sampling"] -->
+<!-- # multi_plot([(xb1,yb1),(xt1,yt1),(xb1a,yb1a),(xt1a,yt1a)],fun_plot = hist_plot, f_names = f_names, mp_ncols = 2,mp_max_items = 4)  -->
+<!-- ``` -->
+
+**2D distributions**. To check numerically some first properties of the generated distribution, We output in Table \@ref(tab:Ga2Dks) the skewness and kurtosis, probability distances of both $X \in \mathbb{R}^{1000\times 2}$ and $Y\in \mathbb{R}^{1000\times 2}$. Each row represents the truth distribution $X$ and generated distribution using a sampling function labeled as "sampled" $Y$:
+
+```{r, label = Ga2Dks, echo = FALSE,include=TRUE}
+knitr::kable(py$table2, caption = 'Summary statistics',label = 'Ga2Dks') %>%
+        kable_styling(latex_options = c("repeat_header","HOLD_position"))
+```
+<!-- Table \@ref(tab:Ga3Dks) outputs the KL divergence and MMD. -->
+
+<!-- ```{r, label = Ga3Dks, echo = FALSE,include=TRUE} -->
+<!-- knitr::kable(t(py$ks2D), caption = 'KL divergence and MMD', label = 'Ga3Dks') %>% -->
+<!--         kable_styling(latex_options = c("repeat_header","HOLD_position")) -->
+<!-- ``` -->
+
+<!-- To check our results, let us compare distributions of $X\in \mathbb{R}^{500\times 2}$, $Y\in \mathbb{R}^{1000\times 2}$ and $X\in \mathbb{R}^{500\times 2}$, $Y\in \mathbb{R}^{1000\times 2}$ in Figure \@ref(fig:190) respectively. -->
+
+<!-- ```{python, label = 190, results = "hide", , fig.cap = "2D Gaussian vs sampled (left) and 2D Student's t distribution vs sampled (center) and 2D bimodal Gaussian vs sampled (right), Nx = 500, Ny=1000 and  Nx = 1000, Ny=500"} -->
+<!-- xy1, summar, d1 = GausT2d(N=500, M = 1000, D = 2) -->
+<!-- xy2, summara, d2 = GausT2d(N=1000, M = 500, D = 2) -->
+<!-- f_names=["Gaussian","t-distribution", "Gaussian bimodal", "t-bimodal","Gaussian","t-distribution", "Gaussian bimodal", "t-bimodal"] -->
+<!-- multi_plot(xy1,fun_plot = scatter_plot,  mp_ncols = 4, mp_max_items = 8) -->
+<!-- multi_plot(xy2,fun_plot = scatter_plot,  mp_ncols = 4, mp_max_items = 8) -->
+<!-- ``` -->
+
+<!-- ```{r, label = Ga2sum, echo = FALSE,include=TRUE} -->
+<!-- knitr::kable(py$d1, caption = 'Summary - KS Test',label = 'Ga2sum') %>% -->
+<!--         kable_styling(latex_options = c("repeat_header","HOLD_position")) -->
+<!-- ``` -->
+
+<!-- ```{r, label = Gasum, echo = FALSE,include=TRUE} -->
+<!-- knitr::kable(py$d2, caption = 'Summary - KS Test',label = 'Gasum') %>% -->
+<!--         kable_styling(latex_options = c("repeat_header","HOLD_position")) -->
+<!-- ``` -->
