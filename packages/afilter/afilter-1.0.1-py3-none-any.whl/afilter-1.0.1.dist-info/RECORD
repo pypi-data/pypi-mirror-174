@@ -1,0 +1,14 @@
+afilter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+afilter/async_server.py,sha256=6v_3mzdDiYb2ie_Y8d9vGFuK2zs1pRJhWO9Ko3icQSc,12306
+afilter/server.py,sha256=TwNxikhbvSX2ANwQbnpnwaiNARykDmeRJ0gfZ4-p_7w,12047
+afilter/version.py,sha256=bMIenWosteoeUs51RbaWVZetIuzRhWymuyy-n0rfK0I,21
+afilter/protos/__init__.py,sha256=5zxum114UOtcb6YFeQMo_6io5oI9qzACqfh-b4CVwFw,75
+afilter/protos/afilter_pb2.py,sha256=MGzxuVSGkk6IRWEYbD4NHrghToncDRGG_jt3Jwkzw00,5723
+afilter/protos/afilter_pb2_grpc.py,sha256=lAFOPEWoAWXyjv6ge2m_IQ6iPQT-fj_OArQniEBjRFk,6923
+afilter/utils/__init__.py,sha256=MTQ4eRtA0EZb4efmBeNKQ5aY7GBWmCLTZUf4PfRSdrY,72
+afilter/utils/check_health.py,sha256=6UKJnCLQwR58Uky3Nt6XxhvUi8XiOrIEN9hY0z5PjLI,6177
+afilter/utils/transform.py,sha256=VmhDG3QSXaJbO7eleYtNqYlWLMHy1Oj7EPBjrVIkySw,1240
+afilter-1.0.1.dist-info/METADATA,sha256=jBSbCEFU5zE-j3hYjx2IpFWftGKK8EtPbW1h-gEWN1g,359
+afilter-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+afilter-1.0.1.dist-info/top_level.txt,sha256=jYjPMHNwtndpzOSf9JgT4gdqxiz05jcmIEVfcI-zmGU,8
+afilter-1.0.1.dist-info/RECORD,,
