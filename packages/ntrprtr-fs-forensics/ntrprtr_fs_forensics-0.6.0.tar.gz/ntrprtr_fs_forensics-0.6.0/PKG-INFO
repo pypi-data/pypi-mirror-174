@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: ntrprtr_fs_forensics
+Version: 0.6.0
+Summary: ntrprtr configurations for forensic analysis of file systems
+Home-page: https://github.com/5f0ne/ntrprtr-fs-forensics
+Author: 5f0
+License: MIT
+Classifier: Operating System :: OS Independent 
+Classifier: Programming Language :: Python :: 3 
+Classifier: License :: OSI Approved :: MIT License 
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Description
+
+ntrprtr configurations for forensic analysis of file systems
+
+# Installation
+
+`pip install ntrprtr_fs_forensics`
+
+# Usage
+
+**Shell:**
+
+<hr>
+
+**General**
+
+| Option | Short | Type | Default | Description |
+|---|---|---|---|---|
+|--mode | -m | String | - | copy = Create a local copy of file system forensics configuration files |
+
+<hr>
+
+**mode = copy**
+
+| Option | Short | Type | Default | Description |
+|---|---|---|---|---|
+|--path | -p | String | "" | Path for local copy of ntrprtr configuration files |
+
+
+# Example
+
+To use this configuration files install `ntrprtr` and `ntrprtr_fs_forensics`:
+
+```bash
+pip install ntrprtr
+pip install ntrprtr_fs_forensics
+```
+
+To use the files, create a local copy:
+
+```bash
+python -m ntrprtr_fs_forensics -m copy -p .
+```
+
+It creates the following structure:
+
+```
+./ntrprtr-fsf-config
+â”œâ”€â”€â”€ext
+â”‚       ext-group-descriptor-table.json
+â”‚       ext-inode.json
+â”‚       ext-super-block.json
+â”‚
+â”œâ”€â”€â”€fat
+â”‚       fat-directory-entry.json
+â”‚       fat-fs-info.json
+â”‚       fat-long-filename.json
+â”‚       fat-vbr-fat1216.json
+â”‚       fat-vbr-fat32.json
+â”‚       fat-vbr-type.json
+â”‚       fat-vbr.json
+â”‚
+â””â”€â”€â”€ntfs
+        ntfs-attribute-file-name.json
+        ntfs-attribute-header-general.json
+        ntfs-attribute-header-non-resident.json
+        ntfs-attribute-header-resident.json
+        ntfs-attribute-standard-information.json
+        ntfs-mft-entry-header.json
+        ntfs-vbr.json
+```
+
+Now just use the config as input for `ntrprtr`:
+
+```bash
+python -m ntrprtr -m interpret -p dir-entry.bin -c ./ntrprtr-fsf-config/fat/fat-directory-entry.json -r result.txt
+```
+
+# License
+
+MIT
