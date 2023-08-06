@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "erica"
+version = "0.2.0"
+description = "flask-like zero denpendency web server."
+authors = ["Ryu Juheon <saidbysolo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.style.dependencies]
+black = "^22.8.0"
+isort = "^5.10.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1.3"
+
+[tool.poetry.group.type.dependencies]
+mypy = "^0.971"
+
+[tool.isort]
+src_paths = ["erica"]
+profile = "black"
+
+[tool.black]
+preview = true
+
+[tool.mypy]
+files = ["erica"]
+strict = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
