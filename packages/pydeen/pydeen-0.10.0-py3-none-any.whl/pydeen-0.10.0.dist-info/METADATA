@@ -1,0 +1,191 @@
+Metadata-Version: 2.1
+Name: pydeen
+Version: 0.10.0
+Summary: Python Data Engineer Enterprise Notebook
+Author: MDJoerg (Joerg Mueller)
+Author-email: <mdjoerg@joomp.de>
+License: UNKNOWN
+Keywords: python,data,data science,enterprise,analysis,toolbox,notebook
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PYDEEN
+
+
+
+Python Data Engineer Enterprise Notebook
+
+
+
+Work with Enterprise data as an Data Engineer in notebook style.
+
+
+
+## Main features:
+
+- Extract data from SAP ABAP Backend OData Services
+
+- Extract data from SAP ABAP Backend via SQL (SAP [abapGit](https://abapgit.org/) Addon [ZDEEB](https://github.com/MDJoerg/deeb) required)
+
+- Websocket Stack for secure SAP ABAP callbacks and realtime messaging
+
+
+
+
+
+## current state and license
+
+
+
+This library is still experimental at the moment and is currently being tested by selected people in practical scenarios. A release under an open source license is planned.
+
+
+# CHANGELOG
+
+
+
+0.10.0: 2022-11-02 single record odata navigation
+
+- pandas dataframe excel support (export/import)
+
+- single records with follow assiciation support
+
+- parse json results with deep structure
+
+- sap deeb optimizations for table template generation (long fieldnames) and export to sap backend
+
+- remember last request in http connector object
+
+- change: sap odata without client param 
+
+- change: pandas dataframe csv export without index
+
+- bugfix: pandas menu
+
+
+
+0.9.0: 2022-10-05 pandas dataframe integration 
+
+- datahub optimizations (description, integration)
+
+- pandas dataframe file export/import for pickle, csv
+
+- http backend ssl verify mode support
+
+
+
+0.8.0: 2022-09-08 Datahub feature
+
+- NEW: Datahub feature for store multiple data objects in one session 
+
+- NEW: select single entry from record list
+
+- SAPAbapHttpBackend replaces HttpBackend in sap abap scenarios
+
+- SAP OData Connector: single record selection
+
+- websockets: cloud events - answering to incoming ce message
+
+- websockets: authentification issue for direct sap sicf path
+
+- auth: generate http header authorization parameter value
+
+- menu: lower case character allowed
+
+- bugfix: pandas menu: datefrom -> dataframe
+
+- bugfix: save content: filename issues (result, metainfo)
+
+
+
+
+
+0.7.0: 2022-08-20 pandas menu 
+
+- pandas df menu
+
+- save result to txt
+
+- save metainfo (xml/json)
+
+- redesign menu handling
+
+- websockets renamed
+
+- cloud events support
+
+- cloud events for websockets
+
+
+
+0.6.0 2022-08-15 sap abap odata fixes
+
+- logging 
+
+- optimized menu with logging infos
+
+- pyodata lib removed
+
+- sap odata entity by key selection 
+
+
+
+0.5.0 2022-08-12 deeb addon
+
+- bugfix sap_abap result to pandas - timestamp fields
+
+- abapGit Addon DEEB support
+
+- execute SQL statements in SAP ABAP (via DEEB Addon) 
+
+
+
+0.4.0 2022-08-07 pandas support
+
+- basic auth menu
+
+- property encoding
+
+- export results as pandas dataframe
+
+- parse odata xml 
+
+- sap type mapping (e.g. Date)
+
+
+
+0.3.0 2022-08-04 sap abap odata support
+
+- command line menu framework
+
+- redesign pyodata support
+
+- support for sap abap odata gateway
+
+
+
+0.2.0 2022-06-30 odata v1 
+
+- doc for websocket usage
+
+- websocket restart mode
+
+- odata v2 access (pyodata) - early access
+
+
+
+0.1.0 2022-06-21 initial pre-alpha release
+
+- core types
+
+- config file handling
+
+- websocket scenario with default command handler for SAP APC
+

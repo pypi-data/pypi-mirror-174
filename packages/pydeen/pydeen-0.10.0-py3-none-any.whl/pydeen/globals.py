@@ -1,0 +1,3 @@
+"""
+Global Data definition
+"""
