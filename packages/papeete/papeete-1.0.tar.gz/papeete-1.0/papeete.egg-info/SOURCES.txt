@@ -1,0 +1,7 @@
+setup.py
+papeete/__init__.py
+papeete/papeete.py
+papeete.egg-info/PKG-INFO
+papeete.egg-info/SOURCES.txt
+papeete.egg-info/dependency_links.txt
+papeete.egg-info/top_level.txt
