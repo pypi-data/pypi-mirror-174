@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: iqmma
+Version: 0.0.2
+Summary: A MS1 feature mapping for MS2 spectra identifications.
+Author: Valeriy Postoenko & Leyla Garibova
+Author-email: pyteomics@googlegroups.com
+License: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyteomics
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: venn
+Requires-Dist: lxml
+
+# IQMMA - Intensity-based Quantitative Mix and Match Approach
+Project improves quantitative analysis by applying multiple feature detection tools and pick the best from their results.
