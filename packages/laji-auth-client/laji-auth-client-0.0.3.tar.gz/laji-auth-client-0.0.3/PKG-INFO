@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: laji-auth-client
+Version: 0.0.3
+Summary: Python client for Laji-auth
+Home-page: https://github.com/luomus/laji-auth-client-python
+Author: Meeri Rannisto
+Author-email: meeri.rannisto@helsinki.fi
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Laji-auth client
+
+A Python client for Laji-auth authentication portal.
+
+## Usage
+
+    from laji_auth_client import LajiAuthClient 
+    
+    client = LajiAuthClient(<laji_auth_url>, <system_id>)
+    login_url = client.get_login_url()
+    authentication_info = client.get_authentication_info(<token>)
+
+    success = client.log_out(<token>)
