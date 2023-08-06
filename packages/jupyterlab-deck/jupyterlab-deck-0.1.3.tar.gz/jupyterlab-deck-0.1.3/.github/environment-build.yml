@@ -1,0 +1,25 @@
+name: jupyterlab-deck-test
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python >=3.10,<3.11
+  ### environment-base.yml ###
+  - doit-with-toml
+  - ipywidgets >=8
+  - jupyterlab >=3.4.8,<4
+  - jupyterlab-fonts >=2.1.1
+  - pip
+  - python >=3.7,<3.11
+  ### environment-base.yml ###
+  ### environment-build.yml ###
+  # runtimes
+  - nodejs >=16,<17
+  # host app
+  - ipywidgets >=8
+  # build
+  - flit >=3.7.1
+  - twine
+  ### environment-build.yml ###
