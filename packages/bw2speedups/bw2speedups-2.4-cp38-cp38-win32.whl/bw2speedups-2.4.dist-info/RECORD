@@ -1,0 +1,9 @@
+bw2speedups/__init__.py,sha256=Nk8qZLkLvrE6o6T9VIjKCPNEYVxBDDlYBFgsuqsgTmY,131
+bw2speedups/_consolidate.cp38-win32.pyd,sha256=3drgmwlk5yiGjkpcKRyrvEXIpSRmLt147gE4F67s-ws,44544
+bw2speedups/_find_first.cp38-win32.pyd,sha256=scdPl7LddIzFXWD6_SPqNTlsinT9iveOtE6W8_O-bRA,38400
+bw2speedups/_indexer.cp38-win32.pyd,sha256=BKmUAMtnstHtPCGsJbVX4DGVTh9IO3kpJV3pJxgL7VM,38912
+bw2speedups-2.4.dist-info/LICENSE,sha256=bCFltmw-l_o0ZCIoaULz-VPSiPOpiJPoPHSwklqY6jk,1500
+bw2speedups-2.4.dist-info/METADATA,sha256=UpDCu_7ASUzVSoldUYFIXinIFTiMseYOH7koQfCR-fQ,1962
+bw2speedups-2.4.dist-info/WHEEL,sha256=f5A3Ypo9PM0E06rgvH7-s12WthkA89SedEqLArPnjKU,96
+bw2speedups-2.4.dist-info/top_level.txt,sha256=RDMDVfGferZb4kkxrrWwH_sx_oPKsmVFVGck-Uhjaac,12
+bw2speedups-2.4.dist-info/RECORD,,
