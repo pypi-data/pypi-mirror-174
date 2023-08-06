@@ -1,0 +1,16 @@
+README.md
+license.txt
+setup.py
+mhp/MakePolymer.py
+mhp/__init__.py
+mhp/custom_input_to_mol_file.py
+mhp/nb.py
+mhp/random_polymer_to_mol_file.py
+mhp/settings.py
+mhp/smiles.py
+mhp.egg-info/PKG-INFO
+mhp.egg-info/SOURCES.txt
+mhp.egg-info/dependency_links.txt
+mhp.egg-info/entry_points.txt
+mhp.egg-info/requires.txt
+mhp.egg-info/top_level.txt

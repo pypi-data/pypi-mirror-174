@@ -1,0 +1,6 @@
+[console_scripts]
+customPol = mhp.custom_input_to_mol_file:main
+makePol = mhp.MakePolymer:main
+mhpLib = mhp.smiles:main
+mhpNB = mhp.nb:main
+mhpSettings = mhp.settings:main
