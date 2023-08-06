@@ -1,0 +1,11 @@
+opencv_stream/__init__.py,sha256=HTdabX7HIFNZujWTqEXct1YQqFGMpLjJuoEoxEx_v8w,122
+opencv_stream/fps_writer.py,sha256=oRcgDfj3ZN90eceX3cXIP2YSvw9-Akx3MC8GKZAPQQs,1169
+opencv_stream/model_schema.py,sha256=-P9-cFwOzWe2GGTllBH4WrS105UMjpYbBbCWRXROPnU,961
+opencv_stream/option.py,sha256=Pe0rbfDs1cEW9C8NsQ2D9EiERzFpj3nL5wc002cn3jA,1839
+opencv_stream/utils.py,sha256=QVcES5CYMZ2b4bWTElfKuJ1JJj7J7gdMIKpCIfX7XaQ,667
+opencv_stream/video.py,sha256=66cYev9TmyY1eVB12129JXpip3ckeV2fE-AtDuIJAeM,2170
+opencv_stream-0.0.4.dist-info/LICENSE,sha256=eYBoQ-DecmsuthqlWs_HOKGpUqOxCeLBrf5-ajvkTis,1067
+opencv_stream-0.0.4.dist-info/METADATA,sha256=VwFHQBfBnwr5Be1mLQ4ZHDbEFgjW5b4ohQU_A1hORnA,1115
+opencv_stream-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+opencv_stream-0.0.4.dist-info/top_level.txt,sha256=Xizo1VzQoo_ZGC_u8Lb52fBVceIqzQx02lmgAj3_5fw,14
+opencv_stream-0.0.4.dist-info/RECORD,,
