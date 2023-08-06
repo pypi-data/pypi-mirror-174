@@ -1,0 +1,2 @@
+[console_scripts]
+ntrprtr_bitlocker_forensics = ntrprtr_bitlocker_forensics.__main__:main
