@@ -1,0 +1,16 @@
+memcom/PROJECT.txt,sha256=f51VgA7uGxj15FqdJwZaeLsHdL-XgmIXKn2gfT1gJNo,410
+memcom/__init__.py,sha256=I4T4KuYtNOctSiJSllBWdwRqgW_Vd73g0OeuQ0b84tw,2178
+memcom/mc_audio.py,sha256=4rV7tddbSUXIhUmpLBVWYPRGAkJWOxhJF23vfVh-Jk8,16624
+memcom/mc_blank.py,sha256=kZhLXMh1xnsl6KAhRWuDRe2qOd5pHgM96Ou-UOLs17Q,831
+memcom/mc_clock.py,sha256=eqWrT3V0dLp7SUTh5E2NFRJus66xlOxpOkXBOmMVgdY,3436
+memcom/mc_filter.py,sha256=gpkNjWnAGQI0z8HgR6yEfuwrgflxrKDRarOrUctVFQo,14600
+memcom/mc_message.py,sha256=-JdT38m96Rhj1c4fGFP-nQbfruhEq9DIIkMV9zyK0wE,6453
+memcom/mc_record.py,sha256=BloxDDQ0MXEdTXcoue-RTv4nRs4Q-URe2Lkdqvo4IrY,8201
+memcom/mc_shapes.py,sha256=TeL6iQ19CAe5w5lpQvibxfwBGHy2IFIPvqIdYkRysHU,5134
+memcom/mc_testvid.py,sha256=VuKvm3ct5NFRKWaE7LWRIThsABKxjQHMygfOpdelbjE,6120
+memcom/mc_video.py,sha256=cL1seHr8TWNlPFEoJHsna-WHcTA3yXe13wr0ClgTBXw,10843
+memcom-0.1.1.dist-info/LICENSE,sha256=XMFKTwEouS7puOzZXEj9J9WP1_MdW2MVNLIsgq0LGm8,1060
+memcom-0.1.1.dist-info/METADATA,sha256=FVCx_17K9eXkfVDr5onw8N1SnYF3SiBFDVXXdFPWZ3A,5707
+memcom-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+memcom-0.1.1.dist-info/top_level.txt,sha256=e59gvNdNXmwd-HB4vBmaolxfg_pSxrQ3sezrXm1bJ5c,7
+memcom-0.1.1.dist-info/RECORD,,
