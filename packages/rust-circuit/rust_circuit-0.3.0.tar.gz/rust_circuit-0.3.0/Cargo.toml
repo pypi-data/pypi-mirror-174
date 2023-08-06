@@ -1,0 +1,61 @@
+[package]
+name = "rust_circuit"
+version = "0.3.0"
+edition = "2021"
+
+[lib]
+name = "rust_circuit"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "print_exception_stubs"
+
+[dependencies]
+pyo3 = { features=["num-bigint", "multiple-pymethods", "anyhow","macros"], git = "https://github.com/redwoodresearch/pyo3" }
+anyhow = { version = "1.0.60", features = ["backtrace"] }
+mimalloc = { version = "*", default-features = false }
+
+rr_util = {path = "local_dependencies/rr_util" }
+circuit_base = {path = "local_dependencies/circuit_base" }
+circuit_rewrites = {path = "local_dependencies/circuit_rewrites" }
+get_update_node = {path = "local_dependencies/get_update_node" }
+
+# these deps are only needed for tests
+smallvec = { version = "1.10.0", features = ["union"] }
+itertools = "0.10.3"
+[dependencies.uuid]
+version = "1.1.2"
+features = [
+    "v4",                # Lets you generate random UUIDs
+    "fast-rng",          # Use a faster (but still sufficiently random) RNG
+    "macro-diagnostics", # Enable better diagnostics for compile-time UUIDs
+]
+
+[dev-dependencies]
+rand = "0.8.5"
+criterion = "0.3"
+
+[[bench]]
+name = "benches"
+harness = false
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+debug = true
+
+[profile.release-lto]
+inherits = "release"
+lto = true
+
+[features]
+extension-module = ["pyo3/extension-module"]
+
+# default = ["extension-module"]
+default = []
+
+[workspace]
+members = ["local_dependencies/circuit_base", "local_dependencies/get_update_node", "local_dependencies/rr_util", "local_dependencies/circuit_rewrites"]
