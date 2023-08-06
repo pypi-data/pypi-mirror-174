@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: airavata-django-portal-commons
+Version: 1.0.0
+Summary: Utilities for working with dynamically loaded Django apps.
+Requires-Dist: django (<4,>=3.2)
+
