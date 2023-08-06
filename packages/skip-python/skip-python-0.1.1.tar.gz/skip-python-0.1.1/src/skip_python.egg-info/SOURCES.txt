@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/skip/__init__.py
+src/skip/skip.py
+src/skip_python.egg-info/PKG-INFO
+src/skip_python.egg-info/SOURCES.txt
+src/skip_python.egg-info/dependency_links.txt
+src/skip_python.egg-info/requires.txt
+src/skip_python.egg-info/top_level.txt
