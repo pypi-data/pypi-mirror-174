@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: flask-markdown-to-html
+Version: 0.1.2
+Summary: 可以在flask中查看markdown代码
+Home-page: https://github.com/zyzlaozhang/flask-markdown-to-html
+Author: zyzlaozhang2011
+Author-email: zyzlaozhang2011@163.com
+Maintainer: zyzlaozhang2011
+Maintainer-email: zyzlaozhang2011@163.com
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# 1.导入方法
+
+```cmd
+pip install flask-markdown
+```
+
+```python
+    from flask import Flask
+    from flask_markdown_to_html import flask_markdown_to_html
+    app=Flask(__name__)
+    md=flask_markdown_to_html(app)
+```
+
+# 2.函数使用
+
+确保目录结构为以下结构
+
+> app.py
+
+> static **为存放markdown的路径**
+
+>> markdown **为存放markdown的路径**
+
+## 2.1 markdown_to_html
+
+使用方法 
+
+```html
+    {{ md.markdown_to_html("markdown代码") }}
+```
+_确保你已经导入本库_
+
+## 2.2 render_markdown
+
+使用方法
+
+```python
+    @app.route("/")
+    def index():
+        return render_markdown("在static/markdown路径下的文件.md")
+```
+_确保你的markdown_path无误_
