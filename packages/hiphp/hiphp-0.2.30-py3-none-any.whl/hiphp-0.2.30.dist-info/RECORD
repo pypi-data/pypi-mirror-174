@@ -1,0 +1,16 @@
+hiphp/__init__.py,sha256=PdxxnDF0EVQoTc6RDN10jo4svs1amOLJKjzVTn0LQ-U,20845
+hiphp/hiphpabout.py,sha256=8FVSpSQgZmkDooZvYTo84EBM9vJSFyNE_wrQ9NEoACQ,1165
+hiphp/hiphpcoding.py,sha256=t3dFbc0w_l-39ZIXO0Q9GpuMPVpRjgR4wiBQ6Ip35vE,1221
+hiphp/hiphpeditor.py,sha256=nET1FjI5ISVGcvlQg6UAkGSOwH-nUIOotEPyfJwcGjo,2859
+hiphp/hiphphelp.py,sha256=I0UarptC9YjQtvIdkA8DUcZWbzWpH1CHeg1VdngIXow,5360
+hiphp/hiphplicense.py,sha256=amf4OwTCA5lFnfRbK5twl_YHii2qgU6zRQ7Pdx7jLwY,12148
+hiphp/hiphplinkextractor.py,sha256=_kAXbtkUT7AHFhGkMgpchll_eNtLVuloYfXTuEpZ7rU,1614
+hiphp/hiphplogo.py,sha256=YIpTYBa5gBe4VRlx0VeSIH2wfY7TjqcqXjVUMcRUSBo,2994
+hiphp/hiphpmsgs.py,sha256=WFtPheUZOnihw5SD-qUjPhmV_b5PWMwZ-P8yuk8nHW0,1388
+hiphp/hiphpphpfunctions.py,sha256=Bcp-ep6mg2VOTvQIewbSjzp8xenNYUQjSW0RjKD8B-I,6584
+hiphp/hiphpversion.py,sha256=x-3FzQFewOJlqevzM2on8xGGQ0BTYJYFLLb4fPtYCx8,731
+hiphp-0.2.30.dist-info/LICENSE,sha256=suRxbM1N723EbUu_Wx3WI2qR_GorxEwV2n_pnemDsh8,11572
+hiphp-0.2.30.dist-info/METADATA,sha256=wNkAMVCbM16py2Y_OAVg7rGyVD1nm7xw52l14Jvxg0c,47283
+hiphp-0.2.30.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hiphp-0.2.30.dist-info/top_level.txt,sha256=eMjuPD2kjgzGJo3D1HqtPfXwS5xzw7JjYdAnNI2lGR4,6
+hiphp-0.2.30.dist-info/RECORD,,
