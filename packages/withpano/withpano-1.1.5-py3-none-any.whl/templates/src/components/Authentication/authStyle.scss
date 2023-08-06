@@ -1,0 +1,115 @@
+$color_1: #555;
+$color_2: #fff;
+$color_3: #5e17e9;
+$font-family_1: "Lato", sans-serif;
+
+div.authview-container {
+
+  .login-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    height: 60vh;
+    padding: 50px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto;
+      box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #ffffff;
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+    }
+
+    .title {
+      text-align: center;
+      font-size: 28px;
+      padding-top: 24px;
+      letter-spacing: 0.5px;
+    }
+
+    .sub-title {
+      text-align: center;
+      font-size: 15px;
+      padding-top: 7px;
+      letter-spacing: 3px;
+    }
+  }
+
+  .fields {
+    width: 100%;
+    padding: 45px 5px 5px 5px;
+
+    input {
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 18px;
+      color: $color_1;
+      height: 45px;
+    }
+
+    .username {
+      align-items: center;
+      display: inline-flex;
+      margin-bottom: 30px;
+      border-radius: 25px;
+      box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+      width: 100%;
+    }
+
+    .password {
+      align-items: center;
+      display: inline-flex;
+      margin-bottom: 30px;
+      border-radius: 25px;
+      box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+      width: 100%;
+    }
+
+    svg {
+      height: 18px;
+      margin: 0 10px -3px 25px;
+      display: inline-flex;
+    }
+  }
+
+  .signin-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $font-family_1;
+    color: $color_2;
+    text-align: center;
+    background: #5e17e9;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: 0.5s;
+  }
+
+  .link {
+    padding-top: 20px;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: $color_3;
+      font-size: 15px;
+    }
+  }
+}
