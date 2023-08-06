@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: miskibin
+Version: 1.0.3
+Summary: this is an library with utils for my studies.
+Author-email: Michał Skibiński <mskibinski109@gmail.com>
+Project-URL: Homepage, https://github.com/michalskibinski109/miskibin
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: logging.config
+Requires-Dist: PyYaml
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
