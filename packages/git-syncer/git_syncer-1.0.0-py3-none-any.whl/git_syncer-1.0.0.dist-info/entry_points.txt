@@ -1,0 +1,2 @@
+[console_scripts]
+init-syncer = git_syncer.initializer:initialize_syncer
