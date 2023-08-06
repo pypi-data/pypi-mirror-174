@@ -1,0 +1,10 @@
+aws_cdk/aws_signer/__init__.py,sha256=eAKqWfYTBsg6mwgAF-nh8fOIaEJo45_jF8z1cmIo9Fg,50913
+aws_cdk/aws_signer/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_signer/_jsii/__init__.py,sha256=LH_Z6TMY96us-08bKZp-AICIb5pNydO2xg49R2bXtdo,405
+aws_cdk/aws_signer/_jsii/aws-signer@1.180.0.jsii.tgz,sha256=PkxhzqiYuBCPRw5_Pk-HH84r-0FsRLoIFngDuBf5Qhs,35664
+aws_cdk.aws_signer-1.180.0.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_signer-1.180.0.dist-info/METADATA,sha256=_hJM3ra7kfm_t9rn_puPgLcJb3ZhrT38NLhADDBQ2PM,3281
+aws_cdk.aws_signer-1.180.0.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_signer-1.180.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_signer-1.180.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_signer-1.180.0.dist-info/RECORD,,
