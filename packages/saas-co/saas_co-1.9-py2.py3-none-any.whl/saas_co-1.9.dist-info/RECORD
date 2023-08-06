@@ -1,0 +1,9 @@
+saas_co/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saas_co/cur.py,sha256=V5qpdODhhZMMlPuv_qo_n9uu02ssfcajsLZq-hYxeqg,510
+saas_co/ec2.py,sha256=hlVaKOoLnzL3XXDDA3vi_BmJGpTxH70cxgBDTze0QlI,318
+saas_co/paginate.py,sha256=77D7o9pJagAfOViIIwxRqTd7UQMmdW9zbfexoKPGuQc,1374
+saas_co/session.py,sha256=2ojQgR64OrOF4-iyeWj0NSJEDwGMb1hnuoiZ09z25-o,1447
+saas_co-1.9.dist-info/METADATA,sha256=XlNUXCXBizWRmkJdHUzpQhG9fu7-1qK9FIn1p3KkP2I,347
+saas_co-1.9.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+saas_co-1.9.dist-info/top_level.txt,sha256=GNzKWk82d6mhOjnzdgeI8YlNUJ3ZqyhzL1RTvqfALn8,8
+saas_co-1.9.dist-info/RECORD,,
