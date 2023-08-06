@@ -1,0 +1,7 @@
+meliora/__init__.py,sha256=VsF_Af1NB2RZdD4wv0wrRSSPhQPYHh-7VdVbipXDQ5g,33
+meliora/core.py,sha256=WQwpHefWrA9WBZDEHYSXVhY7Sqq3KPmc5s7FF7-xErk,65848
+meliora/parameter_config.toml,sha256=21sYebqShRH9KDYjhyPgew21T3YSjGWIwAtCNEvCe_c,998
+meliora-0.1.1rc26.post1.dist-info/LICENSE,sha256=xc47mYTgw8xFrSfcWWLKlLbZXF4yqC9XXZLsp7eQPEw,1132
+meliora-0.1.1rc26.post1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+meliora-0.1.1rc26.post1.dist-info/METADATA,sha256=4irU7BkXUwKOqytofZunFTj8OLQnJR_f0ZZ3DeE-G94,6582
+meliora-0.1.1rc26.post1.dist-info/RECORD,,
