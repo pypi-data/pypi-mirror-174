@@ -1,0 +1,13 @@
+-r requirements.txt
+-r requirements-doc.txt
+
+lxml
+mock
+pylint
+pytest
+pytest-cov
+pytest-flask
+pytest-html
+pytest-mock
+pytest-order
+responses
