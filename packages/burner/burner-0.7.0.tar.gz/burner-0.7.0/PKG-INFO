@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: burner
+Version: 0.7.0
+Summary: Script to interact with SimSMS's website.
+Home-page: https://github.com/ramadan8/Burner
+License: MIT
+Keywords: phone,burner,sms,simsms
+Author: Aidan
+Author-email: ramadan8@riseup.net
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Communications :: Internet Phone
+Requires-Dist: beautifulsoup4 (>=4.11.1,<5.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: peewee (>=3.15.3,<4.0.0)
+Requires-Dist: phonenumbers (>=8.12.57,<9.0.0)
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Project-URL: Repository, https://github.com/ramadan8/Burner
+Description-Content-Type: text/markdown
+
+# Burner
+
+![PyPI](https://img.shields.io/pypi/v/burner) ![PyPI - License](https://img.shields.io/pypi/l/burner) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/burner)
+
+Easy to use script to determine the cheapest price for [SimSMS](https://simsms.org/) codes.
+
+## Installation
+
+### With Pip
+
+```bash
+pip install burner
+```
+
+### With Poetry
+
+```bash
+poetry add git+https://github.com/ramadan8/Burner.git
+```
+
+### Manual
+
+```bash
+git clone https://github.com/ramadan8/Burner --depth 1
+poetry install
+```
+
+## Usage
+
+Use the following command to find the code for the service you want.
+
+```bash
+burner services
+```
+
+Then use the following command to find the price list for the service.
+
+```bash
+burner prices opt29 # This will get the price list for Telegram.
+```
+
+If you want to refresh the cache for the prices to a newer version, run the following command.
+
+```bash
+burner --authorization <apikey> reset
+```
+
+If you'd like to buy a phone number, use the following format. An API key with available funds is necessary for this command.
+
+```bash
+burner -a <apikey> number <countrycode> <servicecode>
+```
+
+For example, you could type the following to get a Russian [Signal](https://signal.org/) code.
+
+```bash
+burner -a <apikey> number RU opt127
+```
+
+You can also set your API key with the `SMS_AUTHORIZATION` environment variable.
+
+For more information simply type `burner --help`.
+
