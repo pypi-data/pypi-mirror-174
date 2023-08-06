@@ -1,0 +1,12 @@
+schema_compare/__init__.py,sha256=jHFQIUNE5Dy3zzJ88seximoXIvY5-NwRUN-JNhPy9rI,92
+schema_compare/main.py,sha256=Y0-5kzuDgMJpV70SknFc0j6AuPTI71N11OfaZBrC0EQ,1587
+schema_compare/report.py,sha256=SUvGZ_HCCdNzr0zFhmTJ1TYq9EpzlG9pdayzrWGKFB8,115
+schema_compare/drivers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schema_compare/drivers/postgresql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schema_compare/drivers/postgresql/connection.py,sha256=Xp-bHirDGnx9J2cEKBRTKsLACftzlmyaFnbLZ1yZ9Sw,1144
+schema_compare-1.0.7.dist-info/LICENSE,sha256=i2Z88moLOLbdOvB_sFU8kVz6qJCYFkq_h6iK0Pmw3Z8,1059
+schema_compare-1.0.7.dist-info/METADATA,sha256=_qb9PEagONXWwKWCfC-xkWuJvAKuo7W26YagGnyQ_fY,2264
+schema_compare-1.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+schema_compare-1.0.7.dist-info/entry_points.txt,sha256=RQvX0ZNhqplWPQkoU5i4v9SBxK_dc79OwGfMtV5znRI,60
+schema_compare-1.0.7.dist-info/top_level.txt,sha256=YxLFvcIDeJIQWx4KFsZCxx0vRuW7ko6Yq7gGS-4Btrw,15
+schema_compare-1.0.7.dist-info/RECORD,,
