@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: plotly-plasma
+Version: 0.1
+Summary: A lightweight wrapper to handle some inconveniences with Plotly
+Home-page: https://github.com/a0th/plotly
+Author: Nilo Araujo
+Author-email: renard.agne@gmail.com
+License-File: LICENSE.txt
+Requires-Dist: plotly (>=5.0.0)
+Requires-Dist: pandas (>=1.0.0)
+
