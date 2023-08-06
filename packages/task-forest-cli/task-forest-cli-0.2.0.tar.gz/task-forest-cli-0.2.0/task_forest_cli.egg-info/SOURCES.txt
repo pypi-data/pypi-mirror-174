@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+task_forest_cli/__init__.py
+task_forest_cli/config.py
+task_forest_cli/main.py
+task_forest_cli/tasks.py
+task_forest_cli/user.py
+task_forest_cli/utils.py
+task_forest_cli.egg-info/PKG-INFO
+task_forest_cli.egg-info/SOURCES.txt
+task_forest_cli.egg-info/dependency_links.txt
+task_forest_cli.egg-info/entry_points.txt
+task_forest_cli.egg-info/requires.txt
+task_forest_cli.egg-info/top_level.txt
