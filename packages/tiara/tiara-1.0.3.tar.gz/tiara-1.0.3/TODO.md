@@ -1,0 +1,7 @@
+- Use `csv` module
+- Allow for getting input from stdin
+- General refactor
+- Parallelize using multiprocessing (don't keep everything in memory)
+- Set up github actions for testing and uploading releases to pypi
+- Create conda recipe and upload to conda-forge
+- Remove unused code

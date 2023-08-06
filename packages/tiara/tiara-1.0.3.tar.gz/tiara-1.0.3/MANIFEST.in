@@ -1,0 +1,24 @@
+# Include the README
+include README.md
+
+include requirements.txt
+
+# Include the license file
+include LICENSE.txt
+
+# Include the data files
+recursive-include tiara/models *
+include tiara/test/test_data/archaea_fr.fasta.gz
+include tiara/test/test_data/archaea_out.txt
+include tiara/test/test_data/bacteria_fr.fasta.gz
+include tiara/test/test_data/bacteria_out.txt
+include tiara/test/test_data/eukarya_fr.fasta.gz
+include tiara/test/test_data/eukarya_out.txt
+include tiara/test/test_data/mitochondria_fr.fasta.gz
+include tiara/test/test_data/mitochondria_out.txt
+include tiara/test/test_data/plast_fr.fasta.gz
+include tiara/test/test_data/plast_out.txt
+include tiara/test/__init__.py
+include tiara/test/test.py
+
+global-exclude *_fr.fasta
