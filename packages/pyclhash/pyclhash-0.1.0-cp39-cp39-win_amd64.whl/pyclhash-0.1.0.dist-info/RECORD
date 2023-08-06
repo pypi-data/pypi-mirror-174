@@ -1,0 +1,14 @@
+pyclhash/__init__.py,sha256=4ePaZv_Yd7UclL1Chz2HDoAGN_oeLCw94DFIka0xPTk,242
+pyclhash/backends/__init__.py,sha256=2JZiTDKx5OR3bd9sgCwh1K7UxXQZnnVYwJFbh7yYgZI,668
+pyclhash/backends/cffi/__init__.py,sha256=zIrdh2bOE_iwiPafVP0HW2xE67nIGYtwmnVH2HRg0Mk,998
+pyclhash/backends/cffi/_clhash.pyd,sha256=SHvyKkv77PE8bIFjZO1pxZhbbPYu28GYKo_Z3E9wH6I,15872
+pyclhash/backends/cffi/build.py,sha256=Sl1t5DSkGKAnKvRCz_h2zs6t5zm-MFLl6Vq4SW8OLSU,1307
+pyclhash/backends/cython/__init__.py,sha256=cIAFxb6QboH-YW1FcIQijO6nq4yE2ioksiGz4pQ_Q2Y,163
+pyclhash/backends/cython/_clhash.c,sha256=yZPAG3GQkOQEwNVO6IfiPLUl2ah-AgbHQWjsle95Krg,809237
+pyclhash/backends/cython/_clhash.pyd,sha256=YOZzZNo0ZRb_JDaGiVrzRof1kZ3ncNyyNiS3IST96Is,123904
+pyclhash/backends/cython/_clhash.pyx,sha256=fdzwqWjEqDZIhRFUHKjFJgaD3NlJUc5q1scFswAS_64,1666
+pyclhash/backends/cython/clhash.pxd,sha256=lIXGc4Y75uO_6FBq2zU8fd2M_em5R0ifUeuy4HbbREE,407
+pyclhash-0.1.0.dist-info/METADATA,sha256=whL7HBGsFJyUA143PTZfr5PkGtjWTkqZmuAXGdVjWeg,998
+pyclhash-0.1.0.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+pyclhash-0.1.0.dist-info/top_level.txt,sha256=gLx8jpG903Fu_YR2vGdHhsiioFwXXVq3KOCaU-fh1es,9
+pyclhash-0.1.0.dist-info/RECORD,,
