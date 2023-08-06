@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pfc-util
+Version: 0.4.0
+Summary: package for PFC (phase field crystal) simulations
+Home-page: https://github.com/michael-960/pfc_util
+Author: Michael Wang
+Author-email: mike.wang96029@gmail.com
+Project-URL: Bug Tracker, https://github.com/michael-960/pfc_util/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy (>=1.21.2)
+Requires-Dist: scipy (>=1.7)
+Requires-Dist: pyfftw (>=0.12)
+Requires-Dist: matplotlib (>=3.5.1)
+Requires-Dist: torusgrid (>=0.4.2)
+Requires-Dist: rich (>=12.4.0)
+
+PFC simulation in python
+==============================
+created by michael in 2022/04
+
+pfc_util is a python package for PFC (phase field crystal) simulations.
+
+Dependencies
+======================
+* numpy
+* scipy
+* matplotlib
+* pyfftw
+* torusgrid
+* rich
+
+
+Modules
+========
+:code:`pfc_util.core` - Core module; definitions of PFC free energy functional, state functions, as well as minimizers
+
+:code:`pfc_util.extra` - Extensions to vanilla PFC. Currently includes :code:`pfc6`, which is a 6th-order generalization to the PFC functional
+
+:code:`pfc_util.toolkit` - Static preminimized solid/liquid profiles & utility functions.
+
+
+
+Minimizers
+============
+The package provides three main means of minimizing/evolving a PFC system:
+
+* **Constant chemical potential** - The grand potential :math:`\Omega \equiv F - \mu \int d\mathbf{r} \psi` is minimized with fixed :math:`\mu`
+
+* **Stress relaxer** - The grand potential **density** :math:`\omega \equiv \Omega / V` is minimized with respect to the density field and system size with fixed :math:`\mu`
+
+* **Conserved dynamics** - The free energy :math:`F` is minimized with fixed :math:`\bar\psi`
+
+
