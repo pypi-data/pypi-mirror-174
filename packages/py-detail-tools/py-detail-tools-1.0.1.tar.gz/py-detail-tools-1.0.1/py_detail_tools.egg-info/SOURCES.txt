@@ -1,0 +1,8 @@
+setup.py
+py_detail_tools.egg-info/PKG-INFO
+py_detail_tools.egg-info/SOURCES.txt
+py_detail_tools.egg-info/dependency_links.txt
+py_detail_tools.egg-info/requires.txt
+py_detail_tools.egg-info/top_level.txt
+pydetailtools/__init__.py
+pydetailtools/string.py
