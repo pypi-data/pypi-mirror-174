@@ -1,0 +1,2 @@
+[console_scripts]
+transforge = transforge.util.cli:main
