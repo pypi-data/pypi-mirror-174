@@ -1,0 +1,15 @@
+SOMcreator/__init__.py,sha256=j9q3lYMZra0QrErNnn9E5GNXxWLOlDgeOkmX8oXa7ro,23
+SOMcreator/classes.py,sha256=FVwFZNM3qijQOXPb4YuxHZKsF1SzUzBOuR2ObfF27Mg,20046
+SOMcreator/constants.py,sha256=ShNfiVz5zpE_VlTf4bO-wKavvf6uBdjZC4IexjE1vd8,1673
+SOMcreator/desite.py,sha256=wecahpP_pr5dC3X9ZLcMUTnvqTH-8mBZ0gDxhplguyA,20029
+SOMcreator/excel.py,sha256=97GAZOZGdowSrpLvDeMXdcUO5t96Qqoj--LBVaMbtwM,12484
+SOMcreator/filehandling.py,sha256=JonZcpcOCNc59LN3q7QdPykbBMAJLP-Tn65TXPb6Uho,15050
+SOMcreator/revit.py,sha256=bWdJZtdbDM6VQ1pgMdGLGCIec7n2Hpx6Jem8vXKzLeI,3331
+SOMcreator/Template/__init__.py,sha256=ArvDS28CHjOfkLaZTk0PA-O3jgmQ8qnWNquXWwH6Y24,264
+SOMcreator/Template/template.txt,sha256=WLFmxuMOnSTwRoPrfNSLNAiqK5mN1RMJqTvIqmfZ8iM,2863
+SOMcreator/Template/ifc_classes/ifc4_1.txt,sha256=yR-Fdu48QT34-biSZwDSFQlV-k2Po88itc1NgpvAkHc,16605
+SOMcreator-1.0.1.dist-info/LICENSE,sha256=3noZOfOFw8iDYwzhIvyeqJPOo6UepgDSryJPdPZ8cEU,1095
+SOMcreator-1.0.1.dist-info/METADATA,sha256=DXlQtr4DKx0O6K5alk5FKB7gbv7mQcK8UWSgm8P61W4,1587
+SOMcreator-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SOMcreator-1.0.1.dist-info/top_level.txt,sha256=CTUC6zeD_xtTiIuE8osPbKyVl5otefCWrmvVBB6KCpk,11
+SOMcreator-1.0.1.dist-info/RECORD,,
