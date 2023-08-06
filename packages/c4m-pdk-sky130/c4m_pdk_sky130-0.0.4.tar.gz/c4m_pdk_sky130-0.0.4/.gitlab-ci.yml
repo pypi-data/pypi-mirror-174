@@ -1,0 +1,76 @@
+image: python:latest
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  PYPI_INDEX: "https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/api/v4/groups/${CI_PROJECT_NAMESPACE}/-/packages/pypi/simple"
+cache:
+  paths:
+    - .cache/pip
+
+before_script:
+  - python --version  # For debugging
+  - python -m pip install --upgrade pip
+  - pip config set global.index-url "${PYPI_INDEX}"
+  - pip install --pre PDKMaster
+  - pip install --pre c4m-flexcell
+  - pip install --pre c4m-flexio
+  - pip install --pre c4m-flexmem
+  - pip install -r dev-requirements.txt
+  - pip install -r ci-requirements.txt
+  # Make Sky130 accessible; currently use own generated tarball
+  - pushd /
+  - wget https://chips4makers.io/files/sky130_pdk_pr.tar.xz
+  - tar xJvf sky130_pdk_pr.tar.xz
+  - popd
+  - export SKY130_PDK=/sky130_pdk/sky130A
+
+dist:
+  only:
+    - main
+  variables:
+    TWINE_PASSWORD: '${CI_JOB_TOKEN}'
+    TWINE_USERNAME: 'gitlab-ci-token'
+    TWINE_REPOSITORY_URL: 'https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/pypi'
+  script:
+    # Need to fetch tags
+    - git fetch --unshallow --tags
+    - doit dist
+    - python -m twine check --strict dist/*
+    - python -m twine upload --verbose dist/*
+
+dist-test:
+  except:
+    - main
+  script:
+    # Need to fetch tags
+    - git fetch --unshallow --tags
+    - doit dist
+    - python -m twine check --strict dist/*
+
+install:
+  script:
+    - doit install
+
+# test:
+#   script:
+#     - doit unittest
+#     - cat test/cover_report.log # Get coverage
+
+# pages:
+#   only:
+#     - main
+#   script:
+#     - doit docs
+#     - mv docs/html/ public/
+#   artifacts:
+#     paths:
+#     - public
+
+release:
+  script:
+    # TODO: Have tasyag installed so rtl and liberty can be generated
+    # - doit -n $(nproc) tarball
+    - doit -n $(nproc) coriolis klayout spice_models spice gds
+  artifacts:
+    paths:
+      - open_pdk
