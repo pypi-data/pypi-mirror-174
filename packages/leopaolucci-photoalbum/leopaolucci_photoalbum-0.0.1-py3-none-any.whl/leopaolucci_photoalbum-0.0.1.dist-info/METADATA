@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: leopaolucci-photoalbum
+Version: 0.0.1
+Summary: Assembly a photo album with your pictures
+Author-email: "Leopoldo A. Paolucci" <leobia2009@yahoo.com.br>
+License: MIT License        
+        Copyright (c) [2022] [LEOPOLDO AUGUSTO PAOLUCCI]        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (==3.6.1)
+Requires-Dist: PyPDF2 (==2.11.1)
+Requires-Dist: setuptools (==65.5.0)
+Requires-Dist: tomli ; python_version < "3.11"
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# 					leopaolucci-photoalbum
+
+
+
+### Description 
+
+#### The package leopaolucci-photoalbum is used to:
+
+is used to assemble a photo album based on images available in a directory of the user's choice. The images are converted to the standard "pdf", saved in a file in a directory of the user's choice.
+
+
+
+### Installation
+
+Use the package manager "pip" to install leopaolucci-photoalbum.
+
+​						**pip install leopaolucci-photoalbum**
+
+ **Usage**
+
+After installing the package, the  **photoalbum**  command will be available on the command line.
+
+This command calls the module **main.py** . 
+
+
+
+**Author**
+
+Leopoldo Augusto Paolucci
+
+### License
+
+This project is under the MIT license. 
+
+Open the [**LICENSE**] file in your package directory for more details.
+
