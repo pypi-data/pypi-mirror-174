@@ -1,0 +1,131 @@
+#!python
+
+""" Tool to setup a Crownstone. """
+
+import asyncio
+import logging
+from os import path
+
+from bluenet_logs import BluenetLogs
+from crownstone_ble import CrownstoneBle, BleEventBus, BleTopics
+from crownstone_core.util.JsonFileStore import JsonFileStore
+from crownstone_uart import CrownstoneUart
+
+from tools.util.config import getToolConfig, loadKeysFromConfig, setupDefaultCommandLineArguments, macFilterPassed
+
+tool_version = "1.0.0"
+
+argParser = setupDefaultCommandLineArguments('Setup a Crownstone.')
+argParser.add_argument('-a', '--bleAddress',
+                       default=None,
+                       help='To upload via BLE: the MAC address/handle of the Crownstone you want to connect to. Example: 11:22:33:AA:BB:CC')
+argParser.add_argument('-d', '--device',
+                       default=None,
+                       help='The UART device of the Crownstone you want to connect to. Example: /dev/ttyACM0')
+argParser.add_argument('--crownstoneId',
+                       required=True,
+                       type=int,
+                       help='The Crownstone ID, an ID (1-255) that is unique within the sphere.')
+argParser.add_argument('--meshDeviceKey',
+                       required=True,
+                       help="The 16 byte mesh device key, a unique key for each crownstone. Example: 0123456789abcdef0123456789abcdef")
+argParser.add_argument('--sphereId',
+                       required=True,
+                       type=int,
+                       help='The sphere ID, an ID (0-255) that is the same for each Crownstone within the sphere.')
+argParser.add_argument('--ibeaconUUID',
+                       required=True,
+                       help='The iBeacon UUID. Should be the same for each Crownstone in the sphere. Example: 1843423e-e175-4af0-a2e4-31e32f729a8a')
+argParser.add_argument('--ibeaconMajor',
+                       required=True,
+                       type=int,
+                       help='The iBeacon major. Together with the minor, should be unique per sphere.')
+argParser.add_argument('--ibeaconMinor',
+                       required=True,
+                       type=int,
+                       help='The iBeacon minor. Together with the major, should be unique per sphere.')
+argParser.add_argument('--verbose', '-v',
+                       dest="verbose",
+                       action='store_true',
+                       help='Show verbose output')
+argParser.add_argument('--logStringsFile', '-l',
+                       default="",
+                       dest='logStringsFileName',
+                       metavar='path',
+                       type=str,
+                       help='The path of the file with the extracted firmware logs on your system.')
+
+try:
+    file_path = path.dirname(path.realpath(__file__))
+    [tool_config, args] = getToolConfig(file_path, argParser)
+except Exception as e:
+    print("ERROR", e)
+    quit()
+
+if args.verbose:
+    logging.basicConfig(format='%(asctime)s %(levelname)-7s: %(message)s', level=logging.DEBUG)
+
+core = None
+bluenetLogs = None
+useBle = False
+
+if args.bleAddress is not None:
+    # Use BLE for communication.
+    useBle = True
+
+    # Create the library instance.
+    print(f'Initializing tool with bleAdapterAddress={tool_config["bleAdapterAddress"]}')
+    core = CrownstoneBle(bleAdapterAddress=tool_config["bleAdapterAddress"])
+
+    # Load the encryption keys into the library.
+    loadKeysFromConfig(core, tool_config)
+
+else:
+    # Use UART for communication.
+
+    # Create the library instance.
+    print(f'Initializing tool with device={args.device}')
+    core = CrownstoneUart()
+    core.initialize_usb_sync(port=args.device)
+
+    if args.logStringsFileName:
+        bluenetLogs = BluenetLogs()
+        bluenetLogs.setLogStringsFile(args.logStringsFileName)
+
+async def main():
+    fileReader = JsonFileStore(tool_config["absolutePathToKeyFile"])
+    keysDict = fileReader.getData()
+
+    if useBle:
+        await core.setupCrownstone(
+            args.bleAddress,
+            args.sphereId,
+            args.crownstoneId,
+            args.meshDeviceKey,
+            args.ibeaconUUID,
+            args.ibeaconMajor,
+            args.ibeaconMinor
+        )
+        await core.disconnect()
+        await core.shutDown()
+    else:
+        await core.setup.setup(
+            args.sphereId,
+            args.crownstoneId,
+            args.meshDeviceKey,
+            args.ibeaconUUID,
+            args.ibeaconMajor,
+            args.ibeaconMinor,
+            keysDict
+        )
+    print("Done!")
+
+try:
+    # asyncio.run does not work here.
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())
+except KeyboardInterrupt:
+    print("Stopping")
+
+if not useBle:
+    core.stop()
