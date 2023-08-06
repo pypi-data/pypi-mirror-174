@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include src/panel_sharing/py.typed
+graft src/panel_sharing/examples
