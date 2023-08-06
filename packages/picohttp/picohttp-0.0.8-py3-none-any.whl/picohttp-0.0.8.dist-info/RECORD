@@ -1,0 +1,10 @@
+picohttp/__init__.py,sha256=BMmtD_frctwzd0AUyIYkk3BCgbKLu4vH_aOsh8BbD0g,109
+picohttp/httpClasses.py,sha256=PPYQ_uePuSkrQXQZgvtUUofsbnlskDm80PTPeKbnY7I,1425
+picohttp/httpClient.py,sha256=lQwYUKXgpYV0735Rdq_l09QvVXY-rnOskxOIWcR5lb4,3060
+picohttp/httpServer.py,sha256=VwFGbp-yba11alzsPY81ZnKoblbQfm6dLkgeb1yegMQ,4311
+picohttp/staticResource.py,sha256=rgPzAkpZkQG3vVEretORbRGl4n459v0wRzz1T4wn0og,790
+picohttp-0.0.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+picohttp-0.0.8.dist-info/METADATA,sha256=qHLVy-3Q2aiEC2XPqegAHL1Vp1ZZ0X6s2eXQSAOz-94,8309
+picohttp-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+picohttp-0.0.8.dist-info/top_level.txt,sha256=Fiefr35uCy9Oat_OHmt8VwC9HrN1A0XWy9dT_DjaReQ,9
+picohttp-0.0.8.dist-info/RECORD,,
