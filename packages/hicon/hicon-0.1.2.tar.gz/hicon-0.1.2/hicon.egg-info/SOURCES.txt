@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+hicon/__init__.py
+hicon.egg-info/PKG-INFO
+hicon.egg-info/SOURCES.txt
+hicon.egg-info/dependency_links.txt
+hicon.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: hicon
+Version: 0.1.2
+Summary: Create, use, edit and manage hierarchical configurations files with Python.
+Home-page: https://github.com/gt-on-1234/hicon
+Author: Oscar Nuki
+License: MIT
+License-File: LICENSE
