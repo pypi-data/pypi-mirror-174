@@ -1,0 +1,5 @@
+py_ed25519_zebra_bindings-1.0.1.dist-info/METADATA,sha256=aFTUMooAhSghc376e_3Piu-fmYVHSl7fyIqnU8ehAB8,2173
+py_ed25519_zebra_bindings-1.0.1.dist-info/WHEEL,sha256=PI_yinHuPssCo943lUdZTaSBEwIUzDPKgEICR1imaRE,96
+ed25519_zebra/__init__.py,sha256=k0A0_GNDzkEwttrsBkaFEO_L4QW8EM-FVLPyP3sUnBI,135
+ed25519_zebra/ed25519_zebra.cp311-win_amd64.pyd,sha256=2LPPSDRHtH9CbDbmhRyx6o0iZlVnyHkrZDOL8Gn8zu4,328704
+py_ed25519_zebra_bindings-1.0.1.dist-info/RECORD,,
