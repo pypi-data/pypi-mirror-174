@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+descriptive_analysis_beginner/__init__.py
+descriptive_analysis_beginner/functions.py
+descriptive_analysis_beginner.egg-info/PKG-INFO
+descriptive_analysis_beginner.egg-info/SOURCES.txt
+descriptive_analysis_beginner.egg-info/dependency_links.txt
+descriptive_analysis_beginner.egg-info/requires.txt
+descriptive_analysis_beginner.egg-info/top_level.txt
