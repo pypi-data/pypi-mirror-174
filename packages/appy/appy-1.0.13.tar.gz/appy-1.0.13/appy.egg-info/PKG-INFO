@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: appy
+Version: 1.0.13
+Summary: The Appy framework
+Home-page: https://appyframe.work
+Author: Gaetan Delannay
+Author-email: gaetan.delannay@geezteem.com
+License: GPL
+Platform: all
+Requires-Python: >=3.6
+
+Appy is the simpliest way to build complex webapps.
