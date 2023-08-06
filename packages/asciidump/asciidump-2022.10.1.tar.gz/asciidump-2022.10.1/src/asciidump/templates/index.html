@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div class="art-thumbs">
+                {% for art in arts %}
+                {% if not art.hidden %}
+                    <div class="art-thumb">
+                        <h2>{{ art.name }}</h2>
+    <pre>{% autoescape off %}{{ art.grid.markup }}{% endautoescape %}</pre>
+                    </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </main>
+    </body>
+</html>
