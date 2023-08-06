@@ -1,0 +1,7 @@
+yolov5_onnx_cv/__init__.py,sha256=dsv0huCywOlUum3mFRYHhD7tI8RiXyINZ7GUxLp_G4g,75
+yolov5_onnx_cv/datadefine.py,sha256=DnHUnloE-6lstlGbZXrJxXNdwgi87WBxNbQT92qMwvg,127
+yolov5_onnx_cv/model.py,sha256=_KX320hGD7LrDq95ZCrH1tC6TynqnPpTFU5DmB5A6xY,6274
+yolov5_onnx_cv-0.0.4.dist-info/METADATA,sha256=8wV1lCZbWihETBejdR2WCqBEVzauzQw3dwomYBrONIs,3146
+yolov5_onnx_cv-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+yolov5_onnx_cv-0.0.4.dist-info/top_level.txt,sha256=WQ-8Trp5kYyBBp9AnrJkiyBjuBMOYIdDaNtaOBVgmA0,15
+yolov5_onnx_cv-0.0.4.dist-info/RECORD,,
