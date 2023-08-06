@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+becloud/__init__.py
+becloud/string.py
+becloud.egg-info/PKG-INFO
+becloud.egg-info/SOURCES.txt
+becloud.egg-info/dependency_links.txt
+becloud.egg-info/not-zip-safe
+becloud.egg-info/top_level.txt
