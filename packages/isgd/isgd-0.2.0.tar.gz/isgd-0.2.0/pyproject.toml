@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "isgd"
+version = "0.2.0"
+description = ""
+authors = ["nitr7gen <nitr7gen@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
