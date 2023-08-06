@@ -1,0 +1,45 @@
+---
+source: src/linter.rs
+expression: checks
+---
+- kind: NotInTest
+  location:
+    row: 2
+    column: 9
+  end_location:
+    row: 2
+    column: 13
+  fix: ~
+- kind: NotInTest
+  location:
+    row: 5
+    column: 11
+  end_location:
+    row: 5
+    column: 15
+  fix: ~
+- kind: NotInTest
+  location:
+    row: 8
+    column: 9
+  end_location:
+    row: 8
+    column: 13
+  fix: ~
+- kind: NotInTest
+  location:
+    row: 11
+    column: 24
+  end_location:
+    row: 11
+    column: 28
+  fix: ~
+- kind: NotInTest
+  location:
+    row: 14
+    column: 10
+  end_location:
+    row: 14
+    column: 14
+  fix: ~
+
