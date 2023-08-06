@@ -1,0 +1,2 @@
+[console_scripts]
+smart_tv_telegram = smart_tv_telegram.__main__:entry_point
