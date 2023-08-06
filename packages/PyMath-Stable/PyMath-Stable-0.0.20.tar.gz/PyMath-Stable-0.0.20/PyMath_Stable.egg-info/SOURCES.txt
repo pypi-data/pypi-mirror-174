@@ -1,0 +1,8 @@
+License.md
+setup.py
+PyMath_Stable.egg-info/PKG-INFO
+PyMath_Stable.egg-info/SOURCES.txt
+PyMath_Stable.egg-info/dependency_links.txt
+PyMath_Stable.egg-info/top_level.txt
+Pymath/PyMathFunc.py
+Pymath/__init__.py
