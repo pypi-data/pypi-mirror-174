@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: PySmartShell
+Version: 0.0.3
+Summary: PySmartShell is a quick context creator provider for command creation
+Home-page: UNKNOWN
+Author: Colageo Mirko
+Author-email: mirko.colageo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.10.0
+License-File: LICENCE
+Requires-Dist: Pygments (==2.13.0)
+Requires-Dist: SecretStorage (==3.3.3)
+Requires-Dist: bleach (==5.0.1)
+Requires-Dist: certifi (==2022.9.24)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==2.1.1)
+Requires-Dist: commonmark (==0.9.1)
+Requires-Dist: cryptography (==38.0.1)
+Requires-Dist: decorator (==5.1.1)
+Requires-Dist: docutils (==0.19)
+Requires-Dist: idna (==3.4)
+Requires-Dist: importlib-metadata (==5.0.0)
+Requires-Dist: jaraco.classes (==3.2.3)
+Requires-Dist: jeepney (==0.8.0)
+Requires-Dist: keyring (==23.9.3)
+Requires-Dist: more-itertools (==9.0.0)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: pandas (==1.5.1)
+Requires-Dist: pkginfo (==1.8.3)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2022.6)
+Requires-Dist: readme-renderer (==37.3)
+Requires-Dist: requests-toolbelt (==0.10.1)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: rfc3986 (==2.0.0)
+Requires-Dist: rich (==12.6.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==1.26.12)
+Requires-Dist: validators (==0.20.0)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==3.10.0)
+
+UNKNOWN
+
