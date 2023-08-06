@@ -1,0 +1,13 @@
+felips_counter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+felips_counter/__main__.py,sha256=e65EH0bItfJVdf-MmUeqCTVUUA41ZH8J9RxVKcJWnm4,1059
+felips_counter/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+felips_counter/src/reader.py,sha256=9RaWDW7FGGCy2NfKDnr-kfmPFZwgX4eLDmD9di6HQx4,2897
+felips_counter/src/writer.py,sha256=AxCJs0AYiG0R91pwoTd0lzGzPKZWFTNbA_qh7kFTmmU,464
+felips_counter/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+felips_counter/tests/__main__.py,sha256=ZTmVcGYZdwkwHyKfU_JFFXT-Cc6fw1M3GgzBWJt-I6U,48
+felips_counter-0.0.1.dist-info/LICENSE,sha256=-8vfC1BWE8_B8eCH5fxcFl8EME99iZ3ukD3bpV_zgsE,1090
+felips_counter-0.0.1.dist-info/METADATA,sha256=LVy2W91nY_2WH2sucKgDsx3B8rqRIOlly1td_L8Rkt0,606
+felips_counter-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+felips_counter-0.0.1.dist-info/entry_points.txt,sha256=_MDJjgSMQad3bjKHlw0G34tBrfyIGWXEuqYICYvax4I,57
+felips_counter-0.0.1.dist-info/top_level.txt,sha256=XWBgQxxo-AP6TTBAiz_FRc4WbOJxnk9Bestvm0VXdgc,15
+felips_counter-0.0.1.dist-info/RECORD,,

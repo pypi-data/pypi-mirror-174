@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: felips-counter
+Version: 0.0.1
+Summary: Count your project lines easily!
+Home-page: https://github.com/Blackoutseeker/Felips-Counter-Python
+Author: Blackoutseeker (Felipe Pereira)
+Author-email: felipsdev@gmail.com
+License: MIT
+Keywords: felips,counter
+Platform: win32
+Platform: linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Felips-Counter
+
+### Count your project lines easily!
