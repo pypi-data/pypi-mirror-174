@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/dewloosh.plotly.egg-info/PKG-INFO
+src/dewloosh.plotly.egg-info/SOURCES.txt
+src/dewloosh.plotly.egg-info/dependency_links.txt
+src/dewloosh.plotly.egg-info/not-zip-safe
+src/dewloosh.plotly.egg-info/requires.txt
+src/dewloosh.plotly.egg-info/top_level.txt
+src/dewloosh/plotly/__init__.py
+src/dewloosh/plotly/d1.py
+src/dewloosh/plotly/d2.py
