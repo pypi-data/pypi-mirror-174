@@ -1,0 +1,6 @@
+trytond_product<6.7,>=6.6
+trytond_sale<6.7,>=6.6
+trytond<6.7,>=6.6
+
+[test]
+trytond_sale_point<6.7,>=6.6
