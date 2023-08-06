@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/plotly_plasma_test.egg-info/PKG-INFO
+src/plotly_plasma_test.egg-info/SOURCES.txt
+src/plotly_plasma_test.egg-info/dependency_links.txt
+src/plotly_plasma_test.egg-info/requires.txt
+src/plotly_plasma_test.egg-info/top_level.txt
