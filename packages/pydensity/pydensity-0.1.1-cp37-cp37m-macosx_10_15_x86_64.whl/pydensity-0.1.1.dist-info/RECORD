@@ -1,0 +1,12 @@
+pydensity/__init__.py,sha256=sj067cNufAuNcMbMgt726aHrAq7HkgrGK7fUMqxqqeU,80
+pydensity/backends/__init__.py,sha256=71lggVKFaqO6qSZ6kreRGhKmooVVZLxwGWLHv1i-CCE,381
+pydensity/backends/cffi/__init__.py,sha256=yaRXVN0K2KpHHB2bAbmB3ZJhwc7aGCeDYOOv1FJ8zfw,5841
+pydensity/backends/cffi/_density.abi3.so,sha256=ztW5PX1I6oFCxbfFYQyC8khFWmv3-A0SBf9hHKqjxmc,104608
+pydensity/backends/cffi/build.py,sha256=4d3PFcER-oyo7fovtcSDnTyEEHcWIq2AjzZWNmbg48k,7960
+pydensity/backends/cython/__init__.py,sha256=YDzlvo-IwrWCGOnxrvYkL_SGnYmI_ern2NBbxdjSWls,73
+pydensity/backends/cython/_density.abi3.so,sha256=Xi4xqPVAA311U7QZk_f5H1hkc_aa4VKerb8TwNz3LmA,251680
+pydensity/backends/cython/_density.c,sha256=-wljpfwyc-ZMw723_9mNy3W3RVwVJKyBBcHbq-OwJ78,987235
+pydensity-0.1.1.dist-info/METADATA,sha256=lWvaOFp1AJ8vIgkVXgem0uUIsgArut_BgQwgfCqAgTk,3557
+pydensity-0.1.1.dist-info/WHEEL,sha256=F-joUO9Niy2sXQSGChRzu-mfPcZVqo-aIdYGWSUwoWo,111
+pydensity-0.1.1.dist-info/top_level.txt,sha256=e6OCziblz9NFe_441f8SLbG-c_XJlL4JUaLEBxnHlKI,10
+pydensity-0.1.1.dist-info/RECORD,,
