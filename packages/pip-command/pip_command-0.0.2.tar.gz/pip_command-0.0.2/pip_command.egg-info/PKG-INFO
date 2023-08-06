@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pip-command
+Version: 0.0.2
+Summary: lib for fast work with pip commands
+Home-page: https://github.com/pavelglazunov/pip-command
+Author: pavelgs
+Author-email: p6282813@yandex.ru
+License: Apache License, Version 2.0, see LICENSE file
+Platform: UNKNOWN
+
+README.md
+

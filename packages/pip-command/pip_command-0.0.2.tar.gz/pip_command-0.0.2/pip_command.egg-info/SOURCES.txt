@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pip_command/__init__.py
+pip_command/pip_command.py
+pip_command/pip_insatll.py
+pip_command.egg-info/PKG-INFO
+pip_command.egg-info/SOURCES.txt
+pip_command.egg-info/dependency_links.txt
+pip_command.egg-info/top_level.txt
