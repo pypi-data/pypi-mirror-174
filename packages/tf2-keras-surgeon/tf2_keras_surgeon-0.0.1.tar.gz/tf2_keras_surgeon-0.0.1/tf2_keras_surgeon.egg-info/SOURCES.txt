@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tf2_keras_surgeon.egg-info/PKG-INFO
+tf2_keras_surgeon.egg-info/SOURCES.txt
+tf2_keras_surgeon.egg-info/dependency_links.txt
+tf2_keras_surgeon.egg-info/requires.txt
+tf2_keras_surgeon.egg-info/top_level.txt
+tf2kerassurgeon/__init__.py
+tf2kerassurgeon/operations.py
+tf2kerassurgeon/surgeon.py
+tf2kerassurgeon/utils.py
