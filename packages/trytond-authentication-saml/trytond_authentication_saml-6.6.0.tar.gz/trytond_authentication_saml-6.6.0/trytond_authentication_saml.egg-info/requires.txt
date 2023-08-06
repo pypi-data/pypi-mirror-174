@@ -1,0 +1,4 @@
+pysaml2
+trytond<6.7,>=6.6
+
+[test]
