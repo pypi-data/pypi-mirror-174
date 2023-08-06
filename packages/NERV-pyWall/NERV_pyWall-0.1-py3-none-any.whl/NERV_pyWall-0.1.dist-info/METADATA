@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: NERV-pyWall
+Version: 0.1
+Summary: First assignment
+Home-page: https://gitlab.com/nerv8/2022_assignment1_pywall.git
+Author: NERV Team
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
+
+NERV project for the first assignment
