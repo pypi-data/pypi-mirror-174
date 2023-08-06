@@ -1,0 +1,15 @@
+SearchProblemsAI/SearchAlgorithms.py,sha256=2w6Adwi64bpWYazkp-jvRS40M4jwPYmAlkMCX-FXHZM,16374
+SearchProblemsAI/SearchProblem.py,sha256=iOxlUMndRAwqQeM2lOb-NUMI3jZVlVHOXp0DghCoZyM,10680
+SearchProblemsAI/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SearchProblemsAI/utils.py,sha256=ZpBvX4bnVPTmk_q7XXZ3npEG-hMpabgb6BLpS0bWJAo,348
+SearchProblemsAI/search_problems/FindCandy.py,sha256=ALUW5vM2rwm2GwC8ss37dqjq1MqSJyZgoAkLh_Unmys,5956
+SearchProblemsAI/search_problems/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/context.py,sha256=UnMsS6nb-VAf0V7Xr5iS5bGgunMj8GK6e4TeQRB_1ic,128
+example/main.py,sha256=Q10wgK1GKQ5-_T44I3SPThd8oC9M3eq9Eoz7Bc2_mt4,703
+example/main_nonDeterministic.py,sha256=898DvQIlq8phk__q-Fuxmmr9aYVipT86vzcDN6wIDNo,569
+example/main_sensorless.py,sha256=hrAc1Vv2ulUbWUxQJtuht_ZQA2hYTc9Hp9Tsg1DWc0o,544
+SearchProblemsAI-1.0.1.dist-info/LICENSE,sha256=WnHwinXAFfxxvcVuJMxiZXLZc6VenW1B9IsxESEbLXg,1072
+SearchProblemsAI-1.0.1.dist-info/METADATA,sha256=zBn3JtPsk8x9F1kBB_c5pR2AcP3udDlt5e0YulVwEuk,5720
+SearchProblemsAI-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SearchProblemsAI-1.0.1.dist-info/top_level.txt,sha256=yzFjuOslMa0x9TLLS3ROmxN4SlOG2pno79dGVIPWSvs,25
+SearchProblemsAI-1.0.1.dist-info/RECORD,,
