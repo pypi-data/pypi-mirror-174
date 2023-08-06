@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "usabrewer"
+version = "0.0.3"
+description = "Python color palettes based on travel posters from the 50 states"
+authors = ["Emma Glass"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
