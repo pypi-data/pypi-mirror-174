@@ -1,0 +1,8 @@
+topically/__init__.py,sha256=LpMJOme_eogyzlPXWG_8dDxLQe9CGdqK8F74qEhEISI,323
+topically/app.py,sha256=8ckk5NzaWfeIAN6AS4SQN927LJ-I1QiLv4Poo6uMfGo,4956
+topically/cluster_namers.py,sha256=J50LTe6xP8eSw7UKmNOmwFUPGfiz3xVN8b9dr9DP3ZI,2863
+topically/prompts/prompts.py,sha256=KISTfHasl7Hw9yA9W68kU5t6A8m5yqvz92S30oj5yY8,6619
+topically-0.0.2.dist-info/LICENSE,sha256=0rEI4wLOoQPQoa0EJPCgh0Cc3OFUxcC3ImTHg5o4Yos,1088
+topically-0.0.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+topically-0.0.2.dist-info/METADATA,sha256=64aOPkXuwS0yK0J-puVX3PNcHD8d-jC-KYgwCUU4Ojo,659
+topically-0.0.2.dist-info/RECORD,,
