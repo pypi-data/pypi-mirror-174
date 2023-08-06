@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: redis-job-controller
+Version: 0.0.8
+Summary: Package for enqueuing and fetching async jobs, using Redis as a queue and result repository
+Author: Karol Ważny
+Requires-Dist: redis
+
