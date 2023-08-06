@@ -1,0 +1,4 @@
+trytond_country<6.7,>=6.6
+trytond_party<6.7,>=6.6
+trytond_product<6.7,>=6.6
+trytond<6.7,>=6.6
