@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+templus/__init__.py
+templus/client.py
+templus/objects.py
+templus.egg-info/PKG-INFO
+templus.egg-info/SOURCES.txt
+templus.egg-info/dependency_links.txt
+templus.egg-info/top_level.txt

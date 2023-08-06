@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: templus
+Version: 1.4
+Summary: library for reading and receiving messages from https://tempmail.plus/ru/#!
+Home-page: https://github.com/BitterTruth1/templus
+Author-email: bonnita1900432@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/BitterTruth1/templus/archive/refs/heads/main.zip
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+---
+
+__install using pip__
+
+```python
+pip install templus
+
+```
+
+---
+
+__code example__
+
+```python
+import templus
+
+client = templus.Client() #insert mail as an argument if you want to interact with it through a class attribute
+mails = client.generate_mails(10)
+print("generated mails: %s" % ", ".join(mails))
+mail = mails[0]
+msgs_ids = client.get_messages(mail).id
+for id in msgs_ids:
+	print(client.read_message(id, mail).text)
+
+```
+
+---
+
+* __objects__
+
+>`get_messages() -> Messages`
+
+>>__attributes__:
+
+>>json
+
+>>id
+
+>>is_new
+
+>>from_mail
+
+>>from_name
+
+>>title
+
+>>date
+
+> `read_message() -> Message`
+
+>>__attributes__:
+
+>>json
+
+>>id
+
+>>from_mail
+
+>>from_name
+
+>>title
+
+>>text
+
+>>attachments
+
+>>date
+
+---
+
+* __project links__
+
+>[github](https://github.com/BitterTruth1/templus/tree/main)
+
+>[telegram](https://t.me/xarlchat)
+
+---
+
+
