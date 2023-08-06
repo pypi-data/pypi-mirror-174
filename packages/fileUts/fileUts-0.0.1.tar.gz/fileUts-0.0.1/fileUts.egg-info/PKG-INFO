@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: fileUts
+Version: 0.0.1
+Summary: File and path manager package
+Home-page: UNKNOWN
+Author: Melque Lima
+Author-email: melque_ex@yahoo.com.br
+License: MIT
+Description: # fileUts
+        #
+        ### Installation
+        
+        ```sh
+        pip install fileUts
+        ```
+        
+        ### Usages
+        #
+        ___
+        #### isDir
+        ```py
+        from fileUts import isDir
+        
+        add1 = "c:/mydir"
+        add2 = "c:/mydir/myfile.ext"
+        
+        print(isDir(add1))
+        print(isDir(add2))
+        
+        ```
+        ```py
+        True
+        False
+        ```
+        ___
+        #### isFile
+        ```py
+        from fileUts import isFile
+        
+        add1 = "c:/mydir"
+        add2 = "c:/mydir/myfile.ext"
+        
+        print(isFile(add1))
+        print(isFile(add2))
+        
+        ```
+        ```py
+        False
+        True
+        ```
+        ___
+        #### fileExists
+        
+        _Raise_: \<InvalidFile\>
+        
+        ```py
+        from fileUts import fileExists
+        
+        add1 = "c:/mydir/myfile.ext"
+        add2 = "c:/mydir"
+        
+        print(fileExists(add1))
+        print(fileExists(add2))
+        
+        ```
+        ```py
+        True
+        <InvalidFile>
+        ```
+        
+        ___
+        #### dirExists
+        
+        _Raise_: \<InvalidDir\>
+        
+        ```py
+        from fileUts import dirExists
+        
+        add1 = "c:/mydir/myfile.ext"
+        add2 = "c:/mydir"
+        
+        print(dirExists(add1))
+        print(dirExists(add2))
+        
+        ```
+        ```py
+        <InvalidDir>
+        True
+        ```
+        
+        ___
+        #### getFileExtenssion
+        
+        _Raise_: \<InvalidFile\>
+        
+        ```py
+        from fileUts import getFileExtenssion
+        
+        add1 = "c:/mydir/myfile.ext"
+        add2 = "c:/mydir"
+        
+        print(getFileExtenssion(add1))
+        print(getFileExtenssion(add2))
+        
+        ```
+        ```py
+        'ext'
+        <InvalidFile>
+        ```
+        
+        
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (2022-10-30)
+        ------------------
+        - First Release
+Keywords: fileUts
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
