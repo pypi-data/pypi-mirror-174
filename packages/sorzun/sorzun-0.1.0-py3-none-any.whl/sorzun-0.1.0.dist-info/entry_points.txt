@@ -1,0 +1,3 @@
+[console_scripts]
+cashaddrconv = sorzun.cashaddrconv:main
+szn = sorzun.__main__:main

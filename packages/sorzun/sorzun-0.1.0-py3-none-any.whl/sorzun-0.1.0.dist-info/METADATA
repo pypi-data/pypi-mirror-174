@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sorzun
+Version: 0.1.0
+Summary: A BIP32/39/44 key generation CLI utility
+Author-email: pezcore <tvboyd23@gmail.com>
+License: MIT
+Project-URL: gitlab, https://gitlab.com/pezcore/sorzun
+Keywords: BIP32,BIP39,Bitcoin,Mnemonic
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: based58 (==0.1.1)
+
