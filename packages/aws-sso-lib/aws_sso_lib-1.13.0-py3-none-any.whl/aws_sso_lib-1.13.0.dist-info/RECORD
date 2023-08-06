@@ -1,0 +1,17 @@
+aws_sso_lib/__init__.py,sha256=xo4pRhPlXWn2vkg_Ap8E128etq2-E-K2lGcEnEHP4-w,723
+aws_sso_lib/assignments.py,sha256=VnXxNHIFJJzGsba_dpQOUXNpX1QSZyHlfig4FlqTWHo,20705
+aws_sso_lib/browser.py,sha256=i4TUtWz3jun-YzBRwvvyNHHPO0NuOLUoguXx9Q82OOg,2765
+aws_sso_lib/compat.py,sha256=AmUv1YTLEarqwP601xsuBTDZyC7a7qvYBH9HLlv0Yko,3461
+aws_sso_lib/config.py,sha256=pQlTH7qv0c1J93v35qC8ubsQ0N4O_fQZlekdgo3n59M,9866
+aws_sso_lib/config_file_writer.py,sha256=zaYZckhXnF2mjIcM7JpWyv5tLgj8CesTO0e_l4jC6Mk,9860
+aws_sso_lib/exceptions.py,sha256=LOyyyHnTvXRcNOj5SkSiLvVI4N_SWBl7GuqnO1jlxjU,875
+aws_sso_lib/fake_identifiers.py,sha256=CSRFwlXiTTjaqSXF2ffpXpnKqez-ghnXBsj523culFw,2610
+aws_sso_lib/format.py,sha256=ewaUpkR7q0EBzkqyIMVDxRe1il6IhoSyuTiewxae1eU,1521
+aws_sso_lib/lookup.py,sha256=qy_fO9xsAh1c4pKt3ntQBuLhyzj1paQzEc-RjeEB2jA,22182
+aws_sso_lib/sso.py,sha256=VkAaQjtI9UbhqWEAu5FW0eivlVPUBnmX_uWkDXiQDe8,16978
+aws_sso_lib/vendored_botocore/__init__.py,sha256=oybMvliOkUnFeboQEFoOe86BELs2Ll-4XVarQef4d78,524
+aws_sso_lib/vendored_botocore/exceptions.py,sha256=NTikpl-xgyUXu9E44z1PKSHBUNobr7eUueIRNcVSeno,963
+aws_sso_lib/vendored_botocore/utils.py,sha256=Up6Lg3ZNb0A7FgD5d4WLMS9cUNjHM01zDxHOGrhwnM0,9631
+aws_sso_lib-1.13.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aws_sso_lib-1.13.0.dist-info/METADATA,sha256=lYZnRXF1HXftqcoeCYOnh7onASyN-zpvT2KRXgzuU10,11600
+aws_sso_lib-1.13.0.dist-info/RECORD,,
