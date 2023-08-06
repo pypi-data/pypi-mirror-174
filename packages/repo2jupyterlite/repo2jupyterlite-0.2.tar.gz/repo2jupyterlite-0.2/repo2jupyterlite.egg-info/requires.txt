@@ -1,0 +1,4 @@
+jupyterlite
+jupyterlab
+jupyterlite-xeus-python
+jupyter-repo2docker
