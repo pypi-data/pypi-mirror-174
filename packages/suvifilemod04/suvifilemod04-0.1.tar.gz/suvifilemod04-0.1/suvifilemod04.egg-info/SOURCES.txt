@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+suvifilemod04/__init__.py
+suvifilemod04/filemod.py
+suvifilemod04.egg-info/PKG-INFO
+suvifilemod04.egg-info/SOURCES.txt
+suvifilemod04.egg-info/dependency_links.txt
+suvifilemod04.egg-info/top_level.txt
