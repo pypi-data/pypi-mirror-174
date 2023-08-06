@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dash-tailwind-component
+Version: 0.0.1
+Summary: Library of tailwind styled components for Plotly Dash
+Home-page: UNKNOWN
+Author: Ridhwaan Mayet <ridhwaan@ridhwaan.xyz>
+License: MIT
+Platform: UNKNOWN
+Classifier: Framework :: Dash
+License-File: LICENSE
+
+UNKNOWN
+
