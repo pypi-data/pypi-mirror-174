@@ -1,0 +1,8 @@
+setup.py
+Bearing_new_3/__init__.py
+Bearing_new_3/bearing.py
+Bearing_new_3.egg-info/PKG-INFO
+Bearing_new_3.egg-info/SOURCES.txt
+Bearing_new_3.egg-info/dependency_links.txt
+Bearing_new_3.egg-info/requires.txt
+Bearing_new_3.egg-info/top_level.txt
