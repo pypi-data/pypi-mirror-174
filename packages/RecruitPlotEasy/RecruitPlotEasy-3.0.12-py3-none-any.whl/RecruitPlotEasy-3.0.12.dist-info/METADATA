@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: RecruitPlotEasy
+Version: 3.0.12
+Summary: A tool for visualizing short read mapping efforts
+Author: Kenji Gerhardt
+Author-email: kenji.gerhardt@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pyrodigal (>=2.0)
+Requires-Dist: plotly
+
