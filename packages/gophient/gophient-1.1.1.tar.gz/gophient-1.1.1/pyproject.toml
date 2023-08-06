@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "gophient"
+version = "1.1.1"
+description = "Client library for the Gopherspace"
+license = "MIT"
+authors = ["Arisu Wonderland <arisuchr@riseup.net>"]
+readme = "README.md"
+repository = "https://github.com/arichr/gophient"
+documentation = "https://arichr.github.io/gophient/"
+keywords = ["gopher", "gophient", "client", "python3", "gopher-client", "gopherspace", "module", "library"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Communications",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+    {path = "tests", format = "sdist"},
+
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+wemake-python-styleguide = "^0.16.1"
+pylint = "^2.14.5"
+portray = "^1.7.0"
+pytest = "^7.1.2"
+
+[tool.isort]
+line_length = 100
+
+[[tool.portray.mkdocs.nav]]
+Home = "README.md"
+
+[[tool.portray.mkdocs.nav]]
+    [[tool.portray.mkdocs.nav."Quick Start"]]
+    "1. Installation" = "docs/quick_start/1_-_Installation.md"
+
+    [[tool.portray.mkdocs.nav."Quick Start"]]
+    "2. API" = "docs/quick_start/2_-_API.md"
+
+[tool.portray.mkdocs.theme]
+name = "material"
+palette = {primary = "green", accent = "orange"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
