@@ -1,0 +1,12 @@
+neozot/__main__.py,sha256=ob2pG9r-0bLuVnYA83QtrZrvKddDZ33Eggp5EJ6JG54,4905
+neozot/feedprovider.py,sha256=RGVeuJqYoGHOwZekQFT-Mewr5e7taykQtPLezdxCIco,4543
+neozot/recommender.py,sha256=FEpymzVqWxWcpg1g3rpeh0QpB2YInIJtktI5QjPHH40,6453
+neozot/ssrec.py,sha256=_fevhnv2FTLrhM9iSFZnCM2P9Czv5NTSJhqYlHqFrzk,1551
+neozot/zoterodb.py,sha256=rc_gYlLyB0lF8Jje1awDpVzeVPqWDEUKxZF8VsCcYds,4792
+neozot/ui/index.html,sha256=q6zM3fgJn04zPRoKtCdymocG4L77M5JyU-teJEHB2pA,6179
+neozot/ui/style.css,sha256=vnrLUeleDqGaA5T2OadEyRmZVEwLzwBacsFSgNdXofE,3932
+neozot-0.0.5.dist-info/LICENSE,sha256=cPJrMlr2GQZ9LTKDGTKDK8kkfKcGxyA4DvY38_WYGlg,1067
+neozot-0.0.5.dist-info/METADATA,sha256=QlBs7M4ooEbTXQmY7QTufx8JacoLv9RfQjI7-J40G_s,3591
+neozot-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+neozot-0.0.5.dist-info/top_level.txt,sha256=6Ycvb5wn5rEsKGUqXbWZaZbuIorgHndPi7_ht7IH3Ns,7
+neozot-0.0.5.dist-info/RECORD,,
