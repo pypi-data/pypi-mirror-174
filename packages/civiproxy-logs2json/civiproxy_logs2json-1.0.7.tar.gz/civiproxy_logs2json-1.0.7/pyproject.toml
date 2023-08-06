@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "civiproxy_logs2json"
+version = "1.0.7"
+description = "Translate a CiviProxy logfile into JSON format."
+readme = "README.md"
+authors = [{ name = "Marc Michalsky", email = "michalsky@forumZFD.de" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["civicrm", "json", "logs"]
+dependencies = ['tomli; python_version < "3.11"',]
+requires-python = ">=3.5"
+
+[project.optional-dependencies]
+dev = ["pytest", "bumpver"]
+
+[project.urls]
+Homepage = "https://github.com/MarcMichalsky/civiproxy_logs2json"
+
+[project.scripts]
+cpl2j = "civiproxy_logs2json.__main__:main"
+
+[tool.bumpver]
+current_version = "1.0.7"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "🔖 bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    '"{version}"',
+]
+"src/civiproxy_logs2json/__init__.py" = [
+    "{version}"
+]
