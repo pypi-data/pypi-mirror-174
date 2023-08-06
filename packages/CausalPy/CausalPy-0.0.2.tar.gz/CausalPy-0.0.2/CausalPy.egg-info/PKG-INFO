@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: CausalPy
+Version: 0.0.2
+Summary: Causal inference for quasi-experiments in Python
+Home-page: https://github.com/pymc-labs/CausalPy
+Maintainer: Benjamin T. Vincent
+License: LICENSE
+Requires-Python: >=3.8
+License-File: LICENSE
