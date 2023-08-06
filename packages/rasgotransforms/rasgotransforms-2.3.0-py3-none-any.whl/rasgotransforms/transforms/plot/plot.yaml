@@ -1,0 +1,61 @@
+name: plot
+type: insight
+context:
+  chart_type: series
+  default_template: true
+tags:
+  - insight
+  - time series
+  - summary metrics
+  - column distribution
+description: Visualize a dataset flexibly, depending on axes and metrics chosen
+arguments:
+  x_axis:
+    type: column
+    description: X-axis by which to view your data. Can be categorical, datetime, or numeric. If categorical, will output a bar chart. If datetime or numerical, will result in a line chart.
+  metrics:
+    type: column_agg_list
+    description: numeric, quantitative values that you can measure
+  expression_metrics:
+    type: metric_list
+    description: List of metric definitions for expression metrics to include in the plot
+  num_buckets:
+    type: value
+    description: max number of buckets to create; defaults to 200
+    is_optional: true
+  filters:
+    type: filter_list
+    description: Filter logic on one or more columns. Can choose between a simple comparison filter or advanced filter using free text.
+    is_optional: true
+  x_axis_order:
+    type: sort_direction
+    description: Either ASC or DESC, depending on if you'd like to order your bar chart X-axis returned in ascending or descending order
+    is_optional: true
+  group_by:
+    type: column_list
+    description: A categorical column by which to pivot the calculated metrics. Including this argument will generate a new metric calculation for each distinct value in the group by column. If this column has more than 20 distinct values, the plot will not generate.
+    is_optional: true
+  timeseries_options:
+    type: timeseries_options
+    description: |
+      (Required if 'x_axis' is a date/datetime type) A dictionary containing the start and end dates as well as 
+      the time grain which will be used to create the datespine for the x_axis. Time grain options are ('day', 'week', 'month', 'year', 'quarter', and 'all')
+      Example: {
+        'start_date': '2021-12-01',
+        'end_date': '2022-07-01',
+        'time_grain': 'day'
+      }
+    is_optional: true
+  max_num_groups:
+    type: int
+    description: |
+      (Default: 10) If group_by is specified, this is the max number of distinct groups that will be aggregated, all others will by combined in a 'Other' group
+    is_optional: true
+example_code: |
+  ds = rasgo.get.dataset(id)
+
+  ds2 = ds.plot(x_axis='TEMPERATURE', metrics={
+            'RAINFALL': ['SUM', 'AVG'],
+            'SNOWFALL': ['SUM', 'AVG']
+        })
+  ds2.preview()
