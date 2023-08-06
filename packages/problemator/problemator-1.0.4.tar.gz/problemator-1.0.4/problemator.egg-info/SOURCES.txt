@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.MD
+setup.py
+problemator/__init__.py
+problemator/problemator.py
+problemator.egg-info/PKG-INFO
+problemator.egg-info/SOURCES.txt
+problemator.egg-info/dependency_links.txt
+problemator.egg-info/requires.txt
+problemator.egg-info/top_level.txt
