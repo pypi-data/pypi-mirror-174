@@ -1,0 +1,16 @@
+setup.py
+txfrestframeworkjwt/__init__.py
+txfrestframeworkjwt/authentication.py
+txfrestframeworkjwt/compat.py
+txfrestframeworkjwt/models.py
+txfrestframeworkjwt/serializers.py
+txfrestframeworkjwt/settings.py
+txfrestframeworkjwt/test.py
+txfrestframeworkjwt/utils.py
+txfrestframeworkjwt/views.py
+txfrestframeworkjwt.egg-info/PKG-INFO
+txfrestframeworkjwt.egg-info/SOURCES.txt
+txfrestframeworkjwt.egg-info/dependency_links.txt
+txfrestframeworkjwt.egg-info/requires.txt
+txfrestframeworkjwt.egg-info/top_level.txt
+txfrestframeworkjwt.egg-info/zip-safe
