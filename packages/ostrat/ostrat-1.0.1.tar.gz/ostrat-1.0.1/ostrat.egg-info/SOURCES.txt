@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ostrat/__init__.py
+ostrat/ostrat.py
+ostrat.egg-info/PKG-INFO
+ostrat.egg-info/SOURCES.txt
+ostrat.egg-info/dependency_links.txt
+ostrat.egg-info/requires.txt
+ostrat.egg-info/top_level.txt
