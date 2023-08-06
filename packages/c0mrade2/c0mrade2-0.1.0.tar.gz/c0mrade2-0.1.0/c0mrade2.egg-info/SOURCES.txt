@@ -1,0 +1,8 @@
+setup.py
+c0mrade2.egg-info/PKG-INFO
+c0mrade2.egg-info/SOURCES.txt
+c0mrade2.egg-info/dependency_links.txt
+c0mrade2.egg-info/requires.txt
+c0mrade2.egg-info/top_level.txt
+telelogging/__init__.py
+telelogging/telegram_bot_logging.py
