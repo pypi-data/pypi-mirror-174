@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: getbalance
+Version: 0.0.4
+Summary: A python library that provides a wallet address balance at any day.
+Author: Norma Escobar
+Author-email: norma@normaescobar.com
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+## Introduction
+getbalance is a Python library that provides a wallet address balance at any day.
+It was born from the tedious task of manually adding/subracting values to get the balance of an address at any given day.
+All kudos to the Ethereum team of developers for the free APIs.
+
+## Security
+By default getbalance does not guard against quadratic blowup or billion laughs xml attacks. To guard against these install defusedxml.
+
+## Documentation
+The documentation is at: https://krpbtc.com
+
+* installation methods
+* supported coins/tokens
+* how to contribute
+    
+    
