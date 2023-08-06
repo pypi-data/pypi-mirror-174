@@ -1,0 +1,12 @@
+translit_me/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+translit_me/lang_tables.py,sha256=1a7zVT6n0d5B-nv2L2ZgOFLg26AgXW9Du9hqrsd20Gg,5720
+translit_me/main.py,sha256=4ON8fWxvz8HJ0IP-4S6f-QxZhoNLUvtx3CIrtdVkzIQ,1564
+translit_me/transliterator.py,sha256=FRDniMy4Z-iXoHWGvGsAhBEb8nm_IRGRkS0zWMKOXEc,5581
+translit_me/tests/testCharTrie.py,sha256=W_H4SOAIDkwaH1T4slKH2clmw8gKvrIIveL85JLkgmY,622
+translit_me/tests/test_remove_vowels.py,sha256=td2bZuR8t5rxRy9ub3H9JjNL6Qvevz-VKMPY0qD9y9E,1183
+translit_me/tests/test_transliterate.py,sha256=Ba4LT8401MdenVrgSjKrutgkGlml6C7oA19sMhVWPYE,1499
+translit_me-1.0.dist-info/LICENSE.txt,sha256=re-DgGvyl-Dw1rVGLClhmF-BlP5uHJtJyHXqyUpKF7M,603
+translit_me-1.0.dist-info/METADATA,sha256=feBNu1pG3lMtUHrSwqJTkl4w5ASSO6pYrlWiU3ME1T4,2843
+translit_me-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+translit_me-1.0.dist-info/top_level.txt,sha256=VL2FX-l9HMLhfYuvuA5dKbOvjUObxC5u3UyhXUsb1GY,12
+translit_me-1.0.dist-info/RECORD,,
