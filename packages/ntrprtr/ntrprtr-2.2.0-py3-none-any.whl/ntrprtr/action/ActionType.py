@@ -1,0 +1,13 @@
+class ActionType():
+    DECIMAL = "decimal"
+    ASCII = "ascii"
+    EQUALS = "equals"
+    BITEQUALS = "bitequals"
+    BINARY = "binary"
+    HEXDUMP = "hexdump"
+    DOSDATE = "dosdate"
+    DOSTIME = "dostime"
+    UNIXTIME = "unixtime"
+    UNICODE = "unicode"
+    ENDIANESS = "endianess"
+    WIN32TIME = "win32time"
