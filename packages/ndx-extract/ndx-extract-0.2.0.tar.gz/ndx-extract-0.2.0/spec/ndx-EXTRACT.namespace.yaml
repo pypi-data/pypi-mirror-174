@@ -1,0 +1,15 @@
+namespaces:
+- author:
+  - Cesar Echavarria
+  - Szonja Weigl
+  contact:
+  - cesar.echavarria@catalystneuro.com
+  - szonja.weigl@catalystneuro.com
+  doc: NWB Extension for storage of EXTRACT parameters and output
+  name: ndx-extract
+  schema:
+  - namespace: core
+    neurodata_types:
+    - ImageSegmentation
+  - source: ndx-extract.extensions.yaml
+  version: 0.2.0

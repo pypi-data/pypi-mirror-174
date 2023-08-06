@@ -1,0 +1,467 @@
+groups:
+- neurodata_type_def: EXTRACTSegmentation
+  neurodata_type_inc: ImageSegmentation
+  doc: EXTRACT configuration parameters
+  attributes:
+  - name: version
+    dtype: text
+    doc: The version of EXTRACT.
+    required: false
+  - name: preprocess
+    dtype: bool
+    doc: Indicates whether or not data preprocessing was applied before main EXTRACT
+      function.
+    required: false
+  - name: pre_mask_on
+    dtype: bool
+    doc: Indicates whether or not an image mask was applied for preprocessing.
+    required: false
+  - name: pre_mask_radius
+    dtype: float64
+    doc: The radius of the image mask.
+    required: false
+  - name: fix_zero_FOV_strips
+    dtype: bool
+    doc: Indicates whether or not find and fix spatial slices that are occasionally
+      zero due to frame registration during preprocessing.
+    required: false
+  - name: medfilt_outlier_pixels
+    dtype: bool
+    doc: Determines whether outlier pixels in the movie should be replaced with their
+      neighborhood median.
+    required: false
+  - name: skip_dff
+    dtype: bool
+    doc: Indicates whether to skip Df/F calculation in preprocessing.
+    required: false
+  - name: second_df
+    dtype: float64
+    doc: The setting for second df calculation.
+    required: false
+  - name: skip_highpass
+    dtype: bool
+    doc: Indicates whether to skip highpass filtering in preprocessing.
+    required: false
+  - name: spatial_highpass_cutoff
+    dtype: float64
+    doc: Cutoff determining the strength of butterworth spatial filtering of the movie.
+      Values defined relative to the average cell radius.
+    required: false
+  - name: temporal_denoising
+    dtype: bool
+    doc: Determines whether to apply temporal wavelet denoising.
+    required: false
+  - name: remove_background
+    dtype: bool
+    doc: Determines whether to subtract the (spatial) background (largest spatiotemporal
+      mode of the movie matrix).
+    required: false
+  - name: use_default_gpu
+    dtype: bool
+    doc: Indicates whether or not use the default GPU.
+    required: false
+  - name: use_gpu
+    dtype: bool
+    doc: Indicates whether to run EXTRACT on GPU. If False, EXTRACT was run on CPU.
+    required: false
+  - name: multi_gpu
+    dtype: bool
+    doc: Indicates whether multiple GPUs were used.
+    required: false
+  - name: parallel_cpu
+    dtype: bool
+    doc: Indicates whether parallel CPUs were used.
+    required: false
+  - name: avg_cell_radius
+    dtype: float64
+    doc: Radius estimate for an average cell in the movie.
+    required: false
+  - name: avg_event_tau
+    dtype: float64
+    doc: Determines the average event tau.
+    required: false
+  - name: avg_yield_threshold
+    dtype: float64
+    doc: Determines the average yield threshold.
+    required: false
+  - name: num_partitions_x
+    dtype: float64
+    doc: Number of movie partitions in x dimension.
+    required: false
+  - name: num_partitions_y
+    dtype: float64
+    doc: Number of movie partitions in y dimension.
+    required: false
+  - name: trace_output_option
+    dtype: text
+    doc: Raw or non-negative output traces.
+    required: false
+  - name: trace_quantile
+    dtype: float64
+    doc: No description available.
+    required: false
+  - name: dendrite_aware
+    dtype: bool
+    doc: Determines whether or not dendrites are preserved in the output for movies
+      where dendrites are present.
+    required: false
+  - name: crop_circular
+    dtype: bool
+    doc: For microendoscopic movies, whether or not automatically cropping out the
+      region outside the circular imaging region.
+    required: false
+  - name: use_sparse_arrays
+    dtype: bool
+    doc: Determines whether not the output cell images were saved as sparse arrays.
+    required: false
+  - name: verbose
+    dtype: float64
+    doc: Indicates the level of verbosity.
+    required: false
+  - name: compact_output
+    dtype: bool
+    doc: Indicates whether or not leave out bad components that were found but then
+      eliminated from the output.
+    required: false
+  - name: hyperparameter_tuning_flag
+    dtype: bool
+    doc: Indicates whether or not use internal hyperparameter tuning.
+    required: false
+  - name: remove_duplicate_cells
+    dtype: bool
+    doc: For movies processed in multiple partitions, this flag controls duplicate
+      removal in the overlap regions.
+    required: false
+  - name: max_iter
+    dtype: float64
+    doc: Maximum number of alternating estimation iterations.
+    required: false
+  - name: minimal_checks
+    dtype: float64
+    doc: Minimum number of checks that are performed.
+    required: false
+  - name: cellfind_min_snr
+    dtype: float64
+    doc: Minimum peak SNR value for an object to be considered as a cell.
+    required: false
+  - name: cellfind_max_steps
+    dtype: float64
+    doc: Maximum number of cell candidate initialization during cell finding step.
+    required: false
+  - name: cellfind_kappa_std_ratio
+    dtype: float64
+    doc: Kappa will be set to this times the noise std for the component-wise EXTRACT
+      during initialization.
+    required: false
+  - name: cellfind_filter_type
+    dtype: text
+    doc: Type of the spatial smoothing filter used for cell finding.
+    required: false
+  - name: cellfind_numpix_threshold
+    dtype: float64
+    doc: During cell finding, objects with an area < cellfind_numpix_threshold are
+      discarded.
+    required: false
+  - name: cellfind_adaptive_kappa
+    dtype: bool
+    doc: If True, then during cell finding, the robust esimation loss will adaptively
+      set its robustness parameter
+    required: false
+  - name: cellfind_spatial_highpass_cutoff
+    dtype: float64
+    doc: 'Cutoff determining the strength of butterworth spatial filtering of the
+      movie. Values defined relative to the average cell radius. '
+    required: false
+  - name: moving_radius
+    dtype: float32
+    doc: Deprecated variable for older EXTRACT file versions. Radius of moving average
+      filter in the case when cellfind_filter_type = moveavg (moving average)
+    required: false
+  - name: moving_radius_spatial
+    dtype: float64
+    doc: Radius of moving average filter in the case when cellfind_filter_type = moveavg
+      (moving average) for the image.
+    required: false
+  - name: moving_radius_temporal
+    dtype: float64
+    doc: Radius of moving average filter in the case when cellfind_filter_type = moveavg
+      (moving average) for the traces.
+    required: false
+  - name: init_with_gaussian
+    dtype: bool
+    doc: If True, then during cell finding, each cell is initialized with a gaussian
+      shape prior to robust estimation. If False, then initialization is done with
+      a correlation image (preferred for movies with dendrites).
+    required: false
+  - name: high2low_brightness_ratio
+    dtype: float64
+    doc: Threshold for ratio of pixel compared to most bright region in FOV. Used
+      to determine when to stop cell finding process.
+    required: false
+  - name: visualize_cellfinding
+    dtype: float64
+    doc: The visualization setting for cell finding.
+    required: false
+  - name: visualize_cellfinding_full_range
+    dtype: float64
+    doc: The visualization setting for cell finding.
+    required: false
+  - name: visualize_cellfinding_max
+    dtype: float64
+    doc: The visualization setting for cell finding.
+    required: false
+  - name: visualize_cellfinding_min
+    dtype: float64
+    doc: The visualization setting for cell finding.
+    required: false
+  - name: visualize_cellfinding_show_bad_cells
+    dtype: float64
+    doc: The visualization setting for cell finding.
+    required: false
+  - name: kappa_std_ratio
+    dtype: float64
+    doc: Kappa will be set to this times the noise std during the cell refinement
+      process. Cell refinement parameter.
+    required: false
+  - name: T_dup_corr_thresh
+    dtype: float64
+    doc: Through alternating estimation, cells that have higher trace correlation
+      than T_dup_corr_thresh are eliminated. Cell refinement parameter.
+    required: false
+  - name: T_dup_thresh
+    dtype: float64
+    doc: Threshold for traces. Cell refinement parameter.
+    required: false
+  - name: S_dup_corr_thresh
+    dtype: float64
+    doc: Through alternating estimation, cells that have higher image correlation
+      than S_dup_corr_thresh are eliminated. Cell refinement parameter.
+    required: false
+  - name: S_corr_thresh
+    dtype: float64
+    doc: Image correlation threshold. Cell refinement parameter.
+    required: false
+  - name: T_corr_thresh
+    dtype: float64
+    doc: Trace correlation threshold. Cell refinement parameter.
+    required: false
+  - name: temporal_corrupt_thresh
+    dtype: float64
+    doc: Threshold for temporal corruption index. Traces above this threshold are
+      eliminated duirng alternating minimization routine. Cell refinement parameter.
+    required: false
+  - name: spatial_corrupt_thresh
+    dtype: float64
+    doc: Threshold for spatial corruption index. Images above this threshold are eliminated
+      duirng alternating minimization routine. Cell refinement parameter.
+    required: false
+  - name: T_min_snr
+    dtype: float64
+    doc: Threshold for temporal SNR. Cells with temporal SNR below this value will
+      be eliminated. Cell refinement parameter.
+    required: false
+  - name: size_lower_limit
+    dtype: float64
+    doc: Lower size limit for found cells. Cell refinement parameter.
+    required: false
+  - name: size_upper_limit
+    dtype: float64
+    doc: Lower size limit for found cells. Cell refinement parameter.
+    required: false
+  - name: eccent_thresh
+    dtype: float64
+    doc: Upper limit of eccentricity for found cells. Cell refinement parameter.
+    required: false
+  - name: low_ST_index_thresh
+    dtype: float64
+    doc: Lower limit of spatiotemporal activity index. Cell refinement parameter.
+    required: false
+  - name: low_cell_area_flag
+    dtype: bool
+    doc: Boolean flag indicating lower limit of cell area.
+    required: false
+  - name: high_ST_index_thresh
+    dtype: float64
+    doc: Upper limit limit of spatiotemporal activity index. Cell refinement parameter.
+    required: false
+  - name: low_ST_corr_thresh
+    dtype: float64
+    doc: Lower limit of spatiotemporal corelation. Cell refinement parameter.
+    required: false
+  - name: confidence_thresh
+    dtype: float64
+    doc: Confidence threshold for found cells. Cell refinement parameter.
+    required: false
+  - name: downsample_time_by
+    dtype: float64
+    doc: Time downsampling factor.
+    required: false
+  - name: min_tau_after_downsampling
+    dtype: float64
+    doc: Minimum event tau after downsampling.
+    required: false
+  - name: downsample_space_by
+    dtype: float64
+    doc: Spatial downsampling factor.
+    required: false
+  - name: min_radius_after_downsampling
+    dtype: float64
+    doc: Minimum avg radius after downsampling.
+    required: false
+  - name: reestimate_S_if_downsampled
+    dtype: bool
+    doc: Boolean flag. When set to True, images are re-estimated from full movie at
+      the end. When False, images are upsampled by interpolation.
+    required: false
+  - name: reestimate_T_if_downsampled
+    dtype: bool
+    doc: Boolean flag. When set to True, traces are re-estimated from full movie at
+      the end. When False, traces are upsampled by interpolation.
+    required: false
+  - name: adaptive_kappa
+    dtype: bool
+    doc: Boolean flag. If True, then during cell finding, the robust esimation loss
+      will adaptively set its robustness parameter
+    required: false
+  - name: arbitrary_mask
+    dtype: bool
+    doc: Indicates whether to use an arbitrary mask on the image.
+    required: false
+  - name: smoothing_ratio_x2y
+    dtype: float64
+    doc: If the movie contains mainly objects that are elongated in one dimension
+      (e.g. dendrites), this parameter is useful for more smoothing in either x or
+      y dimension.
+    required: false
+  - name: spatial_lowpass_cutoff
+    dtype: float64
+    doc: Cutoff determining the strength of butterworth spatial filtering of the movie.
+      Values defined relative to the average cell radius.
+    required: false
+  - name: smooth_T
+    dtype: bool
+    doc: Indicates whether calculated traces are smoothed using median filtering.
+    required: false
+  - name: smooth_S
+    dtype: bool
+    doc: Indicates whether calculated images are smoothed using a 2-D Gaussian filter.
+    required: false
+  - name: l1_penalty_factor
+    dtype: float64
+    doc: Strength of l1 regularization penalty to be applied when estimating the temporal
+      components.
+    required: false
+  - name: max_iter_S
+    dtype: float64
+    doc: Maximum number of iterations for S estimation steps.
+    required: false
+  - name: max_iter_T
+    dtype: float64
+    doc: Maximum number of iterations for T estimation steps.
+    required: false
+  - name: TOL_sub
+    dtype: float64
+    doc: If the 1-step relative change in the objective within each T and S optimization
+      is less than this, the respective optimization is terminated.
+    required: false
+  - name: TOL_main
+    dtype: float64
+    doc: If the relative change in the main objective function between 2 consecutive
+      alternating minimization steps is less than this, cell extraction is terminated.
+    required: false
+  - name: T_lower_snr_threshold
+    dtype: float64
+    doc: Lower SNR threshold for found traces.
+    required: false
+  - name: save_all_found
+    dtype: bool
+    doc: Determines whether to save all spatial and temporal components found.
+    required: false
+  - name: plot_loss
+    dtype: bool
+    doc: Indicates whether empirical risk was plotted against iterations during alternating
+      estimation.
+    required: false
+  datasets:
+  - name: baseline_quantile
+    dtype: double
+    dims:
+    - height
+    - width
+    shape:
+    - null
+    - null
+    doc: Baseline quantile for Df/F calculation in preprocessing.
+    quantity: '?'
+  - name: S_init
+    dtype: double
+    dims:
+    - height
+    - width
+    shape:
+    - null
+    - null
+    doc: Cell images provided to algorithm as the initial set of cells, skipping its
+      native initialization.
+    quantity: '?'
+  - name: T_init
+    dtype: double
+    dims:
+    - num_cells
+    - timepoints
+    shape:
+    - null
+    - null
+    doc: Cell traces provided to algorithm as the initial set of traces, skipping
+      its native initialization.
+    quantity: '?'
+  - name: movie_mask
+    dtype: double
+    dims:
+    - height
+    - width
+    shape:
+    - null
+    - null
+    doc: The circular mask to apply for microendoscopic movies during preprocessing.
+    quantity: '?'
+  - name: is_pixel_valid
+    dtype: double
+    dims:
+    - height
+    - width
+    shape:
+    - null
+    - null
+    doc: No description available
+    quantity: '?'
+  - name: num_frames
+    dtype: double
+    dims:
+    - height
+    - width
+    shape:
+    - null
+    - null
+    doc: No description available
+    quantity: '?'
+  - name: num_iter_stop_quality_checks
+    dtype: double
+    dims:
+    - height
+    - width
+    shape:
+    - null
+    - null
+    doc: No description available
+    quantity: '?'
+  - name: pick_gpu
+    dtype: double
+    dims:
+    - height
+    - width
+    shape:
+    - null
+    - null
+    doc: No description available
+    quantity: '?'
