@@ -1,0 +1,5 @@
+python-sql>=0.4
+trytond_party<6.7,>=6.6
+trytond<6.7,>=6.6
+
+[test]
