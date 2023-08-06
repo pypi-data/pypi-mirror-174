@@ -1,0 +1,21 @@
+
+[build-system]
+  build-backend = "poetry.core.masonry.api"
+  requires = ["poetry-core>=1.0.0"]
+
+[tool]
+
+  [tool.poetry]
+    authors = ["cycai company"]
+    description = "dataframe libraries used with cnext-app"
+    license = "MIT"
+    name = "cnextlib"
+    version = "0.7.2"
+
+    [tool.poetry.dependencies]
+      python = ">=3.9"
+
+    [tool.poetry.dev-dependencies]
+
+    [[tool.poetry.packages]]
+      include = "cnextlib"

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cnextlib
+Version: 0.7.2
+Summary: dataframe libraries used with cnext-app
+License: MIT
+Author: cycai company
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
