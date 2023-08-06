@@ -1,0 +1,1272 @@
+#+startup: overview
+#+options: ^:nil toc:nil
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \newcounter{QuestionCounter}
+
+#+LATEX_HEADER: \usepackage[textwidth=18cm, textheight=22.5cm]{geometry}
+
+#+LATEX_HEADER: \newcommand{\myrule}{\rule[.5\baselineskip]{.25\textwidth}{.5pt}}
+#+LATEX_HEADER: \newcommand{\myline}{\centerline{\myrule~*~\myrule~*~\myrule}}
+#+LATEX_HEADER: \newenvironment{question}{\refstepcounter{QuestionCounter}\noindent\textbf{Question \theQuestionCounter : }}{\vspace{6cm}\\\myline}
+#+LATEX_HEADER: \newcommand{\questionpage}{\vspace{\baselineskip}\myline}%\pagebreak}
+
+# #+EXCLUDE_TAGS: solution noexport
+
+#+COLUMNS: %50ITEM %TAGS %NUM_RESP %NUM_CORRECT
+
+
+#+title: PDS : base de données des questions et exercices pour le système de fichiers
+
+* QG (FS, faciles) 1 
+
+** Question : valeur de retour de lseek
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 3
+   :CAT: lseek
+   :END:
+   Quel est la valeur de retour de l'appel système =lseek()= ? 
+   Expliquez.
+   
+** Question : chemins
+   :PROPERTIES:
+   :NUM_RESP: 1
+   :NUM_CORRECT: 0
+   :CAT: path
+   :END:
+
+   Quel est la différence entre un chemin absolu et un chemin relatif
+   ? Expliquez à l'aide de quelques exemples. 
+
+** Question : fin d'un fichier
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 3
+   :CAT: lseek
+   :END:
+
+   Expliquer comment se déplacer à la fin d'un fichier. 
+
+** Question : valeur de retour de la primitive read
+   :PROPERTIES:
+   :NUM_RESP: 1
+   :NUM_CORRECT: 1
+   :CAT: read 
+   :END:
+
+   Quel est la valeur de retour de l'appel système =read()= ? 
+   Expliquez.
+
+** Question : taille réelle et taille apparente 
+   :PROPERTIES:
+   :CAT: size
+   :END:
+
+
+   Quel est la différence entre taille réelle et taille apparente d'un
+   fichier ? Expliquez à l'aide d'un exemple.
+
+** Question : taille d'une chaîne
+   :PROPERTIES:
+   :NUM_RESP: 1
+   :NUM_CORRECT: 1
+   :CAT: lseek
+   :END:
+
+   Comment on calcule la taille d'une chaîne de caractères ? 
+
+** Question : sizeof
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 1
+   :CAT: sizeof
+   :END:
+
+   Considérez le code suivant : 
+   #+begin_src c
+     void fun(char *s)
+     {
+	 printf("%d\n", sizeof(s));
+     }
+   #+end_src
+   Quel est la valeur imprimée lors de l'appel de la fonction ?
+   
+** Question : descripteur de fichier 
+   :PROPERTIES:
+   :NUM_RESP: 2
+   :NUM_CORRECT: 2
+   :CAT: fd, cours
+   :END:
+
+   Qu'est-ce que c'est un descripteur de fichier ? Donnez un exemple
+   d'utilisation.
+
+** Question : lien 
+   :PROPERTIES:
+   :NUM_RESP: 1
+   :NUM_CORRECT: 1
+   :CAT: link
+   :END:
+
+   Comment on sait si =/home/lipari/xxx= est un lien symbolique ? 
+   
+** Question : mode utilisateur et superviseur                      
+:PROPERTIES:
+:CAT:      cours
+:END:
+Est-ce que les appels systèmes sont exécutés en "mode utilisateur" ou
+en "mode superviseur" ? Expliquez la différence.
+
+   
+* QG (FS, faciles) 2
+
+** Question : fin d'un fichier 
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 3
+   :CAT: read
+   :END:
+
+   Comment sait-on que l’on a fini de lire un fichier ?
+   
+** Question : directory
+   :PROPERTIES:
+   :NUM_RESP: 2
+   :NUM_CORRECT: 2
+   :CAT: dir
+   :END:
+
+   Comment on sait si =/home/lipari/yyy= est un répertoire ?
+
+** Question : valeur de retour de write
+   :PROPERTIES:
+   :NUM_RESP: 2
+   :NUM_CORRECT: 1
+   :CAT: write
+   :END:
+   Quel est la valeur de retour de l'appel système =write()= ? 
+   Expliquez.
+
+** Question : taille d'une structure
+   :PROPERTIES:
+   :NUM_RESP: 2
+   :NUM_CORRECT: 2
+   :CAT: sizeof
+   :END:
+
+   Comment calculer la taille (en octets) d'une structure =struct mydata= ?
+
+** Question : lseek
+:PROPERTIES:
+:CAT:      lseek
+:END:
+   Dans quel cas la =lseek= n'est pas utilisable ?
+
+** Question : Syscall
+:PROPERTIES:
+:CAT:      syscall, cours
+:END:
+Décrire en quelques phrases la différence entre un *appel système*
+(syscall) et un appel de fonction (libcall) ?
+
+** Question : Concurrence
+:PROPERTIES:
+:CAT:      fd, cours
+:END:
+Décrire en quelques phrases la différence entre concurrence et parallélisme.
+
+** Question : Processus
+
+:PROPERTIES:
+:CAT:      cours, processus
+:END:
+Décrire la différence entre processus et programme. 
+
+** Question : atomique
+:PROPERTIES:
+:CAT:      cours
+:END:
+   Qu'est-ce que c'est une opération atomique ? Vous pouvez vous aider avec un exemple. 
+   
+
+** Question : current working directory
+:PROPERTIES:
+:CAT:      dir
+:END:
+   Qu'est-ce que c'est la /current working directory/ ? 
+
+   
+*** Solution                                                       :solution:
+
+    C'est le répertoire courant d'un processus. C'est à partir de la
+    CWD qu'on calcul les chemin relatifs.
+
+
+* QG (FS, longues) 1
+
+** Question : access
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 3
+   :CAT: access
+   :END:
+
+   On réalise un appel à
+   =access("./toto.txt", R_OK | W_OK)=, la fonction retourne -1, et =errno= est positionné à
+   =EACCES=.
+   Quelles sont les explications possibles ?
+
+** Question : lstat
+   :PROPERTIES:
+   :CAT:      lstat
+   :END:
+
+   Quel est la différence entre la primitive =stat(const char
+   *pathname, struct stat *statbuf)= et la primitive =lstat(const char
+   *pathname, struct stat *statbuf)= ? Donnez un petit exemple.
+
+** Question : seek
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 3
+   :CAT: lseek
+   :END:
+
+   On dispose d'un fichier qui fait 100 octets, ouvert en lecture sur
+   le descripteur =fd=. On exécute le code suivant :
+   #+begin_src c
+     char buf[100];
+     int fd = open("myfile", O_RDONLY);
+     int r = lseek(fd,-50,SEEK_END); 
+     int n = read(fd, buf, 100);
+   #+end_src
+   Quel est la valeur de =n= après l'exécution du code ? 
+   Expliquez.
+
+** Question : pointer
+   :PROPERTIES:
+   :NUM_RESP: 4
+   :NUM_CORRECT: 2
+   :CAT: pointer
+   :END:
+
+   Que voit-on s’afficher lorsque l’on exécute le programme suivant ?
+   #+begin_src C
+     #include <stdio.h>
+     #include <stdlib.h>
+     int main() {
+	 int *ptr = NULL;
+	 printf("%d", *ptr);
+	 return EXIT_SUCCESS;
+     }
+   #+end_src
+
+   #+RESULTS:
+
+   Expliquez. 
+
+** Question : stat
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 2
+   :CAT: lstat
+   :END:
+
+   On considère le programme suivant : 
+
+   #+begin_src c
+     int main(int argc, char *argv[]) {
+	 struct stat st;
+	 int status;
+
+	 status = stat(argv[1], &st);
+	 assert(status == 0);
+
+	 printf("%ld\n", st.st_size);
+	 return EXIT_SUCCESS;
+     }
+   #+end_src
+
+   Qu'est-ce qu'il se passe si on appelle le programme en passant
+   comme premier argument un lien symbolique ? Expliquez.
+
+** Question : variable d'environnement 
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 0
+   :CAT: env
+   :END:
+
+   Écrivez le code nécessaire pour afficher sur la sortie standard la
+   valeur de la variable d'environnement =PATH=.
+
+** Question : répertoire
+:PROPERTIES:
+:CAT:      dir
+:END:
+   Comment savoir si le chemin "/home/lipari/data/d" est un fichier ou
+   un répertoire ? Vous pouvez vous aider en écrivant du code. 
+
+*** Solution                                                       :solution:
+
+    On utilise =lstat()= pour obtenir les informations sur le fichier,
+    en particulier le champ =st.st_mode= contient ces information
+    qu'on peut tester avec les macros =IS_DIR= et =IS_REG=.
+
+** Question : permission 
+   :PROPERTIES:
+   :NUM_RESP: 1
+   :NUM_CORRECT: 1
+   :CAT: permission
+   :END:
+
+   La commande =ls -al= sur un répertoire affiche la sortie suivante : 
+
+   : drwxrwxr-x 2 lipari lipari   4096 oct.   7 11:10  .
+   : drwxrwxr-x 8 lipari lipari   4096 sept. 30 08:48  ..
+   : -rw-rw-r-- 1 lipari lipari   2235 sept. 30 09:00  db.org
+   : -rw-rw-r-- 1 lipari lipari   1062 sept. 30 08:49  README.md
+   : -rwxrwxr-x 1 lipari lipari    170 oct.   7 11:02  run.sh
+   : drwxrwxr-x 2 lipari lipari   4096 sept. 30 12:34  toto
+
+   Expliquez les valeurs affichées dans la première colonne.  
+
+** Question : append
+:PROPERTIES:
+:CAT:      open
+:END:
+   Qu'est-ce que ça veut dire le flag =O_APPEND= dans l'appel suivant
+   ? Pourquoi c'est utile ? Expliquez.
+
+   #+begin_src C
+     int fd = open("toto.txt", O_WRONLY | O_APPEND);
+   #+end_src
+
+   
+*** Solution                                                       :solution:
+
+    À chaque écriture successive, l'offset est d'abord déplacé à la
+    fin du fichier : le déplacement et l'écriture sont fait dans une
+    seule opération atomique. Il est nécessaire lorsque plusieurs
+    processus écrivent sur le même fichier et on veut garantir
+    qu'aucun donnée soit écrasée.
+
+** Question : tampons
+:PROPERTIES:
+:CAT:      glibc
+:END:
+Les fonctions de la librairie standard comme =fputc()=, =fprintf()=
+utilisent des tampons pour optimiser les opérations de lecture et
+écriture. Un fichier peut être en modalité =FULLY_BUFFERED=,
+=LINE_BUFFERED= ou =UNBUFFERED=. Pouvez-vous expliquer la différence
+entre ces 3 modes ?
+
+*** Solution                                                       :solution:
+
+- =FULLY BUFFERED= : le transfert de données se fait généralement par
+  blocs de la taille du tampon ;
+- =LINE BUFFERED= : le transfert de données se fait par "lignes",
+  c’est-à-dire qu’un tampon est vidé à chaque fois qu'on lit/écrit un
+  caractère ='\n'= ;
+- =UNBUFFERED= : Chaque transfert de données de/vers le tampon
+  entraîne une entrée/sortie vers le dispositif.
+
+
+* QG (FS, longues) 2
+   
+** Question : lseek
+   :PROPERTIES:
+   :NUM_RESP: 2
+   :NUM_CORRECT: 0
+   :CAT: lseek
+   :END:
+
+   Considérez les instructions suivantes : 
+
+   #+begin_src c
+     fd = open("myfile", O_RDWR);
+     pos = lseek(fd, 1024, SEEK_END);
+   #+end_src
+   
+   Quel est la valeur de =pos= ? Qu'est-ce qu'il se passe si on écrit sur le fichier après la =lseek()= ? Expliquez. 
+   
+** Question : taille   
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 1
+   :CAT: lstat
+   :END:
+
+   Supposons que le fichier =/tmp/test= contient 2 octets. Quelle est
+   sa taille réelle ?
+
+** Question : vérifier les permissions     
+   :PROPERTIES:
+   :NUM_RESP: 2
+   :NUM_CORRECT: 0.5
+   :CAT: access
+   :END:
+
+   Écrivez le code pour vérifier si on a le droit d'ouvrir en écriture
+   le fichier =mydata.txt= (sans l'ouvrir !). Expliquez.
+   
+** Question : allocation 
+:PROPERTIES:
+:CAT:      malloc
+:END:
+   
+
+   Dans notre programme, on a déclaré une structure =struct data {
+   ... }=. On voudrait allouer dynamiquement un tableau de 10 =struct
+   data=. Écrire le code pour faire l'allocation : 
+
+   #+begin_src c
+   struct data *pointer; 
+
+   pointer = /* écrire le code pour allouer le tableau de 10 "struct data"*/ 
+   #+end_src
+
+*** Solution                                                       :solution:
+
+   #+begin_src c
+   struct data *pointer; 
+
+   pointer = (struct data *) malloc(10 * sizeof(struct data));
+   #+end_src
+
+** Question : stat
+:PROPERTIES:
+:CAT:      lstat
+:END:
+
+
+   Considérez l'arborescence suivante. 
+
+:                                  st_size   st_blocks
+: /home/alice                         4096           8
+: +-- fic                                1           8
+: +-- rep                             4096           8
+:     +-- fic                            2           8
+:     +-- liensym -> fic                 3           0
+:     +-- sousrep                     4096           8
+:     |   +-- fic                        4           8
+:     |   +-- soussous                4096           8
+:     |   |   +-- fic                    5           8
+:     |   +-- sym -> ../sousrep2        11           0
+:     +-- sousrep2                    4096           8
+:         +-- rome                       6           8
+   
+   On suppose que le répertoire courant est =/home/alice/rep/sousrep=. 
+   Après un appel à =stat("sym",&st)=, quel est la valeur de =st.st_size= ? Expliquez. 
+
+*** Solution                                                       :solution:
+
+    Après =stat()=, la valeur de =st.st_size= est 4096. 
+    Après =lstat()=, la valeur de =st.st_size= est 11. 
+ 
+** Question : access
+:PROPERTIES:
+:CAT:      access
+:END:
+   Donnez la signature de la fonction =access()= et ce qu'elle calcule. 
+
+
+
+
+** Question : concaténation de chaînes de caractères
+:PROPERTIES:
+:CAT:      glibc, 
+:END:
+
+Quelle fonction de la librairie standard permet de concaténer des
+chaînes de caractères ?  Montrez par exemple comment construire le
+chemin =/foo/bar/baz.qux= à partir du chemin du répertoire =/foo/bar=
+et du nom du fichier =baz.qux=
+
+*** Solution                                                       :solution:
+
+(réponse: snprintf, ou strncat) 
+
+** Question : comparaison
+:PROPERTIES:
+:CAT:      glibc
+:END:
+Quelle fonction de la librairie standard permet de comparer deux chaînes
+de caractères ? Donnez un exemple. 
+
+*** Solution                                                       :solution:
+
+On utilise =strcmp()= ou (mieux) =strncmp()=. 
+
+** Question : lecture d'un caractère
+:PROPERTIES:
+:CAT:      read
+:END:
+   Pour lire un caractère d'un fichier, on peut utiliser la primitive
+   =read()= ou la fonction de librairie =fgetc()= :
+   #+begin_src C
+     char c;
+     int fd = open(...);
+     read(fd, &c, 1);
+
+     // ou
+
+     FILE *f = fopen(...);
+     char c = fgetc(f);
+   #+end_src
+   Expliquez la différence entre les deux. 
+   
+
+
+* QG (FS exercices) 1
+
+** Exercice : lecture d'un tampon 
+   :PROPERTIES:
+   :NUM_RESP: 2
+   :NUM_CORRECT: 1
+   :CAT: bug
+   :END:
+
+   Quel est l'erreur dans la fonction suivante ? 
+
+   #+begin_src c
+     char * lecture(int fd, int nbytes) 
+     {
+	 char buffer[TAILLE_BUFFER];
+	 int n;
+	 n = read(fd, buffer, nbytes);
+	 return buffer;
+     }
+   #+end_src
+
+   Proposez une correction.
+
+*** Solution                                                       :solution:
+
+    On ne doit pas retourner l'adresse d'une variable
+    automatique. Dans l'exemple, le buffer est alloué dans la pile, et
+    il sera détruit quand la fonction retourne. Correction :
+
+   #+begin_src c
+     char buffer[TAILLE_BUFFER];
+     char * lecture(int fd, int nbytes) 
+     {
+	 int n;
+	 if (nbytes > TAILLE_BUFFER) return NULL;
+	 n = read(fd, buffer, nbytes);
+	 return buffer;
+     }
+   #+end_src
+
+   Alternative :
+
+   #+begin_src c
+     char * lecture(int fd, int nbytes) 
+     {
+	 int n;
+	 char *buffer = (char *) malloc(nbytes);
+	 n = read(fd, buffer, nbytes);
+	 return buffer;
+     }
+   #+end_src
+   
+
+    
+** Exercice : cat
+   :PROPERTIES:
+   :NUM_RESP: 2
+   :NUM_CORRECT: 0
+   :CAT: read, bug
+   :END:
+
+   Considérez le code suivant :
+   #+begin_src c
+     #include <unistd.h>
+
+     #define TAILLE 8
+
+     int main() {
+	 int r;
+	 char tampon[TAILLE];
+
+	 while((r = read(0, tampon, TAILLE)) != -1) {
+	     write(STDOUT_FILENO, tampon, TAILLE);
+	 }
+
+	 return 0;
+     }
+   #+end_src
+   Le code contient un bug. Pouvez-vous dire où se trouve le bug et comment le corriger ?
+
+*** Solution                                                       :solution:
+
+    La read retourne le nombre d'octets lu, donc le dernier paramètre
+    de la write doit être =r=. 
+
+
+** Exercice : bug
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 2
+   :CAT: bug
+   :END:
+
+   La fonction suivante compte le nombre de lignes d'un fichier, mais
+   elle contient un bug. Trouvez-le et expliquez.
+
+   #+begin_src c
+     #include <unistd.h>
+     #define BUF_SIZE 1024
+
+     int count_lines(int fd) {
+	 char buf[BUF_SIZE];
+	 int s, i;
+	 int cnt = 0;
+
+	 while ( (s = read(fd, buf, BUF_SIZE * sizeof(char))) > 0) {
+	     for (i = 0; i <= BUF_SIZE; i++)
+		 if (buf[i] == '\n')
+		     cnt++;
+	 }
+	 return cnt;
+     }
+   #+end_src
+
+   
+*** Solution                                                       :solution:
+
+    La boucle for doit aller jusqu'à =s= (et non jusqu'à =BUF_SIZE=). 
+
+
+** Exercice : lseek
+   :PROPERTIES:
+   :NUM_RESP: 1
+   :NUM_CORRECT: 1
+   :CAT: read, lseek
+   :END:
+
+   On suppose disposer du fichier =abcdefghij.txt= qui
+   contient les 10 premières lettres de l'alphabet. Ce fichier ne se
+   termine pas par un retour à la ligne.
+   
+   On exécute la fonction suivante :
+   #+begin_src c
+     int lseek_read(const char *pathname) {
+	 int fd, lus;
+	 char buf[6];
+
+	 fd = open(pathname, O_RDONLY);
+	 assert(fd != -1);
+	 lseek(fd, -5, SEEK_END);
+	 lus = read(fd, buf, 6);
+	 close(fd);
+	 write(STDOUT_FILENO, buf, lus);
+     }
+   #+end_src
+   Quel affichage obtient-on pour =lseek_read("abcdefghij.txt")= ?
+  
+   
+** Exercice : trouver l(es) erreur(s)
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 1
+   :CAT: read, bug
+   :END:
+   
+   Indiquez quelles lignes du code suivant contiennent des erreurs,
+   s’il y en a, et expliquez pourquoi.
+
+   #+begin_src c
+     #define BUF_SIZE 16
+
+     int main() {
+	 int fd, i, n, lines;
+	 char buf[BUF_SIZE];
+
+	 assert((fd = open("mydata.txt", O_RDONLY)) >= 0);
+	 while ((n = read(fd, buf, BUF_SIZE)) > 0) {
+	     for (i = 0; i < BUF_SIZE; i++)
+	     if (buf[i] == '\n') lines++;
+	 }
+	 printf("Nombre of lignes: %d\n", lines);
+	 return 0;
+     }
+   #+end_src
+
+*** Solution                                                       :solution:
+
+    La limite de la boucle for doit être =n=. 
+
+
+
+** Exercice : copier un fichier 
+   :PROPERTIES:
+   :NUM_RESP: 1
+   :NUM_CORRECT: 0
+   :END:
+
+   Écrire une fonction qui copie un fichier =src= dans un fichier =dest= :
+   #+begin_src c
+     int copy(const char *src, const char *dest) 
+     {
+	 /* écrire le code */
+     }
+   #+end_src
+
+
+*** Solution                                                       :solution:
+
+    #+begin_src C
+      int copy(const char *src, const char *dest) 
+      {
+	  int fd1, fd2;
+	  int r;
+	  char buffer[TAILLE_BUFFER];
+
+	  fd1 = open(src, O_RDONLY);
+	  fd2 = open(dest, O_WRONLY | O_CREAT);
+	  assert(fd1 > 0); assert (fd2 > 0);
+
+	  while ( (r = read(fd1, buffer, TAILLE_BUFFER)) > 0 ) 
+	      write(fd2, buffer, r);
+	  close(fd1); close(fd2);
+	  return 0;
+      }
+    #+end_src
+
+
+** Exercice : calculer la taille totale 
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 3
+   :END:
+
+   Écrire le code de la fonction =int taille_totale(const char *tab)=,
+   qui retourne la somme des tailles apparentes de tous les fichiers
+   listés dans le tableau =tab=. Le tableau se termine toujours par un
+   =NULL=.
+
+   #+begin_src c
+     int taille_totale(const char *tab) 
+     {
+	 /* écrire le code */
+     } 
+   #+end_src
+
+
+*** Solution                                                       :solution:
+
+    #+begin_src C
+      int taille_totale(const char *tab)
+      {
+	  struct stat st;
+	  off_t totale = 0;
+	  int r;
+	  for (int i=0; tab[i] != NULL; i++) {
+	      assert(stat(tab[i], &st) == 0);
+	      totale += st_st_size;
+	  }
+	  return totale;
+      }
+    #+end_src
+
+
+# ** Exercice : comparer deux fichiers 
+   
+#    Écrivez une fonction qui compare deux fichiers =path1= et =path2= et
+#    retourne 0 si les deux sont égaux, et -1 s'il sont différents.
+
+#    #+begin_src c
+#      int compare_files(const char *path1, const char *path2) 
+#      {
+#        /* écrivez le code */
+#      }
+#    #+end_src
+
+#    Suggestion: pour comparer deux tampons =s1= et =s2= de même taille
+#    =n=, vous pouvez utiliser la fonction :
+#    #+begin_src c
+#      int memcmp(const void *s1, const void *s2, size_t n);
+#    #+end_src
+#    qui retourne 0 si les deux tampons contiennent la même séquence d'octets. 
+
+   
+** Exercice : trouvez l'erreur 
+   :PROPERTIES:
+   :NUM_RESP: 2
+   :NUM_CORRECT: 1
+   :CAT: memory
+   :END:
+
+   La fonction suivante lit les premiers =n= octets d'un fichier : 
+
+   #+begin_src c
+     char * read_bytes(int fd, int n)
+     {
+	char *buff;
+	int r = read(fd, buff, n);
+	if (r == 0) return NULL;
+	else return buff;
+     }
+   #+end_src
+   Trouvez l'erreur et proposez une correction. 
+
+
+*** Solution                                                       :solution:
+
+    Le buffer n'est pas alloué. 
+
+
+** Exercice : lecture d'une structure 
+:PROPERTIES:
+:CAT:      read
+:END:
+   
+
+   Un fichier contient une séquence de données de type =struct
+   data=. Écrire une fonction qui lit un élément de type =struct data=
+   du fichier et qui retourne 1 si la lecture est correcte ou zéro
+   si la lecture n'a pas abouti.
+   #+begin_src c
+     /* @parametres
+	fd: descripteur de fichier ouvert en lecture
+	 p: adresse ou les données seront écrites en cas de success. 
+	Valeur de retour: 
+	 0: la lecture a echouée
+	 1: la lecture a été completée et les données sont à l'adresse pointée par p. 
+     ,*/
+     int read_data(int fd, struct data *p)
+     {
+	 /* écrire le code */
+     }
+   #+end_src
+
+*** Solution                                                       :solution:
+
+    #+begin_src c
+      int read_data(int fd, struct data *p)
+      {
+          int n = read(fd, p, sizeof(struct data));
+          return n>0 ? 1 : 0;
+      }
+
+    #+end_src
+
+    
+
+* QG (FS exercices) 2
+
+** Exercice : écriture d'un tableau de structures
+   :PROPERTIES:
+   :NUM_RESP: 1
+   :NUM_CORRECT: 1
+   :CAT: write
+   :END:
+
+   Donnez le code d'une fonction qui écrit sur un fichier =n= éléments
+   de type =struct data= contenus dans un tableau. 
+   #+begin_src c
+     /*
+        @parametres 
+        fd :      descripteur de fichier ouvert en écriture 
+        tableau : pointer à un tableau de structures
+        n  :      le nombre d'éléments à écrire 
+        Valeur de retour: le nombre d'éléments du tableau correctement écrits dans le fichier. 
+                          Si tout va bien, on s'attend la valeur n.
+      ,*/
+     int write_table(int fd, struct data tableau[], int n)
+     {
+       /* écrire le code de la fonction */
+     }
+   #+end_src
+
+*** Solution                                                       :solution:
+
+   #+begin_src c
+     /*
+	@parametres 
+	fd :      descripteur de fichier ouvert en écriture 
+	tableau : pointer à un tableau de structures
+	n  :      le nombre d'éléments à écrire 
+	Valeur de retour: le nombre d'éléments du tableau correctement écrits dans le fichier. 
+			  Si tout va bien, on s'attend la valeur n.
+      ,*/
+     int write_table(int fd, struct data tableau[], int n)
+     {
+	 int r;
+	 for (int i; i < n; i++) {
+	     r = write(fd, &tableau[i], sizeof(struct data));
+	     if (r != sizeof(struct data)) return i;
+	 }
+         return n;
+     }
+   #+end_src
+    
+
+
+** Exercice : positionnement 
+   :PROPERTIES:
+   :NUM_RESP: 3
+   :NUM_CORRECT: 2
+   :CAT: lseek
+   :END:
+
+   Un fichier contient une séquence de données de type =struct
+   data=. Écrire une fonction qui positionne le curseur du fichier (son
+   offset) à la position correspondante au n-ème elements de type
+   =struct data= dans le fichier. 
+   #+begin_src c
+   /* 
+     @parametres:
+     fd : fichier ouvert en lecture et/ou en écriture
+      n : position souhaitée 
+     Valeur de retour : 
+      1 : si le déplacement a été effectué correctement 
+      0 : en cas d'erreur 
+   */ 
+   int seek_data(int fd, int n)
+   {
+     /* écrire le code */
+   }
+   #+end_src
+
+
+   
+*** Solution                                                       :solution:
+
+   #+begin_src c
+     /* 
+       @parametres:
+       fd : fichier ouvert en lecture et/ou en écriture
+	n : position souhaitée 
+       Valeur de retour : 
+	1 : si le déplacement a été effectué correctement 
+	0 : en cas d'erreur 
+     ,*/ 
+     int seek_data(int fd, int n)
+     {
+       off_t pos = lseek(fd, n*sizeof(struct data), SEEK_SET);
+       if (pos != n*sizeof(struct data)) return 1;
+       else return 0;
+     }
+   #+end_src
+
+
+** Exercice : structure
+   :PROPERTIES:
+   :NUM_RESP: 2
+   :NUM_CORRECT: 0
+   :CAT: read
+   :END:
+
+   Un fichier contient une séquence de =struct data=. Écrivez une
+   fonction qui imprime sur la sortie standard les valeurs du champ
+   =name= de toutes les =struct data= contenus dans le fichier.
+   #+begin_src c
+     struct data {
+	 char name[100];
+	 char mode[8];   
+	 char uid[8];
+     };
+
+     /*
+       Imprimes les "name" de toutes les struct data contenus dans le fichier. 
+       @param 
+       fd: descripteur de fichier contenant une suite de struct data
+     */
+     void print_name(int fd) {
+        /* écrire le code de la fonction */
+     }
+   #+end_src
+
+
+   
+*** Solution                                                       :solution:
+
+   #+begin_src c
+     struct data {
+	 char name[100];
+	 char mode[8];   
+	 char uid[8];
+     };
+
+     /*
+       Imprimes les "name" de toutes les struct data contenus dans le fichier. 
+       @param 
+       fd: descripteur de fichier contenant une suite de struct data
+     ,*/
+     void print_name(int fd) {
+	 int r;
+	 struct data buffer; 
+	 while ( (r = read(fd, &buffer, sizeof(struct data)) == sizeof(struct data)) 
+		 printf("%s\n", buffer.name);
+	 return;
+     }
+   #+end_src
+
+
+
+** Exercice : trouver l'erreur
+   :PROPERTIES:
+   :NUM_RESP: 1
+   :NUM_CORRECT: 0
+   :CAT: bug
+   :END:
+
+   La fonction =get_line()= lit une ligne de caractères d'un fichier,
+   elle s'arrête quand elle trouve un caractère de retour à la ligne
+   (=\n=), ou avant de dépasser la taille du tampon. Mais le
+   programmeur a oublié un détail. Savez-vous trouver l'erreur ?
+
+   #+begin_src c
+     int get_line(int fd, char *str, int n)
+     {
+	int i=0;
+	int r;
+	while (i<n-1) {
+	   r = read(fd, &str[i], 1);
+	   if (r == 0 || str[i] == '\n') break;
+	   else i++;
+	}
+	return i;
+     }
+
+     int main()
+     { 
+         char ligne[100];
+         int fd = open("myfile.txt", O_RDONLY);
+         get_line(fd, ligne, 100);
+         printf("%s", ligne);
+         close(fd);
+         return 0;
+     }
+   #+end_src
+
+*** Solution                                                       :solution:
+
+    Il manque le 0 de terminaison de la chaîne de caractères.
+    (Cette dernière question est peut-être trop difficile, je voudrais la virer). 
+
+
+
+    
+** Exercice : fonction mystère
+:PROPERTIES:
+:CAT:      read, lseek
+:END:
+
+   Décrire en 1 ou 2 phrases ce que la fonction suivante calcule.
+
+   #+begin_src c
+     int fonction_mystere(const char* chemin)
+     {
+	 char c1='\0', c2='\0';
+	 int fd=0, t=0, i=0, n=0;
+
+	 fd = open(chemin, O_RDONLY);
+	 assert(fd >= 0);
+	 t = lseek(fd, 0, SEEK_END);
+	 assert(t >= 0);
+
+	 lseek(fd, 0, SEEK_SET);
+	 for(i=0 ; i<t/2 ; i++) {
+	     assert(lseek(fd, i, SEEK_SET) == i);
+	     n = read(fd, &c1, 1);
+	     assert(n == 1);
+
+	     asssert(lseek(fd, -i-1, SEEK_END) >= 0);
+	     n = read(fd, &c2, 1);
+	     assert(n == 1);
+	     if(c1 != c2) 
+		 return 0;
+	 }
+	 return 1;
+     }
+   #+end_src
+
+
+*** Solution                                                       :solution:
+
+    La fonction mystère vérifie si un fichier est palyndrome.
+
+    
+
+
+
+
+    
+** Exercice : exécutable
+:PROPERTIES:
+:CAT:      access
+:END:
+Écrire un programme qui affiche =OK= si le fichier dont le nom est
+passé en premier argument peut être exécuté et =KO= sinon.
+
+#+begin_src c
+  int main(int argc, char *argv[])
+  {
+      // écrire le code 
+  }
+#+end_src
+
+
+*** Solution                                                       :solution:
+
+#+begin_src C
+#include <stdio.h>
+#include <unistd.h>
+
+int main(int argc, char *argv[])
+{
+    if (argc < 2) {
+        printf("Not enough arguments\n");
+        return -1;
+    }
+    int r = access(argv[1], X_OK);
+    if (r == 0) printf("OK\n");
+    else 
+        perror("KO");
+    
+    return r;
+}
+#+end_src
+
+
+** Exercice : variable d'environnement
+:PROPERTIES:
+:CAT:      env
+:END:
+
+Écrire un programme qui affiche le contenu de la variable
+d’environnement dont le nom est passé comme premier argument.
+
+#+begin_src C
+    int main(int argc, char *argv[])
+    {
+	// Écrire le code
+    }
+#+end_src
+
+
+*** Solution                                                       :solution:
+
+#+begin_src C
+  #include <stdlib.h>
+  #include <stdio.h>
+  int main(int argc, char *argv[])
+  {
+    if (argc < 2) {
+	printf("Not enough arguments\n");
+	return -1;
+    }
+    char *val = getenv(argv[1]);
+    if (val != NULL) 
+	printf("%s\n", val);
+    else
+	printf("Not found\n");
+    return 0;
+  }
+#+end_src
+
+
+** Exercice : bug
+:PROPERTIES:
+:CAT:      memory, glibc
+:END:
+
+Le code ci-dessous contient un bug. Expliquez sous quelles conditions
+il peut se déclencher et comment le prévenir.
+
+#+begin_src C
+  #include <stdio.h>
+
+  char path[PATH_MAX];
+
+  void chemin(char* repertoire, char* fichier) {
+      int n = sprintf(path, "%s/%s", repertoire, fichier);
+      assert(n >= 0);
+  }
+#+end_src
+
+*** Solution                                                       :solution:
+
+   Il n'y a pas de verification de taille. Il faut utiliser
+   =snprintf()= ou =strncat()= pour eviter tout debordement.
+
+
+   
+** Exercice : ls
+:PROPERTIES:
+:CAT:      dir
+:END:
+
+   Écrire le code de la fonction suivante qui affiche le contenu du
+   répertoire courante.
+
+   #+begin_src C
+     void ls_cwd()
+     {
+	 // écrire le code
+     }
+   #+end_src
+
+   
+*** Solution                                                       :solution:
+
+    Voici une solution :
+
+    #+begin_src C
+      #include <sys/types.h>
+      #include <dirent.h>
+      #include <stdio.h>
+
+      void ls_cwd()
+      {
+	  DIR *dirp = opendir(".");
+	  struct dirent *d;
+	  while ((d = readdir(dirp)) != NULL) {
+	      printf("%s\n", d->d_name);
+	  }
+      }
+      int main()
+      {
+	  ls_cwd();
+      }
+    #+end_src
+   
+
+** Exercice : allocation
+:PROPERTIES:
+:CAT:      memory, alloc
+:END:
+
+   Écrire une fonction qui alloue la mémoire pour un tableau de =N=
+   chaînes de caractères, chaque chaîne a une taille maximale de
+   =PATH_MAX= caractères.
+
+   #+begin_src C
+     char **allocate_table(int N)
+     {
+	 // écrire le code pour allouer la table 
+	 // char **table = ...
+         // écrire le code pour allouer les N chaînes de caractères
+	 /// ... 
+	 return table;
+     }
+   #+end_src
+
+
+   
+*** Solution                                                       :solution:
+
+    #+begin_src C
+      void allocate_table(char *table[], int N)
+      {
+	  char **table = (char **) malloc(N*sizeof(char *));
+	  for (int i=0; i<N; i++)
+	      table[i] = (char *)malloc(PATH_MAX * sizeof(char));
+	  return table;
+      }
+    #+end_src

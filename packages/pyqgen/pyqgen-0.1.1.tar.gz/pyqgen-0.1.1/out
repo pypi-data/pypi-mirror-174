@@ -1,0 +1,63 @@
+#+startup: overview
+#+options: num:nil ^:nil toc:nil
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper,11pt,twoside]
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage[textwidth=18cm, textheight=22.5cm]{geometry}
+#+latex_header: \usepackage{ifthen,changepage}
+#+exclude_tags: solution noexport
+\pagestyle{empty}
+
+\thispagestyle{empty}
+
+* Examen
+- N: 1
+* Question : mode utilisateur et superviseur
+Est-ce que les appels systèmes sont exécutés en "mode utilisateur" ou
+en "mode superviseur" ? Expliquez la différence.
+
+   
+
+* Question : permission
+
+   La commande =ls -al= sur un répertoire affiche la sortie suivante : 
+
+   : drwxrwxr-x 2 lipari lipari   4096 oct.   7 11:10  .
+   : drwxrwxr-x 8 lipari lipari   4096 sept. 30 08:48  ..
+   : -rw-rw-r-- 1 lipari lipari   2235 sept. 30 09:00  db.org
+   : -rw-rw-r-- 1 lipari lipari   1062 sept. 30 08:49  README.md
+   : -rwxrwxr-x 1 lipari lipari    170 oct.   7 11:02  run.sh
+   : drwxrwxr-x 2 lipari lipari   4096 sept. 30 12:34  toto
+
+   Expliquez les valeurs affichées dans la première colonne.  
+
+
+* Exercice : bug
+
+   La fonction suivante compte le nombre de lignes d'un fichier, mais
+   elle contient un bug. Trouvez-le et expliquez.
+
+   #+begin_src c
+     #include <unistd.h>
+     #define BUF_SIZE 1024
+
+     int count_lines(int fd) {
+	 char buf[BUF_SIZE];
+	 int s, i;
+	 int cnt = 0;
+
+	 while ( (s = read(fd, buf, BUF_SIZE * sizeof(char))) > 0) {
+	     for (i = 0; i <= BUF_SIZE; i++)
+		 if (buf[i] == '\n')
+		     cnt++;
+	 }
+	 return cnt;
+     }
+   #+end_src
+
+   
+
+** 
+
+\cleardoublepage
+
