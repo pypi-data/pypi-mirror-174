@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+tox.ini
+plover_mod_z/__init__.py
+plover_mod_z/system.py
+plover_mod_z.egg-info/PKG-INFO
+plover_mod_z.egg-info/SOURCES.txt
+plover_mod_z.egg-info/dependency_links.txt
+plover_mod_z.egg-info/entry_points.txt
+plover_mod_z.egg-info/requires.txt
+plover_mod_z.egg-info/top_level.txt
+plover_mod_z.egg-info/zip-safe
