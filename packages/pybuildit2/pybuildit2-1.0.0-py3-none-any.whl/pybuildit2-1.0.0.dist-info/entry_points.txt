@@ -1,0 +1,6 @@
+[console_scripts]
+builditctl = pybuildit2.cli.builditctl:main
+
+[gui_scripts]
+builditctl-gui = pybuildit2.gui.builditctl:main
+

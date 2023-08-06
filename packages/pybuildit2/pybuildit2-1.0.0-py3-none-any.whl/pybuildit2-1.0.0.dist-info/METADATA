@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: pybuildit2
+Version: 1.0.0
+Summary: python API for Buildit Actuator (For Buildit Actuator v1.0.1 and above
+Home-page: https://www.smartrobotics.jp/products/buildit
+Author: SR
+Author-email: info@smartrobotics.jp
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: crc8
+Requires-Dist: numpy
+Requires-Dist: pyserial
+Requires-Dist: matplotlib
+Requires-Dist: pyyaml
+
+# Buildit
+
+Buildit Actuator を制御する為のPython3用ライブラリ
+
+
+## Install
+
+### Windows
+
+```
+$ pip3 install pybuildit2
+```
+
+### Ubuntu
+
+```
+$ sudo apt-get -y install python3-tk
+$ pip3 install pybuildit2
+```
+
+## Usage
+
+### pybuildit2 library
+
+* ライブラリについてのドキュメント
+    * https://www.smartrobotics.jp/-/media/Smartrobotics/document/pybuildit2.pdf
+
+* 初期化
+    * ※ 以下のデバイスファイル名やCOMポート番号は環境に合わせて変更する必要があります
+
+```
+>>> from pybuildit2 import *
+>>> buildit = Buildit(port="/dev/ttyXXXX") #for Linux (例: /dev/ttyUSB0)
+>>> buildit = Buildit(port="COMX") #for Win (例：COM8)
+>>> deviceId = 1
+```
+
+
+* 現在の位置や速度といった情報の取得
+
+```
+>>> qss = buildit.query_servo_status(deviceId)
+>>> print("position[deg]: ", qss.position(unit="deg"))
+>>> print("velocity[rpm]: ", qss.velocity(unit="rpm"))
+>>> print("temperature[℃]: ", qss.temperature())
+>>> print("state: ", buildit.last_mcp_status().str_state())
+```
+
+* 速度制御と位置制御の方法
+
+```
+>>> buildit.force_ready(deviceId)
+>>> buildit.set_ref_velocity(deviceId, 40, unit="rpm")
+>>> buildit.set_ref_position(deviceId, 180, unit="deg")
+```
+
+
+### builditctl
+
+builditctl は Buildit の各メソッドをコマンドラインから呼び出す為のツールです。
+アクチュエーターの状態を確認する場合は以下のように実行します。
+
+```
+$ builditctl query-servo-status -d 1 -p /dev/ttyXXXX
+state: STATE_HOLD
+pos: -51636
+vel: 0
+cur: 0
+ref: 0
+temp: 26
+faults: NO_FAULTS
+```
+
+速度制御を行う場合は以下のように実行します。
+
+```
+$ builditctl ready -d 1 -p /dev/ttyXXXX
+
+$ builditctl set-ref-velocity 2500 -d 1 -p /dev/ttyXXXX # 指定速度の単位は [rpm/100]
+0
+```
+
+位置制御を行う場合は以下のように実行します。
+
+```
+$ builditctl stop -d 1 -p /dev/ttyXXXX
+
+$ builditctl set-ref-position 2500 -d 1 -p /dev/ttyXXXX # 指定位置の単位は [360/65536 度]
+-39775
+```
+
+
+### builditct-gui
+
+builditctl は Buildit の各メソッドをコマンドラインから呼び出す為のツールです。
+
+```
+$ builditctl-gui
+```
+
+ポートを選択し、Connectボタンを押した後、各種ボタンを使ってデバイスを操作することが出来ます。
+
+
+
+
+
+
+
