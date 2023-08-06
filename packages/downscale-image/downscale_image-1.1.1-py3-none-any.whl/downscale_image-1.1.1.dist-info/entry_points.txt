@@ -1,0 +1,3 @@
+[console_scripts]
+downscale-image=downscale_image.__main__:main
+
