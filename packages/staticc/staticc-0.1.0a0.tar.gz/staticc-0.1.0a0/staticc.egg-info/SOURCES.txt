@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+staticc/__init__.py
+staticc/analyzers.py
+staticc/flow.py
+staticc.egg-info/PKG-INFO
+staticc.egg-info/SOURCES.txt
+staticc.egg-info/dependency_links.txt
+staticc.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: staticc
+Version: 0.1.0a0
+Summary: TBD
+Home-page: https://github.com/isidentical/staticc
+Author: isidentical
+Author-email: isidentical@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/isidentical/staticc
+Project-URL: Tracker, https://github.com/isidentical/staticc/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Staticc
+
+TBD
