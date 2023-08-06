@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: mikemazzi
+Version: 0.0.12
+Summary: Assignment pipeline
+Home-page: https://gitlab.com/mik3sw/2022_assignment1_users_db
+Author: Michele Marcucci, Davide Mazzitelli
+Author-email: test@email.it
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# 2022_assignment1_users_db
+
+### Gruppo
+* Michele Angelo Marcucci 
+  * 851905 
+  * m.marcucci1@campus.unimib.it
+* Davide Mazzitelli
+  * 851657 
+  * d.mazzitelli5@campus.unimib.it
+
+
+### Progetto
+Link GitLab: https://gitlab.com/mik3sw/2022_assignment1_users_db
+
+
+
+
+## Quick start
+
+Questa applicazione gesisce un database di utenti, raccogliendo informazioni come nome, email, password, genere, età ecc...
+In particolare è composta da due moduli
+- ```package/database.py``` che gestisce la creazione e l'accesso e le modifiche al database;
+- ```package/functions.py``` che gestisce l'output delle query; 
+- ```package/csvdata.py``` che serve a fini di test su grandi quantità di dati;
+
+Le librerie utilizzate sono già all'interno del pacchetto python e non è necessario installarle
+- sqlite3
+- os
+
+## Pipeline
+
+```
+stages:
+  - build
+  - verify
+  - testing
+  - package
+  - upload
+  - production
+```
+
+**Build**: al momento non servono dipendenze particolari per il funzionamento del software, usa sqlite3 già integrata in Python;
+
+**Verify**: usa ```prospector``` e ```bandit``` per analizzare il codice all'interno della cartella ```./package``` (jobs paralleli);
+- verifyProspector
+- verifyBandit
+
+**Testing**: usa ```pytest``` per effettuare unit e integration tests, valutati separatamente e in parallelo;
+- unitTest
+- integTest
+
+**Package**: usa ```setup.py``` e ```wheel``` per creare il pacchetto da distribuire;
+
+**Release**: usa ```twine``` per eseguire l'upload del pacchetto appena creato;
+
+**Deploy**: fase di doploy su macchina virtuale (AWS) scarichiamo il pacchetto e lo usiamo in un file python di test per controllare l'output corretto

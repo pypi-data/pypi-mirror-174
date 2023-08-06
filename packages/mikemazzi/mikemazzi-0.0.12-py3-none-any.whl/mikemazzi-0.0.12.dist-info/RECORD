@@ -1,0 +1,10 @@
+mikemazzi/__init__.py,sha256=Zti7XXeh7oxBCt7bUpZXSx1tilGeuChB7Zi4NTTQjag,69
+mikemazzi/csvdata.py,sha256=8HqTfobxZOONPuxRgyTw7NV3JpuRlZBKnowepdc0uLg,2608
+mikemazzi/database.py,sha256=73i8EOtSLFJorfgVoB83vtD0-QM85n3Bilf7jr_YISM,3797
+mikemazzi/functions.py,sha256=lGUZ1kCNxdrCgL4L2gYY6KNOUp3eRg9Wg_rpEvMv7hs,1145
+tests/__init__.py,sha256=vHs8fpXvrQH60IqjghSd7zXjuTHgs8ryAtNzMnOgCKg,39
+tests/test.py,sha256=wKPZczifHQ_5nMn1nH0I67N5iRw62c_g1TPk22NUAEc,3545
+mikemazzi-0.0.12.dist-info/METADATA,sha256=i8mrzIzLDe_cTIPoNWMvv2dsWZkmUusKteibh66bkjo,2082
+mikemazzi-0.0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mikemazzi-0.0.12.dist-info/top_level.txt,sha256=2u2SVbJO8-Ql8pp_qn7qf2_VC-c53Y72wpH4I_EHeok,16
+mikemazzi-0.0.12.dist-info/RECORD,,
