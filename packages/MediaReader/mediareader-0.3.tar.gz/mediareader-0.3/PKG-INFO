@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: MediaReader
+Version: 0.3
+Author-email: dylan marsella <dylanmarsella1@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
