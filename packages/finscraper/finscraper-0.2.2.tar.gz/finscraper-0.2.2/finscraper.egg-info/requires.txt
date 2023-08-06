@@ -1,0 +1,12 @@
+attrs>=21
+pandas>=1
+selenium>=4
+scrapy>=2.6.3
+tqdm>=4.46
+webdriver-manager>=2.4
+
+[dev]
+pytest
+flake8
+twine
+versioneer

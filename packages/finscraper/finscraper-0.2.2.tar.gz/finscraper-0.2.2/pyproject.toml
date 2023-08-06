@@ -1,0 +1,56 @@
+[project]
+name = "finscraper"
+description = "Web scraping API for Finnish websites"
+authors = [
+    { name = "Jesse Myrberg", email = "jesse.myrberg@gmail.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["web", "scraping", "finnish", "nlp", "scrapy"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Framework :: Scrapy",
+    "Natural Language :: Finnish",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "attrs>=21",
+    "pandas>=1",
+    "selenium>=4",
+    "scrapy>=2.6.3",
+    "tqdm>=4.46",
+    "webdriver-manager>=2.4"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+    "twine",
+    "versioneer"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jmyrberg/finscraper"
+"Documentation" = "https://finscraper.readthedocs.io"
+
+[build-system]
+requires = ["setuptools", "versioneer[toml]==0.26"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = [
+    "finscraper*"
+]
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440-pre"
+versionfile_source = "finscraper/_version.py"
+versionfile_build = "finscraper/_version.py"
+tag_prefix = ""
+parentdir_prefix = "finscraper-"
