@@ -1,0 +1,9 @@
+wfconnect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wfconnect/generate_wfconnect_abc.py,sha256=10GQ-1rkln5Rqgdjxky0ESo30Tx3xmoCqiQDbuNReI0,5111
+wfconnect/wfconnect.py,sha256=5ONnwYTEQ6c40cWZyazgCW-0MjdSdm-5k9Ed_OMDbgg,5033
+wfconnect/wfconnect_abc.py,sha256=osu3Ikm8tA3H2i1WriEECX0e_o1taOpwc1oNCNJqKKU,18323
+wfconnect-0.0.1.dist-info/LICENSE,sha256=3EC09YmN9oTaJIswGMG7YWYkc_BoxhlS2ImPT7YpEwQ,1076
+wfconnect-0.0.1.dist-info/METADATA,sha256=Fckn-rM2q__dXd4Gr5IfELhm5wduxId__G_TO4Z4MOQ,2242
+wfconnect-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wfconnect-0.0.1.dist-info/top_level.txt,sha256=zhzC9n1Dr2ngeXNrXUEE5kr4e15LW5fEte01Mb54aPk,10
+wfconnect-0.0.1.dist-info/RECORD,,
