@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "megasepryte"
+version = "1.0.4"
+authors = [
+  { name="Trygve Leergaard", email="atleergaard2@hotmail.com" },
+]
+description = "Aseprite to megadrive compatible assembly"
+readme = "ReadMe.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "numpy",
+    "zlib",
+    "math",
+    "sys",
+    "os",
+    "subprocess",
+    "json"
+]
