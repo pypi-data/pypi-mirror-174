@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyahn
+Version: 1.0.0
+Summary: A python package for extracting the Z values for a set of XY coordinates from AHN4
+Home-page: https://github.com/sami-m-g
+Author: Mina Sami
+Author-email: sami.mg@outlook.com
+License-File: LICENSE
+
+# pyahn
+A python package for extracting the Z values for a set of XY coordinates from AHN4
