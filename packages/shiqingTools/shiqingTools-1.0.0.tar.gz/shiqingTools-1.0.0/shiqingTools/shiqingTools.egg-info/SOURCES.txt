@@ -1,0 +1,10 @@
+README.md
+setup.py
+shiqingTools/shiqingTools/__init__.py
+shiqingTools/shiqingTools/py2snnipets.py
+shiqingTools/shiqingTools/tools.py
+shiqingTools/shiqingTools.egg-info/PKG-INFO
+shiqingTools/shiqingTools.egg-info/SOURCES.txt
+shiqingTools/shiqingTools.egg-info/dependency_links.txt
+shiqingTools/shiqingTools.egg-info/not-zip-safe
+shiqingTools/shiqingTools.egg-info/top_level.txt
