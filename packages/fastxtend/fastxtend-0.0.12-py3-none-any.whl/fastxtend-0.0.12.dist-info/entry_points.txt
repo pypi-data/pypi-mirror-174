@@ -1,0 +1,2 @@
+[nbdev]
+fastxtend = fastxtend._modidx:d
