@@ -1,0 +1,13 @@
+compare_faces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compare_faces/comparation.py,sha256=UN3ulgRhiCwp-peFqZSM5Fpr4d8uEddRED57cxnhtJk,1187
+compare_faces/io.py,sha256=iiix1YYs2kbG-mqfGIfHBrbgTwuXCRTJD8l9MlvEZDQ,226
+compare_faces/load_img.py,sha256=lSiJHAgwhxaQSpo8gqfykc1NDWhmgLZlrGPtAzMRQbw,138
+compare_faces/plot.py,sha256=Q1Pv-kHG8h1Whicx826pBnZ4YCdFvxQCK7fnU19abOI,712
+face_picture_comparator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+face_picture_comparator/comparation.py,sha256=2yI_prkmTt3ZiUv3ixIh13QnEswqUMe5grZhgygWBzg,1755
+face_picture_comparator/load_img.py,sha256=lSiJHAgwhxaQSpo8gqfykc1NDWhmgLZlrGPtAzMRQbw,138
+face_picture_comparator/plot.py,sha256=Q1Pv-kHG8h1Whicx826pBnZ4YCdFvxQCK7fnU19abOI,712
+face_picture_comparator-0.0.3.dist-info/METADATA,sha256=SkcuXwEYsDb58YVbvK-d62XGqtcs3jilsQVKfpuwjCw,2423
+face_picture_comparator-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+face_picture_comparator-0.0.3.dist-info/top_level.txt,sha256=HmODAC8G57NCQV76oYh0EKfQPlGjd656iGM4GNeOiK0,24
+face_picture_comparator-0.0.3.dist-info/RECORD,,
