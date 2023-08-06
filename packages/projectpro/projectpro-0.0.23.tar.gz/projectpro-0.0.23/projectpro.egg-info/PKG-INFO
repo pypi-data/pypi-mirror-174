@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: projectpro
+Version: 0.0.23
+Summary: Code execution logging
+Author: ProjectPro
+Author-email: mohammed@projectpro.io
+Keywords: python,logging,checkpoint,log,script,ipynb
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+A package that allows to checkpoint/log the state of code execution
