@@ -1,0 +1,2 @@
+[pytest11]
+pytest_swg2pyt = swg2pyt.pytest_swg2pyt.pytest_conftest

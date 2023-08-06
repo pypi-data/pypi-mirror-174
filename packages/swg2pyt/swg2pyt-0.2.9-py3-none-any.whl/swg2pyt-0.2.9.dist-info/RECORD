@@ -1,0 +1,15 @@
+swg2pyt/Asserter.py,sha256=x1R8JJKU-x8KLI3ONPnS98ecfTdppo3Z-Hf-ztYeQlQ,4325
+swg2pyt/CaseCollector.py,sha256=TzeIN7OM3c1y_UPHpclT2TDrC6MQsUEnFhqbrlwcOnY,4889
+swg2pyt/ClassGenerator.py,sha256=0Wl29wSOiS-W297LoUkat-K-CKCKba57fUZmYjH9Ku4,5605
+swg2pyt/Executor.py,sha256=PvQPaedPypro-7HljLeRJHJ0PUIzlmqkJXbSmZup-6c,7954
+swg2pyt/GlobalDict.py,sha256=-H3sTqNyHgOcVhgZwMlVgRp4lCZdLnYWBEYqAGVHR60,795
+swg2pyt/Pretreator.py,sha256=CgXDJAqcqLt0ow5zD-oc404eLi9Rjhn_9IyChKKoWaw,11569
+swg2pyt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swg2pyt/pytest_swg2pyt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swg2pyt/pytest_swg2pyt/pytest_conftest.py,sha256=r84VvG0UFUYt4dSlp07Weq__fJ4-mEFME83EJCLR1Jg,1788
+swg2pyt-0.2.9.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swg2pyt-0.2.9.dist-info/METADATA,sha256=cjcH7qQcw-ZgVWNhuEcuL3TBTWf9JLGkqwZbiSrqE68,8615
+swg2pyt-0.2.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+swg2pyt-0.2.9.dist-info/entry_points.txt,sha256=nb_E4JqpVfEP6lw0Ep5bxNu9uiKz9v9i3eACQ4QTVXQ,67
+swg2pyt-0.2.9.dist-info/top_level.txt,sha256=dvUnvYKdzXwGgaSPbanLGxdLRz2GS5YFpref0nksnzI,8
+swg2pyt-0.2.9.dist-info/RECORD,,
