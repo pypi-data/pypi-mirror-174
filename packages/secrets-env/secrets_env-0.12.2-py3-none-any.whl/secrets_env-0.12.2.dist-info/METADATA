@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: secrets-env
+Version: 0.12.2
+Summary: Put secrets from Vault to environment variables
+Home-page: https://github.com/tzing/secrets.env
+License: MIT
+Keywords: vault,environment variables
+Author: tzing
+Author-email: tzingshih@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Provides-Extra: all
+Provides-Extra: toml
+Provides-Extra: yaml
+Requires-Dist: PyYAML (>=5.1.2,<7); extra == "all" or extra == "yaml"
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: hvac (>=0.11.2,<0.12.0)
+Requires-Dist: keyring (>=23.3.0,<24.0.0)
+Requires-Dist: requests (>=2.21.0,<3.0.0)
+Requires-Dist: tomli (>=1.1.0,<3); (python_version < "3.11") and (extra == "all" or extra == "toml")
+Project-URL: Bug Tracker, https://github.com/tzing/secrets.env/issues
+Project-URL: Repository, https://github.com/tzing/secrets.env
+Description-Content-Type: text/markdown
+
+# Secrets.env 🔓
+
+[![PyPI version](https://img.shields.io/pypi/v/secrets.env)](https://pypi.org/project/secrets-env/)
+![Python version](https://img.shields.io/pypi/pyversions/secrets.env)
+[![test result](https://img.shields.io/github/workflow/status/tzing/secrets.env/Tests)](https://github.com/tzing/secrets.env/actions/workflows/test.yml)
+
+Put secrets from [Vault](https://www.vaultproject.io/) KV engine to environment variables like a `.env` loader, without not landing data on disk.
+
+![screenshot](./docs/imgs/screenshot.png)
+
+Security is important, but don't want it to be a stumbling block. We love secret manager, but the practice of getting secrets for local development could be a trouble.
+
+This app is built to *plug in* secrets into development without landing data on disk, easily reproduce the environment, and reduce the risk of uploading the secrets to the server.
+
+
+* 📦 [PyPI](https://pypi.org/project/secrets-env/)
+* 📐 [Source code](https://github.com/tzing/secrets.env)
+* 📗 [Documentation](https://tzing.github.io/secrets.env/)
+
