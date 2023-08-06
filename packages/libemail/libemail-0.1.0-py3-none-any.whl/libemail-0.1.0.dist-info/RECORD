@@ -1,0 +1,8 @@
+libemail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libemail/apps.py,sha256=lNlk8YDfMD0vMsQO5dn0kfTN1WZ9bHjjMzMlLcOkMcQ,96
+libemail/generic.py,sha256=jQCqS3QFsLb3-URlAt9pEcPQbFJNu8hq4yvDtn3nJqI,1801
+libemail/templates/libemail/generic.html,sha256=Nm9DLBXG6N8VcecjkuW7cyuHGPk1_WaD2CddasCoQUQ,22790
+libemail/templates/libemail/generic_uncompiled.html,sha256=h4AfE_L0a42ipXBS9S1fysjeJuhCixSPGyQ_wBYjrj8,799
+libemail-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+libemail-0.1.0.dist-info/METADATA,sha256=AsOczRnQgR71E6OHfzRNgvTdukDQBfRN0xuQp7COXp8,1336
+libemail-0.1.0.dist-info/RECORD,,

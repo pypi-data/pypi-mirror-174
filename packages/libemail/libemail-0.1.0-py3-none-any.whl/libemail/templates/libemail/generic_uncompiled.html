@@ -1,0 +1,36 @@
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+
+  <body class="bg-light">
+    <div class="container">
+      <div class="card my-10">
+        <div class="card-body">
+          <preview>{{ preview }}</preview>
+
+          {% if branding %}
+          <div class="text-center">
+            <img class="mt-3 mb-5" src="{{ branding }}" height="45px" />
+          </div>
+          {% endif %}
+
+          <h5 class="h5 mb-2 text-center">{{ title }}</h5>
+
+          <h5 class="text-teal-700 text-center">{{ subtitle }}</h5>
+
+          <hr>
+
+          <div class="space-y-3">
+            <p class="text-gray-700">{{ body }}</p>
+          </div>
+
+          <hr>
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
