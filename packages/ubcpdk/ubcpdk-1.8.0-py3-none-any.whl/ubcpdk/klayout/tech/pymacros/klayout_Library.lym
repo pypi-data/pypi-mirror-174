@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description>import_ubcpdk_PCells</description>
+ <version/>
+ <category>pymacros</category>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <priority>0</priority>
+ <shortcut/>
+ <show-in-menu>true</show-in-menu>
+ <group-name/>
+ <menu-path>ubcpdk.begin</menu-path>
+ <interpreter>python</interpreter>
+ <dsl-interpreter-name/>
+ <text>
+
+try:
+    import flayout as fl
+    from ubcpdk import cells
+except ImportError:
+    import pya
+    pya.MessageBox.info('ubcpdk message',
+                        ('ubcpdk has not been installed. So ubcpdk pcells will not be available.\n' +
+                         'To use these, go into terminal/command line anywhere and type\n\n' +
+                         'pip install ubcpdk'),
+                        pya.MessageBox.Ok)
+
+
+pcells = []
+for name, cell in cells.items():
+    # Would be nice to add SiEPIC pins to all of these
+    try:
+      pcells.append(fl.pcell(cell, on_error="ignore"))
+    except:
+      # Currently, pcells defined with partial don't work due to a missing __name__ attribute
+      pass
+
+# Cell
+generic_lib = fl.library(
+    "ubcpdk",
+    pcells=pcells,
+    cells=[],
+    description="UBCPDK PCell Library",
+)
+
+</text>
+</klayout-macro>
