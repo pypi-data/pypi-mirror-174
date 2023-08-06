@@ -1,0 +1,11 @@
+
+## Entrypoints for `{{package}}`
+
+-------------------------------------------------------------------------------
+
+These are scripts/commands/binaries that ship with `{{package}}`:
+
+{% for item in entrypoints %}
+{% set dotpath = item.module + '.' + item.entrypoint %}
+* [`{{item.bin_name}}`](/docs/cli/{{item.bin_name}}.md) @ [`{{dotpath}}`](/docs/api#{{item.module.replace('.', '')}})
+{%endfor%}
