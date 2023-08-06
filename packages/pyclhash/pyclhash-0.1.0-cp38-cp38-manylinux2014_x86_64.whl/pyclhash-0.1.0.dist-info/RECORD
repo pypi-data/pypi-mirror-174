@@ -1,0 +1,14 @@
+pyclhash/__init__.py,sha256=jKBdSLSiwP_sTfKiWpMjoPZMcFgb5oFFxtq0V7bmY9k,231
+pyclhash/backends/__init__.py,sha256=05HscV_nDH1ysgd0t49KEHSbsCO2GtMjaSzW80s-bzk,638
+pyclhash/backends/cffi/__init__.py,sha256=SI6iw-1xQ3EFT-sZGLl9MHXF1IZ49ygLUoV5sE-Trkg,960
+pyclhash/backends/cffi/_clhash.abi3.so,sha256=w8jINt7_bRq8uHBg360y9Eb2aTYQR8Knd3LJbnlKNrw,22336
+pyclhash/backends/cffi/build.py,sha256=49aG6d0cBhPxfRnWDV81ttNp5vZ1B2Vf-SIbI0oXBxw,1253
+pyclhash/backends/cython/__init__.py,sha256=X8FmJeXkeWgxa5_Tb3xM_1nPvZ9-1yDdjR3JiMM2tBE,157
+pyclhash/backends/cython/_clhash.abi3.so,sha256=usV1dMjKqdfUPf7komW-gO_4nr_r5pFomVKu7VO89IA,212656
+pyclhash/backends/cython/_clhash.c,sha256=Mf9wnd0XKixTHwHZ5LM3sTyw1gTyTd4_5TqZZ1c061k,809234
+pyclhash/backends/cython/_clhash.pyx,sha256=U4rt0LtlyYLziiT2RJXhEyGRWMJFU_USm92vZBp96W4,1624
+pyclhash/backends/cython/clhash.pxd,sha256=WO0v-uBmY2x8b4Dqj09HHAw-ao1GpEwL9o4ATCyfVMg,396
+pyclhash-0.1.0.dist-info/METADATA,sha256=whL7HBGsFJyUA143PTZfr5PkGtjWTkqZmuAXGdVjWeg,998
+pyclhash-0.1.0.dist-info/WHEEL,sha256=HDpOoUm88OZsXwJ1fG8bFxqAdtiJNfIcxp3_RuQe18I,103
+pyclhash-0.1.0.dist-info/top_level.txt,sha256=gLx8jpG903Fu_YR2vGdHhsiioFwXXVq3KOCaU-fh1es,9
+pyclhash-0.1.0.dist-info/RECORD,,
