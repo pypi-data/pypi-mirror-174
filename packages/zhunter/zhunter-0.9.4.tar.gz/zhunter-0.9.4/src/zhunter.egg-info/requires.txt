@@ -1,0 +1,7 @@
+pyqt5>=5.15
+pyqtgraph>=0.12.4
+numpy>=1.22
+astropy>=5.0
+matplotlib>=3.5
+pandas>=1.5
+spectres>=2.1

@@ -1,0 +1,2 @@
+[console_scripts]
+zhunter = zhunter.gui:main
