@@ -1,0 +1,9 @@
+emmet-core[all]
+fastapi
+uvicorn-tschaume
+gunicorn
+boto3
+maggma
+ddtrace
+setproctitle
+shapely
