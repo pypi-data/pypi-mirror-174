@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: add-testing
+Version: 1.0.dev0
+Summary: A sample testing app
+Author: Shailesh Kumar
+Author-email: kumar.shailesh1597@gmail.com
+License: Apache-2.0
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Brotli (>=1.0.9)
+Requires-Dist: MarkupSafe (>=2.1.1)
+Requires-Dist: Werkzeug (>=2.2.2)
+Requires-Dist: certifi (>=2022.6.15)
+Requires-Dist: click (<9.0.0,>8.0.0)
+Requires-Dist: colorama
+Requires-Dist: importlib-metadata (==4.12.0)
+Requires-Dist: itsdangerous (==2.1.2)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: pytz (>=2022.2.1)
+Requires-Dist: tenacity (<9,>7)
+Requires-Dist: zipp (==3.8.1)
+Provides-Extra: testing
+Requires-Dist: flake8 (>=3.9) ; extra == 'testing'
+Requires-Dist: mypy (>=0.910) ; extra == 'testing'
+Requires-Dist: pytest (>=6.0) ; extra == 'testing'
+Requires-Dist: pytest-cov (>=2.0) ; extra == 'testing'
+Requires-Dist: tox (==3.14.6) ; extra == 'testing'
+Requires-Dist: virtualenv (==20.0.33) ; extra == 'testing'
+
+# test-publish
