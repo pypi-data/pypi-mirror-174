@@ -1,0 +1,101 @@
+[[package]]
+name = "appdirs"
+version = "1.4.4"
+description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "click"
+version = "8.1.3"
+description = "Composable command line interface toolkit"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+
+[[package]]
+name = "colorama"
+version = "0.4.5"
+description = "Cross-platform colored terminal text."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "numpy"
+version = "1.23.4"
+description = "NumPy is the fundamental package for array computing with Python."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "opencv-python"
+version = "4.6.0.66"
+description = "Wrapper package for OpenCV python bindings."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+numpy = [
+    {version = ">=1.21.2", markers = "python_version >= \"3.10\" or python_version >= \"3.6\" and platform_system == \"Darwin\" and platform_machine == \"arm64\""},
+    {version = ">=1.19.3", markers = "python_version >= \"3.6\" and platform_system == \"Linux\" and platform_machine == \"aarch64\" or python_version >= \"3.9\""},
+    {version = ">=1.14.5", markers = "python_version >= \"3.7\""},
+    {version = ">=1.17.3", markers = "python_version >= \"3.8\""},
+]
+
+[[package]]
+name = "scenedetect"
+version = "0.6.0.3"
+description = "Video scene cut/shot detection program and Python library."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+appdirs = "*"
+Click = "*"
+numpy = "*"
+opencv-python = {version = "*", optional = true, markers = "extra == \"opencv\""}
+tqdm = "*"
+
+[package.extras]
+opencv = ["opencv-python"]
+opencv-headless = ["opencv-python-headless"]
+pyav = ["av"]
+
+[[package]]
+name = "tqdm"
+version = "4.64.1"
+description = "Fast, Extensible Progress Meter"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+
+[package.extras]
+dev = ["py-make (>=0.1.0)", "twine", "wheel"]
+notebook = ["ipywidgets (>=6)"]
+slack = ["slack-sdk"]
+telegram = ["requests"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "417f0476db0f0c6ba79e1a2e5aed0bdc04b906a70d4ccf94641c0ad8667cba52"
+
+[metadata.files]
+appdirs = []
+click = []
+colorama = []
+numpy = []
+opencv-python = []
+scenedetect = []
+tqdm = []

@@ -1,0 +1,46 @@
+name: Bytetrack from video
+inputs:
+- {name: input_video, type: Artifact}
+- {name: input_weights, type: Artifact}
+outputs:
+- {name: output_file, type: Artifact}
+implementation:
+  container:
+    image: europe-west1-docker.pkg.dev/hoodat-sandbox/hoodat-sandbox-kfp-components/bytetrack_from_video
+    command:
+    - sh
+    - -c
+    - |2
+
+      if ! [ -x "$(command -v pip)" ]; then
+          python3 -m ensurepip || python3 -m ensurepip --user || apt-get install python3-pip
+      fi
+
+      PIP_DISABLE_PIP_VERSION_CHECK=1 python3 -m pip install --quiet     --no-warn-script-location 'kfp==1.8.13' && "$0" "$@"
+    - sh
+    - -ec
+    - |
+      program_path=$(mktemp -d)
+      printf "%s" "$0" > "$program_path/ephemeral_component.py"
+      python3 -m kfp.v2.components.executor_main                         --component_module_path                         "$program_path/ephemeral_component.py"                         "$@"
+    - "\nimport kfp\nfrom kfp.v2 import dsl\nfrom kfp.v2.dsl import *\nfrom typing\
+      \ import *\n\ndef bytetrack_from_video(\n    input_video: Input[Artifact],\n\
+      \    input_weights: Input[Artifact],\n    #\_device: str = \"gpu\",  #\_Must\
+      \ be gpu or cpu\n    output_file: Output[Artifact]\n):\n    from tools.demo_track\
+      \ import make_parser, main, get_exp\n\n    has_gpu = True\n    if has_gpu:\n\
+      \        args = make_parser().parse_args([\n            \"video\",\n       \
+      \     \"-f\",\n            \"/ByteTrack/exps/example/mot/yolox_x_mix_det.py\"\
+      ,\n            \"-c\",\n            input_weights.path,\n            \"--path\"\
+      ,\n            input_video.path,\n            \"--fp16\",\n            \"--fuse\"\
+      ,\n            \"--save_result\"\n        ])\n    else:\n        args = make_parser().parse_args([\n\
+      \            \"video\",\n            \"-f\",\n            \"/ByteTrack/exps/example/mot/yolox_x_mix_det.py\"\
+      ,\n            \"-c\",\n            \"/ByteTrack/pretrained/bytetrack_x_mot17.pth.tar\"\
+      ,\n            \"--device\",\n            \"cpu\",\n            \"--path\",\n\
+      \            \"/ByteTrack/friends-Scene-008.mp4\", #\_input_video.path,\n  \
+      \          \"--fuse\",\n            \"--save_result\"\n        ])\n\n    exp\
+      \ = get_exp(args.exp_file, args.name)\n    main(exp, args)\n\n"
+    args:
+    - --executor_input
+    - {executorInput: null}
+    - --function_to_execute
+    - bytetrack_from_video
