@@ -1,0 +1,7 @@
+{"jobqueue": "batch_scratch_queue_public",
+ "ecr_registry": "public.ecr.aws/w7q0j5w1",
+ "aws_ecr_role": "arn:aws:iam::700080227344:instance-profile/ecs_instance_role",
+ "aws_ecs_job_role": "arn:aws:iam::700080227344:role/ecs_batch_service_role",
+ "aws_region": "us-west-2",
+ "working_dir": "/home"
+}
