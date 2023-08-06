@@ -1,0 +1,40 @@
+[tool.black]
+line-length = 79
+
+[tool.pycln]
+all = true
+
+[tool.isort]
+line_length = 79
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Trello_Api_Wrapper"
+version = "0.0.4"
+authors = [
+  { name="Jordy Araújo", email="jordyaraujo@outlook.com" },
+]
+description = "Object oriented Python wrapper for Trello API"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+dependencies = [
+  "httpx==0.23.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JordyAraujo/Trello_Api_Wrapper"
+"Bug Tracker" = "https://github.com/JordyAraujo/Trello_Api_Wrapper/issues"
