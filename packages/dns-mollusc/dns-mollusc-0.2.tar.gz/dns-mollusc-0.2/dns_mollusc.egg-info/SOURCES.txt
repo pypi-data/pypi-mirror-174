@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+dns_mollusc/__init__.py
+dns_mollusc/client.py
+dns_mollusc/response.py
+dns_mollusc.egg-info/PKG-INFO
+dns_mollusc.egg-info/SOURCES.txt
+dns_mollusc.egg-info/dependency_links.txt
+dns_mollusc.egg-info/requires.txt
+dns_mollusc.egg-info/top_level.txt
