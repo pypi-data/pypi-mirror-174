@@ -1,0 +1,17 @@
+python_aternos/__init__.py,sha256=M-DJaxr2NkwYF7KVms-na1ORe9kq4aYozpBjUWq9xxg,1616
+python_aternos/atclient.py,sha256=yNIs-A5YVs7FFX3uufV1YMORvJdSyGCO_hLRUajk7FA,13666
+python_aternos/atconf.py,sha256=Oi07d6OFeBY3OqYRJwoE50GQqSMW3WwCtloG8CYs8Mo,10140
+python_aternos/atconnect.py,sha256=JF1YoftAYfiB0mLoeTRkIIzzb1g-a0WfQQJ-PniGSP0,9044
+python_aternos/aterrors.py,sha256=9gGShHUrn8H5ePvdYYSrjxBOmH_HEObpoXKx6_zheao,2406
+python_aternos/atfile.py,sha256=Zknc9bCwsL2koMCV7WKIt1ItPEYBJH3ErgnhnJ4y2IQ,8697
+python_aternos/atfm.py,sha256=DY4ftdlUNkOww0hnAWqkyt43PxlPShd_2jDhmg9TH70,5261
+python_aternos/atjsparse.py,sha256=LRFtd2-Ys8tNtip1ip-EJCigDyiS0GsEoWX5tH4iUuo,1496
+python_aternos/atplayers.py,sha256=umdPvsQ78VGtLXoOvcIVwa1YR5yNRE3RSw1BKbEwNN8,3319
+python_aternos/atserver.py,sha256=krvaVf5LhSSvYXUmIhiWAFtUSFvuKRfY497Nwh9rnXI,10999
+python_aternos/atwss.py,sha256=Aj0H5N7PwUWzkp42TDoX0bh4Lwyaa0bVdBYqSVoZPzQ,9942
+python_aternos-2.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+python_aternos-2.1.3.dist-info/METADATA,sha256=OH8RWnZsjUo60_z7FPyXAlyl3WzRTQnMo2pxh8HInh0,7013
+python_aternos-2.1.3.dist-info/NOTICE,sha256=CzIr4-_SO3BkLiwt_XHe4_dmFT7d9aIny_F1Bw-dhlo,562
+python_aternos-2.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_aternos-2.1.3.dist-info/top_level.txt,sha256=LxrWeeYLBfhs_v2shV9ix4eflQvkK_Xb04ec3_zwXHo,15
+python_aternos-2.1.3.dist-info/RECORD,,
