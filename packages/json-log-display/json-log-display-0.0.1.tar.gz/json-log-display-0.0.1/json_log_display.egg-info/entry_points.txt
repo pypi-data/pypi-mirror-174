@@ -1,0 +1,3 @@
+[console_scripts]
+jld = json_log_display.cli:jld
+
