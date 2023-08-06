@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_xss_shield.egg-info/PKG-INFO
+django_xss_shield.egg-info/SOURCES.txt
+django_xss_shield.egg-info/dependency_links.txt
+django_xss_shield.egg-info/top_level.txt
+shield/__init__.py
+shield/events.txt
+shield/middleware.py
+shield/the_shield.py
+shield/templatetags/__init__.py
+shield/templatetags/shield_tag.py
