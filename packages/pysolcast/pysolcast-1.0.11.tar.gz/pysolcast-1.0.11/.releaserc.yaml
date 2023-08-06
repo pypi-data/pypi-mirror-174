@@ -1,0 +1,21 @@
+---
+plugins:
+  - - '@semantic-release/commit-analyzer'
+    - preset: angular
+      releaseRules:
+        - breaking: true
+          release: major
+        - type: breaking
+          release: major
+        - type: docs
+          release: patch
+        - type: refactor
+          release: patch
+        - type: no-release
+          release: false
+  - '@semantic-release/release-notes-generator'
+  - '@semantic-release/github'
+  - - '@semantic-release/exec'
+    - publishCmd: 'echo "RELEASE_VERSION=${nextRelease.version}" >> $GITHUB_ENV'
+branches:
+  - main
