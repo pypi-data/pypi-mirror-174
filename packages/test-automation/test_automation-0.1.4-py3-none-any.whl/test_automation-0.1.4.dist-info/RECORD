@@ -1,0 +1,12 @@
+test_automation/__init__.py,sha256=1v1v_hk1CKd6XslsRd4MP-WSM-zlBkNc0t0IoGmeVoQ,1031
+test_automation/api.py,sha256=_z8lytq8hRz9yvDg7Dcr7SxBSlDok12Yw5_pwnJGW-I,3226
+test_automation/dashboard.py,sha256=jKvB5bYeEBlvrmxs7tY48Xd7XreJefz0sHQwKJlp5W8,195
+test_automation/gowin.py,sha256=vMGX4OpB5tYwySxaH5YMPFFnioeEG_5QwEuu1pcdocM,742
+test_automation/hubyo.py,sha256=v2KfDp4vgltHZR5oastZZDEIJai9C-clFSHk8OvcSgk,3670
+test_automation/ui.py,sha256=nNiYeMEX1KY3FNGST-zb-F3RKVi_Uwke9IvXJ-yru6c,983
+test_automation/ui_funtions.py,sha256=tI-Rv7XaxFsuVDgrlisu9M-lifkH4_lVcRjiFw9vYfE,85
+test_automation/vault.py,sha256=ZGs98wU5AfDYwtWI7j9QNOIJec5B8xTRpmyXG6lge94,371
+test_automation-0.1.4.dist-info/LICENSE,sha256=-K3yr8bcYfqGo5AZKh7afGeyy25Mncrxne6ZS9WFa5A,1063
+test_automation-0.1.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+test_automation-0.1.4.dist-info/METADATA,sha256=eG3n2mvlzvN077HLTZ62R4S_l0N9hFJT2Usx-rDFsKo,498
+test_automation-0.1.4.dist-info/RECORD,,
