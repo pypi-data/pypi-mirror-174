@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+cp2k_helper/__init__.py
+cp2k_helper/__main__.py
+cp2k_helper/_version.py
+cp2k_helper/cp2k_helper.py
+cp2k_helper.egg-info/PKG-INFO
+cp2k_helper.egg-info/SOURCES.txt
+cp2k_helper.egg-info/dependency_links.txt
+cp2k_helper.egg-info/entry_points.txt
+cp2k_helper.egg-info/requires.txt
+cp2k_helper.egg-info/top_level.txt
