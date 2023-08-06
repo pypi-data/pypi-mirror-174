@@ -1,0 +1,28 @@
+[build-system]
+requires = [
+  "hatchling"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "city_of_saskatoon_auth"
+version = "0.0.3"
+authors = [
+  { name="Evan Salter", email="hi@evansalter.com" },
+]
+description = "An unofficial Python module for authenticating with the City of Saskatoon website"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "requests"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/evansalter/city-of-saskatoon-auth"
+"Bug Tracker" = "https://github.com/evansalter/city-of-saskatoon-auth/issues"
