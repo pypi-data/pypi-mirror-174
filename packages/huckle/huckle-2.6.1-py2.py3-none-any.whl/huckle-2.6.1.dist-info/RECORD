@@ -1,0 +1,14 @@
+huckle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+huckle/__main__.py,sha256=lg2npArnJjYpwp3d2sBR75I55oOXaugUW-Difh94LYY,308
+huckle/config.py,sha256=TK_kIByfUqI7Hf4eMsFlt1gODKVJgiWoRYcdYzjUgfY,5057
+huckle/hclinav.py,sha256=Y6jJ-jhAx8o5_ZeBWQuHOvotm6XDCrpJ-bDLklCxf_0,10129
+huckle/huckle.py,sha256=mQDiDtWFP84IK_5ZlvqQYs86-BTbKBEa5eG6a39MiMc,2589
+huckle/hutils.py,sha256=WsBTB9LSObVYK6RBHuL0jkqt38P71AnuLkMTgdZXI3w,858
+huckle/package.py,sha256=cvwg8lnCoB8fU5QD4RaT5DnHsRICipbZ1kGd-mc3sTs,248
+huckle/data/huckle.1,sha256=kHEgleR5gfDMyq8-K8vCmHo_Lcou4XQcQvUfPZggck0,1865
+huckle-2.6.1.dist-info/LICENSE.txt,sha256=CXzR3ceigmiejhpOvStjp4GfgK8b0LQ7HuZJIkwMQE4,1056
+huckle-2.6.1.dist-info/METADATA,sha256=opzJLvx-BeqdQNzBZaGNrBUFMeoAny0-7fmqd5F1B0Y,8131
+huckle-2.6.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+huckle-2.6.1.dist-info/entry_points.txt,sha256=nBcAQg-hf5NHmk1ACfEUiI95bC_PTrW1XqtqegGQcTY,48
+huckle-2.6.1.dist-info/top_level.txt,sha256=pF5ceovcfOHgQpBdg1jp1TN3Z9KMwPFgdsEV3_OeGKU,7
+huckle-2.6.1.dist-info/RECORD,,
