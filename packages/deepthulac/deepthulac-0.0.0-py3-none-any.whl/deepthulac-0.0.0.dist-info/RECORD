@@ -1,0 +1,15 @@
+deepthulac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepthulac/utils.py,sha256=vB0zQFXS0lTM16FOM2QoHR5M4HWVbovktUNrAaxoOJ4,6630
+deepthulac/seg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepthulac/seg/cut_sent.py,sha256=o7HT9lcnDnPR9VZl5x4XGF8VohegOxoR-YlycJhG00U,2773
+deepthulac/seg/data_format.py,sha256=muGecW6aEDxdmPmAsC2xpSgTkFBGAWtELwkJdKvPS50,4982
+deepthulac/seg/eval.py,sha256=2Iz2pfBWHq7_CiMKWvSYGJj0pMR5ze5iOKz2hHzryCc,7490
+deepthulac/seg/model.py,sha256=JGMcJYoxomTw943GY5KhIiLSgAnT2644lU5iQWf4wSU,23529
+deepthulac/seg/post_process.py,sha256=z2edU11qagoiJQGIrPcRg2dlxfIgr10mSgadh1R3Upo,1072
+deepthulac/seg/seg_utils.py,sha256=gwM-Q3OPriYcvnIMq0JlDFTUQWcGKBAlRqztqlTEE88,1059
+deepthulac/seg/train.py,sha256=NjLPudcA8uzK5zDbFCRoPk46SyE28JipuVkIjCEB0xA,4752
+deepthulac-0.0.0.dist-info/LICENSE,sha256=5PEndl_NBgkyOjyJxGkFXjnAN4hf55HTqnFbPWsMD6c,1063
+deepthulac-0.0.0.dist-info/METADATA,sha256=RNYymvCZ2rcAmK1Jfxuybt__C-Gl6DAmE9bCrLQCTak,595
+deepthulac-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deepthulac-0.0.0.dist-info/top_level.txt,sha256=NVKHh-zdi4XVMZbUudreMnkHSzYPBqHrdEDsvO4dfIY,11
+deepthulac-0.0.0.dist-info/RECORD,,
