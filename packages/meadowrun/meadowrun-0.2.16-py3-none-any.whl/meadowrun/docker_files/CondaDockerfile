@@ -1,0 +1,60 @@
+# This is meant to turn a conda environment.yml file into a container. To be used like:
+# docker build -t image_name:tag --build-arg ENV_FILE=myenv.yml --build-arg CONDA_IMAGE=continuumio/miniconda3 --build-arg APT_PACKAGES="git libgl1" -f src/meadowrun/docker_files/CondaDockerfile .
+# This assumes that ./myenv.yml exists and defines the environment
+
+ARG CONDA_IMAGE
+
+FROM $CONDA_IMAGE
+
+SHELL ["/bin/bash", "-c"]
+
+ENV PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PIP_ROOT_USER_ACTION=ignore
+
+ARG DEBIAN_FRONTEND=noninteractive
+ARG APT_PACKAGES
+RUN if [[ -n "$APT_PACKAGES" ]]; then \
+    apt update && \
+    apt install -y $APT_PACKAGES && \
+    rm -rf /var/lib/apt \
+    ; fi
+
+# See PipDockerfile for comments
+RUN git config --global --add safe.directory '*'; exit 0
+
+WORKDIR /tmp/__meadowrun_marker__
+
+ARG ENV_COPY
+ARG ENV_FILE
+
+COPY $ENV_COPY ./
+# ENV_FILE_FORMAT should either be not set or "env". This should be set based on whether
+# the format of ENV_FILE requires `conda env create` vs `conda create`
+ARG ENV_FILE_FORMAT
+# we would rather not assume that the name of the environment in $ENV_NAME.yml is the
+# same as the filename, so we just hardcode a name here
+RUN mamba $ENV_FILE_FORMAT create --file $ENV_FILE --name the_env
+# see _prepare_conda_file for notes
+ARG PIP_PREREQUISITES
+RUN if [[ -n "$PIP_PREREQUISITES" ]]; then \
+    /opt/conda/envs/the_env/bin/python -m pip install $PIP_PREREQUISITES \
+    ; fi
+# see _prepare_conda_file for notes
+ARG PIP_PACKAGES
+RUN if [[ -n "$PIP_PACKAGES" ]]; then \
+    /opt/conda/envs/the_env/bin/python -m pip install $PIP_PACKAGES \
+    ; fi
+
+# delete everything from the workdir (copied repository or code) except:
+# - the src folder. We need to keep this for "pip -e git" installs in conda requirements files. 
+#   Normally pip checks the source for git repos out in the virtual env, but despite the "conda
+#   env create" pip does not seem to think it's in a virtual env, so it checks it out in the current
+#   directory, src folder instead. We just leave them there so things work.
+# - a few items to support editable installs:
+#   - egg-info directory (legacy setuptools mechanism)
+#   - pyproject.toml (modern mechanism)
+#   - poetry.lock (for poetry, not 100% sure we need this, but can't hurt)
+RUN find . -path ./src -prune -o -path ./*.egg-info -prune -o -path ./.venv -prune -o -path ./pyproject.toml -prune -o -path ./poetry.lock -o -exec rm -rfv {} \; || true
+
+ENV PATH /opt/conda/envs/the_env/bin:$PATH
