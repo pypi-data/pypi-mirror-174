@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "solders"
+version = "0.10.0"
+description = "Python bindings for Solana Rust tools"
+authors = ["kevinheavey <kevinheavey123@gmail.com>"]
+license = "Apache"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+maturin = "0.13.2"
+black = "^22.3"
+wemake-python-styleguide = "^0.16.0"
+mypy = "^0.982"
+pytest = "^6.2.5"
+pytest-benchmark = "^3.4.1"
+pybip39 = "^0.1.0"
+based58 = "^0.1.1"
+Sphinx = "^4.3.2"
+sphinx-rtd-theme = "^1.0.0"
+solana = "0.23.3"
+bumpversion = "^0.6.0"
+"jsonalias" = "0.1.1"
+
+[build-system]
+requires = ["maturin>=0.13.2,<0.14"]
+build-backend = "maturin"
+
+
+[project]
+name = "solders"
+version = "0.10.0"
+description = "Python binding to the Solana Rust SDK"
+authors = [ {name = "kevinheavey", email = "kevinheavey123@gmail.com"} ]
+license = {file = "LICENSE"} # relative to the package/ directory
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["typing-extensions >=4.2.0", "jsonalias ==0.1.1"]
+
+[project.urls]
+homepage = "https://github.com/kevinheavey/solders"
+documentation = "https://kevinheavey.github.io/solders/"
+repository = "https://github.com/kevinheavey/solders"
+changelog = "https://github.com/kevinheavey/solders/blob/main/CHANGELOG.md"
+
+[tool.maturin]
+python-source = "python"
