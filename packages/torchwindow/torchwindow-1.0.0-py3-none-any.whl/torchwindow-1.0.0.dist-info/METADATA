@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: torchwindow
+Version: 1.0.0
+Summary: Display tensors directly from GPU
+Home-page: https://github.com/jbaron34/torchwindow
+License: MIT
+Author: Jeremy
+Author-email: jbaron34@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cuda-python (>=11.8.0,<12.0.0)
+Requires-Dist: numpy (>=1.23.4,<2.0.0)
+Requires-Dist: pyopengl (>=3.1.6,<4.0.0)
+Requires-Dist: pysdl2 (>=0.9.14,<0.10.0)
+Requires-Dist: pysdl2-dll (>=2.24.1,<3.0.0)
+Requires-Dist: torch (==1.13.0+cu117)
+Project-URL: Repository, https://github.com/jbaron34/torchwindow
+Description-Content-Type: text/markdown
+
+# TorchWindow
+
+TorchWindow is a Python library that enables viewing of PyTorch Cuda Tensors on screen directly from GPU memory (No copying back and forth between GPU and CPU) via OpenGL-Cuda interop.
+
+## Install
+
+```
+pip install torchwindow
+```
+
+## Use
+To create a window
+```
+from torchwindow import Window
+window = Window(640, 480, name="Torch Window")
+```
+To display an image tensor in the window
+```
+window.draw(image)
+```
+`image` must be a tensor with the following properties:
+- 3 dimensions, specifically `(rows, columns, channels)` in that order.
+- `channels` dimension must be of size 4 (r, g, b, a)
+
+## Example
+To check if torchwindow is properly installed try running
+```
+python3 -m torchwindow.example
+```
+You should see this window appear for 5 seconds before closing
+![Example](example.png)
