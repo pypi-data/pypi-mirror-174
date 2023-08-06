@@ -1,0 +1,41 @@
+1.0.0
+2022.10.30
+feat: Offer basically class decorator function.
+
+1.1.0
+2022.10.30
+feat: Offer inheritance solution. Sub class can rewrite super class's state net!
+
+1.2.0
+2022.10.30
+feat: Offer default state parameter to the decorator. Will modify the class's __init__
+      method which can auto switch the object to the default state.
+bugfix: Fix when pass an unexsited state is passed as an entry is legal.
+
+1.2.1
+2022.10.30
+bugfix: Fix when default state is empty string will be ignored.
+
+1.2.2
+2022.10.30
+bugfix: Fix Super class's __init__ won't be called when inherit.
+
+1.2.3
+2022.10.31
+adjust: Let state attribute is visitable in __init__ when default state is set.
+
+2.0.0
+2022.11.01
+reconstruct: The first augument you pass, turns their entries to their exits.
+feat: Add the NoneState class, only has one instance NS. The NS state could be switch to any other states. So whether use it is your decision.
+feat: Add exception classes to replace inner Exception
+bugfix: Support None replace the empty set() passed.
+optimize: Cut some methods' creation while not necessary.
+adjust: If no default state is given and not switch to a state. The default state None will be use instead of raise an error.
+adjust: Add a parameter that decide whether None state is alllowed, if allowed, an special state node called 'NS'(And writen as too) will add to the net if a None is appear in your dict passed.
+adjust: Support more naming style as you want.
+
+2.0.2
+2022.11.02
+bugfix: verbose output deleted
+bugfix: rewrite method on class improperly
