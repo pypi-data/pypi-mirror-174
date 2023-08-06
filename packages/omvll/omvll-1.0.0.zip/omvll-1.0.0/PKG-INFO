@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: omvll
+Version: 1.0.0
+Summary: Python Stub for O-MVLL
+Home-page: https://obfuscator.re
+Author: Romain Thomas
+Author-email: me@romainthomas.fr
+Keywords: reverse-engineering,obfuscation
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C++
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst; charset=UTF-8
+
+O-MVLL Python Stub
+===================
+
+This package provides typing stubs to enable completion while using `O-MVLL <https://obfuscator.re>`_.
