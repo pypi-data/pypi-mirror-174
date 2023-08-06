@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: auth-lib-sp
+Version: 0.0.7
+Summary: Library for token verification
+Author: Sachikia
+License: MIT
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: djangorestframework
+Requires-Dist: djangorestframework-simplejwt
+
