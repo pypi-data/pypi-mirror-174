@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: BotApiTelegram
+Version: 0.0.6
+Summary: A python library for Telegram Bot Api.
+Home-page: https://github.com/SastaDev/BotApiTelegram
+Download-URL: https://github.com/SastaDev/BotApiTelegram
+Author: Sasta Dev
+Author-email: sastadev2007@gmail.com
+License: GNU General Public License v3.0
+Keywords: BotApiTelegram
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+For examples and docs check out:
+* [GitHub-Examples](https://github.com/SastaDev/BotApiTelegram/tree/main/examples).
+* [Docs](https://BotApiTelegram.tk).
+
+# Basic Installization and 'Hello.' reply.
+
+```
+from BotApiTelegram import TelegramBot, filters
+
+bot_token = '' # Your bot token from @BotFather.
+
+bot = TelegramBot('bot_db', bot_token=bot_token)
+
+@bot.on_update(filters.command('start'))
+def on_start(message):
+    message.reply('Hello.')
+
+bot.start_polling()
+
+```
+
+# Links
+**GitHub Repo Link:** [SastaDev/BotApiTelegram](https://github.com/SastaDev/BotApiTelegram).
+**Documentation Link:** [BotApiTelegramDocs](https://BotApiTelegramDocs.tk).
+**Updates Channel on Telegram:** [BotApiTelegram](https://telegram.dog/BotApiTelegram).
+**Help Support Chat on Telegram:** [BotApiTelegramChat](https://telegram.dog/BotApiTelegramChat).
+
