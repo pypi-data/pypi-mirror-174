@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyipcore
+Version: 0.2.6
+Summary: (Only Windows) pyipcore = python (pseudo) (verilog) IP core (rebuilder). Properly adjust your own. v file as an open source IP core, so that it can be easily reconfigured to new projects. Console cmd: 'ipc_rb' and 'ipc_ui'
+Author: eaglebaby
+Author-email: 2229066748@qq.com
+Platform: 
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: pyperclip
+Requires-Dist: files3
+Requires-Dist: pyverilog (==1.3.0)
+Requires-Dist: pillow
+Requires-Dist: PyQt5 (==5.15.6)
+
