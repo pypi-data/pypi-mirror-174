@@ -1,0 +1,2 @@
+[console_scripts]
+tf = task_forest_cli.main:task_forest_cli

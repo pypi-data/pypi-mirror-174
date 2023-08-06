@@ -1,0 +1,12 @@
+task_forest_cli/__init__.py,sha256=V0TkivIWS8SLAflDMr-xJSnH95KC3DDox84JY2xtaOM,197
+task_forest_cli/config.py,sha256=cTEoVvqSZeLeQVsKdZGqH5FspebskBftXiVxEppumVs,5415
+task_forest_cli/main.py,sha256=MW5fhhvVQFoYHtVMhy2XEwC5BkZSvG0msfXlKWlMn_s,2677
+task_forest_cli/tasks.py,sha256=TWDeKm_t_OkQJrw-1LGh--B-9sacFMybiTJElJ0o6aA,6344
+task_forest_cli/user.py,sha256=uznMm3chFoI5tT2o_NvUufkS0p10TWoT_Xr7g37wnrE,5224
+task_forest_cli/utils.py,sha256=EjgOyQNEs4wfT0-a5lrIeiI6fSue5FgwuIA4TT3VxMc,6807
+task_forest_cli-0.2.0.dist-info/LICENSE,sha256=xeNMnPT8TcarTnEDM3lqOYYFDQ_W47rEA4jEh-dxwzM,35077
+task_forest_cli-0.2.0.dist-info/METADATA,sha256=gZpIt2XqAop6LoLDwyOa-808u-0TN4UZnEZ_Q_0huA8,867
+task_forest_cli-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+task_forest_cli-0.2.0.dist-info/entry_points.txt,sha256=OACev5eM-89Ak5X15szXq3iiYKAe1LGGQPil4JNJoxY,60
+task_forest_cli-0.2.0.dist-info/top_level.txt,sha256=LCOnt-YIPSt02dBvyuz3Ki1Q1jEKOsPDcUVbus0RH2o,16
+task_forest_cli-0.2.0.dist-info/RECORD,,
