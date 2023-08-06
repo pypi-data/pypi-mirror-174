@@ -1,0 +1,9 @@
+
+## Entrypoints for {{package}}
+
+-------------------------------------------------------------------------------
+
+{% for item in entrypoints %}
+{% set dotpath=item.module + '.' + item.entrypoint %}
+* [`{{item.bin_name}}`](/docs/cli/#{{item.bin_name}}) @ [`{{dotpath}}`](/docs/api#{{dotpath.replace('.','')}})
+{%endfor%}
