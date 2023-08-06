@@ -1,0 +1,3 @@
+emmet-core[all]
+maggma>=0.49.9
+matminer>=0.7.3
