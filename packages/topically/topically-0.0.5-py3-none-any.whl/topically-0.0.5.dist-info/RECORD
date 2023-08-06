@@ -1,0 +1,9 @@
+topically/__init__.py,sha256=ldPmIBotQNl2WVYtPYFlOoTrf1xjri6UGHRyank8GnQ,323
+topically/app.py,sha256=JdEQX1CtcEQmcHzrvKq38mVdxtIVQTD5Wrm2org-Jy8,4951
+topically/cluster_namers.py,sha256=GqiIkxy5jOONyO0fsMBAUegdMZ1AUDPlqZ4HNWCMm_s,5421
+topically/prompts/prompts.py,sha256=KISTfHasl7Hw9yA9W68kU5t6A8m5yqvz92S30oj5yY8,6619
+topically/topic_namer.py,sha256=H1q9PxCdBfyJ4Atw16Ip6JJLJabmdEnjScrMU96GH1U,2797
+topically-0.0.5.dist-info/LICENSE,sha256=0rEI4wLOoQPQoa0EJPCgh0Cc3OFUxcC3ImTHg5o4Yos,1088
+topically-0.0.5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+topically-0.0.5.dist-info/METADATA,sha256=-syNM3Rgt2O7VvAz2shYCzO_oyQ6w4ZHjc9P6rF0aE4,643
+topically-0.0.5.dist-info/RECORD,,
