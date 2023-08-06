@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/jsonpath_tp/Data.txt
+src/jsonpath_tp/__init__.py
+src/jsonpath_tp/main.py
+src/jsonpath_tp.egg-info/PKG-INFO
+src/jsonpath_tp.egg-info/SOURCES.txt
+src/jsonpath_tp.egg-info/dependency_links.txt
+src/jsonpath_tp.egg-info/entry_points.txt
+src/jsonpath_tp.egg-info/requires.txt
+src/jsonpath_tp.egg-info/top_level.txt
+src/jsonpath_tp.egg-info/zip-safe

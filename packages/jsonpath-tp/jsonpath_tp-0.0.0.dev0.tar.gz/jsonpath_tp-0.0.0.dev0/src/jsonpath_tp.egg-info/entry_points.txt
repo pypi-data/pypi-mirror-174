@@ -1,0 +1,2 @@
+[console_scripts]
+jsonpath = jsonpath_tp.main:main
