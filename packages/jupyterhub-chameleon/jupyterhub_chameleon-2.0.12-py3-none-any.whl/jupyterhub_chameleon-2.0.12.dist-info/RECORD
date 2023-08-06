@@ -1,0 +1,16 @@
+jupyterhub_chameleon/__init__.py,sha256=fJ8-ENrV2jvZD_KQnAfCWWlQDa83O5mqrurBj1hjLuA,3007
+jupyterhub_chameleon/handler.py,sha256=bKqv1msi9WKJ7s2KFS8Frq7GlMma8QN_IdY3NnTevyk,9809
+jupyterhub_chameleon/spawner.py,sha256=roVDeLXtvMexVW51FrKy0d9yrhBQyimGmbzN-rjJzCA,7429
+jupyterhub_chameleon/utils.py,sha256=8TlnIDnZsWx0830SAdn3s9OMY6bFnqoPVJNAhdMdw_g,4473
+jupyterhub_chameleon/authenticator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterhub_chameleon/authenticator/config.py,sha256=PtIdeufNQ8fn8NLDf03uCjj-jb2Y6zBlM-QxhGk45JU,45
+jupyterhub_chameleon/authenticator/keycloak.py,sha256=BzqQDzmHWvo9e4TyvL_kMHXzRtyPh1A--lDkPgQPeco,13016
+jupyterhub_chameleon/service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterhub_chameleon/service/cull_idle_servers.py,sha256=nGg12aMpowAuRT84_N8zV9MiXjs9br8fXb-ukzg88zY,13270
+jupyterhub_chameleon-2.0.12.data/data/share/jupyterhub_chameleon/templates/auth_refresh.html,sha256=XBW0WW3qndU6kracDKyiYaM-Fu4J89PZoMez388fZKE,402
+jupyterhub_chameleon-2.0.12.dist-info/LICENSE,sha256=0mX6oL2dqCA-4VQBd971viNq0vaMiDp1TAhfkhPs-zU,11351
+jupyterhub_chameleon-2.0.12.dist-info/METADATA,sha256=YhPhN4IQ82fpDWYYH9WcUlSnq8Q32xGCKnTZ45fvn7A,475
+jupyterhub_chameleon-2.0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jupyterhub_chameleon-2.0.12.dist-info/entry_points.txt,sha256=SknXd0NaPILnpuysyqnZDmBtq5zM1lKJLR4M3BWsst8,196
+jupyterhub_chameleon-2.0.12.dist-info/top_level.txt,sha256=JNuXzFx5m0d0al8d40lH1p2eC3rAI_AZLfutzSqrcJU,21
+jupyterhub_chameleon-2.0.12.dist-info/RECORD,,
