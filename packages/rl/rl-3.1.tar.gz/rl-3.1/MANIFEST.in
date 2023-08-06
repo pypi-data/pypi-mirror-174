@@ -1,0 +1,4 @@
+include LICENSE tox.ini *.rst
+include readline-8.2.tar.gz *.patch
+recursive-include rl *.c *.h *.rst
+recursive-include rl/tests *.py
