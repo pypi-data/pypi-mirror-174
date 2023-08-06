@@ -1,0 +1,11 @@
+magick_tile/__init__.py,sha256=wiw-vfqGTDmUw9hvv30xDZJ8I8cf9uwsqjLeq-iUC5I,413
+magick_tile/generator.py,sha256=D7UwDnhZY3mhUvfgc1pujYwKb1aVt1DDlZ2LhAd7B_s,8632
+magick_tile/main.py,sha256=NqCqeEvTVilh9AbIhD47joCda7MR4Lpo4a2gfq8s2hA,870
+magick_tile/manifest.py,sha256=8zpu3lFfjWkafEZcKK7lXZTP4fHIXSoNkx_59ICmDp8,1150
+magick_tile/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magick_tile/settings.py,sha256=Jkue1v1utyOyEog5VxlqyMOyvVoJKX4tiBM3uu1fCtU,289
+magick_tile-0.1.0.dist-info/entry_points.txt,sha256=b7rr70v3inDTlR6SZQ5D-l2nZJo7pFOIDA1Cx-gb9Po,52
+magick_tile-0.1.0.dist-info/LICENSE,sha256=hFD82px4tiAXZ7SwMqBUZJwqtSr3bSSqzfq8rAFKr58,1072
+magick_tile-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+magick_tile-0.1.0.dist-info/METADATA,sha256=QGkBtxc_d0jsbEh2M4gtx1B2B56JybL91zfqBMx9p5c,599
+magick_tile-0.1.0.dist-info/RECORD,,

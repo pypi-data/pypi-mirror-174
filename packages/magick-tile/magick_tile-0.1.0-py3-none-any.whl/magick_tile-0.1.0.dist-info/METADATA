@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: magick-tile
+Version: 0.1.0
+Summary: Use Imagemagick to efficiently create derivative tiles of a very large image, and structure them into directories compliant with IIIF Level 0
+License: MIT
+Author: Matthew Lincoln
+Author-email: matthew.d.lincoln@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: typer[all] (>=0.6.1,<0.7.0)

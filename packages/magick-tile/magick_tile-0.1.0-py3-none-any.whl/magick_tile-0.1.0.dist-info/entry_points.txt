@@ -1,0 +1,3 @@
+[console_scripts]
+magick_tile=magick_tile.main:app
+
