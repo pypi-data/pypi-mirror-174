@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: declara
+Version: 1.0.4
+Summary: Declara, a library for generating Boreas declaration forms
+Author-email: Tobias Sijtsma <tobias@leanslate.nl>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pypdf2 >=2.11, <3
+Requires-Dist: reportlab >=3.6, <4
+Requires-Dist: requests >=2.28, <3
+Requires-Dist: yagmail[all] >=0.15, <1
+Project-URL: Home, https://leanslate.nl/
+Project-URL: source, https://github.com/Tobiaqs/declara
+
+# declara
+
+Programmatically fill out your Boreas declaration forms with Python.
+
+See `example.py` for example use.
+
+## Environment variables
+This package requires the following environment variables to be set:
+
+- `SMTP_HOST`
+- `SMTP_USERNAME`
+- `SMTP_PASSWORD`
+- `SMTP_DEFAULT_RECIPIENT`
+
+And these are optional:
+
+- `SMTP_PORT` (default = `587`)
+- `DECLARA_EMAIL_BODY_B64` (default = equal to base64-encoded `default_email_body.txt`)
+- `DECLARA_EMAIL_SUBJECT` (default = `Declaratie`)
+

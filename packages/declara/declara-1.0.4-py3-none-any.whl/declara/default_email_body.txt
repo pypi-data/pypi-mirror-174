@@ -1,0 +1,13 @@
+Lief bestuur,
+
+Bij dezen een declaratie ten gunste van [NAME]. Het totaalbedrag is [TOTAL]. We verzoeken u vriendelijk deze declaratie voor [EXPIRY] te verwerken.
+
+Om deze e-mails wat levendig te houden is hieronder een grap bijgevoegd. We kunnen niet garanderen dat het een goede grap is. Geniet ervan:
+
+[JOKE]
+
+Groetjes,
+
+Namens [NAME],
+
+De Boreas Declaratiebot
