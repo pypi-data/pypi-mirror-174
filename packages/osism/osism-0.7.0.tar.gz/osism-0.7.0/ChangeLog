@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.7.0
+------
+
+* Make Ansible an extra requirement (#207)
