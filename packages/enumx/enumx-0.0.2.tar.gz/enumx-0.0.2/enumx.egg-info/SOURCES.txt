@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+enumx/__init__.py
+enumx/enumx.py
+enumx.egg-info/PKG-INFO
+enumx.egg-info/SOURCES.txt
+enumx.egg-info/dependency_links.txt
+enumx.egg-info/top_level.txt
