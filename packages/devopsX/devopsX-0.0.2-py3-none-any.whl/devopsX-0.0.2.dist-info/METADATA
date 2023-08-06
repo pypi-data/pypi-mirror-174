@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: devopsX
+Version: 0.0.2
+Summary: DevOps é um produto da Microsoft que fornece controle de versão, relatórios, gerenciamento de requisitos, gerenciamento de projetos, compilações automatizadas, gerenciamento de laboratório, recursos de gerenciamento de testes e versões.
+Home-page: https://gitlab.com/integration_seon/libs/application/tfs
+Author: Paulo Sérgio dos Santos Júnior
+Author-email: paulossjunior@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: azure-devops
+Requires-Dist: requestx
+Requires-Dist: factory-boy
+
+# DevopsX
+
+## General Information
+* **Software**:DevOps
+* **Author**:Paulo Sérgio dos Santos Júnior
+* **Author's e-mail**:paulossjunior@gmail.com
+* **Source Repository**: [https://gitlab.com/integration_seon/libs/application/tfs](https://gitlab.com/integration_seon/libs/application/tfs)  
+
+## Goal
+DevOps é um produto da Microsoft que fornece controle de versão, relatórios, gerenciamento de requisitos, gerenciamento de projetos, compilações automatizadas, gerenciamento de laboratório, recursos de gerenciamento de testes e versões.
+
+## Documentation
+
+The Documentation can be found in this [link](./docs/documentation.md)
+
+## Generate documentation
+
+To create the code documentation:
+```bash
+pdoc --html --force devopsX/ --output docs
+
+```
+### Acess code documentation	
+
+To accesss the documenation, go to folder docs/devopsX and open index.html 
+	
+## Instalation
+
+To install devopsX, run this command in your terminal:
+```bash
+pip install devopsX
+```
+
+## Usage
+
+```python
+
+from devopsX import factories
+from pprint import pprint 
+organization_url = "<DEVOPS URL>"
+personal_access_token =  "<personal code access>"
+
+project_service = factories.ProjectFactory(personal_access_token=personal_access_token,
+                                            organization_url=organization_url)
+projects = project_service.get_projects()
+
+for project in projects:
+    pprint(project.__dict__)
+
+```
+
+## Copyright
+This lib was PowerRight by [SEON Application Lib Generator](https://gitlab.com/mdd_seon/from_application_conceptual_data_model_2_lib_application)
+
+	
