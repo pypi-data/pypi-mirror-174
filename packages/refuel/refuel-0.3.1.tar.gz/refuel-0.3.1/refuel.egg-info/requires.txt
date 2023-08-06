@@ -1,0 +1,4 @@
+loguru==0.5.3
+requests_futures==1.0.0
+numpy
+pandas
