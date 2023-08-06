@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fastpkg
+Version: 0.0.1
+Summary: Quickly initialize a new Python package, ready to upload to PyPI
+Author-email: Ryan Young <dev@ryayoung.com>
+Maintainer-email: Ryan Young <dev@ryayoung.com>
+License-File: LICENSE
+Keywords: cli tool,new package
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Requires-Dist: click
+Description-Content-Type: text/markdown
+
+# fastpkg
+
+> Quickly customize and create a starter template for a Python package that's ready to upload to PyPI.
