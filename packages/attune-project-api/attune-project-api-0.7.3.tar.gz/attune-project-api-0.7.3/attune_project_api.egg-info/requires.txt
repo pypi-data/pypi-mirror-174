@@ -1,0 +1,13 @@
+twisted
+pygit2
+vortexpy==3.2.7
+pytz
+pathvalidate
+py7zr
+markdown
+alembic
+mako
+sphinx
+sphinx-rtd-theme
+sphinx-autobuild
+pytmpdir
