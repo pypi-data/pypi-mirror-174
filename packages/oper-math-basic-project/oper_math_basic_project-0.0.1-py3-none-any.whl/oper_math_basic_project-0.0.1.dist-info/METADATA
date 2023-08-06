@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: oper-math-basic-project
+Version: 0.0.1
+Summary: A pacage with two basic math operations
+Home-page: https://github.com/sabuat/package-operaciones.git
+Author: Sabuat Urbina Ribeiro
+Author-email: sabuaturbina@yahoo.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package operaciones is used to:
+	- Add some numbers
+	- Substract some numbers
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install package_name
+```
+
+## Usage
+
+```python
+from operaciones import suma
+operaciones.suma_num()
+
+from operaciones import resta
+operaciones.resta_num()
+```
+
+## Author
+Sabuat Urbina Ribeiro
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
