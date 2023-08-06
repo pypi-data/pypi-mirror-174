@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vnpy_insight
+Version: 0.1.0
+Summary: 用于vnpy获取历史数据的华泰insight接口
+Author: kangyuqiang
+Author-email: kangyuqiang123@gmail.com
+License: UNKNOWN
+Keywords: vnpy,insight,华泰,huatai
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+

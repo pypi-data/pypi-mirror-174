@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+vnpy_insight/__init__.py
+vnpy_insight/insight_datafeed.py
+vnpy_insight/utils.py
+vnpy_insight.egg-info/PKG-INFO
+vnpy_insight.egg-info/SOURCES.txt
+vnpy_insight.egg-info/dependency_links.txt
+vnpy_insight.egg-info/requires.txt
+vnpy_insight.egg-info/top_level.txt
