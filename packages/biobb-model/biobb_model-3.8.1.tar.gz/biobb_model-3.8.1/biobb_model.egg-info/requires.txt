@@ -1,0 +1,3 @@
+biobb_common==3.8.1
+biobb_structure_checking==3.10.1
+xmltodict
