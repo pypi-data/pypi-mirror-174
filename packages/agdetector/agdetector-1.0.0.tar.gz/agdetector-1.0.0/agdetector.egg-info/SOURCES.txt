@@ -1,0 +1,17 @@
+README.md
+setup.py
+agdetector.egg-info/PKG-INFO
+agdetector.egg-info/SOURCES.txt
+agdetector.egg-info/dependency_links.txt
+agdetector.egg-info/entry_points.txt
+agdetector.egg-info/not-zip-safe
+agdetector.egg-info/requires.txt
+agdetector.egg-info/top_level.txt
+package/__init__.py
+package/agricultural_field_detector.py
+package/image_tools.py
+package/index_operations.py
+package/lib_image.py
+package/parser.py
+package/run.py
+test/tests.py

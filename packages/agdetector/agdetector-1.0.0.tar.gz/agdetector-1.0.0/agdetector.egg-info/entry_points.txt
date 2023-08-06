@@ -1,0 +1,2 @@
+[console_scripts]
+agdetector = package.agricultural_field_detector:main
