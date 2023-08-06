@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: discatcore
+Version: 0.0.0
+Summary: A lower level Discord API wrapper that functions as the core layer of DisCatPy.
+Home-page: https://github.com/discatpy-dev/core.git
+Author: EmreTech
+Project-URL: Bug Tracker, https://github.com/discatpy-dev/core/issues
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: aiohttp
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9.0

@@ -1,0 +1,6 @@
+setup.py
+discatcore/__init__.py
+discatcore.egg-info/PKG-INFO
+discatcore.egg-info/SOURCES.txt
+discatcore.egg-info/dependency_links.txt
+discatcore.egg-info/top_level.txt
