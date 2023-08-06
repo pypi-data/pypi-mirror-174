@@ -1,0 +1,14 @@
+django_tailwind_cli/__init__.py,sha256=76_5unf43DE01lMmn6fXhlZawCdTEyjFCe1AnXb4X3s,58
+django_tailwind_cli/apps.py,sha256=s6Hu9vTlnf4-sHoTs7BTVnox8a2JO3QG8M_WNcEfib0,204
+django_tailwind_cli/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tailwind_cli/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tailwind_cli/management/commands/tailwind.py,sha256=9jDHhXMfnRVOnJkv7mIuonbrljo58K1sHkEQwenyW4U,4226
+django_tailwind_cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tailwind_cli/templates/tailwind_cli/tags/tailwind_css.html,sha256=IsECFbZW307yj6YZWBk9NcX3wuFaLiYT2Mikb4V9haQ,257
+django_tailwind_cli/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tailwind_cli/templatetags/tailwind_cli.py,sha256=gZHDoD03nnTkEYRQJwJJwNcO9i6VDCVC__xA4_zC-Do,399
+django_tailwind_cli/utils.py,sha256=QepVPxn65950axKWdZEX7lMlArRjXYSFYSIt_YYqVrA,2494
+django_tailwind_cli-1.0.1.dist-info/LICENSE,sha256=Xxc1O48A5m5W9ngUJdJm5uuhhsnmj0IpILfUoS9Un3U,1071
+django_tailwind_cli-1.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+django_tailwind_cli-1.0.1.dist-info/METADATA,sha256=0_aQlpMdIPWyTqdnufF9ImFVcmducCpYuEV6pAglmVo,6976
+django_tailwind_cli-1.0.1.dist-info/RECORD,,
