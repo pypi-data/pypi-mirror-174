@@ -1,0 +1,30 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+version = "0.10.1"
+name = "moe_mediafile"
+authors = [
+    {name = "Adrian Sampson", email = "adrian@radbox.org"},
+    {name = "Jacob Pavlock", email = "jtpavlock@gmail.com"},
+]
+dependencies = [
+    "six>=1.9",
+    "mutagen>=1.46",
+]
+requires-python = ">=3.7"
+classifiers = [
+    'Topic :: Multimedia :: Sound/Audio',
+    'License :: OSI Approved :: MIT License',
+    'Environment :: Web Environment',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: Implementation :: PyPy',
+]
+description = "elegant audio file tagging"
+
+[tool.flit.module]
+name = "mediafile"
