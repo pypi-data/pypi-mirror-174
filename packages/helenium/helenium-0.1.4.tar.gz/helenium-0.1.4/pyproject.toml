@@ -1,0 +1,15 @@
+[project]
+name = "helenium"
+version = "0.1.4"
+description = "Simple Selenium Load Helper Package"
+requires-python = ">=3.8"
+readme = "README.md"
+license = { file="LICENSE" }
+dependencies = ["selenium>=4.3.0", "requests>=2.28.0"]
+
+[project.urls]
+"Homepage" = "https://github.com/Indosaram/helenium.git"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
