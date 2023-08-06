@@ -1,0 +1,2 @@
+[console_scripts]
+RPS = RPS.__main__:main

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/RockPaperScissorsFullGame/RPS.py
+src/RockPaperScissorsFullGame/__init__.py
+src/RockPaperScissorsFullGame/__main__.py
+src/RockPaperScissorsFullGame.egg-info/PKG-INFO
+src/RockPaperScissorsFullGame.egg-info/SOURCES.txt
+src/RockPaperScissorsFullGame.egg-info/dependency_links.txt
+src/RockPaperScissorsFullGame.egg-info/entry_points.txt
+src/RockPaperScissorsFullGame.egg-info/top_level.txt
