@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: transformation-algebra
+Version: 0.1.4
+Summary: Type inference for transformation algebras.
+Home-page: https://github.com/quangis/transformation-algebra
+Author: nsv
+Author-email: n.steenbergen@uu.nl
+Project-URL: Bug Tracker, https://github.com/quangis/transformation-algebra/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Typing :: Typed
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# transformation-algebra
+
+The project has been renamed to `transforge`. You can find it at 
+<https://pypi.org/project/transforge/>. Source code is at 
+<https://github.com/quangis/transforge/>. This package is deprecated.
