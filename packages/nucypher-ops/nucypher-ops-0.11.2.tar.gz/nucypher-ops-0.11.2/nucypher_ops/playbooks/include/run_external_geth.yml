@@ -1,0 +1,22 @@
+- name: "Run shared externally available geth node"
+  hosts: "{{ play_hosts }}"
+  remote_user: "{{default_user}}"
+  gather_facts: no
+  tasks:
+
+    - name: "run geth"
+      become: yes
+      docker_container:
+        name: geth
+        state: started
+        restart: yes
+        pull: true
+        image: "{{docker_image}}"
+        restart_policy: "unless-stopped"
+        command: "--mainnet --http --http.addr 0.0.0.0 --http.api eth,web3,net --nousb --syncmode snap -http.vhosts=* --cache 2000"
+        volumes:
+          - /home/nucypher/geth:/root
+        ports:
+          - "8545:8545/tcp"
+          - "30303:30303"
+          - "8546:8546/tcp"
