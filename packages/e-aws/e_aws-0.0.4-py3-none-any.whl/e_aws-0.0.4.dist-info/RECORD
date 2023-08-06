@@ -1,0 +1,16 @@
+e_aws/__init__.py,sha256=_NQONshJ4j7b1Giux5pcLcD2oWXE__Bo9LxPsU0VTko,173
+e_aws/awsbucket.py,sha256=NeHPdJyI_oUqiMst5cdf6mYmyu6pHcXY8FYljXkFSiw,8256
+e_aws/awsconnect.py,sha256=q2CzJguL2-app-aIMt4ZDBo7SqzgtLeX3pBy3ognx3o,950
+e_aws/awslambda.py,sha256=F4CVibB6enB_KzKlMPtIMjopydaIkUGqDqo4Yosv8cY,773
+e_aws/awsresource.py,sha256=9B45lOzUvAT52BZhnXX_sLOEXRhcJc2RqxdVkS-pGfM,476
+e_aws/awssession.py,sha256=hrRplNl3Nb7wHABYWVL3n6DQNkJRyZYAjjnvpdDLUTo,1044
+easy_aws/__init__.py,sha256=wrJ58DwMB92N0yNk2uGgLQ3fsm9ZT_oJhgVunsqwO5k,173
+easy_aws/awsbucket.py,sha256=STppl-WbCOjpS6sxK7myQX8GkZ9OI6HwwxBncD30MW4,5252
+easy_aws/awsconnect.py,sha256=q2CzJguL2-app-aIMt4ZDBo7SqzgtLeX3pBy3ognx3o,950
+easy_aws/awslambda.py,sha256=F4CVibB6enB_KzKlMPtIMjopydaIkUGqDqo4Yosv8cY,773
+easy_aws/awsresource.py,sha256=9B45lOzUvAT52BZhnXX_sLOEXRhcJc2RqxdVkS-pGfM,476
+easy_aws/awssession.py,sha256=3mvCjc5xXyekEGDPnVenDAOG9SpSx5jPDOSyCLc2HPM,991
+e_aws-0.0.4.dist-info/METADATA,sha256=EqSHBpmOfSGBNAc4fPI9sGHnsRaS_GnixKJtYzXJT_s,2126
+e_aws-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+e_aws-0.0.4.dist-info/top_level.txt,sha256=kEcAyVgcYA9Fd84QBnmWYelbwoHa1hOH4YR8xgK4S4Q,6
+e_aws-0.0.4.dist-info/RECORD,,

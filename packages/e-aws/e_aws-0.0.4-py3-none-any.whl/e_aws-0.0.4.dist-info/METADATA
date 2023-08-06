@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: e-aws
+Version: 0.0.4
+Summary: Easy AWS connection
+Author: Jeff Aguilar
+Author-email: jeff.aguilar.06@gmail.com
+License: MIT
+Keywords: aws,aws connection
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 (==1.24.93)
+
+# Easy AWS
+
+Simple connection to AWS Bucket and Lambda Services
+
+## Installation
+
+Use pip to install the package:
+
+```
+pip install e-aws
+```
+
+## Usage
+
+This package provides an easy use Bucket and Lambda Services
+
+By default it will take the AWS keys as AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and AWS_REGION
+
+
+## Using Bucket Service
+
+```python
+from e_aws.awsbucket import AWSBucket
+
+AWSBucket('my-bucket').exists('test.txt')
+
+
+with AWSBucket('my-bucket') as bucket:
+    if bucket.exists('test.txt'):
+        pass
+    else:
+        local_path = './test.txt'
+        with open(local_path, 'w') as fl:
+            fl.write('hello world')
+        bucket.upload(local_path, 'test.txt')
+```
+
+## Using Lambda Service
+
+```python
+from e_aws.awslambda import AWSLambda
+
+AWSLambda('function').invoke({})
+```
+
+## Using multiple services on a single connection
+
+```python
+from e_aws.awsconnect import AWSConnect
+
+with AWSConnect() as aws:
+    aws.bucket('test').exists("test.txt")
+    aws.lambdaF('function', {})
+```
+
+## Using connection keys
+
+```python
+from e_aws.awsbucket import AWSBucket
+from e_aws.awslambda import AWSLambda
+from e_aws.awsconnect import AWSConnect
+
+AWSBucket('my-bucket', access_key_id='', secret_access_key='', region='').exists('test.txt')
+AWSLambda('function', access_key_id='', secret_access_key='', region='').invoke({})
+with AWSConnect(access_key_id='', secret_access_key='', region='') as _:
+    pass
+```
