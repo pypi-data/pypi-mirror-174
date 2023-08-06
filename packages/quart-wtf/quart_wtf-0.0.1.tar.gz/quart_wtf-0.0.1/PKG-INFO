@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: quart-wtf
+Version: 0.0.1
+Summary: Simple integration of Quart and WTForms.
+Home-page: https://github.com/Quart-Addons/quart-uploads
+License: MIT
+Author: Chris Rood
+Author-email: quart.addons@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: WTForms (>=3.0.1,<4.0.0)
+Requires-Dist: quart (>=0.18.0,<0.19.0)
+Project-URL: Documentation, https://quart-uploads.readthedocs.io/
+Project-URL: Repository, https://github.com/Quart-Addons/quart-uploads
+Description-Content-Type: text/markdown
+
+# Quart-WTF
+
+![Quart WTForms Logo](logos/logo.png)
+
+Simple integration of Quart and WTForms. Including CSRF and file uploading.
+
