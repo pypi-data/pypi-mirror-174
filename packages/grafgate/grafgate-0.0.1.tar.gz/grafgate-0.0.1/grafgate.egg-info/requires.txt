@@ -1,0 +1,11 @@
+aiohttp
+pydantic
+
+[dev]
+flake8
+safety
+pydocstyle
+piprot
+pytest
+pytest-cov
+pytest-asyncio

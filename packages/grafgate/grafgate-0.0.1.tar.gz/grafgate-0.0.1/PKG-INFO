@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: grafgate
+Version: 0.0.1
+Summary: Toolkit for building Grafana data source backend
+Home-page: https://github.com/akopkesheshyan/grafgate
+Author: Akop Kesheshyan
+Author-email: hello@akop.dev
+License: MIT
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# GrafGate
+
+Toolkit for building Grafana data source backends

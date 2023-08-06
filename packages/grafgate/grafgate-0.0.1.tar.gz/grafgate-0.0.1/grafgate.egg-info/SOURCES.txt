@@ -1,0 +1,11 @@
+README.md
+setup.py
+grafgate/__init__.py
+grafgate/grafgate.py
+grafgate/schemas.py
+grafgate.egg-info/PKG-INFO
+grafgate.egg-info/SOURCES.txt
+grafgate.egg-info/dependency_links.txt
+grafgate.egg-info/not-zip-safe
+grafgate.egg-info/requires.txt
+grafgate.egg-info/top_level.txt
