@@ -1,0 +1,11 @@
+dissect/fat/__init__.py,sha256=osnHR19fq-SvaQJilgJASl1Zw-i6xr05H1FAvKiSHNk,615
+dissect/fat/c_exfat.py,sha256=reMoHRZfEmDee-gwXZI5LC08w3yIeY9cVTA-Ct5bRGw,7526
+dissect/fat/c_fat.py,sha256=al-k5p9kAiQOqR2yJAWKZB3pnLIEMjxKWxWchq11oeY,3827
+dissect/fat/exceptions.py,sha256=L4aL33MXfycxiz5q-t2phjjGatyCwTNPQ6oRgMC7nnk,424
+dissect/fat/exfat.py,sha256=sP-zs6p6RGfJeji9WxrWUW8EzPs6iqH_jbyk3DUeGPY,11881
+dissect/fat/fat.py,sha256=6nvV3vqbuFuF2Hpg5VRSiEmuumMPOw2O-07QDuam1F4,14304
+dissect.fat-3.2.dev4.dist-info/COPYRIGHT,sha256=Y5VsNBCyT5OYAniWS_bHHM4jQruzGRj3RBS1zmhXY58,298
+dissect.fat-3.2.dev4.dist-info/METADATA,sha256=Jm4EwGnXU7wG7inrN9GmmLs-IJW9n1EJaPuWo8jm1O4,2349
+dissect.fat-3.2.dev4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dissect.fat-3.2.dev4.dist-info/top_level.txt,sha256=Mn-CQzEYsAbkxrUI0TnplHuXnGVKzxpDw_po_sXpvv4,8
+dissect.fat-3.2.dev4.dist-info/RECORD,,
