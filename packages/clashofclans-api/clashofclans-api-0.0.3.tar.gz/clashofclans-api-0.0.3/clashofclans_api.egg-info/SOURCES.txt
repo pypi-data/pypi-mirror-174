@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+clashofclans_api.egg-info/PKG-INFO
+clashofclans_api.egg-info/SOURCES.txt
+clashofclans_api.egg-info/dependency_links.txt
+clashofclans_api.egg-info/requires.txt
+clashofclans_api.egg-info/top_level.txt
