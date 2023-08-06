@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: hw1-guansli
+Version: 0.1.1
+Summary: HWK1, how to make a python library.
+Home-page: https://github.com/gl2392/hw1-guansli
+Author: GuansLi
+Author-email: example@email.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+### Installation
+
+> pip install hw1-guansli
+
+### Get started
+How to use this package:
+
+```
+from api_key import get_key
+
+k = get_key()
+print(k)
+
+```
+

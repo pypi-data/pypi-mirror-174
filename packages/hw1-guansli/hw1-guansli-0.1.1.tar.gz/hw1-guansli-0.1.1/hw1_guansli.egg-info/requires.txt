@@ -1,0 +1,5 @@
+numpy
+polygon-api-client
+sqlalchemy
+matplotlib
+pandas
