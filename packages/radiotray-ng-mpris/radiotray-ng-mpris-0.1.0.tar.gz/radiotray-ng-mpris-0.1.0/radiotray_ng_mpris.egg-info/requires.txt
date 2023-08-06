@@ -1,0 +1,3 @@
+mpris-server
+pydbus
+yacl
