@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: erica
+Version: 0.2.0
+Summary: flask-like zero denpendency web server.
+Author: Ryu Juheon
+Author-email: saidbysolo@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# erica
+
+> flask-like zero denpendency web server.
+
+## Sample
+
+```py
+from erica import Erica, RequestHandler
+
+app = Erica()
+
+
+@app.get("/")
+def hello(request: RequestHandler) -> None:
+    request.response.json({"message": "Hello, World!"})
+
+
+@app.post("/")
+def q(request: RequestHandler) -> None:
+    request.response.text(f"you posted {request.text}")
+
+
+app.run()
+```
+
