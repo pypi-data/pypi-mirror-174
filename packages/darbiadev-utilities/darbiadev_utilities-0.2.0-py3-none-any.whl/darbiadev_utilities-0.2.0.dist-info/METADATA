@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: darbiadev-utilities
+Version: 0.2.0
+Summary: Namespace for utility functions
+Author-email: Bradley Reynolds <bradley.reynolds@darbia.dev>
+License: MIT
+Project-URL: repository, https://github.com/darbiadev/darbiadev-utilities/
+Project-URL: documentation, https://docs.darbia.dev/darbiadev-utilities/
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pylint (>=2.12.2) ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.5) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=3.0.0) ; extra == 'dev'
+Requires-Dist: black (>=21.12b0) ; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: pytest (>=6.2.5) ; extra == 'tests'
+
+# darbiadev-utilities
+
+Namespace for utility functions
