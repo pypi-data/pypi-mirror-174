@@ -1,0 +1,14 @@
+---
+- project:
+    queue: tripleo
+    templates:
+      - check-requirements
+      - openstack-cover-jobs
+      - openstack-python3-zed-jobs
+      - publish-openstack-docs-pti
+      - release-notes-jobs-python3
+      - tripleo-multinode-container-minimal-pipeline
+      - tripleo-upgrades-master-pipeline
+    gate:
+      jobs:
+        - openstack-tox-pep8
