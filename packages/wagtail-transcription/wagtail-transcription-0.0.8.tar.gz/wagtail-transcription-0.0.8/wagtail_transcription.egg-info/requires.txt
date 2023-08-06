@@ -1,0 +1,4 @@
+Wagtail>=2.15.5
+django-notifications-hq
+python-docx
+pytube
