@@ -1,0 +1,15 @@
+CHANGELOG.md,sha256=y2CO7fi3q2_8LPCdd1nek3vm-WO61F0O4-iX7edVJL4,1746
+README.md,sha256=Mjhg4l0mgddTKgozOXkbUrxUM2njE0QmLx356vJMhYI,2403
+sample_size/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sample_size/metrics.py,sha256=zdPvdl22XeoOynK2tuO_1KSIm-sCgMkCF6mXTvGBJJY,6360
+sample_size/metrics_schema.json,sha256=c5NFGsmpQPUweyMDPsX5r8Vx6GbNU45pAEIE5JyvT34,3148
+sample_size/multiple_testing.py,sha256=qJEwSNvkiR7gmU5D2QjSLBH-tN-2wdJ7lnf7emCZHqY,4371
+sample_size/sample_size_calculator.py,sha256=OPnkSsXwPI-z5pdqUhSAf15BECbTWxyHxDRbQvjrQPs,2745
+sample_size/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sample_size/scripts/input_utils.py,sha256=CncaZXyA_gdL6VKvFfrlXMYE35_vDaDjemXt-kd_Fto,4918
+sample_size/scripts/sample_size_run.py,sha256=EBafHsx5dSLPQ7MkdoOW5dHAU_TSgR0VUZv8-zuGzVY,1446
+sample_size-3.0.0.dist-info/entry_points.txt,sha256=cwL39IVhm_jtV-irqDCgurfUjpnHVqZJRwF1z3V7Hko,258
+sample_size-3.0.0.dist-info/LICENSE,sha256=3jWyYgSCJIz23fkKodLX7NAm3Cz52VQSygOHPHh3Io4,1098
+sample_size-3.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+sample_size-3.0.0.dist-info/METADATA,sha256=WdG6EROVgOgwZ8NEDr_6Mst79VQ0BC4t7CGMoyt-saI,3003
+sample_size-3.0.0.dist-info/RECORD,,
