@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: updatehnk
+Version: 0.1.1
+Summary: Update coolers info
+Author: Eduardo Martinez
+Author-email: eduardo.martinez.2117@gmail.com
+License: MIT
+Keywords: heineken,python,bigquery,storage,bucket
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Test HNK update
