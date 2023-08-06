@@ -1,0 +1,15 @@
+README.md
+setup.py
+chromepilot/__init__.py
+chromepilot/__main__.py
+chromepilot/api.py
+chromepilot/cli.py
+chromepilot/local.py
+chromepilot/pilot.toml
+chromepilot/short.py
+chromepilot/utils.py
+chromepilot.egg-info/PKG-INFO
+chromepilot.egg-info/SOURCES.txt
+chromepilot.egg-info/dependency_links.txt
+chromepilot.egg-info/entry_points.txt
+chromepilot.egg-info/top_level.txt
