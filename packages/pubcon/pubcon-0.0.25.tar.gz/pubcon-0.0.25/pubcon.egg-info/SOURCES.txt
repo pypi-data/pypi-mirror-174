@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+pubcon/__init__.py
+pubcon.egg-info/PKG-INFO
+pubcon.egg-info/SOURCES.txt
+pubcon.egg-info/dependency_links.txt
+pubcon.egg-info/requires.txt
+pubcon.egg-info/top_level.txt
