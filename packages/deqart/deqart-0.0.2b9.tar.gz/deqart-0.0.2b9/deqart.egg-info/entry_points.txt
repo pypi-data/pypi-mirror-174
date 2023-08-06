@@ -1,0 +1,2 @@
+[console_scripts]
+deqart = deqart.__main__:main
