@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, PaddlePaddle
+# This file is distributed under the same license as the   package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-25 17:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../source/modules/models/thirdparty.rst:3
+#: 9e05dd0213054d5eba442134cef55d56
+msgid "Third-party Model"
+msgstr "第三方模型自动集成"
+
+#: ../../source/modules/models/thirdparty.rst:5
+#: e2ea8daac3aa46dab8f41f11592dfea1
+msgid ""
+"PaddleTS provides `make_ml_model "
+"<../../api/paddlets.models.ml_model_wrapper.html#paddlets.models.ml_model_wrapper.make_ml_model>`_"
+" interface allow users to build time series models based on `scikit-learn"
+" <https://scikit-learn.org>`_ for time series forecasting, `pyod "
+"<https://pyod.readthedocs.io/en/latest>`_ for time series anomaly "
+"detection, respectively. With this ability, users only need to develop a "
+"small piece of code to verify the feasibility and performance of their "
+"time-series-related ideas, which significantly improve the efficiency."
+msgstr ""
+"PaddleTS 提供的 `make_ml_model "
+"<../../api/paddlets.models.ml_model_wrapper.html#paddlets.models.ml_model_wrapper.make_ml_model>`_"
+" 接口允许用户基于第三方的 `scikit-learn <https://scikit-learn.org>`_ 和 `pyod "
+"<https://pyod.readthedocs.io/en/latest>`_ "
+"库分别构建时序预测和时序异常检测模型。基于此能力，用户仅需开发少量代码，即可对他们的时序建模想法进行可行性和效果的快速验证，明显提升了效率。"
+
+#: ../../source/modules/models/thirdparty.rst:12
+#: 2a6ffaf62a334bcc8dc89952cdb5a211
+msgid "1. Third-party Model Integration for Time Series Forecasting"
+msgstr "1. 基于第三方模型进行时序预测"
+
+#: ../../source/modules/models/thirdparty.rst:15
+#: 5e689786f25f45a8aa0f2ef49b54a336
+msgid "1.1 Minimal Example"
+msgstr "1.1 最小化示例"
+
+#: ../../source/modules/models/thirdparty.rst:17
+#: b1955a53a07743a0b2b3e795304cf721
+msgid ""
+"Below is an example of how to make models based on "
+"`sklearn.neighbors.KNeighborsRegressor <https://scikit-"
+"learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html>`_"
+" for time series forecasting."
+msgstr ""
+"下方示例展示了如何基于 `sklearn.neighbors.KNeighborsRegressor <https://scikit-"
+"learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html>`_"
+" 构建时序预测模型。"
+
+#: ../../source/modules/models/thirdparty.rst:47
+#: b52f71ae8156432b8da12c922e831ec3
+msgid "1.2 Convert MLDataLoader to Trainable / Predictable ndarray"
+msgstr "1.2 将MLDataLoader转换为可训练/预测的ndarray数据"
+
+#: ../../source/modules/models/thirdparty.rst:49
+#: 8505d97e635349b2aa21aa63652fc4d5
+msgid ""
+"The third-party library such as `scikit-learn <https://scikit-"
+"learn.org>`_ usually accepts numpy.ndarray data as `fit` and `predict` "
+"method inputs, while PaddleTS uses "
+"`paddlets.models.forecasting.ml.adapter.ml_dataloader.MLDataLoader` to "
+"represent trainable / predictable time series data. Thus, `make_ml_model`"
+" provides 2 optional arguments `udf_ml_dataloader_to_fit_ndarray` and "
+"`udf_ml_dataloader_to_predict_ndarray` allow users to convert "
+"`MLDataLoader` to an `numpy.ndarray` object."
+msgstr ""
+"一些第三方库（如 `scikit-learn <https://scikit-learn.org>`_ "
+"）的机器学习模型通常会接收numpy.ndarray类型数据作为 `fit` 和 `predict` 方法的输入。但是在PaddleTS中，会使用"
+" `paddlets.models.forecasting.ml.adapter.ml_dataloader.MLDataLoader` "
+"表示可用于训练/预测的时序数据。因此，`make_ml_model` 提供了 `udf_ml_dataloader_to_fit_ndarray`"
+" 和 `udf_ml_dataloader_to_predict_ndarray` 两个可选参数，用于支持用户将 `MLDataLoader` "
+"转换为 `numpy.ndarray` 数据对象。"
+
+#: ../../source/modules/models/thirdparty.rst:54
+#: efba203fc6784597a74cbab522d32a56
+msgid ""
+"By default, `make_ml_model` uses `default_sklearn_ml_dataloader_to_fit_ndarray "
+"<../../api/paddlets.models.ml_model_wrapper.html#paddlets.models.ml_model_wrapper.default_sklearn_ml_dataloader_to_fit_ndarray>`_"
+" and `default_sklearn_ml_dataloader_to_predict_ndarray "
+"<../../api/paddlets.models.ml_model_wrapper.html#paddlets.models.ml_model_wrapper.default_sklearn_ml_dataloader_to_predict_ndarray>`_"
+" to convert MLDataLoader to `numpy.ndarray` for `fit` and `predict` "
+"method, respectively. Also, users are able to develop user-defined "
+"convert functions to get expected trainable / predictable output."
+msgstr ""
+"`make_ml_model` 默认会使用 `default_sklearn_ml_dataloader_to_fit_ndarray "
+"<../../api/paddlets.models.ml_model_wrapper.html#paddlets.models.ml_model_wrapper.default_sklearn_ml_dataloader_to_fit_ndarray>`_"
+" 和 `default_sklearn_ml_dataloader_to_predict_ndarray "
+"<../../api/paddlets.models.ml_model_wrapper.html#paddlets.models.ml_model_wrapper.default_sklearn_ml_dataloader_to_predict_ndarray>`_"
+" 两个函数将 MLDataLoader 分别转换为 `fit` 和 `predict` 方法可接收的 `numpy.ndarray` "
+"数据。同时，用户也可以开发自定义的数据转换函数，用于得到可用于训练/预测的数据。"
+
+#: ../../source/modules/models/thirdparty.rst:108
+#: 9dc2be59d0e64cb6b08fde0aad2d1abf
+msgid "1.3 Multi-step forecasting"
+msgstr "1.3 多时间点时序预测"
+
+#: ../../source/modules/models/thirdparty.rst:110
+#: cb519fe01e804d4b918487c18b1f54ae
+msgid ""
+"The time series models also support multi-timestep forecasting by calling"
+" `recursive_predict "
+"<../../api/paddlets.models.base.html#paddlets.models.base.BaseModel.recursive_predict>`_"
+" ."
+msgstr ""
+"通过第三方模型构建的时序模型也可以通过调用 `recursive_predict "
+"<../../api/paddlets.models.base.html#paddlets.models.base.BaseModel.recursive_predict>`_"
+" 实现多时间点预测。"
+
+#: ../../source/modules/models/thirdparty.rst:141
+#: a2be7abf7f46469cad42a088126d18ae
+msgid "2 Third-party Model Integration for Time Series Anomaly Detection"
+msgstr "2 基于第三方模型进行时序异常检测"
+
+#: ../../source/modules/models/thirdparty.rst:144
+#: 3dc4df61cd0842788c370c094d2c68c2
+msgid "2.1 Minimal Example"
+msgstr "2.1 最小化示例"
+
+#: ../../source/modules/models/thirdparty.rst:146
+#: 74902ba5795a4727b9aa2b44ec1268e6
+msgid ""
+"Below is an example of how to make models based on `pyod.models.KNN "
+"<https://github.com/yzhao062/pyod/blob/master/pyod/models/knn.py>`_ for "
+"time series anomaly detection. As it has the unified interface as making "
+"time series forecasting models, you may refer to above section 1.1 to "
+"know how to define udf functions to customize the input ndarray of the "
+"built model."
+msgstr ""
+"下方示例展示了如何基于 `pyod.models.knn.KNN "
+"<https://github.com/yzhao062/pyod/blob/master/pyod/models/knn.py>`_ "
+"构建时序异常检测模型。由于它与构建时序预测模型的接口一致，因此你可以参考上文中 1.1 "
+"节内容了解如何通过定义一个udf函数来为构建的模型自定义输入的向量。"
+

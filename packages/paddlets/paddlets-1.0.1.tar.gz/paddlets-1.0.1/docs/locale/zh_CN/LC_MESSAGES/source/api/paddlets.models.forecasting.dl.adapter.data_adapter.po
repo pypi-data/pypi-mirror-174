@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, PaddlePaddle
+# This file is distributed under the same license as the   package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-31 17:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../source/api/paddlets.models.forecasting.dl.adapter.data_adapter.rst:2
+#: db0d25eec08f419987746068af608be4
+msgid "paddlets.models.forecasting.dl.adapter.data_adapter"
+msgstr ""
+
+#: b24861ff79d9432bba5438887f236e34 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter:1
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: 57f987f9bb9943098ff8f61a2ecd02c9 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter:1
+msgid "Data adapter, converts TSDataset to paddle Dataset and paddle DataLoader."
+msgstr ""
+"数据转换类，用于将TSDataset数据集转换为paddle Dataset样本数据集和 "
+"paddle DataLoader样本数据批量加载器。"
+
+#: 66b820d521014300b705130c1d8879df of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset:1
+msgid "Convert TSDataset to paddle Dataset."
+msgstr "将 TSDataset 数据集转换为 paddle Dataset 样本数据集。"
+
+#: 248fceb2289a4cbc945a9ea6b51e5676 6981ef89c3494a83836d39a2d5ad01f4 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataloader
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset
+msgid "Parameters"
+msgstr ""
+
+#: 5e8acce2afdd404693c095d255b7d711 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset:3
+msgid "Raw TSDataset to be converted."
+msgstr "待转换的TSDataset数据集。"
+
+#: af0a12caa24840c8b0750342e10e7df2 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset:5
+msgid ""
+"The size of the loopback window, i.e., the number of time steps feed to "
+"the model."
+msgstr "模型输入的时间序列长度。"
+
+#: 0ea83e8837f34eb6917d86b731620c47 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset:7
+msgid ""
+"The size of the forecasting horizon, i.e., the number of time steps "
+"output by the model."
+msgstr "模型输出的序列长度。"
+
+#: ac7ed09783794dc887b3089d4638eb6e of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset:9
+msgid ""
+"Optional, the number of time steps between in_chunk and out_chunk for a "
+"single sample. The skip chunk is neither used as a feature (i.e. X) nor a"
+" label (i.e. Y) for a single sample. By default, it will NOT skip any "
+"time steps."
+msgstr "可选变量， 输入序列与输出序列之间跳过的序列长度，既不作为特征也不作为预测目标使用，默认值为0。"
+
+#: 057c7cac2bf740298718c9c70bc1a49c of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset:13
+msgid ""
+"Time steps to stride over the i-th sample and (i+1)-th sample. More "
+"precisely, let `t` be the time index of target time series, `t[i]` be the"
+" start time of the i-th sample, `t[i+1]` be the start time of the "
+"(i+1)-th sample, then `sampling_stride` represents the result of `t[i+1] "
+"- t[i]`."
+msgstr ""
+"在第i条样本和第i+1条样本之间跨越的时间步数。 具体来说，令 `t` 为target时序数据的时间索引，`t[i]` "
+"为第i条样本的起始时间，`t[i+1]`为第i+1条样本的起始时间， 则`sampling_stride`代表 `t[i+1] - t[i]` "
+"的计算结果，即2条相邻的样本之间相差的时间点的数量。"
+
+#: 8e1057802b484b57b440c7b8303ef88f of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset:18
+msgid ""
+"A two-element-tuple-shaped time window that allows adapter to build "
+"samples. time_window[0] refers to the window lower bound, while "
+"time_window[1] refers to the window upper bound. Each element in the "
+"left-closed-and-right-closed interval refers to the TAIL index of each "
+"sample."
+msgstr ""
+"一个包含2个元素的元组类型的时间窗口，允许adapter模块在其范围内构建样本。 time_window[0] "
+"值代表窗口范围的下界，time_window[1] 值代表窗口范围的上界。 对于每一个包含在该左闭右闭范围内的元素，都代表一条样本的尾部索引。"
+
+#: deec361fec1d4be09f62c03a340a369a e63a9faeb306415a967607d4724c55b6 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataloader
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset
+msgid "Returns"
+msgstr ""
+
+#: bb4c02440035477eb4563e98c33eefb2 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset:23
+msgid "A built PaddleDatasetImpl."
+msgstr "构建完成的 PaddleDatasetImpl 实例。"
+
+#: 50438e7431c14b73ac195a2e166b6da9 afd140a1e2b447029fac85d1ca458303 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataloader
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataset
+msgid "Return type"
+msgstr "返回类型"
+
+#: 57d7b08af703461b800d861c140c5544 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataloader:1
+msgid "Convert paddle Dataset to paddle DataLoader."
+msgstr "将paddle Dataset样本数据集转换为paddleDataLoader样本批量加载器。"
+
+#: 0fd3fd672ce9465f9a5ad2d5203e8032 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataloader:3
+msgid "paddle Dataset to be converted."
+msgstr "待转换的paddle Dataset样本数据集。"
+
+#: b0e7fafd22b34122b9fc3cfe5676569f of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataloader:5
+msgid "The number of samples for a single batch."
+msgstr "单个数据批量中包含的样本条数。"
+
+#: c78ffb4ae1ec45a0a93574a26fc67eeb of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataloader:7
+msgid "User-defined collate function for each batch, optional."
+msgstr "用户自定义的单批量样本整合函数，可选参数。"
+
+#: c37875522ca040538d63ec8e32df5055 of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataloader:9
+msgid ""
+"Whether to shuffle indices order before generating batch indices, default"
+" True."
+msgstr "是否在生成批量样本之前对数据进行洗牌。默认为True。"
+
+#: 865862838af54a63b2ea8fc3959f991b of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataloader:12
+msgid "A built paddle DataLoader."
+msgstr "一个构建完成的paddle样本批量数据加载器。"
+
+#: fc345ba70c5b40aa826bae3a8a256acd of
+#: paddlets.models.forecasting.dl.adapter.data_adapter.DataAdapter.to_paddle_dataloader:16
+msgid "Examples"
+msgstr "示例"
+

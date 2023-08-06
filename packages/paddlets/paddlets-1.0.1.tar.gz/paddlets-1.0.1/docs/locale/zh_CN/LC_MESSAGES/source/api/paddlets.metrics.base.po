@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, PaddleTS
+# This file is distributed under the same license as the PaddleTS package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PaddleTS \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-24 15:37+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../source/api/paddlets.metrics.base.rst:2
+#: cd929e0495074c5ea30cf6deaea869ba
+msgid "paddlets.metrics.base"
+msgstr ""
+
+#: 005b859deb2a4de9bdc7a9e9125ea8db of paddlets.metrics.base.Metric:1
+msgid "Bases: :py:class:`~abc.ABC`"
+msgstr ""
+
+#: 9d0295acac9d40558d356a3c3f39a1b2 of paddlets.metrics.base.Metric:1
+msgid "Abstract base class used to build new Metric."
+msgstr "用于构建新Metric的抽象基类."
+
+#: 1a24bf0696454ce2a96e37f9d4709ed3 6e9bf04c76f944a2818675b33b550b98
+#: f676e0281825426c92db8659210180f7 of paddlets.metrics.base.Metric
+#: paddlets.metrics.base.Metric.get_metrics_by_names
+#: paddlets.metrics.base.Metric.metric_fn
+msgid "Parameters"
+msgstr "参数"
+
+#: 45d1c27748f44a99924416e2d1d177f1 of paddlets.metrics.base.Metric:3
+msgid ""
+"Supported metric modes, only normal, prob and anomaly are valid values. "
+"Set to normal for non-probability use cases, set to prob for probability "
+"use cases, set to anomaly for anomaly dection."
+msgstr "支持的metric模式, 支持normal(非概率预测)、prob(概率预测)、anomaly(异常检测)三种模式."
+
+#: 8adb331e095e4d6ca553ea1d2f28a6dd of paddlets.metrics.base.Metric:6
+msgid "Keyword parameters of specific metric functions."
+msgstr "Metric的补充关键字参数."
+
+#: 1aabc900aeaa4e5185ce0799c8d62806 of paddlets.metrics.base.Metric.metric_fn:1
+msgid "Compute metric's value from ndarray."
+msgstr "根据提供的ndarray计算metric值."
+
+#: 7c052e27ac88405caeb5885967f8aaee of paddlets.metrics.base.Metric.metric_fn:3
+msgid "Ground truth (correct) target values."
+msgstr "真实目标值."
+
+#: f7605b7309e94ba5b354b156f82cadb7 of paddlets.metrics.base.Metric.metric_fn:5
+msgid "Estimated target values."
+msgstr "模型预测值."
+
+#: 36d850f9dbee485090138503bae5ae94 a0c21242258443f3985a69ba1133b380 of
+#: paddlets.metrics.base.Metric.get_metrics_by_names
+#: paddlets.metrics.base.Metric.metric_fn
+msgid "Returns"
+msgstr "返回"
+
+#: a1408fe9832f4809af337520b73aadbd of paddlets.metrics.base.Metric.metric_fn:8
+msgid "Computed metric value."
+msgstr "计算的metric值."
+
+#: 785cc52aca82466eb0cb0211afb4f70b e80c76d9642442f3822df0aa3a44f1ae of
+#: paddlets.metrics.base.Metric.get_metrics_by_names
+#: paddlets.metrics.base.Metric.metric_fn
+msgid "Return type"
+msgstr "返回值类型"
+
+#: 363b1571e8cf48f2af7f5cc1b24201de of paddlets.metrics.base.Metric.metric_fn
+msgid "Raises"
+msgstr ""
+
+#: ef7f72365e444daab4619f2e850d74b6 of
+#: paddlets.metrics.base.Metric.get_metrics_by_names:1
+msgid "Get list of metric classes."
+msgstr "获得目前支持的所有metric实例."
+
+#: 645f562cd4b74c25ac66e9f22444e157 of
+#: paddlets.metrics.base.Metric.get_metrics_by_names:3
+msgid "List of metric names."
+msgstr "metric名称的列表."
+
+#: 1746db97020647da9d07ab1e9fd27489 of
+#: paddlets.metrics.base.Metric.get_metrics_by_names:6
+msgid "List of metric classes."
+msgstr "metric实例的列表."
+
