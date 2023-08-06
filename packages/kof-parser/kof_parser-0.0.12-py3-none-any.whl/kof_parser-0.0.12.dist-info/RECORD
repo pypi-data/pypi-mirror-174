@@ -1,0 +1,11 @@
+kof_parser/KoordSys.csv,sha256=D6-2XqTuyWIymg_pNMshInekEcHWufp9i4OScGc71uk,5873
+kof_parser/__init__.py,sha256=nkwArYJYIxpyp7_mlmpE9VHwsFB97wXn3PoLCZWUPBo,124
+kof_parser/enums.py,sha256=J5iO1HSmfFNL3ZO-orYtNJn4gn-LWtdCmZ56Pw9OMPY,387
+kof_parser/kof.py,sha256=czmZqhBoVMyPHvCyUR0ZL6m7IzGvJk-YfYEe3FL0irc,1185
+kof_parser/model.py,sha256=9B76RzGr6P_68_FfTl38CtQGhSAukOsV0jd386EEFnk,340
+kof_parser/parser.py,sha256=RS2-AVOFkfRFzdsUuYqwHMZ1df5jZkmx5McmMZUvpfo,10656
+kof_parser/writer.py,sha256=hw3_UHWgTj_O0ywt0Lfx8M3BAD0Wm5b3VnWsSII1V5s,4208
+kof_parser-0.0.12.dist-info/LICENSE,sha256=letT0L4HlpWUAnAMo504xzjH1OUpqSQh-USyFvymqTA,1084
+kof_parser-0.0.12.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+kof_parser-0.0.12.dist-info/METADATA,sha256=HmpoeOT4C8rMCLAReAHL7efuDvfPe8LhBNFcG0ghfZU,5053
+kof_parser-0.0.12.dist-info/RECORD,,
