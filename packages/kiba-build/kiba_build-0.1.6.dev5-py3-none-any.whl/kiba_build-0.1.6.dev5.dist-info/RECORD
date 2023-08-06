@@ -1,0 +1,15 @@
+buildpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buildpy/bandit.yaml,sha256=JBOgNhy78tSDQid2nElhL-LmKtlmDib1fghb6RuoxCk,24
+buildpy/lint.py,sha256=2AtljSYCzhVoYeoasIVyYOuS4ynoMvLN6p9vl70a-uw,2497
+buildpy/mypy.ini,sha256=dYe7fNqqfvjE7YN4dT5puh8LQt6LMY3RCgdNrdg6L1A,1894
+buildpy/py.typed,sha256=_HF29EHUSw7dsoMNaKG2kJ_eEs04u8HCPk-OwjwB9gs,103
+buildpy/pylintrc,sha256=gsFrEP47FSE5VPlQJkYRGQ0mVNF0ilq7w7veiYkNO1k,1505
+buildpy/security_check.py,sha256=NHGoxbiyDgkiWyWUXOGpQ7HIS1wEbK1U5E7azPT476E,6082
+buildpy/type_check.py,sha256=gkY8G3MbTf25REBk8mM6GZY5_budsK7zXo0y8iPkprI,3180
+buildpy/util.py,sha256=9EOqmmC6zuy-APHDlKnRzPvkwv3b9E9XbEGfBHK1Ljc,3134
+buildpy/version.py,sha256=ileYHzaI0qmoc-ESru4kGufPQ_b1pZ1xwsV9mHrNoTc,1053
+kiba_build-0.1.6.dev5.dist-info/METADATA,sha256=0XPRBpAmutFRjulhpKFuvporQirTJ17GVo0rOIMaomI,492
+kiba_build-0.1.6.dev5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kiba_build-0.1.6.dev5.dist-info/entry_points.txt,sha256=Hk7AuRc8DbTQEKOe34M0QLji-pWS17nKtF_Ao7Dj0lM,152
+kiba_build-0.1.6.dev5.dist-info/top_level.txt,sha256=b-6SO7N_KbQTDi-QQ0rjBZyTTYNXqB9rDeYCnaO7ZRY,8
+kiba_build-0.1.6.dev5.dist-info/RECORD,,
