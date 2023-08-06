@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "althiqa"
+version = "0.0.2"
+authors = [
+  { name="althiqa", email="info@althiqa.io" },
+]
+description = "althiqa API: the AI reporting and communication tool"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/althiqa/althiqa_lib"
+"Bug Tracker" = "https://github.com/althiqa/althiqa_lib/issues"

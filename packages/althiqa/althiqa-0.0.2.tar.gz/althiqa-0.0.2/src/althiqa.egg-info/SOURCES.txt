@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/althiqa/__init__.py
+src/althiqa/althiqa_lib.py
+src/althiqa/default_metrics.py
+src/althiqa.egg-info/PKG-INFO
+src/althiqa.egg-info/SOURCES.txt
+src/althiqa.egg-info/dependency_links.txt
+src/althiqa.egg-info/top_level.txt
