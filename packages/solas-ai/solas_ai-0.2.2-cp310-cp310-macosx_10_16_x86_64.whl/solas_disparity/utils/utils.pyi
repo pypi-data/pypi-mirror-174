@@ -1,0 +1,3 @@
+from typing import List
+
+def pgrg_ordered(protected_groups: List[str], reference_groups: List[str]) -> List[str]: ...
