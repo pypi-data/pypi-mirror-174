@@ -1,0 +1,10 @@
+mstar/__init__.py,sha256=qo5oxvi7kUFl3IqQn23a2E3KUVedabedscHASsnMzHM,25
+mstar/conf.py,sha256=XRjlvYGKjez0mlgvtAuJQYrXckoWBx1OmJylDNXhQQY,2199
+mstar/mstar.py,sha256=ZrLmGhl30rWgAXdEIoFcQe3fee5Hddezw5qIl1QO5M8,5849
+mstar/plot.py,sha256=kHREl-vnXUdaOSgPHyi-kFqczvpZHch00uE1DDulWOs,16344
+mstar/utils.py,sha256=Cb4vv4NDU1xxoeSZrwB9U_SikJOaiQ6eTbSVbTH661I,1536
+mstar_alpha-0.0.2.dist-info/LICENSE,sha256=v6ybdwvV-6FcL8RhJhEFtCU9FrYt4HI9ZSodYSAMcC4,1066
+mstar_alpha-0.0.2.dist-info/METADATA,sha256=68qle67NFTWmXS-MRp1bNZI6g_6KLEEG_xjwaBalmcw,2023
+mstar_alpha-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mstar_alpha-0.0.2.dist-info/top_level.txt,sha256=k_sX2kIh_un-3zomb_jSS0lAfIj3Vo0QuDHEqaOCp4M,6
+mstar_alpha-0.0.2.dist-info/RECORD,,
