@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+nanonis_control/__init__.py
+nanonis_control/nanonis_tcp.py
+nanonis_control.egg-info/PKG-INFO
+nanonis_control.egg-info/SOURCES.txt
+nanonis_control.egg-info/dependency_links.txt
+nanonis_control.egg-info/top_level.txt
