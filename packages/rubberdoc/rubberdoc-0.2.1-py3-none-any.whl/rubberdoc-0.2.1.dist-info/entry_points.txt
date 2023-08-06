@@ -1,0 +1,3 @@
+[console_scripts]
+rubberdoc=rubberdoc.main:app
+
