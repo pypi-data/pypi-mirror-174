@@ -1,0 +1,1342 @@
+.gitignore
+LICENSE
+README.md
+__init__.py
+atoms.py
+calculated_bond_lengths.json
+comp_output.py
+component.py
+config.ini
+config.py
+const.py
+fileIO.py
+finders.py
+geometry.py
+job_control.py
+json_extension.py
+new_fileIO.py
+orbitals.py
+pathway.py
+ring.py
+setup.py
+spectra.py
+substituent.py
+symmetry.py
+AaronTools.egg-info/PKG-INFO
+AaronTools.egg-info/SOURCES.txt
+AaronTools.egg-info/dependency_links.txt
+AaronTools.egg-info/requires.txt
+AaronTools.egg-info/top_level.txt
+Ligands/ACN.xyz
+Ligands/AcAc.xyz
+Ligands/Ad-HC5C.xyz
+Ligands/BDA.xyz
+Ligands/BPE.xyz
+Ligands/BPY.xyz
+Ligands/BenQuin.xyz
+Ligands/BiOX.xyz
+Ligands/BiOx_Me.xyz
+Ligands/CO.xyz
+Ligands/COD.xyz
+Ligands/Cp.xyz
+Ligands/Cp_star.xyz
+Ligands/DMBPY.xyz
+Ligands/DMP.xyz
+Ligands/DMPE.xyz
+Ligands/DPEphos.xyz
+Ligands/DPPE.xyz
+Ligands/DPPF.xyz
+Ligands/DPPP.xyz
+Ligands/EDA.xyz
+Ligands/IMes.xyz
+Ligands/JoshPhos.xyz
+Ligands/KASBAI.xyz
+Ligands/Mes-NC5C.xyz
+Ligands/Milstein.xyz
+Ligands/NBD.xyz
+Ligands/PHNNP.xyz
+Ligands/PIN.xyz
+Ligands/PPh3.xyz
+Ligands/Paton_DL.xyz
+Ligands/Paton_EL.xyz
+Ligands/PhBP3.xyz
+Ligands/PymdOx.xyz
+Ligands/PyrOx.xyz
+Ligands/R-BINAP.xyz
+Ligands/R-Me-StackPhos.xyz
+Ligands/R-Ph-BOX.xyz
+Ligands/R-Ph-Mes-NC5C.xyz
+Ligands/R-Quinox-AdtBu2.xyz
+Ligands/R-Quinox-tBu3.xyz
+Ligands/R-SEGPHOS.xyz
+Ligands/R-StackPhos.xyz
+Ligands/R-iPr-PyBOX.xyz
+Ligands/R-pFPh-StackPhos.xyz
+Ligands/R-tBu-BOX.xyz
+Ligands/RR-BDPP.xyz
+Ligands/RR-BPCp.xyz
+Ligands/RR-Et-DuPhos.xyz
+Ligands/RR-Me-BPE.xyz
+Ligands/RR-Me-DuPhos.xyz
+Ligands/RR-Me-TBF.xyz
+Ligands/RR-Me-iPrPh-NC5C.xyz
+Ligands/RR-QuinoxP.xyz
+Ligands/RR-iPr-DuPhos.xyz
+Ligands/RR-norphos.xyz
+Ligands/RRSS-DuanPhos.xyz
+Ligands/R_temp.xyz
+Ligands/S-BINAP.xyz
+Ligands/S-Me-StackPhos.xyz
+Ligands/S-Ph-BOX.xyz
+Ligands/S-Ph-Mes-NC5C.xyz
+Ligands/S-Quinox-AdtBu2.xyz
+Ligands/S-Quinox-tBu3.xyz
+Ligands/S-SEGPHOS.xyz
+Ligands/S-StackPhos.xyz
+Ligands/S-iPr-PyBOX.xyz
+Ligands/S-pFPh-StackPhos.xyz
+Ligands/S-tBu-BOX.xyz
+Ligands/SL-J212-1.xyz
+Ligands/SL-J212-2.xyz
+Ligands/SS-BDPP.xyz
+Ligands/SS-BPCp.xyz
+Ligands/SS-Et-DuPhos.xyz
+Ligands/SS-Me-BPE.xyz
+Ligands/SS-Me-DuPhos.xyz
+Ligands/SS-Me-TBF.xyz
+Ligands/SS-Me-iPrPh-NC5C.xyz
+Ligands/SS-QuinoxP.xyz
+Ligands/SS-iPr-DuPhos.xyz
+Ligands/SS-norphos.xyz
+Ligands/SSRR-DuanPhos.xyz
+Ligands/TACN.xyz
+Ligands/TACN_star.xyz
+Ligands/Tp.xyz
+Ligands/Xantphos.xyz
+Ligands/Xphos.xyz
+Ligands/achiral_ligands
+Ligands/bi-isoquinoline-NN-dioxide.xyz
+Ligands/chiral_ligands
+Ligands/dithiolate-4F.xyz
+Ligands/iPr-NC3C.xyz
+Ligands/iPr-PNPEt.xyz
+Ligands/iPrPh-BIP.xyz
+Ligands/iPrPh-NC5C.xyz
+Ligands/organocatalysts
+Ligands/squaramide-iPr.xyz
+Ligands/squaramide.xyz
+Ligands/tBu-PCP.xyz
+Ligands/tBu-PNPPyr.xyz
+Rings/benzene.xyz
+Rings/cyclohexane.1.xyz
+Rings/cyclohexane.xyz
+Rings/cyclopentadiene.1.xyz
+Rings/cyclopentadiene.2.xyz
+Rings/cyclopentadiene.3.xyz
+Rings/cyclopentadiene.5.xyz
+Rings/cyclopentadiene.6.xyz
+Rings/cyclopentadiene.7.xyz
+Rings/cyclopentane.1.xyz
+Rings/cyclopentane.2.xyz
+Rings/cyclopentane.3.xyz
+Rings/cyclopentane.4.xyz
+Rings/cyclopentane.xyz
+Rings/m-pyridine.xyz
+Rings/m-tetrahydropyran.1.xyz
+Rings/m-tetrahydropyran.xyz
+Rings/o-pyridine.xyz
+Rings/o-tetrahydropyran.1.xyz
+Rings/o-tetrahydropyran.xyz
+Substituents/26-F-Ph.xyz
+Substituents/35-F-Ph.xyz
+Substituents/Ad.xyz
+Substituents/BF2.xyz
+Substituents/Br.xyz
+Substituents/CCH.xyz
+Substituents/CF3.xyz
+Substituents/CH2Cl.xyz
+Substituents/CH2F.xyz
+Substituents/CH2OH.xyz
+Substituents/CH3.xyz
+Substituents/CHCH2.xyz
+Substituents/CHCl2.xyz
+Substituents/CHF2.xyz
+Substituents/CHO.xyz
+Substituents/CN.xyz
+Substituents/COCH3.xyz
+Substituents/CONH2.xyz
+Substituents/COOCH3.xyz
+Substituents/COOH.xyz
+Substituents/Cl.xyz
+Substituents/Cy.xyz
+Substituents/Et.xyz
+Substituents/F.xyz
+Substituents/H.xyz
+Substituents/I.xyz
+Substituents/Me.xyz
+Substituents/Mes.xyz
+Substituents/NCH3_2.xyz
+Substituents/NH2.xyz
+Substituents/NHCH3.xyz
+Substituents/NHOH.xyz
+Substituents/NO.xyz
+Substituents/NO2.xyz
+Substituents/O.xyz
+Substituents/OCF3.xyz
+Substituents/OH.xyz
+Substituents/OMe.xyz
+Substituents/OPO3H2.xyz
+Substituents/PO3H2.xyz
+Substituents/Ph.xyz
+Substituents/SCH3.xyz
+Substituents/SH.xyz
+Substituents/SiF3.xyz
+Substituents/SiH3.xyz
+Substituents/SuperMes.xyz
+Substituents/guanidino.xyz
+Substituents/iPr.xyz
+Substituents/subs
+Substituents/tBu.xyz
+Substituents/triazole_C.xyz
+Substituents/triazole_N.xyz
+bin/angle.py
+bin/averageBuriedVolume.py
+bin/averageSterimol.py
+bin/bond.py
+bin/changeChirality.py
+bin/changeElement.py
+bin/closeRing.py
+bin/condensedFukui.py
+bin/coneAngle.py
+bin/dihedral.py
+bin/fetchMolecule.py
+bin/findAtoms.py
+bin/follow.py
+bin/getCitations.py
+bin/getCoordinationComplexes.py
+bin/getMonomers.py
+bin/grabStatus.py
+bin/grabThermo.py
+bin/interpolate.py
+bin/jobSubmit.py
+bin/libaddLigand.py
+bin/libaddRing.py
+bin/libaddSubstituent.py
+bin/ligandSterimol.py
+bin/listChanges.py
+bin/makeConf.py
+bin/makeCrestInput.py
+bin/makeInput.py
+bin/mapLigand.py
+bin/mirror.py
+bin/multiSubstitute.py
+bin/parsePDF.py
+bin/percentVolumeBuried.py
+bin/plotAverageIR.py
+bin/plotAverageUVVis.py
+bin/plotIR.py
+bin/plotUVVis.py
+bin/pointGroup.py
+bin/printAtomInfo.py
+bin/printAtomPairInfo.py
+bin/printCube.py
+bin/printFreq.py
+bin/printFreqBild.py
+bin/printInfo.py
+bin/printXYZ.py
+bin/removeFragment.py
+bin/rmsdAlign.py
+bin/rotate.py
+bin/solidAngle.py
+bin/stericMap.py
+bin/stericMapDifference.py
+bin/substituentSterimol.py
+bin/substitute.py
+bin/symmetrize.py
+bin/translate.py
+bin/unique.py
+coordination_complex/README.txt
+coordination_complex/capped octahedral/Ma(AA)(AB)(CD)/C1_A.csv
+coordination_complex/capped octahedral/Ma(AA)(AB)2/C1_A.csv
+coordination_complex/capped octahedral/Ma(AA)(AB)2/Cs_B.csv
+coordination_complex/capped octahedral/Ma(AA)(BB)(AB)/C1_A.csv
+coordination_complex/capped octahedral/Ma(AA)(BB)(CC)/C1_A.csv
+coordination_complex/capped octahedral/Ma(AA)2(AB)/C1_A.csv
+coordination_complex/capped octahedral/Ma(AA)2(AB)/Cs_B.csv
+coordination_complex/capped octahedral/Ma(AA)2(BB)/C1_A.csv
+coordination_complex/capped octahedral/Ma(AA)2(BB)/Cs_B.csv
+coordination_complex/capped octahedral/Ma(AA)3/C1_A.csv
+coordination_complex/capped octahedral/Ma(AA)3/C3_C.csv
+coordination_complex/capped octahedral/Ma(AA)3/Cs_B.csv
+coordination_complex/capped octahedral/Ma(AB)(CD)(EF)/C1_A.csv
+coordination_complex/capped octahedral/Ma(AB)2(CD)/C1_A.csv
+coordination_complex/capped octahedral/Ma(AB)2(CD)/Cs_B.csv
+coordination_complex/capped octahedral/Ma(AB)3/C1_A.csv
+coordination_complex/capped octahedral/Ma(AB)3/C3_C.csv
+coordination_complex/capped octahedral/Ma(AB)3/Cs_B.csv
+coordination_complex/capped octahedral/Ma2b(AA)(AB)/C1_A.csv
+coordination_complex/capped octahedral/Ma2b(AA)(AB)/Cs_B.csv
+coordination_complex/capped octahedral/Ma2b(AA)(BB)/C1_A.csv
+coordination_complex/capped octahedral/Ma2b(AA)(BB)/Cs_B.csv
+coordination_complex/capped octahedral/Ma2b(AA)2/C1_A.csv
+coordination_complex/capped octahedral/Ma2b(AA)2/Cs_B.csv
+coordination_complex/capped octahedral/Ma2b(AB)(CD)/C1_A.csv
+coordination_complex/capped octahedral/Ma2b(AB)2/C1_A.csv
+coordination_complex/capped octahedral/Ma2b(AB)2/Cs_B.csv
+coordination_complex/capped octahedral/Ma2b2c(AA)/C1_A.csv
+coordination_complex/capped octahedral/Ma2b2c(AA)/Cs_B.csv
+coordination_complex/capped octahedral/Ma2b2c(AB)/C1_A.csv
+coordination_complex/capped octahedral/Ma2b2c(AB)/Cs_B.csv
+coordination_complex/capped octahedral/Ma2b2c2d/C1_A.csv
+coordination_complex/capped octahedral/Ma2b2c2d/Cs_B.csv
+coordination_complex/capped octahedral/Ma2b2cde/C1_A.csv
+coordination_complex/capped octahedral/Ma2b2cde/Cs_B.csv
+coordination_complex/capped octahedral/Ma2bcd(AA)/C1_A.csv
+coordination_complex/capped octahedral/Ma2bcd(AA)/Cs_B.csv
+coordination_complex/capped octahedral/Ma2bcd(AB)/C1_A.csv
+coordination_complex/capped octahedral/Ma2bcdef/C1_A.csv
+coordination_complex/capped octahedral/Ma3(AA)(AB)/C1_A.csv
+coordination_complex/capped octahedral/Ma3(AA)(AB)/Cs_B.csv
+coordination_complex/capped octahedral/Ma3(AA)(BB)/C1_A.csv
+coordination_complex/capped octahedral/Ma3(AA)(BB)/Cs_B.csv
+coordination_complex/capped octahedral/Ma3(AA)2/C1_A.csv
+coordination_complex/capped octahedral/Ma3(AA)2/Cs_B.csv
+coordination_complex/capped octahedral/Ma3(AB)(CD)/C1_A.csv
+coordination_complex/capped octahedral/Ma3(AB)2/C1_A.csv
+coordination_complex/capped octahedral/Ma3(AB)2/Cs_B.csv
+coordination_complex/capped octahedral/Ma3b2(AA)/C1_A.csv
+coordination_complex/capped octahedral/Ma3b2(AA)/Cs_B.csv
+coordination_complex/capped octahedral/Ma3b2(AB)/C1_A.csv
+coordination_complex/capped octahedral/Ma3b2(AB)/Cs_B.csv
+coordination_complex/capped octahedral/Ma3b2c2/C1_A.csv
+coordination_complex/capped octahedral/Ma3b2c2/Cs_B.csv
+coordination_complex/capped octahedral/Ma3b2cd/C1_A.csv
+coordination_complex/capped octahedral/Ma3b2cd/Cs_B.csv
+coordination_complex/capped octahedral/Ma3b3c/C1_A.csv
+coordination_complex/capped octahedral/Ma3b3c/C3v_C.csv
+coordination_complex/capped octahedral/Ma3b3c/Cs_B.csv
+coordination_complex/capped octahedral/Ma3bc(AA)/C1_A.csv
+coordination_complex/capped octahedral/Ma3bc(AA)/Cs_B.csv
+coordination_complex/capped octahedral/Ma3bc(AB)/C1_A.csv
+coordination_complex/capped octahedral/Ma3bcde/C1_A.csv
+coordination_complex/capped octahedral/Ma4b(AA)/C1_A.csv
+coordination_complex/capped octahedral/Ma4b(AA)/Cs_B.csv
+coordination_complex/capped octahedral/Ma4b(AB)/C1_A.csv
+coordination_complex/capped octahedral/Ma4b(AB)/Cs_B.csv
+coordination_complex/capped octahedral/Ma4b2c/C1_A.csv
+coordination_complex/capped octahedral/Ma4b2c/Cs_B.csv
+coordination_complex/capped octahedral/Ma4b3/C1_A.csv
+coordination_complex/capped octahedral/Ma4b3/C3v_C.csv
+coordination_complex/capped octahedral/Ma4b3/Cs_B.csv
+coordination_complex/capped octahedral/Ma4bcd/C1_A.csv
+coordination_complex/capped octahedral/Ma4bcd/Cs_B.csv
+coordination_complex/capped octahedral/Ma5(AA)/C1_A.csv
+coordination_complex/capped octahedral/Ma5(AA)/Cs_A.csv
+coordination_complex/capped octahedral/Ma5(AB)/C1_A.csv
+coordination_complex/capped octahedral/Ma5(AB)/Cs_B.csv
+coordination_complex/capped octahedral/Ma5b2/C1_B.csv
+coordination_complex/capped octahedral/Ma5b2/Cs_A.csv
+coordination_complex/capped octahedral/Ma5bc/C1_A.csv
+coordination_complex/capped octahedral/Ma5bc/Cs_B.csv
+coordination_complex/capped octahedral/Ma6b/C3v_B.csv
+coordination_complex/capped octahedral/Ma6b/Cs_A.csv
+coordination_complex/capped octahedral/Ma7/C3v_A.csv
+coordination_complex/capped octahedral/Mabc(AA)(AB)/C1_A.csv
+coordination_complex/capped octahedral/Mabc(AA)(BB)/C1_A.csv
+coordination_complex/capped octahedral/Mabc(AA)2/C1_A.csv
+coordination_complex/capped octahedral/Mabc(AA)2/Cs_B.csv
+coordination_complex/capped octahedral/Mabc(AB)(CD)/C1_A.csv
+coordination_complex/capped octahedral/Mabc(AB)2/C1_A.csv
+coordination_complex/capped octahedral/Mabc(AB)2/Cs_B.csv
+coordination_complex/capped octahedral/Mabcde(AA)/C1_A.csv
+coordination_complex/capped octahedral/Mabcde(AB)/C1_A.csv
+coordination_complex/capped octahedral/Mabcdefg/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)(AB)(CD)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)(AB)2/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)(AB)2/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)(AB)2/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)(BB)(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)(BB)(AB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)(BB)(CC)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)(BB)(CC)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)2(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)2(AB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)2(BB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)2(BB)/C2v_C.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)2(BB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)3/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)3/C2v_B.csv
+coordination_complex/capped trigonal prismatic/Ma(AA)3/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma(AB)(CD)(EF)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AB)2(CD)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AB)2(CD)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma(AB)3/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma(AB)3/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AA)(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AA)(AB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AA)(BB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AA)(BB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AA)2/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AA)2/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AA)2/C2v_C.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AA)2/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AB)(CD)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AB)2/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AB)2/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma2b(AB)2/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma2b2c(AA)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2b2c(AA)/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma2b2c(AA)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma2b2c(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2b2c(AB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma2b2c2d/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2b2c2d/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma2b2c2d/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma2b2cde/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2b2cde/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma2bcd(AA)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2bcd(AA)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma2bcd(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma2bcdef/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3(AA)(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3(AA)(AB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma3(AA)(BB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3(AA)(BB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma3(AA)2/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3(AA)2/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma3(AA)2/C2v_C.csv
+coordination_complex/capped trigonal prismatic/Ma3(AA)2/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma3(AB)(CD)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3(AB)2/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3(AB)2/C2_B.csv
+coordination_complex/capped trigonal prismatic/Ma3(AB)2/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma3b2(AA)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3b2(AA)/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma3b2(AA)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma3b2(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3b2(AB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma3b2c2/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3b2c2/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma3b2c2/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma3b2cd/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3b2cd/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma3b3c/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3b3c/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma3bc(AA)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3bc(AA)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma3bc(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma3bcde/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma4b(AA)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma4b(AA)/C2v_C.csv
+coordination_complex/capped trigonal prismatic/Ma4b(AA)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma4b(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma4b(AB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma4b2c/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma4b2c/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma4b2c/C2v_D.csv
+coordination_complex/capped trigonal prismatic/Ma4b2c/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma4b3/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma4b3/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma4b3/C2v_D.csv
+coordination_complex/capped trigonal prismatic/Ma4b3/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma4bcd/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma4bcd/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma5(AA)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma5(AA)/C2v_C.csv
+coordination_complex/capped trigonal prismatic/Ma5(AA)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma5(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma5(AB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma5b2/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma5b2/C2_C.csv
+coordination_complex/capped trigonal prismatic/Ma5b2/C2v_D.csv
+coordination_complex/capped trigonal prismatic/Ma5b2/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma5bc/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma5bc/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma6b/C1_A.csv
+coordination_complex/capped trigonal prismatic/Ma6b/C2v_C.csv
+coordination_complex/capped trigonal prismatic/Ma6b/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Ma7/C2v_A.csv
+coordination_complex/capped trigonal prismatic/Mabc(AA)(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Mabc(AA)(BB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Mabc(AA)(BB)/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Mabc(AA)2/C1_A.csv
+coordination_complex/capped trigonal prismatic/Mabc(AA)2/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Mabc(AB)(CD)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Mabc(AB)2/C1_A.csv
+coordination_complex/capped trigonal prismatic/Mabc(AB)2/Cs_B.csv
+coordination_complex/capped trigonal prismatic/Mabcde(AA)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Mabcde(AB)/C1_A.csv
+coordination_complex/capped trigonal prismatic/Mabcdefg/C1_A.csv
+coordination_complex/heptagonal/Ma(AA)(AB)(CD)/Cs_A.csv
+coordination_complex/heptagonal/Ma(AA)(AB)2/C2v_B.csv
+coordination_complex/heptagonal/Ma(AA)(AB)2/Cs_A.csv
+coordination_complex/heptagonal/Ma(AA)(BB)(AB)/Cs_A.csv
+coordination_complex/heptagonal/Ma(AA)(BB)(CC)/Cs_A.csv
+coordination_complex/heptagonal/Ma(AA)2(AB)/Cs_A.csv
+coordination_complex/heptagonal/Ma(AA)2(BB)/C2v_B.csv
+coordination_complex/heptagonal/Ma(AA)2(BB)/Cs_A.csv
+coordination_complex/heptagonal/Ma(AA)3/C2v_A.csv
+coordination_complex/heptagonal/Ma(AB)(CD)(EF)/Cs_A.csv
+coordination_complex/heptagonal/Ma(AB)2(CD)/Cs_A.csv
+coordination_complex/heptagonal/Ma(AB)3/Cs_A.csv
+coordination_complex/heptagonal/Ma2b(AA)(AB)/Cs_A.csv
+coordination_complex/heptagonal/Ma2b(AA)(BB)/Cs_A.csv
+coordination_complex/heptagonal/Ma2b(AA)2/C2v_B.csv
+coordination_complex/heptagonal/Ma2b(AA)2/Cs_A.csv
+coordination_complex/heptagonal/Ma2b(AB)(CD)/Cs_A.csv
+coordination_complex/heptagonal/Ma2b(AB)2/C2v_B.csv
+coordination_complex/heptagonal/Ma2b(AB)2/Cs_A.csv
+coordination_complex/heptagonal/Ma2b2c(AA)/C2v_B.csv
+coordination_complex/heptagonal/Ma2b2c(AA)/Cs_A.csv
+coordination_complex/heptagonal/Ma2b2c(AB)/Cs_A.csv
+coordination_complex/heptagonal/Ma2b2c2d/C2v_B.csv
+coordination_complex/heptagonal/Ma2b2c2d/Cs_A.csv
+coordination_complex/heptagonal/Ma2b2cde/Cs_A.csv
+coordination_complex/heptagonal/Ma2bcd(AA)/Cs_A.csv
+coordination_complex/heptagonal/Ma2bcd(AB)/Cs_A.csv
+coordination_complex/heptagonal/Ma2bcdef/Cs_A.csv
+coordination_complex/heptagonal/Ma3(AA)(AB)/Cs_A.csv
+coordination_complex/heptagonal/Ma3(AA)(BB)/Cs_A.csv
+coordination_complex/heptagonal/Ma3(AA)2/C2v_A.csv
+coordination_complex/heptagonal/Ma3(AB)(CD)/Cs_A.csv
+coordination_complex/heptagonal/Ma3(AB)2/C2v_A.csv
+coordination_complex/heptagonal/Ma3(AB)2/Cs_A.csv
+coordination_complex/heptagonal/Ma3b2(AA)/C2v_B.csv
+coordination_complex/heptagonal/Ma3b2(AA)/Cs_A.csv
+coordination_complex/heptagonal/Ma3b2(AB)/Cs_A.csv
+coordination_complex/heptagonal/Ma3b2c2/C2v_B.csv
+coordination_complex/heptagonal/Ma3b2c2/Cs_A.csv
+coordination_complex/heptagonal/Ma3b2cd/Cs_A.csv
+coordination_complex/heptagonal/Ma3b3c/Cs_A.csv
+coordination_complex/heptagonal/Ma3bc(AA)/Cs_A.csv
+coordination_complex/heptagonal/Ma3bc(AB)/Cs_A.csv
+coordination_complex/heptagonal/Ma3bcde/Cs_A.csv
+coordination_complex/heptagonal/Ma4b(AA)/C2v_B.csv
+coordination_complex/heptagonal/Ma4b(AA)/Cs_A.csv
+coordination_complex/heptagonal/Ma4b(AB)/Cs_A.csv
+coordination_complex/heptagonal/Ma4b2c/C2v_B.csv
+coordination_complex/heptagonal/Ma4b2c/Cs_A.csv
+coordination_complex/heptagonal/Ma4b3/C2v_A.csv
+coordination_complex/heptagonal/Ma4b3/Cs_B.csv
+coordination_complex/heptagonal/Ma4bcd/Cs_A.csv
+coordination_complex/heptagonal/Ma5(AA)/C2v_A.csv
+coordination_complex/heptagonal/Ma5(AB)/Cs_A.csv
+coordination_complex/heptagonal/Ma5b2/C2v_A.csv
+coordination_complex/heptagonal/Ma5bc/Cs_A.csv
+coordination_complex/heptagonal/Ma6b/C2v_A.csv
+coordination_complex/heptagonal/Ma7/D7h_A.csv
+coordination_complex/heptagonal/Mabc(AA)(AB)/Cs_A.csv
+coordination_complex/heptagonal/Mabc(AA)(BB)/Cs_A.csv
+coordination_complex/heptagonal/Mabc(AA)2/Cs_A.csv
+coordination_complex/heptagonal/Mabc(AB)(CD)/Cs_A.csv
+coordination_complex/heptagonal/Mabc(AB)2/Cs_A.csv
+coordination_complex/heptagonal/Mabcde(AA)/Cs_A.csv
+coordination_complex/heptagonal/Mabcde(AB)/Cs_A.csv
+coordination_complex/heptagonal/Mabcdefg/Cs_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)(AB)(CD)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)(AB)2/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)(AB)2/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)(BB)(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)(BB)(CC)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)2(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)2(AB)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)2(BB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)2(BB)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)3/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)3/C3v_C.csv
+coordination_complex/hexagonal pyramidal/Ma(AA)3/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma(AB)(CD)(EF)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AB)2(CD)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AB)2(CD)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma(AB)3/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma(AB)3/C3_C.csv
+coordination_complex/hexagonal pyramidal/Ma(AB)3/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma2b(AA)(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2b(AA)(BB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2b(AA)(BB)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma2b(AA)2/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2b(AA)2/C2v_C.csv
+coordination_complex/hexagonal pyramidal/Ma2b(AA)2/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma2b(AB)(CD)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2b(AB)2/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2b(AB)2/C2_C.csv
+coordination_complex/hexagonal pyramidal/Ma2b(AB)2/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma2b2c(AA)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2b2c(AA)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma2b2c(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2b2c(AB)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma2b2c2d/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2b2c2d/C2_C.csv
+coordination_complex/hexagonal pyramidal/Ma2b2c2d/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma2b2cde/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2b2cde/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma2bcd(AA)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2bcd(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma2bcdef/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3(AA)(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3(AA)(BB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3(AA)(BB)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma3(AA)2/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3(AA)2/C2v_C.csv
+coordination_complex/hexagonal pyramidal/Ma3(AA)2/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma3(AB)(CD)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3(AB)2/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3(AB)2/C2_C.csv
+coordination_complex/hexagonal pyramidal/Ma3(AB)2/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma3b2(AA)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3b2(AA)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma3b2(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3b2(AB)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma3b2c2/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3b2c2/C2_C.csv
+coordination_complex/hexagonal pyramidal/Ma3b2c2/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma3b2cd/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3b2cd/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma3b3c/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3b3c/C3v_C.csv
+coordination_complex/hexagonal pyramidal/Ma3b3c/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma3bc(AA)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3bc(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma3bcde/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma4b(AA)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma4b(AA)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma4b(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma4b(AB)/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma4b2c/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma4b2c/C2v_C.csv
+coordination_complex/hexagonal pyramidal/Ma4b2c/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma4b3/C1_B.csv
+coordination_complex/hexagonal pyramidal/Ma4b3/C2v_C.csv
+coordination_complex/hexagonal pyramidal/Ma4b3/C3v_D.csv
+coordination_complex/hexagonal pyramidal/Ma4b3/Cs_A.csv
+coordination_complex/hexagonal pyramidal/Ma4bcd/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma4bcd/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma5(AA)/Cs_A.csv
+coordination_complex/hexagonal pyramidal/Ma5(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma5(AB)/Cs_A.csv
+coordination_complex/hexagonal pyramidal/Ma5b2/C2v_B.csv
+coordination_complex/hexagonal pyramidal/Ma5b2/Cs_A.csv
+coordination_complex/hexagonal pyramidal/Ma5bc/C1_A.csv
+coordination_complex/hexagonal pyramidal/Ma5bc/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Ma6b/C6v_B.csv
+coordination_complex/hexagonal pyramidal/Ma6b/Cs_A.csv
+coordination_complex/hexagonal pyramidal/Ma7/C6v_A.csv
+coordination_complex/hexagonal pyramidal/Mabc(AA)(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Mabc(AA)(BB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Mabc(AA)2/C1_A.csv
+coordination_complex/hexagonal pyramidal/Mabc(AA)2/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Mabc(AB)(CD)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Mabc(AB)2/C1_A.csv
+coordination_complex/hexagonal pyramidal/Mabc(AB)2/Cs_B.csv
+coordination_complex/hexagonal pyramidal/Mabcde(AA)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Mabcde(AB)/C1_A.csv
+coordination_complex/hexagonal pyramidal/Mabcdefg/C1_A.csv
+coordination_complex/hexagonal/M(AA)(AB)(CD)/Cs_A.csv
+coordination_complex/hexagonal/M(AA)(AB)2/C2v_A.csv
+coordination_complex/hexagonal/M(AA)(AB)2/Cs_A.csv
+coordination_complex/hexagonal/M(AA)(BB)(AB)/Cs_A.csv
+coordination_complex/hexagonal/M(AA)(BB)(CC)/Cs_A.csv
+coordination_complex/hexagonal/M(AA)2(AB)/Cs_A.csv
+coordination_complex/hexagonal/M(AA)2(BB)/C2v_A.csv
+coordination_complex/hexagonal/M(AA)3/D3h_A.csv
+coordination_complex/hexagonal/M(AB)(CD)(EF)/Cs_A.csv
+coordination_complex/hexagonal/M(AB)2(CD)/Cs_A.csv
+coordination_complex/hexagonal/M(AB)3/C3h_B.csv
+coordination_complex/hexagonal/M(AB)3/Cs_A.csv
+coordination_complex/hexagonal/Ma2(AA)(AB)/Cs_A.csv
+coordination_complex/hexagonal/Ma2(AA)(BB)/C2v_B.csv
+coordination_complex/hexagonal/Ma2(AA)(BB)/Cs_A.csv
+coordination_complex/hexagonal/Ma2(AA)2/C2v_A.csv
+coordination_complex/hexagonal/Ma2(AA)2/D2h_B.csv
+coordination_complex/hexagonal/Ma2(AB)(CD)/Cs_A.csv
+coordination_complex/hexagonal/Ma2(AB)2/C2h_C.csv
+coordination_complex/hexagonal/Ma2(AB)2/C2v_A.csv
+coordination_complex/hexagonal/Ma2(AB)2/Cs_B.csv
+coordination_complex/hexagonal/Ma2b2(AA)/C2v_B.csv
+coordination_complex/hexagonal/Ma2b2(AA)/Cs_A.csv
+coordination_complex/hexagonal/Ma2b2(AB)/Cs_A.csv
+coordination_complex/hexagonal/Ma2b2c2/C2h_C.csv
+coordination_complex/hexagonal/Ma2b2c2/C2v_B.csv
+coordination_complex/hexagonal/Ma2b2c2/Cs_A.csv
+coordination_complex/hexagonal/Ma2b2cd/C2v_B.csv
+coordination_complex/hexagonal/Ma2b2cd/Cs_A.csv
+coordination_complex/hexagonal/Ma2bc(AA)/Cs_A.csv
+coordination_complex/hexagonal/Ma2bc(AB)/Cs_A.csv
+coordination_complex/hexagonal/Ma2bcde/Cs_A.csv
+coordination_complex/hexagonal/Ma3b(AA)/Cs_A.csv
+coordination_complex/hexagonal/Ma3b(AB)/Cs_A.csv
+coordination_complex/hexagonal/Ma3b2c/C2v_B.csv
+coordination_complex/hexagonal/Ma3b2c/Cs_A.csv
+coordination_complex/hexagonal/Ma3b3/C2v_B.csv
+coordination_complex/hexagonal/Ma3b3/Cs_A.csv
+coordination_complex/hexagonal/Ma3b3/D3h_C.csv
+coordination_complex/hexagonal/Ma3bcd/Cs_A.csv
+coordination_complex/hexagonal/Ma4(AA)/C2v_A.csv
+coordination_complex/hexagonal/Ma4(AB)/Cs_A.csv
+coordination_complex/hexagonal/Ma4b2/C2v_A.csv
+coordination_complex/hexagonal/Ma4b2/D2h_B.csv
+coordination_complex/hexagonal/Ma4bc/C2v_B.csv
+coordination_complex/hexagonal/Ma4bc/Cs_A.csv
+coordination_complex/hexagonal/Ma5b/C2v_A.csv
+coordination_complex/hexagonal/Ma6/D6h_A.csv
+coordination_complex/hexagonal/Mab(AA)(AB)/Cs_A.csv
+coordination_complex/hexagonal/Mab(AA)(BB)/Cs_A.csv
+coordination_complex/hexagonal/Mab(AA)2/C2v_B.csv
+coordination_complex/hexagonal/Mab(AA)2/Cs_A.csv
+coordination_complex/hexagonal/Mab(AB)(CD)/Cs_A.csv
+coordination_complex/hexagonal/Mab(AB)2/C2v_B.csv
+coordination_complex/hexagonal/Mab(AB)2/Cs_A.csv
+coordination_complex/hexagonal/Mabcd(AA)/Cs_A.csv
+coordination_complex/hexagonal/Mabcd(AB)/Cs_A.csv
+coordination_complex/hexagonal/Mabcdef/Cs_A.csv
+coordination_complex/octahedral/M(AA)(AB)(CD)/C1_A.csv
+coordination_complex/octahedral/M(AA)(AB)2/C1_A.csv
+coordination_complex/octahedral/M(AA)(AB)2/C2_A.csv
+coordination_complex/octahedral/M(AA)(BB)(AB)/C1_A.csv
+coordination_complex/octahedral/M(AA)(BB)(CC)/C1_A.csv
+coordination_complex/octahedral/M(AA)2(AB)/C1_A.csv
+coordination_complex/octahedral/M(AA)2(BB)/C2_A.csv
+coordination_complex/octahedral/M(AA)3/D3_A.csv
+coordination_complex/octahedral/M(AB)(CD)(EF)/C1_A.csv
+coordination_complex/octahedral/M(AB)2(CD)/C1_A.csv
+coordination_complex/octahedral/M(AB)3/C1_A.csv
+coordination_complex/octahedral/M(AB)3/C3_B.csv
+coordination_complex/octahedral/Ma2(AA)(AB)/C1_A.csv
+coordination_complex/octahedral/Ma2(AA)(AB)/Cs_B.csv
+coordination_complex/octahedral/Ma2(AA)(BB)/C1_A.csv
+coordination_complex/octahedral/Ma2(AA)(BB)/C2v_B.csv
+coordination_complex/octahedral/Ma2(AA)2/C2_A.csv
+coordination_complex/octahedral/Ma2(AA)2/D2h_B.csv
+coordination_complex/octahedral/Ma2(AB)(CD)/C1_A.csv
+coordination_complex/octahedral/Ma2(AB)(CD)/Cs_B.csv
+coordination_complex/octahedral/Ma2(AB)2/C1_A.csv
+coordination_complex/octahedral/Ma2(AB)2/C2_A.csv
+coordination_complex/octahedral/Ma2(AB)2/C2h_B.csv
+coordination_complex/octahedral/Ma2(AB)2/C2v_B.csv
+coordination_complex/octahedral/Ma2b2(AA)/C1_A.csv
+coordination_complex/octahedral/Ma2b2(AA)/C2v_B.csv
+coordination_complex/octahedral/Ma2b2(AB)/C1_A.csv
+coordination_complex/octahedral/Ma2b2(AB)/Cs_B.csv
+coordination_complex/octahedral/Ma2b2c2/C1_A.csv
+coordination_complex/octahedral/Ma2b2c2/C2v_B.csv
+coordination_complex/octahedral/Ma2b2c2/D2h_C.csv
+coordination_complex/octahedral/Ma2b2cd/C1_A.csv
+coordination_complex/octahedral/Ma2b2cd/C2v_C.csv
+coordination_complex/octahedral/Ma2b2cd/Cs_B.csv
+coordination_complex/octahedral/Ma2bc(AA)/C1_A.csv
+coordination_complex/octahedral/Ma2bc(AA)/Cs_B.csv
+coordination_complex/octahedral/Ma2bc(AB)/C1_A.csv
+coordination_complex/octahedral/Ma2bc(AB)/Cs_B.csv
+coordination_complex/octahedral/Ma2bcde/C1_A.csv
+coordination_complex/octahedral/Ma2bcde/Cs_B.csv
+coordination_complex/octahedral/Ma3b(AA)/Cs_A.csv
+coordination_complex/octahedral/Ma3b(AB)/C1_A.csv
+coordination_complex/octahedral/Ma3b(AB)/Cs_A.csv
+coordination_complex/octahedral/Ma3b2c/C2v_B.csv
+coordination_complex/octahedral/Ma3b2c/Cs_A.csv
+coordination_complex/octahedral/Ma3b3/C2v_A.csv
+coordination_complex/octahedral/Ma3b3/C3v_B.csv
+coordination_complex/octahedral/Ma3bcd/C1_B.csv
+coordination_complex/octahedral/Ma3bcd/Cs_A.csv
+coordination_complex/octahedral/Ma4(AA)/C2v_A.csv
+coordination_complex/octahedral/Ma4(AB)/Cs_A.csv
+coordination_complex/octahedral/Ma4b2/C2v_A.csv
+coordination_complex/octahedral/Ma4b2/D4h_B.csv
+coordination_complex/octahedral/Ma4bc/C4v_B.csv
+coordination_complex/octahedral/Ma4bc/Cs_A.csv
+coordination_complex/octahedral/Ma5b/C4v_A.csv
+coordination_complex/octahedral/Ma6/Oh_A.csv
+coordination_complex/octahedral/Mab(AA)(AB)/C1_A.csv
+coordination_complex/octahedral/Mab(AA)(BB)/C1_A.csv
+coordination_complex/octahedral/Mab(AA)(BB)/Cs_B.csv
+coordination_complex/octahedral/Mab(AA)2/C1_A.csv
+coordination_complex/octahedral/Mab(AA)2/C2v_B.csv
+coordination_complex/octahedral/Mab(AB)(CD)/C1_A.csv
+coordination_complex/octahedral/Mab(AB)2/C1_A.csv
+coordination_complex/octahedral/Mab(AB)2/C2_B.csv
+coordination_complex/octahedral/Mab(AB)2/Cs_B.csv
+coordination_complex/octahedral/Mabcd(AA)/C1_A.csv
+coordination_complex/octahedral/Mabcd(AB)/C1_A.csv
+coordination_complex/octahedral/Mabcdef/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)(AB)(CD)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)(AB)2/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)(AB)2/C2_B.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)(AB)2/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)(BB)(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)(BB)(CC)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)2(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)2(AB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)2(BB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)2(BB)/C2_B.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)2(BB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)3/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)3/C2_B.csv
+coordination_complex/pentagonal bipyramidal/Ma(AA)3/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma(AB)(CD)(EF)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AB)2(CD)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AB)2(CD)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma(AB)3/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma(AB)3/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AA)(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AA)(AB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AA)(BB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AA)(BB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AA)2/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AA)2/C2_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AA)2/C2v_C.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AA)2/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AB)(CD)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AB)(CD)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AB)2/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AB)2/C2_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AB)2/C2v_D.csv
+coordination_complex/pentagonal bipyramidal/Ma2b(AB)2/Cs_C.csv
+coordination_complex/pentagonal bipyramidal/Ma2b2c(AA)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2b2c(AA)/C2v_C.csv
+coordination_complex/pentagonal bipyramidal/Ma2b2c(AA)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2b2c(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2b2c(AB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2b2c2d/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2b2c2d/C2v_C.csv
+coordination_complex/pentagonal bipyramidal/Ma2b2c2d/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2b2cde/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2b2cde/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2bcd(AA)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2bcd(AA)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2bcd(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2bcd(AB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma2bcdef/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma2bcdef/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AA)(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AA)(AB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AA)(BB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AA)(BB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AA)2/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AA)2/C2_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AA)2/C2v_C.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AA)2/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AB)(CD)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AB)(CD)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AB)2/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AB)2/C2_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AB)2/C2v_C.csv
+coordination_complex/pentagonal bipyramidal/Ma3(AB)2/Cs_C.csv
+coordination_complex/pentagonal bipyramidal/Ma3b2(AA)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3b2(AA)/C2v_C.csv
+coordination_complex/pentagonal bipyramidal/Ma3b2(AA)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3b2(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3b2(AB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3b2c2/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3b2c2/C2v_C.csv
+coordination_complex/pentagonal bipyramidal/Ma3b2c2/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3b2cd/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3b2cd/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3b3c/C1_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3b3c/Cs_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3bc(AA)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3bc(AA)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3bc(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3bc(AB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma3bcde/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma3bcde/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma4b(AA)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma4b(AA)/C2v_C.csv
+coordination_complex/pentagonal bipyramidal/Ma4b(AA)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma4b(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma4b(AB)/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma4b2c/C1_B.csv
+coordination_complex/pentagonal bipyramidal/Ma4b2c/C2v_C.csv
+coordination_complex/pentagonal bipyramidal/Ma4b2c/Cs_A.csv
+coordination_complex/pentagonal bipyramidal/Ma4b3/C2v_B.csv
+coordination_complex/pentagonal bipyramidal/Ma4b3/Cs_A.csv
+coordination_complex/pentagonal bipyramidal/Ma4bcd/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Ma4bcd/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Ma5(AA)/C2v_B.csv
+coordination_complex/pentagonal bipyramidal/Ma5(AA)/Cs_A.csv
+coordination_complex/pentagonal bipyramidal/Ma5(AB)/Cs_A.csv
+coordination_complex/pentagonal bipyramidal/Ma5b2/C2v_A.csv
+coordination_complex/pentagonal bipyramidal/Ma5b2/Cs_A.csv
+coordination_complex/pentagonal bipyramidal/Ma5b2/D5h_B.csv
+coordination_complex/pentagonal bipyramidal/Ma5bc/C5v_B.csv
+coordination_complex/pentagonal bipyramidal/Ma5bc/Cs_A.csv
+coordination_complex/pentagonal bipyramidal/Ma6b/C2v_A.csv
+coordination_complex/pentagonal bipyramidal/Ma6b/C5v_B.csv
+coordination_complex/pentagonal bipyramidal/Ma7/D5h_A.csv
+coordination_complex/pentagonal bipyramidal/Mabc(AA)(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Mabc(AA)(BB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Mabc(AA)2/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Mabc(AA)2/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Mabc(AB)(CD)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Mabc(AB)2/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Mabc(AB)2/Cs_B.csv
+coordination_complex/pentagonal bipyramidal/Mabcde(AA)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Mabcde(AB)/C1_A.csv
+coordination_complex/pentagonal bipyramidal/Mabcdefg/C1_A.csv
+coordination_complex/pentagonal pyramidal/M(AA)(AB)(CD)/C1_A.csv
+coordination_complex/pentagonal pyramidal/M(AA)(AB)2/C1_A.csv
+coordination_complex/pentagonal pyramidal/M(AA)(AB)2/Cs_B.csv
+coordination_complex/pentagonal pyramidal/M(AA)(BB)(AB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/M(AA)(BB)(CC)/C1_A.csv
+coordination_complex/pentagonal pyramidal/M(AA)2(AB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/M(AA)2(AB)/Cs_B.csv
+coordination_complex/pentagonal pyramidal/M(AA)2(BB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/M(AA)2(BB)/Cs_B.csv
+coordination_complex/pentagonal pyramidal/M(AA)3/Cs_A.csv
+coordination_complex/pentagonal pyramidal/M(AB)(CD)(EF)/C1_A.csv
+coordination_complex/pentagonal pyramidal/M(AB)2(CD)/C1_A.csv
+coordination_complex/pentagonal pyramidal/M(AB)2(CD)/Cs_B.csv
+coordination_complex/pentagonal pyramidal/M(AB)3/C1_A.csv
+coordination_complex/pentagonal pyramidal/M(AB)3/Cs_A.csv
+coordination_complex/pentagonal pyramidal/Ma2(AA)(AB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2(AA)(AB)/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma2(AA)(BB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2(AA)(BB)/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma2(AA)2/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2(AA)2/Cs_A.csv
+coordination_complex/pentagonal pyramidal/Ma2(AB)(CD)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2(AB)2/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2(AB)2/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma2b2(AA)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2b2(AA)/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma2b2(AB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2b2(AB)/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma2b2c2/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2b2c2/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma2b2cd/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2b2cd/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma2bc(AA)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2bc(AA)/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma2bc(AB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma2bcde/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma3b(AA)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma3b(AA)/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma3b(AB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma3b2c/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma3b2c/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma3b3/Cs_A.csv
+coordination_complex/pentagonal pyramidal/Ma3bcd/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma4(AA)/Cs_A.csv
+coordination_complex/pentagonal pyramidal/Ma4(AB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma4(AB)/Cs_A.csv
+coordination_complex/pentagonal pyramidal/Ma4b2/Cs_A.csv
+coordination_complex/pentagonal pyramidal/Ma4bc/C1_A.csv
+coordination_complex/pentagonal pyramidal/Ma4bc/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Ma5b/C5v_B.csv
+coordination_complex/pentagonal pyramidal/Ma5b/Cs_A.csv
+coordination_complex/pentagonal pyramidal/Ma6/C5v_A.csv
+coordination_complex/pentagonal pyramidal/Mab(AA)(AB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Mab(AA)(BB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Mab(AA)2/C1_A.csv
+coordination_complex/pentagonal pyramidal/Mab(AA)2/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Mab(AB)(CD)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Mab(AB)2/C1_A.csv
+coordination_complex/pentagonal pyramidal/Mab(AB)2/Cs_B.csv
+coordination_complex/pentagonal pyramidal/Mabcd(AA)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Mabcd(AB)/C1_A.csv
+coordination_complex/pentagonal pyramidal/Mabcdef/C1_A.csv
+coordination_complex/pentagonal/Ma(AA)(AB)/Cs_A.csv
+coordination_complex/pentagonal/Ma(AA)(BB)/Cs_A.csv
+coordination_complex/pentagonal/Ma(AA)2/C2v_A.csv
+coordination_complex/pentagonal/Ma(AB)(CD)/Cs_A.csv
+coordination_complex/pentagonal/Ma(AB)2/C2v_A.csv
+coordination_complex/pentagonal/Ma(AB)2/Cs_A.csv
+coordination_complex/pentagonal/Ma2b(AA)/C2v_B.csv
+coordination_complex/pentagonal/Ma2b(AA)/Cs_A.csv
+coordination_complex/pentagonal/Ma2b(AB)/Cs_A.csv
+coordination_complex/pentagonal/Ma2b2c/C2v_B.csv
+coordination_complex/pentagonal/Ma2b2c/Cs_A.csv
+coordination_complex/pentagonal/Ma2bcd/Cs_A.csv
+coordination_complex/pentagonal/Ma3(AA)/C2v_A.csv
+coordination_complex/pentagonal/Ma3(AB)/Cs_A.csv
+coordination_complex/pentagonal/Ma3b2/C2v_A.csv
+coordination_complex/pentagonal/Ma3bc/Cs_A.csv
+coordination_complex/pentagonal/Ma4b/C2v_A.csv
+coordination_complex/pentagonal/Ma5/D5h_A.csv
+coordination_complex/pentagonal/Mabc(AA)/Cs_A.csv
+coordination_complex/pentagonal/Mabc(AB)/Cs_A.csv
+coordination_complex/pentagonal/Mabcde/Cs_A.csv
+coordination_complex/seesaw/M(AA)(AB)/C1_A.csv
+coordination_complex/seesaw/M(AA)(BB)/C1_A.csv
+coordination_complex/seesaw/M(AA)2/C2_A.csv
+coordination_complex/seesaw/M(AB)(CD)/C1_A.csv
+coordination_complex/seesaw/M(AB)2/C1_A.csv
+coordination_complex/seesaw/M(AB)2/C2_A.csv
+coordination_complex/seesaw/Ma2(AA)/C1_A.csv
+coordination_complex/seesaw/Ma2(AA)/C2v_B.csv
+coordination_complex/seesaw/Ma2(AB)/C1_A.csv
+coordination_complex/seesaw/Ma2(AB)/Cs_B.csv
+coordination_complex/seesaw/Ma2b2/C1_A.csv
+coordination_complex/seesaw/Ma2b2/C2v_B.csv
+coordination_complex/seesaw/Ma2bc/C1_A.csv
+coordination_complex/seesaw/Ma2bc/Cs_B.csv
+coordination_complex/seesaw/Ma3b/Cs_A.csv
+coordination_complex/seesaw/Ma4/C2v_A.csv
+coordination_complex/seesaw/Mab(AA)/C1_A.csv
+coordination_complex/seesaw/Mab(AA)/Cs_B.csv
+coordination_complex/seesaw/Mab(AB)/C1_A.csv
+coordination_complex/seesaw/Mabcd/C1_A.csv
+coordination_complex/square planar/M(AA)(AB)/Cs_A.csv
+coordination_complex/square planar/M(AA)(BB)/C2v_A.csv
+coordination_complex/square planar/M(AA)2/D2h_A.csv
+coordination_complex/square planar/M(AB)(CD)/Cs_A.csv
+coordination_complex/square planar/M(AB)2/C2h_A.csv
+coordination_complex/square planar/M(AB)2/C2v_A.csv
+coordination_complex/square planar/Ma2(AA)/C2v_A.csv
+coordination_complex/square planar/Ma2(AB)/Cs_A.csv
+coordination_complex/square planar/Ma2b2/C2v_A.csv
+coordination_complex/square planar/Ma2b2/D2h_B.csv
+coordination_complex/square planar/Ma2bc/C2h_B.csv
+coordination_complex/square planar/Ma2bc/Cs_A.csv
+coordination_complex/square planar/Ma3b/C2h_A.csv
+coordination_complex/square planar/Ma4/D4h_A.csv
+coordination_complex/square planar/Mab(AA)/Cs_A.csv
+coordination_complex/square planar/Mab(AB)/Cs_A.csv
+coordination_complex/square planar/Mabcd/Cs_A.csv
+coordination_complex/square pyramidal/Ma(AA)(AB)/C1_A.csv
+coordination_complex/square pyramidal/Ma(AA)(BB)/Cs_A.csv
+coordination_complex/square pyramidal/Ma(AA)2/C2v_A.csv
+coordination_complex/square pyramidal/Ma(AB)(CD)/C1_A.csv
+coordination_complex/square pyramidal/Ma(AB)2/C2_A.csv
+coordination_complex/square pyramidal/Ma(AB)2/Cs_A.csv
+coordination_complex/square pyramidal/Ma2b(AA)/C1_A.csv
+coordination_complex/square pyramidal/Ma2b(AA)/Cs_B.csv
+coordination_complex/square pyramidal/Ma2b(AB)/C1_A.csv
+coordination_complex/square pyramidal/Ma2b2c/C1_A.csv
+coordination_complex/square pyramidal/Ma2b2c/C2v_C.csv
+coordination_complex/square pyramidal/Ma2b2c/Cs_B.csv
+coordination_complex/square pyramidal/Ma2bcd/C1_A.csv
+coordination_complex/square pyramidal/Ma2bcd/Cs_B.csv
+coordination_complex/square pyramidal/Ma3(AA)/Cs_A.csv
+coordination_complex/square pyramidal/Ma3(AB)/C1_A.csv
+coordination_complex/square pyramidal/Ma3b2/C2v_B.csv
+coordination_complex/square pyramidal/Ma3b2/Cs_A.csv
+coordination_complex/square pyramidal/Ma3bc/C1_B.csv
+coordination_complex/square pyramidal/Ma3bc/Cs_A.csv
+coordination_complex/square pyramidal/Ma4b/C4v_B.csv
+coordination_complex/square pyramidal/Ma4b/Cs_A.csv
+coordination_complex/square pyramidal/Ma5/C4v_A.csv
+coordination_complex/square pyramidal/Mabc(AA)/C1_A.csv
+coordination_complex/square pyramidal/Mabc(AB)/C1_A.csv
+coordination_complex/square pyramidal/Mabcde/C1_A.csv
+coordination_complex/tetrahedral/M(AA)(AB)/Cs_A.csv
+coordination_complex/tetrahedral/M(AA)(BB)/C2v_A.csv
+coordination_complex/tetrahedral/M(AA)2/D2d_A.csv
+coordination_complex/tetrahedral/M(AB)(CD)/C1_A.csv
+coordination_complex/tetrahedral/M(AB)2/C2_A.csv
+coordination_complex/tetrahedral/Ma2(AA)/C2v_A.csv
+coordination_complex/tetrahedral/Ma2(AB)/Cs_A.csv
+coordination_complex/tetrahedral/Ma2b2/C2v_A.csv
+coordination_complex/tetrahedral/Ma2bc/Cs_A.csv
+coordination_complex/tetrahedral/Ma3b/C3v_A.csv
+coordination_complex/tetrahedral/Ma4/Td_A.csv
+coordination_complex/tetrahedral/Mab(AA)/Cs_A.csv
+coordination_complex/tetrahedral/Mab(AB)/C1_A.csv
+coordination_complex/tetrahedral/Mabcd/C1_A.csv
+coordination_complex/trigonal bipyramidal/Ma(AA)(AB)/C1_A.csv
+coordination_complex/trigonal bipyramidal/Ma(AA)(BB)/C1_A.csv
+coordination_complex/trigonal bipyramidal/Ma(AA)2/C2_A.csv
+coordination_complex/trigonal bipyramidal/Ma(AB)(CD)/C1_A.csv
+coordination_complex/trigonal bipyramidal/Ma(AB)2/C1_A.csv
+coordination_complex/trigonal bipyramidal/Ma(AB)2/C2_A.csv
+coordination_complex/trigonal bipyramidal/Ma2b(AA)/C1_A.csv
+coordination_complex/trigonal bipyramidal/Ma2b(AA)/Cs_B.csv
+coordination_complex/trigonal bipyramidal/Ma2b(AB)/C1_A.csv
+coordination_complex/trigonal bipyramidal/Ma2b(AB)/Cs_B.csv
+coordination_complex/trigonal bipyramidal/Ma2b2c/C1_A.csv
+coordination_complex/trigonal bipyramidal/Ma2b2c/C2v_B.csv
+coordination_complex/trigonal bipyramidal/Ma2b2c/Cs_A.csv
+coordination_complex/trigonal bipyramidal/Ma2bcd/C1_A.csv
+coordination_complex/trigonal bipyramidal/Ma2bcd/Cs_B.csv
+coordination_complex/trigonal bipyramidal/Ma3(AA)/Cs_A.csv
+coordination_complex/trigonal bipyramidal/Ma3(AB)/Cs_A.csv
+coordination_complex/trigonal bipyramidal/Ma3b2/C2v_B.csv
+coordination_complex/trigonal bipyramidal/Ma3b2/Cs_A.csv
+coordination_complex/trigonal bipyramidal/Ma3b2/D3h_C.csv
+coordination_complex/trigonal bipyramidal/Ma3bc/C3v_B.csv
+coordination_complex/trigonal bipyramidal/Ma3bc/Cs_A.csv
+coordination_complex/trigonal bipyramidal/Ma4b/C2v_A.csv
+coordination_complex/trigonal bipyramidal/Ma4b/C3v_B.csv
+coordination_complex/trigonal bipyramidal/Ma5/D3h_A.csv
+coordination_complex/trigonal bipyramidal/Mabc(AA)/C1_A.csv
+coordination_complex/trigonal bipyramidal/Mabc(AB)/C1_A.csv
+coordination_complex/trigonal bipyramidal/Mabcde/C1_A.csv
+coordination_complex/trigonal prismatic/M(AA)(AB)(CD)/C1_A.csv
+coordination_complex/trigonal prismatic/M(AA)(AB)2/C1_A.csv
+coordination_complex/trigonal prismatic/M(AA)(AB)2/C2_B.csv
+coordination_complex/trigonal prismatic/M(AA)(AB)2/Cs_B.csv
+coordination_complex/trigonal prismatic/M(AA)(BB)(AB)/C1_A.csv
+coordination_complex/trigonal prismatic/M(AA)(BB)(AB)/Cs_B.csv
+coordination_complex/trigonal prismatic/M(AA)(BB)(CC)/Cs_A.csv
+coordination_complex/trigonal prismatic/M(AA)2(AB)/C1_A.csv
+coordination_complex/trigonal prismatic/M(AA)2(AB)/Cs_A.csv
+coordination_complex/trigonal prismatic/M(AA)2(BB)/C2v_A.csv
+coordination_complex/trigonal prismatic/M(AA)2(BB)/Cs_A.csv
+coordination_complex/trigonal prismatic/M(AA)3/C2v_A.csv
+coordination_complex/trigonal prismatic/M(AA)3/D3h_B.csv
+coordination_complex/trigonal prismatic/M(AB)(CD)(EF)/C1_A.csv
+coordination_complex/trigonal prismatic/M(AB)2(CD)/C1_A.csv
+coordination_complex/trigonal prismatic/M(AB)2(CD)/Cs_B.csv
+coordination_complex/trigonal prismatic/M(AB)3/C1_A.csv
+coordination_complex/trigonal prismatic/M(AB)3/C3v_C.csv
+coordination_complex/trigonal prismatic/M(AB)3/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma2(AA)(AB)/C1_A.csv
+coordination_complex/trigonal prismatic/Ma2(AA)(AB)/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma2(AA)(BB)/C1_B.csv
+coordination_complex/trigonal prismatic/Ma2(AA)(BB)/Cs_A.csv
+coordination_complex/trigonal prismatic/Ma2(AA)2/C2_A.csv
+coordination_complex/trigonal prismatic/Ma2(AA)2/C2v_A.csv
+coordination_complex/trigonal prismatic/Ma2(AA)2/Cs_A.csv
+coordination_complex/trigonal prismatic/Ma2(AB)(CD)/C1_A.csv
+coordination_complex/trigonal prismatic/Ma2(AB)2/C1_A.csv
+coordination_complex/trigonal prismatic/Ma2(AB)2/C2_B.csv
+coordination_complex/trigonal prismatic/Ma2(AB)2/Cs_C.csv
+coordination_complex/trigonal prismatic/Ma2b2(AA)/C1_A.csv
+coordination_complex/trigonal prismatic/Ma2b2(AA)/C2_B.csv
+coordination_complex/trigonal prismatic/Ma2b2(AA)/Cs_A.csv
+coordination_complex/trigonal prismatic/Ma2b2(AB)/C1_A.csv
+coordination_complex/trigonal prismatic/Ma2b2(AB)/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma2b2c2/C1_A.csv
+coordination_complex/trigonal prismatic/Ma2b2c2/C2_C.csv
+coordination_complex/trigonal prismatic/Ma2b2c2/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma2b2cd/C1_A.csv
+coordination_complex/trigonal prismatic/Ma2b2cd/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma2bc(AA)/C1_A.csv
+coordination_complex/trigonal prismatic/Ma2bc(AA)/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma2bc(AB)/C1_A.csv
+coordination_complex/trigonal prismatic/Ma2bcde/C1_A.csv
+coordination_complex/trigonal prismatic/Ma3b(AA)/C1_A.csv
+coordination_complex/trigonal prismatic/Ma3b(AA)/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma3b(AB)/C1_A.csv
+coordination_complex/trigonal prismatic/Ma3b2c/C1_A.csv
+coordination_complex/trigonal prismatic/Ma3b2c/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma3b3/C1_A.csv
+coordination_complex/trigonal prismatic/Ma3b3/C3v_C.csv
+coordination_complex/trigonal prismatic/Ma3b3/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma3bcd/C1_A.csv
+coordination_complex/trigonal prismatic/Ma4(AA)/C2v_B.csv
+coordination_complex/trigonal prismatic/Ma4(AA)/Cs_A.csv
+coordination_complex/trigonal prismatic/Ma4(AB)/C1_A.csv
+coordination_complex/trigonal prismatic/Ma4(AB)/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma4b2/C2_A.csv
+coordination_complex/trigonal prismatic/Ma4b2/C2v_B.csv
+coordination_complex/trigonal prismatic/Ma4b2/Cs_A.csv
+coordination_complex/trigonal prismatic/Ma4bc/C1_A.csv
+coordination_complex/trigonal prismatic/Ma4bc/Cs_B.csv
+coordination_complex/trigonal prismatic/Ma5b/Cs_A.csv
+coordination_complex/trigonal prismatic/Ma6/D3h_A.csv
+coordination_complex/trigonal prismatic/Mab(AA)(AB)/C1_A.csv
+coordination_complex/trigonal prismatic/Mab(AA)(BB)/C1_A.csv
+coordination_complex/trigonal prismatic/Mab(AA)(BB)/Cs_B.csv
+coordination_complex/trigonal prismatic/Mab(AA)2/C1_A.csv
+coordination_complex/trigonal prismatic/Mab(AA)2/Cs_B.csv
+coordination_complex/trigonal prismatic/Mab(AB)(CD)/C1_A.csv
+coordination_complex/trigonal prismatic/Mab(AB)2/C1_A.csv
+coordination_complex/trigonal prismatic/Mab(AB)2/Cs_B.csv
+coordination_complex/trigonal prismatic/Mabcd(AA)/C1_A.csv
+coordination_complex/trigonal prismatic/Mabcd(AB)/C1_A.csv
+coordination_complex/trigonal prismatic/Mabcdef/C1_A.csv
+coordination_complex/trigonal pyramidal/Ma2(AA)/Cs_A.csv
+coordination_complex/trigonal pyramidal/Ma2(AB)/Cs_A.csv
+coordination_complex/trigonal pyramidal/Ma2b2/Cs_A.csv
+coordination_complex/trigonal pyramidal/Ma2bc/C1_A.csv
+coordination_complex/trigonal pyramidal/Ma2bc/Cs_A.csv
+coordination_complex/trigonal pyramidal/Ma3b/C3v_B.csv
+coordination_complex/trigonal pyramidal/Ma3b/Cs_A.csv
+coordination_complex/trigonal pyramidal/Ma4/C3v_A.csv
+coordination_complex/trigonal pyramidal/Mab(AA)/C1_A.csv
+coordination_complex/trigonal pyramidal/Mab(AB)/C1_A.csv
+coordination_complex/trigonal pyramidal/Mabcd/C1_A.csv
+test/__init__.py
+test/test_atoms.py
+test/test_cls.py
+test/test_comp_output.py
+test/test_component.py
+test/test_config.py
+test/test_fetch.py
+test/test_fileIO.py
+test/test_finders.py
+test/test_geometry.py
+test/test_json_extension.py
+test/test_orbitals.py
+test/test_pathway.py
+test/test_substituent.py
+test/test_symmetry.py
+test/test_theory.py
+test/test_utils.py
+test/ref_files/HOH_init.json
+test/ref_files/atom.json
+test/ref_files/benzene_dimer_ref.xyz
+test/ref_files/blank_init.json
+test/ref_files/cat.json
+test/ref_files/chlorotoluene_180.xyz
+test/ref_files/conf_spec.txt
+test/ref_files/config_HOH_init.json
+test/ref_files/config_blank_init.json
+test/ref_files/detect_components.json
+test/ref_files/file_io_died.xyz
+test/ref_files/file_io_error.xyz
+test/ref_files/file_io_normal.xyz
+test/ref_files/freq.json
+test/ref_files/geometry.json
+test/ref_files/lig.json
+test/ref_files/lig_map_1.xyz
+test/ref_files/lig_map_2.xyz
+test/ref_files/lig_map_3.xyz
+test/ref_files/lig_map_4.xyz
+test/ref_files/lig_map_5.xyz
+test/ref_files/lig_map_6.xyz
+test/ref_files/lig_map_7.xyz
+test/ref_files/log.json
+test/ref_files/make_conf_1.xyz
+test/ref_files/make_conf_2.xyz
+test/ref_files/minimize_torsion.xyz
+test/ref_files/naphthalene.xyz
+test/ref_files/orca_geom.xyz
+test/ref_files/psi4_geom.xyz
+test/ref_files/pyrene.xyz
+test/ref_files/ring_subs_changes.json
+test/ref_files/simple_subs_changes.json
+test/ref_files/sub.json
+test/ref_files/sub_rotate.xyz
+test/ref_files/tetrahydronaphthalene.xyz
+test/ref_files/torsion_interpolation.xyz
+test/ref_files/vbur.xyz
+test/ref_files/vbur2.xyz
+test/ref_files/change_chirality_cls/diastereomer-1.xyz
+test/ref_files/change_chirality_cls/diastereomer-2.xyz
+test/ref_files/change_chirality_cls/diastereomer-3.xyz
+test/ref_files/change_chirality_cls/diastereomer-4.xyz
+test/ref_files/make_conf_cls/conformer-1.xyz
+test/ref_files/make_conf_cls/conformer-2.xyz
+test/ref_files/make_conf_cls/conformer-3.xyz
+test/ref_files/make_conf_cls/conformer-4.xyz
+test/ref_files/make_conf_cls/conformer-5.xyz
+test/ref_files/make_conf_cls/conformer-6.xyz
+test/ref_files/make_conf_cls/conformer-7.xyz
+test/ref_files/make_conf_cls/conformer-8.xyz
+test/test_files/5a-sub1.R.ts1.Cf1.3.com
+test/test_files/6a2e5am1hex.xyz
+test/test_files/C(NO2)4.xyz
+test/test_files/COCH3.xyz
+test/test_files/Ci.xyz
+test/test_files/Et_1-NO2.xyz
+test/test_files/HOH.ini
+test/test_files/MeOH.xyz
+test/test_files/NO2.xyz
+test/test_files/R-Quinox-tBu3.xyz
+test/test_files/adamantane.xyz
+test/test_files/b2plypd3.log
+test/test_files/benzene.xyz
+test/test_files/benzene_1-NO2_4-Cl.can.xyz
+test/test_files/benzene_1-NO2_4-Cl.txt
+test/test_files/benzene_1-NO2_4-Cl.xyz
+test/test_files/benzene_1-OH_4-Cl.xyz
+test/test_files/benzene_1-Ph_4-Cl.xyz
+test/test_files/benzene_4-Cl.xyz
+test/test_files/benzene_dimer.xyz
+test/test_files/blank.ini
+test/test_files/bpy.xyz
+test/test_files/c3h4.xyz
+test/test_files/c5h5.xyz
+test/test_files/c60.xyz
+test/test_files/ccsd.log
+test/test_files/ccsd_t.log
+test/test_files/change_dihedral_0.xyz
+test/test_files/chiral_centers_1.xyz
+test/test_files/chiral_centers_2.xyz
+test/test_files/chiral_centers_3.xyz
+test/test_files/chiral_centers_4.xyz
+test/test_files/chiral_ring.xyz
+test/test_files/chiral_ring_mirror.xyz
+test/test_files/chlorotoluene.xyz
+test/test_files/claisen_ts.xyz
+test/test_files/cubane.xyz
+test/test_files/cubeamine.xyz
+test/test_files/d4h.xyz
+test/test_files/died.log
+test/test_files/dppe.xyz
+test/test_files/error.log
+test/test_files/for_loop.ini
+test/test_files/formaldehyde.fchk
+test/test_files/freq.log
+test/test_files/good.crest
+test/test_files/h2o.xyz
+test/test_files/lig_1.xyz
+test/test_files/lig_2.xyz
+test/test_files/methane.xyz
+test/test_files/mp2.log
+test/test_files/mp4.log
+test/test_files/neopentane.xyz
+test/test_files/normal.log
+test/test_files/opt_constraint.log
+test/test_files/opt_normal.log
+test/test_files/opt_running.log
+test/test_files/orca_geom.out
+test/test_files/pentane.xyz
+test/test_files/pople.out
+test/test_files/psi4-test.out
+test/test_files/ptco4.xyz
+test/test_files/pyridine.xyz
+test/test_files/ring_subs.ini
+test/test_files/simple_subs.ini
+test/test_files/step3.log
+test/test_files/structure_suffix.ini
+test/test_files/substyle_1.ini
+test/test_files/test-route-2.com
+test/test_files/test-route.com
+test/test_files/test_rmsd_sort1.xyz
+test/test_files/test_rmsd_sort2.xyz
+test/test_files/theory_1.ini
+test/test_files/theory_2.ini
+test/test_files/torsion-60.xyz
+test/test_files/torsion-90.xyz
+test/test_files/urea.xyz
+test/test_files/xtb_config.ini
+test/test_files/catalysts/org_1.xyz
+test/test_files/catalysts/org_tri.xyz
+test/test_files/catalysts/tm_multi-lig.xyz
+test/test_files/catalysts/tm_single-lig.xyz
+test/test_files/ligands/ACN.xyz
+test/test_files/ligands/R-Quinox-tBu3.xyz
+test/test_files/ligands/S-tBu-BOX.xyz
+test/test_files/ligands/squaramide.xyz
+theory/__init__.py
+theory/basis.py
+theory/emp_dispersion.py
+theory/grid.py
+theory/implicit_solvent.py
+theory/job_types.py
+theory/method.py
+theory/theory.py
+theory/valid_basis_sets/gaussian.txt
+theory/valid_basis_sets/gaussian_ecp.txt
+theory/valid_basis_sets/orca.txt
+theory/valid_basis_sets/orca_ecp.txt
+theory/valid_basis_sets/psi4.txt
+theory/valid_basis_sets/qchem.txt
+theory/valid_basis_sets/qchem_ecp.txt
+theory/valid_methods/gaussian.txt
+theory/valid_methods/orca.txt
+theory/valid_methods/psi4.txt
+theory/valid_methods/qchem.txt
+theory/valid_methods/sqm.txt
+theory/valid_methods/xtb.txt
+utils/__init__.py
+utils/prime_numbers.py
+utils/utils.py
+utils/quad_grids/Leb110.grid
+utils/quad_grids/Leb1454.grid
+utils/quad_grids/Leb194.grid
+utils/quad_grids/Leb2030.grid
+utils/quad_grids/Leb2702.grid
+utils/quad_grids/Leb302.grid
+utils/quad_grids/Leb5810.grid
+utils/quad_grids/Leb590.grid
+utils/quad_grids/Leb974.grid
+utils/quad_grids/Leg127.grid
+utils/quad_grids/Leg20.grid
+utils/quad_grids/Leg32.grid
+utils/quad_grids/Leg64.grid
+utils/quad_grids/Leg75.grid
+utils/quad_grids/Leg99.grid
+utils/quad_grids/NOTES
