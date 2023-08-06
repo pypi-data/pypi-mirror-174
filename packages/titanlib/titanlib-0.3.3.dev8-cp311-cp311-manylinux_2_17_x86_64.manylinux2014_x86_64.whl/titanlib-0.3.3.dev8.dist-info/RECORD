@@ -1,0 +1,12 @@
+titanlib.py,sha256=nuGt52nHXXqCwq8F9h4Q9Sh-vbemcuUGUoGKy9n5914,37687
+_titanlib.cpython-311-x86_64-linux-gnu.so,sha256=3IX5eMlxeTpYnENMO3unV5IjADM44TCEGBGoZ_ufxTo,31908776
+titanlib-0.3.3.dev8.dist-info/WHEEL,sha256=MXkSmZj-ucMvJEZe-5F9uGaWQfgqj_gRjwLyMfC10Vs,152
+titanlib-0.3.3.dev8.dist-info/METADATA,sha256=a1e-Otv87E4coiGtBsQLCRpLkaGxtsN6F03ATCqJvyQ,1188
+titanlib-0.3.3.dev8.dist-info/top_level.txt,sha256=7mGeFoG-cnYwT2UMJWdET9OUSLkg5rIz1UtyZeK5Eoc,19
+titanlib-0.3.3.dev8.dist-info/RECORD,,
+titanlib.libs/libquadmath-96973f99.so.0.0.0,sha256=l82oXdtRY-Labh7bTh1rVXgzqZpA7aB5rjflA5Rltl0,247608
+titanlib.libs/libgslcblas-9055a056.so.0.0.0,sha256=oNu7YlZQr4pOHWbmuJ4zX1yPsK8TYGqQ1wQWzPCNsgI,257280
+titanlib.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+titanlib.libs/libsatlas-7e2f78d2.so.3.10,sha256=X_Wa34zDOWb1y0s4CLcX6eWesbYpAdF2DJR6Jxavuxg,11078608
+titanlib.libs/libgfortran-91cc3cb1.so.3.0.0,sha256=yG4uC4CkJbuXNkV2kISH0t7i_MNYl1Y8rUbu79S2j5c,1259664
+titanlib.libs/libgsl-cb3064f9.so.0.16.0,sha256=ECg609oDz78EpcFZuo918FOM_h5FH-_DigCf1XTQOQQ,2536232
