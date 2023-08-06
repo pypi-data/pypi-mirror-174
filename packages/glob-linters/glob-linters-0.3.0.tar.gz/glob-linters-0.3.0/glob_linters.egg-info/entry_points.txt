@@ -1,0 +1,2 @@
+[console_scripts]
+glob-linters = glob_linters.cli:main
