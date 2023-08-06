@@ -1,0 +1,8 @@
+Genshi
+trytond<6.7,>=6.6
+
+[test]
+trytond_company<6.7,>=6.6
+trytond_commission<6.7,>=6.6
+trytond_party<6.7,>=6.6
+trytond_web_user<6.7,>=6.6
