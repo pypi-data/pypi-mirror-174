@@ -1,0 +1,9 @@
+mongodb_connector/__init__.py,sha256=YvOqnmJIgNj3vlSxccefal8B-lSXJVoaWtDRsvcpohY,203
+mongodb_connector/connector/__init__.py,sha256=50OUXutiRWDfw_pL1HKDvE706kbDI0toGLFrTXpT6dc,39
+mongodb_connector/connector/mongo.py,sha256=2izDh4APZEeRrb7Yb_oRNGDnQPara-Q4FxSHvZC4LiU,443
+mongodb_connector/models/__init__.py,sha256=3xNReFEqtz3rXLFpOi97R2bUK4wHz9uIlNePJPFzV6I,48
+mongodb_connector/models/data_models.py,sha256=5CcqnX4SaCxUG32gH4FemXNiPF7yr5bKt0pu0m6_PN0,599
+goldberg_mongodb_connector-0.1.0.dist-info/LICENSE,sha256=h5ooSfRsGFgK-TUdVTU805Kf6-IWwmMHoLdjBh4eIJc,1073
+goldberg_mongodb_connector-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+goldberg_mongodb_connector-0.1.0.dist-info/METADATA,sha256=IURjHl6jA7szfQ79hGsBs7XD4mT7EXeUfloWohWtms0,818
+goldberg_mongodb_connector-0.1.0.dist-info/RECORD,,
