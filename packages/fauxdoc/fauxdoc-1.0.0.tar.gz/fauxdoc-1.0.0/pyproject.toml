@@ -1,0 +1,119 @@
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fauxdoc"
+description = "Python package for generating fake (faux) record or document (doc) data conforming to bespoke requirements."
+readme = "README.md"
+authors = [{ name = "Jason Thomale", email = "jason.thomale@unt.edu"}]
+keywords = ["data", "fake", "mock", "faux", "Solr", "databases", "models",
+            "fixtures", "faker", "testing", "benchmarking", "records",
+            "documents"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Testing :: Mocking"
+]
+dynamic = ["version"]
+requires-python = ">=3.7"
+dependencies = [
+    # Note: we only use typing_extensions for `Protocol` support, added
+    # to Python in 3.8. So this dependency is only needed for 3.7.
+    'typing_extensions >= 3.6.5; python_version == "3.7"',
+    # For Python >=3.8 we use importlib.metadata to get the installed
+    # package version so we can use pyproject.toml as the single source
+    # of truth for the version number. This was new in 3.8, so for 3.7
+    # we have to use importlib_metadata.
+    'importlib_metadata >= 2.0.0; python_version == "3.7"'
+]
+
+[project.urls]
+homepage = "https://github.com/unt-libraries/fauxdoc"
+repository = "https://github.com/unt-libraries/fauxdoc"
+
+[project.optional-dependencies]
+dev = [
+    'pytest >= 6.2.4; python_version >= "3.10"',
+    'pytest >= 3.0.0; python_version < "3.10"'
+]
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = flake8,pylint_critical,py{37,38,39,310,311}-{oldest,latest}
+isolated_build = True
+
+[testenv]
+extras =
+    dev
+commands =
+    pytest
+
+[testenv:py37-oldest]
+deps =
+    pytest==3.0.0
+    typing_extensions==3.6.5
+    importlib_metadata==2.0.0
+
+[testenv:py{38,39}-oldest]
+deps =
+    pytest==3.0.0
+
+[testenv:py{310,311}-oldest]
+deps =
+    pytest==6.2.4
+
+[testenv:flake8]
+basepython=python3.10
+skip_install = True
+deps =
+    flake8
+commands =
+    flake8 src/fauxdoc tests --exclude=__pycache__
+
+[testenv:pylint_critical]
+basepython=python3.10
+deps =
+    pylint
+commands =
+    pylint fauxdoc tests --errors-only --ignore=__pycache__
+
+[testenv:pylint_all]
+basepython=python3.10
+deps =
+    pylint
+commands =
+    pylint fauxdoc tests --ignore=__pycache__ --good-names=_,i,mn,mx,em
+
+[testenv:build_package]
+basepython=python3.10
+skip_install = True
+deps =
+    pytest
+    build
+    twine
+allowlist_externals =
+    bash
+commands =
+    bash -c 'rm -rf dist'
+    python -m build
+    bash -c 'python -m twine check dist/*.whl'
+    bash -c 'python -m twine check dist/*.gz'
+    bash -c 'python -m pip install dist/*.whl'
+    pytest
+"""

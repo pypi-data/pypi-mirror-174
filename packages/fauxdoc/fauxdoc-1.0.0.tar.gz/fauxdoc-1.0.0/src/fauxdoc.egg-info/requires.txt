@@ -1,0 +1,12 @@
+
+[:python_version == "3.7"]
+typing_extensions>=3.6.5
+importlib_metadata>=2.0.0
+
+[dev]
+
+[dev:python_version < "3.10"]
+pytest>=3.0.0
+
+[dev:python_version >= "3.10"]
+pytest>=6.2.4
