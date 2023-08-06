@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name="arbutus"
+version="0.0.4"
+authors=[{name="Alvaro Bravo", email="alvaroubravo@gmail.com"},]
+description= "Simplification of CLI construction in Python based on argparse: just add branches and arguments. CLI construction from yaml file also available."
+readme="README.md"
+requires-python=">=3.8"
+classifiers= [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/aubravo/arbutus"
+"Bug Tracker" = "https://github.com/aubravo/arbutus/issues"

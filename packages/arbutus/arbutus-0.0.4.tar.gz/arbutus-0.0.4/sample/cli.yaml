@@ -1,0 +1,27 @@
+main:
+  branches:
+    sum:
+      arguments:
+        integers:
+          type: float
+          nargs: +
+          help: list of integers to sum
+          action:
+            name: sum_
+            source: sample
+    multiply:
+      arguments:
+        integers:
+          type: float
+          nargs: +
+          help: list of integers to sum
+          action:
+            name: mult_
+            source: sample
+    store:
+      arguments:
+        something:
+          type: str
+          nargs: +
+          help: string or strings to save
+          action: store
