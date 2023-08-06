@@ -1,0 +1,133 @@
+[
+    {
+        "en": "Family",
+        "fi": "Perhe",
+        "nl": "De familie"
+    },
+    {
+        "female": {
+            "en": "Grandma",
+            "fi": [
+                "Mummo",
+                "Mummi"
+            ],
+            "nl": "De oma"
+        },
+        "male": {
+            "en": "Grandpa",
+            "fi": [
+                "Vaari",
+                "Ukki"
+            ],
+            "nl": "De opa"
+        }
+    },
+    {
+        "female": {
+            "en": "Grandmother",
+            "fi": "Isoäiti",
+            "nl": "De grootmoeder"
+        },
+        "male": {
+            "en": "Grandfather",
+            "fi": "Isoisä",
+            "nl": "De grootvader"
+        }
+    },
+    {
+        "en": "Married",
+        "fi": "Naimisissa",
+        "nl": "Getrouwd"
+    },
+    {
+        "en": "Divorced",
+        "fi": "Eronnut",
+        "nl": "Gescheiden"
+    },
+    {
+        "female": {
+            "en": "Mother",
+            "fi": "Äiti",
+            "nl": "De moeder"
+        },
+        "male": {
+            "en": "Father",
+            "fi": "Isä",
+            "nl": "De vader"
+        }
+    },
+    {
+        "en": "Child",
+        "fi": "Lapsi",
+        "nl": "Het kind"
+    },
+    {
+        "female": {
+            "en": "Sister",
+            "fi": "Sisko",
+            "nl": "De zus"
+        },
+        "male": {
+            "en": "Brother",
+            "fi": "Veli",
+            "nl": "De broer"
+        }
+    },
+    {
+        "en": "Cousin",
+        "fi": "Serkku",
+        "nl": [
+            "De neef",
+            "De nicht"
+        ]
+    },
+    {
+        "en": "Grandchild",
+        "fi": "Lapsenlapsi",
+        "nl": "Het kleinkind"
+    },
+    {
+        "female": {
+            "en": "Daughter",
+            "fi": "Tytär",
+            "nl": "De dochter"
+        },
+        "male": {
+            "en": "Son",
+            "fi": "Poika",
+            "nl": "De zoon"
+        }
+    },
+    {
+        "female": {
+            "en": "Wife",
+            "fi": "Vaimo",
+            "nl": "De echtgenote"
+        },
+        "male": {
+            "en": "Husband",
+            "fi": "Aviomies",
+            "nl": "De echtgenoot"
+        }
+    },
+    {
+        "en": "Spouse",
+        "fi": "Puoliso",
+        "nl": "De partner"
+    },
+    {
+        "en": "Marriage",
+        "fi": "Avioliitto",
+        "nl": "Het huwelijk"
+    },
+    {
+        "en": "Parents",
+        "fi": "Vanhemmat",
+        "nl": "De ouders"
+    },
+    {
+        "en": "Grandparents",
+        "fi": "Isovanhemmat",
+        "nl": "De grootouders"
+    }
+]
