@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "semithuesystem"
+version = "1.0.0"
+description = "This package is a representation of a string rewriting system, historically called the Semi-Thue System."
+authors = ["pab-h <dev.pab.2020@gmail.com>"]
+readme = "README.md"
+packages = [{include = "semithuesystem"}]
+keywords = ["Semi-Thue", "string", "rewriting", "SRS"]
+homepage = "https://github.com/pab-h/semi_thue_system"
+repository = "https://github.com/pab-h/semi_thue_system"
+documentation = "https://github.com/pab-h/semi_thue_system"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
