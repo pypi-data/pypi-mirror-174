@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: OccuPy
+Version: 0.1.8rc2
+Summary: OccuPy: Estimation of local scale in cryo-EM maps
+Home-page: https://github.com/bforsbe/OccuPy
+Author: Bjoern O. Forsberg
+Author-email: bjorn.forsberg@ki.se
+License: GPLv3
+Project-URL: Source Code, https://github.com/bforsbe/OccuPy
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: testing
+License-File: LICENSE
+
+# OccuPy
+A fast and simple python module and program to estimate local scaling of cryo-EM maps, to approximate relative
+occupancy and/or resolution, and optionally also equalise the map according to occupancy while suppressing solvent 
+amplification.
+
+Further documentation, instructions, and tutorials are available here. 
