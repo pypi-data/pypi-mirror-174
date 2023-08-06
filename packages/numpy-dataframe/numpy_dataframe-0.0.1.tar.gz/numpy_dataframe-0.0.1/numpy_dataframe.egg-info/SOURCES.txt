@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+numpy_dataframe/__init__.py
+numpy_dataframe/numpy_dataframe.py
+numpy_dataframe.egg-info/PKG-INFO
+numpy_dataframe.egg-info/SOURCES.txt
+numpy_dataframe.egg-info/dependency_links.txt
+numpy_dataframe.egg-info/not-zip-safe
+numpy_dataframe.egg-info/top_level.txt
