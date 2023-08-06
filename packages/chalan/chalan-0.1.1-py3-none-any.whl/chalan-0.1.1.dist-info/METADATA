@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: chalan
+Version: 0.1.1
+Summary: Elasticsearch migrations tool
+Home-page: https://github.com/anandtripathi5/chalan
+Author: Anand Tripathi
+Author-email: anand.tripathi507@gmail.com
+License: MIT License
+License-File: LICENSE
+Requires-Dist: elasticsearch (>8.0.0)
+Requires-Dist: typer (==0.6.1)
+Requires-Dist: rich (==12.5.1)
+Requires-Dist: Mako (~=1.2.2)
+
