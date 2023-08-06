@@ -1,0 +1,10 @@
+README.md
+setup.py
+Mlops_ml_deploy_made_iv.egg-info/PKG-INFO
+Mlops_ml_deploy_made_iv.egg-info/SOURCES.txt
+Mlops_ml_deploy_made_iv.egg-info/dependency_links.txt
+Mlops_ml_deploy_made_iv.egg-info/requires.txt
+Mlops_ml_deploy_made_iv.egg-info/top_level.txt
+src/__init__.py
+src/model_pipeline.py
+tests/__init__.py

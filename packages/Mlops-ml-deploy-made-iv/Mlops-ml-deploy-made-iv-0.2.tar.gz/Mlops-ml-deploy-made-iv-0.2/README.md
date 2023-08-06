@@ -1,0 +1,15 @@
+# mlops_made_2022
+
+
+Настраиваем окружение:
+
+1) ```python -m venv .venv```
+2) ```source .venv/bin/activate```
+3) ```pip install -r requirements.txt```
+
+requirements.txt созданы с помощью консольной утилиты:
+1) ```pip freeze | grep -v hw01 > requirements.txt```
+
+Формируем .gitignore файл для проекта + global для всей системы:
+1) ```curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore``` - последней строкой идет закомменченный игнор .idea для pycharm, нужно раскомментить вручную (актуально для меня)
+2) ```curl -o $HOME/.gitignore_global https://raw.githubusercontent.com/github/gitignore/master/Global/Linux.gitignore```
