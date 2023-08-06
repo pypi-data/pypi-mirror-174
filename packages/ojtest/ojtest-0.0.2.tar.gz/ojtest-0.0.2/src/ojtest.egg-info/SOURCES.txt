@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/ojtest/__init__.py
+src/ojtest/rand_list.py
+src/ojtest/rand_str.py
+src/ojtest.egg-info/PKG-INFO
+src/ojtest.egg-info/SOURCES.txt
+src/ojtest.egg-info/dependency_links.txt
+src/ojtest.egg-info/top_level.txt
