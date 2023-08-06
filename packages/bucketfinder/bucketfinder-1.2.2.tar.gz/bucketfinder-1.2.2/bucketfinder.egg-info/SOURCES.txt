@@ -1,0 +1,7 @@
+README.md
+setup.py
+bin/bucketfinder
+bucketfinder.egg-info/PKG-INFO
+bucketfinder.egg-info/SOURCES.txt
+bucketfinder.egg-info/dependency_links.txt
+bucketfinder.egg-info/top_level.txt
