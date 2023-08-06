@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+piracer/__init__.py
+piracer/cameras.py
+piracer/gamepads.py
+piracer/vehicles.py
+piracer_py.egg-info/PKG-INFO
+piracer_py.egg-info/SOURCES.txt
+piracer_py.egg-info/dependency_links.txt
+piracer_py.egg-info/requires.txt
+piracer_py.egg-info/top_level.txt
