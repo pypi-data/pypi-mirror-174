@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kimbo"
+version = "0.1.1"
+description = "A Python micro framework for AWS lambda inspired by mixin design pattern."
+authors = [
+  { name = "NiumXp" },
+] 
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "MIT" }
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Utilities",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/NiumXp/kimbo"
+"Bug Tracker" = "https://github.com/NiumXp/kimbo/issues"
+
+[tool.setuptools]
+packages = [
+  "kimbo",
+  "kimbo.mixins",
+]
+include-package-data = true
+

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+kimbo/__init__.py
+kimbo.egg-info/PKG-INFO
+kimbo.egg-info/SOURCES.txt
+kimbo.egg-info/dependency_links.txt
+kimbo.egg-info/top_level.txt
+kimbo/mixins/__init__.py
+kimbo/mixins/api_gateway.py
+kimbo/mixins/sqs.py

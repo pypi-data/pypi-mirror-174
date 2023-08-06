@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: kimbo
+Version: 0.1.1
+Summary: A Python micro framework for AWS lambda inspired by mixin design pattern.
+Author: NiumXp
+License: MIT
+Project-URL: Homepage, https://github.com/NiumXp/kimbo
+Project-URL: Bug Tracker, https://github.com/NiumXp/kimbo/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# kimbo
+A Python micro framework for AWS lambda inspired by mixin design pattern.
+
+## Installation
+**Python 3.6 or higher is required.**
+```
+python3 -m pip install -U kimbo
+```
+
+## Example
+```python
+import kimbo
+import kimbo.mixins.api_gateway
+
+
+class HelloWorld(
+  kimbo.mixins.api_gateway.ProxyResponseMixin,
+  kimbo.Handler,
+):
+  def init(self):
+    self.message = "Hello, world!"
+
+  def perform(self):
+    return self.response(self.message)
+
+
+lambda_handler = HelloWorld()
+```
+
