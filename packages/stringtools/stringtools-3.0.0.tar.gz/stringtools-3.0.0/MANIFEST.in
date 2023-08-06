@@ -1,0 +1,2 @@
+include stringtools/*
+include stringtools/languages/*.txt
