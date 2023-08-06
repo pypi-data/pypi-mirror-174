@@ -1,0 +1,3 @@
+[console_scripts]
+joulehunter = joulehunter.__main__:main
+
