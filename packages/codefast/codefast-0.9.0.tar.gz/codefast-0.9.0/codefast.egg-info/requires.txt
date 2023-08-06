@@ -1,0 +1,13 @@
+colorlog
+lxml
+requests
+tqdm
+loguru
+smart-open
+pillow
+bs4
+arrow
+termcolor
+pydub
+pycryptodome
+requests-toolbelt
