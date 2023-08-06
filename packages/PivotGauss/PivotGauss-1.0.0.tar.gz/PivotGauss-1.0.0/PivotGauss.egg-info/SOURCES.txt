@@ -1,0 +1,10 @@
+LICENSE.txt.
+README.md
+setup.py
+PivotGauss/__init__.py
+PivotGauss/core.py
+PivotGauss.egg-info/PKG-INFO
+PivotGauss.egg-info/SOURCES.txt
+PivotGauss.egg-info/dependency_links.txt
+PivotGauss.egg-info/requires.txt
+PivotGauss.egg-info/top_level.txt
