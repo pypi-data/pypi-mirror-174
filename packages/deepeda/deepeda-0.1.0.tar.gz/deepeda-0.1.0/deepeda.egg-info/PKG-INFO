@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: deepeda
+Version: 0.1.0
+Summary: Useful PyTorch Layers
+Home-page: https://github.com/the-beee/generic-eda
+Author: Ayoub Assis
+Author-email: assis.ayoub@gmail.com
+License: LICENSE
+Keywords: pytorch cnn layers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# generic-eda
+Python package to quickly perform an EDA on a given dataset
