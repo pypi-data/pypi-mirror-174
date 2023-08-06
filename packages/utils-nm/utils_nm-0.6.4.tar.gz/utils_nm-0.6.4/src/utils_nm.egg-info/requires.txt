@@ -1,0 +1,4 @@
+SQLAlchemy==1.4.*
+pandas==1.5.*
+tqdm==4.64.*
+psutil==5.9.*
