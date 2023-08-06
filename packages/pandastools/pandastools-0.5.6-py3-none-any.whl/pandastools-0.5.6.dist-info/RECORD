@@ -1,0 +1,14 @@
+pandastools/__init__.py,sha256=fhc9ljlcRcuIzvddbAsCybHi8utWP3umD9Wy1DoH4wU,191
+pandastools/accessors/__init__.py,sha256=c-bMLLEbSuCYaJQunvR0-dQ0aPVQtJdzqpdVBeim0u4,233
+pandastools/accessors/dataframe.py,sha256=e_UrJsLcWInuimqxHU4Wq1RmI_iu-LOGli2B-GJFbo8,5931
+pandastools/accessors/index.py,sha256=UHZDPpz9UQ7vHTjgLuO-RvpwYIuRdlz2qfqpNDN8eCY,1695
+pandastools/accessors/scipydataframe.py,sha256=pQRYroTr4-54frGGZuysQmnfsOGgnRYLiziYfXX7UZ8,1765
+pandastools/accessors/series.py,sha256=-d1KUm7i58M5dCX-wkdMdMQh-5V9jOPGT2dzOtYqTVY,1944
+pandastools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pandastools/utils/__init__.py,sha256=vSdg6MFNsdihNGfkSMdw6VLvJcV0pxjdVNmYYTZ5eqQ,21
+pandastools/utils/dataimport.py,sha256=nvHkbL20vUjokHeEuE4zuRupJKSS9dzG4QalsAly2o0,4132
+pandastools/utils/helpers.py,sha256=aIa7fLm40OJO81jXhgIHwY4XrdibwDh5X1DU8YGPFWM,1292
+pandastools-0.5.6.dist-info/LICENSE,sha256=eaBeQ98VUypu9uOZ26JsjPmGm81hnKHh-xg8D6MR0xA,1078
+pandastools-0.5.6.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pandastools-0.5.6.dist-info/METADATA,sha256=Iadcy-JTLu1tCEIJT43QNimRzaOVQefgzcLcoOssieo,3168
+pandastools-0.5.6.dist-info/RECORD,,
