@@ -1,0 +1,3 @@
+[console_scripts]
+jsw_wcc=jsw_wcc.main:cli
+
