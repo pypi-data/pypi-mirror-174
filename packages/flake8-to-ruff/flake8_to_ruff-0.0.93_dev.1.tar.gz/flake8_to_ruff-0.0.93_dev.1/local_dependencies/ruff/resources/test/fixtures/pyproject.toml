@@ -1,0 +1,36 @@
+[tool.ruff]
+line-length = 88
+extend-exclude = [
+  "excluded.py",
+  "migrations",
+  "directory/also_excluded.py",
+]
+per-file-ignores = { "__init__.py" = ["F401"] }
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "single"
+multiline-quotes = "double"
+docstring-quotes = "double"
+avoid-escape = true
+
+[tool.ruff.pep8-naming]
+ignore-names = [
+  "setUp",
+  "tearDown",
+  "setUpClass",
+  "tearDownClass",
+  "setUpModule",
+  "tearDownModule",
+  "asyncSetUp",
+  "asyncTearDown",
+  "setUpTestData",
+  "failureException",
+  "longMessage",
+  "maxDiff",
+]
+classmethod-decorators = [
+  "classmethod",
+]
+staticmethod-decorators = [
+  "staticmethod",
+]
