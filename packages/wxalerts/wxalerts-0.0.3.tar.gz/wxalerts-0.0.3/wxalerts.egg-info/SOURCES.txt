@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+wxalerts/__init__.py
+wxalerts/wxalerts.py
+wxalerts.egg-info/PKG-INFO
+wxalerts.egg-info/SOURCES.txt
+wxalerts.egg-info/dependency_links.txt
+wxalerts.egg-info/requires.txt
+wxalerts.egg-info/top_level.txt
