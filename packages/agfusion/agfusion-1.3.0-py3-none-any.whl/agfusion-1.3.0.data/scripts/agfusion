@@ -1,0 +1,5 @@
+#!python
+
+from agfusion import cli
+
+cli.main()
