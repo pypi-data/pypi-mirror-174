@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: balcony
+Version: 0.0.24
+Summary: AWS API for humans
+License: GPL-3.0-or-later
+Author: Oguzhan Yilmaz
+Author-email: oguzhanylmz271@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: boto3 (>=1.24.80,<2.0.0)
+Requires-Dist: inflect (>=6.0.0,<7.0.0)
+Requires-Dist: jmespath (>=1.0.1,<2.0.0)
+Requires-Dist: rich (>=12.5.1,<13.0.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+# balcony
+AWS API for humans
+
+
+## Installation
+
+```bash
+pip3 install balcony
+```
+
+## Basic Usage
+
+
+```bash
+balcony --help
+
+# list all available services
+balcony aws ls 
+
+# list resource nodes of a service
+balcony aws ls iam
+
+# details about the resource node
+balcony aws ls iam Policy
+
+# read a Resource Node from AWS API
+balcony aws read iam Policy
+```
