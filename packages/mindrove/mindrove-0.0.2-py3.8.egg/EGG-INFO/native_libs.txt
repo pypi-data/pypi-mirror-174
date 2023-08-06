@@ -1,0 +1,10 @@
+mindrove/lib/BoardController.dll
+mindrove/lib/BoardController32.dll
+mindrove/lib/DataHandler.dll
+mindrove/lib/DataHandler32.dll
+mindrove/lib/MLModule.dll
+mindrove/lib/MindRoveBluetooth.dll
+mindrove/lib/MindRoveBluetooth32.dll
+mindrove/lib/libBoardController.so
+mindrove/lib/libDataHandler.so
+mindrove/lib/libMLModule.so
