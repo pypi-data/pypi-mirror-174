@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: api2case
+Version: 0.1.20
+Summary: 转换Swagger API为极星测试框架的YAML测试用例
+Home-page: https://github.com/CaptainJi/api2case
+Author: Captain Ji
+Author-email: qing.ji@extremevision.com.cn
+License: Apache-2.0
+Description: Swagger API to testcase
+        =====
+        
+        ## Features
+        -  Swagger API to YAML testcase
+        -  Generate YML use case templates based on the Swagger API description
+        
+        ## Future
+        -  Automatically generate actionable use cases
+        
+Keywords: json api compare comparison order unicode yaml yml
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
