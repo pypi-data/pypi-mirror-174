@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "functional_flow"
+version = "0.0.1"
+authors = [
+  { name="sko2", email="sko2.dev@gmail.com" },
+]
+description = "A small library for the compose and flow functions."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sko-2/functional-flow"
+"Bug Tracker" = "https://github.com/sko-2/functional-flow/issues"
