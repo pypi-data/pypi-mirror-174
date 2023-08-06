@@ -1,0 +1,13 @@
+comply/__init__.py,sha256=gnsjvkDhYufH3B3KD-IMuGGGZ6GHZsKnJucYE_EeYRE,230
+comply/__version__.py,sha256=Auwbu_KHJW2AIdw3C2vyNBL2K4BIA8lpfZSTlzMkwM0,6
+comply/main.py,sha256=fIy34XMoRI0V9e44HaPKyjoW4l1M_gYoN4dFczvGcvI,108
+comply/test.py,sha256=NXe-4PamNIbqWTIorW_ktSbk09eyRLpEtXme7S1B6nQ,47
+comply/complyLocal/__init__.py,sha256=ZcGL6EDd9mhMhlXQb3Zs6KYq2rRmeV10D93OQ18puP4,13
+comply/complyLocal/comply_.py,sha256=IEvXQbwQ7C_4ul0Oncfo_5neDqrO46KFyZtTejLHAcg,2612
+comply/complyLocal/tests_main.py,sha256=JcYxBjkyRB__txaD8RrNklNwjt2Vmc9sNbREz7jqjTY,54
+comply/complyLocal/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+comply/complyLocal/tests/test_comply.py,sha256=dyVQoRv4Sh9dV0zXNMprwHY8n09qofUvKMMWzaQpcYg,1818
+comply-0.0.1.dist-info/METADATA,sha256=leZ8nFUQ0mrQIX1E0_JBILI__8UjwtKUJakadoFCknE,2506
+comply-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+comply-0.0.1.dist-info/top_level.txt,sha256=BkQ7hYJ38K541tUd1TQ-oOYvx24S8LbkPOpstMKk9p4,7
+comply-0.0.1.dist-info/RECORD,,
