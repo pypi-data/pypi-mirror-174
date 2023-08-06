@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: fast-sentence-classify
+Version: 0.1.2
+Summary: Generic Sentence Classification Service
+Home-page: https://github.com/craigtrim/fast-sentence-classify
+License: None
+Keywords: nlp,nlu,text,classify,classification
+Author: Craig Trim
+Author-email: craigtrim@gmail.com
+Maintainer: Craig Trim
+Maintainer-email: craigtrim@gmail.com
+Requires-Python: ==3.8.5
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: baseblock
+Requires-Dist: spacy (==3.3)
+Project-URL: Bug Tracker, https://github.com/craigtrim/fast-sentence-classify/issues
+Project-URL: Repository, https://github.com/craigtrim/fast-sentence-classify
+Description-Content-Type: text/markdown
+
+# Fast Sentence Classification (fast-sentence-classify)
+
