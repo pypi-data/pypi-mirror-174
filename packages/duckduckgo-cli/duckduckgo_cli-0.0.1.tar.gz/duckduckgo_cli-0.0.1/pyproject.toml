@@ -1,0 +1,41 @@
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "duckduckgo-cli"
+version = "0.0.1"
+authors = [
+    { name = "Ryan Moore", email = "ryanm.inbox@gmail.com" },
+]
+description = "Search duckduckgo in terminal open browser"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/yrom1/duckduckgo-cli"
+"Bug Tracker" = "https://github.com/yrom1/duckduckgo-cli/issues"
+
+[project.scripts]
+ddg = "duckduckgo_cli.main:main"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
+[tool.ty]
+type_checker = "mypy"
+
+[tool.mypy]
+pretty = true
+strict = true

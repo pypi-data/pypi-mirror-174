@@ -1,0 +1,36 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  type-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get source
+        uses: actions/checkout@v2
+      - name: Get Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+      - name: Install dev-requirements
+        run: pip install -r dev-requirements.txt
+      - name: Type check
+        run: ty
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get source
+        uses: actions/checkout@v2
+      - name: Get Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+      - name Install itself
+        run: pip install .
+      - name: Install dev-requirements
+        run: pip install -r dev-requirements.txt
+      - name: Pytest
+        run: pytest

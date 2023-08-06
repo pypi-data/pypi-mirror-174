@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: duckduckgo-cli
+Version: 0.0.1
+Summary: Search duckduckgo in terminal open browser
+Project-URL: Homepage, https://github.com/yrom1/duckduckgo-cli
+Project-URL: Bug Tracker, https://github.com/yrom1/duckduckgo-cli/issues
+Author-email: Ryan Moore <ryanm.inbox@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+
+---
+WORK IN PROGRESS
+---
+
+# duckduckgo-cli
+Search duckduckgo in terminal open browser
+
+## Install
+```
+pip install duckduckgo-cli
+```
+
+## Typical usage examples
+```
+$ ddg !py3 webbrowser # searches "!py3 webbrowser" on https://duckduckgo.com/
+```

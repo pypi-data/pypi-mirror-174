@@ -1,0 +1,27 @@
+name: Continuous Deployment
+
+on:
+  workflow_run:
+    workflows: ["Update docs"]
+    types:
+      - completed # TODO this runs for success AND failure
+  workflow_dispatch:
+
+env:
+  TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
+  TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+
+jobs:
+   continuous-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get source
+        uses: actions/checkout@v2
+      - name: Get Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+      - name: Install ty's requirements
+        run: pip install -r dev-requirements.txt
+      - name: Publish on PyPI if new version
+        run: bash continuous-deployment.sh
