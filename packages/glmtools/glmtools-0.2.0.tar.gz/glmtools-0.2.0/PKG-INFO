@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: glmtools
+Version: 0.2.0
+Summary: GLMtools
+Home-page: UNKNOWN
+Author: Andrew Quinn <andrew.quinn@psych.ox.ac.uk>
+Author-email: andrew.quinn@psych.ox.ac.uk
+License: UNKNOWN
+Keywords: General Linear Model Design Matrix Regression Statistics Permutations
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+
+A python package for General Linear Modelling & a work-in-progress
+
+Development at: https://gitlab.com/ajquinn/glmtools
+
+
