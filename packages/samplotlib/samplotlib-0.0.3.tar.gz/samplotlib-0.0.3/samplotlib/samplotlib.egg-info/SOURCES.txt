@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+samplotlib/samplotlib.egg-info/PKG-INFO
+samplotlib/samplotlib.egg-info/SOURCES.txt
+samplotlib/samplotlib.egg-info/dependency_links.txt
+samplotlib/samplotlib.egg-info/requires.txt
+samplotlib/samplotlib.egg-info/top_level.txt
