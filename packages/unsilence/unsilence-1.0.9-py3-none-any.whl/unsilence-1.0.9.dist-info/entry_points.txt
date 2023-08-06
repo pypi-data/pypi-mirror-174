@@ -1,0 +1,2 @@
+[console_scripts]
+unsilence = unsilence.command_line.EntryPoint:main
