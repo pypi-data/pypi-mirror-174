@@ -1,0 +1,12 @@
+requests
+jwt
+Click
+tqdm
+ipywidgets
+tritonclient[all]
+docker
+numpy
+Pillow
+diffusers
+transformers
+rich
