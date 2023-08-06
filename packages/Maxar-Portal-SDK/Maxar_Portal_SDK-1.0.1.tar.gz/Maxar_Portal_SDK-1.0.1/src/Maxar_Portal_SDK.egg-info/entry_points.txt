@@ -1,0 +1,11 @@
+[console_scripts]
+area = MPS_Portal_SDK.ogc.cli_commands:calculate_bbox_sqkm
+bands = MPS_Portal_SDK.ogc.cli_commands:band_manipulation
+config = MPS_Portal_SDK.ogc.cli_commands:config_file
+createToken = MPS_Portal_SDK.token_service.cli_commands:create_token
+deleteToken = MPS_Portal_SDK.token_service.cli_commands:delete_tokens
+download = MPS_Portal_SDK.ogc.cli_commands:download
+listTokens = MPS_Portal_SDK.token_service.cli_commands:get_tokens
+password = MPS_Portal_SDK.ogc.cli_commands:reset_password
+search = MPS_Portal_SDK.ogc.cli_commands:search
+token = MPS_Portal_SDK.token_service.cli_commands:show_secret
