@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/daga/__init__.py
+src/daga/functions.py
+src/daga.egg-info/PKG-INFO
+src/daga.egg-info/SOURCES.txt
+src/daga.egg-info/dependency_links.txt
+src/daga.egg-info/requires.txt
+src/daga.egg-info/top_level.txt

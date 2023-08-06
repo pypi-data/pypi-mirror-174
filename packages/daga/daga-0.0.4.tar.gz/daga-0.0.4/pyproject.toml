@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "pandas>=1.5.0", "opencv-python>=4.6.0", "matplotlib>=3.6.0", "sdv>=0.17.1", "scikit-learn>=1.1.2"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = ["pandas", "cv2", "matplotlib.pyplot", "sdv", "sklearn"]
+
+[project]
+name = "daga"
+version = "0.0.4"
+authors = [
+  { name="Elene Astondoa and Ane Martínez", email="anemartinezorellana@outlook.es" },
+]
+description = "This is a library that makes data augmentation based on SDV library using a single objective algorithm to get the distributions of the variables."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/anemartinez1/pypi_library"
+"Bug Tracker" = "https://github.com/anemartinez1/pypi_library/issues"

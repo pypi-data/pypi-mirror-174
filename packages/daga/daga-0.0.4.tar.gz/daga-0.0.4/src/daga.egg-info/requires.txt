@@ -1,0 +1,7 @@
+
+[dev]
+pandas
+cv2
+matplotlib.pyplot
+sdv
+sklearn
