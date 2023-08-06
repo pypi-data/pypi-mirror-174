@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: py-detail-tools
+Version: 1.0.0
+Summary: 这是一个处理字符串小工具
+Home-page: https://pypi.org/manage/account/
+Author-email: xiaoyaojianxians@163.com
+Maintainer: robin
+Maintainer-email: xiaoyaojianxians@163.com
+License: UNKNOWN
+Description: 这是一个处理字符串小工具,后续会不断更新叠加各种字符串处理功能
+Keywords: 字符串,字符处理,正则过滤表情字符,表情字符
+Platform: UNKNOWN
