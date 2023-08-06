@@ -1,0 +1,13 @@
+app:
+  device_id: null
+  pkg_name: null
+common:
+  base_url: https://app.qizhidao.com
+  env: null
+  login:
+    hello: xxx
+  platform: api
+  timeout: 10
+  visit: {}
+web:
+  browser: chrome
