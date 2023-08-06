@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pipe-viper
+Version: 0.1.2
+Summary: Pwsh utils for python
+Home-page: https://github.com/Phelsong/pipe_viper
+License: MIT
+Author: Josh S Wilkinson
+Author-email: JoshsWilkinson@Outlook.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/Phelsong/pipe_viper
+Description-Content-Type: text/markdown
+
+# Pipe Viper Plugin
+
+* This core plugin is meant simply for time savings and only uses the standard Python library, the goal is no additional dependencies.
+* Plugins may take dependencies in the future  
+  
+__Currently only supports running a single `.ps1` or `string` Powershell command.__  
+I plan to add support for command scripts and other shells, as well as supporting libraries of useful script functionality. Though, this plugin will be primarily focused on PowerShell related functionality unless someone else expands on other shell support.
+
+## https://pypi.org/project/pipe-viper/
