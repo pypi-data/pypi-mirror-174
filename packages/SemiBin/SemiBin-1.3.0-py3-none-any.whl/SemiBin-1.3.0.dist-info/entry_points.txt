@@ -1,0 +1,2 @@
+[console_scripts]
+SemiBin = SemiBin.main:main
