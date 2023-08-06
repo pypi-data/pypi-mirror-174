@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: sleepyemoji
+Version: 0.1.5
+Summary: Print all the emojis that sleepyboy thinks are worthwhile!
+License: GNU GPL
+Keywords: emoji,unicode
+Author: anthonybench
+Author-email: anythonybenchyep@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# **Emoji**
+*A command line emoji tool, for the >%20 of emojis you actually care about.*
+
+<br />
+
+## **Mechanical Overview**
+After setting up **Envi**, run `emoji [-h|--help]` to display this message:
+```txt
+This tool prints emojis of one or more catgories, each defined in their own file.
+Emojis are given along with their unicode value, discord shorthand, and ios descriptor.
+
+For the official emoji index:
+  https://unicode.org/emoji/charts/full-emoji-list.html
+
+
+Provide 1 or more options of various emoji categories, or simply request all of them.
+--------------
+All:
+  ./main.py [-C|--complete]
+Categories:
+  /main.py [*flags]
+    [-A|--animals]
+    [-F|--faces]
+    [-H|--hands]
+    [-I|--icons]
+    [-P|--people]
+    [--combos|--combinations]
+Example:
+  ./main.py -A -H
+Info:
+  ./main.py [-h|--help]
+--------------
+```
+
+<br /><hr>
+
+## **Contributing**
+This tool is kept in **Envi**, where emoji data is added in `emojis/toolchain` in the corresponding folders.
+
+Remember to pull before you push!
+
+<br /><hr />
+
+## **References**
+- [Emoji Index](https://unicode.org/emoji/charts/full-emoji-list.html)
