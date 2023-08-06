@@ -1,0 +1,4 @@
+gffutils
+Biopython
+reportlab
+matplotlib
