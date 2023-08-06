@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "vsui-client"
+version = "0.1.1"
+description = "Client module for connecting to Volume Segmantics User Inteface"
+authors = ["Matthew Pimblott <matthew.pimblott@diamond.ac.uk>"]
+readme = "README.md"
+packages = [{include = "vsui_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-socketio = {extras = ["client"], version = "^5.7.2"}
+
+[build-system]
+requires = ["poetry-core"]
+builds-backend = "poetry.core.masonry.api"
