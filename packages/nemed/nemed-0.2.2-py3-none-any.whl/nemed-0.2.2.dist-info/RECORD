@@ -1,0 +1,16 @@
+nemed/__init__.py,sha256=D6JnP9x9oTw6t58t5o9mxTOofQuhLQBU7mlNTlUlhJI,135
+nemed/data/CO2EII_SUMMARY_RESULTS_FY1920.csv,sha256=Gs9g4_Zt9GyIAPoR9LSzHEu9krBQzPQj0U2IJsUIZRw,179558
+nemed/data/CO2EII_SUMMARY_RESULTS_FY2122.csv,sha256=Dgp3lVSlFKqpcmJNND98iiOpbqs8cbUDJe5JqcN84Pc,175669
+nemed/data/CO2EII_SUMMARY_RESULTS_RECENT.csv,sha256=2L5Z0Xr5lQDsi381aS2dNmcK_VOd4uL7y4FUjBV_-yM,115351
+nemed/data/duid_mapping.csv,sha256=bAxypQe3wtS4FBLd4eL5JglJCXhJMZ-Oh11VQMM7ly0,31287
+nemed/data/existing_gen_data_summary.csv,sha256=yNB4vOKtmAOKq-mLR5Ej7omb0LHIwyEKNKtI7tCatnE,31508
+nemed/defaults.py,sha256=yKVsCloZBbHBPN8aYhDYqNOqv4grZqQQUGKPdT-UwP0,410
+nemed/downloader.py,sha256=-h0z2gnY9kkQs05hd1BZYY9cfzp4YLUQG0n-V_sWmbk,18466
+nemed/helper_functions/helpers.py,sha256=NnuQa13i7iz2ioegcsjaL9gYOXZuuHY8dhX0XNCiby8,611
+nemed/helper_functions/mod_xml_cache.py,sha256=LLFXYY7b-RtnkB3YB-gHbuuHk0asd0woG5_xH669eFk,5757
+nemed/nemed.py,sha256=wDMU9kRL8SWh0rQ73_sc9SMKeYYVhFx1vNtTUiG-sYs,3904
+nemed/process.py,sha256=yBNxCZMBVsQ6tpuiVVro4sJ_nFzki4Ll6_5o84YOM9A,13177
+nemed-0.2.2.dist-info/LICENSE,sha256=7cfSCLuKew5B0d2f-2ty9gX2mvEttStqAGq_3ftLHBA,1518
+nemed-0.2.2.dist-info/WHEEL,sha256=Jaj29f-PvHzZb5kImTcJS9QszpaO6CVzAqOolIz_WEw,90
+nemed-0.2.2.dist-info/METADATA,sha256=qkNGPbmevD1F0_QCWU_X2RSxiEZ2WvVi-kxKvXYRWio,4395
+nemed-0.2.2.dist-info/RECORD,,
