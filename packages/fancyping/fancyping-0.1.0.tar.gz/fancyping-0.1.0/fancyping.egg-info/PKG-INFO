@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fancyping
+Version: 0.1.0
+Summary: Colorful ICMP pings for your terminal
+Author: Torsten Rehn
+Author-email: torsten@rehn.email
+License: GPLv3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: System :: Systems Administration
+License-File: LICENSE
