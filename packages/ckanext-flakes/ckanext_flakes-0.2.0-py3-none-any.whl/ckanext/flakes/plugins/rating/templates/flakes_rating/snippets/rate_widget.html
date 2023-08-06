@@ -1,0 +1,47 @@
+{#
+type
+id
+#}
+{% asset "flakes_rating/rate" %}
+
+{% set rating = h.flakes_rating_get_rating(type, id) %}
+
+<style>
+ .flakes-rating--rate-widget .star-holder {
+     display: flex;
+     justify-content: space-around;
+ }
+ .flakes-rating--rate-widget .star-holder .star {
+     text-align: center;
+     display: block;
+     width: 100%;
+     color: gold;
+     cursor: pointer;
+ }
+ .flakes-rating--rate-widget .star-holder .star.star-empty {
+     color: black;
+ }
+ .flakes-rating--rate-widget .star-holder .star.active {
+     color: gold;
+ }
+
+
+</style>
+<p class="m-left m-top">
+    {{ _("Current rating(based on {count} votes):").format(count=rating.count) }}
+    <strong class="text-center">{{ "{average:.2f}".format(average=rating.average) }}</strong>
+</p>
+
+<div class="flakes-rating--rate-widget"
+     {% if h.check_access("flakes_rating_rate", {"target_type": type, "target_id": id}) %} data-module="flakes-rating-rate"{% endif %}
+     data-module-type="{{ type }}"
+     data-module-id="{{ id }}"
+     data-module-current="{{ rating.own }}"
+>
+    <div class="star-holder">
+        {% for i in range(5) %}
+            <i class="fa fa-star-o star-empty star"></i>
+        {% endfor %}
+    </div>
+
+</div>
