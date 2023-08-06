@@ -1,0 +1,2 @@
+[console_scripts]
+urlprofiler = urlprofiler.profile.profile_url:profile_url_cli
