@@ -1,0 +1,11 @@
+bitmake/__init__.py,sha256=cqAtt_Pu4gUGo3L5MU_F65CsstH9PniWPYievUdGkKQ,4130
+bitmake/rest.py,sha256=XheVDZ5Ls5G05WDWHZ7Ygzht3ujLzAn6SvlSNxEZaZ4,5681
+bitmake/ws.py,sha256=kc9gOJKJuFmX2JIaIxOZm_ByjrxfinVYr_bbHbwUtLc,4828
+tests/__init__.py,sha256=kfljTBq-KliWlqWrz6nPgj7X2HNWgiWkFhV8LWyz4FA,166
+tests/test_apiclient.py,sha256=uLYhInINVn-qrbKjd0j7kvwxuFS2QGIohgSaCy18lEE,1520
+tests/test_restapi.py,sha256=YwDzIyZYpiSj8ZLguwjKfA7HgeBpZIxaxkKvqnkPw5c,11230
+tests/test_wsapi.py,sha256=8pLUxdmGRzM36f--vWLKMAoaxabAz0rSojBgSe6X2Qs,1411
+bitmake-1.0.0.dist-info/METADATA,sha256=Zz-UARcaA_hmEXrn_h4DtSk0CC74ums8Svga_bCNKdQ,1358
+bitmake-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bitmake-1.0.0.dist-info/top_level.txt,sha256=-ImCi_0WrMjvDUxv-ho-G4A5tsOCmV92cW7k4B-nmmE,14
+bitmake-1.0.0.dist-info/RECORD,,
