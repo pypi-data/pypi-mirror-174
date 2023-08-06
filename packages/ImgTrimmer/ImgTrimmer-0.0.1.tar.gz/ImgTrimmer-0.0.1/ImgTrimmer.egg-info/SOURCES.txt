@@ -1,0 +1,9 @@
+README.md
+setup.py
+ImgTrimmer/Trimmer.py
+ImgTrimmer/__init__.py
+ImgTrimmer.egg-info/PKG-INFO
+ImgTrimmer.egg-info/SOURCES.txt
+ImgTrimmer.egg-info/dependency_links.txt
+ImgTrimmer.egg-info/requires.txt
+ImgTrimmer.egg-info/top_level.txt
