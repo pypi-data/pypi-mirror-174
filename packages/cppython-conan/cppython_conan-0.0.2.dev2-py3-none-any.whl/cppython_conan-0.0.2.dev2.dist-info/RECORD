@@ -1,0 +1,10 @@
+cppython_conan/__init__.py,sha256=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U,3
+cppython_conan/plugin.py,sha256=C-bbqOhR376VEzW8OXXGvCxI1p0T7LmS4bPDUVBy3rY,1694
+cppython_conan/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cppython_conan/resolution.py,sha256=vBEQdBwkoGbmORnn6lFdQOXoMRB09YmJBp4piil79Ig,764
+cppython_conan/schema.py,sha256=Eo2ki3qVQ0kvBkNqJEOySzfrkTGqnOu4ki_nyX5cL9U,373
+cppython_conan-0.0.2.dev2.dist-info/entry_points.txt,sha256=E4LmMQhrtSZq7nmFoQWE6-76JKZtqrZpXcv8A0LJ7j0,63
+cppython_conan-0.0.2.dev2.dist-info/WHEEL,sha256=TQSpXlWZjPl29LMjkpbkR7iGxKB2AMwzfSmPuPn1ZS8,87
+cppython_conan-0.0.2.dev2.dist-info/METADATA,sha256=b4XPOIb9kcouWz5-I-fhavZbEGTnsoESa1VuA22PQvU,537
+cppython_conan-0.0.2.dev2.dist-info/licenses/LICENSE.md,sha256=DF8M9vUPACLT93M1Pe9NrZzEG74uvc7GGgfDFaGOj5U,1070
+cppython_conan-0.0.2.dev2.dist-info/RECORD,,
