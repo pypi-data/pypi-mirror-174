@@ -1,0 +1,14 @@
+txfrestframeworkjwt/__init__.py,sha256=KMp8D0FDk1G5GlaCKg7JRKEaujRHGZ7YDJTK6Kc1y6Q,243
+txfrestframeworkjwt/authentication.py,sha256=S9Pn4yCFlUEK1ij7ZsQk3yPMXsdh3KEd2sWoKmGyvT4,3764
+txfrestframeworkjwt/compat.py,sha256=CZZXGQvxnu0AdVholU1p8wvjVY5xIJbW3NTmm77anyA,835
+txfrestframeworkjwt/models.py,sha256=pVyDPm6SAu-lYcKcFgVuQHvjNermXm9fzHwseTqpuQM,50
+txfrestframeworkjwt/serializers.py,sha256=FkkQ6by5w3ObEhFVbR5xen-xiK61bT-mQ_ljiT1POq0,5286
+txfrestframeworkjwt/settings.py,sha256=6-5-3lynwGvW-cd2iMhnAnY6zgTRVPjJExYhZtRFbNI,1634
+txfrestframeworkjwt/test.py,sha256=W598eDoxZQFIlYZoLZb7Uy6LdEjWRc3YV0HRGgE6SNU,771
+txfrestframeworkjwt/utils.py,sha256=mYyOpi53kG6JYidc9Q6k97Qyo9OAhUcV_S9o4HJJr-4,3762
+txfrestframeworkjwt/views.py,sha256=PfeKrmpoCv6aS9nKAksXQM3qX5rHXDDSv9yGSY5dfgk,3608
+txfrestframeworkjwt-4.1.dist-info/METADATA,sha256=96DaDR04_pCXOukYS4SUF-n2kZfOuiv1ITkM-_AnIUg,382
+txfrestframeworkjwt-4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+txfrestframeworkjwt-4.1.dist-info/top_level.txt,sha256=jLrA9LomDDhR2bivsKTOF7tpMUwT0rlUkQr5-RVtq7Q,20
+txfrestframeworkjwt-4.1.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+txfrestframeworkjwt-4.1.dist-info/RECORD,,
