@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wf-test
+Version: 0.1.1rc1
+Summary: Test Workflows.
+Author: Harshad Hegde
+Author-email: hhegde@lbl.gov
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: docs
+Requires-Dist: furo[docs] (>=2022.9.29,<2023.0.0); extra == "docs"
+Requires-Dist: myst-parser[docs] (>=0.18.1,<0.19.0); extra == "docs"
+Requires-Dist: pytest (>=7.2.0,<8.0.0)
+Requires-Dist: sphinx-autodoc-typehints[docs] (>=1.19.4,<2.0.0); extra == "docs"
+Requires-Dist: sphinx-click[docs] (>=4.3.0,<5.0.0); extra == "docs"
+Requires-Dist: sphinx[docs] (>=5.3.0,<6.0.0); extra == "docs"
+Requires-Dist: tox (>=3.27.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Workflows-test
+
+This is just a dummy repo to test the [`workflows`](https://github.com/hrshdhgd/workflows) GitHub Action project.
+
