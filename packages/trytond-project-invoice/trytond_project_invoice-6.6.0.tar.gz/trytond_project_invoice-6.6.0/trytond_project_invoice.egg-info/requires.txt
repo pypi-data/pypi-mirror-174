@@ -1,0 +1,13 @@
+python-sql>=0.4
+trytond_currency<6.7,>=6.6
+trytond_project<6.7,>=6.6
+trytond_project_revenue<6.7,>=6.6
+trytond_timesheet<6.7,>=6.6
+trytond_account<6.7,>=6.6
+trytond_account_invoice<6.7,>=6.6
+trytond_account_product<6.7,>=6.6
+trytond_product<6.7,>=6.6
+trytond<6.7,>=6.6
+
+[test]
+proteus<6.7,>=6.6
