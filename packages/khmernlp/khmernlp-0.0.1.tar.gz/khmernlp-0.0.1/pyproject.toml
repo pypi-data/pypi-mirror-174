@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "khmernlp"
+version = "0.0.1"
+authors = [
+  { name="Vitou Phy", email="phy_vitou@live.com" },
+]
+description = "Khmer NLP is a package for running natural langauge processing operations on Khmer language"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+"Homepage" = "https://github.com/vitouphy/khmer-nlp"
+"Bug Tracker" = "https://github.com/vitouphy/khmer-nlp/issues"

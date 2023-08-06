@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: khmernlp
+Version: 0.0.1
+Summary: Khmer NLP is a package for running natural langauge processing operations on Khmer language
+Author-email: Vitou Phy <phy_vitou@live.com>
+Project-URL: Homepage, https://github.com/vitouphy/khmer-nlp
+Project-URL: Bug Tracker, https://github.com/vitouphy/khmer-nlp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# khmer-nlp
+
+## Installation
+```
+pip install khmernlp
+```
+
+## Usage
+
+```python
+# Tokenize and part-of-speech tagging
+khmernlp.tokenize([
+    "ពាក្យថាអង្គរ តាមវចនានុក្រមរបស់លោកគ្រូ ពៅ សាវរស អង្គរមកពីពាក្យសំស្ដ្រ នគរ មានន័យថា ទីក្រុង រាជធានី អាណាចក្រ",
+    "ប្រាសាទអង្គរវត្ត ឬប្រាសាទអង្គរតូចមានទីតាំងស្ថិតនៅភាគខាងជើងនៃក្រុងសៀមរាបនៃខេត្តសៀមរាប"
+])
+```

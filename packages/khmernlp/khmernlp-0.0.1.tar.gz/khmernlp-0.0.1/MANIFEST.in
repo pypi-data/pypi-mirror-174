@@ -1,0 +1,2 @@
+include src/khmernlp/tokenizer/configs/*.json
+include src/khmernlp/tokenizer/pretrained/*
