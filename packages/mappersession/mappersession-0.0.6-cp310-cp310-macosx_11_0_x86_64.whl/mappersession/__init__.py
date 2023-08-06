@@ -1,0 +1,1 @@
+from .mappersession import save, load_file, load_json, clear
