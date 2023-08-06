@@ -1,0 +1,7 @@
+[console_scripts]
+Julabo = julabo.tango.server:main [tango]
+
+[sinstruments.device]
+JulaboCF = julabo.simulator:JulaboCF [simulator]
+JulaboHL = julabo.simulator:JulaboHL [simulator]
+
