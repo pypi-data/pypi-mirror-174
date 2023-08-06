@@ -1,0 +1,11 @@
+mathcube/__init__.py,sha256=2s5U4L_st3CDCp3encmlNZDUd_5OmGYIQCY3R7ejTBw,47
+mathcube/equation.py,sha256=uWjpMhTgO9KIHrUTEShduKqp5-1jhOqrjC8D5cqSpmM,2919
+mathcube/geometry.py,sha256=AUGjhm3fi-mZK-hrDmk8S-Qu1cLVAasBGZXLr7vcp_U,6093
+mathcube/output.py,sha256=rgPJo6Ik0z55zB8CzZApnS7WBFZRmi1dqPWimcBiea8,1009
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_equation.py,sha256=fFgHYEc14BwODzGfG98CG2Gtxyium9UJ1QnEjYPdCG4,3583
+mathcube-0.0.2.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+mathcube-0.0.2.dist-info/METADATA,sha256=JDQ7s7CUhWGPETVMi0ko0h64P3Me7NcF9V9zsBNCyyo,482
+mathcube-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mathcube-0.0.2.dist-info/top_level.txt,sha256=EIlwDf1bkcIj9J8LJjo6238P_RtSjKyGfFiRLvAySqs,15
+mathcube-0.0.2.dist-info/RECORD,,
