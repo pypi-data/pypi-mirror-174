@@ -1,0 +1,10 @@
+pandas
+requests
+mypy
+pyarrow
+py7zr
+multivolumefile
+urllib3
+tqdm
+orjson
+IPython
