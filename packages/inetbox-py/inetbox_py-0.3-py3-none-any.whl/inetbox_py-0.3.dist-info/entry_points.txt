@@ -1,0 +1,3 @@
+[console_scripts]
+truma_service=inetbox:truma_service.run
+
