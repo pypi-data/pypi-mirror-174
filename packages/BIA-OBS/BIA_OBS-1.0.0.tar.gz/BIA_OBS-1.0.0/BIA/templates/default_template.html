@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIA Toolkit</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+</head>
+
+<body class="h-full w-full bg-gradient-to-r from-indigo-200 to-indigo-400">
+    
+        <div class="grid grid-cols-1 justify-center justify-items-center gap-y-6 snap snap-y snap-proximity h-screen w-screen overflow-auto">
+            
+            {%block body%} 
+        
+            {%endblock%}
+        </div>
+  
+
+<script type='text/javascript' src="{{url_for('static',filename='dist/node_modules/flowbite/dist/flowbite.js')}}"></script>
+
+</body>
+
+</html>

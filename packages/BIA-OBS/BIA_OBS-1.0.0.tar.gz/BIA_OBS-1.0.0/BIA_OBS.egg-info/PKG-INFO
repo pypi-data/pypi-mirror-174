@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: BIA-OBS
+Version: 1.0.0
+Summary: Business Impact Assesment
+Home-page: https://github.com/shuds13/pyexample
+Author: Mick Hilhorst (LooseDevGoose)
+Author-email: mick.hilhorst@gmail.com
+License: N/A
+Platform: UNKNOWN
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+

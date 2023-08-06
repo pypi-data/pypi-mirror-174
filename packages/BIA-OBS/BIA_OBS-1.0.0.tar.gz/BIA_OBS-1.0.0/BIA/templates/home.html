@@ -1,0 +1,755 @@
+{% extends "default_template.html" %}
+
+{%block body %}
+
+<script>
+    function applicatie_table_row_add() {
+
+        var table = document.getElementById("applicatie_table");
+
+        var row = table.insertRow(-1);
+        var row2 = table.insertRow(-1);
+        var row3 = table.insertRow(-1);
+        var row4 = table.insertRow(-1);
+        var row5 = table.insertRow(-1);
+        var row6 = table.insertRow(-1);
+        var row7 = table.insertRow(-1);
+        var row8 = table.insertRow(-1);
+        var row9 = table.insertRow(-1);
+        var row10 = table.insertRow(-1);
+        var row11 = table.insertRow(-1);
+        var row12 = table.insertRow(-1);
+        var row13 = table.insertRow(-1);
+        var row14 = table.insertRow(-1);
+        var row15 = table.insertRow(-1);
+        var row16 = table.insertRow(-1);
+        var row17 = table.insertRow(-1);
+        var row18 = table.insertRow(-1);
+        
+        var cell_checkbox = row.insertCell();
+        var cell_name = row.insertCell();
+       
+
+        //First Row of Data (Beschikbaarheid | Financieel)
+        var cell1 = row.insertCell();
+        var cell1a = row.insertCell();
+        var cell1b = row.insertCell();
+        var cell1c = row.insertCell();
+        var cell1d = row.insertCell();
+        var cell1e = row.insertCell();
+
+        
+        var cell1a_1 = row2.insertCell();
+        var cell1b_1 = row2.insertCell();
+        var cell1c_1 = row2.insertCell();
+        var cell1d_1 = row2.insertCell();
+        var cell1e_1 = row2.insertCell();
+
+      
+        var cell1a_2 = row3.insertCell();
+        var cell1b_2 = row3.insertCell();
+        var cell1c_2 = row3.insertCell();
+        var cell1d_2 = row3.insertCell();
+        var cell1e_2 = row3.insertCell();
+
+        // //Second Row of data (Beschikbaarheid | Operationeel)
+        var cell2 = row4.insertCell();
+        var cell2a = row4.insertCell();
+        var cell2b = row4.insertCell();
+        var cell2c = row4.insertCell();
+        var cell2d = row4.insertCell();
+        var cell2e = row4.insertCell();
+
+        var cell2a_1 = row5.insertCell();
+        var cell2b_1 = row5.insertCell();
+        var cell2c_1 = row5.insertCell();
+        var cell2d_1 = row5.insertCell();
+        var cell2e_1 = row5.insertCell();
+        
+        var cell2a_2 = row6.insertCell();
+        var cell2b_2 = row6.insertCell();
+        var cell2c_2 = row6.insertCell();
+        var cell2d_2 = row6.insertCell();
+        var cell2e_2 = row6.insertCell();
+
+        //Second Row of data (Regelgeving (wet- en regelgeving)
+
+        var cell3 = row7.insertCell();
+        var cell3a = row7.insertCell();
+        var cell3b = row7.insertCell();
+        var cell3c = row7.insertCell();
+        var cell3d = row7.insertCell();
+        var cell3e = row7.insertCell();
+
+        var cell3a_1 = row8.insertCell();
+        var cell3b_1 = row8.insertCell();
+        var cell3c_1 = row8.insertCell();
+        var cell3d_1 = row8.insertCell();
+        var cell3e_1 = row8.insertCell();
+
+        var cell3a_2 = row9.insertCell();
+        var cell3b_2 = row9.insertCell();
+        var cell3c_2 = row9.insertCell();
+        var cell3d_2 = row9.insertCell();
+        var cell3e_2 = row9.insertCell();
+
+        //Second Row of data (Reputatie en vertrouwen)
+        var cell4 = row10.insertCell();
+        var cell4a = row10.insertCell();
+        var cell4b = row10.insertCell();
+        var cell4c = row10.insertCell();
+        var cell4d = row10.insertCell();
+        var cell4e = row10.insertCell();
+
+        var cell4a_1 = row11.insertCell();
+        var cell4b_1 = row11.insertCell();
+        var cell4c_1 = row11.insertCell();
+        var cell4d_1 = row11.insertCell();
+        var cell4e_1 = row11.insertCell();
+
+        
+        var cell4a_2 = row12.insertCell();
+        var cell4b_2 = row12.insertCell();
+        var cell4c_2 = row12.insertCell();
+        var cell4d_2 = row12.insertCell();
+        var cell4e_2 = row12.insertCell();
+
+
+        //Second Row of data (Mens en veiligheid)
+        var cell5 = row13.insertCell();
+        var cell5a = row13.insertCell();
+        var cell5b = row13.insertCell();
+        var cell5c = row13.insertCell();
+        var cell5d = row13.insertCell();
+        var cell5e = row13.insertCell();
+        
+        var cell5a_1 = row14.insertCell();
+        var cell5b_1 = row14.insertCell();
+        var cell5c_1 = row14.insertCell();
+        var cell5d_1 = row14.insertCell();
+        var cell5e_1 = row14.insertCell();
+
+                
+        var cell5a_2 = row15.insertCell();
+        var cell5b_2 = row15.insertCell();
+        var cell5c_2 = row15.insertCell();
+        var cell5d_2 = row15.insertCell();
+        var cell5e_2 = row15.insertCell();
+
+        //Second Row of data (Privacy implicaties)
+        var cell6 = row16.insertCell();
+        var cell6a = row16.insertCell();
+        var cell6b = row16.insertCell();
+        var cell6c = row16.insertCell();
+        var cell6d = row16.insertCell();
+        var cell6e = row16.insertCell();
+
+        var cell6a_1 = row17.insertCell();
+        var cell6b_1 = row17.insertCell();
+        var cell6c_1 = row17.insertCell();
+        var cell6d_1 = row17.insertCell();
+        var cell6e_1 = row17.insertCell();
+
+        var cell6a_2 = row18.insertCell();
+        var cell6b_2 = row18.insertCell();
+        var cell6c_2 = row18.insertCell();
+        var cell6d_2 = row18.insertCell();
+        var cell6e_2 = row18.insertCell();
+
+        cell_checkbox.innerHTML = "<div class='flex items-center justify-center'><input id='default-checkbox' type='checkbox' class='w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'></div>";
+        cell_name.innerHTML = "<input id='app_name' name='app_name' class='hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'>";
+        cell1.setAttribute('rowSpan', '3')
+        row.setAttribute('name', 'rower')
+        cell2.setAttribute('rowSpan', '3')
+        cell3.setAttribute('rowSpan', '3')
+        cell4.setAttribute('rowSpan', '3')
+        cell5.setAttribute('rowSpan', '3')
+        cell6.setAttribute('rowSpan', '3')
+        cell_checkbox.setAttribute('rowSpan', '18')
+        cell_name.setAttribute('rowSpan', '18')
+
+        //Financieel Multi Select
+        cell1.innerHTML = "<scope='row' class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap fill-gray-500'>Financieel";
+        cell1.setAttribute('class', 'bg-gray-200')
+
+        cell1a.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1a.setAttribute('class', 'bg-gray-200')   
+        cell1b.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1b.setAttribute('class', 'bg-gray-200')
+
+        cell1c.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1c.setAttribute('class', 'bg-gray-200')
+        
+        cell1d.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1d.setAttribute('class', 'bg-gray-200')
+
+        cell1e.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        cell1e.setAttribute('class', 'bg-gray-200')
+
+        cell1a_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1a_1.setAttribute('class', 'bg-gray-200')
+
+        cell1b_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1b_1.setAttribute('class', 'bg-gray-200')
+
+        cell1c_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1c_1.setAttribute('class', 'bg-gray-200')
+
+        cell1d_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1d_1.setAttribute('class', 'bg-gray-200')
+
+        cell1e_1.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        cell1e_1.setAttribute('class', 'bg-gray-200')
+            
+        cell1a_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1a_2.setAttribute('class', 'bg-gray-200') 
+
+        cell1b_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1b_2.setAttribute('class', 'bg-gray-200') 
+
+        cell1c_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1c_2.setAttribute('class', 'bg-gray-200') 
+
+        cell1d_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell1d_2.setAttribute('class', 'bg-gray-200') 
+
+        cell1e_2.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        cell1e_2.setAttribute('class', 'bg-gray-200') 
+        //Operationeel multi select
+        
+        cell2.innerHTML = "<scope='row' class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap'>Operationeel";
+        cell2a.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2b.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2c.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2d.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2e.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        
+
+        cell2a_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2b_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2c_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2d_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2e_1.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        
+        cell2a_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2b_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2c_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2d_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell2e_2.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        
+        
+        // //Regelgeving (wet- en regelgeving) multi select
+        
+        cell3.innerHTML = "<scope='row' class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap'>Regelgeving (wet- en regelgeving)";
+        cell3.setAttribute('class', 'bg-gray-200')
+        cell3a.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3a.setAttribute('class', 'bg-gray-200')   
+        cell3b.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3b.setAttribute('class', 'bg-gray-200')
+        cell3c.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3c.setAttribute('class', 'bg-gray-200')
+        cell3d.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3d.setAttribute('class', 'bg-gray-200')
+        cell3e.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        cell3e.setAttribute('class', 'bg-gray-200')
+
+        cell3a_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3a_1.setAttribute('class', 'bg-gray-200')
+        cell3b_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3b_1.setAttribute('class', 'bg-gray-200')
+        cell3c_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3c_1.setAttribute('class', 'bg-gray-200')
+        cell3d_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3d_1.setAttribute('class', 'bg-gray-200')
+        cell3e_1.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        cell3e_1.setAttribute('class', 'bg-gray-200') 
+        
+        cell3a_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3a_2.setAttribute('class', 'bg-gray-200') 
+        cell3b_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3b_2.setAttribute('class', 'bg-gray-200') 
+        cell3c_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3c_2.setAttribute('class', 'bg-gray-200') 
+        cell3d_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell3d_2.setAttribute('class', 'bg-gray-200') 
+        cell3e_2.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        cell3e_2.setAttribute('class', 'bg-gray-200') 
+       
+        // //Reputatie en vertrouwen multi select
+
+        cell4.innerHTML = "<scope='row' class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap'>Reputatie en vertrouwen";
+        cell4a.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4b.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4c.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4d.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4e.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        
+
+        cell4a_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4b_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4c_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4d_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4e_1.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        
+            
+        cell4a_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4b_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4c_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4d_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell4e_2.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        
+         //Mens en veiligheid multi select
+
+        cell5.innerHTML = "<scope='row' class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap'>Mens en veiligheid";
+        cell5.setAttribute('class', 'bg-gray-200')
+
+        cell5a.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5a.setAttribute('class', 'bg-gray-200')   
+        cell5b.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5b.setAttribute('class', 'bg-gray-200')
+        cell5c.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5c.setAttribute('class', 'bg-gray-200')
+        cell5d.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5d.setAttribute('class', 'bg-gray-200')
+        cell5e.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        cell5e.setAttribute('class', 'bg-gray-200')
+
+        cell5a_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5a_1.setAttribute('class', 'bg-gray-200')
+        cell5b_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5b_1.setAttribute('class', 'bg-gray-200')
+        cell5c_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5c_1.setAttribute('class', 'bg-gray-200')
+        cell5d_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5d_1.setAttribute('class', 'bg-gray-200')
+        cell5e_1.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        cell5e_1.setAttribute('class', 'bg-gray-200') 
+
+        cell5a_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5a_2.setAttribute('class', 'bg-gray-200') 
+        cell5b_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5b_2.setAttribute('class', 'bg-gray-200') 
+        cell5c_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5c_2.setAttribute('class', 'bg-gray-200') 
+        cell5d_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell5d_2.setAttribute('class', 'bg-gray-200') 
+        cell5e_2.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        cell5e_2.setAttribute('class', 'bg-gray-200') 
+
+        
+        //Privacy implicaties multi select
+
+        cell6.innerHTML = "<scope='row' class='py-4 px-6 font-medium text-gray-900 whitespace-nowrap'>Privacy implicaties";
+        cell6a.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6b.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6c.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6d.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Beschikbaarheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6e.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        
+
+        cell6a_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6b_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6c_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6d_1.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Integriteit</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6e_1.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+        
+            
+        cell6a_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6b_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6c_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6d_2.innerHTML = "<select id='app_input' name='app_input' class='block p-2  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'><option selected>Vertrouwelijkheid</option><option value='klein'>Klein</option><option value='midden'>Midden</option><option value='groot'>Groot</option><option value='megagroot'>Mega Groot</option></select>";
+        cell6e_2.innerHTML = "<class='py-4 px-6'><textarea class='resize-y rounded-md w-full border border-gray-300 text-gray-900'>"
+       
+
+    }
+    function beschikbaarheid_table_row_add(){
+
+        var b_table = document.getElementById("beschikbaarheids_table");
+        var b_row = b_table.insertRow(-1);
+
+        var b_cell1 = b_row.insertCell();
+        var b_cell2 = b_row.insertCell();
+        var b_cell3 = b_row.insertCell();
+        var b_cell4 = b_row.insertCell();
+        var b_cell5 = b_row.insertCell();
+
+        b_cell1.innerHTML ="<input id='besv_app_name' name='besv_app_name' class='hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'>"
+        b_cell2.innerHTML = "<select id='bes_input' name='bes_input' class='block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500'><option selected>MTD</option><option value='1_uur'>1 uur</option><option value='5_uur'>5 uur</option><option value='1_dag'>1 dag</option><option value='2_dagen'>2 dagen</option><option value='1_week'>1 week</option></select>";
+        b_cell3.innerHTML = "<select id='bes_input' name='bes_input' class='block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500'><option selected>RTO</option><option value='1_uur'>1 uur</option><option value='5_uur'>5 uur</option><option value='12_uur'>12 uur</option><option value='1_dag'>1 dag</option><option value='5_dagen'>5 dagen</option></select>";
+        b_cell4.innerHTML = "<select id='bes_input' name='bes_input' class='block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500'><option selected>Hersteldoelen</option><option value='1_uur'>1 uur</option><option value='1_dag'>5 uur</option><option value='1_week'>1 week</option><option value='2_weken'>2 weken</option><option value='1_maand'>1 maand</option></select>";
+        b_cell5.innerHTML = "<select id='bes_input' name='bes_input' class='block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500'><option selected>MASL</option><option value='100%'>100%</option><option value='99,90%'>99,90%</option><option value='99,70%'>99,70%</option><option value='99%'>99%</option><option value='98,50%'>95,50%</option></select>";
+      
+
+
+    }
+    </script>
+
+<form action="/submit_data" method="post">
+<!-- Specify flex box to keep everything in the center-->
+<div class="flex snap-center min-h-screen w-full py-12 items-center justify-center">
+<!-- Specify width / length of figure to keep everything in the center-->
+
+<!-- Generiek Informatie-->
+    <figure class="bg-white drop-shadow-2xl rounded-2xl p-8 snap-center">
+
+        <h1 class="flex items-center justify-center text-6xl rounded-2xl font-semibold text-gray-600 mb-2 divide-y">Generieke informatie</h1>
+        
+       
+            <div class="grid gap-2 mt-5 max-w-md">
+                <div>
+                    <label class="block text-sm font-medium text-gray-900 ">Naam BIA</label>
+                    <input type="text" id="naam_bia" name="naam_bia" class="hover:bg-gray-100 border max-w-1/2 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  >
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-900 ">Aansprakelijk voor BIA</label>
+                    <input type="text" id="aansprakelijk_bia" name="aansprakelijk_bia" class="hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
+                </div>
+                 <div>
+                    <label class="block mb-2 text-sm font-medium text-gray-900 ">Coordinator van BIA</label>
+                    <input type="text" id="coordinator_bia" name="coordinator_bia" class="hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                </div>  
+            </div>
+               
+            <div class="grid gap-6 mb-12 mt-12 grid-cols-1 max-w-md">
+                <div>
+                    <label class="block text-sm font-medium text-gray-900 ">Startdatum</label>
+                    <input type="text" id="startdatum_bia" name="startdatum_bia" class="hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="DD/MM/YY" >
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-900">Einddatum</label>
+                    <input type="text" id="einddatum_bia" name="einddatum_bia" class="hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="DD/MM/YYYY" >
+                </div>
+                
+            </div>
+            <div class="flex justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 animate-bounce">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+   
+    </figure>
+    
+</div>
+
+<!-- Specify flex box to keep everything in the center-->
+<div class="flex snap-center min-h-screen w-full py-12 items-center justify-center">
+<!-- Specify width / length of figure to keep everything in the center-->
+
+<!-- De Beschrijving-->
+    <figure class="bg-white drop-shadow-2xl rounded-2xl p-8 divide-y w-3/4 snap-center ">
+
+        <h1 class="flex items-center justify-center text-6xl rounded-2xl font-semibold text-gray-600 mb-2 ">De Beschrijving</h1>
+        
+           <table class="table-fixed w-full text-sm text-left text-gray-500 dark:text-gray-400 mt-5">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="py-3 px-6">
+                    Beschrijving
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Overweging
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Antwoord
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b ">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
+                    Beschrijving van de dienst
+                </th>
+                <td class="py-4 px-6">
+                    Beschrijf het te beoordelen dienst, technologie / platform.
+                </td>
+                <td class="py-4 px-6">
+                    <textarea id="beschrijving_bes" name="beschrijving_bes" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+                </td>
+
+            </tr>
+           <tr class="bg-white border-b">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
+                    De kennis van de organisatie over de service
+                </th>
+                <td class="py-4 px-6">
+                    Is de technologie die voor deze dienst wordt gebruikt nieuw voor de organisatie, of is deze al geïmplementeerd voor andere technologiediensten?
+                </td>
+                <td class="py-4 px-6">
+                    <textarea id="orgkennis_bes" name="orgkennis_bes" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+                </td>
+
+            <tr class="bg-white border-b ">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap ">
+                    Aantal koppelingen/interfaces
+                </th>
+                <td class="py-4 px-6">
+                    Hoeveel koppelingen/interfaces heeft de technologiedienst/applicatie?
+                </td>
+                <td class="py-4 px-6">
+                    <textarea id="getal_koppelingen_bes" name="getal_koppelingen_bes" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+                </td>   
+
+            </tr>
+            <tr class="bg-white border-b ">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap ">
+                    Interface/koppeling naar bedrijfskritische systemen?
+
+                </th>
+                <td class="py-4 px-6">
+                    Heeft de overwogen technologiedienst raakvlakken met bedrijfskritische technologiediensten?
+                </td>
+                <td class="py-4 px-6">
+                    <textarea id="koppelingen_bes" name="koppelingen_bes" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+                </td>   
+
+            </tr>
+            <tr class="bg-white border-b ">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap ">
+                    Support contracten
+                </th>
+                <td class="py-4 px-6">
+                    Hoe wordt de technologie ondersteund? bijv. in huis, leverancier, een combinatie.
+
+                </td>
+                <td class="py-4 px-6">
+                    <textarea  id="support_bes" name="support_bes" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+                </td>   
+
+            </tr>
+            <tr class="bg-white border-b ">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap ">
+                    Beveiligingsleverancier
+
+                </th>
+                <td class="py-4 px-6">
+                    Er moet een overeenkomst tot stand komen met een beveiligingsleverancier met b.v. 24/7 reactie of vergelijkbaar.
+                </td>
+                <td class="py-4 px-6">
+                    <textarea id="beveiliging_bes" name="beveiliging_bes" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+                </td>   
+
+            </tr>
+                 <tr class="bg-white border-b">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
+                    Aantal gebruikers
+
+                </th>
+                <td class="py-4 px-6">
+                    Hoeveel gebruikers zijn er en wat voor soort gebruikers?
+                </td>
+                <td class="py-4 px-6">
+                    <textarea id="aantal_gebruikers_bes" name="aantal_gebruikers_bes" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+
+                </td>   
+
+            </tr>
+        </tbody>
+    </table>
+    </figure>
+</div>
+
+<div class="flex snap-center min-h-screen w-full py-12 items-center justify-center">
+    <!-- Specify width / length of figure to keep everything in the center-->
+    
+    <!-- Scoping-->
+        <figure class="bg-white drop-shadow-2xl rounded-2xl p-8 divide-y w-3/4 snap-center ">
+    
+            <h1 class="flex items-center justify-center text-6xl rounded-2xl font-semibold text-gray-600 mb-2 ">Scoping</h1>
+            
+               <table class="table-fixed w-full text-sm text-left text-gray-500 dark:text-gray-400 mt-5">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="py-3 px-6">
+                        Scoping
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Antwoord
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b ">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
+                        Beschrijving van het toepassingsgebied voor BIA
+                    </th>
+                    <td class="py-4 px-6">
+                        <textarea id="beschrijving_sco" name="beschrijving_sco" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+                    </td>
+    
+                </tr>
+               <tr class="bg-white border-b">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
+                        Moet een verdere risicobeoordeling, met inbegrip van het menselijk perspectief, nodig zijn?
+                    </th>
+
+                    <td class="py-4 px-6">
+                        <textarea id="menselijk_risico_sco" name="menselijk_risico_sco" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+                    </td>
+    
+                <tr class="bg-white border-b ">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap ">
+                        Moet een verdere risicobeoordeling worden opgenomen, inclusief het procesperspectief?
+                    </th>
+                    <td class="py-4 px-6">
+                        <textarea id="proces_risico_sco" name="proces_risico_sco" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+                    </td>   
+    
+                </tr>
+                <tr class="bg-white border-b ">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap ">
+                        Verdere risicobeoordeling nodig, inclusief het technologische perspectief?
+                    </th>     
+                    <td class="py-4 px-6">
+                        <textarea id="tech_risico_sco" name="tech_risico_sco" class="resize-y rounded-md w-full border border-gray-300 text-gray-900"></textarea>
+                    </td>   
+    
+                </tr>
+            
+            </tbody>
+        </table>
+        </figure>
+    </div>
+
+    <div class="flex snap-center min-h-screen w-full py-12 items-center justify-center">
+        <!-- Specify width / length of figure to keep everything in the center-->
+        
+        <!-- Belanghebbenden-->
+            <figure class="bg-white drop-shadow-2xl rounded-2xl p-8 snap-center">
+        
+                <h1 class="flex items-center justify-center text-6xl rounded-2xl font-semibold text-gray-600 mb-2 divide-y ">Belanghebbenden</h1>
+                
+               
+                    <div class="grid gap-2 mt-5 max-w-md">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-900 ">Projectleider</label>
+                            <input type="text" id="projectleider_bel" name="projectleider_bel" class="hover:bg-gray-100 border max-w-1/2 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  >
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-900 ">Risico-eigenaar (proceseigenaar/stakeholder)</label>
+                            <input type="text" id="risicoeigenaar_bel" name="risicoeigenaar_bel" class="hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
+                        </div>
+                         <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 ">Product eigenaar</label>
+                            <input type="text" id="producteigenaar_bel" name="producteigenaar_bel" class="hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 ">Technischbeheerder</label>
+                            <input type="text" id="technischbeheerder_bel" name="technischbeheerder_bel" class="hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        </div>  
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 ">Beveiligingsmanager (aanspreekpunt voor beveiligingsadvies)</label>
+                            <input type="text" id="beveiligingsmanager_bel" name="beveiligingsmanager_bel" class="hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        </div>  
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 ">Contactpunt voor incidenten</label>
+                            <input type="text" id="contactpunt_bel" name="contactpunt_bel" class="hover:bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        </div>    
+                    </div>
+            </figure>
+            
+        </div>
+
+        <div class="flex snap-start min-h-screen w-full py-12 items-center justify-center">
+            <!-- Specify width / length of figure to keep everything in the center-->
+            
+            <!-- Scoping-->
+                <figure class="bg-white drop-shadow-2xl rounded-2xl p-8 snap-center ">
+            
+                    <h1 class="flex items-center justify-center text-6xl rounded-2xl font-semibold text-gray-600 mb-2 ">Applicaties</h1>
+                    
+                    <table id="applicatie_table" name="applicatie_table" class="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400 mt-5">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="py-3 px-6">
+                                Selectie
+                            </th>
+                            <th scope="col" class="py-3 px-6">
+                                Naam Applicatie
+                            </th>
+                            <th scope="col" class="py-3 px-6">
+                                Gevolg categorie
+                            </th>
+                            <th scope="col" class="py-3 px-6">
+                                Realistisch gevolg
+                            </th>
+                            <th scope="col" class="py-3 px-6">
+                                Gevolg rechtvaardiging
+                            </th>
+                            <th scope="col" class="py-3 px-6">
+                                Worst case gevolg
+                            </th>
+                            <th scope="col" class="py-3 px-6">
+                                Gevolg rechtvaardiging
+                            </th>
+                            <th scope="col" class="py-3 px-6">
+                                Opmerkingen
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="flex justify-center content-center"> 
+                        <!--Filled by script-->  
+                    </tbody>
+                </table>
+                <div class="flex justify-end items-end mt-10 gap-x-6">
+               <!-- <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" type="button" onclick="applicatie_table_row_add()">Delete Application</button>-->
+                <button class="bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="button" onclick="applicatie_table_row_add()">Add Application</button>
+                </div>
+                </figure>
+            </div>
+
+            <div class="flex snap-start min-h-screen w-full py-12 items-center justify-center">
+                <!-- Specify width / length of figure to keep everything in the center-->
+                
+                <!-- Scoping-->
+                    <figure class="bg-white drop-shadow-2xl rounded-2xl p-8 snap-center block">
+                
+                        <h1 class="flex items-center justify-center text-6xl rounded-2xl font-semibold text-gray-600 mb-2 ">Beschikbaarheidsvereisten</h1>
+                        
+                        <table id="beschikbaarheids_table" name="beschikbaarheids_table" class="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400 mt-5">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="py-3 px-6">
+                                    Naam
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    Miximaal tolereerbare Downtime
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    Hersteltijd			
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    Hersteldoelen
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    Minimum acceptable Service Level 			
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="beschikbaarheids_body" name="beschikbaarheids_body" class="flex justify-center content-center"> 
+                            <!--Filled by script-->  
+                        </tbody>
+                    </table>
+                    <div class="flex justify-end items-end mt-10 gap-x-6">
+                <!--    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" type="button" onclick="beschikbaarheid_table_row_add()">Delete Application</button> -->
+                    <button class="bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="button" onclick="beschikbaarheid_table_row_add()">Add Application</button>
+                    </div>
+                    </figure>
+                </div>
+
+
+                <div class="flex snap-start w-full items-center justify-center">
+                <!-- Specify width / length of figure to keep everything in the center-->
+                
+                <!-- Scoping-->
+                    <figure class="bg-white drop-shadow-2xl snap-center w-full">   
+                        <button class="bg-green-400 hover:bg-green-700 text-white font-bold block rounded py-4 px-4 w-full "type="submit" value="submit">Create YAML File</button>
+                     
+                    </figure>
+                </div>
+
+  
+</form>
+
+
+
+{%endblock%}
