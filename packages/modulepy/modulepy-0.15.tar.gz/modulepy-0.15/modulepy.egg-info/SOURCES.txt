@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+modulepy/Base.py
+modulepy/Information.py
+modulepy/Loader.py
+modulepy/Manager.py
+modulepy/SharedDict.py
+modulepy/Version.py
+modulepy/__init__.py
+modulepy.egg-info/PKG-INFO
+modulepy.egg-info/SOURCES.txt
+modulepy.egg-info/dependency_links.txt
+modulepy.egg-info/top_level.txt
