@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cozo_embedded
+Version: 0.1.1
+Classifier: Topic :: Database
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE.txt
+Requires-Python: >=3.7
