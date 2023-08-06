@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "xdyna"
+version = "0.0.3"
+description = "Xsuite dynamics package"
+homepage = "https://github.com/xsuite/xdyna"
+repository = "https://github.com/xsuite/xdyna"
+authors = ["Frederik F. Van der Veken <frederik@cern.ch>"]
+readme = "README.md"
+license = "Apache 2.0"
+include = [ "LICENSE", "NOTICE" ]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.8"]  # Needed for pip install -e
+build-backend = "poetry.core.masonry.api"
