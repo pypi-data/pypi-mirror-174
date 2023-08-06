@@ -1,0 +1,9 @@
+sendblue/__init__.py,sha256=mSibb3FONAOeI0OZgG5IvBDGpyf0whTacniacahS5bQ,39
+sendblue/sendblue.py,sha256=5ojpSYPOHxbBft4WSAszXBzMJLmV6sp4wGEvIq6-KPM,2385
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_sendblue.py,sha256=u91dE2fYaW481S7pW6-0votrr75aYH9gtA62iM-JYek,1751
+sendblue-0.1.1.dist-info/LICENSE,sha256=xeAPGxny2lU0rUVj0hhCmgcSctcrjwq5Oh33FLKUzQ4,1065
+sendblue-0.1.1.dist-info/METADATA,sha256=onKRFs1pMXU0QFII7y5ngypHgg7eQGxMwAkAP6__I5w,773
+sendblue-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sendblue-0.1.1.dist-info/top_level.txt,sha256=412Q-t-gBqHp5Y94tbs3gyn-bi-j2eh6qkUw4NPELng,15
+sendblue-0.1.1.dist-info/RECORD,,
