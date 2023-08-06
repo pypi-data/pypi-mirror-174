@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+gzmo.py
+setup.py
+Gzmo.egg-info/PKG-INFO
+Gzmo.egg-info/SOURCES.txt
+Gzmo.egg-info/dependency_links.txt
+Gzmo.egg-info/entry_points.txt
+Gzmo.egg-info/top_level.txt
