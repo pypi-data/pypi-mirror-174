@@ -1,0 +1,17 @@
+matrices/__init__.py,sha256=OgqGoBsDC20A_m5dRFtjqWmQkQHMfaHWQJ8wkEGdva8,355
+matrices/matrices.py,sha256=ATlhhOi6-m7LCV6b0ycU52wlpX4VKsy56Jowut7lxOE,39419
+matrices/matrices.pyi,sha256=tQqWSv3AxlyocMEmNGGyfFHk_x_4gpEAlUDrpjVZtAY,30538
+matrices/protocols.py,sha256=hLoeYY-QAm3_3lHMzh1JBO875DUexJox10caNyBTyFk,15066
+matrices/protocols.pyi,sha256=Jf077uaG2h9YMXiipITlJdU79Q5aKhte7RxXufTP3yw,8637
+matrices/rule.py,sha256=HiMlK6YvXeUHRlPEW8ub6T3nC6hRwsItRy2PY2UtsJo,609
+matrices/rule.pyi,sha256=9toJrJgl-t91oviaLoa35eAx0OZHCvaEfkjgdlCRLJ8,375
+matrices/shape.py,sha256=1CzyCpRRW1CAe5lAYxSdqj-3oPVQIQ_O46RM5cQDNY4,5080
+matrices/shape.pyi,sha256=u3ciRpHTkzPsWFYy1xvX20hRtrSfZo7ZF0WldkL7ukk,1822
+matrices/tests.py,sha256=M5WK8htTXlhAy0JYYqV_uppqGO5S2MHM9OFCX8ERzh0,26378
+matrices/utilities.py,sha256=D5_3G-JwriM_sm4jAwP4jTiXW_uF5JCCkZ_Ck5zi_Q0,1597
+matrices/utilities.pyi,sha256=pMM84Aqp83V3SMd7APuBdieVxUTzgIBKlLgQ9ZlQQks,701
+matrices_py-0.2.1.dist-info/LICENSE,sha256=oJBFU9I9m8h2Rhmi3KelLm35e9TN1DctKTMNgtS-fvg,1060
+matrices_py-0.2.1.dist-info/METADATA,sha256=K1LEMPX9BsPUjsRSihb5wj-rG4Jo1_Su-teLqH8uPMQ,2228
+matrices_py-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+matrices_py-0.2.1.dist-info/top_level.txt,sha256=BuPUV3_5S2aKSVAKGAKO3daj5rorwW_3-PDeKmJ1joI,9
+matrices_py-0.2.1.dist-info/RECORD,,
