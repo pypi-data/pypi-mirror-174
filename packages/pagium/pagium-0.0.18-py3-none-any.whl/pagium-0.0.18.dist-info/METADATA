@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pagium
+Version: 0.0.18
+Summary: Selenium page object implementation
+Home-page: https://github.com/pagium/pagium
+Author: Mikhail Trifonov
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: Russian
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: selenium
+Requires-Dist: pyhamcrest
+
