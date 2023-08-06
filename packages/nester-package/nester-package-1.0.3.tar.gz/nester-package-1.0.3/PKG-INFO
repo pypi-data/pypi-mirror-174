@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nester-package
+Version: 1.0.3
+Summary: Printing each items in list (nested or not nested) on new line
+Home-page: 
+Author: SonaM
+Author-email: sonalimetkar1@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+README.md
