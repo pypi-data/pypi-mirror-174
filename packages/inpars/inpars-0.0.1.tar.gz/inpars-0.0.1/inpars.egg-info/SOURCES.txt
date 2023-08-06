@@ -1,0 +1,7 @@
+README.md
+setup.py
+inpars.egg-info/PKG-INFO
+inpars.egg-info/SOURCES.txt
+inpars.egg-info/dependency_links.txt
+inpars.egg-info/requires.txt
+inpars.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+accelerate
+bitsandbytes
+ftfy
+ir_datasets
+transformers
