@@ -1,0 +1,12 @@
+prdc/Dataset.py,sha256=l-FehOhCuIfjtBGgaqw4OuA2gx88iqH1j6VQ6fKiNo4,716
+prdc/Models.py,sha256=dclsQwB_O_ETCZnINEVu1JEsq2BLrWfBfmhOUNMyMcA,904
+prdc/__init__.py,sha256=4NFcqPHsOunnioibLPopI5SonxRMQnMZ26vq4I-kkuY,139
+prdc/prdc.py,sha256=qYIPfdZNlYwEpKjpESEvQqi-CJu5cM8FJF1ANSnmaWE,2780
+prdc/prdc_cli.py,sha256=y_cIiAvuX57zKxgU10UbcqXSOpcm4Nn3ot6kkrdV4To,3456
+prdc/utils.py,sha256=y3J0CtZyrwgAB3q4u2Xxg0f_T7TUDQ6QZn0daPuaNcI,336
+prdc_cli-0.0.1.dist-info/LICENSE.md,sha256=yHgv8hxpFb5fHtrdXyUVz7HqB-CSM4_P9eGuVp5_F_g,1064
+prdc_cli-0.0.1.dist-info/METADATA,sha256=xxAL3ms6EfXgkfB4Hkr2jdTjeAh03KhdlKQ7fFRFUek,10183
+prdc_cli-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prdc_cli-0.0.1.dist-info/entry_points.txt,sha256=d-BroN3D2Y-PTJL3Hv6w7gF_NMtnoxwbQi_jcfQ1wsc,48
+prdc_cli-0.0.1.dist-info/top_level.txt,sha256=GfzZdixaynNnQ19eYOEo-g3xVS7pWvbcseRGK3X2KrE,5
+prdc_cli-0.0.1.dist-info/RECORD,,
