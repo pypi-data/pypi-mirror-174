@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: hashedixsearch
+Version: 1.2.2
+Summary: in-process search-engine for python
+Author-email: James Addison <james@reciperadar.com>
+License: AGPL-3.0-or-later
+Project-URL: Homepage, https://pypi.org/project/hashedixsearch/
+Project-URL: Source, https://github.com/openculinary/hashedixsearch.git/
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: hashedindex (>=0.10.0)
+
+# hashedixsearch
+
+`hashedixsearch` is a lightweight in-process search engine for Python, with support for stemming, custom token analyzers, and query match highlighting.
+
+## Usage
+
+```python
+from hashedixsearch import HashedIXSearch
+
+doc = 'find the needle in the haystack'
+
+index = HashedIXSearch()
+index.add(doc_id=1, doc=doc)
+
+results = index.query('find')
+for query, hits in results:
+    for hit in hits:
+        # <mark>find</mark> the needle in the haystack
+        markup = index.highlight(doc=doc, terms=hit['terms'])
+```
+
+This library uses [hashedindex](https://github.com/MichaelAquilina/hashedindex.git/) for tokenization and indexing.
