@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+requirements.txt
+setup.py
+iqmma/__init__.py
+iqmma/default.ini
+iqmma/iqmma.py
+iqmma.egg-info/PKG-INFO
+iqmma.egg-info/SOURCES.txt
+iqmma.egg-info/dependency_links.txt
+iqmma.egg-info/entry_points.txt
+iqmma.egg-info/requires.txt
+iqmma.egg-info/top_level.txt
