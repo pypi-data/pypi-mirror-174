@@ -1,0 +1,13 @@
+dune_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dune_client/client.py,sha256=MSdyagda4rWf5US8XY0hxrEiiM-6ASGKQLi-esSpbSI,4877
+dune_client/interface.py,sha256=Pgc13jkfkMqEGBlN7eI4bIHb_6kC3i1T0_AsU1cZK-k,514
+dune_client/models.py,sha256=N7oEx8p8mmhPl3JIiii_DmYHraZ2j5TN8bOYLFP-Ro8,7577
+dune_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dune_client/query.py,sha256=tV-q--VZw_EIjlOtvGfgPo4D6TCru0iiDcyU9uSNNMA,1284
+dune_client/types.py,sha256=iW2UmG0lxr1SwT5zJGwroqDvUau7rxENOl316wOxv5s,6535
+dune_client/util.py,sha256=pmgZrS8IdzTILKoLOOOtA4X-V_jr4xY57HALIS-H8yU,281
+dune_client-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dune_client-0.1.0.dist-info/METADATA,sha256=GiABcd4X_pI-wX06DvIfE9oskZVWPG5c-J5i05jz1z4,2024
+dune_client-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dune_client-0.1.0.dist-info/top_level.txt,sha256=5zzSqiCR5h8_Xof63miDx5ExqLEKZr8bDMy9u0q0N-U,12
+dune_client-0.1.0.dist-info/RECORD,,
