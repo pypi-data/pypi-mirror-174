@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyxxljob
+Version: 1.0.7
+Summary: A Python executor for XXL-jobs
+Home-page: https://github.com/fcfangcc/pyxxl
+Author: bingbing.tu
+Author-email: 2917073217@qq.com
+Keywords: xxljob
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
