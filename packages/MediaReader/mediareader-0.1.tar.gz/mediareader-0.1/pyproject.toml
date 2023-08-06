@@ -1,0 +1,17 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "MediaReader"
+version = "0.1"
+authors = [
+  { name="dylan marsella", email="dylanmarsella1@gmail.com" },
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
