@@ -1,0 +1,9 @@
+selenium_testing_library/__init__.py,sha256=AsqjLl8GleHf8QcVv09iR3djc7r_QoCDxTFrv_rfuVw,48
+selenium_testing_library/locators.py,sha256=AeMFXLxXOl6zHoi3GZx3D-lOEOZgrJnqgYHQ_7fL9-4,7802
+selenium_testing_library/main.js,sha256=XETls3p7oe-VO3zjlZ5POsPscb2vp2w1FDkn1jHvmq0,213240
+selenium_testing_library/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selenium_testing_library/screen.py,sha256=zcOPhk2Fb3Uw5MoJmDNuOnkSrZ6hUjKigwIYThVVnxE,27427
+selenium_testing_library-2022.9b0.dist-info/LICENSE.md,sha256=HarVqSlA7eoYke8xna7BgWNOFGAvKI4F-3gw3DFYFBM,1069
+selenium_testing_library-2022.9b0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+selenium_testing_library-2022.9b0.dist-info/METADATA,sha256=7AUE3l-BzaMuecW8QzetaWkVUajDP6C0qVI-CiNGlL8,10205
+selenium_testing_library-2022.9b0.dist-info/RECORD,,
