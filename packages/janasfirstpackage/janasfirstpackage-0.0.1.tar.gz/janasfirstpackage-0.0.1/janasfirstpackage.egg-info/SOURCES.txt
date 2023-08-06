@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+calculator/__init__.py
+janasfirstpackage.egg-info/PKG-INFO
+janasfirstpackage.egg-info/SOURCES.txt
+janasfirstpackage.egg-info/dependency_links.txt
+janasfirstpackage.egg-info/top_level.txt
+joshbasiccalculator.egg-info/SOURCES.txt
+joshbasiccalculator.egg-info/dependency_links.txt
+joshbasiccalculator.egg-info/top_level.txt
