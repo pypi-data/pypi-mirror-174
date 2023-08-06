@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: censys-client
+Version: 0.1.2
+Summary: A censys client that allow to you to use multiple api key
+Home-page: https://github.com/Inplex-sys/censys-client
+Author: Inplex-sys
+Author-email: Inplex-sys <Inplex-sys@protonmail.com>
+Project-URL: Homepage, https://github.com/Inplex-sys/censys-client
+Project-URL: Bug Tracker, https://github.com/Inplex-sys/censys-client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Advanced Censys Client
+
+[![PyPI](https://img.shields.io/pypi/v/censys?color=orange&logo=pypi&logoColor=orange)](https://test.pypi.org/project/censys-client/)
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue?logo=python)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/github/license/censys/censys-python?logo=apache)](https://github.com/Inplex-sys/advanced-censys-client/blob/main/LICENSE)
+
+### Additional Informations
+ - This client is more fast than the official
+ - You don't limit of api keys **(10 keys -> 100k ips)**
+
+## Getting Started
+The library can be installed using `pip3`.
+
+```sh
+pip3 install -i https://test.pypi.org/simple/ censys-client
+```
+
+To upgraded using `pip`.
+
+```sh
+pip3 install -i https://test.pypi.org/simple/ --upgrade censys-client
+```
+
+To configure your search credentials run `censys-client --config`.
+```sh
+$ censys-client --config
+Censys API ID (********************************98d1): CENSYS_API_ID
+Censys API Secret (****************************aucc): CENSYS_API_SECRET
+Your API ID and API Secret have been successfully saved to ./config.txt
+
+Would you like to add another API ID and API Secret ? (y/n): 
+```
