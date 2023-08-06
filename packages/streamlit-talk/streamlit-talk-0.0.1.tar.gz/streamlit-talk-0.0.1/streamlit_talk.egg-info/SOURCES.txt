@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+streamlit_talk/__init__.py
+streamlit_talk.egg-info/PKG-INFO
+streamlit_talk.egg-info/SOURCES.txt
+streamlit_talk.egg-info/dependency_links.txt
+streamlit_talk.egg-info/requires.txt
+streamlit_talk.egg-info/top_level.txt
