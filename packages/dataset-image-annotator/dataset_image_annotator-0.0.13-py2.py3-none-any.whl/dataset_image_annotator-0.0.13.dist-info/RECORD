@@ -1,0 +1,10 @@
+dataset_image_annotator/__init__.py,sha256=h-KTJUaQ50E3RmkTn_GO88IRunmDTEpNc3ylpFvCTOc,339
+dataset_image_annotator/__main__.py,sha256=_dHEsF5SvrXrIv0Q0-dt08XOb2wSIHz_t-iLZ38UIp0,5301
+dataset_image_annotator/conf.py,sha256=lwnkPZk-upS37FPuq9HDdpZDNHNXZBWASHgyW5soGOk,157
+dataset_image_annotator/main_window.ui,sha256=7yugeixqiFBYCWA0K8PCP1GcgYssRzo-PQ9vEUvhDgU,6283
+dataset_image_annotator-0.0.13.dist-info/AUTHORS.rst,sha256=3R9JnfjfjH5RoPWOeqKFJgxVShSSfzQPIrEr1nxIo9Q,90
+dataset_image_annotator-0.0.13.dist-info/LICENSE,sha256=xxILuojHm4fKQOrMHPSslbyy6WuKAN2RiG74HbrYfzM,34575
+dataset_image_annotator-0.0.13.dist-info/METADATA,sha256=d-fKDpk1-Gn3AyjuOVqIXA1LeGcraxeJE5bsgXmqHt0,893
+dataset_image_annotator-0.0.13.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+dataset_image_annotator-0.0.13.dist-info/top_level.txt,sha256=dLM9r4LKTtQ01_4xsOBFu6Pl8HG1EByu9dYOdCJefMk,24
+dataset_image_annotator-0.0.13.dist-info/RECORD,,
