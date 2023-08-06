@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+.github/scripts/release.py
+.github/workflows/python-publish.yml
+.github/workflows/release.yml
+src/pygrove/__init__.py
+src/pygrove/pygrove.py
+src/pygrove.egg-info/PKG-INFO
+src/pygrove.egg-info/SOURCES.txt
+src/pygrove.egg-info/dependency_links.txt
+src/pygrove.egg-info/top_level.txt
