@@ -1,0 +1,2 @@
+[console_scripts]
+fastapi = fastapi_builder.__main__:main
