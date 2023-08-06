@@ -1,0 +1,14 @@
+statute_utils/__init__.py,sha256=KtJPnIi27-UB9kwW5fa4zfs4tHTRF9Al5BbiH379PXw,348
+statute_utils/designator.py,sha256=2OvFvveb9cbyg1ch3mw-8QnZ10mjd1xEnp26Mn7JKno,7540
+statute_utils/docs/add.md,sha256=PMFNF4cDDTkXf4ee5dJCpTrlOUsuOKvwBLONaLYDtqU,2847
+statute_utils/formula/__init__.py,sha256=bY_oW8Rtdhgq0Bj_HwRUU1ZEDxUQVAtUa5KFJA3BJ3s,589
+statute_utils/formula/base.py,sha256=cP9wrM_-gexMXLu9ikHMn5BCEwhRj0IYpGmO9gL8_pk,5789
+statute_utils/formula/named.py,sha256=12yfU7y47p-tOtEuG4_m6oCVaR_WVQbH-tx9H8LzDwE,20032
+statute_utils/formula/provisions.py,sha256=Kf_WvFtX2dpDz9uq8LwhQNU0OkDXPLAJbJPdtm2_xE8,4274
+statute_utils/formula/serials.py,sha256=dY9nLLn2Wtpgj1m9t0mYZpVTbLCbRBjLfnxevc3IF9A,13824
+statute_utils/formula/statute_base.py,sha256=j-eyVaoc6YqFie5JqgSLwc4sTU4zxB6lSfyMePBLVCc,5782
+statute_utils/id.py,sha256=KR4cz7svjGs8AatAe8-J_BfzMlK_fY0c0KnIqwOgP-w,13485
+statute_utils/spanner.py,sha256=QrtEDNCoZmmlRGe9J7b6v3L-uqUujbF7SXQpupi9o_E,3196
+statute_utils-0.0.13.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+statute_utils-0.0.13.dist-info/METADATA,sha256=r93z1ZLcV3clwrj4Wuk6GfdZn9pefII6nuGQZItEhgE,510
+statute_utils-0.0.13.dist-info/RECORD,,
