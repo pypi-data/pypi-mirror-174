@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: statemachine_Cmtheit
+Version: 1.0.0
+Summary: This package offers a function which decorate any class with given states. And make sure any its object's state switch between them.
+Project-URL: Homepage, https://github.com/chtheitmmmmm/statemachine
+Project-URL: Bug Tracker, https://github.com/chtheitmmmmm/statemachine/issues
+Author-email: Cmtheit <cmtheit@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+
+This is python package that offer state machine solution by class decorator.
+
+# install
+
+```shell
+pip install state_machine
+```
+
+# example
+
+```python
+from statemachine_Cmtheit import statemachine
+
+
+@statemachine.stateDefine({
+    "solid": {"gas", "fuild"},
+    "fuild": {'solid', "gas"},
+    "gas": {"solid", "fuild", "ionization"},
+    "ionization": {"gas"}
+})
+class matter:
+    def __init__(self):
+        self.switch("solid")
+
+
+mat = matter()
+print(mat.state)
+```
+
+more document see:<a href="./src/statemachine/__init__.py">__ init__.py</a>
