@@ -1,0 +1,11 @@
+spyder_ml-0.3.1.data/scripts/spyderml,sha256=AWGTqSaSQFRRlp-y6xDGyIHa738dpGGOmm0YWy5cWmo,80
+spyderml/__init__.py,sha256=GTIr-ZyIxm0LayZKP5hMYMMWundDCXC03CKINfcB3F0,73
+spyderml/main.py,sha256=RNwrUQ3vljXQ2Mpa-dE4oXViKfiW60mE_z-2954uD7A,3305
+spyderml/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spyderml/lib/asciiarts.py,sha256=rEz5SLyNLO3D1FfQnzf18MEz92EOWrSJvBEagd8fE6c,3038
+spyderml/lib/utils.py,sha256=jTBh3nrB1u0B3w0k_POqXM1SBN-3b5yhl6lsFlcHN5Q,1712
+spyder_ml-0.3.1.dist-info/LICENSE,sha256=n-Ie7ac0LzaWopBNx_fFwhj6IiBNwcs82kL1EI3nEPQ,1077
+spyder_ml-0.3.1.dist-info/METADATA,sha256=3Zbb6otqI60lyqMOsDPWjN4OneklEmpVOFlEXiEsF6g,1819
+spyder_ml-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spyder_ml-0.3.1.dist-info/top_level.txt,sha256=iVB3ZCYnPR7nihDvzIqmY5KG2KcUH2KS9duz5_aWH4M,9
+spyder_ml-0.3.1.dist-info/RECORD,,
