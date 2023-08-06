@@ -1,0 +1,5 @@
+{
+    "load_extensions": {
+        "low-code-assistant/extension": true
+    }
+}

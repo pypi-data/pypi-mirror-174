@@ -1,0 +1,7 @@
+{
+  "NotebookApp": {
+    "nbserver_extensions": {
+      "low_code_assistant.jupyter.server_extension": true
+    }
+  }
+}
