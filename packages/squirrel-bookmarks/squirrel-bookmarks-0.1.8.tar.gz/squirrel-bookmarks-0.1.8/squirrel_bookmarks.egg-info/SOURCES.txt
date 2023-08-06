@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+bin/sq
+bin/squirrel
+etc/bash_completion.d/sq
+etc/bash_completion.d/squirrel
+etc/profile.d/sq.sh
+squirrel_bookmarks.egg-info/PKG-INFO
+squirrel_bookmarks.egg-info/SOURCES.txt
+squirrel_bookmarks.egg-info/dependency_links.txt
+squirrel_bookmarks.egg-info/top_level.txt
