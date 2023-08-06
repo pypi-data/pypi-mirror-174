@@ -1,0 +1,9 @@
+
+[:python_version >= "3.7"]
+importlib-metadata
+pip
+
+[testing]
+setuptools
+pytest
+pytest-cov
