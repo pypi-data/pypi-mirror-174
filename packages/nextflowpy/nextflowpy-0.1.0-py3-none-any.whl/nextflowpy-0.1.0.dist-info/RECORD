@@ -1,0 +1,10 @@
+nextflow/__init__.py,sha256=BYvtR75X5C1RoH-VetYY0AQuhoQFEWwHDOOtEtcGRXE,63
+nextflow/exceptions.py,sha256=ktaEfdLca9Bk52CtJoKYMkGaXLrQ9dZVfYh0QtSC9lk,148
+nextflow/execution.py,sha256=kM-THL5QoosvkXze4Sn09A-KCHX6uJhNx3qb79VePMc,3222
+nextflow/pipeline.py,sha256=cKOXWMzFoWNvZQSH528WRZ2eqAJtA8gDzHKCxvgSGZM,1865
+nextflow/utils.py,sha256=7jSVHEc57_dZb8ZUNVrpUxIQTs3cp7wLQU9R-r-K6OE,6989
+nextflowpy-0.1.0.dist-info/LICENSE,sha256=OyzeqIx18xK-aOdWkyt1kIhTxCkMEZ9nhQxMWME8OdU,35056
+nextflowpy-0.1.0.dist-info/METADATA,sha256=0YF82bHf6L03P-U7Ufebg8dX45PVA6_2pb0hZMYSdYs,3702
+nextflowpy-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nextflowpy-0.1.0.dist-info/top_level.txt,sha256=uD97_QD0Jwq__urXtKK-PQMFxiAjWT-y63C2Oi_lad0,9
+nextflowpy-0.1.0.dist-info/RECORD,,
