@@ -1,0 +1,11 @@
+gnukek==1.0.0
+
+[build]
+build
+twine
+
+[dev]
+mypy
+pycodestyle
+pylint
+pytest
