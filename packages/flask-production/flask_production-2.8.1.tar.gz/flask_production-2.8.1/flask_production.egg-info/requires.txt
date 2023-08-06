@@ -1,0 +1,8 @@
+flask
+CherryPy
+holidays
+MonthDelta
+psutil
+python_dateutil
+requests
+tzlocal>=4.1
