@@ -1,0 +1,15 @@
+auto_group/__init__.py,sha256=usgi6seXeXSZnDp7vel0zoPOhncORgemOX2oIr_K0e4,125
+auto_group/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_group/customised_folders.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_group/default_folders.py,sha256=cDmsatClIQzz0VfK6ox-4SJgbyajrw_tOc4J4rU3Fbg,3541
+auto_group/determine_location.py,sha256=Ct0fkJsMftReYcsPPMJzZfShBE0lcXSI_sCwvHb9soA,3167
+auto_group/exceptions.py,sha256=rY9_sAHKXbxg_h4HTJYNPWJr9nDty9xHDx_6NDyb8Is,780
+auto_group/gather_files.py,sha256=L2lBDvXHoXSGucLlJ02C8gq4xxxsf5uz39MEGJNTixw,1161
+auto_group/type_of_file.py,sha256=Ut8U_VV7vTxV0QiCWGalCW_sW0K3RUHKSs6Aahdkr8g,3455
+auto_group/winRightClick.py,sha256=mxexl1Fc65IhOsJPw_r-j_jvfrCtd67lMaPCuHQO6wM,375
+sortmyfolder-0.0.26.dist-info/LICENCE.txt,sha256=w6sCtFdko3zUdLYj0hI9_fz1kP_LwtT7LqRsf8nTfyU,133
+sortmyfolder-0.0.26.dist-info/METADATA,sha256=6GTRBNFz3ArDLa-0hZj0oWlN-7Sz_Ihj6j2ql17Wdlg,1054
+sortmyfolder-0.0.26.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+sortmyfolder-0.0.26.dist-info/entry_points.txt,sha256=elPCWrPjbK0alBDnNuT6H1640N0Tj4R_0JAJDPvU3Yk,68
+sortmyfolder-0.0.26.dist-info/top_level.txt,sha256=Conzv2EwR77UvV7tBVVsBIF5KI9d5tRgxF6kA9Qf-RY,11
+sortmyfolder-0.0.26.dist-info/RECORD,,
