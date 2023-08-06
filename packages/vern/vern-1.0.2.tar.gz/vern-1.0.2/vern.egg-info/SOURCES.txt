@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+setup.py
+vern/__init__.py
+vern/misc.py
+vern/parse_all.py
+vern/parse_dxf.py
+vern/parse_mat.py
+vern/parse_oscilloscope.py
+vern/parse_profilometer.py
+vern/parse_tabular.py
+vern/parse_vsm.py
+vern.egg-info/PKG-INFO
+vern.egg-info/SOURCES.txt
+vern.egg-info/dependency_links.txt
+vern.egg-info/requires.txt
+vern.egg-info/top_level.txt
