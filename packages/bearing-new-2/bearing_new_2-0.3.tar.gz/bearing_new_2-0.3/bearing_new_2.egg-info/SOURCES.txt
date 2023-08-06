@@ -1,0 +1,8 @@
+setup.py
+bearing_new_2/__init__.py
+bearing_new_2/bearing.py
+bearing_new_2.egg-info/PKG-INFO
+bearing_new_2.egg-info/SOURCES.txt
+bearing_new_2.egg-info/dependency_links.txt
+bearing_new_2.egg-info/requires.txt
+bearing_new_2.egg-info/top_level.txt
