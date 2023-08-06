@@ -1,0 +1,11 @@
+include touchable_component/touchable_component.min.js
+include touchable_component/touchable_component.min.js.map
+include touchable_component/async-*.js
+include touchable_component/async-*.js.map
+include touchable_component/*-shared.js
+include touchable_component/*-shared.js.map
+include touchable_component/metadata.json
+include touchable_component/package-info.json
+include README.md
+include LICENSE
+include package.json
