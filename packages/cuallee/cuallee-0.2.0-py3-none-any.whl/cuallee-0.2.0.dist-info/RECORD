@@ -1,0 +1,11 @@
+cuallee/__init__.py,sha256=CoPA9rF95Sw21Co6oqzrS4eDuKqHCbpdGQPDIzHnOKQ,19030
+cuallee/duckdb_validation.py,sha256=QjBMA_p1QWbtMSElh9n0BbqNpV3dQAIDVXTB-lgp2a4,7232
+cuallee/pandas_validation.py,sha256=VCyIKCfCUCJpiMuSLg0r2KWEY1wuDyA-gRmxDN8-_zM,11486
+cuallee/pyspark_validation.py,sha256=T2svpes96M-ffo28Uj9g5mIMreSQBblxERSGtkRxHM8,29941
+cuallee/snowpark_validation.py,sha256=cLuQoUG3OzYhj0fy-_AX_A0bv5WI3C1a9XWw8HMxblU,25823
+cuallee/utils.py,sha256=fRwAbFjE-FKfFINz2AcvF75FQG0gjJw3wPIy6j858Sk,2043
+cuallee-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cuallee-0.2.0.dist-info/METADATA,sha256=BRMjN8u7Llfuo3HYTA2b-hBj6LgJpSXoNJdv61ZxQ7Y,9790
+cuallee-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cuallee-0.2.0.dist-info/top_level.txt,sha256=UVoy99_JqSWmPvSTwhVzRbhRIvjKCiqh5qgNQFAtoEM,8
+cuallee-0.2.0.dist-info/RECORD,,
