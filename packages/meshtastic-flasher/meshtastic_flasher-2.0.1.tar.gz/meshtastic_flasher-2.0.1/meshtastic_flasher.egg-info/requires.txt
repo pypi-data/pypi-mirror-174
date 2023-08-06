@@ -1,0 +1,9 @@
+pyside6
+PyGithub
+esptool==4.2.1
+meshtastic>=2.0.1
+qt-material
+psutil
+adafruit-nrfutil
+pyserial
+geocoder
