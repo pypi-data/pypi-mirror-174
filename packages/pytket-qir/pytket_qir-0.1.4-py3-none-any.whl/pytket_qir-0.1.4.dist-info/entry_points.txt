@@ -1,0 +1,4 @@
+[console_scripts]
+check-test-files=tests.qir_test_files.check_test_files:check_files
+compile-bc-test-files=tests.qir_test_files.compile_bc_test_files:compile_to_bc
+
