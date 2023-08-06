@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+neuronetlib/__init__.py
+neuronetlib/cnn.cpp
+neuronetlib/conv_layer.cpp
+neuronetlib/dense_layer.c
+neuronetlib/initMNIST.py
+neuronetlib/layer.cpp
+neuronetlib/pool_layer.cpp
+neuronetlib.egg-info/PKG-INFO
+neuronetlib.egg-info/SOURCES.txt
+neuronetlib.egg-info/dependency_links.txt
+neuronetlib.egg-info/requires.txt
+neuronetlib.egg-info/top_level.txt
