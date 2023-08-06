@@ -1,0 +1,7 @@
+BOLD = lambda: '\033[1m'
+DIM = lambda: '\033[2m'
+ITALIC = lambda: '\033[3m'
+UNDER = lambda: '\033[4m'
+REVERSE = lambda: '\033[7m'
+STRIKE = lambda: '\033[9m'
+RESET = lambda: '\033[0m'
