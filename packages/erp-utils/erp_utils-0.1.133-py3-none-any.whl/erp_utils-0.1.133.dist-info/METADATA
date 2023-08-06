@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: erp-utils
+Version: 0.1.133
+Summary: This package contains modules shared between erp microservices
+Author: Antoine Wood
+Author-email: antoine@thefurnitureguys.ca
+Requires-Dist: setuptools
+Requires-Dist: djangorestframework
+Requires-Dist: requests
+Requires-Dist: boto3
+Requires-Dist: django
+Requires-Dist: botocore
+Requires-Dist: beautifulsoup4
+Requires-Dist: environ
+Requires-Dist: faker
+Requires-Dist: django-auto-prefetching
+Requires-Dist: reportlab (==3.6.6)
+Requires-Dist: xhtml2pdf
+
