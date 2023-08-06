@@ -1,0 +1,9 @@
+README.md
+setup.py
+consulta_clima.egg-info/PKG-INFO
+consulta_clima.egg-info/SOURCES.txt
+consulta_clima.egg-info/dependency_links.txt
+consulta_clima.egg-info/top_level.txt
+consulta_clima_package-/__init__.py
+consulta_clima_package-/consulta_clima/__init__.py
+consulta_clima_package-/consulta_clima/clima_api.py
