@@ -1,0 +1,13 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+probability-distributions-dhan/Binomialdistribution.py
+probability-distributions-dhan/Gaussiandistribution.py
+probability-distributions-dhan/Generaldistribution.py
+probability-distributions-dhan/__init__.py
+probability_distributions_dhan.egg-info/PKG-INFO
+probability_distributions_dhan.egg-info/SOURCES.txt
+probability_distributions_dhan.egg-info/dependency_links.txt
+probability_distributions_dhan.egg-info/not-zip-safe
+probability_distributions_dhan.egg-info/top_level.txt
