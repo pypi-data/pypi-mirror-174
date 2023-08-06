@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/pyLaCentrale.egg-info/PKG-INFO
+src/pyLaCentrale.egg-info/SOURCES.txt
+src/pyLaCentrale.egg-info/dependency_links.txt
+src/pyLaCentrale.egg-info/requires.txt
+src/pyLaCentrale.egg-info/top_level.txt
