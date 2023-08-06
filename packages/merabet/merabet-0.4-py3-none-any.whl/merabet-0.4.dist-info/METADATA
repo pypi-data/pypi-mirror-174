@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: merabet
+Version: 0.4
+Summary: Basic program to obtain a regression equation using only mathematical methods.
+Author: Ismail Merabet
+Author-email: ismamerabet2002@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
