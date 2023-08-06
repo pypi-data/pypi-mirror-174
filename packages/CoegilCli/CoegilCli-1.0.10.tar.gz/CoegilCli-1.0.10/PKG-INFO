@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: CoegilCli
+Version: 1.0.10
+Summary: Coegil Command Line Interface
+Home-page: https://coegil.com
+Author: Mike Levine
+Author-email: mike@coegil.com
+Requires-Python: >=3.9

@@ -1,0 +1,5 @@
+click
+wheel
+boto3
+requests
+coegil-sdk
