@@ -1,0 +1,7 @@
+dask_pyspy/__init__.py,sha256=egF2GMrId594zKuc2wRW0yKDUVWp_SeyVlcjv5o0Ddw,88
+dask_pyspy/prctl.py,sha256=0h_R8RtxbRU-hh6h9Vb6bTYHLTac8aPoQk39a_nXO4k,1630
+dask_pyspy/pyspy.py,sha256=TdHhsJ1EUh7lH9k24FcesfuxrQNalekMnC2REuPCRdI,13028
+dask_pyspy-0.4.0.dist-info/LICENSE,sha256=3lhjfqLI7RHqMdfhpcapmQxF57KpB9kOIYK0Yo1axSA,1068
+dask_pyspy-0.4.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+dask_pyspy-0.4.0.dist-info/METADATA,sha256=BVhIcleeC0RGNe8bHZ-SIYwftluZ2S2mrUUPkitQdVg,582
+dask_pyspy-0.4.0.dist-info/RECORD,,
