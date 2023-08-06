@@ -1,0 +1,10 @@
+README.md
+setup.py
+quickdb_/__init__.py
+quickdb_/cli.py
+quickdb_/main.py
+quicklite.egg-info/PKG-INFO
+quicklite.egg-info/SOURCES.txt
+quicklite.egg-info/dependency_links.txt
+quicklite.egg-info/entry_points.txt
+quicklite.egg-info/top_level.txt
