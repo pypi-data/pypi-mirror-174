@@ -1,0 +1,1 @@
+nemonet.tests.units.plugin.vision_my_custom_1
