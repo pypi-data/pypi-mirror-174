@@ -1,0 +1,14 @@
+# gdocs
+*.gdoc
+
+# .py* files
+*.pyc
+
+# ipynb_checkpoints
+.ipynb_checkpoints
+
+# DS STORE
+.DS_Store
+
+# Other directories
+dist/*
