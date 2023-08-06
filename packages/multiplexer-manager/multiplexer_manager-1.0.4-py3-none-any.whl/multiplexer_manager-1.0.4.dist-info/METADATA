@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: multiplexer-manager
+Version: 1.0.4
+Summary: Easy analysis of multiplexer files
+Home-page: https://github.com/MoonshinetheP/multiplexer-manager
+Author: Steven Linfield
+Author-email: S.Linfield@outlook.com
+License: GPL3
+Keywords: Electrochemistry
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+
