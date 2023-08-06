@@ -1,0 +1,8 @@
+jupyter_server_ydoc/__init__.py,sha256=E7AyqUEOJ61_icnQvO-X0lWo0TKWWwBR4ZQn_k4WeVw,956
+jupyter_server_ydoc/ydoc.py,sha256=Gt19jpigxTLBiRMulZ7rykvwiCIEuwkpo2SuhtL3XW8,12410
+jupyter_server_ydoc-0.2.0.data/data/etc/jupyter/jupyter_notebook_config.d/jupyter_server_ydoc.json,sha256=4qPuiC8170SEnyyk2uJu51BgQb-0Zl9VwlY0D0zSLCo,96
+jupyter_server_ydoc-0.2.0.data/data/etc/jupyter/jupyter_server_config.d/jupyter_server_ydoc.json,sha256=0thh2hJUxAKkZSmneJMG0U6QJRjdM6zGlwrTedEt-Jk,94
+jupyter_server_ydoc-0.2.0.dist-info/METADATA,sha256=7fsYDotuc2k4EMgHHXVDUoYWm5EruEGizuSkh4XLAog,5274
+jupyter_server_ydoc-0.2.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+jupyter_server_ydoc-0.2.0.dist-info/licenses/LICENSE,sha256=mhO0ZW9EiWOPg0dUgB-lNbJ0CGwRmTdbeAg_se1SOnY,2833
+jupyter_server_ydoc-0.2.0.dist-info/RECORD,,
