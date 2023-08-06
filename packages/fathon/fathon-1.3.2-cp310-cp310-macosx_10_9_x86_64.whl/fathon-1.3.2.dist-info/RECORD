@@ -1,0 +1,15 @@
+fathon/mfdcca.cpython-310-darwin.so,sha256=qUynKp5T_FrEE328GkQyeN1KnEOM1vjWyLWmJpy_-ig,238880
+fathon/__init__.py,sha256=Fdj74nSe883xuSDW2FvXOKXPVRJMFgHMVbEVvFiKoZA,1097
+fathon/dfa.cpython-310-darwin.so,sha256=IEd_413LoEu1SFuzCgJxV_ie2Ufyru5CctDK1kRq968,215296
+fathon/dcca.cpython-310-darwin.so,sha256=HRCXt-wceWwdHGS8_U9XGl8jTeT5ZCPEYuXxxDe3kuo,314128
+fathon/fathonUtils.py,sha256=IVBU6I-KBGkuecWH1pWQFiR1qWN3hJZmUaxeyE4GvlU,4609
+fathon/ht.cpython-310-darwin.so,sha256=gJyT504rYSF8lfIq2VAx0dqP_mEtLUb-rRLw1U-SykE,195440
+fathon/mfdfa.cpython-310-darwin.so,sha256=Lo9CvyzEnJN_4Xr7zhGmiiy31ZBiXxfoln-ptF_tzqc,236000
+fathon/.dylibs/libgsl.27.dylib,sha256=hsbeD8mBfZkjyMEMBy3zl-kVX3n881JTqUrMfV3lsSQ,2267952
+fathon/.dylibs/libgslcblas.0.dylib,sha256=FdHx3btRFtCC94AeZP6ZZu4OQxff-vVG65LhxO6dCjc,272784
+fathon/.dylibs/libgomp.1.dylib,sha256=9r-NJa9vemY_11E-H0RAetp1N29lfT5a8-amd2wuyok,329536
+fathon-1.3.2.dist-info/RECORD,,
+fathon-1.3.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fathon-1.3.2.dist-info/WHEEL,sha256=wHXPjcF1PbvralrZAZffaBRfMW8u_7d-L-q3slIS7Go,111
+fathon-1.3.2.dist-info/top_level.txt,sha256=3Ifplgesqf3VWbfwCZHre-9GUCtfHAi1ZuOR9epGhd8,7
+fathon-1.3.2.dist-info/METADATA,sha256=1cE3GezeABhG05UUx09fwoMxXrfd-2q63tXpFiSBtTU,1934
