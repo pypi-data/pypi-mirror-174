@@ -1,0 +1,2 @@
+[console_scripts]
+dojo_exporter = dojo_exporter:main
