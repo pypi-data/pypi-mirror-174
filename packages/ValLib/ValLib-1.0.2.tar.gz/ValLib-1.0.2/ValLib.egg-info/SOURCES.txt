@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+ValLib/__init__.py
+ValLib/api.py
+ValLib/exceptions.py
+ValLib/parsing.py
+ValLib/riot.py
+ValLib/storage.py
+ValLib/structs.py
+ValLib/version.py
+ValLib.egg-info/PKG-INFO
+ValLib.egg-info/SOURCES.txt
+ValLib.egg-info/dependency_links.txt
+ValLib.egg-info/requires.txt
+ValLib.egg-info/top_level.txt
+test/test_auth.py
