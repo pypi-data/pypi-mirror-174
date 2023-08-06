@@ -1,0 +1,17 @@
+spiderx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spiderx/brower.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spiderx/flask_server.py,sha256=LqZ-8gnR0w2s9UWWksjHtiS-RV9FNriDoFFrqHhZcWU,643
+spiderx/gui.py,sha256=pf_xuVGaAcJoVz7GRFLHZDkxA5fGO6GyDoKWv90yAOc,8495
+spiderx/info.py,sha256=mhwB92NQ-jC9wioxqizUK-t58X5v1ez4XWfDIWKPol0,74872
+spiderx/my_sqlalchemy.py,sha256=WX3uCyNGTTuk5V3icHwL6lVxG-wzbmuUhML4suguN4M,1092
+spiderx/orm.py,sha256=nMNOzXZGMmvFBob64gTEYPZcBGyilK1ktKxSYHrcDZU,6298
+spiderx/shiti.py,sha256=ACO02oTv3im1kEmbX9M_CwrPaHxtCr3fWO51wVg19zc,4874
+spiderx/sql.py,sha256=vUqfnxto1RukCkG7rl9tAxHqMf-QwjjVecuDJ5zg4wo,2264
+spiderx/sx.py,sha256=TbnSGeklEDA9lIyVU8iEqsIZ9Pnikbsv-OoBNQok9N8,108144
+spiderx/tools.py,sha256=BE-uP4TvEywgaMbrYdZVks1VvZOvsYzcuUnHwSo9ka8,32852
+spiderx/utils.py,sha256=sb8ApiV6jtEHPTr9t4W_gPBGTit93H76Ut2hmxry7AA,44
+spiderx/win32.py,sha256=21fI4oyQvKny028obbBuFgHptgsmEssnYLZkWjFaOas,7941
+spiderx-1.7.7.dist-info/METADATA,sha256=gaOEIWMSGkg4y6Ju65Hk6tP2vfOOXif5SJmBHk8GIzM,944
+spiderx-1.7.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+spiderx-1.7.7.dist-info/top_level.txt,sha256=1uRCjLx73YjBhGesc5iQzjUij3uGel4rzaD22az8oF8,8
+spiderx-1.7.7.dist-info/RECORD,,
