@@ -1,0 +1,131 @@
+from __future__ import annotations
+
+from functools import lru_cache
+from typing import Container, Sequence, Union
+
+<<<<<<< Updated upstream
+from _delb.xpath.ast import XPathExpression
+from _delb.xpath.tokenizer import (
+    tokenize,
+    Token,
+    TokenType,
+)
+
+
+class XPathParser:
+    def __init__(self):
+        raise NotImplementedError
+=======
+from _delb.xpath.ast import Axis, LocationPath, LocationStep, NameMatch, XPathExpression
+from _delb.xpath.tokenizer import TokenType, tokenize, Token
+
+
+TokenSequence = Sequence[Union[Token, "TokenSequence"]]
+
+>>>>>>> Stashed changes
+
+class XPathParser:
+    def __call__(self, tokens: Sequence[Token]) -> XPathExpression:
+        tokens = self.group_bracketed_expressions(tokens)
+        if TokenType.PASEQ in (x.type for x in tokens if isinstance(x, Token)):
+            return XPathExpression(
+                [
+                    self.parse_location_path(x)
+                    for x in self.partition_tokens((TokenType.PASEQ,), tokens)
+                ]
+            )
+        else:
+            return XPathExpression([self.parse_location_path(tokens)])
+
+    def group_bracketed_expressions(self, tokens: TokenSequence) -> TokenSequence:
+        result = []
+        opened_brackets = []
+
+        for i, token in enumerate(tokens):
+            if token.type is TokenType.OPEN_BRACKET:
+                opened_brackets.append((i, token))
+            elif token.type is TokenType.CLOSE_BRACKET:
+                start_pos, start_token = opened_brackets.pop()
+                if not opened_brackets:
+                    result.extend(
+                        [
+                            start_token,
+                            self.group_bracketed_expressions(tokens[start_pos + 1 : i]),
+                            token,
+                        ]
+                    )
+            else:
+                result.append(token)
+
+        return result
+
+    def parse_location_path(self, tokens: Sequence[Token]) -> LocationPath:
+        # TODO expand to desendant-or-self, parent, self
+
+        absolute = tokens[0].type is TokenType.SLASH
+
+        return LocationPath(
+            [
+                self.parse_location_step(x)
+                for x in self.partition_tokens(
+                    # TODO SLASH only after ^^
+                    (TokenType.SLASH, TokenType.SLASH_SLASH),
+                    tokens,
+                )
+            ],
+            absolute=absolute,
+        )
+
+    def parse_location_step(self, tokens: TokenSequence) -> LocationStep:
+        def match(*pattern: Sequence[TokenType]) -> bool:
+            if len(tokens) < len(pattern):
+                return False
+            return all(x.type is y for x, y in zip(tokens, pattern))
+
+        assert tokens[0].type is TokenType.SLASH
+        tokens = tokens[1:]
+
+        if match(TokenType.NAME):
+            step = LocationStep(
+                axis=Axis("child"), node_test=NameMatch(None, tokens[0].string)
+            )
+            tokens = tokens[1:]
+        else:
+            raise NotImplementedError
+
+        if tokens:
+            raise NotImplementedError
+
+        return step
+
+    # TODO as iterator
+    @staticmethod
+    def partition_tokens(
+        separators: Container[TokenType],  # TODO is one sufficient?
+        tokens: TokenSequence,
+    ) -> TokenSequence:
+        result = []
+        current_partition = []
+
+        for token in tokens:
+            if (
+                isinstance(token, Token)
+                and token.type in separators
+                and current_partition
+            ):
+                result.append(current_partition)
+                current_partition = []
+            current_partition.append(token)
+        result.append(current_partition)
+
+        return result
+
+
+@lru_cache(64)  # TODO? configurable
+def parse(expression: str) -> XPathExpression:
+    tokens = tokenize(expression)
+    parser = XPathParser()
+    return parser(tokens)
+
+
+__all__ = (parse.__name__,)

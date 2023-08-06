@@ -1,0 +1,151 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+#
+
+[project]
+name = "delb"
+version = "0.4.0-rc1"
+description = "A library that provides an ergonomic model for XML encoded text documents (e.g. with TEI-XML)."
+authors = [
+    { name = "Frank Sachsenheim", email = "delb-project@posteo.net" }
+]
+license = "AGPL-3.0-or-later"
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Topic :: Text Processing :: Markup :: XML",
+]
+keywords = ["xml", "markup", "tei", "text processing"]  # TODO one more
+dependencies = [
+    "cssselect",
+    "importlib-metadata; python_version < '3.10'",  # DROPWITH Python3.9
+    "lxml"
+]
+
+[project.entry-points.delb]
+https-loader = "_delb.plugins.https_loader"
+
+[project.optional-dependencies]
+https-loader = ["httpx[brotli,http2]"]
+
+[project.urls]
+Changelog = "https://delb.readthedocs.io/en/latest/changes.html"
+Documentation = "https://delb.readthedocs.io/"
+"Issue tracker" = "https://github.com/delb-xml/delb-py/issues"
+Repository = "https://github.com/delb-xml/delb-py"
+
+#
+
+[tool.cff-from-621]
+order = ["title", "abstract", "version", "date-released"]
+
+[tool.cff-from-621.static]
+message = "🔥🌍🔥"
+
+#
+
+[tool.coverage.run]
+source = ["_delb", "delb"]
+omit = [
+    "delb/exceptions.py",
+    "delb/names.py",
+    "delb/nodes.py",
+    "delb/parser.py",
+    "delb/typing.py",
+    "delb/utils.py"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "def __repr__",
+    "if TYPE_CHECKING:",
+    "pass",
+    "pragma: no cover",
+    "raise InvalidCodePath",
+    "raise NotImplementedError",
+    "raise TypeError",
+    "raise ValueError"
+]
+fail_under = 97
+
+#
+
+[tool.hatch.build.targets.sdist]
+only-include = ["_delb", "delb", "CITATION.cff"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["_delb", "delb"]
+
+[tool.hatch.envs.default]
+features = ["https-loader"]
+
+[tool.hatch.envs.benchmarks]
+dependencies = [
+    "pytest-benchmark",
+    "xmldiff"
+]
+[tool.hatch.envs.benchmarks.scripts]
+run = """
+    python -m pytest \
+        --benchmark-autosave --benchmark-group-by=name \
+        --benchmark-timer=time.process_time benchmarks
+"""
+
+[tool.hatch.envs.citation-file]
+dependencies = ["cff-from-621"]
+skip-install = true
+
+[tool.hatch.envs.docs]
+dependencies = [
+    "autoclasstoc",
+    "sphinxcontrib-fulltoc",
+    "sphinx-readable-theme"
+]
+[tool.hatch.envs.docs.scripts]
+build-html = "make -C docs html"
+clean = "make -C docs clean"
+doctest = "make -C docs doctest"
+linkcheck = "make -C docs linkcheck"
+
+[tool.hatch.envs.linting]
+dependencies = ["flake8-black"]
+skip-install = true
+[tool.hatch.envs.linting.scripts]
+check = "flake8 benchmarks _delb delb tests"
+
+[tool.hatch.envs.mypy]
+dependencies = [
+    "lxml-stubs",
+    "mypy"
+]
+[tool.hatch.envs.mypy.scripts]
+check = "mypy _delb delb"
+
+[tool.hatch.envs.unit-tests]
+dependencies = [
+    "pytest-cov",
+    "xmldiff"
+]
+[tool.hatch.envs.unit-tests.scripts]
+check = "python -m pytest --cov=_delb --cov=delb tests"
+coverage-report = """
+    python -m pytest \
+        --cov-report term-missing:skip-covered \
+        --cov=_delb --cov=delb \
+        tests
+"""
+
+#
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error::DeprecationWarning:_?delb\\.",
+    "ignore::PendingDeprecationWarning:_?delb\\."
+]
+

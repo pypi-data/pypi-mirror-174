@@ -1,0 +1,10 @@
+__pycache__/
+.benchmarks/
+build/
+.coverage
+dist/
+*.egg-info/
+.idea/
+.mypy_cache/
+pip-wheel-metadata/
+.pytest_cache/
