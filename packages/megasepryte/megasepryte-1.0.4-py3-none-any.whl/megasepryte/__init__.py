@@ -1,0 +1,1 @@
+from megasepryte.megasepryte import Project
