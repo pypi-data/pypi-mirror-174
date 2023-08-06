@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: maykin-python3-saml
+Version: 1.14.0
+Summary: Onelogin Python Toolkit. Add SAML support to your Python software using this library
+Home-page: https://github.com/maykinmedia/python3-saml@maykin
+Author: OneLogin, Maykin Media
+Author-email: support@maykinmedia.nl
+License: MIT
+Keywords: saml saml2 xmlsec django flask pyramid python3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: test
+License-File: LICENSE
