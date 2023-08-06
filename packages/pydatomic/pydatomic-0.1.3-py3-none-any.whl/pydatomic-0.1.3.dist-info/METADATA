@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pydatomic
+Version: 0.1.3
+Summary: Python client for emulating a Datomic database system using MongoDB as storage backend
+License: MIT
+Author-email: Patrick <patrsc@nubu.at>
+Requires-Python: >=3.9
+Requires-Dist: fastapi>=0.85.1
+Requires-Dist: pymongo>=4.3.2
+Requires-Dist: rfc3986>=2.0.0
+Project-URL: Documentation, https://pydatomic.github.io
+Project-URL: Homepage, https://pydatomic.github.io
+Project-URL: Source, https://github.com/patrsc/pydatomic
+Project-URL: Tracker, https://github.com/patrsc/pydatomic/issues
+Description-Content-Type: text/markdown
+
+# pydatomic
+
+Python client for emulating a Datomic database system using MongoDB as storage backend.
+
+* [GitHub Repository](https://github.com/patrsc/pydatomic)
+* [PyPI Package](https://pypi.org/project/pydatomic/)
+* [Documentation](https://pydatomic.github.io/)
+
