@@ -1,0 +1,5 @@
+pytest
+pre-commit
+types-PyYAML
+types-requests
+pyarrow>=9.0.0,<9.1.0
