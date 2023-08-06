@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: alltrees
+Version: 1.2.2
+Summary: A package implementing BST,AVL,Red Black,B-Tree and B+ Tree
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Madhur Thakkar <madhurthakkar247@gmail.com>, Shantanu Tondlekar <tondlekar88@gmail.com>, Amay Tripathi <amaytripathi16@gmail.com>, Sam Thomas <samthomasv22@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# alltrees Package
+
+Our package contains 
+1.AVL Tree 
+2.B Tree
+3.B+ Tree
+4.Binary Search Tree 
+5.Red Black Tree. 
+This package can be used for storing data and fast retrieval of the stored data. 
+Different operations can be performed easily such as:
+1.Insertion
+2.Deletion
+3.Searching
+4.Determination of Height
+5.Determination of Balancing factor
+6.Finding Maximum element
+7.Finding Minimum element
