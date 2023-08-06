@@ -1,0 +1,15 @@
+baseblock/__init__.py,sha256=Eyyuw5tt7irsKuq1-ht0LdpfDa9nxswyjYlMh8XkQH0,509
+baseblock/base_object.py,sha256=wDpcv7DZnGOpfJU0UUuiZtdCC25VZn967PoPvacfero,1232
+baseblock/common_utils.py,sha256=gw98AczRDrFwCBDjB-FNkT9qP4rNzTubW7GTpNCKMKI,2206
+baseblock/crypto_base.py,sha256=Y_PCIY_OWkRpM-5ZV9DPgyNcpEF4Ium_5U6jsq88n20,3400
+baseblock/enforce_type.py,sha256=hZUFy-HDAV-27X0DAEZaplkh44H4W2YXmnBqEQm7_Pk,14360
+baseblock/env_io.py,sha256=xs-p61FoMOjZajBBoAitdiOllbImMFX6mtN74Ajtlm8,6278
+baseblock/file_io.py,sha256=Q7kI_lCkvtIUwShyFvNcgkCqbwQpoyQ40Be_03spvNY,20399
+baseblock/service_event_generator.py,sha256=LagumreKZYRPVaLjxB8h9eUr5Zds9cRZynZPP3PQWJg,1918
+baseblock/stopwatch.py,sha256=Q7k3b_rpmB9SO-5G9MnIisYONrquy2mTzj58apSrm_s,2320
+baseblock/text_matcher.py,sha256=ILBawc_hqWd-AnT_tCkCSwV7l6hUWV03Utxm238yom4,4017
+baseblock/text_utils.py,sha256=OCpW33OqS2_cM-2zO9b1cp5wtM_NfwXSgiMEaZGT_jo,21481
+baseblock/time_helper.py,sha256=SC3oLMyodF7fJsZ-FHtObvaXSSPgYNblkOwRsj4NN9s,1364
+baseblock-0.1.37.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+baseblock-0.1.37.dist-info/METADATA,sha256=SDhxbCs3KOhtrAmtl_3j_Sjz77vS0r26kwxy_K9E6G8,1256
+baseblock-0.1.37.dist-info/RECORD,,
