@@ -1,0 +1,17 @@
+
+[dev]
+black==22.10.0
+flake8-isort
+isort>5.0
+mypy
+pipdeptree
+pre-commit
+pydata-sphinx-theme<0.10.1
+pytest-cov
+setuptools_scm[toml]>=6.2
+sphinx-autobuild
+sphinx-copybutton
+sphinx-design
+tox
+tox-direct
+types-mock
