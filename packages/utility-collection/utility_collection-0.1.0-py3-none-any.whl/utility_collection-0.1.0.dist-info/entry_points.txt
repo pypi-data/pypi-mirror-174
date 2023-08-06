@@ -1,0 +1,3 @@
+[console_scripts]
+build=utility_collection.build:run
+

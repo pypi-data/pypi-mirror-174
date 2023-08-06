@@ -1,0 +1,13 @@
+utility_collection/__init__.py,sha256=THho2cxlF-R0_PAf5zV6zqPMmNCQOs_sd4TgfWYqwRw,178
+utility_collection/__main__.py,sha256=tc4AvxAIgyoDYcY4OpXCs1jr1PxhuAwVmvWZva7sd_4,150
+utility_collection/build.py,sha256=92ciyKCZdGdpLTh3zeqEyunYVBxPYHGKZmA3rwPWWcU,311
+utility_collection/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utility_collection/common/download.py,sha256=FkgpAm-ngh3NRadps9Pcyvvuotj_Oqq4RtN7vJ_EtTQ,866
+utility_collection/download_file_samples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utility_collection/download_file_samples/__main__.py,sha256=7jWGYEUZ2u-9YDMX9z9zXN6em8M_MvAVMlTI8irxt1k,965
+utility_collection/download_file_samples/settings.py,sha256=oYrP7E_1C6fE9ePO7WjGl0YmpkBU085IXjx5GCA7pr0,717
+utility_collection-0.1.0.dist-info/entry_points.txt,sha256=j8Q5nrrHYegNsHWmaoBgpYS4ey2ymtdqED9wACdeM8c,54
+utility_collection-0.1.0.dist-info/LICENSE,sha256=GKfnqXQAAcuRTwCuL29d3vPnCf3T5qCof_2SAFnAQt0,1063
+utility_collection-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+utility_collection-0.1.0.dist-info/METADATA,sha256=FsuTdzbxDaQAwHZ34UKw5S7yHoLn8VTM4vSxH8BfvoQ,544
+utility_collection-0.1.0.dist-info/RECORD,,
