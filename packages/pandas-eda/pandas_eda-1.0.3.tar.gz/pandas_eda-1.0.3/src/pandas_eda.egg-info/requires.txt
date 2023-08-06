@@ -1,0 +1,7 @@
+scipy
+tqdm
+pandas>1.5
+streamlit>=1.9
+numpy
+faker
+codetiming
