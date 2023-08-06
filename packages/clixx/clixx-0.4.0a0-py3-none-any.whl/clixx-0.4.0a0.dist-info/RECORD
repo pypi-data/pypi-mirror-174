@@ -1,0 +1,16 @@
+clixx/__init__.py,sha256=-QcZK0-bFKXmjY2xKdV1FnBnFKedHBMjcr6Z-iIAcbs,1137
+clixx/_rich.py,sha256=7uNCn7hoWT7AG743fICdvpdQiG2Y-gGMNegkgPU164k,3806
+clixx/arguments.py,sha256=Av6I41CZ4--9Ra3KYoVvHDn0ifm-ULTdNM95IDFodsA,16131
+clixx/commands.py,sha256=F-c_euFtzexBOzJCpzqXHqcNQ3IwX2f8AHn5irt70tU,3218
+clixx/constants.py,sha256=w3lPR3txr4s1qI89L2nR0KqpfebnDarYj4iCpX2EkWo,195
+clixx/exceptions.py,sha256=XtBmWz19TimCkLbTeoP7YCVuP5VGg5U15N9swqpyOf8,1633
+clixx/groups.py,sha256=uOx0dt3Lf7Tyq7SFuaUQVT6vyxtknl8Jn5LxAW0IXV4,7091
+clixx/parsers.py,sha256=Yj-KSCRD1VG4WHT2vPCqG7PbulpFdGzuuYqDhlg0LoI,9837
+clixx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clixx/types.py,sha256=-4zUrWhXgsOYzBxfCNud0Bm7siJaiTzQobePEz8tra4,18287
+clixx-0.4.0a0.dist-info/LICENSE,sha256=wmn2tf-Xa0kVc8jCVjtgJqfaqZJkqRvlZ0khvCba9ZE,1082
+clixx-0.4.0a0.dist-info/METADATA,sha256=kUUytMhoaOwq2H41RVlS_DnIPhtHsewefqbmDFPaKOM,1561
+clixx-0.4.0a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+clixx-0.4.0a0.dist-info/top_level.txt,sha256=c0J2IwCBeDgiZXeZSJteodqMMkmSo5a50LhuClyE16M,6
+clixx-0.4.0a0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+clixx-0.4.0a0.dist-info/RECORD,,
