@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "kinopoisk-dev"
+version = "0.1.6"
+description = "Реализация Api для сервиса kinopoisk.dev"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+repository = 'https://github.com/odi1n/kinopoisk_dev'
+documentation = "https://github.com/odi1n/kinopoisk_dev/blob/master/README.md"
+keywords = ['kinopoisk', 'kinopoisk api', 'kinopoisk dev', 'kinopoisk dev api', 'api', 'dev']
+packages = [{ include = "kinopoisk_dev" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.26.0"
+pydantic = "^1.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
