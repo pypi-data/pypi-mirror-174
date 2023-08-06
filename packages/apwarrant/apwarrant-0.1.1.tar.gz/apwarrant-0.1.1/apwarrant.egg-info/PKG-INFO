@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: apwarrant
+Version: 0.1.1
+Summary: Python class to integrate Boto3's Cognito client so it is easy to login users. With SRP support.
+Home-page: https://github.com/ArcadiaPower/warrant
+Author: ArcadiaPower
+Maintainer: ArcadiaPower
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Web Environment
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+README
