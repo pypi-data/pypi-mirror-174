@@ -1,0 +1,11 @@
+hyperthought_transfer/__init__.py,sha256=FeBO2r9dGS22xiPVex3iQLMFC-yKa3PT7_Eos0l5GGs,645
+hyperthought_transfer/manifest.py,sha256=n3mXLvGZYjQEz1O9HJei8WdKeuXhdtv3qTVoKUJkkFE,18177
+hyperthought_transfer/utils.py,sha256=rC4b0TuLGr3PHmyjMjNiV6A0SOuS4Lt196m-Ukn55Zs,1963
+hyperthought_transfer/antivirus/__init__.py,sha256=GPsM6dMdRLr-zTHrWROtQgAgDxy4PjZw3loklOVeIvs,2909
+hyperthought_transfer/antivirus/_mcafee.py,sha256=W-to1QvBRV-0M0lG4NSiU41_-qcIdAequewkdIhR-Ik,2722
+hyperthought_transfer/antivirus/base.py,sha256=Azi8XFbub8v9r25fldYYh40jIGgl64O88V6x2UZB7Qg,2390
+hyperthought_transfer-0.1.2.dist-info/LICENSE.txt,sha256=iI09OfwAI9v6vekJtuJ1LACI13TXjEEEW8VCHWP5zm4,1100
+hyperthought_transfer-0.1.2.dist-info/METADATA,sha256=kKkhNIWZDkFugC5d310xWSo52H11lbs1rR2fsD_SPjg,2890
+hyperthought_transfer-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hyperthought_transfer-0.1.2.dist-info/top_level.txt,sha256=-hAh9KOomjgDnYouboH7xETGym5-gg7b4RKzQivGQjE,22
+hyperthought_transfer-0.1.2.dist-info/RECORD,,
