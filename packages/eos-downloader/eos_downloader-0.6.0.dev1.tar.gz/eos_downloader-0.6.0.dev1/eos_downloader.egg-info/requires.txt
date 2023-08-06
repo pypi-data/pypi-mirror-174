@@ -1,0 +1,9 @@
+cryptography
+cvprac>=1.0.7
+loguru
+paramiko
+requests-toolbelt
+requests>=2.20.0
+rich==12.0.1
+scp
+tqdm

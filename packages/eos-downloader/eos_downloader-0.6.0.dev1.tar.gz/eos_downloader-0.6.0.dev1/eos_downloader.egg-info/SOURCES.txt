@@ -1,0 +1,15 @@
+README.md
+setup.py
+bin/cvp-upload
+bin/eos-download
+eos_downloader/__init__.py
+eos_downloader/cvp.py
+eos_downloader/data.py
+eos_downloader/download.py
+eos_downloader/eos.py
+eos_downloader/object_downloader.py
+eos_downloader.egg-info/PKG-INFO
+eos_downloader.egg-info/SOURCES.txt
+eos_downloader.egg-info/dependency_links.txt
+eos_downloader.egg-info/requires.txt
+eos_downloader.egg-info/top_level.txt
