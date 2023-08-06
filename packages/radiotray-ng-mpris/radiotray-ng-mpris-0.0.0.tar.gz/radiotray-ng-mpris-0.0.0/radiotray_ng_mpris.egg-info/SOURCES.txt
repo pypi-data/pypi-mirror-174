@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+radiotray_ng_mpris/__init__.py
+radiotray_ng_mpris/_version.py
+radiotray_ng_mpris/cli.py
+radiotray_ng_mpris/wrap.py
+radiotray_ng_mpris.egg-info/PKG-INFO
+radiotray_ng_mpris.egg-info/SOURCES.txt
+radiotray_ng_mpris.egg-info/dependency_links.txt
+radiotray_ng_mpris.egg-info/entry_points.txt
+radiotray_ng_mpris.egg-info/requires.txt
+radiotray_ng_mpris.egg-info/top_level.txt
