@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: OpenSearchRec
+Version: 0.1.2
+Summary: OpenSearchRec: Open Source Search and Recommendations
+Author: Sebastien L
+License: Apache 2
+License-File: LICENSE
+Requires-Dist: fastapi (>=0.76.0)
+Requires-Dist: uvicorn[standard] (>=0.17.6)
+Requires-Dist: pytest (>=7.1.2)
+Requires-Dist: requests (>=2.28.0)
+Requires-Dist: httpx (>=0.23.0)
+Requires-Dist: numpy (>=1.23.2)
+Provides-Extra: models
+Requires-Dist: implicit ; extra == 'models'
+Requires-Dist: sentence-transformers ; extra == 'models'
+
+OpenSearchRec: Open Source Search and Recommendations. Code: https://github.com/OpenSearchRec/OpenSearchRec
