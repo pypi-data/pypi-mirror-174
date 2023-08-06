@@ -1,0 +1,12 @@
+sopel_modules.stocks-1.2.0-py3.9-nspkg.pth,sha256=GpO4OWqrcKGJyabPvvsBuBcrUk4pFr3K5HYvSnuQBi8,574
+sopel_modules/stocks/__init__.py,sha256=qUo5iEmeK1pDAzqyLuxgY8ofLuFXgeTOqX7Wvk-M9IQ,278
+sopel_modules/stocks/stocks.py,sha256=RC1O5psJEYIouA_SEMCpHeoQJw2ezrrRkqeYXe5H7og,3458
+sopel_modules/stocks/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sopel_modules/stocks/providers/alphavantage.py,sha256=ZnbQT9GnphC_VctRmRFPhvwENfCsA0Mr3lTOIhHk2gc,1678
+sopel_modules/stocks/providers/iexcloud.py,sha256=PLQa_tUd2BkKy2N6fw-WMcStFpyWtDZ2vze9M7_IZ6A,514
+sopel_modules.stocks-1.2.0.dist-info/LICENSE,sha256=cba8xvCgl5v_9PeMbodJZLvW110vCHmlqxyXuey1J1Q,1068
+sopel_modules.stocks-1.2.0.dist-info/METADATA,sha256=Db5QNIQtrgM-kt5n-o3lw7x1IhRweX3EfBWjyAtm5Kw,2315
+sopel_modules.stocks-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sopel_modules.stocks-1.2.0.dist-info/namespace_packages.txt,sha256=1GJk87jnz3vpuDVQimAVoSTAzCNN7PNkycVbH0Q1pkg,14
+sopel_modules.stocks-1.2.0.dist-info/top_level.txt,sha256=1GJk87jnz3vpuDVQimAVoSTAzCNN7PNkycVbH0Q1pkg,14
+sopel_modules.stocks-1.2.0.dist-info/RECORD,,
