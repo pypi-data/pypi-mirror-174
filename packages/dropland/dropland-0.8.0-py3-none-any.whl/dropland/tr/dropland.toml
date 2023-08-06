@@ -1,0 +1,36 @@
+default = "en"
+
+[engines.db]
+engine.created = "Database engine created: '{name}' ({db_type})"
+engine.started = "Database engine started: '{name}' ({db_type})"
+engine.stopped = "Database engine stopped: '{name}' ({db_type})"
+
+[engines.redis]
+engine.created = "Redis engine created: '{name}'"
+engine.started = "Redis engine started: '{name}'"
+engine.stopped = "Redis engine stopped: '{name}'"
+
+[engines.rmq]
+engine.created = "RabbitMQ engine created: '{name}'"
+engine.started = "RabbitMQ engine started: '{name}'"
+engine.stopped = "RabbitMQ engine stopped: '{name}'"
+
+[engines.sql]
+engine.created = "Sql engine created: '{name}' ({db_type}, {async_})"
+engine.started = "Sql engine started: '{name}' ({db_type}, {async_})"
+engine.stopped = "Sql engine stopped: '{name}' ({db_type}, {async_})"
+
+[engines.scheduler]
+created = "Scheduler created"
+create.local = "Create scheduler: local"
+create.remote = "Create scheduler: remote"
+started = "Scheduler started"
+stopped = "Scheduler stopped"
+
+[engines.scheduler.service]
+exception = "Exception in the worker service"
+start = "Start the worker service"
+stop = "Stop the worker service"
+rpc-connected = "Worker RPC connected to '{host}:{port}'"
+rpc-disconnected = "Worker RPC disconnected from '{host}:{port}'"
+rpc-exception = "Worker RPC execution faced with exception (attempt_num={attempt_num}): {e}"
