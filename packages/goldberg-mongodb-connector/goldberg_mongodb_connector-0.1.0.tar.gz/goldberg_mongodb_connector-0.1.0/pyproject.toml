@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "goldberg_mongodb_connector"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [
+    { include = "mongodb_connector" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+beanie = "^1.13.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+
+
+[[tool.poetry.source]]
+name = "testpypi"
+url = "https://test.pypi.org/legacy/"
+default = false
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[project]
+name = "goldberg_mongodb_connector" # nome del modulo su pypi
+authors = [
+    {name = "Simone Sangeniti", email = "sangeniti.ss@gmail.com"},
+    {name = "Daniele Ferrazzo", email = "daniele@ferrazzo.it"}
+    ]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "requests >=2.27.0",
+    "pytz"
+]
+
+

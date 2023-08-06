@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: goldberg-mongodb-connector
+Version: 0.1.0
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beanie (>=1.13.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# project-goldberg-mongodb
+
+This repo should be used as connection to the MongoDB database for the Goldberg project.
+
+## Setup repository for development
+
+1. Create an environment with poetry
+
+    ```bash
+    poetry install
+    ```
+
+2. Create a `.env` file with the following content:
+
+    ```bash
+    MONGO_URI=mongodb://localhost:27017
+    MONGO_DB=goldberg
+    ```
+
+3. Run the tests
+
+    ```bash
+    poetry run pytest
+    ```
+
