@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: allz
+Version: 0.0.4
+Summary: A universal command line tool for compression and decompression
+Home-page: https://github.com/opendatalab/allz/
+Author: opendatalab
+Author-email: yujia@pjlab.org.cn
+Keywords: python,compress,decompress,allz
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: importlib
+
+A universal command line tool for compression and decompression
