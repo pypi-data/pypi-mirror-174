@@ -1,0 +1,2 @@
+[console_scripts]
+sync-dl = sync_dl:main
