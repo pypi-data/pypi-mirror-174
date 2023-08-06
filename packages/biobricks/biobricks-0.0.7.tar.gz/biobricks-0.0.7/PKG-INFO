@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: biobricks
+Version: 0.0.7
+Summary: Biobricks automates bioinformatics data.
+Project-URL: Homepage, https://github.com/biobricks-ai/biobricks
+Project-URL: Bug Tracker, https://github.com/biobricks-ai/biobricks/issues
+Author-email: "Jose A. Jaramillo" <jjv@utp.edu.co>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# BioBricks
+
+Biobricks automates bioinformatics data.
