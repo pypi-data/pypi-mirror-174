@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "spinsrv"
+version = "0.0.12"
+authors = [
+  { name = "N. C. Landolfi", email="crews.fixture.0f@icloud.com"},
+]
+description = "The spin python package. See https://spinsrv.com"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "requests", 
+  "python-dateutil",
+  "fsspec",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/spinsrv/spinpy"
