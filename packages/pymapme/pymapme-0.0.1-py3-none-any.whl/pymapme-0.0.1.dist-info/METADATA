@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pymapme
+Version: 0.0.1
+Summary: functionality for mapping one model into another
+Author: funnydman
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# PyMapMe
+
+Map one model into another, for example:
+
+### Example
+
+```
+from typing import Any
+
+from pydantic import BaseModel, Field
+from pymapme.models.mapping import MappingModel
+
+
+class Person(BaseModel):
+    name: str
+    surname: str
+
+
+class Profile(BaseModel):
+    nickname: str
+    person: Person
+
+
+class User(MappingModel):
+    nickname: str = Field(source='nickname')
+    first_name: str = Field(source='person.name')
+    surname: str = Field(source='person.surname')
+    full_name: str = Field(source_func='_get_full_name')
+
+    @staticmethod
+    def _get_full_name(model: Profile, default: Any):
+        return model.person.name + ' ' + model.person.surname
+
+
+profile = Profile(nickname='baobab', person=Person(name='John', surname='Smith'))
+user = User.map_from_model(profile)
+print(user.dict())  # {'nickname': 'baobab', 'first_name': 'John', 'surname': 'Smith', 'full_name': 'John Smith'}
+```
