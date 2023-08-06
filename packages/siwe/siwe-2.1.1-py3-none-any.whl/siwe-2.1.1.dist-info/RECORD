@@ -1,0 +1,11 @@
+siwe/__init__.py,sha256=LtYBNCf2NZ716saEl7-1_QQNRrBVgULzExiUuHkRR4k,230
+siwe/defs.py,sha256=t3D4MmQHxmm8BoU_NqZ1WiWAWj4y5DFLtFG6DloqVY8,1063
+siwe/grammars/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+siwe/grammars/eip4361.py,sha256=83d_KR4d9cDtoEk887btRbHecDmEB98Ls89w4AiECzE,1686
+siwe/grammars/rfc3339.py,sha256=7ydmKnarLNmPXSE8zZNbvfChmimpa9AO7TUg-tXyxDA,868
+siwe/grammars/rfc5234.py,sha256=z_u1FqTEtwcymVL1ZgR0MXi-eB55Yj-ruchyoA3Ur80,424
+siwe/parsed.py,sha256=EcwD1OI5QZ_Ptat_aWzbXAYNtbM8yRo3Dktdw7iLVFQ,2301
+siwe/siwe.py,sha256=QZLo9cHVGNAUMicx6wO2AVMJS2Nu9EMu_HJbW8p3XaI,10147
+siwe-2.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+siwe-2.1.1.dist-info/METADATA,sha256=UlN1w03m0ziLRx1b1wRTXiL4Mqw3Gey2Y2GK-cnh1e8,3969
+siwe-2.1.1.dist-info/RECORD,,
