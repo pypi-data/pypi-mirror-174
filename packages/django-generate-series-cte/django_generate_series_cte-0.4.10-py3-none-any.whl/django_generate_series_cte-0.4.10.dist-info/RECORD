@@ -1,0 +1,8 @@
+django_generate_series_cte/__init__.py,sha256=5sY1DeKiZH6JvK162uYsRRKgG3xiZNWUmMiarFZ4clI,23
+django_generate_series_cte/apps.py,sha256=0xBXJqKz4PIH_0IWpCk_Vgg3YWlOMSZ3zSdKu9PVOYU,121
+django_generate_series_cte/exceptions.py,sha256=G7qZLy1ryU3QIaBNSZ8FPdtoKfmuefiu7X0qmJ3CQTc,112
+django_generate_series_cte/models.py,sha256=Qb1fQEaxP21zdOKixRBbDLTaodXELo4MwI6-BQjnLmk,16179
+django_generate_series_cte-0.4.10.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+django_generate_series_cte-0.4.10.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+django_generate_series_cte-0.4.10.dist-info/METADATA,sha256=Ro8W7N9cn-adLP3yy6zt7rQbphhVCrJA2YjMrmt2H7M,6396
+django_generate_series_cte-0.4.10.dist-info/RECORD,,
