@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: asteq-treso
+Version: 0.1
+Summary: Automation of the Accountability for the BDS of IMT Atlantique Nantes
+Home-page: https://github.com/Gloxounet/asteq-treso
+Author: gloxounet
+License: MIT
+Keywords: asteq
+Requires-Python: >=3
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: Click
+Requires-Dist: webdriver-manager
+Requires-Dist: packaging
+Requires-Dist: xlsxwriter
+
+Scrapping + Save new transactions
