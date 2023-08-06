@@ -1,0 +1,7107 @@
+Crimes in Colorado
+https://dev.socrata.com/foundry/data.colorado.gov/j6g4-gayk 
+
+Offenses in Colorado for 2016 through 2019 by Agency from the FBI's
+Crime Data Explorer.
+
+Rows:    1851996
+Columns: 9
+Period:  2016 to 2019
+
+COLUMNS:
+-------
+pub_agency_name
+  Field:  pub_agency_name
+  Type:   text
+  Null:   624
+  Count:  1851372
+  ITEMS:
+     Denver  (290286)
+     Colorado Springs  (200885)
+     Aurora  (160399)
+     Pueblo  (76642)
+     Lakewood  (75971)
+     Thornton  (51009)
+     Fort Collins  (50638)
+     Boulder  (44195)
+     Greeley  (42376)
+     Adams  (41716)
+     Westminster  (40728)
+     Grand Junction  (37108)
+     Douglas  (36271)
+     Jefferson  (35224)
+     Arvada  (34023)
+     Longmont  (33721)
+     El Paso  (32434)
+     Loveland  (27101)
+     Commerce City  (23559)
+     Arapahoe  (22895)
+
+county_name
+  Field:  county_name
+  Type:   text
+  Null:   6346
+  Count:  1845650
+  ITEMS:
+     DENVER  (291398)
+     EL PASO  (247120)
+     DOUGLAS; ADAMS; ARAPAHOE  (160399)
+     JEFFERSON  (133694)
+     ADAMS  (123434)
+     LARIMER  (105447)
+     ARAPAHOE  (85902)
+     PUEBLO  (77782)
+     DOUGLAS  (71079)
+     WELD  (69932)
+     BOULDER  (66446)
+     MESA  (59033)
+     JEFFERSON; ADAMS  (40728)
+     ADAMS; JEFFERSON  (34023)
+     WELD; BOULDER  (33721)
+     WELD; ADAMS  (32177)
+     BROOMFIELD  (20920)
+     GARFIELD  (17134)
+     DOUGLAS; JEFFERSON; ARAPAHOE  (13389)
+     MONTROSE  (13224)
+
+incident_date
+  Field:  incident_date
+  Type:   calendar_date
+  Null:   624
+  Count:  1851372
+
+incident_hour
+  Field:  incident_hour
+  Type:   number
+  Null:   25821
+  Count:  1826175
+  Avg:    -
+  Max:    23
+  Min:    0
+  Sum:    -
+
+offense_name
+  Field:  offense_name
+  Type:   text
+  Null:   624
+  Count:  1851372
+  ITEMS:
+     Destruction/Damage/Vandalism of Property  (235718)
+     All Other Larceny  (204129)
+     Simple Assault  (168572)
+     Theft From Motor Vehicle  (146624)
+     Shoplifting  (139258)
+     Drug/Narcotic Violations  (133698)
+     Burglary/Breaking & Entering  (124713)
+     Motor Vehicle Theft  (114445)
+     Drug Equipment Violations  (75755)
+     Aggravated Assault  (62817)
+     Theft From Building  (58792)
+     Theft of Motor Vehicle Parts or Accessories  (47763)
+     False Pretenses/Swindle/Confidence Game  (37736)
+     Impersonation  (37240)
+     Weapon Law Violations  (34906)
+     Counterfeiting/Forgery  (32255)
+     Credit Card/Automated Teller Machine Fraud  (31918)
+     Robbery  (31302)
+     Intimidation  (22178)
+     Identity Theft  (18508)
+
+crime_against
+  Field:  crime_against
+  Type:   text
+  Null:   624
+  Count:  1851372
+  ITEMS:
+     Property  (1297541)
+     Person  (299546)
+     Society  (254285)
+
+offense_category_name
+  Field:  offense_category_name
+  Type:   text
+  Null:   624
+  Count:  1851372
+  ITEMS:
+     Larceny/Theft Offenses  (601434)
+     Assault Offenses  (253567)
+     Destruction/Damage/Vandalism of Property  (235718)
+     Drug/Narcotic Offenses  (209453)
+     Fraud Offenses  (130195)
+     Burglary/Breaking & Entering  (124713)
+     Motor Vehicle Theft  (114445)
+     Weapon Law Violations  (34906)
+     Sex Offenses  (32728)
+     Counterfeiting/Forgery  (32255)
+     Robbery  (31302)
+     Stolen Property Offenses  (15571)
+     Kidnapping/Abduction  (10960)
+     Arson  (5638)
+     Pornography/Obscene Material  (4349)
+     Prostitution Offenses  (3153)
+     Embezzlement  (2749)
+     Extortion/Blackmail  (2645)
+     Animal Cruelty  (2350)
+     Homicide Offenses  (1608)
+
+offense_group
+  Field:  offense_group
+  Type:   text
+  Null:   624
+  Count:  1851372
+
+age_num
+  Field:  age_num
+  Type:   number
+  Null:   802925
+  Count:  1049071
+  Avg:    -
+  Max:    98
+  Min:    1
+  Sum:    -
+
+Crimes in Colorado 1997 to 2015
+https://dev.socrata.com/foundry/data.colorado.gov/6vnq-az4b 
+
+Crime stats for the State of Colorado from 1997 to 2015. Data provided
+by the CDPS and the FBI's Crime Data Explorer (CDE).
+
+Rows:    4952282
+Columns: 10
+Period:  1997 to 2015
+
+COLUMNS:
+-------
+agency_name
+  Field:  agency_name
+  Type:   text
+  Null:   380
+  Count:  4951902
+  ITEMS:
+     Colorado Springs Police Department  (768694)
+     Aurora Police Department  (587700)
+     Denver Police Department  (521028)
+     Lakewood Police Department  (320384)
+     Adams County Sheriff's Office  (161497)
+     Jefferson County Sheriff's Office  (145019)
+     Westminster Police Department  (122324)
+     Grand Junction Police Department  (120420)
+     Fort Collins Police Department  (105624)
+     Greeley Police Department  (102768)
+     Arapahoe County Sheriff's Office  (97761)
+     Pueblo Police Department  (87106)
+     Commerce City Police Department  (83376)
+     Longmont Police Department  (81454)
+     El Paso County Sheriff's Office  (78617)
+     Northglenn Police Department  (69986)
+     Arvada Police Department  (66881)
+     Larimer County Sheriff's Office  (66564)
+     Mesa County Sheriff's Office  (64631)
+     Centennial Police Department  (59761)
+
+agency_type_name
+  Field:  agency_type_name
+  Type:   text
+  Null:   380
+  Count:  4951902
+  ITEMS:
+     City  (4012471)
+     County  (850360)
+     University or College  (60693)
+     State Police  (24480)
+     Other State Agency  (3325)
+     Other  (557)
+     Tribal  (16)
+
+city_name
+  Field:  city_name
+  Type:   text
+  Null:   939702
+  Count:  4012580
+  ITEMS:
+     Colorado Springs  (768694)
+     Aurora  (587700)
+     Denver  (541421)
+     Lakewood  (320384)
+     Westminster  (122324)
+     Grand Junction  (120420)
+     Fort Collins  (105624)
+     Greeley  (102768)
+     Englewood  (97958)
+     Pueblo  (87106)
+     Commerce City  (83376)
+     Longmont  (81454)
+     Northglenn  (69986)
+     Arvada  (66881)
+     Broomfield  (56900)
+     Wheat Ridge  (56554)
+     Brighton  (37813)
+     Boulder  (36768)
+     Montrose  (33409)
+     Parker  (31949)
+
+primary_county
+  Field:  primary_county
+  Type:   text
+  Null:   24938
+  Count:  4927344
+  ITEMS:
+     El Paso  (881966)
+     Arapahoe  (846285)
+     Jefferson  (620866)
+     Adams  (535522)
+     Denver  (530939)
+     Larimer  (212468)
+     Mesa  (189866)
+     Weld  (169254)
+     Boulder  (155403)
+     Pueblo  (99231)
+     Douglas  (87111)
+     Eagle  (56952)
+     Broomfield  (46913)
+     Garfield  (45575)
+     Montrose  (42692)
+     Fremont  (31983)
+     Summit  (31567)
+     Logan  (25578)
+     Routt  (23988)
+     Montezuma  (23656)
+
+incident_hour
+  Field:  incident_hour
+  Type:   number
+  Null:   139976
+  Count:  4812306
+  Avg:    -
+  Max:    23.0
+  Min:    0.0
+  Sum:    -
+
+offense_name
+  Field:  offense_name
+  Type:   text
+  Null:   2376
+  Count:  4949906
+  ITEMS:
+     Destruction/Damage/Vandalism of Property  (856498)
+     All Other Larceny  (490294)
+     Burglary/Breaking & Entering  (417155)
+     Theft From Motor Vehicle  (409580)
+     Simple Assault  (384606)
+     Drug/Narcotic Violations  (336799)
+     Shoplifting  (333980)
+     Motor Vehicle Theft  (236154)
+     Theft From Building  (227305)
+     Drug Equipment Violations  (215826)
+     Aggravated Assault  (149720)
+     Theft of Motor Vehicle Parts or Accessories  (149304)
+     Counterfeiting/Forgery  (101317)
+     Impersonation  (93960)
+     False Pretenses/Swindle/Confidence Game  (91190)
+     Robbery  (78457)
+     Weapon Law Violations  (69222)
+     Credit Card/Automated Teller Machine Fraud  (59983)
+     Intimidation  (40110)
+     Stolen Property Offenses  (33671)
+
+crime_against
+  Field:  crime_against
+  Type:   text
+  Null:   2376
+  Count:  4949906
+  ITEMS:
+     Property  (3635797)
+     Person  (677735)
+     Society  (636117)
+     Not a Crime  (257)
+
+offense_category_name
+  Field:  offense_category_name
+  Type:   text
+  Null:   2585
+  Count:  4949697
+  ITEMS:
+     Larceny/Theft Offenses  (1629963)
+     Destruction/Damage/Vandalism of Property  (856498)
+     Assault Offenses  (574436)
+     Drug/Narcotic Offenses  (552625)
+     Burglary/Breaking & Entering  (417155)
+     Fraud Offenses  (250330)
+     Motor Vehicle Theft  (236154)
+     Counterfeiting/Forgery  (101317)
+     Robbery  (78457)
+     Sex Offenses  (75765)
+     Weapon Law Violations  (69222)
+     Stolen Property Offenses  (33671)
+     Kidnapping/Abduction  (24622)
+     Arson  (19202)
+     Prostitution Offenses  (10778)
+     Embezzlement  (10102)
+     Pornography/Obscene Material  (3068)
+     Homicide Offenses  (3047)
+     Extortion/Blackmail  (1850)
+     Bribery  (1079)
+
+age_num
+  Field:  age_num
+  Type:   number
+  Null:   2337245
+  Count:  2615037
+  Avg:    -
+  Max:    98.0
+  Min:    1.0
+  Sum:    -
+
+incident_date
+  Field:  incident_date
+  Type:   calendar_date
+  Null:   2756
+  Count:  4949526
+
+Crime Arrests by Police District 2001-2016 in Colorado
+https://dev.socrata.com/foundry/data.colorado.gov/2e5i-5hfy 
+
+Criminal arrests summarized by type of crime for police districts in
+Colorado from 2001 to 2016 from the Colorado Department of Public
+Safety (CDPS).
+
+Rows:    93114
+Columns: 5
+Period:  2001 to 2016
+
+COLUMNS:
+-------
+year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  93114
+  Avg:    2008.781579569130
+  Max:    2016
+  Min:    2001
+  Sum:    187045688
+
+adultCount
+  Field:  adultcount
+  Type:   number
+  Null:   7365
+  Count:  85749
+  Avg:    29.14680054577896
+  Max:    12641
+  Min:    0
+  Sum:    2499309
+
+juvenileCount
+  Field:  juvenilecount
+  Type:   number
+  Null:   3994
+  Count:  89120
+  Avg:    7.111187163375224
+  Max:    2764
+  Min:    0
+  Sum:    633749
+
+type
+  Field:  type
+  Type:   text
+  Null:   450
+  Count:  92664
+  ITEMS:
+     Murder Non Negligent Manslaughter  (20)
+     Rape  (19)
+     Robbery  (18)
+     Aggravated Assault  (17)
+     Burglary  (16)
+     Larceny  (15)
+     Motor Vehicle Theft  (14)
+     Other Assaults  (13)
+     Arson  (12)
+     Forgery  (11)
+     Fraud  (10)
+     Embezzlement  (9)
+     Stolen Property  (8)
+     Vandalism  (7)
+     Weapons  (6)
+     Prostitution  (5)
+     Other Sex Offenses  (4)
+     Drug Violations  (3)
+     Gambling  (2)
+     Other Family Offenses  (1)
+
+policeDistrict
+  Field:  policedistrict
+  Type:   text
+  Null:   0
+  Count:  93114
+  ITEMS:
+     Mesa County Sheriff  (20)
+     Fremont County Sheriff  (19)
+     Dillon PD  (18)
+
+Crime Offenses by Police District 2001-2016 in Colorado
+https://dev.socrata.com/foundry/data.colorado.gov/ya69-n6ta 
+
+Criminal offenses summarized by type of crime for police districts in
+Colorado for 2001 to 2016. Provided by the Colorado Department of
+Public Safety (CDPS).
+
+Rows:    78843
+Columns: 5
+Period:  2001 to 2016
+
+COLUMNS:
+-------
+year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  78843
+  Avg:    2008.692731123879
+  Max:    2016
+  Min:    2001
+  Sum:    158371361
+
+policeDistrict
+  Field:  policedistrict
+  Type:   text
+  Null:   0
+  Count:  78843
+  ITEMS:
+     Pueblo PD  (20)
+     Rangely PD  (19)
+     Red Rocks Community College PD  (18)
+     Rio Blanco County Sheriff  (17)
+     Rio Grande County Sheriff  (16)
+     Rocky Ford PD  (15)
+     Routt County Sheriff  (14)
+     Saguache County Sheriff  (13)
+     Salida PD  (12)
+     San Juan County Sheriff  (11)
+     San Miguel County Sheriff  (10)
+     Sedgwick County Sheriff  (9)
+     Sheridan PD  (8)
+     Silt PD  (7)
+     Silverthorne PD  (6)
+     Snowmass Village PD  (5)
+     Springfield PD  (4)
+     Steamboat Springs PD  (3)
+     Sterling PD  (2)
+     Stratton PD  (1)
+
+type
+  Field:  type
+  Type:   text
+  Null:   433
+  Count:  78410
+  ITEMS:
+     Arson  (20)
+     Assaults  (19)
+     Burglary  (18)
+     Larceny/Theft  (17)
+     Motor Vehicle Theft  (16)
+     Murder/Manslaughter  (15)
+     Negligent Manslaughter  (14)
+     Rape  (13)
+     Robbery  (12)
+
+subType
+  Field:  subtype
+  Type:   text
+  Null:   21825
+  Count:  57018
+  ITEMS:
+     Firearm  (20)
+     Hands/Feet/Fist  (19)
+     Knife/Cutting Instrument  (18)
+     Other Assaults  (17)
+     Other Dangerous Weapon  (16)
+     Attempted  (15)
+     Forced Entry  (14)
+     Unlawful Entry  (13)
+     Auto  (12)
+     Other  (11)
+     Truck  (10)
+     By Force  (9)
+     By Firearm  (8)
+     StrongArm  (7)
+
+count
+  Field:  count
+  Type:   number
+  Null:   2049
+  Count:  76794
+  Avg:    39.92584056046045
+  Max:    18518
+  Min:    0
+  Sum:    3066065
+
+Department Of Public Safety - Colorado Bureau Of Investigations - Marijuana Arrests
+https://dev.socrata.com/foundry/data.colorado.gov/tjwv-bqen 
+
+Marijuana related arrests in the State of Colorado as reported by the
+Colorado Department of Public Safety and Colorado Bureau of
+Investigations
+
+Rows:    7697
+Columns: 8
+Period:  2012 to 2017
+
+COLUMNS:
+-------
+ArrestYear 
+  Field:  arrestyear
+  Type:   text
+  Null:   0
+  Count:  7697
+
+County 
+  Field:  county
+  Type:   text
+  Null:   0
+  Count:  7697
+  ITEMS:
+     Adams  (902)
+     Arapahoe  (723)
+     Jefferson  (676)
+     El Paso  (550)
+     Weld  (516)
+     Larimer  (507)
+     Boulder  (435)
+     Mesa  (397)
+     Douglas  (309)
+     Denver  (293)
+     Eagle  (245)
+     Garfield  (204)
+     #NULL  (201)
+     La Plata  (128)
+     Broomfield  (107)
+     Montrose  (92)
+     Teller  (87)
+     Gunnison  (82)
+     Routt  (81)
+     Pueblo  (79)
+
+Agency
+  Field:  agency
+  Type:   text
+  Null:   0
+  Count:  7697
+  ITEMS:
+     Denver PD - CRIMINAL  (272)
+     Aurora PD  (247)
+     Grand Junction PD  (218)
+     Colorado State Patrol  (201)
+     Fort Collins PD  (191)
+     Colorado Springs PD  (190)
+     Lakewood PD  (181)
+     Brighton PD  (169)
+     Westminster PD  (163)
+     Thornton PD  (154)
+     Arvada PD  (151)
+     Adams County SO  (148)
+     Loveland PD  (137)
+     Fountain PD  (126)
+     Jefferson County SO  (125)
+     El Paso County SO  (119)
+     Commerce City PD  (115)
+     Englewood PD  (114)
+     BROOMFIELD POLICE DEPARTMENT  (107)
+     Northglenn PD  (102)
+
+AgeGroup 
+  Field:  agegroup
+  Type:   text
+  Null:   0
+  Count:  7697
+
+Gender 
+  Field:  gender
+  Type:   text
+  Null:   0
+  Count:  7697
+  ITEMS:
+     Male  (5175)
+     Female  (2522)
+
+RaceCode 
+  Field:  racecode
+  Type:   text
+  Null:   0
+  Count:  7697
+  ITEMS:
+     White  (3966)
+     Hispianic  (2101)
+     African American  (1024)
+     Asian  (305)
+     Native American  (144)
+     Unknown  (138)
+     Native Hawaiian / Pacific Ilandar  (19)
+
+NCICCODE 
+  Field:  nciccode
+  Type:   text
+  Null:   0
+  Count:  7697
+  ITEMS:
+     MJPossession  (5374)
+     MJUnknown  (1312)
+     MJSales  (638)
+     MJProduction  (350)
+     MJSmuggle  (23)
+
+NumberOfArrests
+  Field:  numberofarrests
+  Type:   text
+  Null:   0
+  Count:  7697
+
+Department Of Public Safety -  Colorado Bureau Of Investigations - Marijuana Offenses
+https://dev.socrata.com/foundry/data.colorado.gov/6ibz-fqdq 
+
+Marijuana related offenses in the State of Colorado as reported by the
+Colorado Department of Public Safety and Colorado Bureau of
+Investigations
+
+Rows:    6790
+Columns: 10
+Period:  2012 to 2017
+
+COLUMNS:
+-------
+IncidentYear
+  Field:  incidentyear
+  Type:   text
+  Null:   0
+  Count:  6790
+
+County
+  Field:  county
+  Type:   text
+  Null:   22
+  Count:  6768
+  ITEMS:
+     Adams  (708)
+     Arapahoe  (636)
+     Jefferson  (577)
+     Weld  (510)
+     El Paso  (484)
+     Boulder  (444)
+     Larimer  (441)
+     Mesa  (328)
+     Douglas  (284)
+     Denver  (242)
+     Eagle  (226)
+     Garfield  (202)
+     Pueblo  (146)
+     Broomfield  (101)
+     Routt  (89)
+     Montrose  (88)
+     Teller  (85)
+     Gunnison  (85)
+     La Plata  (84)
+     Fremont  (81)
+
+Agency
+  Field:  agency
+  Type:   text
+  Null:   0
+  Count:  6790
+  ITEMS:
+     Aurora PD  (226)
+     Denver PD - CRIMINAL  (226)
+     Colorado Springs PD  (216)
+     Grand Junction PD  (176)
+     Fort Collins PD  (174)
+     Boulder PD  (154)
+     Lakewood PD  (144)
+     Adams County SO  (129)
+     Jefferson County SO  (129)
+     Westminster PD  (123)
+     Thornton PD  (116)
+     Commerce City PD  (115)
+     Longmont PD  (110)
+     Arvada PD  (110)
+     Brighton PD  (108)
+     Loveland PD  (107)
+     BROOMFIELD POLICE DEPARTMENT  (101)
+     Douglas County SO  (100)
+     Greeley PD  (96)
+     El Paso County SO  (91)
+
+NCICCODE
+  Field:  nciccode
+  Type:   text
+  Null:   0
+  Count:  6790
+  ITEMS:
+     MJPossession  (4315)
+     MJUnknown  (1398)
+     MJSales  (694)
+     MJProduction  (336)
+     MJSmuggle  (47)
+
+AgeGroup
+  Field:  agegroup
+  Type:   text
+  Null:   6790
+  Count:  0
+
+Gender
+  Field:  gender
+  Type:   text
+  Null:   6790
+  Count:  0
+
+RaceCode
+  Field:  racecode
+  Type:   text
+  Null:   6790
+  Count:  0
+
+Location
+  Field:  location
+  Type:   text
+  Null:   0
+  Count:  6790
+  ITEMS:
+     Highway/Road/Alley/Street/Sidewalk  (1174)
+     Residence/Home  (1004)
+     School – Elementary/Secondary  (687)
+     Parking/Drop Lot/Garage  (640)
+     Park/Playground  (399)
+     Other/Unknown  (395)
+     School – College/University  (291)
+     Field/Woods  (224)
+     Department/Discount Store  (191)
+     Government/Public Building  (177)
+     Hotel/Motel/Etc.  (170)
+     Specialty Store  (162)
+     Commercial/Office Building  (145)
+     Convenience Store  (131)
+     Restaurant  (122)
+     Grocery/Supermarket  (99)
+     Bar/Nightclub  (94)
+     Jail/Prison/Penitentiary/Corrections Facility  (90)
+     Air/Bus/Train Terminal  (82)
+     Drug Store/Doctors Office/Hospital  (59)
+
+LocationGroup
+  Field:  locationgroup
+  Type:   text
+  Null:   0
+  Count:  6790
+  ITEMS:
+     Highway/Road/Alley/Street/Sidewalk  (1174)
+     Residence/Home  (1004)
+     Public space  (780)
+     School – Elementary/Secondary  (687)
+     Parking/Drop Lot/Garage  (640)
+     Retail site/bank/restaurant/bar  (532)
+     Other  (395)
+     School – College/University  (291)
+     Workplace  (206)
+     Public building  (201)
+     Hotel/Motel/Etc.  (170)
+     Specialty Store  (162)
+     Restaurant  (122)
+     Bar/Nightclub  (94)
+     Jail/Prison/Penitentiary/Corrections Facility  (90)
+     Drug Store/Doctors Office/Hospital  (59)
+     School/College(Historical Only)  (57)
+     Church/Synagogue/Temple/Mosque  (38)
+     Rental Storage Facility  (33)
+     Lake/Waterway/Beach  (26)
+
+NumberOfCases
+  Field:  numberofcases
+  Type:   text
+  Null:   0
+  Count:  6790
+
+Crime Rates 1980-2012
+https://dev.socrata.com/foundry/data.colorado.gov/mb89-xnkg 
+
+National or state offense totals are based on data from all reporting
+agencies and estimates for unreported areas.
+Rates are the number of reported offenses per 100,000 population.
+Offense Crimes Include: Violent crime (Murder and non-negligent
+manslaughter, forcible rape, robbery, and aggravated assault) &
+Property crime (Burglary, larceny-theft, and motor vehicle theft).
+
+Rows:    33
+Columns: 20
+Period:  1980 to 2012
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1996
+  Max:    2012
+  Min:    1980
+  Sum:    65868
+
+Population
+  Field:  population
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3952565.333333333
+  Max:    5187582
+  Min:    2878407
+  Sum:    130434656
+
+Violent crime total
+  Field:  violent_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    16387.33333333333
+  Max:    20229
+  Min:    13811
+  Sum:    540782
+
+Murder and non-negligent Manslaughter
+  Field:  murder_and_non_negligent_manslaughter
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    180.3939393939394
+  Max:    239
+  Min:    129
+  Sum:    5953
+
+Forcible rape
+  Field:  forcible_rape
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1717.303030303030
+  Max:    2285
+  Min:    1202
+  Sum:    56671
+
+Robbery
+  Field:  robbery
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3687.090909090909
+  Max:    4731
+  Min:    2984
+  Sum:    121674
+
+Aggravated assault
+  Field:  aggravated_assault
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    10802.54545454545
+  Max:    14230
+  Min:    8891
+  Sum:    356484
+
+Property crime total
+  Field:  property_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    174966.3030303030
+  Max:    212626
+  Min:    132781
+  Sum:    5773888
+
+Burglary
+  Field:  burglary
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    37842.27272727273
+  Max:    60197
+  Min:    25725
+  Sum:    1248795
+
+Larceny-theft
+  Field:  larceny_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    121378.0909090909
+  Max:    138219
+  Min:    95079
+  Sum:    4005477
+
+Motor vehicle theft
+  Field:  motor_vehicle_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    15745.93939393939
+  Max:    26101
+  Min:    11002
+  Sum:    519616
+
+Violent Crime rate
+  Field:  violent_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    427.6060606060606
+  Max:    578.8
+  Min:    308.9
+  Sum:    14111.0
+
+Murder and non-negligent manslaughter rate
+  Field:  murder_and_non_negligent_manslaughter_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4.787878787878788
+  Max:    8.1
+  Min:    2.6
+  Sum:    158.0
+
+Forcible rape rate
+  Field:  forcible_rape_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    43.46363636363636
+  Max:    52.5
+  Min:    36.2
+  Sum:    1434.3
+
+Robbery rate
+  Field:  robbery_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    97.64848484848485
+  Max:    160.1
+  Min:    62.7
+  Sum:    3222.4
+
+Aggravated assault rate
+  Field:  aggravated_assault_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    281.7
+  Max:    404.9
+  Min:    199.6
+  Sum:    9296.1
+
+Property crime rate
+  Field:  property_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4662.442424242424
+  Max:    6821.4
+  Min:    2595.3
+  Sum:    153860.6
+
+Burglary rate
+  Field:  burglary_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1034.463636363636
+  Max:    2031.6
+  Min:    502.8
+  Sum:    34137.3
+
+Larceny- theft rate
+  Field:  larceny_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3222.857575757576
+  Max:    4429.3
+  Min:    1877.4
+  Sum:    106354.3
+
+Motor vehicle theft rate
+  Field:  motor_vehicle_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    405.1303030303030
+  Max:    560
+  Min:    215
+  Sum:    13369.3
+
+Total Crime Rate vs Incarceration Rate Chart
+https://dev.socrata.com/foundry/data.colorado.gov/ae3x-wvn9 
+
+Total Crime includes: Violent crimes- Murder and non-negligent
+manslaughter, forcible rape, robbery, and aggravated assault. Property
+crimes - Burglary, larceny/theft, and motor vehicle theft. National or
+state offense totals are based on data from all reporting agencies and
+estimates for unreported areas. Rates are the number of reported
+offenses per 100,000 population. These figures are based on end of
+calendar year populations.
+
+Rows:    31
+Columns: 9
+Period:  1982 to 2012
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   text
+  Null:   0
+  Count:  31
+
+Population
+  Field:  population
+  Type:   number
+  Null:   0
+  Count:  31
+  Avg:    4019137.064516129
+  Max:    5187582
+  Min:    3045000
+  Sum:    124593249
+
+Violent Crime Total
+  Field:  violent_crime_total
+  Type:   number
+  Null:   0
+  Count:  31
+  Avg:    16445.54838709677
+  Max:    20229
+  Min:    13811
+  Sum:    509812
+
+Violent Crime Rate
+  Field:  violent_crime_rate
+  Type:   number
+  Null:   0
+  Count:  31
+  Avg:    420.9903225806452
+  Max:    578.8
+  Min:    308.9
+  Sum:    13050.7
+
+Property Crime Total
+  Field:  property_crime_total
+  Type:   number
+  Null:   0
+  Count:  31
+  Avg:    173416.0322580645
+  Max:    212626
+  Min:    132781
+  Sum:    5375897
+
+Property Crime Rate
+  Field:  property_crime_rate
+  Type:   number
+  Null:   0
+  Count:  31
+  Avg:    4523.687096774194
+  Max:    6575.7
+  Min:    2595.3
+  Sum:    140234.3
+
+Total Crime
+  Field:  total_crime
+  Type:   number
+  Null:   0
+  Count:  31
+  Avg:    189861.5806451613
+  Max:    229731
+  Min:    148866
+  Sum:    5885709
+
+Total Crime Rate
+  Field:  total_crime_rate
+  Type:   number
+  Null:   0
+  Count:  31
+  Avg:    4944.677419354839
+  Max:    7079.9
+  Min:    2909.7
+  Sum:    153285.0
+
+Incarceration Rate
+  Field:  incarceration_rate
+  Type:   number
+  Null:   0
+  Count:  31
+  Avg:    302.3709677419355
+  Max:    469
+  Min:    96
+  Sum:    9373.5
+
+Motor Vehicle Theft Rate
+https://dev.socrata.com/foundry/data.colorado.gov/in39-n8j5 
+
+National or state offense totals are based on data from all reporting
+agencies and estimates for unreported areas.
+Rates are the number of reported offenses per 100,000 population
+Sources: FBI, Uniform Crime Reports, prepared by the National Archive
+of Criminal Justice Data
+Date of download: Sep 18 2013
+
+Rows:    33
+Columns: 20
+Period:  1980 to 2012
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1996
+  Max:    2012
+  Min:    1980
+  Sum:    65868
+
+Population
+  Field:  population
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3952565.333333333
+  Max:    5187582
+  Min:    2878407
+  Sum:    130434656
+
+Violent crime total
+  Field:  violent_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    16387.33333333333
+  Max:    20229
+  Min:    13811
+  Sum:    540782
+
+Murder and non-negligent Manslaughter
+  Field:  murder_and_non_negligent_manslaughter
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    180.3939393939394
+  Max:    239
+  Min:    129
+  Sum:    5953
+
+Forcible rape
+  Field:  forcible_rape
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1717.303030303030
+  Max:    2285
+  Min:    1202
+  Sum:    56671
+
+Robbery
+  Field:  robbery
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3687.090909090909
+  Max:    4731
+  Min:    2984
+  Sum:    121674
+
+Aggravated assault
+  Field:  aggravated_assault
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    10802.54545454545
+  Max:    14230
+  Min:    8891
+  Sum:    356484
+
+Property crime total
+  Field:  property_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    174966.3030303030
+  Max:    212626
+  Min:    132781
+  Sum:    5773888
+
+Burglary
+  Field:  burglary
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    37842.27272727273
+  Max:    60197
+  Min:    25725
+  Sum:    1248795
+
+Larceny-theft
+  Field:  larceny_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    121378.0909090909
+  Max:    138219
+  Min:    95079
+  Sum:    4005477
+
+Motor vehicle theft
+  Field:  motor_vehicle_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    15745.93939393939
+  Max:    26101
+  Min:    11002
+  Sum:    519616
+
+Violent Crime rate
+  Field:  violent_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    427.6060606060606
+  Max:    578.8
+  Min:    308.9
+  Sum:    14111.0
+
+Murder and non-negligent manslaughter rate
+  Field:  murder_and_non_negligent_manslaughter_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4.787878787878788
+  Max:    8.1
+  Min:    2.6
+  Sum:    158.0
+
+Forcible rape rate
+  Field:  forcible_rape_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    43.46363636363636
+  Max:    52.5
+  Min:    36.2
+  Sum:    1434.3
+
+Robbery rate
+  Field:  robbery_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    97.64848484848485
+  Max:    160.1
+  Min:    62.7
+  Sum:    3222.4
+
+Aggravated assault rate
+  Field:  aggravated_assault_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    281.7
+  Max:    404.9
+  Min:    199.6
+  Sum:    9296.1
+
+Property crime rate
+  Field:  property_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4662.442424242424
+  Max:    6821.4
+  Min:    2595.3
+  Sum:    153860.6
+
+Burglary rate
+  Field:  burglary_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1034.463636363636
+  Max:    2031.6
+  Min:    502.8
+  Sum:    34137.3
+
+Larceny- theft rate
+  Field:  larceny_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3222.857575757576
+  Max:    4429.3
+  Min:    1877.4
+  Sum:    106354.3
+
+Motor vehicle theft rate
+  Field:  motor_vehicle_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    405.1303030303030
+  Max:    560
+  Min:    215
+  Sum:    13369.3
+
+Violent Crime Rate
+https://dev.socrata.com/foundry/data.colorado.gov/kef6-x39y 
+
+National or state offense totals are based on data from all reporting
+agencies and estimates for unreported areas.
+Rates are the number of reported offenses per 100,000 population
+Sources: FBI, Uniform Crime Reports, prepared by the National Archive
+of Criminal Justice Data
+Date of download: Sep 18 2013
+
+Rows:    33
+Columns: 20
+Period:  1980 to 2012
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1996
+  Max:    2012
+  Min:    1980
+  Sum:    65868
+
+Population
+  Field:  population
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3952565.333333333
+  Max:    5187582
+  Min:    2878407
+  Sum:    130434656
+
+Violent crime total
+  Field:  violent_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    16387.33333333333
+  Max:    20229
+  Min:    13811
+  Sum:    540782
+
+Murder and non-negligent Manslaughter
+  Field:  murder_and_non_negligent_manslaughter
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    180.3939393939394
+  Max:    239
+  Min:    129
+  Sum:    5953
+
+Forcible rape
+  Field:  forcible_rape
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1717.303030303030
+  Max:    2285
+  Min:    1202
+  Sum:    56671
+
+Robbery
+  Field:  robbery
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3687.090909090909
+  Max:    4731
+  Min:    2984
+  Sum:    121674
+
+Aggravated assault
+  Field:  aggravated_assault
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    10802.54545454545
+  Max:    14230
+  Min:    8891
+  Sum:    356484
+
+Property crime total
+  Field:  property_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    174966.3030303030
+  Max:    212626
+  Min:    132781
+  Sum:    5773888
+
+Burglary
+  Field:  burglary
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    37842.27272727273
+  Max:    60197
+  Min:    25725
+  Sum:    1248795
+
+Larceny-theft
+  Field:  larceny_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    121378.0909090909
+  Max:    138219
+  Min:    95079
+  Sum:    4005477
+
+Motor vehicle theft
+  Field:  motor_vehicle_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    15745.93939393939
+  Max:    26101
+  Min:    11002
+  Sum:    519616
+
+Violent Crime rate
+  Field:  violent_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    427.6060606060606
+  Max:    578.8
+  Min:    308.9
+  Sum:    14111.0
+
+Murder and non-negligent manslaughter rate
+  Field:  murder_and_non_negligent_manslaughter_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4.787878787878788
+  Max:    8.1
+  Min:    2.6
+  Sum:    158.0
+
+Forcible rape rate
+  Field:  forcible_rape_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    43.46363636363636
+  Max:    52.5
+  Min:    36.2
+  Sum:    1434.3
+
+Robbery rate
+  Field:  robbery_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    97.64848484848485
+  Max:    160.1
+  Min:    62.7
+  Sum:    3222.4
+
+Aggravated assault rate
+  Field:  aggravated_assault_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    281.7
+  Max:    404.9
+  Min:    199.6
+  Sum:    9296.1
+
+Property crime rate
+  Field:  property_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4662.442424242424
+  Max:    6821.4
+  Min:    2595.3
+  Sum:    153860.6
+
+Burglary rate
+  Field:  burglary_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1034.463636363636
+  Max:    2031.6
+  Min:    502.8
+  Sum:    34137.3
+
+Larceny- theft rate
+  Field:  larceny_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3222.857575757576
+  Max:    4429.3
+  Min:    1877.4
+  Sum:    106354.3
+
+Motor vehicle theft rate
+  Field:  motor_vehicle_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    405.1303030303030
+  Max:    560
+  Min:    215
+  Sum:    13369.3
+
+Murder and Non-Negligent Manslaughter Rate
+https://dev.socrata.com/foundry/data.colorado.gov/5bjt-dgty 
+
+National or state offense totals are based on data from all reporting
+agencies and estimates for unreported areas.
+Rates are the number of reported offenses per 100,000 population
+Sources: FBI, Uniform Crime Reports, prepared by the National Archive
+of Criminal Justice Data
+Date of download: Sep 18 2013
+
+Rows:    33
+Columns: 20
+Period:  1980 to 2012
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1996
+  Max:    2012
+  Min:    1980
+  Sum:    65868
+
+Population
+  Field:  population
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3952565.333333333
+  Max:    5187582
+  Min:    2878407
+  Sum:    130434656
+
+Violent crime total
+  Field:  violent_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    16387.33333333333
+  Max:    20229
+  Min:    13811
+  Sum:    540782
+
+Murder and non-negligent Manslaughter
+  Field:  murder_and_non_negligent_manslaughter
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    180.3939393939394
+  Max:    239
+  Min:    129
+  Sum:    5953
+
+Forcible rape
+  Field:  forcible_rape
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1717.303030303030
+  Max:    2285
+  Min:    1202
+  Sum:    56671
+
+Robbery
+  Field:  robbery
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3687.090909090909
+  Max:    4731
+  Min:    2984
+  Sum:    121674
+
+Aggravated assault
+  Field:  aggravated_assault
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    10802.54545454545
+  Max:    14230
+  Min:    8891
+  Sum:    356484
+
+Property crime total
+  Field:  property_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    174966.3030303030
+  Max:    212626
+  Min:    132781
+  Sum:    5773888
+
+Burglary
+  Field:  burglary
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    37842.27272727273
+  Max:    60197
+  Min:    25725
+  Sum:    1248795
+
+Larceny-theft
+  Field:  larceny_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    121378.0909090909
+  Max:    138219
+  Min:    95079
+  Sum:    4005477
+
+Motor vehicle theft
+  Field:  motor_vehicle_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    15745.93939393939
+  Max:    26101
+  Min:    11002
+  Sum:    519616
+
+Violent Crime rate
+  Field:  violent_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    427.6060606060606
+  Max:    578.8
+  Min:    308.9
+  Sum:    14111.0
+
+Murder and non-negligent manslaughter rate
+  Field:  murder_and_non_negligent_manslaughter_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4.787878787878788
+  Max:    8.1
+  Min:    2.6
+  Sum:    158.0
+
+Forcible rape rate
+  Field:  forcible_rape_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    43.46363636363636
+  Max:    52.5
+  Min:    36.2
+  Sum:    1434.3
+
+Robbery rate
+  Field:  robbery_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    97.64848484848485
+  Max:    160.1
+  Min:    62.7
+  Sum:    3222.4
+
+Aggravated assault rate
+  Field:  aggravated_assault_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    281.7
+  Max:    404.9
+  Min:    199.6
+  Sum:    9296.1
+
+Property crime rate
+  Field:  property_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4662.442424242424
+  Max:    6821.4
+  Min:    2595.3
+  Sum:    153860.6
+
+Burglary rate
+  Field:  burglary_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1034.463636363636
+  Max:    2031.6
+  Min:    502.8
+  Sum:    34137.3
+
+Larceny- theft rate
+  Field:  larceny_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3222.857575757576
+  Max:    4429.3
+  Min:    1877.4
+  Sum:    106354.3
+
+Motor vehicle theft rate
+  Field:  motor_vehicle_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    405.1303030303030
+  Max:    560
+  Min:    215
+  Sum:    13369.3
+
+Forcible Rape Rate
+https://dev.socrata.com/foundry/data.colorado.gov/pt7s-w4ni 
+
+National or state offense totals are based on data from all reporting
+agencies and estimates for unreported areas.
+Rates are the number of reported offenses per 100,000 population
+Sources: FBI, Uniform Crime Reports, prepared by the National Archive
+of Criminal Justice Data
+Date of download: Sep 18 2013
+
+Rows:    33
+Columns: 20
+Period:  1980 to 2012
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1996
+  Max:    2012
+  Min:    1980
+  Sum:    65868
+
+Population
+  Field:  population
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3952565.333333333
+  Max:    5187582
+  Min:    2878407
+  Sum:    130434656
+
+Violent crime total
+  Field:  violent_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    16387.33333333333
+  Max:    20229
+  Min:    13811
+  Sum:    540782
+
+Murder and non-negligent Manslaughter
+  Field:  murder_and_non_negligent_manslaughter
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    180.3939393939394
+  Max:    239
+  Min:    129
+  Sum:    5953
+
+Forcible rape
+  Field:  forcible_rape
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1717.303030303030
+  Max:    2285
+  Min:    1202
+  Sum:    56671
+
+Robbery
+  Field:  robbery
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3687.090909090909
+  Max:    4731
+  Min:    2984
+  Sum:    121674
+
+Aggravated assault
+  Field:  aggravated_assault
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    10802.54545454545
+  Max:    14230
+  Min:    8891
+  Sum:    356484
+
+Property crime total
+  Field:  property_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    174966.3030303030
+  Max:    212626
+  Min:    132781
+  Sum:    5773888
+
+Burglary
+  Field:  burglary
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    37842.27272727273
+  Max:    60197
+  Min:    25725
+  Sum:    1248795
+
+Larceny-theft
+  Field:  larceny_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    121378.0909090909
+  Max:    138219
+  Min:    95079
+  Sum:    4005477
+
+Motor vehicle theft
+  Field:  motor_vehicle_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    15745.93939393939
+  Max:    26101
+  Min:    11002
+  Sum:    519616
+
+Violent Crime rate
+  Field:  violent_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    427.6060606060606
+  Max:    578.8
+  Min:    308.9
+  Sum:    14111.0
+
+Murder and non-negligent manslaughter rate
+  Field:  murder_and_non_negligent_manslaughter_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4.787878787878788
+  Max:    8.1
+  Min:    2.6
+  Sum:    158.0
+
+Forcible rape rate
+  Field:  forcible_rape_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    43.46363636363636
+  Max:    52.5
+  Min:    36.2
+  Sum:    1434.3
+
+Robbery rate
+  Field:  robbery_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    97.64848484848485
+  Max:    160.1
+  Min:    62.7
+  Sum:    3222.4
+
+Aggravated assault rate
+  Field:  aggravated_assault_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    281.7
+  Max:    404.9
+  Min:    199.6
+  Sum:    9296.1
+
+Property crime rate
+  Field:  property_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4662.442424242424
+  Max:    6821.4
+  Min:    2595.3
+  Sum:    153860.6
+
+Burglary rate
+  Field:  burglary_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1034.463636363636
+  Max:    2031.6
+  Min:    502.8
+  Sum:    34137.3
+
+Larceny- theft rate
+  Field:  larceny_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3222.857575757576
+  Max:    4429.3
+  Min:    1877.4
+  Sum:    106354.3
+
+Motor vehicle theft rate
+  Field:  motor_vehicle_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    405.1303030303030
+  Max:    560
+  Min:    215
+  Sum:    13369.3
+
+Robbery Rate
+https://dev.socrata.com/foundry/data.colorado.gov/gh69-tn4n 
+
+National or state offense totals are based on data from all reporting
+agencies and estimates for unreported areas.
+Rates are the number of reported offenses per 100,000 population
+Sources: FBI, Uniform Crime Reports, prepared by the National Archive
+of Criminal Justice Data
+Date of download: Sep 18 2013
+
+Rows:    33
+Columns: 20
+Period:  1980 to 2012
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1996
+  Max:    2012
+  Min:    1980
+  Sum:    65868
+
+Population
+  Field:  population
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3952565.333333333
+  Max:    5187582
+  Min:    2878407
+  Sum:    130434656
+
+Violent crime total
+  Field:  violent_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    16387.33333333333
+  Max:    20229
+  Min:    13811
+  Sum:    540782
+
+Murder and non-negligent Manslaughter
+  Field:  murder_and_non_negligent_manslaughter
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    180.3939393939394
+  Max:    239
+  Min:    129
+  Sum:    5953
+
+Forcible rape
+  Field:  forcible_rape
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1717.303030303030
+  Max:    2285
+  Min:    1202
+  Sum:    56671
+
+Robbery
+  Field:  robbery
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3687.090909090909
+  Max:    4731
+  Min:    2984
+  Sum:    121674
+
+Aggravated assault
+  Field:  aggravated_assault
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    10802.54545454545
+  Max:    14230
+  Min:    8891
+  Sum:    356484
+
+Property crime total
+  Field:  property_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    174966.3030303030
+  Max:    212626
+  Min:    132781
+  Sum:    5773888
+
+Burglary
+  Field:  burglary
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    37842.27272727273
+  Max:    60197
+  Min:    25725
+  Sum:    1248795
+
+Larceny-theft
+  Field:  larceny_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    121378.0909090909
+  Max:    138219
+  Min:    95079
+  Sum:    4005477
+
+Motor vehicle theft
+  Field:  motor_vehicle_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    15745.93939393939
+  Max:    26101
+  Min:    11002
+  Sum:    519616
+
+Violent Crime rate
+  Field:  violent_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    427.6060606060606
+  Max:    578.8
+  Min:    308.9
+  Sum:    14111.0
+
+Murder and non-negligent manslaughter rate
+  Field:  murder_and_non_negligent_manslaughter_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4.787878787878788
+  Max:    8.1
+  Min:    2.6
+  Sum:    158.0
+
+Forcible rape rate
+  Field:  forcible_rape_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    43.46363636363636
+  Max:    52.5
+  Min:    36.2
+  Sum:    1434.3
+
+Robbery rate
+  Field:  robbery_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    97.64848484848485
+  Max:    160.1
+  Min:    62.7
+  Sum:    3222.4
+
+Aggravated assault rate
+  Field:  aggravated_assault_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    281.7
+  Max:    404.9
+  Min:    199.6
+  Sum:    9296.1
+
+Property crime rate
+  Field:  property_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4662.442424242424
+  Max:    6821.4
+  Min:    2595.3
+  Sum:    153860.6
+
+Burglary rate
+  Field:  burglary_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1034.463636363636
+  Max:    2031.6
+  Min:    502.8
+  Sum:    34137.3
+
+Larceny- theft rate
+  Field:  larceny_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3222.857575757576
+  Max:    4429.3
+  Min:    1877.4
+  Sum:    106354.3
+
+Motor vehicle theft rate
+  Field:  motor_vehicle_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    405.1303030303030
+  Max:    560
+  Min:    215
+  Sum:    13369.3
+
+Burglary Rate
+https://dev.socrata.com/foundry/data.colorado.gov/cv9i-da8q 
+
+National or state offense totals are based on data from all reporting
+agencies and estimates for unreported areas.
+Rates are the number of reported offenses per 100,000 population
+Sources: FBI, Uniform Crime Reports, prepared by the National Archive
+of Criminal Justice Data
+Date of download: Sep 18 2013
+
+Rows:    33
+Columns: 20
+Period:  1980 to 2012
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1996
+  Max:    2012
+  Min:    1980
+  Sum:    65868
+
+Population
+  Field:  population
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3952565.333333333
+  Max:    5187582
+  Min:    2878407
+  Sum:    130434656
+
+Violent crime total
+  Field:  violent_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    16387.33333333333
+  Max:    20229
+  Min:    13811
+  Sum:    540782
+
+Murder and non-negligent Manslaughter
+  Field:  murder_and_non_negligent_manslaughter
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    180.3939393939394
+  Max:    239
+  Min:    129
+  Sum:    5953
+
+Forcible rape
+  Field:  forcible_rape
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1717.303030303030
+  Max:    2285
+  Min:    1202
+  Sum:    56671
+
+Robbery
+  Field:  robbery
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3687.090909090909
+  Max:    4731
+  Min:    2984
+  Sum:    121674
+
+Aggravated assault
+  Field:  aggravated_assault
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    10802.54545454545
+  Max:    14230
+  Min:    8891
+  Sum:    356484
+
+Property crime total
+  Field:  property_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    174966.3030303030
+  Max:    212626
+  Min:    132781
+  Sum:    5773888
+
+Burglary
+  Field:  burglary
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    37842.27272727273
+  Max:    60197
+  Min:    25725
+  Sum:    1248795
+
+Larceny-theft
+  Field:  larceny_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    121378.0909090909
+  Max:    138219
+  Min:    95079
+  Sum:    4005477
+
+Motor vehicle theft
+  Field:  motor_vehicle_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    15745.93939393939
+  Max:    26101
+  Min:    11002
+  Sum:    519616
+
+Violent Crime rate
+  Field:  violent_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    427.6060606060606
+  Max:    578.8
+  Min:    308.9
+  Sum:    14111.0
+
+Murder and non-negligent manslaughter rate
+  Field:  murder_and_non_negligent_manslaughter_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4.787878787878788
+  Max:    8.1
+  Min:    2.6
+  Sum:    158.0
+
+Forcible rape rate
+  Field:  forcible_rape_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    43.46363636363636
+  Max:    52.5
+  Min:    36.2
+  Sum:    1434.3
+
+Robbery rate
+  Field:  robbery_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    97.64848484848485
+  Max:    160.1
+  Min:    62.7
+  Sum:    3222.4
+
+Aggravated assault rate
+  Field:  aggravated_assault_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    281.7
+  Max:    404.9
+  Min:    199.6
+  Sum:    9296.1
+
+Property crime rate
+  Field:  property_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4662.442424242424
+  Max:    6821.4
+  Min:    2595.3
+  Sum:    153860.6
+
+Burglary rate
+  Field:  burglary_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1034.463636363636
+  Max:    2031.6
+  Min:    502.8
+  Sum:    34137.3
+
+Larceny- theft rate
+  Field:  larceny_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3222.857575757576
+  Max:    4429.3
+  Min:    1877.4
+  Sum:    106354.3
+
+Motor vehicle theft rate
+  Field:  motor_vehicle_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    405.1303030303030
+  Max:    560
+  Min:    215
+  Sum:    13369.3
+
+Aggravated Assault Rate
+https://dev.socrata.com/foundry/data.colorado.gov/vp5v-7z2p 
+
+National or state offense totals are based on data from all reporting
+agencies and estimates for unreported areas.
+Rates are the number of reported offenses per 100,000 population
+Sources: FBI, Uniform Crime Reports, prepared by the National Archive
+of Criminal Justice Data
+Date of download: Sep 18 2013
+
+Rows:    33
+Columns: 20
+Period:  1980 to 2012
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1996
+  Max:    2012
+  Min:    1980
+  Sum:    65868
+
+Population
+  Field:  population
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3952565.333333333
+  Max:    5187582
+  Min:    2878407
+  Sum:    130434656
+
+Violent crime total
+  Field:  violent_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    16387.33333333333
+  Max:    20229
+  Min:    13811
+  Sum:    540782
+
+Murder and non-negligent Manslaughter
+  Field:  murder_and_non_negligent_manslaughter
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    180.3939393939394
+  Max:    239
+  Min:    129
+  Sum:    5953
+
+Forcible rape
+  Field:  forcible_rape
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1717.303030303030
+  Max:    2285
+  Min:    1202
+  Sum:    56671
+
+Robbery
+  Field:  robbery
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3687.090909090909
+  Max:    4731
+  Min:    2984
+  Sum:    121674
+
+Aggravated assault
+  Field:  aggravated_assault
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    10802.54545454545
+  Max:    14230
+  Min:    8891
+  Sum:    356484
+
+Property crime total
+  Field:  property_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    174966.3030303030
+  Max:    212626
+  Min:    132781
+  Sum:    5773888
+
+Burglary
+  Field:  burglary
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    37842.27272727273
+  Max:    60197
+  Min:    25725
+  Sum:    1248795
+
+Larceny-theft
+  Field:  larceny_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    121378.0909090909
+  Max:    138219
+  Min:    95079
+  Sum:    4005477
+
+Motor vehicle theft
+  Field:  motor_vehicle_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    15745.93939393939
+  Max:    26101
+  Min:    11002
+  Sum:    519616
+
+Violent Crime rate
+  Field:  violent_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    427.6060606060606
+  Max:    578.8
+  Min:    308.9
+  Sum:    14111.0
+
+Murder and non-negligent manslaughter rate
+  Field:  murder_and_non_negligent_manslaughter_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4.787878787878788
+  Max:    8.1
+  Min:    2.6
+  Sum:    158.0
+
+Forcible rape rate
+  Field:  forcible_rape_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    43.46363636363636
+  Max:    52.5
+  Min:    36.2
+  Sum:    1434.3
+
+Robbery rate
+  Field:  robbery_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    97.64848484848485
+  Max:    160.1
+  Min:    62.7
+  Sum:    3222.4
+
+Aggravated assault rate
+  Field:  aggravated_assault_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    281.7
+  Max:    404.9
+  Min:    199.6
+  Sum:    9296.1
+
+Property crime rate
+  Field:  property_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4662.442424242424
+  Max:    6821.4
+  Min:    2595.3
+  Sum:    153860.6
+
+Burglary rate
+  Field:  burglary_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1034.463636363636
+  Max:    2031.6
+  Min:    502.8
+  Sum:    34137.3
+
+Larceny- theft rate
+  Field:  larceny_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3222.857575757576
+  Max:    4429.3
+  Min:    1877.4
+  Sum:    106354.3
+
+Motor vehicle theft rate
+  Field:  motor_vehicle_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    405.1303030303030
+  Max:    560
+  Min:    215
+  Sum:    13369.3
+
+Larceny-Theft Rate
+https://dev.socrata.com/foundry/data.colorado.gov/r97p-ax5c 
+
+National or state offense totals are based on data from all reporting
+agencies and estimates for unreported areas.
+Rates are the number of reported offenses per 100,000 population
+Sources: FBI, Uniform Crime Reports, prepared by the National Archive
+of Criminal Justice Data
+Date of download: Sep 18 2013
+
+Rows:    33
+Columns: 20
+Period:  1980 to 2012
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1996
+  Max:    2012
+  Min:    1980
+  Sum:    65868
+
+Population
+  Field:  population
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3952565.333333333
+  Max:    5187582
+  Min:    2878407
+  Sum:    130434656
+
+Violent crime total
+  Field:  violent_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    16387.33333333333
+  Max:    20229
+  Min:    13811
+  Sum:    540782
+
+Murder and non-negligent Manslaughter
+  Field:  murder_and_non_negligent_manslaughter
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    180.3939393939394
+  Max:    239
+  Min:    129
+  Sum:    5953
+
+Forcible rape
+  Field:  forcible_rape
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1717.303030303030
+  Max:    2285
+  Min:    1202
+  Sum:    56671
+
+Robbery
+  Field:  robbery
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3687.090909090909
+  Max:    4731
+  Min:    2984
+  Sum:    121674
+
+Aggravated assault
+  Field:  aggravated_assault
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    10802.54545454545
+  Max:    14230
+  Min:    8891
+  Sum:    356484
+
+Property crime total
+  Field:  property_crime_total
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    174966.3030303030
+  Max:    212626
+  Min:    132781
+  Sum:    5773888
+
+Burglary
+  Field:  burglary
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    37842.27272727273
+  Max:    60197
+  Min:    25725
+  Sum:    1248795
+
+Larceny-theft
+  Field:  larceny_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    121378.0909090909
+  Max:    138219
+  Min:    95079
+  Sum:    4005477
+
+Motor vehicle theft
+  Field:  motor_vehicle_theft
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    15745.93939393939
+  Max:    26101
+  Min:    11002
+  Sum:    519616
+
+Violent Crime rate
+  Field:  violent_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    427.6060606060606
+  Max:    578.8
+  Min:    308.9
+  Sum:    14111.0
+
+Murder and non-negligent manslaughter rate
+  Field:  murder_and_non_negligent_manslaughter_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4.787878787878788
+  Max:    8.1
+  Min:    2.6
+  Sum:    158.0
+
+Forcible rape rate
+  Field:  forcible_rape_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    43.46363636363636
+  Max:    52.5
+  Min:    36.2
+  Sum:    1434.3
+
+Robbery rate
+  Field:  robbery_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    97.64848484848485
+  Max:    160.1
+  Min:    62.7
+  Sum:    3222.4
+
+Aggravated assault rate
+  Field:  aggravated_assault_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    281.7
+  Max:    404.9
+  Min:    199.6
+  Sum:    9296.1
+
+Property crime rate
+  Field:  property_crime_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    4662.442424242424
+  Max:    6821.4
+  Min:    2595.3
+  Sum:    153860.6
+
+Burglary rate
+  Field:  burglary_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    1034.463636363636
+  Max:    2031.6
+  Min:    502.8
+  Sum:    34137.3
+
+Larceny- theft rate
+  Field:  larceny_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    3222.857575757576
+  Max:    4429.3
+  Min:    1877.4
+  Sum:    106354.3
+
+Motor vehicle theft rate
+  Field:  motor_vehicle_theft_rate
+  Type:   number
+  Null:   0
+  Count:  33
+  Avg:    405.1303030303030
+  Max:    560
+  Min:    215
+  Sum:    13369.3
+
+Crime Level Data
+https://dev.socrata.com/foundry/policedata.coloradosprings.gov/bc88-hemr 
+
+This dataset includes all criminal offenses reported to the Colorado
+Springs Police Department. Each case report (incident) may have
+several offenses. Each offense may have multiple suspects and/or
+victims.  Important: This dataset provided by CSPD does not apply the
+same counting rules as official data reported to the Colorado Bureau
+of Investigations and the Federal Bureau of Investigation. This means
+comparisons to those datasets would be inaccurate.
+
+Rows:    311425
+Columns: 20
+Period:  2015 to 2022
+
+COLUMNS:
+-------
+Case Number
+  Field:  casenumber
+  Type:   text
+  Null:   0
+  Count:  311729
+
+Occurred From Date
+  Field:  occurredfromdate
+  Type:   calendar_date
+  Null:   0
+  Count:  311729
+
+Occurred Through Date 
+  Field:  occurredthroughdate
+  Type:   calendar_date
+  Null:   0
+  Count:  311729
+
+Date Reported
+  Field:  reporteddate
+  Type:   calendar_date
+  Null:   0
+  Count:  311729
+
+Disposition
+  Field:  disposition
+  Type:   text
+  Null:   7
+  Count:  311722
+  ITEMS:
+     Cleared by Arrest  (149490)
+     Open  (144594)
+     Unfounded  (5350)
+     Person Returned  (5049)
+     Warrant  (4760)
+     Exceptional Clearance  (2479)
+
+Disposition Date
+  Field:  dispositiondate
+  Type:   calendar_date
+  Null:   0
+  Count:  311729
+
+Index Crime Category
+  Field:  index_crime_category
+  Type:   text
+  Null:   0
+  Count:  311729
+  ITEMS:
+     Crimes Against Property  (155483)
+     Crimes Against Society  (116554)
+     Crimes Against Persons  (34614)
+     Not A Crime  (5078)
+
+Statute or Ordinance
+  Field:  statute
+  Type:   text
+  Null:   0
+  Count:  311729
+
+Statute or Ordinance Description
+  Field:  statutedescription
+  Type:   text
+  Null:   0
+  Count:  311729
+
+Crime Code
+  Field:  crimecode
+  Type:   text
+  Null:   0
+  Count:  311729
+
+Crime Code Description
+  Field:  crimecodedescription
+  Type:   text
+  Null:   0
+  Count:  311729
+  ITEMS:
+     All Other Offenses  (48950)
+     Theft From Motor Vehicle  (27681)
+     Destruction/Damage/Vandalism of Property  (23030)
+     Driving Under the Influence  (18260)
+     Burglary/Breaking & Entering  (16922)
+     Motor Vehicle Theft  (16519)
+     All Other Larceny  (16321)
+     Shoplifting  (16050)
+     Simple Assault  (14751)
+     Trespass of Real Property  (9872)
+     Aggravated Assault  (9829)
+     Drug/Narcotic Violations  (9654)
+     Not Reportable  (8552)
+     Theft Of Motor Vehicle Parts  (8158)
+     Theft From Building  (7272)
+     Family Offenses/Nonviolent  (5985)
+     Credit Card/Automatic Teller Machine Fraud  (5551)
+     Drug Equipment Violations  (5103)
+     Runaway  (5078)
+     Weapons Law Violations  (5022)
+
+NCIC Code
+  Field:  nciccode
+  Type:   text
+  Null:   13150
+  Count:  298579
+
+NCIC Code Description
+  Field:  nciccodedescription
+  Type:   text
+  Null:   13150
+  Count:  298579
+  ITEMS:
+     Larceny From Auto  (27435)
+     Harassing Communication  (19480)
+     Driving Under Influence Liquor  (16516)
+     Vehicle Theft  (16483)
+     Shoplifting  (15297)
+     Damage Property-Private  (14749)
+     Simple Assault  (14740)
+     Larceny (Describe Offense)  (12701)
+     Trespassing (describe offense)  (9472)
+     Contempt of Court  (8523)
+     Larceny-Parts From Vehicle  (8296)
+     Larceny-From Building  (7055)
+     Cruelty Toward Child  (5925)
+     Fraud-Illegal Use Credit Cards  (5534)
+     Burglary-Forced Entry-Nonresidence  (5097)
+     Narcotic Equipment - Possess  (5090)
+     Runaway  (5077)
+     Public Order Crimes  (4867)
+     Burglary-No Forced Entry-Residence  (4762)
+     Burglary-Forced Entry-Residence  (4735)
+
+Domestic Violence
+  Field:  domestic
+  Type:   text
+  Null:   50643
+  Count:  261086
+  ITEMS:
+     No  (216020)
+     Yes  (45066)
+
+Crime Location
+  Field:  streetaddress
+  Type:   text
+  Null:   32762
+  Count:  278967
+
+City
+  Field:  city
+  Type:   text
+  Null:   28205
+  Count:  283524
+  ITEMS:
+     COLORADO SPRINGS  (281887)
+     Colorado Springs  (737)
+     FOUNTAIN  (135)
+     FALCON  (132)
+     PETERSON AFB  (114)
+     BLACK FOREST  (86)
+     USAF ACADEMY  (43)
+     Colorado springs  (30)
+     PEYTON  (29)
+     MONUMENT  (25)
+     MANITOU SPRINGS  (25)
+     RUSH  (24)
+     WOODLAND PARK  (24)
+     DENVER  (23)
+     CALHAN  (17)
+     CRIPPLE CREEK  (15)
+     FORT CARSON  (10)
+     DIVIDE  (8)
+     ELLICOTT  (8)
+     Pueblo  (7)
+
+Zip
+  Field:  zip
+  Type:   text
+  Null:   32073
+  Count:  279656
+
+Location Point
+  Field:  location_point
+  Type:   point
+  Null:   40801
+  Count:  270928
+
+Patrol Division
+  Field:  patrol_division
+  Type:   text
+  Null:   19007
+  Count:  292722
+  ITEMS:
+     Gold Hill  (87028)
+     Sand Creek  (84571)
+     Stetson Hills  (68158)
+     Falcon  (52965)
+
+Neighborhoods
+  Field:  :@computed_region_2q37_snsf
+  Type:   number
+  Null:   -
+  Count:  -
+  Avg:    -
+  Max:    -
+  Min:    -
+  Sum:    -
+
+Officer Involved Shootings
+https://dev.socrata.com/foundry/policedata.coloradosprings.gov/pzyt-rvyq 
+
+This dataset represents the information the Colorado Springs Police
+Department (CSPD) was required to report to the State of Colorado
+Division of Criminal Justice after an officer involved shooting. It is
+important to note the State of Colorado developed the options for each
+data field; these multiple choice items were not created by CSPD. Data
+provided for people categorized as "suspects" in these incidents. CSPD
+has chosen at this time to continue to update this information even
+though CSPD no longer has the requirement to report this information
+in this way. The data collection and reporting was required for the
+time period 1/1/2010 to 6/30/2020.  Law enforcement agencies will have
+the responsibility to collect and report different use of force
+information effective 7/1/2023.
+
+Rows:    112
+Columns: 30
+Period:  2010 to 2022
+
+COLUMNS:
+-------
+Incident Count
+  Field:  incident_count
+  Type:   number
+  Null:   0
+  Count:  112
+  Avg:    -
+  Max:    54
+  Min:    1
+  Sum:    -
+
+Case Number (Agency Incident Number)
+  Field:  cspd_case_number_agency
+  Type:   text
+  Null:   0
+  Count:  112
+
+Incident Date and Time
+  Field:  incident_date
+  Type:   calendar_date
+  Null:   0
+  Count:  112
+
+Incident Location
+  Field:  incident_location
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     3480 Centennial Bl.  (7)
+     S. Chelton Rd. and Delta Dr.  (6)
+     Hunter Ave. / S. Corona Ave.  (6)
+     3650 Maizeland Rd.  (4)
+     201 N. Circle Drive  (4)
+     2836 Elm Meadow Vw.  (4)
+     230 N. Prospect St.  (4)
+     3650 Austin Bluffs Pkwy. #197  (4)
+     3215 Oak Creek Dr. E  (4)
+     414 S. Murray Blvd. #A  (3)
+     1703 S. Nevada Av., #230  (3)
+     4205 Mark Dabling Bl.  (3)
+     1887 S. Academy Blvd.  (3)
+     3165 E. Fountain Bl.  (3)
+     1900 E. Boulder St.  (2)
+     5688 N. Union Bl.  (2)
+     1935 E. Bijou St.  (2)
+     2139 Preuss Rd.  (2)
+     5120 Lanagan St.  (2)
+     2505 Verde Dr.  (2)
+
+Primary Basis for Initial Contact
+  Field:  primary_basis_for_initial
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Call for service  (82)
+     Investigation  (10)
+     Tactical team call  (9)
+     Other  (5)
+     Citizen flag down  (3)
+     Traffic stop  (2)
+     Off duty  (1)
+
+Primary Basis for Shooting
+  Field:  primary_basis_for_shooting
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Officer shot at  (53)
+     Imminent threat to officer/civilian  (48)
+     Perceived threat to officer/civilian  (9)
+     Conducting an arrest  (2)
+
+Officer Issued Verbal Warning Prior to Shooting
+  Field:  officer_issued_verbal_warning
+  Type:   checkbox
+  Null:   0
+  Count:  112
+
+Incident Narrative
+  Field:  incident_narrative
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Officers were dispatched to a shots fired that turned into a  (7)
+     At approximately 0145 hours, officers located a suspect vehi  (6)
+     Officers were dispatched to a business in the 1600 of S. Nev  (5)
+     Officers were dispatched to the area in an attempt to locate  (4)
+     Members of the department's Robbery Unit were conducting sur  (4)
+     Officers were dispatched to investigate a domestic disturban  (4)
+     Officers were dispatched to a shooting, during which they lo  (4)
+     Officers were dispatched to an area business in response to   (4)
+     Officers were dispatched to locate a wanted person. Officers  (4)
+     Officers were dispatched on a report of a male shooting a gu  (3)
+     Suspect was involved in a domestic disturbance. Suspect poin  (3)
+     Officers were dispatched to investigate a suspicious person.  (3)
+     Officers attempted to contact a suspicious vehicle occupied   (3)
+     Officers attempted to contact a wanted party. The suspect re  (3)
+     Officers were dispatched to a disturbance. Officers encounte  (2)
+     Officer conducted a traffic stop on a vehicle with expired r  (2)
+     Officers were dispatched to investigate a shots fired call f  (2)
+     Officers were dispatched to a shots fired call. Officers loc  (2)
+     Officers learned the location of a wanted party and surveill  (2)
+     Officers were dispatched to check the welfare on a suicidal   (2)
+
+Subject Designator
+  Field:  subject_designator
+  Type:   text
+  Null:   0
+  Count:  112
+
+Subject Age
+  Field:  subject_age
+  Type:   number
+  Null:   0
+  Count:  112
+  Avg:    -
+  Max:    63
+  Min:    16
+  Sum:    -
+
+Subject Gender
+  Field:  subject_gender
+  Type:   text
+  Null:   0
+  Count:  112
+
+Subject Sexual Orientation
+  Field:  subject_sexual_orientation
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Unknown  (93)
+     Straight  (19)
+
+Subject Race
+  Field:  subject_race
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     White  (91)
+     Black  (19)
+     Asian  (2)
+
+Subject Ethnicity
+  Field:  subject_ethnicity
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Non-Hispanic  (92)
+     Hispanic  (20)
+
+Subject Physical or Mental Disability
+  Field:  subject_physical_or_mental
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Not Evident  (73)
+     Not evident  (22)
+     Mental  (15)
+     Unknown  (2)
+
+Subject Armed
+  Field:  subject_armed
+  Type:   checkbox
+  Null:   0
+  Count:  112
+
+Weapon Subject was Armed With
+  Field:  weapon_subject_was_armed
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Handgun  (76)
+     Rifle  (11)
+     None  (9)
+     Multiple Weapons  (7)
+     Knife/Cutting Instrument  (4)
+     Shotgun  (3)
+     Blunt Object  (1)
+     Other  (1)
+
+Subject Wounded or Killed
+  Field:  subject_wounded_or_killed
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Killed  (60)
+     Wounded  (32)
+     Neither  (20)
+
+Subject Under the Influence
+  Field:  subject_under_the_influence
+  Type:   text
+  Null:   11
+  Count:  101
+  ITEMS:
+     Drugs  (36)
+     Drugs and alcohol  (17)
+     No evidence of intoxication  (16)
+     Unknown  (15)
+     Alcohol  (13)
+     Alcohol and Drugs  (4)
+
+Subject Arrested or Cited
+  Field:  subject_arrested_or_cited
+  Type:   checkbox
+  Null:   0
+  Count:  112
+
+Subject was Charged With
+  Field:  subject_was_charged_with
+  Type:   text
+  Null:   4
+  Count:  108
+  ITEMS:
+     Not applicable  (43)
+     -  (14)
+     18-2-101  Criminal Attempt (Homicide)  (14)
+     18-3-206  Menacing  (8)
+     18-3-102  Murder in the First Degree  (7)
+     18-3-107 Attempted First Degree Murder of a PO  (7)
+     18-2-101 Criminal Attempt (Homicide)  (4)
+     18-4-302 Aggravated Robbery  (2)
+     18-9-116.5 Vehicular Eluding  (2)
+     18-3-302 Second Degree Kidnapping  (1)
+     Third Degree Assault/Harassment  (1)
+     18-3-202 Assault in the First Degree  (1)
+     18-18-428 Possession of Drug Paraphernalia  (1)
+     Other (Felony)  (1)
+     18-4-301 Robbery  (1)
+     18-3-206 Menacing  (1)
+
+Prior to Shooting Officer Conducted a Search
+  Field:  prior_to_shooting_officer
+  Type:   checkbox
+  Null:   0
+  Count:  112
+
+Type of Search Conducted (prior to shooting)
+  Field:  type_of_search_conducted
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Not applicable  (89)
+     N/A  (23)
+
+Contraband Found
+  Field:  contraband_found
+  Type:   checkbox
+  Null:   0
+  Count:  112
+
+Contraband Type
+  Field:  contraband_type
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Weapons  (88)
+     Drugs/Paraphernalia and Weapons  (10)
+     None  (9)
+     Other  (2)
+     Drugs/Weapons  (2)
+     Drugs/Paraphernalia/Weapons  (1)
+
+Officer Age
+  Field:  officer_age
+  Type:   number
+  Null:   0
+  Count:  112
+  Avg:    -
+  Max:    57
+  Min:    23
+  Sum:    -
+
+Officer Gender
+  Field:  officer_gender
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Male  (103)
+     Female  (9)
+
+Officer Race
+  Field:  officer_race
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     White  (102)
+     Black  (7)
+     Asian  (2)
+     American Indian/Alaska Native  (1)
+
+Officer Ethnicity
+  Field:  officer_ethnicity
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Non-Hispanic  (100)
+     Hispanic  (12)
+
+Officer Wounded or Killed
+  Field:  officer_wounded_or_killed
+  Type:   text
+  Null:   0
+  Count:  112
+  ITEMS:
+     Neither  (106)
+     Wounded  (6)
+
+Arrest Data with all Offenses and Demographic Detail
+https://dev.socrata.com/foundry/policedata.coloradosprings.gov/jw9n-x43p 
+
+This dataset includes all arrests with all offenses listed for each
+arrest.  Each offense lists the demographic information for the person
+arrested for that offense.  There may be multiple offenses for an
+arrestee.  This dataset should only be used for counting the number of
+offenses related to arrests.
+
+Rows:    209008
+Columns: 22
+Period:  2016 to 2021
+
+COLUMNS:
+-------
+Case Number
+  Field:  casenumber
+  Type:   text
+  Null:   77
+  Count:  209190
+
+Arrest Number
+  Field:  arrestnumber
+  Type:   text
+  Null:   0
+  Count:  209267
+
+Arrest Date Time
+  Field:  arrestdatetime
+  Type:   calendar_date
+  Null:   0
+  Count:  209267
+
+Arrest Type
+  Field:  arresttype
+  Type:   text
+  Null:   209267
+  Count:  0
+
+Age Category
+  Field:  agecategory
+  Type:   text
+  Null:   0
+  Count:  209267
+  ITEMS:
+     Adult  (201101)
+     Juvenile  (8166)
+
+Crime Code
+  Field:  crimecode
+  Type:   text
+  Null:   0
+  Count:  209267
+
+Crime Code Description
+  Field:  crimecodedescription
+  Type:   text
+  Null:   0
+  Count:  209267
+  ITEMS:
+     All Other Offenses (Except Traffic)  (69522)
+     Not Reportable  (21114)
+     Driving Under the Influence  (18248)
+     Trespass of Real Property  (13713)
+     Shoplifting  (11135)
+     Drug/Narcotic Violations  (9830)
+     Simple Assault  (8102)
+     Aggravated Assault  (6662)
+     Destruction/Damage/Vandalism of Property  (6523)
+     Drug Equipment Violations  (4772)
+     Burglary/Breaking & Entering  (3626)
+     Family Offenses/Nonviolent  (3560)
+     Weapons Law Violations  (3476)
+     Motor Vehicle Theft  (3424)
+     Intimidation  (3058)
+     Disorderly Conduct/Disturbing The Peace  (2483)
+     All Other Larceny  (2429)
+     Theft From Building  (1892)
+     Liquor Law Violations  (1831)
+     Identity Theft  (1716)
+
+NCIC Code
+  Field:  nciccode
+  Type:   number
+  Null:   21460
+  Count:  187807
+  Avg:    -
+  Max:    7399
+  Min:    199
+  Sum:    -
+
+NCIC Code Description
+  Field:  nciccodedescription
+  Type:   text
+  Null:   21460
+  Count:  187807
+  ITEMS:
+     Driving Under Influence Liquor  (17560)
+     Failure to Appear  (15327)
+     Trespassing (describe offense)  (13710)
+     Contempt of Court  (13035)
+     Harassing Communication  (11466)
+     Shoplifting  (11128)
+     Public Order Crimes  (9783)
+     Flight to Avoid-(Prosecution, confinement, etc.)  (8604)
+     Simple Assault  (8102)
+     Damage Property-Private  (4978)
+     Narcotic Equipment - Possess  (4773)
+     Amphetemine - Possess  (4224)
+     Cruelty Toward Child  (3521)
+     Vehicle Theft  (3422)
+     Intimidation (Includes Stalking)  (3056)
+     Obstruct Police (Describe Offense)  (2908)
+     Larceny (Describe Offense)  (2138)
+     Larceny-From Building  (1817)
+     Possession of Weapon (specify weapon)  (1814)
+     Liquor - Possess  (1793)
+
+Statute or Ordinance
+  Field:  statute
+  Type:   text
+  Null:   0
+  Count:  209267
+
+Statute or Ordinance Description
+  Field:  statutedescription
+  Type:   text
+  Null:   0
+  Count:  209267
+  ITEMS:
+     Driving under the influence - alcohol (DUI)  (9774)
+     FUGITIVE OTHER JURISDICTION WARRANT  (7813)
+     Harassment - Strike, Shove, or Kick  (7759)
+     3rd Degree Assault - BI to Another - Simple Assault  (7405)
+     SHOPLIFTING  (7355)
+     FTA/FTP/FTC El Paso County Traffic Bench Warrants  (7006)
+     Driving under the influence - blood alcohol content .08 or m  (6755)
+     TRESPASS ON PRIVATE PROPERTY  (6362)
+     Failure to Appear  (5390)
+     FTA El Paso County Misdemeanor Criminal Bench Warrant  (5193)
+     CONTEMPT OF COURT  (4840)
+     Possession of Drug Paraphernalia  (4586)
+     Repealed - Possess Schedule I, II, Flunitrazepam,  Ketamine,  (4405)
+     FTA El Paso County Criminal Felony Bench Warrant  (2966)
+     Violation of a Protection Order - MPO  (2928)
+     Careless Driving-Accident  (2902)
+     Driving Under Restraint - Drove Vehicle w/ License Under Res  (2512)
+     CONTEMPT OF COURT-COC  (2195)
+     Child Abuse - Knowingly/Recklessly  - NO Injury  (2108)
+     Violation of a Protection Order  (2010)
+
+Age At Arrest
+  Field:  age_at_arrest
+  Type:   number
+  Null:   10
+  Count:  209257
+  Avg:    -
+  Max:    101
+  Min:    9
+  Sum:    -
+
+Age Range
+  Field:  age_range
+  Type:   text
+  Null:   0
+  Count:  209267
+
+Race
+  Field:  race
+  Type:   text
+  Null:   30
+  Count:  209237
+  ITEMS:
+     White  (164445)
+     Black  (39467)
+     Asian/Pacific Islander  (2216)
+     Unknown  (1886)
+     American Indian/Alaskan Native  (1223)
+
+Gender
+  Field:  gender
+  Type:   text
+  Null:   4
+  Count:  209263
+  ITEMS:
+     Male  (153217)
+     Female  (55913)
+     Unknown  (125)
+     Non-Binary  (8)
+
+Ethnicity
+  Field:  ethnicity
+  Type:   text
+  Null:   90
+  Count:  209177
+  ITEMS:
+     Non Hispanic Origin  (164177)
+     Hispanic  (36697)
+     Unknown  (8303)
+
+Arrest Location
+  Field:  streetaddress
+  Type:   text
+  Null:   7441
+  Count:  201826
+
+City
+  Field:  city
+  Type:   text
+  Null:   3363
+  Count:  205904
+  ITEMS:
+     COLORADO SPRINGS  (203252)
+     FOUNTAIN  (429)
+     FALCON  (228)
+     PUEBLO  (183)
+     MANITOU SPRINGS  (178)
+     FORT CARSON  (170)
+     Colorado Springs  (166)
+     Denver  (120)
+     Golden  (90)
+     MONUMENT  (82)
+     PETERSON AFB  (77)
+     DIVIDE  (48)
+     CASTLE ROCK  (45)
+     Canon City  (43)
+     USAF ACADEMY  (43)
+     CENTENNIAL  (34)
+     CRIPPLE CREEK  (31)
+     Castle Rock  (30)
+     DENVER  (29)
+     BLACK FOREST  (28)
+
+Zip Code
+  Field:  zip
+  Type:   text
+  Null:   6464
+  Count:  202803
+
+Location Point
+  Field:  location_point
+  Type:   point
+  Null:   16155
+  Count:  193112
+
+Patrol Division
+  Field:  patrol_division
+  Type:   text
+  Null:   16208
+  Count:  193059
+  ITEMS:
+     Gold Hill  (75136)
+     Sand Creek  (61582)
+     Stetson Hills  (30415)
+     Falcon  (25926)
+
+Neighborhoods
+  Field:  :@computed_region_2q37_snsf
+  Type:   number
+  Null:   -
+  Count:  -
+  Avg:    -
+  Max:    -
+  Min:    -
+  Sum:    -
+
+Ticket and Citation Data with Charges
+https://dev.socrata.com/foundry/policedata.coloradosprings.gov/a4wa-a9rs 
+
+This dataset contains all tickets and citations that have been issued
+and all of the charged offenses for each citation.  One citation may
+include multiple offenses. Demographic information for the ticketed
+person is also included.
+
+Rows:    431895
+Columns: 19
+Period:  2016 to 2022
+
+COLUMNS:
+-------
+Citation Number
+  Field:  ticketnumber
+  Type:   text
+  Null:   0
+  Count:  432087
+
+Citation Type
+  Field:  tickettype
+  Type:   text
+  Null:   0
+  Count:  432087
+  ITEMS:
+     Traffic  (369360)
+     Criminal  (60941)
+     Criminal and Traffic  (1786)
+
+Citation Date Time
+  Field:  ticketdatetime
+  Type:   calendar_date
+  Null:   0
+  Count:  432087
+
+Accident Number
+  Field:  accidentnumber
+  Type:   text
+  Null:   354321
+  Count:  77766
+
+Case Number
+  Field:  casenumber
+  Type:   text
+  Null:   343999
+  Count:  88088
+
+Statute or Ordinance
+  Field:  statute
+  Type:   text
+  Null:   16
+  Count:  432071
+
+Statute or Ordinance Description
+  Field:  description
+  Type:   text
+  Null:   16
+  Count:  432071
+  ITEMS:
+     EXCEED SPEED LIMIT 10-19 OVER  (69801)
+     Expiration - displayed expired license plates  (25312)
+     Driving Under Restraint - Drove Vehicle w/ License Under Res  (19724)
+     EXCEED SPEED LIMIT 20-39 OVER  (19587)
+     EXCEED SPEED LIMIT 5-9 OVER  (14491)
+     Careless Driving-Accident  (13456)
+     Compulsory insurance - failed to present evidence of insuran  (12270)
+     License for drivers required - drove vehicle without valid d  (12057)
+     Speed Limits Exceeded  (11329)
+     CARELESS DRIVING  (10486)
+     Driving under the influence - alcohol (DUI)  (9431)
+     Compulsory insurance - owner operated uninsured motor vehicl  (8822)
+     SHOPLIFTING  (7448)
+     Compulsory insurance - driver operated an uninsured motor ve  (7059)
+     EXCEED SPEED LIMIT 10-19 SCHOOL  (6728)
+     Displayed expired temporary permit  (6640)
+     Driving under the influence - blood alcohol content .08 or m  (6549)
+     TRESPASS ON PRIVATE PROPERTY  (6486)
+     Operated/permitted use of unregistered vehicle  (6205)
+     FAILURE TO STOP AT STOP SIGN  (5459)
+
+Subject Age
+  Field:  age_incident
+  Type:   number
+  Null:   14
+  Count:  432073
+  Avg:    -
+  Max:    120
+  Min:    0
+  Sum:    -
+
+Age Range
+  Field:  age_grouping
+  Type:   text
+  Null:   0
+  Count:  432087
+
+Race
+  Field:  race
+  Type:   text
+  Null:   375
+  Count:  431712
+  ITEMS:
+     White  (355689)
+     Black  (60652)
+     Unknown  (6951)
+     Asian/Pacific Islander  (6932)
+     American Indian/Alaskan Native  (1488)
+
+Gender
+  Field:  gender
+  Type:   text
+  Null:   11
+  Count:  432076
+  ITEMS:
+     Male  (269461)
+     Female  (162258)
+     Unknown  (343)
+     Non-Binary  (14)
+
+Ethnicity
+  Field:  ethnicity
+  Type:   text
+  Null:   191
+  Count:  431896
+  ITEMS:
+     Non Hispanic Origin  (317326)
+     Hispanic  (71166)
+     Unknown  (43404)
+
+Incident Location
+  Field:  streetaddress
+  Type:   point
+  Null:   97376
+  Count:  334711
+
+City
+  Field:  city
+  Type:   text
+  Null:   91093
+  Count:  340994
+  ITEMS:
+     COLORADO SPRINGS  (338697)
+     CALHAN  (965)
+     FALCON  (447)
+     DIVIDE  (155)
+     USAF ACADEMY  (147)
+     FLORISSANT  (125)
+     PUEBLO  (85)
+     CRIPPLE CREEK  (61)
+     WOODLAND PARK  (57)
+     PETERSON AFB  (55)
+     BLACK FOREST  (41)
+     GREEN MOUNTAIN FALLS  (37)
+     MANITOU SPRINGS  (29)
+     CASCADE  (18)
+     GOLDFIELD  (16)
+     FOUNTAIN  (15)
+     EL PASO COUNTY  (14)
+     CRYSTOLA  (8)
+     SEDALIA  (4)
+     FOUR MILE  (3)
+
+Zip Code
+  Field:  zip
+  Type:   text
+  Null:   91438
+  Count:  340649
+
+Point Location
+  Field:  point_location
+  Type:   point
+  Null:   97376
+  Count:  334711
+
+Patrol Division
+  Field:  patrol_division
+  Type:   text
+  Null:   102197
+  Count:  329890
+  ITEMS:
+     Gold Hill  (93842)
+     Sand Creek  (93333)
+     Stetson Hills  (83459)
+     Falcon  (59256)
+
+Neighborhoods
+  Field:  :@computed_region_2q37_snsf
+  Type:   number
+  Null:   -
+  Count:  -
+  Avg:    -
+  Max:    -
+  Min:    -
+  Sum:    -
+
+Division
+  Field:  :@computed_region_5hzy_4dyc
+  Type:   number
+  Null:   -
+  Count:  -
+  Avg:    -
+  Max:    -
+  Min:    -
+  Sum:    -
+
+Officer Involved Shootings Incident Level View
+https://dev.socrata.com/foundry/policedata.coloradosprings.gov/nrtf-ceq2 
+
+The "incident level view" allows a view of the data from the
+perspective of each shooting (rather than each officer or each
+subject).     This dataset represents the required information the
+Colorado Springs Police Department (CSPD) reports to the State of
+Colorado Division of Criminal Justice after an officer involved
+shooting. It is important to note the State of Colorado developed the
+options for each data field; these multiple choice items were not
+created by CSPD. Data provided for people categorized as "suspects" in
+these incidents.
+
+Rows:    57
+Columns: 10
+Period:  2010 to 2022
+
+COLUMNS:
+-------
+Incident Date and Time
+  Field:  incident_date
+  Type:   calendar_date
+  Null:   0
+  Count:  57
+
+Primary Basis for Initial Contact
+  Field:  primary_basis_for_initial
+  Type:   text
+  Null:   0
+  Count:  57
+  ITEMS:
+     Call for service  (36)
+     Investigation  (7)
+     Tactical team call  (6)
+     Other  (4)
+     Citizen flag down  (2)
+     Traffic stop  (1)
+     Off duty  (1)
+
+Primary Basis for Shooting
+  Field:  primary_basis_for_shooting
+  Type:   text
+  Null:   0
+  Count:  57
+  ITEMS:
+     Imminent threat to officer/civilian  (28)
+     Officer shot at  (20)
+     Perceived threat to officer/civilian  (7)
+     Conducting an arrest  (2)
+
+Officer Issued Verbal Warning Prior to Shooting
+  Field:  officer_issued_verbal_warning
+  Type:   checkbox
+  Null:   0
+  Count:  57
+
+Incident Narrative
+  Field:  incident_narrative
+  Type:   text
+  Null:   0
+  Count:  57
+  ITEMS:
+     Officers were dispatched to investigate a robbery. Officer s  (2)
+     Officers were dispatched to a residence to investigate a bur  (1)
+     Officers were dispatched to check the welfare on a suicidal   (1)
+     Officers were attempting to locate the suspect who they knew  (1)
+     Officers were dispatched to the area in an attempt to locate  (1)
+     Officers attempted to contact a suspicious vehicle occupied   (1)
+     Officers were dispatched to a business in the 1600 block of   (1)
+     Officers located a suspicious vehicle. During contact with t  (1)
+     Officers were dispatched to a check the welfare on a suicida  (1)
+     Officers were dispatched to investigate a domestic disturban  (1)
+     Officers were dispatched to a robbery involving a firearm. O  (1)
+     Officers were dispatched to locate a wanted person. Officers  (1)
+     Officers were dispatched to a shots fired call. Officers loc  (1)
+     An officer located a vehicle without a visible license plate  (1)
+     Officers were investigating a motor vehicle theft, during wh  (1)
+     Officer encountered the suspect in a residential garage. Off  (1)
+     Officers were dispatched to investigate a domestic disturban  (1)
+     Suspect was involved in a disturbance at a medical office, d  (1)
+     Officers contacted a male who was asleep in a stolen vehicle  (1)
+     Officers were dispatched to investigate a disturbance. The s  (1)
+
+Prior to Shooting Officer Conducted a Search
+  Field:  prior_to_shooting_officer
+  Type:   checkbox
+  Null:   0
+  Count:  57
+
+Type of Search Conducted (prior to shooting)
+  Field:  type_of_search_conducted
+  Type:   text
+  Null:   0
+  Count:  57
+  ITEMS:
+     Not applicable  (47)
+     N/A  (10)
+
+Contraband Found
+  Field:  contraband_found
+  Type:   checkbox
+  Null:   0
+  Count:  57
+
+Contraband Type
+  Field:  contraband_type
+  Type:   text
+  Null:   0
+  Count:  57
+  ITEMS:
+     Weapons  (43)
+     None  (7)
+     Other  (2)
+     Drugs/Weapons  (2)
+     Drugs/Paraphernalia and Weapons  (2)
+     Drugs/Paraphernalia/Weapons  (1)
+
+CSPD Case Number (Agency Incident Number)
+  Field:  cspd_case_number_agency
+  Type:   text
+  Null:   0
+  Count:  57
+
+Use of Force Reports
+https://dev.socrata.com/foundry/policedata.coloradosprings.gov/ii9t-cvd6 
+
+This dataset includes each force report filed by a CSPD officer. In
+the vast majority of situations, each officer completes a report for
+each subject of force. One incident may have multiple force reports.
+There is an exception to how force is normally reported for incidents
+involving crowds where the officer cannot identify subjects. This can
+happen in a crowd situation because subjects often flee the scene
+before they can be identified and specifically included in the force
+report. In these situations, the officer completes one report for
+multiple subjects of force. If the reason for force in a report is
+listed as "Crowd-Failure to Disperse" or "Failed to Disperse," it may
+be a report with multiple subjects. To learn more, see our <a
+href="https://policedata.coloradosprings.gov/stories/s/Use-of-Force-
+Overview/3nys-enst/">Use of Force Overview</a>.
+
+Rows:    2122
+Columns: 17
+Period:  2017 to 2019
+
+COLUMNS:
+-------
+Force Report Number
+  Field:  inc_ia
+  Type:   text
+  Null:   0
+  Count:  2122
+  ITEMS:
+     UOF17-554  (1)
+     UOF17-532  (1)
+     UOF18-598  (1)
+     UOF18-459  (1)
+     UOF18-313  (1)
+     UOF19-566  (1)
+     UOF19-141  (1)
+     UOF19-108  (1)
+     UOF19-276  (1)
+     UOF18-388  (1)
+     UOF18-064  (1)
+     K9UOF18-011  (1)
+     UOF17-337  (1)
+     UOF17-133  (1)
+     UOF18-137  (1)
+     UOF18-312  (1)
+     UOF18-204  (1)
+     UOF17-182  (1)
+     UOF19-633  (1)
+     UOF19-128  (1)
+
+Incident Number
+  Field:  inc_cfs
+  Type:   text
+  Null:   0
+  Count:  2122
+
+Occurred Year
+  Field:  occurred_year
+  Type:   text
+  Null:   0
+  Count:  2122
+
+Occurred Date and Time
+  Field:  occurred_date_and_time
+  Type:   calendar_date
+  Null:   2
+  Count:  2120
+
+Reason Force Used
+  Field:  inc_use_of_force_reason
+  Type:   text
+  Null:   33
+  Count:  2089
+  ITEMS:
+     Actively Resisted Arrest  (660)
+     Resisted Officer Control  (382)
+     Actively Evading Arrest  (292)
+     Physical Attack on Citizen  (130)
+     Passive Resistance  (115)
+     Physical Attack on the Officer  (105)
+     Physical Attack on Another Officer  (75)
+     Physical Threat to the Officer  (62)
+     TEU - failing to leave premises  (50)
+     Threatened/Attacked Officer or Another - Firearm  (47)
+     Pre-Attack Indicators - Posturing  (34)
+     Pre-Attack Indicators - Balled Fist  (26)
+     Threatened/Attacked Officer or Another - Edged Weapon  (25)
+     TEU - buy bust  (25)
+     Physical Threat to Citizen  (23)
+     Pre-Attack Indicators - Fighting Stance  (15)
+     Threatened/Attacked Officer or Another - Blunt Object  (10)
+     Threatened/Attacked Officer or Another - Motor Vehicle  (6)
+     Verbal Threat on the Officer  (5)
+     Verbal Threat on Citizen  (2)
+
+Subject's Race/Ethnicity
+  Field:  cit_race
+  Type:   text
+  Null:   2
+  Count:  2120
+  ITEMS:
+     White  (1200)
+     Black/African American  (503)
+     Hispanic/Latino  (370)
+     American Indian/Alaska Native  (17)
+     Asian  (16)
+     Native Hawaiian/Other Pacific Islander  (12)
+     Not Specified  (2)
+
+Subject's Gender
+  Field:  cit_sex
+  Type:   text
+  Null:   0
+  Count:  2122
+  ITEMS:
+     Male  (1808)
+     Female  (312)
+     Unknown  (2)
+
+Subject's Age
+  Field:  subject_s_age
+  Type:   number
+  Null:   9
+  Count:  2113
+  Avg:    -
+  Max:    75
+  Min:    11
+  Sum:    -
+
+Subject Unique Identifier
+  Field:  subject_unique_identifier
+  Type:   text
+  Null:   7
+  Count:  2115
+
+Officer's Race/Ethncitiy
+  Field:  off_race
+  Type:   text
+  Null:   1
+  Count:  2121
+  ITEMS:
+     White  (1734)
+     Hispanic/Latino  (230)
+     Black/African American  (89)
+     Asian  (46)
+     American Indian/Alaska Native  (16)
+     Native Hawaiian/Pacific Islander  (6)
+
+Officer's Gender
+  Field:  off_sex
+  Type:   text
+  Null:   1
+  Count:  2121
+  ITEMS:
+     Male  (1923)
+     Female  (198)
+
+Officer's Age
+  Field:  officer_s_age
+  Type:   number
+  Null:   9
+  Count:  2113
+  Avg:    -
+  Max:    75
+  Min:    11
+  Sum:    -
+
+Years Employed at CSPD
+  Field:  years_employed_at_cspd
+  Type:   number
+  Null:   2
+  Count:  2120
+  Avg:    -
+  Max:    37
+  Min:    1
+  Sum:    -
+
+Officer Unique ID
+  Field:  officer_unique_id
+  Type:   text
+  Null:   1
+  Count:  2121
+  ITEMS:
+     A8BBD7751C37B11ADF37C988215ED64BA12FB033D992D7BE392D324A42B8  (62)
+     A1A2475B9649ED5F2F47AF520513133F074841B5884BBA2CCC964D8C5713  (43)
+     2420CBB3D18FF6539590AA53B96F507DB899C1F4719F34E69A4D2B51B00B  (37)
+     FAEDCB06C200314804A362BB27F97241663C975352EF8B8F21AED870E3C2  (26)
+     F4D8051C1FFF8E51CFEE80D854022588A8C1480EFCF572258ADFD949A372  (20)
+     34EB9BD879A190487F4AC4A1F9671FE7F95F9A2F6484CCE2ACD698521DC8  (20)
+     757E642A2FC87CB5D5B80F62B737C8FA78314D0C1DD0CD362F1F939679DD  (20)
+     B6D4D574110A51DBCB9D6A7C2DC3A4CE0E7BF7CA810A57DB32B97E7B2BCA  (19)
+     0BBDE5A64EEE73633EBFF7D919706DA3E62B18C4B9E0EF13C9D35547B788  (19)
+     E06FD756FEF63703896F07F04675479E37D4AE6852F27D4E29AE069F1408  (18)
+     5B44AE9DC01E491222BC1374EC0C2122CFE66D764141505400105E69B5BC  (18)
+     8D0FD2BF711F406F933D4260FC9EB4B40344FD96E70571A31CC5FAFADABD  (18)
+     2E8F86A743279551D0AF36923CF6C77F0E4DFE126817A3DFAAF9734EA1A4  (17)
+     5E3C98AE00B77CCEDB084AC8A6802767ABE8E58B06B0E175BE5CEB5D3F81  (17)
+     175EE970D4123E5F2CFA723C2CDBDE3001C77C244F714A395E69B7E5CB61  (17)
+     0CEFB6CA3A7845935AA22F1EE130250F9E8B38AB5C84DE78D252147AF917  (17)
+     4517B3E684E5DEF475865486AD9A11FFE1956C7F6CB4645B2B0392106BCB  (16)
+     87B41E8C96A7F67489CEE8C8A84543B45ED13EAED56AD0A52172D4231072  (16)
+     554B80EAC62F1C7740B6777CF669548CED3860F33F3F0481141C840E4391  (16)
+     449025648992709C6B0D7D77086EA9873C575F4D78A7E08B468FA71FFEF4  (16)
+
+Officer's Unit
+  Field:  inc_unit_section
+  Type:   text
+  Null:   62
+  Count:  2060
+  ITEMS:
+     Patrol  (1385)
+     DART Team  (168)
+     TEU/Tactical Operations  (82)
+     DART  (65)
+     Tactical Operations  (40)
+     Training Academy  (36)
+     K9  (22)
+     DUI/Patrol Support  (18)
+     PAT/Falcon Div.  (17)
+     K9/Tactical Operations  (17)
+     TEU/Tactical Operations Section  (16)
+     PAT/Sand Creek Div.  (16)
+     Crisis Response Team  (14)
+     SED/Tactical Enforcement Unit  (11)
+     SED/K-9  (9)
+     SRO  (8)
+     PAT/Stetson Hills Div.  (8)
+     Motors/Patrol Support  (7)
+     TEU/Tactical Enforcement  (6)
+     Patrol/DUI  (6)
+
+Officer Injury
+  Field:  inc_officer_was_injured
+  Type:   text
+  Null:   0
+  Count:  2122
+  ITEMS:
+     No  (1747)
+     Yes  (375)
+
+Subject Injury
+  Field:  inc_citizen_was_injured
+  Type:   text
+  Null:   0
+  Count:  2122
+  ITEMS:
+     Yes  (1108)
+     No  (1014)
+
+Fort Collins UCR Crime Totals
+https://dev.socrata.com/foundry/opendata.fcgov.com/c2i2-fbh4 
+
+These data are for the the FBI Uniform Crime Reporting (UCR) index.
+The crime index includes Willful Homicide, Rape, Robbery, Aggravated
+Assault, Burglary, Larceny (Theft), Motor Vehicle Theft, and Arson
+(definitions are in each column header).  State-wide crime information
+can be found at the Colorado Bureau of Investigation
+(https://www.colorado.gov/cbi).
+
+Rows:    10
+Columns: 12
+Period:  2008 to 2017
+
+COLUMNS:
+-------
+Year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    2012.5
+  Max:    2017
+  Min:    2008
+  Sum:    20125
+
+Homicide
+  Field:  homicide
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    2.3
+  Max:    5
+  Min:    0
+  Sum:    23
+
+Rape
+  Field:  rape
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    46.4
+  Max:    87
+  Min:    21
+  Sum:    464
+
+Robbery
+  Field:  robbery
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    43
+  Max:    68
+  Min:    34
+  Sum:    430
+
+Assault-Aggravated
+  Field:  assault_aggravated
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    233.3
+  Max:    281
+  Min:    206
+  Sum:    2333
+
+Burglary
+  Field:  burglary
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    571.3
+  Max:    756
+  Min:    440
+  Sum:    5713
+
+Larceny/Theft
+  Field:  larceny_theft
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    3444.3
+  Max:    3673
+  Min:    3126
+  Sum:    34443
+
+Motor Vehicle Theft
+  Field:  motor_vehicle_theft
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    188.1
+  Max:    236
+  Min:    129
+  Sum:    1881
+
+Arson
+  Field:  arson
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    18.6
+  Max:    36
+  Min:    11
+  Sum:    186
+
+Totals
+  Field:  totals
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    4547.1
+  Max:    4989
+  Min:    4048
+  Sum:    45471
+
+meta_row_index
+  Field:  meta_row_index
+  Type:   number
+  Null:   0
+  Count:  10
+  Avg:    4.5
+  Max:    9
+  Min:    0
+  Sum:    45
+
+meta_row_id
+  Field:  meta_row_id
+  Type:   text
+  Null:   0
+  Count:  10
+
+District Total Homeless Student Mobility Rate
+https://dev.socrata.com/foundry/data.colorado.gov/vakp-8ans 
+
+The 2011-12 school year marked the sixth year in which the Colorado
+Department of Education calculated and reported student mobility
+rates. In addition, this year the state began reporting stability
+rates. The stability rate represents the number and percent of
+students who remained at a school/district without interruption
+throughout the school year.
+
+Rows:    184
+Columns: 60
+Period:  2011 to 2012
+
+COLUMNS:
+-------
+School Year
+  Field:  school_year
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    20112012
+  Max:    20112012
+  Min:    20112012
+  Sum:    3700610208
+
+Org. Code
+  Field:  org_code
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    1919.043478260870
+  Max:    9999
+  Min:    10
+  Sum:    353104
+
+Organization Name
+  Field:  organization_name
+  Type:   text
+  Null:   0
+  Count:  184
+  ITEMS:
+     EATON RE-2  (20)
+     KEENESBURG RE-3(J)  (19)
+     WINDSOR RE-4  (18)
+     JOHNSTOWN-MILLIKEN RE-5J  (17)
+     GREELEY 6  (16)
+     PLATTE VALLEY RE-7  (15)
+     WELD COUNTY S/D RE-8  (14)
+     AULT-HIGHLAND RE-9  (13)
+     BRIGGSDALE RE-10  (12)
+     PRAIRIE RE-11  (11)
+     PAWNEE RE-12  (10)
+     YUMA 1  (9)
+     WRAY RD-2  (8)
+     IDALIA RJ-3  (7)
+     LIBERTY J-4  (6)
+     CHARTER SCHOOL INSTITUTE  (5)
+     MOUNTAIN BOCES  (4)
+     CENTENNIAL BOCES  (3)
+     SAN JUAN BOCES  (2)
+     EXPEDITIONARY BOCES  (1)
+
+Category
+  Field:  category
+  Type:   text
+  Null:   0
+  Count:  184
+
+Total Pupil Count (All students)
+  Field:  total_pupil_count_all_students
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    10209.59782608696
+  Max:    939283
+  Min:    16
+  Sum:    1878566
+
+Total Stable Pupil Count (All Students)
+  Field:  total_stable_pupil_count_all_students
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    7663.739130434783
+  Max:    705064
+  Min:    0
+  Sum:    1410128
+
+Total Stability Rate (All Students)
+  Field:  total_stability_rate_all_students
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    69.90978260869565
+  Max:    84.5
+  Min:    0
+  Sum:    12863.4
+
+Total Mobile Student Count (All students)
+  Field:  total_mobile_student_count_all_students
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    2518.543478260870
+  Max:    231706
+  Min:    13
+  Sum:    463412
+
+Total Student Mobility Rate (All students)
+  Field:  total_student_mobility_rate_all_students
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    30.14239130434783
+  Max:    100
+  Min:    15.4
+  Sum:    5546.2
+
+Total Instances of Mobility (All students)
+  Field:  total_instances_of_mobility_all_students
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    2756.271739130435
+  Max:    253577
+  Min:    13
+  Sum:    507154
+
+Total Mobility Incidence Rate (All students)
+  Field:  total_mobility_incidence_rate_all_students
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    31.54728260869565
+  Max:    100
+  Min:    16.3
+  Sum:    5804.7
+
+Students with Disabilities Pupil Count
+  Field:  students_with_disabilities_pupil_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    914.3586956521739
+  Max:    84121
+  Min:    1
+  Sum:    168242
+
+Students with Disabilities Stable Student Count
+  Field:  students_with_disabilities_stable_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    712.9673913043478
+  Max:    65593
+  Min:    0
+  Sum:    131186
+
+Students with Disabilities Stability Rate
+  Field:  students_with_disabilities_stability_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    70.725
+  Max:    100
+  Min:    0
+  Sum:    13013.4
+
+Students with Disabilities Mobile Student Count
+  Field:  students_with_disabilities_mobile_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    199.4347826086957
+  Max:    18348
+  Min:    0
+  Sum:    36696
+
+Students with Disabilities Student Mobility Rate
+  Field:  students_with_disabilities_student_mobility_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    29.54456521739130
+  Max:    100
+  Min:    0
+  Sum:    5436.2
+
+Students with Disabilities Instances of Mobility
+  Field:  students_with_disabilities_instances_of_mobility
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    225.9130434782609
+  Max:    20784
+  Min:    0
+  Sum:    41568
+
+Students with Disabilities Mobility Incidence Rate
+  Field:  students_with_disabilities_mobility_incidence_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    30.97173913043478
+  Max:    100
+  Min:    0
+  Sum:    5698.8
+
+English Language Learners Pupil Count
+  Field:  english_language_learners_pupil_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    1475.130434782609
+  Max:    135712
+  Min:    0
+  Sum:    271424
+
+English Language Learners Stable Student Count
+  Field:  english_language_learners_stable_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    1105.25
+  Max:    101683
+  Min:    0
+  Sum:    203366
+
+English Language Learners Stability Rate
+  Field:  english_language_learners_stability_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    62.53315217391304
+  Max:    100
+  Min:    0
+  Sum:    11506.1
+
+English Language Learners Mobile Student Count
+  Field:  english_language_learners_mobile_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    366.6304347826087
+  Max:    33730
+  Min:    0
+  Sum:    67460
+
+English Language Learners Student Mobility Rate
+  Field:  english_language_learners_student_mobility_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    26.01956521739130
+  Max:    100
+  Min:    0
+  Sum:    4787.6
+
+English Language Learners Instances of Mobility
+  Field:  english_language_learners_instances_of_mobility
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    412.0869565217391
+  Max:    37912
+  Min:    0
+  Sum:    75824
+
+English Language Learners Mobility Incidence Rate
+  Field:  english_language_learners_mobility_incidence_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    27.28804347826087
+  Max:    100
+  Min:    0
+  Sum:    5021.0
+
+Economically Disadvantaged Pupil Count
+  Field:  economically_disadvantaged_pupil_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    4020.695652173913
+  Max:    369904
+  Min:    0
+  Sum:    739808
+
+Economically Disadvantaged Stable Student Count
+  Field:  economically_disadvantaged_stable_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    2977.543478260870
+  Max:    273934
+  Min:    0
+  Sum:    547868
+
+Economically Disadvantaged Stability Rate
+  Field:  economically_disadvantaged_stability_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    67.36902173913043
+  Max:    89
+  Min:    0
+  Sum:    12395.9
+
+Economically Disadvantaged Mobile Student Count
+  Field:  economically_disadvantaged_mobile_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    1023.239130434783
+  Max:    94138
+  Min:    0
+  Sum:    188276
+
+Economically Disadvantaged Student Mobility Rate
+  Field:  economically_disadvantaged_student_mobility_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    31.50163043478261
+  Max:    94.4
+  Min:    0
+  Sum:    5796.3
+
+Economically Disadvantaged Instances of Mobility
+  Field:  economically_disadvantaged_instances_of_mobility
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    1165.673913043478
+  Max:    107242
+  Min:    0
+  Sum:    214484
+
+Economically Disadvantaged Mobility Incidence Rate
+  Field:  economically_disadvantaged_mobility_incidence_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    33.28695652173913
+  Max:    94.4
+  Min:    0
+  Sum:    6124.8
+
+Migrant Pupil Count
+  Field:  migrant_pupil_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    29.69565217391304
+  Max:    2732
+  Min:    0
+  Sum:    5464
+
+Migrant Stable Student Count
+  Field:  migrant_stable_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    18.75
+  Max:    1725
+  Min:    0
+  Sum:    3450
+
+Migrant Stability Rate
+  Field:  migrant_stability_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    35.90923913043478
+  Max:    100
+  Min:    0
+  Sum:    6607.3
+
+Migrant Mobile Student Count
+  Field:  migrant_mobile_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    10.73913043478261
+  Max:    988
+  Min:    0
+  Sum:    1976
+
+Migrant Student Mobility Rate
+  Field:  migrant_student_mobility_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    21.64021739130435
+  Max:    100
+  Min:    0
+  Sum:    3981.8
+
+Migrant Instances of Mobility
+  Field:  migrant_instances_of_mobility
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    12.04347826086957
+  Max:    1108
+  Min:    0
+  Sum:    2216
+
+Migrant Mobility Incidence Rate
+  Field:  migrant_mobility_incidence_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    22.36086956521739
+  Max:    100
+  Min:    0
+  Sum:    4114.4
+
+Title 1 Pupil Count
+  Field:  title_1_pupil_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    2424
+  Max:    223008
+  Min:    0
+  Sum:    446016
+
+Title 1 Stable Student Count
+  Field:  title_1_stable_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    1704.5
+  Max:    156814
+  Min:    0
+  Sum:    313628
+
+Title 1 Pupil Stability Rate
+  Field:  title_1_pupil_stability_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    70.17173913043478
+  Max:    100
+  Min:    0
+  Sum:    12911.6
+
+Title 1 Mobile Student Count
+  Field:  title_1_mobile_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    702.1847826086957
+  Max:    64601
+  Min:    0
+  Sum:    129202
+
+Title 1 Student Mobility Rate
+  Field:  title_1_student_mobility_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    24.92391304347826
+  Max:    63.6
+  Min:    0
+  Sum:    4586.0
+
+Title 1 Instances of Mobility
+  Field:  title_1_instances_of_mobility
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    798.6086956521739
+  Max:    73472
+  Min:    0
+  Sum:    146944
+
+Title 1 Mobility Incidence Rate
+  Field:  title_1_mobility_incidence_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    26.36630434782609
+  Max:    63.6
+  Min:    0
+  Sum:    4851.4
+
+Homeless Pupil Count
+  Field:  homeless_pupil_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    231.9239130434783
+  Max:    21337
+  Min:    0
+  Sum:    42674
+
+Homeless Stable Student Count
+  Field:  homeless_stable_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    123.1086956521739
+  Max:    11326
+  Min:    0
+  Sum:    22652
+
+Homeless Stability Rate
+  Field:  homeless_stability_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    24.03152173913043
+  Max:    100
+  Min:    0
+  Sum:    4421.8
+
+Homeless Mobile Student Count
+  Field:  homeless_mobile_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    105.0543478260870
+  Max:    9665
+  Min:    0
+  Sum:    19330
+
+Homeless Student Mobility Rate
+  Field:  homeless_student_mobility_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    34.41195652173913
+  Max:    100
+  Min:    0
+  Sum:    6331.8
+
+Homeless Instances of Mobility
+  Field:  homeless_instances_of_mobility
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    125.6304347826087
+  Max:    11558
+  Min:    0
+  Sum:    23116
+
+Homeless Mobility Incidence Rate
+  Field:  homeless_mobility_incidence_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    37.24728260869565
+  Max:    160
+  Min:    0
+  Sum:    6853.5
+
+Gifted & Talented Pupil Count
+  Field:  gifted_talented_pupil_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    797.2173913043478
+  Max:    73344
+  Min:    0
+  Sum:    146688
+
+Gifted & Talented Stable Student Count
+  Field:  gifted_talented_stable_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    724.1304347826087
+  Max:    66620
+  Min:    0
+  Sum:    133240
+
+Gifted & Talented Stability Rate
+  Field:  gifted_talented_stability_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    83.61141304347826
+  Max:    100
+  Min:    0
+  Sum:    15384.5
+
+Gifted & Talented Mobile Student Count
+  Field:  gifted_talented_mobile_student_count
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    72.18478260869565
+  Max:    6641
+  Min:    0
+  Sum:    13282
+
+Gifted & Talented Student Mobility Rate
+  Field:  gifted_talented_student_mobility_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    10.97010869565217
+  Max:    100
+  Min:    0
+  Sum:    2018.5
+
+Gifted & Talented Instances of Mobility
+  Field:  gifted_talented_instances_of_mobility
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    80.06521739130435
+  Max:    7366
+  Min:    0
+  Sum:    14732
+
+Gifted & Talented Mobility Incidence Rate
+  Field:  gifted_talented_mobility_incidence_rate
+  Type:   number
+  Null:   0
+  Count:  184
+  Avg:    11.91413043478261
+  Max:    100
+  Min:    0
+  Sum:    2192.2
+
+degreesAwarded
+https://dev.socrata.com/foundry/data.colorado.gov/m279-sgtm 
+
+The Degree File includes all students who have received a certificate,
+degree, or formal award approved by DHE during the report year. Also
+contains data on age, ethnicity, program name, and residency.
+
+Rows:    221941
+Columns: 21
+Period:  2001 to 2017
+
+COLUMNS:
+-------
+year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  194056
+  Avg:    2009.223940512017
+  Max:    2016
+  Min:    2001
+  Sum:    389901961
+
+institutionName
+  Field:  institutionname
+  Type:   text
+  Null:   0
+  Count:  194056
+  ITEMS:
+     Aims Community College  (20)
+     Arapahoe Community College  (19)
+     Colorado Mountain College  (18)
+     Colorado Northwestern Community College  (17)
+     Community College of Aurora  (16)
+     Community College of Denver  (15)
+     Front Range Community College  (14)
+     Lamar Community College  (13)
+     Morgan Community College  (12)
+     Northeastern Junior College  (11)
+     Otero Junior College  (10)
+     Pikes Peak Community College  (9)
+     Pueblo Community College  (8)
+     Red Rocks Community College  (7)
+     Trinidad State Junior College  (6)
+     Adams State University  (5)
+     Colorado Mesa University  (4)
+     Colorado School of Mines  (3)
+     Colorado State University  (2)
+     Colorado State University - Pueblo  (1)
+
+institutionLevelId
+  Field:  institutionlevelid
+  Type:   number
+  Null:   0
+  Count:  194056
+  Avg:    3.248886919239807
+  Max:    4
+  Min:    2
+  Sum:    630466
+
+institutionLevel
+  Field:  institutionlevel
+  Type:   text
+  Null:   0
+  Count:  194056
+  ITEMS:
+     College  (20)
+     University  (19)
+
+institutionType
+  Field:  institutiontype
+  Type:   text
+  Null:   0
+  Count:  194056
+
+taxType
+  Field:  taxtype
+  Type:   text
+  Null:   0
+  Count:  194056
+
+coBased
+  Field:  cobased
+  Type:   text
+  Null:   0
+  Count:  194056
+
+division
+  Field:  division
+  Type:   text
+  Null:   0
+  Count:  194056
+
+ageDesc
+  Field:  agedesc
+  Type:   text
+  Null:   0
+  Count:  194056
+
+ageMin
+  Field:  agemin
+  Type:   number
+  Null:   576
+  Count:  193480
+  Avg:    25.39022637998760
+  Max:    40
+  Min:    17
+  Sum:    4912501
+
+ageMax
+  Field:  agemax
+  Type:   number
+  Null:   31607
+  Count:  162449
+  Avg:    31.30520963502392
+  Max:    40
+  Min:    17
+  Sum:    5085500
+
+gender
+  Field:  gender
+  Type:   text
+  Null:   0
+  Count:  194056
+  ITEMS:
+     Female  (20)
+     Male  (19)
+     Unknown  (18)
+
+ethnicity
+  Field:  ethnicity
+  Type:   text
+  Null:   0
+  Count:  194056
+  ITEMS:
+     White, non-Hispanic  (20)
+     Hispanic  (19)
+     Native American or Alaskan Native  (18)
+     Unknown Ethnicity  (17)
+     Asian or Pacific Islander  (16)
+     Black or African American, non-Hispanic  (15)
+     Non-Resident Alien  (14)
+     Asian  (13)
+     Hawaiian or Pacific Islander  (12)
+     More than one race/ethnicity (non-hispanic)  (11)
+     Black or African American  (10)
+     Unknown  (9)
+
+studentLevel
+  Field:  studentlevel
+  Type:   text
+  Null:   0
+  Count:  194056
+  ITEMS:
+     Undergraduate  (20)
+     Graduate  (19)
+
+degreeLevel
+  Field:  degreelevel
+  Type:   text
+  Null:   0
+  Count:  194056
+  ITEMS:
+     Certificate  (20)
+     Associate  (19)
+     Bachelor  (18)
+     Masters  (17)
+     Doctoral  (16)
+     Professional  (15)
+     Specialist  (14)
+     OtherGraduate  (13)
+
+residencyId
+  Field:  residencyid
+  Type:   number
+  Null:   0
+  Count:  194056
+  Avg:    1.205497382198953
+  Max:    3
+  Min:    1
+  Sum:    233934
+
+residency
+  Field:  residency
+  Type:   text
+  Null:   0
+  Count:  194056
+  ITEMS:
+     In-State  (20)
+     Out-of-State  (19)
+     Unclassified/Unspecified  (18)
+
+cip2
+  Field:  cip2
+  Type:   number
+  Null:   4
+  Count:  194052
+  Avg:    33.53121843629543
+  Max:    54
+  Min:    1
+  Sum:    6506800
+
+cip
+  Field:  cip
+  Type:   number
+  Null:   0
+  Count:  194056
+  Avg:    33.61353611637878
+  Max:    54.0101
+  Min:    0.0
+  Sum:    6522908.3646
+
+programName
+  Field:  programname
+  Type:   text
+  Null:   14099
+  Count:  179957
+  ITEMS:
+     Liberal Arts and Sciences/Liberal Studies.  (20)
+     General Studies.  (19)
+     Business Administration and Management, General.  (18)
+     Emergency Medical Technology/Technician (EMT Paramedic).  (17)
+     Registered Nursing/Registered Nurse.  (16)
+     Liberal Arts and Sciences, General Studies and Humanities, O  (15)
+     Psychology, General.  (14)
+     Biology/Biological Sciences, General.  (13)
+     Multi-/Interdisciplinary Studies, Other.  (12)
+     Speech Communication and Rhetoric.  (11)
+     English Language and Literature, General.  (10)
+     Kinesiology and Exercise Science.  (9)
+     Music, General.  (8)
+     Criminal Justice/Safety Studies.  (7)
+     Fine/Studio Arts, General.  (6)
+     Education, General.  (5)
+     Mathematics, General.  (4)
+     Sociology.  (3)
+     Educational Leadership and Administration, General.  (2)
+     Special Education and Teaching, General.  (1)
+
+recordCount
+  Field:  recordcount
+  Type:   number
+  Null:   183491
+  Count:  10565
+  Avg:    23.69947941315665
+  Max:    268
+  Min:    1
+  Sum:    250385
+
+Enrollment Demographics for Post-Secondary Graduates in Colorado
+https://dev.socrata.com/foundry/data.colorado.gov/p8m4-v33g 
+
+Demographics for all enrollees in post-secondary institutions,
+including gender, race, etc. From the Colorado Department of Higher
+Education (CDHE), since 2001.
+
+Rows:    191108
+Columns: 19
+Period:  2001 to 2017
+
+COLUMNS:
+-------
+year
+  Field:  year
+  Type:   number
+  Null:   0
+  Count:  178179
+  Avg:    2008.970799027944
+  Max:    2017
+  Min:    2001
+  Sum:    357956408
+
+institutionName
+  Field:  institutionname
+  Type:   text
+  Null:   0
+  Count:  178179
+  ITEMS:
+     University of Colorado Denver  (11851)
+     University of Colorado Boulder  (11332)
+     Front Range Community College  (11026)
+     Pikes Peak Community College  (10772)
+     Colorado State University  (10266)
+     Community College of Denver  (10175)
+     Colorado Mountain College  (9401)
+     Arapahoe Community College  (9261)
+     Community College of Aurora  (8873)
+     Red Rocks Community College  (8810)
+     Colorado Mesa University  (7775)
+     University of Colorado Colorado Springs  (7568)
+     University of Northern Colorado  (7396)
+     Pueblo Community College  (7039)
+     Aims Community College  (6522)
+     Metropolitan State University of Denver  (6382)
+     Adams State University  (5384)
+     Colorado School of Mines  (5056)
+     Colorado State University - Pueblo  (5047)
+     Trinidad State Junior College  (4733)
+
+institutionLevelId
+  Field:  institutionlevelid
+  Type:   number
+  Null:   0
+  Count:  178179
+  Avg:    2.931793308975805
+  Max:    4
+  Min:    2
+  Sum:    522384
+
+institutionLevel
+  Field:  institutionlevel
+  Type:   text
+  Null:   0
+  Count:  178179
+  ITEMS:
+     College  (101146)
+     University  (89962)
+
+institutionType
+  Field:  institutiontype
+  Type:   text
+  Null:   1622
+  Count:  176557
+
+taxType
+  Field:  taxtype
+  Type:   text
+  Null:   1622
+  Count:  176557
+
+division
+  Field:  division
+  Type:   text
+  Null:   1622
+  Count:  176557
+
+ageDesc
+  Field:  agedesc
+  Type:   text
+  Null:   4
+  Count:  178175
+
+max
+  Field:  max
+  Type:   number
+  Null:   33549
+  Count:  146675
+  Avg:    27.77696949036987
+  Max:    40
+  Min:    17
+  Sum:    4074187
+
+min
+  Field:  min
+  Type:   number
+  Null:   10305
+  Count:  168649
+  Avg:    24.39402546116490
+  Max:    40
+  Min:    17
+  Sum:    4114028
+
+gender
+  Field:  gender
+  Type:   text
+  Null:   0
+  Count:  178179
+  ITEMS:
+     Female  (96674)
+     Male  (92527)
+     Unknown  (1907)
+
+ethnicity
+  Field:  ethnicity
+  Type:   text
+  Null:   0
+  Count:  178179
+  ITEMS:
+     White, non-Hispanic  (49349)
+     Hispanic  (30768)
+     Unknown Ethnicity  (26397)
+     Black or African American  (20020)
+     Non-Resident Alien  (13633)
+     Native American or Alaskan Native  (12628)
+     Asian or Pacific Islander  (10047)
+     Asian  (8720)
+     More than one Race/Ethnicity (non-hispanic)  (7788)
+     White  (3269)
+     Hawaiian or Pacific Islander  (2519)
+     Hispanic of any race  (2252)
+     Race and Ethnicity unknown  (1728)
+     Two or more races  (1337)
+     American Indian or Alaska Native  (653)
+
+studentLevel
+  Field:  studentlevel
+  Type:   text
+  Null:   0
+  Count:  178179
+  ITEMS:
+     Undergraduate  (159887)
+     Graduate  (31221)
+
+degreeLevel
+  Field:  degreelevel
+  Type:   text
+  Null:   54120
+  Count:  126760
+  ITEMS:
+     Associate  (50974)
+     Bachelor  (38599)
+     Certificate  (22473)
+     Masters  (13630)
+     Doctoral  (7030)
+     OtherGraduate  (4282)
+
+residencyId
+  Field:  residencyid
+  Type:   number
+  Null:   0
+  Count:  178179
+  Avg:    1.325010242508938
+  Max:    4
+  Min:    0
+  Sum:    236089
+
+residency
+  Field:  residency
+  Type:   text
+  Null:   0
+  Count:  178179
+  ITEMS:
+     In-State  (130252)
+     Out-of-State  (60250)
+     Unclassified  (552)
+     Unknown  (54)
+
+registrationStatusId
+  Field:  registrationstatusid
+  Type:   number
+  Null:   4562
+  Count:  173617
+  Avg:    3.490614398359608
+  Max:    9
+  Min:    1
+  Sum:    606030
+
+registrationStatus
+  Field:  registrationstatus
+  Type:   text
+  Null:   4562
+  Count:  173617
+  ITEMS:
+     Continuing or Readmit  (79031)
+     First Time  (56734)
+     Transfer  (38361)
+     High school concurrent  (12331)
+     Study abroad, with no hours of any kind  (88)
+     Summer Only  (1)
+
+recordCount
+  Field:  recordcount
+  Type:   number
+  Null:   0
+  Count:  178179
+  Avg:    21.01206090504493
+  Max:    5914
+  Min:    1
+  Sum:    3743908
+
+Census Counties in Colorado 2019
+https://dev.socrata.com/foundry/data.colorado.gov/8j3i-rjn4 
+
+American Community Survey Census data includes demographics, education
+level, commute information, and more subset to Colorado by the
+Department of Local Affairs (DOLA).
+
+Rows:    64
+Columns: 157
+Period:  2019 to 2019
+
+COLUMNS:
+-------
+the_geom
+  Field:  the_geom
+  Type:   multipolygon
+  Null:   -
+  Count:  -
+
+geoname
+  Field:  geoname
+  Type:   text
+  Null:   0
+  Count:  64
+  ITEMS:
+     Pitkin  (1)
+     Prowers  (1)
+     Jackson  (1)
+     Conejos  (1)
+     Broomfield  (1)
+     Larimer  (1)
+     Kit Carson  (1)
+     Hinsdale  (1)
+     Boulder  (1)
+     Bent  (1)
+     Arapahoe  (1)
+     Adams  (1)
+     Alamosa  (1)
+     Delta  (1)
+     Pueblo  (1)
+     Washington  (1)
+     El Paso  (1)
+     Logan  (1)
+     Mineral  (1)
+     Custer  (1)
+
+geonum
+  Field:  geonum
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    108125
+  Min:    108001
+  Sum:    -
+
+pop
+  Field:  pop
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    705576.0
+  Min:    589.0
+  Sum:    -
+
+hispanic
+  Field:  hispanic
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    210937.0
+  Min:    49.0
+  Sum:    -
+
+white_nh
+  Field:  white_nh
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    483009.0
+  Min:    523.0
+  Sum:    -
+
+black_nh
+  Field:  black_nh
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    67640.0
+  Min:    0.0
+  Sum:    -
+
+ntvam_nh
+  Field:  ntvam_nh
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    3186.0
+  Min:    0.0
+  Sum:    -
+
+asian_nh
+  Field:  asian_nh
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    38273.0
+  Min:    0.0
+  Sum:    -
+
+hawpi_nh
+  Field:  hawpi_nh
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    2453.0
+  Min:    0.0
+  Sum:    -
+
+other_nh
+  Field:  other_nh
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    1833.0
+  Min:    0.0
+  Sum:    -
+
+twoplus_nh
+  Field:  twoplus_nh
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    28631.0
+  Min:    5.0
+  Sum:    -
+
+male
+  Field:  male
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    353311.0
+  Min:    292.0
+  Sum:    -
+
+female
+  Field:  female
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    352265.0
+  Min:    297.0
+  Sum:    -
+
+ageless5
+  Field:  ageless5
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    47167.0
+  Min:    15.0
+  Sum:    -
+
+age5_9
+  Field:  age5_9
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    47238.0
+  Min:    7.0
+  Sum:    -
+
+age10_14
+  Field:  age10_14
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    47286.0
+  Min:    26.0
+  Sum:    -
+
+age15_19
+  Field:  age15_19
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    48022.0
+  Min:    9.0
+  Sum:    -
+
+age20_24
+  Field:  age20_24
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    57146.0
+  Min:    16.0
+  Sum:    -
+
+age25_29
+  Field:  age25_29
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    82942.0
+  Min:    38.0
+  Sum:    -
+
+age30_34
+  Field:  age30_34
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    79888.0
+  Min:    27.0
+  Sum:    -
+
+age35_39
+  Field:  age35_39
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    61730.0
+  Min:    26.0
+  Sum:    -
+
+age40_44
+  Field:  age40_44
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    50260.0
+  Min:    25.0
+  Sum:    -
+
+age45_49
+  Field:  age45_49
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    43970.0
+  Min:    29.0
+  Sum:    -
+
+age50_54
+  Field:  age50_54
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    42688.0
+  Min:    44.0
+  Sum:    -
+
+age55_59
+  Field:  age55_59
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    43657.0
+  Min:    39.0
+  Sum:    -
+
+age60_64
+  Field:  age60_64
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    40371.0
+  Min:    75.0
+  Sum:    -
+
+age65_69
+  Field:  age65_69
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    32078.0
+  Min:    70.0
+  Sum:    -
+
+age70_74
+  Field:  age70_74
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    24257.0
+  Min:    30.0
+  Sum:    -
+
+age75_79
+  Field:  age75_79
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    15339.0
+  Min:    13.0
+  Sum:    -
+
+age80_84
+  Field:  age80_84
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    10452.0
+  Min:    14.0
+  Sum:    -
+
+age85pl
+  Field:  age85pl
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    10667.0
+  Min:    10.0
+  Sum:    -
+
+ageless18
+  Field:  ageless18
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    169876.0
+  Min:    76.0
+  Sum:    -
+
+age18_24
+  Field:  age18_24
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    76983.0
+  Min:    16.0
+  Sum:    -
+
+med_age
+  Field:  med_age
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    59.7
+  Min:    31.8
+  Sum:    -
+
+households
+  Field:  households
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    301501.0
+  Min:    289.0
+  Sum:    -
+
+familyhh
+  Field:  familyhh
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    175552.0
+  Min:    133.0
+  Sum:    -
+
+nonfamhh
+  Field:  nonfamhh
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    155431.0
+  Min:    104.0
+  Sum:    -
+
+hhldralone
+  Field:  hhldralone
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    115204.0
+  Min:    85.0
+  Sum:    -
+
+hhldr_naln
+  Field:  hhldr_naln
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    40227.0
+  Min:    3.0
+  Sum:    -
+
+housing_un
+  Field:  housing_un
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    321717.0
+  Min:    751.0
+  Sum:    -
+
+occ_hu
+  Field:  occ_hu
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    301501.0
+  Min:    289.0
+  Sum:    -
+
+vac_hu
+  Field:  vac_hu
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    20579.0
+  Min:    157.0
+  Sum:    -
+
+owned
+  Field:  owned
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    164677.0
+  Min:    181.0
+  Sum:    -
+
+rented
+  Field:  rented
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    151119.0
+  Min:    49.0
+  Sum:    -
+
+pop25plus
+  Field:  pop25plus
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    508718.0
+  Min:    485.0
+  Sum:    -
+
+nohsdipl
+  Field:  nohsdipl
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    60938.0
+  Min:    18.0
+  Sum:    -
+
+hsgrad_sc
+  Field:  hsgrad_sc
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    251968.0
+  Min:    282.0
+  Sum:    -
+
+bachl_hghr
+  Field:  bachl_hghr
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    251499.0
+  Min:    173.0
+  Sum:    -
+
+med_hh_inc
+  Field:  med_hh_inc
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    119730.0
+  Min:    30900
+  Sum:    -
+
+med_fam_in
+  Field:  med_fam_in
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    134931.0
+  Min:    39917.0
+  Sum:    -
+
+per_cap_in
+  Field:  per_cap_in
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    54875.0
+  Min:    13930.0
+  Sum:    -
+
+med_yr_blt
+  Field:  med_yr_blt
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    1999.0
+  Min:    1947.0
+  Sum:    -
+
+med_c_rent
+  Field:  med_c_rent
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    1565.0
+  Min:    335.0
+  Sum:    -
+
+med_g_rent
+  Field:  med_g_rent
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    1725.0
+  Min:    443.0
+  Sum:    -
+
+med_hm_val
+  Field:  med_hm_val
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    615900
+  Min:    79400
+  Sum:    -
+
+citz_birth
+  Field:  citz_birth
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    650176.0
+  Min:    572.0
+  Sum:    -
+
+citz_nat
+  Field:  citz_nat
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    43283.0
+  Min:    5.0
+  Sum:    -
+
+not_citz
+  Field:  not_citz
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    64771.0
+  Min:    0.0
+  Sum:    -
+
+born_in_co
+  Field:  born_in_co
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    281808.0
+  Min:    179.0
+  Sum:    -
+
+brn_oth_st
+  Field:  brn_oth_st
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    405225.0
+  Min:    383.0
+  Sum:    -
+
+ntv_b_o_us
+  Field:  ntv_b_o_us
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    22882.0
+  Min:    0.0
+  Sum:    -
+
+foreign_b
+  Field:  foreign_b
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    105658.0
+  Min:    9.0
+  Sum:    -
+
+pop_1p
+  Field:  pop_1p
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    696798.0
+  Min:    589.0
+  Sum:    -
+
+same_house
+  Field:  same_house
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    556608.0
+  Min:    530.0
+  Sum:    -
+
+same_cnty
+  Field:  same_cnty
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    79826.0
+  Min:    7.0
+  Sum:    -
+
+same_state
+  Field:  same_state
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    42087.0
+  Min:    25.0
+  Sum:    -
+
+diff_state
+  Field:  diff_state
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    49457.0
+  Min:    2.0
+  Sum:    -
+
+frm_abroad
+  Field:  frm_abroad
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    6574.0
+  Min:    0.0
+  Sum:    -
+
+wrkrs_16pl
+  Field:  wrkrs_16pl
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    394894.0
+  Min:    339.0
+  Sum:    -
+
+car_all
+  Field:  car_all
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    303276.0
+  Min:    220.0
+  Sum:    -
+
+car_alone
+  Field:  car_alone
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    272967.0
+  Min:    195.0
+  Sum:    -
+
+car_carpoo
+  Field:  car_carpoo
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    36128.0
+  Min:    15.0
+  Sum:    -
+
+public_trn
+  Field:  public_trn
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    25824.0
+  Min:    0.0
+  Sum:    -
+
+pt_bus
+  Field:  pt_bus
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    17466.0
+  Min:    0.0
+  Sum:    -
+
+pt_other
+  Field:  pt_other
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    8358.0
+  Min:    0.0
+  Sum:    -
+
+bike
+  Field:  bike
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    8795.0
+  Min:    0.0
+  Sum:    -
+
+walk
+  Field:  walk
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    18489.0
+  Min:    32.0
+  Sum:    -
+
+tr_other
+  Field:  tr_other
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    4777.0
+  Min:    0.0
+  Sum:    -
+
+wrk_home
+  Field:  wrk_home
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    33733.0
+  Min:    14.0
+  Sum:    -
+
+w_16pl_nh
+  Field:  w_16pl_nh
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    361161.0
+  Min:    305.0
+  Sum:    -
+
+t_less_10
+  Field:  t_less_10
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    37072.0
+  Min:    126.0
+  Sum:    -
+
+t_10_19
+  Field:  t_10_19
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    107064.0
+  Min:    52.0
+  Sum:    -
+
+t_20_29
+  Field:  t_20_29
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    89019.0
+  Min:    0.0
+  Sum:    -
+
+t_30_39
+  Field:  t_30_39
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    78822.0
+  Min:    6.0
+  Sum:    -
+
+t_40_59
+  Field:  t_40_59
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    47072.0
+  Min:    7.0
+  Sum:    -
+
+t_60_pl
+  Field:  t_60_pl
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    24253.0
+  Min:    4.0
+  Sum:    -
+
+pop_3pl
+  Field:  pop_3pl
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    678966.0
+  Min:    581.0
+  Sum:    -
+
+enrolled
+  Field:  enrolled
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    189593.0
+  Min:    89.0
+  Sum:    -
+
+preschool
+  Field:  preschool
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    10840.0
+  Min:    3.0
+  Sum:    -
+
+kndrgrtn
+  Field:  kndrgrtn
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    9350.0
+  Min:    0.0
+  Sum:    -
+
+gr_1_4
+  Field:  gr_1_4
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    37929.0
+  Min:    11.0
+  Sum:    -
+
+gr_5_8
+  Field:  gr_5_8
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    37720.0
+  Min:    22.0
+  Sum:    -
+
+gr_9_12
+  Field:  gr_9_12
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    37561.0
+  Min:    17.0
+  Sum:    -
+
+undergrad
+  Field:  undergrad
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    46522.0
+  Min:    3.0
+  Sum:    -
+
+grad_prof
+  Field:  grad_prof
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    15715.0
+  Min:    0.0
+  Sum:    -
+
+n_enrolled
+  Field:  n_enrolled
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    523081.0
+  Min:    492.0
+  Sum:    -
+
+blt_2010_p
+  Field:  blt_2010_p
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    29088.0
+  Min:    6.0
+  Sum:    -
+
+b2000_2009
+  Field:  b2000_2009
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    51329.0
+  Min:    19.0
+  Sum:    -
+
+b1990_1999
+  Field:  b1990_1999
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    45097.0
+  Min:    55.0
+  Sum:    -
+
+b1980_1989
+  Field:  b1980_1989
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    58804.0
+  Min:    47.0
+  Sum:    -
+
+b1970_1979
+  Field:  b1970_1979
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    66664.0
+  Min:    82.0
+  Sum:    -
+
+b1960_1969
+  Field:  b1960_1969
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    35221.0
+  Min:    27.0
+  Sum:    -
+
+b1950_1959
+  Field:  b1950_1959
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    48199.0
+  Min:    26.0
+  Sum:    -
+
+b1940_1949
+  Field:  b1940_1949
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    21137.0
+  Min:    5.0
+  Sum:    -
+
+b1939_e
+  Field:  b1939_e
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    60727.0
+  Min:    156.0
+  Sum:    -
+
+own_occ_hu
+  Field:  own_occ_hu
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    164677.0
+  Min:    181.0
+  Sum:    -
+
+v_l_50k
+  Field:  v_l_50k
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    6278.0
+  Min:    0.0
+  Sum:    -
+
+v50k_100k
+  Field:  v50k_100k
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    6657.0
+  Min:    0.0
+  Sum:    -
+
+v100k_150k
+  Field:  v100k_150k
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    10064.0
+  Min:    2.0
+  Sum:    -
+
+v150k_200k
+  Field:  v150k_200k
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    23651.0
+  Min:    11.0
+  Sum:    -
+
+v200k_250k
+  Field:  v200k_250k
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    27582.0
+  Min:    10.0
+  Sum:    -
+
+v250k_300k
+  Field:  v250k_300k
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    25004.0
+  Min:    14.0
+  Sum:    -
+
+v300k_400k
+  Field:  v300k_400k
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    42699.0
+  Min:    10.0
+  Sum:    -
+
+v400k_500k
+  Field:  v400k_500k
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    36183.0
+  Min:    7.0
+  Sum:    -
+
+v500k_750k
+  Field:  v500k_750k
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    32808.0
+  Min:    3.0
+  Sum:    -
+
+v750k_1m
+  Field:  v750k_1m
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    11082.0
+  Min:    0.0
+  Sum:    -
+
+v_1m_plus
+  Field:  v_1m_plus
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    8930.0
+  Min:    0.0
+  Sum:    -
+
+rnt_occ_hu
+  Field:  rnt_occ_hu
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    151119.0
+  Min:    49.0
+  Sum:    -
+
+rntl400
+  Field:  rntl400
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    9744.0
+  Min:    0.0
+  Sum:    -
+
+r400t599
+  Field:  r400t599
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    4670.0
+  Min:    0.0
+  Sum:    -
+
+r600t799
+  Field:  r600t799
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    11475.0
+  Min:    0.0
+  Sum:    -
+
+r800t999
+  Field:  r800t999
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    16304.0
+  Min:    6.0
+  Sum:    -
+
+r1000t1249
+  Field:  r1000t1249
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    28659.0
+  Min:    0.0
+  Sum:    -
+
+r1250t1499
+  Field:  r1250t1499
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    24408.0
+  Min:    0.0
+  Sum:    -
+
+r1500t1999
+  Field:  r1500t1999
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    34456.0
+  Min:    0.0
+  Sum:    -
+
+r2000pl
+  Field:  r2000pl
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    21187.0
+  Min:    0.0
+  Sum:    -
+
+rnocshr
+  Field:  rnocshr
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    2883.0
+  Min:    0.0
+  Sum:    -
+
+ps_uni
+  Field:  ps_uni
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    693555.0
+  Min:    589.0
+  Sum:    -
+
+ps_below
+  Field:  ps_below
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    89203.0
+  Min:    31.0
+  Sum:    -
+
+ps_bel150
+  Field:  ps_bel150
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    145392.0
+  Min:    107.0
+  Sum:    -
+
+tot_l18
+  Field:  tot_l18
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    167335.0
+  Min:    76.0
+  Sum:    -
+
+puni_65pl
+  Field:  puni_65pl
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    90245.0
+  Min:    146.0
+  Sum:    -
+
+pov_l18
+  Field:  pov_l18
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    25172.0
+  Min:    0.0
+  Sum:    -
+
+pov_65pl
+  Field:  pov_65pl
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    8674.0
+  Min:    3.0
+  Sum:    -
+
+avghhsize
+  Field:  avghhsize
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    3.69
+  Min:    2.01
+  Sum:    -
+
+hhi_l20k
+  Field:  hhi_l20k
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    40741.0
+  Min:    34.0
+  Sum:    -
+
+hhi20_30
+  Field:  hhi20_30
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    22866.0
+  Min:    24.0
+  Sum:    -
+
+hhi30_40
+  Field:  hhi30_40
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    24289.0
+  Min:    26.0
+  Sum:    -
+
+hhi40_50
+  Field:  hhi40_50
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    21978.0
+  Min:    33.0
+  Sum:    -
+
+hhi50_60
+  Field:  hhi50_60
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    24117.0
+  Min:    39.0
+  Sum:    -
+
+hhi60_75
+  Field:  hhi60_75
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    27930.0
+  Min:    28.0
+  Sum:    -
+
+hhi75_100
+  Field:  hhi75_100
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    37630.0
+  Min:    23.0
+  Sum:    -
+
+hhi100_125
+  Field:  hhi100_125
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    27936.0
+  Min:    24.0
+  Sum:    -
+
+hhi125_150
+  Field:  hhi125_150
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    19571.0
+  Min:    11.0
+  Sum:    -
+
+hhi150_200
+  Field:  hhi150_200
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    24159.0
+  Min:    5.0
+  Sum:    -
+
+hhi200_pl
+  Field:  hhi200_pl
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    30417.0
+  Min:    5.0
+  Sum:    -
+
+civ_ni_pop
+  Field:  civ_ni_pop
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    699351.0
+  Min:    589.0
+  Sum:    -
+
+disabled
+  Field:  disabled
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    82539.0
+  Min:    76.0
+  Sum:    -
+
+pop16_pls
+  Field:  pop16_pls
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    578596.0
+  Min:    522.0
+  Sum:    -
+
+laborforce
+  Field:  laborforce
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    418232.0
+  Min:    351.0
+  Sum:    -
+
+civ_lf
+  Field:  civ_lf
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    417715.0
+  Min:    351.0
+  Sum:    -
+
+emp
+  Field:  emp
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    402046.0
+  Min:    344.0
+  Sum:    -
+
+unemp
+  Field:  unemp
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    19962.0
+  Min:    7.0
+  Sum:    -
+
+armedfrcs
+  Field:  armedfrcs
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    28715.0
+  Min:    0.0
+  Sum:    -
+
+not_lf
+  Field:  not_lf
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    175977.0
+  Min:    171.0
+  Sum:    -
+
+civ_ni_
+  Field:  civ_ni_
+  Type:   number
+  Null:   0
+  Count:  64
+  Avg:    -
+  Max:    699351.0
+  Min:    589.0
+  Sum:    -
+
