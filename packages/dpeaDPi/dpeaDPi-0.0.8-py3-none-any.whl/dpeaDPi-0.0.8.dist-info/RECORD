@@ -1,0 +1,13 @@
+dpeaDPi/DPiComputer.py,sha256=F0mRFRE3HNSFY4IUmmVCEx652hOCOziiOsBUVTFMqoU,21260
+dpeaDPi/DPiFuncGen.py,sha256=reAsfsgBYcpzjjpc4XTjhwGJQK9KCOPtguMLH56ZFjI,4576
+dpeaDPi/DPiNetwork.py,sha256=FO72R80M3e-HFI2P3Jb5NX6uIkHgSiurH3qhCLDLgy0,13713
+dpeaDPi/DPiPowerDrive.py,sha256=iwsOkl7vtEfni-A2A2nS0nk49eXAB8p_S8qUlqOEI-c,6571
+dpeaDPi/DPiRobot.py,sha256=MOsrjK41UzFxZvNjSvS84lGsjNGlK5stRv5UdXse2pE,31022
+dpeaDPi/DPiSolenoid.py,sha256=si3ovPy3cMwDGiDSHUeSsFoU_0VOYfRavETJgvJjoUI,6519
+dpeaDPi/DPiStepper.py,sha256=ZzszGZBEYa7bDTXsDf_63WHuq7tTQoeGyq4dOb71Jo8,39690
+dpeaDPi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dpeaDPi-0.0.8.dist-info/LICENSE,sha256=MfZU_TpM-MI4KzVXwoeYLzlds6ApfWxt5HrST5GRklU,1054
+dpeaDPi-0.0.8.dist-info/METADATA,sha256=O8k_-X5ZXmiNUkPvFmoWybIOgvlJxY4PK2uI8wkcp-4,488
+dpeaDPi-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dpeaDPi-0.0.8.dist-info/top_level.txt,sha256=6_ODvDIvbhmgYdZ8pG7BLEk-Mdcg7dKuS7_Wy-K7HGo,8
+dpeaDPi-0.0.8.dist-info/RECORD,,
