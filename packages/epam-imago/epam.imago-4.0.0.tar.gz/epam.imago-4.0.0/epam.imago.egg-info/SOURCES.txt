@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+imago.py
+setup.py
+epam.imago.egg-info/PKG-INFO
+epam.imago.egg-info/SOURCES.txt
+epam.imago.egg-info/dependency_links.txt
+epam.imago.egg-info/top_level.txt
