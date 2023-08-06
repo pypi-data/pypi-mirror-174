@@ -1,0 +1,11 @@
+azely/__init__.py,sha256=BIFi8Kf2LgU9R_YH4jMOtZwljOi-ltY8Pi18tEg2Le8,372
+azely/azel.py,sha256=BygwlWnYNM69bG4WqH_G-UYb0ZvQuFODVRPguvJkW-Q,8003
+azely/consts.py,sha256=3opGKmpBSE610vQrqeJMXaKE2wUHy9TOsx_0H-_Qriw,1528
+azely/location.py,sha256=IxM63ul-Xg6XQZPGrqxJgsQVyVuVcfVTI8hio8ZmYxo,7168
+azely/object.py,sha256=j-2ZiNbmOX33LhykYxmq69SkExxZz2CSw-IPJNhQgN0,6688
+azely/time.py,sha256=BTLBCx1Xx2btlOe5Er6pDqjxa_uTmYaZFSP85NzqxVA,7171
+azely/utils.py,sha256=oSQ2hja2pqmQllxSVuEuHdwvf-8HBobgeqD7CLKC9-Y,7297
+azely-0.7.0.dist-info/LICENSE,sha256=uGVW_VkMm6OBfCLLgEIGXVE_v1jXlyGgo7NmDOTjhqI,1076
+azely-0.7.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+azely-0.7.0.dist-info/METADATA,sha256=LY_BYakOzMvdR9z_cbAD-jjuDs6Dbp9tIYXxT6l6q6A,11147
+azely-0.7.0.dist-info/RECORD,,
