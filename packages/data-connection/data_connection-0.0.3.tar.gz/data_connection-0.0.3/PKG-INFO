@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: data-connection
+Version: 0.0.3
+Summary: Передача данных между сервисами
+Home-page: https://github.com/Konstantin-Dudersky/data_exchange.git
+Author: konstantin-dudersky
+Author-email: konstantin.dudersky@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fastapi (<1.0.0)
+Requires-Dist: pydantic (>=1.0.0,<2.0.0)
+Requires-Dist: websockets (>=10.0.0,<11.0.0)
+Project-URL: Repository, https://github.com/Konstantin-Dudersky/data_exchange.git
+Description-Content-Type: text/markdown
+
+# data_exchange
+
+## Описание
+
+Обмен данными между микросервисами
+
+- signal - элементарный тип данных. Кроме значения, хранит также время последнего чтения / записи, код качества, единицу измерения, пределы измерения.
+
+- channel - объект для связи signal с периферийными значениями.
+
+- driver - управляет объектами channel.
+
+- datapoint - объект для храненения данных. Связывает signal и channel.
+
+## Разработка
+
+Установить виртуальное окружение
+
+```sh
+poetry install
+```
+
+Собрать пакет
+
+```sh
+poetry build
+```
+
+Опубликовать пакет
+
+```sh
+poetry publish --username Konstantin.Dudersky@gmail.com --password __TOKEN__
+```
+
