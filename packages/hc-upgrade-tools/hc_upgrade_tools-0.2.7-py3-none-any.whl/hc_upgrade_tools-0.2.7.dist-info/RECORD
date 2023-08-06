@@ -1,0 +1,11 @@
+hc_upgrade_tools/__init__.py,sha256=pH5i4Fj1tbXLqLtTVIdoojiplZssQn0nnud8-HXodRE,577
+hc_upgrade_tools/handl_upgrade.py,sha256=o6UqrHQjXLfo7nuIOkw3c70LRxGZsmyylkUCEAiVxfQ,4156
+hc_upgrade_tools/skeleton.py,sha256=2ikOSM4Q_aZ27JdBt6OSvgwudg2hLJqU8cY3Bx1QEGE,4192
+hc_upgrade_tools/subcmd.py,sha256=iA_0Wp5BPebS7a3mLa8N1lrcYoXPRnKaAmjNzWCY6tM,1244
+hc_upgrade_tools/utility.py,sha256=7dWlTrpBORYquN_kuq7k26ZMlpP8gmBT5PV5R_UC9Ik,9660
+hc_upgrade_tools-0.2.7.dist-info/LICENSE.txt,sha256=uk2G2BnzJOixXZVok9v6WMnv6HAc85Qp4H6JO9gB3GA,1075
+hc_upgrade_tools-0.2.7.dist-info/METADATA,sha256=MdZZakhXzL_QAH0UYKoijs14sSUjTiPRJTBbmqF8qa0,2508
+hc_upgrade_tools-0.2.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hc_upgrade_tools-0.2.7.dist-info/entry_points.txt,sha256=xxhvGasZDPYcHEflL16NDwQB7KSpdA9QCK4fgxnJX_w,123
+hc_upgrade_tools-0.2.7.dist-info/top_level.txt,sha256=GHAvkdzMxhOFI-I7tsBMo0sn6EpHUBLF8Z5aGQ3htQI,17
+hc_upgrade_tools-0.2.7.dist-info/RECORD,,
