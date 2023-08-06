@@ -1,0 +1,3 @@
+[console_scripts]
+gdoc=gdoc.__main__:main
+
