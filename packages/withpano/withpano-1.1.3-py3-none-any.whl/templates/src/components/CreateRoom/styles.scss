@@ -1,0 +1,47 @@
+div.formHolder {
+  position: fixed;
+  top: 25px;
+  right: 37px;
+  padding: 10px;
+  background: #ffffffc2;
+  border-radius: 10px;
+  box-shadow: -13px 8px 15px -7px #f6f6f6;
+  //width: 22%;
+}
+div#elementEditProp{
+  position: fixed;
+  z-index: 1;
+}
+
+form#customForm {
+  margin: 1rem auto 0;
+  width: 100%;
+
+  .MuiFormControl-root,
+  .MuiTextField-root,
+  .MuiButton-root {
+    width: 100%;
+  }
+
+  .MuiFormControl-root,
+  .MuiFormControlLabel-root,
+  .MuiTextField-root {
+    margin-bottom: 1rem;
+  }
+
+  .MuiFormControl-root:nth-child(2) {
+    margin-bottom: 1.5rem;
+  }
+
+  .MuiFormGroup-root .MuiFormControlLabel-root {
+    margin-bottom: 0;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border:none;
+  }
+  select.form-select{
+    border: none !important;
+    background-color: transparent !important;
+    border-bottom: 1.5px solid rgb(118, 118, 118) !important;
+  }
+}

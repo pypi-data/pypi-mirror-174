@@ -1,0 +1,13 @@
+SUPPORTED_ATTACHMENT_FILES = ["application/x-bzip", "application/x-bzip2", "text/csv", "application/msword",
+                              "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                              "application/vnd.ms-fontobject", "application/epub+zip", "application/gzip",
+                              "text/calendar",
+                              "application/java-archive", "application/vnd.oasis.opendocument.presentation",
+                              "application/vnd.oasis.opendocument.spreadsheet",
+                              "application/vnd.oasis.opendocument.text",
+                              "application/pdf", "application/vnd.ms-powerpoint",
+                              "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                              "application/vnd.rar",
+                              "application/rtf", "application/x-tar", "text/plain", "application/vnd.ms-excel",
+                              "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/zip",
+                              "application/x-7z-compressed", ]
