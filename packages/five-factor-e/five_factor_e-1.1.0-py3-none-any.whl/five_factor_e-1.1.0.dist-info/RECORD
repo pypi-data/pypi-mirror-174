@@ -1,0 +1,17 @@
+ipipneo/__init__.py,sha256=xU_8Z0GfRWxxibhZexycAQ72Fc-xxa2caygiWtSi5Ps,36
+ipipneo/facet.py,sha256=sDLawuipXngHoX9ar85W_FgdoGR40ammAIqzX3dI7TU,6493
+ipipneo/ipipneo.py,sha256=Mm7uMZR4O5O4JhV8K2RS5s3YVGcX9euuQ2Cncx-vy5o,3628
+ipipneo/model.py,sha256=ax-TpdniTGx5vyW77XuOzzdJSNy6Olhj1tRPr1LjNsU,2262
+ipipneo/norm.py,sha256=YlHXIruAz_y8z2tszm6MwUmrUzYZ83dUdTpYnru0U88,20884
+ipipneo/utility.py,sha256=zneCgiXGp66lVWz_hk99psSsQ3HXFZsOmL4cuK4TF-Y,5323
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_facet.py,sha256=XM3B1hAhLWuVxWNIVSo0rSL0TP-Sys0fkTWgwOP_z9M,18463
+test/test_ipipneo.py,sha256=fNm0N-DdbDT1e8QSSv1iMUm4BdrpBDYmuzaVQmyT60w,3531
+test/test_model.py,sha256=EKJgKdLPZ2yYUwTpcy5xwMstds4vBOo6CjYCHR8cCEk,6667
+test/test_norm.py,sha256=1t12vuYd5fDv5RLUxN_DmF_Ln1j1Nev6EoM4LlHf2X8,9487
+test/test_utility.py,sha256=ikLrSO4NijWAeoaCrTF2gba6GER-H3SdRyb43DP53nc,15354
+five_factor_e-1.1.0.dist-info/LICENSE,sha256=9pLIQ-TVhUvrZG9VQrIH3qGKkNe-dwBYIXImlwEQCFE,1064
+five_factor_e-1.1.0.dist-info/METADATA,sha256=A5XmjTGCINGNG2nEB0LthYvcNoV66LvVoLBWNsHo9Og,5775
+five_factor_e-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+five_factor_e-1.1.0.dist-info/top_level.txt,sha256=w92cOz20hCrC2VkrSXKonG1AeDy50Yk7rrur7mYvnYw,13
+five_factor_e-1.1.0.dist-info/RECORD,,
