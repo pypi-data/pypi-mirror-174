@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ml-management
+Version: 0.0.16
+Summary: Python implementation of model pattern, dataset
+Author: ISPRAS MODIS
+Author-email: modis@ispras.ru
+Maintainer: Maxim Ryndin
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# mlmanagement
+
+implementation of model pattern, dataset
