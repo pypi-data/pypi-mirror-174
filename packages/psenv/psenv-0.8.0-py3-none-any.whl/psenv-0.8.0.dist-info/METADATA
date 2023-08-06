@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: psenv
+Version: 0.8.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv (==0.20.0)
+Requires-Dist: pyaml (==21.10.1)
+Requires-Dist: boto3 (==1.20.49)
+Requires-Dist: prettytable (==3.4.1)
+Provides-Extra: dev
+Requires-Dist: setuptools (==63.1.0) ; extra == 'dev'
+Requires-Dist: build (==0.8.0) ; extra == 'dev'
+Requires-Dist: python-semantic-release (==7.29.4) ; extra == 'dev'
+Requires-Dist: pytest (==7.1.2) ; extra == 'dev'
+Requires-Dist: black (==22.6.0) ; extra == 'dev'
+
+# psenv
+### cli tool for managing local environment and aws parameter store
