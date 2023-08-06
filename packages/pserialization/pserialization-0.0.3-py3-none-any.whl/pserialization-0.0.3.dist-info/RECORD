@@ -1,0 +1,10 @@
+pserialize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pserialize/deserialize.py,sha256=vv61fJqLOBM5UhW5vg6HUD7wWJaUfsV8ciA6vFH08ig,6669
+pserialize/pserialize.py,sha256=uv8JtD2VE4XP422Fb-msffsUwyC30zn_AWBgIEyQ2jQ,645
+pserialize/serialization_utils.py,sha256=79kLyily2Dg32xYL4kaeOtolVOKdnu7maRKmY8qno-Y,1826
+pserialize/serialize.py,sha256=yEynWnBQ0ofZ14VgWhS0toEjcmW8dMcNu6msQUWZZmg,3375
+pserialization-0.0.3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pserialization-0.0.3.dist-info/METADATA,sha256=6MXCZdAu3zQaFHEM21dm2apCZmxPqCSSwaTyTfDQW6E,3049
+pserialization-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pserialization-0.0.3.dist-info/top_level.txt,sha256=yz9SDdKpS4ctAzsCvli3XJngy7bcrjKu5WhVpT_NukI,11
+pserialization-0.0.3.dist-info/RECORD,,
