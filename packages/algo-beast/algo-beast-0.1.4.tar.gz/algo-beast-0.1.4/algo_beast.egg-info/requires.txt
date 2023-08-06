@@ -1,0 +1,9 @@
+algo-beast-protocols
+certifi
+charset-normalizer
+click
+colorama
+idna
+pwinput
+requests
+urllib3
