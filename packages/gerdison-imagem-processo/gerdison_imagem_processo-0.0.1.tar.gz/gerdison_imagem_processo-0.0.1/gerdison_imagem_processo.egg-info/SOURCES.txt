@@ -1,0 +1,13 @@
+README.md
+setup.py
+gerdison_imagem_processo.egg-info/PKG-INFO
+gerdison_imagem_processo.egg-info/SOURCES.txt
+gerdison_imagem_processo.egg-info/dependency_links.txt
+gerdison_imagem_processo.egg-info/requires.txt
+gerdison_imagem_processo.egg-info/top_level.txt
+processing/__init__.py
+processing/combinacao.py
+processing/transformacao.py
+utils/__init__.py
+utils/io.py
+utils/plot.py
