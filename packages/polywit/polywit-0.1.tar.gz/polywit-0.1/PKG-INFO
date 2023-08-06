@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: polywit
+Version: 0.1
+Summary: A poly-language execution-based violation-witness validator.
+Home-page: https://github.com/polywit/polywit
+Author: Joss Moffatt
+Project-URL: Issue Tracker, https://github.com/polywit/polywit
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/polywit/polywit/main/images/readme-header.png" alt="Polywit Logo" style="width: 50%;"/>
+</p>

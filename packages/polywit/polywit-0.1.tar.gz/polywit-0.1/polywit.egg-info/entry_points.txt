@@ -1,0 +1,2 @@
+[console_scripts]
+polywit = polywit.__main__:main
