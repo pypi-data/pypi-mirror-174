@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cookiecutter-cpp
+Version: 2.0.2
+Summary: Cookiecutter template for C++ with several lib ready to be used.
+Home-page: https://github.com/grhawk/cookiecutter-cpp.git
+Author: Riccardo Petraglia (forked from https://github.com/audreyr/cookiecutter-pypackage)
+Author-email: riccardo.petraglia@gmail.com
+License: BSD
+Keywords: cookiecutter,template,package,c++,cpp,gtest,spdlog
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+License-File: LICENSE
+
+Cookiecutter template for C++ including ready to use libs for logging and unittesting.
+
