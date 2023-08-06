@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cryptoadvance.spectrum
+Version: 0.2.0rc5
+Summary: Electrum adaptor for Specter-Desktop
+Home-page: https://github.com/cryptoadvance/spectrum
+Author: Stepan Snigirev
+Author-email: snigirev.stepan@gmail.com
+License: MIT license
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Flask
+Requires-Dist: embit (==0.5.0)
+Requires-Dist: flask
+Requires-Dist: Flask-SQLAlchemy (==2.5.1)
+Requires-Dist: requests
+Requires-Dist: psycopg2-binary
+Requires-Dist: pytest
+
+Bitcoin Core like RPC wallet with Electrum server backend.
