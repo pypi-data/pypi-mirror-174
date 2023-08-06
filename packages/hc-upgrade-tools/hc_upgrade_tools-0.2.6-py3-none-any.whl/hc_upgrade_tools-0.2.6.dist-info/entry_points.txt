@@ -1,0 +1,3 @@
+[console_scripts]
+hc_upgrade_tools = hc_upgrade_tools.skeleton:run
+utilitydownload = hc_upgrade_tools.utility:test_logging
