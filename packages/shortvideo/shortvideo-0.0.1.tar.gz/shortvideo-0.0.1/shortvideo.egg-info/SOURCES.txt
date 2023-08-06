@@ -1,0 +1,14 @@
+README.rst
+setup.py
+shortvideo.egg-info/PKG-INFO
+shortvideo.egg-info/SOURCES.txt
+shortvideo.egg-info/dependency_links.txt
+shortvideo.egg-info/not-zip-safe
+shortvideo.egg-info/requires.txt
+shortvideo.egg-info/top_level.txt
+svwork/__init__.py
+svwork/client.py
+svwork/method.py
+svwork/object.py
+svwork/utils.py
+svwork/video.py
