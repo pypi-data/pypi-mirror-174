@@ -1,0 +1,15 @@
+README.rst
+setup.py
+listener/__init__.py
+robotframework_localization/__init__.py
+robotframework_localization/analyze.py
+robotframework_localization/api.py
+robotframework_localization/loader.py
+robotframework_localization/loader_xml.py
+robotframework_localization/util.py
+robotframework_localization.egg-info/PKG-INFO
+robotframework_localization.egg-info/SOURCES.txt
+robotframework_localization.egg-info/dependency_links.txt
+robotframework_localization.egg-info/entry_points.txt
+robotframework_localization.egg-info/requires.txt
+robotframework_localization.egg-info/top_level.txt
