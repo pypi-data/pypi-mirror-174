@@ -1,0 +1,15 @@
+cppython_core/__init__.py,sha256=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U,3
+cppython_core/exceptions.py,sha256=HougERon3OlXIf0lKvQkgbuK26PihOiA84LQzQPSY7I,1522
+cppython_core/plugin_schema/__init__.py,sha256=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U,3
+cppython_core/plugin_schema/generator.py,sha256=oRuE06Z5JUjuJFPUXpQ3CAUpMsoOqau1FAj0VRtxOr0,1440
+cppython_core/plugin_schema/interface.py,sha256=k0ITkQnVB0AB-mF0rZDz_v19EDLuqEFQH4lOoA5C4QE,614
+cppython_core/plugin_schema/provider.py,sha256=HA45ZF9M9ihLZffJpLvij3iitWCFH3HhvDbn0CfoY-M,1963
+cppython_core/plugin_schema/vcs.py,sha256=jdqGsp9zoi4k9iZpNYotazeXohhRILNbnJTrBGhOxeA,1063
+cppython_core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cppython_core/resolution.py,sha256=pfl-QgFH0eDq3ioxfeKubVnlGX8OH4t9pNMrfiWo5No,5261
+cppython_core/schema.py,sha256=cUeKbAhbPiOoiio__flB_nsRxO4dw4d19EEp4YX2Zm8,11261
+cppython_core/utility.py,sha256=LJmgRsLIUDLX8-1LQhVwSS4FPaU2mpRB2zdSAhezE9o,2506
+cppython_core-0.6.1.dev24.dist-info/WHEEL,sha256=TQSpXlWZjPl29LMjkpbkR7iGxKB2AMwzfSmPuPn1ZS8,87
+cppython_core-0.6.1.dev24.dist-info/METADATA,sha256=QouBppEFyKtS8_gf9mFjAgqbbMnmsR4T86NHTy2oIlA,496
+cppython_core-0.6.1.dev24.dist-info/licenses/LICENSE.md,sha256=O2GDdR5BeAXcN20aptXMBkBD0QUDlBgHTw-0JJApQOM,1070
+cppython_core-0.6.1.dev24.dist-info/RECORD,,
