@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: epam.imago
+Version: 5.0.0
+Summary: A very basic calculator
+Home-page: 
+Author: scythe abhi
+Author-email: scytheabhi97@gmail.com
+License: MIT
+Keywords: calculator
+License-File: LICENCE.txt
+
+Hello World
+
+Change Log
+==========
+
+5.0.0 (30/09/2022)
+-------------------
+- First Release
