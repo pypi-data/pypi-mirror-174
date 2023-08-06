@@ -1,0 +1,11 @@
+napari_annotate/__init__.py,sha256=M4X_lQmuJYr4qhuPtPmppHIJf34Xd8QCOMDAXgWWWY8,173
+napari_annotate/_annotate.py,sha256=nJDFXq45X9o9AynH6dx4k-lh0BAx5VP8Vz6d3tBCs1w,6886
+napari_annotate/_reader.py,sha256=Go2w4Z96ZVW_u8Ybtx7EaR_EAXNxFS8WxaJ3DW-ZRKc,666
+napari_annotate/_version.py,sha256=LMm5XNCiIX0-d8PhBu6GowizEsy50WYpNYJ8Jet6s64,176
+napari_annotate/napari.yaml,sha256=Q-HbcDcPL4qrsK6o3T0_TpEdHOTQd7n9Mu695CTyOIA,742
+napari_annotate-0.0.1.dist-info/LICENSE.txt,sha256=-Me6mqd9JNeCOPZCZzgHMAdKRcEiG79ngFNhYeiKFRo,1096
+napari_annotate-0.0.1.dist-info/METADATA,sha256=xAFEC5wUIsi1DJqpxzNpMxH7-UXt69TYE8SbdJ6aQRE,1042
+napari_annotate-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_annotate-0.0.1.dist-info/entry_points.txt,sha256=zaWXgZbwsBlbaICC1f8Or75nL2uEG31v333-NY6QB3A,64
+napari_annotate-0.0.1.dist-info/top_level.txt,sha256=-G1jnTx5VDsw35C2xCCrhM3vfiELqQKZui-P2-m5LhA,16
+napari_annotate-0.0.1.dist-info/RECORD,,
