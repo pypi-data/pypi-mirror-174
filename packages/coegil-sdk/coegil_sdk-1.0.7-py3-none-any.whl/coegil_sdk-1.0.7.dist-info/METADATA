@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: coegil-sdk
+Version: 1.0.7
+Summary: Coegil Python SDK
+Home-page: https://coegil.com
+Author: Mike Levine
+Author-email: mike@coegil.com
+Requires-Python: >=3.9
+Requires-Dist: boto3
+Requires-Dist: requests
+
