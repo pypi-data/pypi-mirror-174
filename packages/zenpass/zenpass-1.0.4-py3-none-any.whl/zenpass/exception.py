@@ -1,0 +1,2 @@
+class ZenpassException(Exception):
+    pass
