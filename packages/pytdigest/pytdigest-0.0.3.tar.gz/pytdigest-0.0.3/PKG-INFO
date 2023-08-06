@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pytdigest
+Version: 0.0.3
+Summary: Python package for *fast* TDigest calculation.
+Home-page: https://github.com/protivinsky/pytdigest
+Author: Tomas Protivinsky
+Author-email: tomas.protivinsky@gmail.com
+Project-URL: Source, https://github.com/protivinsky/pytdigest
+Keywords: tdigest,distribution,statistics
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7, <4
+License-File: LICENSE
