@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/typed_tree.egg-info/PKG-INFO
+src/typed_tree.egg-info/SOURCES.txt
+src/typed_tree.egg-info/dependency_links.txt
+src/typed_tree.egg-info/top_level.txt
+src/typedtree/__init__.py
+src/typedtree/node.py
+src/typedtree/traversalmode.py
+src/typedtree/tree.py
+src/typedtree/version.py
