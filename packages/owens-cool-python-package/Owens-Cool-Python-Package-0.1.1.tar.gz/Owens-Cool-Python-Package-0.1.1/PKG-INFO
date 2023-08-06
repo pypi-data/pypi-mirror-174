@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: owens-cool-python-package
+Version: 0.1.1
+Summary: My first python package, source code can be found on github
+Author: OwenSevenThousand
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
