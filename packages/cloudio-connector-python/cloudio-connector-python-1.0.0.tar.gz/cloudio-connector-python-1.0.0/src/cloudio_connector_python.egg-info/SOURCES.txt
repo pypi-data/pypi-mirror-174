@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/cloudio_connector.py
+src/cloudio_connector_python.egg-info/PKG-INFO
+src/cloudio_connector_python.egg-info/SOURCES.txt
+src/cloudio_connector_python.egg-info/dependency_links.txt
+src/cloudio_connector_python.egg-info/requires.txt
+src/cloudio_connector_python.egg-info/top_level.txt
+test/test.py
