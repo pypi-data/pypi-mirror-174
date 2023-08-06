@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gnupy
+Version: 0.1
+Summary: for explain about pypi deploy
+Home-page: https://github.com/gnuboard/gnupy
+Author: thisgun
+Author-email: thisgun@sir.kr
+License: UNKNOWN
+Download-URL: https://github.com/gnuboard/gnupy/archive/master.zip
+Keywords: gnupy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3
+
+UNKNOWN
+

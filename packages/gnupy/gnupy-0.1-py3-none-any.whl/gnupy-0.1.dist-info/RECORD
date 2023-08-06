@@ -1,0 +1,11 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/asgi.py,sha256=QMGVMVwayrXxlRfJ20gBnIo_-8fp3VPpP58FZwJOguM,403
+example/settings.py,sha256=syj-VOAqUEKwQnomnH2sA9sQKu1nE_Ty_TKpiNdKsGM,3341
+example/urls.py,sha256=Wx7JfWR6swAC9mjlO2MYq_pYW4ilZsnCh2tYLwLeT28,768
+example/wsgi.py,sha256=e16msneOnS38jakylOo3JQe8uZlQBPLzeqkGkAeYc5o,403
+gnupy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gnupy/test.py,sha256=9eLDUU-aA0Pk4dwYz4puPcBO7wRZX_E88DQ6SHp81qY,127
+gnupy-0.1.dist-info/METADATA,sha256=Ncxst-tx8cZCx-aXrRV8iVRzdsyFQ8fLHXefdWoYQTk,773
+gnupy-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gnupy-0.1.dist-info/top_level.txt,sha256=BWOYeiyUmBSX0EEN-xrPNSRJoOvEv_BVPNCIvP0bIWs,14
+gnupy-0.1.dist-info/RECORD,,
