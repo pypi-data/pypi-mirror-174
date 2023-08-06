@@ -1,0 +1,6 @@
+[console_scripts]
+gradient=maxcolor:gradient
+gradient_panel=maxcolor:gradient_panel
+maxcolor=maxcolor:main
+rainbow=maxcolor:rainbow
+
