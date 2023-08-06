@@ -1,0 +1,3 @@
+[console_scripts]
+iphttp = iptt.entrypoints:iphttp_run
+iphttpd = iptt.entrypoints:iphttpd_run
