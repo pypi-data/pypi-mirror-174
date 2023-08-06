@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: hukudo-ingress
+Version: 1.1.0
+Home-page: https://gitlab.com/hukudo/ingress
+Author: hukudo GmbH
+Author-email: hukudo-ingress@hukudo.de
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: include_package_data
+
+# Ingress
+Configure Caddy as an ingress for your Docker containers.
+
+## Usage
+```
+pip install hukudo-ingress==1.1.0
+ingress --help
+```
+
+## Development
+Initial
+```
+make dev-setup
+ingress --help
+```
+
+[Completion](https://click.palletsprojects.com/en/8.1.x/shell-completion/)
+```
+eval "$(_INGRESS_COMPLETE=bash_source ingress)"
+```
