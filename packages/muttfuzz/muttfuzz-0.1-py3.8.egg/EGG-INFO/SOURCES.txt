@@ -1,0 +1,10 @@
+README.md
+setup.py
+muttfuzz/fuzz.py
+muttfuzz/fuzzutil.py
+muttfuzz/mutate.py
+muttfuzz.egg-info/PKG-INFO
+muttfuzz.egg-info/SOURCES.txt
+muttfuzz.egg-info/dependency_links.txt
+muttfuzz.egg-info/entry_points.txt
+muttfuzz.egg-info/top_level.txt
