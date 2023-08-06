@@ -1,0 +1,9 @@
+pylambdarest/__init__.py,sha256=AgAEjfML7YD7d8BdCzK1jS84IBv3X9ZD-Da_m759Gzg,182
+pylambdarest/applications.py,sha256=tV_SMkb3dS7oNwtfsMxpwF_B60E6xvCXqlMEKBfXQKs,8634
+pylambdarest/config.py,sha256=AKZ61sLhlh15i8_mAwpEXShXtnJn82EKHcUwYS2HQDY,1794
+pylambdarest/exceptions.py,sha256=ksPHAYiXT8R6awdsCJ0QhZS_k7ePFAG7aIGGmTq3jJ0,257
+pylambdarest/request.py,sha256=Bpi9VLiIiQXBEeUHZIXxA0sjZ20ur7uTHNztwzTnuqI,2870
+pylambdarest-0.3.0rc1.dist-info/LICENSE,sha256=JgOFgU9qYX_K3qrQv549w9wWq0HVCI4nRsRXztO-C-8,1072
+pylambdarest-0.3.0rc1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pylambdarest-0.3.0rc1.dist-info/METADATA,sha256=Dd099mNNwGm7rg9nIkX_kEAy3zrkApCeyKb-rTqyyQo,7131
+pylambdarest-0.3.0rc1.dist-info/RECORD,,
