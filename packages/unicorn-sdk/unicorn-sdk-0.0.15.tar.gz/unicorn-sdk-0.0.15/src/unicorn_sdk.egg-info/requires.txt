@@ -1,0 +1,6 @@
+requests
+brotli
+loguru
+httpx
+aiohttp
+tenacity
