@@ -1,0 +1,3 @@
+numpy
+pyrodigal>=2.0
+plotly
