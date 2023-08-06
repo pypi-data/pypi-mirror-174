@@ -1,0 +1,2 @@
+[console_scripts]
+gitee-utils = gitee_utils.__main__:cli

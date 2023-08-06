@@ -1,0 +1,12 @@
+gitee_utils/__init__.py,sha256=hwOJuFUEKtsgiOt4l6op9s-hviovM6TK1uCdtRNWY4E,22
+gitee_utils/__main__.py,sha256=sKJdajs1bfGI5OekG8AZ6laAtppqrKG8UIBAxMjriIY,1198
+gitee_utils/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitee_utils/commands/create_repo.py,sha256=FEl1qw3FwQYx03JoFrfVOjzhEb5-eRidLmO166nh9WY,1408
+gitee_utils/commands/delete_repos.py,sha256=sauh_9Fz5NHalQISyU0QJvrnN2HwHFVljU9PoMOPm7U,622
+gitee_utils/commands/list_repos.py,sha256=BFQ860QJqwHL5bY-U4mBo4BVVpHjWwUGKACUdaIi1qU,883
+gitee_utils-2.0.0.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+gitee_utils-2.0.0.dist-info/METADATA,sha256=C113EEwIpSNrf3fs93PiyvU6bgSpTycn0LOtTf8LtL0,1756
+gitee_utils-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gitee_utils-2.0.0.dist-info/entry_points.txt,sha256=amZJqAdQ9liPWghAt5eAIvfnLqmn3yzKlEdZCo0KeTU,57
+gitee_utils-2.0.0.dist-info/top_level.txt,sha256=1YqKkiqcrLEz8caGCiXeVYwxJR4VOr5b5Uxam4JpeLM,12
+gitee_utils-2.0.0.dist-info/RECORD,,
