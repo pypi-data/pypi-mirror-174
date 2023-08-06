@@ -1,0 +1,8 @@
+black
+more_itertools
+tomli
+pathspec
+rich
+
+[:python_version < "3.8"]
+importlib-metadata

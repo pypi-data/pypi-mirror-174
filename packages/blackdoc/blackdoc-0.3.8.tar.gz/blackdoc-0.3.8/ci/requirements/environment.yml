@@ -1,0 +1,12 @@
+name: blackdoc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - black
+  - rich
+  - more-itertools
+  - flake8
+  - isort
+  - pytest
+  - pip
