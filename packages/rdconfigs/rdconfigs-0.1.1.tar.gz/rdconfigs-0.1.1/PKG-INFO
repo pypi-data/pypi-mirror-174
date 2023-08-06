@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rdconfigs
+Version: 0.1.1
+Summary: Generate, display, and analyze randomly colored grids
+Author-email: Ujan RoyBandyopadhyay <ujan.roybandyopadhyay@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Installation
+
+    pip install rdconfigs
+
+# Dependencies
+
+-   CPython &gt;= 3.10
+-   pygame &gt;= 2.1.2
