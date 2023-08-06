@@ -1,0 +1,9 @@
+README.md
+setup.py
+oper_math_basic_project/__init__.py
+oper_math_basic_project/resta.py
+oper_math_basic_project/suma.py
+oper_math_basic_project.egg-info/PKG-INFO
+oper_math_basic_project.egg-info/SOURCES.txt
+oper_math_basic_project.egg-info/dependency_links.txt
+oper_math_basic_project.egg-info/top_level.txt
