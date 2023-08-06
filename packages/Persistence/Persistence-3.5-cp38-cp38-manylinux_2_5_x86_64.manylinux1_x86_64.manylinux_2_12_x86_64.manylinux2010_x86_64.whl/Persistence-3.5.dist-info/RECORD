@@ -1,0 +1,13 @@
+Persistence-3.5.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+Persistence-3.5.dist-info/top_level.txt,sha256=hSmmw3BscrovQFfpVAMuBsNDyshEZkza6RhMLTZf74g,12
+Persistence-3.5.dist-info/WHEEL,sha256=6jd4iL1PdoODmcsbX84z5njbeYqvNy0oPQMQT3l84Qo,217
+Persistence-3.5.dist-info/RECORD,,
+Persistence-3.5.dist-info/METADATA,sha256=TxluoU429rjEj05nSVNsHNK48K5RCDljOfdBkDyGTWw,3758
+Persistence/mapping.py,sha256=yOTDpebXYpQU7oEYo6oBUMb3MDzVronuhYlyirjhxP4,3207
+Persistence/_Persistence.cpython-38-x86_64-linux-gnu.so,sha256=YJWofcoMnmPFh6fRILSbRwepZ7mI9et3rjj3kdg4k_E,39168
+Persistence/_Persistence.c,sha256=sGzgwJRH8m-PtBh7oAOgxyc2connesIJU9BukA77Ck0,4905
+Persistence/__init__.py,sha256=4w-DpSJKIEvB3o6YNKW_M_ezA8eTowmdQAiFMahtrPs,2084
+Persistence/tests/test_ec.py,sha256=7mMyix_Kx5nwZawJCSFEHgCJGmTc_uayLtoDmmFuya0,11307
+Persistence/tests/test_mapping.py,sha256=iw4CjmcZ7hNSrGsIv-_K0I0hbMb2ZJgeAjInG2GMe80,1049
+Persistence/tests/test_persistent.py,sha256=rtFraBBpZbxMe9cjrymizz5gc3kKoZTtj7boKaFyM3g,6922
+Persistence/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
