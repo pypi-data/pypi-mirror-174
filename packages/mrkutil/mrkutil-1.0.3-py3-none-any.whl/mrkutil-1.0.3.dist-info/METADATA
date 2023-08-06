@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mrkutil
+Version: 1.0.3
+Summary: Python package containing common functions for python service based arch
+Home-page: https://github.com/ivke-99/mrkutil
+Author: Nebojsa Mrkic
+Author-email: mrkic.nebojsa@gmail.com
+License: Apache 2.0
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlalchemy (>=1.4)
+Requires-Dist: redis (>=4.3)
+Requires-Dist: RabbitMQPubSub (>=0.1.5)
+
+# Utility functions package
+
+Package is used to share same utility functions between multiple services.
+
+```python
+pip install mrkutil
+```
