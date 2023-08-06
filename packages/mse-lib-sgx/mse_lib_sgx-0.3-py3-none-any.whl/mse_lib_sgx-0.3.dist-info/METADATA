@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mse-lib-sgx
+Version: 0.3
+Summary: Library for Cosmian MSE to bootstrap Flask application
+Home-page: https://cosmian.com
+Author: Cosmian Tech
+Author-email: tech@cosmian.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pynacl (<1.6.0,>=1.5.0)
+Requires-Dist: cryptography (<39.0.0,>=38.0.1)
+Requires-Dist: intel-sgx-ra (<0.4,>=0.3)
+Requires-Dist: hypercorn (<0.15.0,>=0.14.3)
+Requires-Dist: h2 (<4.2.0,>=4.1.0)
+
+# MSE Lib SGX
