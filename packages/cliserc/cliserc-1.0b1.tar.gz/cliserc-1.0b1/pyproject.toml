@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling", "bnot"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cliserc"
+version = "1.0b1"
+
+authors = [
+	{name="bwilk315", email="bwilk315@onet.pl"}
+]
+description = "Simple client-server communication utility"
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: Apache Software License",
+	"Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bwilk315/cliserc"
+"License" = "https://www.apache.org/licenses/LICENSE-2.0.txt"
