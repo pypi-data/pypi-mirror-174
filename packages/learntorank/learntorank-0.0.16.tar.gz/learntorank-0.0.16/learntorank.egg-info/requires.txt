@@ -1,0 +1,11 @@
+fastcore
+pandas
+ir_datasets
+pyvespa
+tensorflow
+tensorflow_ranking
+keras_tuner
+
+[dev]
+matplotlib<3.6
+plotnine
