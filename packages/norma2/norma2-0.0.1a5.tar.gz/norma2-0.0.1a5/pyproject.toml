@@ -1,0 +1,65 @@
+[project]
+name = "norma2"
+description = "check c epitech coding style"
+authors = [
+    { name = "Xavier Mitault", email = "xavier.mitault@epitech.eu" },
+]
+dependencies = [
+    "markdown>=3.4.1",
+    "regex>=2022.9.13",
+    "rich>=12.6.0",
+    "rich-argparse>=0.3.1",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Programming Language :: C",
+    "Topic :: Software Development :: Quality Assurance",
+]
+version = "0.0.1a5"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+norma2 = "norma2.__main__:entrypoint"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+    "setuptools>=45",
+    "setuptools_scm[toml]>=6.2",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.version]
+source = "scm"
+write_to = "norma2/__version__.py"
+write_template = "__version__ = \"{}\""
+
+[tool.pdm.build]
+includes = [
+    "norma2/",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pre-commit>=2.20.0",
+    "black>=22.8.0",
+    "flake8>=5.0.4",
+    "pyright>=1.1.274",
+    "isort>=5.10.1",
+    "refurb>=1.3.0",
+]
+
+[tool.pdm.scripts]
+norma2 = "python norma2"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
