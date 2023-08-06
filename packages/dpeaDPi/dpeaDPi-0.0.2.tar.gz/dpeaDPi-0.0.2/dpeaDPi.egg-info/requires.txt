@@ -1,0 +1,5 @@
+pyserial
+requests
+smbus
+adafruit-blinka
+adafruit-circuitpython-vl6180x
