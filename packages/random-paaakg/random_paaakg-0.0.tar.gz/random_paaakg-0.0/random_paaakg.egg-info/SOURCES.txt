@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+random_paaakg/__init__.py
+random_paaakg/smth.py
+random_paaakg.egg-info/PKG-INFO
+random_paaakg.egg-info/SOURCES.txt
+random_paaakg.egg-info/dependency_links.txt
+random_paaakg.egg-info/not-zip-safe
+random_paaakg.egg-info/top_level.txt
