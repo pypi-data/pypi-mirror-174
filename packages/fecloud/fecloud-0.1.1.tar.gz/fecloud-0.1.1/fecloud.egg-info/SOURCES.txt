@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+fecloud/__init__.py
+fecloud/string.py
+fecloud.egg-info/PKG-INFO
+fecloud.egg-info/SOURCES.txt
+fecloud.egg-info/dependency_links.txt
+fecloud.egg-info/not-zip-safe
+fecloud.egg-info/top_level.txt
