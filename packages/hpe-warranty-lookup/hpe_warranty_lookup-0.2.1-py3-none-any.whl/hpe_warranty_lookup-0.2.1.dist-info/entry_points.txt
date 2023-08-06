@@ -1,0 +1,2 @@
+[console_scripts]
+hpe-warranty-lookup = hpe_warranty_lookup.hpe_warranty_lookup:main
