@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+remote_plot/__init__.py
+remote_plot/client.py
+remote_plot/server.py
+remote_plot.egg-info/PKG-INFO
+remote_plot.egg-info/SOURCES.txt
+remote_plot.egg-info/dependency_links.txt
+remote_plot.egg-info/requires.txt
+remote_plot.egg-info/top_level.txt

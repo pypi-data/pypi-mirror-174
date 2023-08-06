@@ -1,0 +1,8 @@
+pillow
+numpy
+matplotlib
+requests
+
+[dev]
+
+[test]

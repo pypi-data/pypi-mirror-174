@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: remote-plot
+Version: 1.1.0
+Summary: Like matplotlib but renders in a local server so you can work remotely
+Home-page: https://github.com/itaicaspi/remote_plot
+Author: Itai Caspi
+Author-email: itaicaspi@gmail.com
+License: UNKNOWN
+Keywords: matplotlib,plotting,remote development
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+# Remote Plot
+
+[![PyPI version](https://badge.fury.io/py/remote-plot.svg)](https://badge.fury.io/py/remote-plot)
+
+Developing python code on a remote machine can get frustrating when you want to visualize your results.
+Instead of relying on a remote screen / X11 forwarding / VNC, Remote Plot opens your plots in a local server.
+It's a super simple library that replicates the API of matplotlib with a web renderer.
+All you need to do is forward the port to your machine. If your using VS Code, it will take care of it for you.
+
+## Getting started
+
+### Installation
+```
+pip install remote_plot
+```
+
+### Port forwarding
+
+If you are using VSCode, once you run your first plot, it will automatically forward the port
+and pop a dialog box that will let you open the plot in your web browser.
+
+If you are using SSH, you can forward the port using he following flag while connecting to the remote machine:
+```
+ssh YOUR_USER_NAME@YOUR_MACHINE_IP -L 8000:localhost:8000
+```
+Then, you can just open [localhost:8000](localhost:8000) in a web browser once you run your first plot.
+
+### Your first plot
+```
+from remote_plot import plt
+
+plt.plot([1, 2, 3], [4, 5, 6])
+```
+
+## API
+
+Remote plot replicates the matplotlib API, which you can find [here](https://matplotlib.org/stable/plot_types/index).
+
+It also supports native image displaying that can display numpy array or pillow images.
+```
+from PIL import Image
+img = Image.open("PATH TO YOUR IMAGE")
+plt.imshow_native(img)
+```
+
+### Changing the web server port
+
+```
+from remote_plot import plt
+
+plt.port = 8001
+```
+
+## License
+
+MIT License. See [LICENSE](LICENSE) for further details.
+
+
