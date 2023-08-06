@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "paises"
+version = "0.2.2"
+description = ""
+authors = ["Tomas <tomasgonz@gmail.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "paises" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.1.3"
+texttable = "^1.6.4"
+importlib = "^1.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
