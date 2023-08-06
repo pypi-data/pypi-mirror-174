@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: semithuesystem
+Version: 1.0.0
+Summary: This package is a representation of a string rewriting system, historically called the Semi-Thue System.
+Home-page: https://github.com/pab-h/semi_thue_system
+Keywords: Semi-Thue,string,rewriting,SRS
+Author: pab-h
+Author-email: dev.pab.2020@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Documentation, https://github.com/pab-h/semi_thue_system
+Project-URL: Repository, https://github.com/pab-h/semi_thue_system
+Description-Content-Type: text/markdown
+
+
