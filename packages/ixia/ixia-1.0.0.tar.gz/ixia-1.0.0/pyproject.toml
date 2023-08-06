@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ixia"
+version = "1.0.0"
+description = "A library connecting secrets' security with random's versatility"
+authors = ["trag1c <trag1cdev@yahoo.com>"]
+license = "MIT"
+documentation = "https://trag1c.github.io/ixia/"
+repository = "https://github.com/trag1c/ixia"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+mypy = "^0.982"
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
