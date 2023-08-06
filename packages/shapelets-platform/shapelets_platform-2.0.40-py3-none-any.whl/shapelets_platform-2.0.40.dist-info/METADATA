@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: shapelets-platform
+Version: 2.0.40
+Summary: Data Scientist platform
+Home-page: https://shapelets.io
+Author: Shapelets Dev Team
+Author-email: info@shapelets.io
+Maintainer: Shapelets Dev Team
+Maintainer-email: info@shapelets.io
+Platform: Any
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: altair (~=4.2)
+Requires-Dist: argparse (>=1.4.0)
+Requires-Dist: blacksheep (==1.2.7)
+Requires-Dist: cloudpickle (>=2.2.0)
+Requires-Dist: dill (>=0.3.5)
+Requires-Dist: email-validator (>=1.3.0)
+Requires-Dist: folium (>=0.13.0)
+Requires-Dist: h11 (~=0.12)
+Requires-Dist: jinja2 (==3.0.2)
+Requires-Dist: jmespath (~=0.9.3)
+Requires-Dist: matplotlib (>=3.5.3)
+Requires-Dist: numpy (>=1.21.6)
+Requires-Dist: pandas (>=1.3.5)
+Requires-Dist: plotly (>=5.10.0)
+Requires-Dist: psutil (>=5.9.2)
+Requires-Dist: pyarrow (>=9.0.0)
+Requires-Dist: pydantic (>=1.10.2)
+Requires-Dist: pygeohash (>=1.2.0)
+Requires-Dist: PyNaCl (>=1.5.0)
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: shapelets-native
+Requires-Dist: tabulate (>=0.8.10)
+Requires-Dist: tomlkit (>=0.11.4)
+Requires-Dist: tqdm (>=4.64.1)
+Requires-Dist: uvicorn (>=0.18.3)
+Requires-Dist: vega-datasets (>=0.9)
+Requires-Dist: websocket (>=0.2.1)
+Requires-Dist: websockets (>=10.3)
+Requires-Dist: lockfile (>=0.12.2) ; platform_system != "Windows"
+Requires-Dist: python-daemon (>=2.3.2) ; platform_system != "Windows"
+Requires-Dist: uvloop (>=0.17.0) ; platform_system != "Windows"
+Provides-Extra: dev
+Requires-Dist: nox ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=4.4.0) ; extra == 'docs'
+Requires-Dist: myst-parser (>=0.13) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (>=1.0.0) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-applehelp (>=1.0.2) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-devhelp (>=1.0.2) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-htmlhelp (>=2.0.0) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-jsmath (>=1.0.1) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-qthelp (>=1.0.3) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-serializinghtml (>=1.1.5) ; extra == 'docs'
+Provides-Extra: vfs-all
+Requires-Dist: adlfs ; extra == 'vfs-all'
+Requires-Dist: dropbox ; extra == 'vfs-all'
+Requires-Dist: dropboxdrivefs ; extra == 'vfs-all'
+Requires-Dist: fsspec-xrootd ; extra == 'vfs-all'
+Requires-Dist: gcsfs ; extra == 'vfs-all'
+Requires-Dist: gdrivefs ; extra == 'vfs-all'
+Requires-Dist: ocifs ; extra == 'vfs-all'
+Requires-Dist: ossfs ; extra == 'vfs-all'
+Requires-Dist: paramiko ; extra == 'vfs-all'
+Requires-Dist: pygit2 ; extra == 'vfs-all'
+Requires-Dist: s3fs ; extra == 'vfs-all'
+Requires-Dist: smbprotocol ; extra == 'vfs-all'
+Requires-Dist: webdav4 ; extra == 'vfs-all'
+Provides-Extra: vfs-azure
+Requires-Dist: adlfs ; extra == 'vfs-azure'
+Provides-Extra: vfs-dropbox
+Requires-Dist: dropboxdrivefs ; extra == 'vfs-dropbox'
+Requires-Dist: dropbox ; extra == 'vfs-dropbox'
+Provides-Extra: vfs-git
+Requires-Dist: pygit2 ; extra == 'vfs-git'
+Provides-Extra: vfs-google
+Requires-Dist: gcsfs ; extra == 'vfs-google'
+Requires-Dist: gdrivefs ; extra == 'vfs-google'
+Provides-Extra: vfs-libarchive
+Requires-Dist: libarchive ; extra == 'vfs-libarchive'
+Provides-Extra: vfs-oci
+Requires-Dist: ocifs ; extra == 'vfs-oci'
+Provides-Extra: vfs-ossfs
+Requires-Dist: ossfs ; extra == 'vfs-ossfs'
+Provides-Extra: vfs-s3
+Requires-Dist: s3fs ; extra == 'vfs-s3'
+Provides-Extra: vfs-sftp
+Requires-Dist: paramiko ; extra == 'vfs-sftp'
+Provides-Extra: vfs-smb
+Requires-Dist: smbprotocol ; extra == 'vfs-smb'
+Provides-Extra: vfs-ssh
+Requires-Dist: paramiko ; extra == 'vfs-ssh'
+Provides-Extra: vfs-wandb
+Requires-Dist: wandbfs ; extra == 'vfs-wandb'
+Provides-Extra: vfs-webdav
+Requires-Dist: webdav4 ; extra == 'vfs-webdav'
+Provides-Extra: vfs-xrootd
+Requires-Dist: fsspec-xrootd ; extra == 'vfs-xrootd'
+
+## Shapelets
+
+Shapelets Platform.
