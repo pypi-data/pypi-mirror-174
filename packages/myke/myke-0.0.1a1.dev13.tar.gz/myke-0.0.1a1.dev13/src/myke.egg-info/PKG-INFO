@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: myke
+Version: 0.0.1a1.dev13
+Home-page: https://www.fresh2.dev/code/r/myke
+Author: donald
+Author-email: hello@fresh2.dev
+Project-URL: Bug Tracker, https://www.fresh2.dev/code/r/myke/issues
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: build
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: pydantic
+Provides-Extra: io
+License-File: LICENSE
+
+# myke
+
+1. `myke set-version`
+
+```sh
+PYTHONPATH=./src python -m myke --myke-file tests/resources/Mykefile -h
+
+PYTHONPATH=./src ./tests/resources/Mykefile --myke-help
+```
