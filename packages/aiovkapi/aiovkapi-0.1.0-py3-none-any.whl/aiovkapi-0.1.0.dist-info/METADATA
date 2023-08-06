@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aiovkapi
+Version: 0.1.0
+Summary: Библиотека для VK API с мимикрией под приложения VK
+Author: lordralinc
+Author-email: 46781434+lordralinc@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiofiles (>=22.0)
+Requires-Dist: aiohttp (>=3.0,<4.0)
+Requires-Dist: orjson (>=3.0,<4.0)
+Requires-Dist: pydantic (>=1.0,<2.0)
