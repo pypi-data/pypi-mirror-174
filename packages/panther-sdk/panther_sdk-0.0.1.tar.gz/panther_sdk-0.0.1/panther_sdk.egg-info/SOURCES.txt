@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+panther_sdk/__init__.py
+panther_sdk/_utilities.py
+panther_sdk/py.typed
+panther_sdk/testing.py
+panther_sdk.egg-info/PKG-INFO
+panther_sdk.egg-info/SOURCES.txt
+panther_sdk.egg-info/dependency_links.txt
+panther_sdk.egg-info/requires.txt
+panther_sdk.egg-info/top_level.txt
+panther_sdk/detection/__init__.py
+panther_sdk/detection/detection.py
+panther_sdk/query/__init__.py
+panther_sdk/query/query.py
