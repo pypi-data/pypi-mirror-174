@@ -1,0 +1,82 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:cb13dcb6-68da-4e7d-807a-6795542beecf",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-11-02T21:52:14.566962+00:00",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-bom",
+        "version": "3.6.3"
+      },
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-python-lib",
+        "version": "2.7.1",
+        "externalReferences": [
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions",
+            "type": "build-system"
+          },
+          {
+            "url": "https://pypi.org/project/cyclonedx-python-lib/",
+            "type": "distribution"
+          },
+          {
+            "url": "https://cyclonedx.github.io/cyclonedx-python-lib/",
+            "type": "documentation"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues",
+            "type": "issue-tracker"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE",
+            "type": "license"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md",
+            "type": "release-notes"
+          },
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-python-lib",
+            "type": "vcs"
+          },
+          {
+            "url": "https://cyclonedx.org",
+            "type": "website"
+          }
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "c9c4d46b-965a-49e4-97f0-a51db5bdcaae",
+      "name": "PyYAML",
+      "version": "6.0",
+      "purl": "pkg:pypi/pyyaml@6.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "1db7d82a-43dd-43b7-accc-37489dcd7968",
+      "name": "typer",
+      "version": "0.6.1",
+      "purl": "pkg:pypi/typer@0.6.1"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "c9c4d46b-965a-49e4-97f0-a51db5bdcaae",
+      "dependsOn": []
+    },
+    {
+      "ref": "1db7d82a-43dd-43b7-accc-37489dcd7968",
+      "dependsOn": []
+    }
+  ]
+}
