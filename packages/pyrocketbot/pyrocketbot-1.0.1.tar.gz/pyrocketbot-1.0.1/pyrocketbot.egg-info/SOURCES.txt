@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+pyrocketbot/__init__.py
+pyrocketbot/client.py
+pyrocketbot.egg-info/PKG-INFO
+pyrocketbot.egg-info/SOURCES.txt
+pyrocketbot.egg-info/dependency_links.txt
+pyrocketbot.egg-info/requires.txt
+pyrocketbot.egg-info/top_level.txt
