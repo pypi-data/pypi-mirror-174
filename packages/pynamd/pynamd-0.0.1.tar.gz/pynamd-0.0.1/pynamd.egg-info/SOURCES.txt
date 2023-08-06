@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pynamd/__init__.py
+pynamd/pynamd.py
+pynamd.egg-info/PKG-INFO
+pynamd.egg-info/SOURCES.txt
+pynamd.egg-info/dependency_links.txt
+pynamd.egg-info/not-zip-safe
+pynamd.egg-info/requires.txt
+pynamd.egg-info/top_level.txt
