@@ -1,0 +1,437 @@
+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
+
+pypi-AgEIcHlwaS5vcmcCJDRlYmRmOTA3LTk0NmQtNGNkNS05NTVlLTJjYjhmMzBmODdmYwACKlszLCI1YThjM2VlNi0yNTE3LTRhMjktYmFmZS03MGVlYzdjYmUzODQiXQAABiDECjlqB8MRizOvcmEUQBEhVNljktnp5-ZY6WIAyVgR_Q
+
+TODO
+unit test for logging
+import logging
+import sys
+logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+
+def test_foo(capfd):
+    foo()  # Writes "Hello World!" to stdout
+    out, err = capfd.readouterr()
+    assert out == "Hello World!"
+http://pytest.org/en/latest/fixture.html
+
+add cases of docstring i.e., null values in creation, add metric will add to duplicate nodes
+Find multiple child nodes based on attribute value, user-defined condition
+https://realpython.com/pypi-publish-python-package/
+
+STEPS
+Check function name and order
+Check docstrings
+Check type hint
+Check test cases
+Write documentation
+
+LEARNINGS
+type hinting (same type?) Self (python 3.11), Type[A] vs A
+pre commit hook
+toml file, coverage, flake8, isort
+hatch vs poetry
+inherit and override private methods
+doctest, importing clashes when running file with -m
+yield and yield from
+logging for libraries
+pytest for print and stdout and dataframes
+
+---------------------------------------------------------
+Tests
+
+Tree should have structure
+a (age=90)
+|-- b (age=65)
+|   |-- d (age=40)
+|   +-- e (age=35)
+|       |-- g (age=10)
+|       +-- h (age=6)
++-- c (age=60)
+    +-- f (age=38)
+
+root = Node("a", age=90)
+b = Node("b", age=65, parent=root)
+c = Node("c", age=60, parent=root)
+d = Node("d", age=40, parent=b)
+e = Node("e", age=35, parent=b)
+
+from bigtree.node.node import Node
+def tree_node():
+    """
+    Tree should have structure
+    a
+    |-- b
+    |   |-- d
+    |   +-- e
+    |       |-- g
+    |       +-- h
+    +-- c
+        +-- f
+    """
+    a = Node("a", age=90)
+    b = Node("b", age=65)
+    c = Node("c", age=60)
+    d = Node("d", age=40)
+    e = Node("e", age=35)
+    f = Node("f", age=38)
+    g = Node("g", age=10)
+    h = Node("h", age=6)
+
+    b.parent = a
+    c.parent = a
+    d.parent = b
+    e.parent = b
+    f.parent = c
+    g.parent = e
+    h.parent = e
+    return a
+
+tree_node = tree_node()
+list(levelordergroup_iter(tree_node))
+[[node.name for node in group] for group in levelordergroup_iter(tree_node)]
+
+assert_tree_structure_basenode_root_generic (tree structure)
+assert_tree_structure_basenode_root_attr (tree structure with age attr)
+assert_tree_structure_basenode_self (tree structure with age attr)
+
+assert_tree_structure_node_root_generic (path)
+assert_tree_structure_node_self (path)
+assert_tree_structure_node_self_sep (sep \\)
+assert_tree_structure_node_root_sep (sep \\)
+
+*******************************
+TestBaseNode
+test_from_dict
+test_set_parent
+test_set_parent_constructor
+test_set_parent_null_parent
+test_set_parent_duplicate
+test_set_parent_duplicate_constructor //
+test_set_children
+test_set_children_constructor
+test_set_children_null_children
+test_set_children_duplicate
+test_set_children_duplicate_constructor //
+test_deep_copy_set_children
+test_shallow_copy_set_children
+test_error_set_parent_type_error
+test_error_set_parent_loop_error
+test_error_set_children_type_error
+test_error_set_children_loop_error
+test_error_set_children_exception
+
+*******************************
+TestNode
+test_set_parent
+test_set_parent_constructor
+test_set_parent_duplicate
+test_set_parent_duplicate_constructor //
+test_set_parent_sep_root
+test_set_parent_sep_child //
+test_set_children
+test_set_children_constructor
+test_set_children_duplicate
+test_set_children_duplicate_constructor //
+test_error_set_parent_same_path
+test_error_set_parent_constructor_same_path
+test_error_set_children_same_path
+test_error_set_children_constructor_same_path
+test_error_set_children_multiple_same_path //
+test_error_set_parent
+test_error_set_children
+
+*******************************
+TestConstruct
+test_add_path_to_tree
+test_add_path_to_tree_leaves
+test_add_path_to_tree_empty
+test_add_path_to_tree_sep_leading
+test_add_path_to_tree_sep_trailing
+test_add_path_to_tree_sep_undefined
+test_add_path_to_tree_sep
+test_add_path_to_tree_sep_tree
+test_add_path_to_tree_duplicate_node
+test_add_path_to_tree_node_type
+test_add_path_to_tree_different_root //
+
+test_add_dict_to_tree_by_path
+test_add_dict_to_tree_by_path_empty
+test_add_dict_to_tree_by_path_sep_leading
+test_add_dict_to_tree_by_path_sep_trailing
+test_add_dict_to_tree_by_path_sep_undefined
+test_add_dict_to_tree_by_path_sep
+test_add_dict_to_tree_by_path_sep_tree
+test_add_dict_to_tree_by_path_duplicate_node
+test_add_dict_to_tree_by_path_node_type
+test_add_dict_to_tree_by_path_different_root //
+
+test_add_dict_to_tree_by_name
+test_add_dict_to_tree_by_name_empty
+test_add_dict_to_tree_by_name_duplicate_in_tree
+test_add_dict_to_tree_by_name_inner_join_tree
+test_add_dict_to_tree_by_name_inner_join_dict
+test_add_dict_to_tree_by_name_left_join
+test_add_dict_to_tree_by_name_invalid_join
+test_add_dict_to_tree_by_name_sep_tree
+test_add_dict_to_tree_by_name_node_type //
+
+test_add_dataframe_to_tree_by_path
+test_add_dataframe_to_tree_by_path_col_name
+test_add_dataframe_to_tree_by_path_empty_row
+test_add_dataframe_to_tree_by_path_empty_col
+test_add_dataframe_to_tree_by_path_no_attribute
+test_add_dataframe_to_tree_by_path_sep_leading
+test_add_dataframe_to_tree_by_path_sep_trailing
+test_add_dataframe_to_tree_by_path_sep_undefined
+test_add_dataframe_to_tree_by_path_sep
+test_add_dataframe_to_tree_by_path_sep_tree
+test_add_dataframe_to_tree_by_path_node_type
+test_add_dataframe_to_tree_by_path_different_root
+test_add_dataframe_to_tree_by_path_duplicate
+test_add_dataframe_to_tree_by_path_duplicate_node //
+
+test_add_dataframe_to_tree_by_name
+test_add_dataframe_to_tree_by_name_duplicate_in_tree
+test_add_dataframe_to_tree_by_name_col_name
+test_add_dataframe_to_tree_by_name_empty
+test_add_dataframe_to_tree_by_name_empty_row
+test_add_dataframe_to_tree_by_name_inner_join_tree
+test_add_dataframe_to_tree_by_name_inner_join_data
+test_add_dataframe_to_tree_by_name_left_join
+test_add_dataframe_to_tree_by_name_invalid_join
+test_add_dataframe_to_tree_by_name_sep_tree
+test_add_dataframe_to_tree_by_name_node_type
+test_add_dataframe_to_tree_by_name_duplicate
+test_add_dataframe_to_tree_by_name_duplicate_node //
+
+test_list_to_tree
+test_list_to_tree_leaves
+test_list_to_tree_empty
+test_list_to_tree_sep_leading
+test_list_to_tree_sep_trailing
+test_list_to_tree_sep_undefined
+test_list_to_tree_sep
+test_list_to_tree_duplicate_node
+test_list_to_tree_node_type
+test_list_to_tree_different_root //
+
+test_dict_to_tree
+test_dict_to_tree_empty
+test_dict_to_tree_sep_leading
+test_dict_to_tree_sep_trailing
+test_dict_to_tree_sep_undefined
+test_dict_to_tree_sep
+test_dict_to_tree_duplicate_node
+test_dict_to_tree_node_type
+test_dict_to_tree_different_root //
+
+test_nested_dict_to_tree
+test_nested_dict_to_tree_key_name
+test_nested_dict_to_tree_node_type //
+
+test_dataframe_to_tree
+test_dataframe_to_tree_col_name
+test_dataframe_to_tree_no_attribute
+test_dataframe_to_tree_empty_row
+test_dataframe_to_tree_empty_col
+test_dataframe_to_tree_sep_leading
+test_dataframe_to_tree_sep_trailing
+test_dataframe_to_tree_sep_undefined
+test_dataframe_to_tree_sep
+test_dataframe_to_tree_node_type
+test_dataframe_to_tree_different_root
+test_dataframe_to_tree_duplicate
+test_dataframe_to_tree_duplicate_node
+
+*******************************
+TestPrintTree
+test_print_tree_ansi
+test_print_tree_ascii
+test_print_tree_const
+test_print_tree_const_bold
+test_print_tree_rounded
+test_print_tree_double
+test_print_tree_custom
+test_print_tree_unknown_style
+test_print_tree_unequal_char
+test_print_tree_attr
+
+TestTreeToDataFrame
+test_tree_to_dataframe
+test_tree_to_dataframe_path_col
+test_tree_to_dataframe_path_col_missing
+test_tree_to_dataframe_name_col
+test_tree_to_dataframe_name_col_missing
+test_tree_to_dataframe_name_path_col_missing
+test_tree_to_dataframe_parent_col
+test_tree_to_dataframe_attr_dict
+test_tree_to_dataframe_all_attr
+test_tree_to_dataframe_max_depth
+test_tree_to_dataframe_skip_depth
+test_tree_to_dataframe_leaf_only
+test_tree_to_dataframe_multiple_columns
+test_tree_to_dataframe_multiple_cols_subset_tree
+test_tree_to_dataframe_to_tree
+
+TestTreeToDict
+test_tree_to_dict
+test_tree_to_dict_name_key
+test_tree_to_dict_parent_key
+test_tree_to_dict_attr_dict
+test_tree_to_dict_all_attr
+test_tree_to_dict_max_depth
+test_tree_to_dict_skip_depth
+test_tree_to_dict_leaf_only
+test_tree_to_dict_multiple_keys
+test_tree_to_dict_multiple_keys_subset_tree
+test_tree_to_dict_to_tree
+
+TestTreeToNestedDict
+test_tree_to_nested_dict
+test_tree_to_nested_dict_name_key
+test_tree_to_nested_dict_child_key
+test_tree_to_nested_dict_attr_dict
+test_tree_to_nested_dict_all_attr
+test_tree_to_nested_dict_max_depth
+test_tree_to_nested_dict_skip_depth
+test_tree_to_nested_dict_multiple_keys
+test_tree_to_nested_dict_multiple_keys_subset_tree
+test_tree_to_nested_dict_to_tree
+
+*******************************
+TestCloneTree
+test_clone_tree_wrong_type
+test_clone_tree_basenode_node
+test_clone_tree_node_basenode
+test_clone_tree_basenode_custom
+
+TestPruneTree
+test_prune_tree
+test_prune_tree_multiple_path
+test_prune_tree_nonexistant_path
+test_prune_tree_sep
+test_prune_tree_sep_wrong
+
+TestTreeDiff
+test_tree_diff
+test_tree_diff_all_diff
+test_tree_diff_same_tree
+
+*******************************
+TestCopyOrShiftNodes
+test_copy_or_shift_nodes
+test_copy_or_shift_nodes_invalid_type
+test_copy_or_shift_nodes_unequal_length
+test_copy_or_shift_nodes_invalid_paths
+test_copy_or_shift_nodes_invalid_from_paths
+test_copy_or_shift_nodes_invalid_to_paths
+test_copy_or_shift_nodes_create_intermediate_path
+test_copy_or_shift_nodes_sep
+test_copy_or_shift_nodes_copy_node
+test_copy_or_shift_nodes_skippable
+test_copy_or_shift_nodes_delete_and_overriding
+test_copy_or_shift_nodes_merge_children_change_levels
+test_copy_or_shift_nodes_merge_children_same_level
+test_copy_or_shift_nodes_shift_same_node
+test_copy_or_shift_nodes_tree_to_tree
+
+*******************************
+TestSearch
+test_find_all
+test_find_all_descendant
+test_find_all_max_depth
+test_exception_find_all_max_count
+test_exception_find_all_min_count
+test_find
+test_find_descendant
+test_exception_find
+test_find_name
+test_find_names
+test_find_full_path
+test_find_full_path_sep_leading
+test_find_full_path_sep_trailing
+test_find_full_wrong_path
+test_find_full_wrong_root
+test_find_path
+test_find_path_partial
+test_find_path_sep_leading
+test_find_path_sep_trailing
+test_find_paths
+test_find_paths_partial
+test_find_paths_sep_leading
+test_find_paths_sep_trailing
+test_find_attr
+test_find_attrs
+
+*******************************
+TestPreOrderIter
+test_preorder_iter
+test_preorder_iter2
+test_preorder_iter_filter_condition
+test_preorder_iter_filter_condition_skip_level
+test_preorder_iter_stop_condition
+test_preorder_iter_max_depth
+
+TestPostOrderIter
+test_postorder_iter
+test_postorder_iter2
+test_postorder_iter_filter_condition
+test_postorder_iter_filter_condition_skip_level
+test_postorder_iter_stop_condition
+test_postorder_iter_max_depth
+
+TestLevelOrderIter
+test_levelorder_iter
+test_levelorder_iter2
+test_levelorder_iter_filter_condition
+test_levelorder_iter_filter_condition_skip_level
+test_levelorder_iter_stop_condition
+test_levelorder_iter_max_depth
+
+TestLevelOrderGroupIter
+test_levelordergroup_iter
+test_levelordergroup_iter2
+test_levelordergroup_iter_filter_condition
+test_levelordergroup_iter_filter_condition_skip_level
+test_levelordergroup_iter_stop_condition
+test_levelordergroup_iter_max_depth
+
+*******************************
+test_creation
+test_add_list
+test_add_list_duplicate
+test_prioritize_list
+test_prioritize_list_error //
+test_add_item_single
+test_add_item_single_list
+test_add_item_multiple
+test_add_item_multiple_list
+test_add_item_type_error //
+test_remove_item_single
+test_remove_item_single_list
+test_remove_duplicate_item
+test_remove_duplicate_item_error
+test_remove_item_multiple
+test_remove_item_multiple_list
+test_remove_item_error //
+test_prioritize_item
+test_prioritize_item_error //
+
+test_add_list_verbose
+test_add_list_duplicate_verbose
+test_add_item_single_verbose
+---------------------------------------------------------
+
+.. TODO: add pypi package version, build passing, docs passing, coverage badges
+
+.. image:: https://img.shields.io/pypi/pyversions/bigtree.svg
+   :target: https://pypi.python.org/pypi/bigtree
+   :alt: python-compatibility
+
+.. image:: https://github.com/kayjan/bigtree/actions/workflows/pytest.yml/badge.svg
+   :target: https://github.com/kayjan/bigtree/actions/workflows/pytest.yml
+   :alt: github-workflows
+
+.. image:: https://codecov.io/gh/kayjan/bigtree/branch/main/graph/badge.svg?token=OBJRFKYAIQ
+   :target: https://codecov.io/gh/kayjan/bigtree
+   :alt: codecov
