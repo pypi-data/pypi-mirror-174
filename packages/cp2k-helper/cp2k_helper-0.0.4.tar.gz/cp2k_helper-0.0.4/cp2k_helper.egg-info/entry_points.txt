@@ -1,0 +1,2 @@
+[console_scripts]
+cp2k_helper = cp2k_helper.__main__:main
