@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dynoxt
+Version: 0.0.1
+Summary: Paquete para inteligencia artificial - vision
+Project-URL: Homepage, https://github.com/Deimaxs/dyno
+Author-email: deimaxs95 <matthew1438@utp.edu.co>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
