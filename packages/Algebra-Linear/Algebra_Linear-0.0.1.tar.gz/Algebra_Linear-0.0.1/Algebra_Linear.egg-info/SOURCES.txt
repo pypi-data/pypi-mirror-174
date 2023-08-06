@@ -1,0 +1,9 @@
+README.md
+setup.py
+Algebra_Linear/Matriz.py
+Algebra_Linear/Vetor.py
+Algebra_Linear/__init__.py
+Algebra_Linear.egg-info/PKG-INFO
+Algebra_Linear.egg-info/SOURCES.txt
+Algebra_Linear.egg-info/dependency_links.txt
+Algebra_Linear.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: Algebra-Linear
+Version: 0.0.1
+Summary: Biblioteca com funções que geram e calculam vetores e matrizes
+Home-page: https://github.com/DirceuSilvestre/Biblioteca-Algebra-Linear
+Author: Dirceu Silvestre
+Author-email: dirceu_silvestre@hotmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
