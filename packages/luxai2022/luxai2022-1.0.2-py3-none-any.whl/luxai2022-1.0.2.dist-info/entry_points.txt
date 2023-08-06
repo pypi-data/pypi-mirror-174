@@ -1,0 +1,2 @@
+[console_scripts]
+luxai2022 = luxai_runner.cli:main
