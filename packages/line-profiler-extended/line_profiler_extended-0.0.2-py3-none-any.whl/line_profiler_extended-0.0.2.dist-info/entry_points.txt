@@ -1,0 +1,3 @@
+[pytest11]
+line_profiler_extended=line_profiler_extended.pytest_plugin
+
