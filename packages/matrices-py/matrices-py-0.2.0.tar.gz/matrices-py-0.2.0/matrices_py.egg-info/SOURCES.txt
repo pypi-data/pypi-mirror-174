@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+matrices/__init__.py
+matrices/matrices.py
+matrices/protocols.py
+matrices/rule.py
+matrices/shape.py
+matrices/tests.py
+matrices/utilities.py
+matrices_py.egg-info/PKG-INFO
+matrices_py.egg-info/SOURCES.txt
+matrices_py.egg-info/dependency_links.txt
+matrices_py.egg-info/top_level.txt
