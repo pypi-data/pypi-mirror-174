@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: airflow-provider-duckdb
+Version: 0.0.1
+Summary: DuckDB (duckdb.org) provider for Apache Airflow
+Home-page: http://astronomer.io/
+Author: Julian LaNeve
+Author-email: julian@astronomer.io
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Framework :: Apache Airflow
+Classifier: Framework :: Apache Airflow :: Provider
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# airflow-provider-duckdb
+A provider package for DuckDB
+
+
