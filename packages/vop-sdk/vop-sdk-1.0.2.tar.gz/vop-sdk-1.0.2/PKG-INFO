@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: vop-sdk
+Version: 1.0.2
+Summary: The Vop SDK for Python
+Home-page: https://github.com/Volcengine/volc-sdk-python
+Author: Vop SDK
+Author-email: liangqing.leon@bytedance.com
+License: MIT Licence
+Description: UNKNOWN
+Keywords: pip,vop,vop-sdk-python
+Platform: any
