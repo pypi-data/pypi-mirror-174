@@ -1,0 +1,11 @@
+numpy
+scipy
+scikit-learn
+numpy
+torch
+
+[full]
+matplotlib
+aif360
+shap
+pandas

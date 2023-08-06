@@ -1,0 +1,10 @@
+README.md
+setup.py
+fax_ai/FaX_methods.py
+fax_ai/__init__.py
+fax_ai/aif360_utils.py
+fax_ai.egg-info/PKG-INFO
+fax_ai.egg-info/SOURCES.txt
+fax_ai.egg-info/dependency_links.txt
+fax_ai.egg-info/requires.txt
+fax_ai.egg-info/top_level.txt
