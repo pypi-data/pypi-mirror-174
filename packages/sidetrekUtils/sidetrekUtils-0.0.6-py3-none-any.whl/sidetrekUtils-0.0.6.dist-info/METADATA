@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sidetrekUtils
+Version: 0.0.6
+Summary: Sidetrek wrapper for MLflow
+Home-page: UNKNOWN
+Author: Nabil Ahmed
+Author-email: nabil@sidetrek.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Requires-Dist: mlflow
+Requires-Dist: boto3
+Requires-Dist: sidetrek-mlflow-plugin
+
+UNKNOWN
+
