@@ -1,0 +1,11 @@
+setup.py
+mathcube/__init__.py
+mathcube/equation.py
+mathcube/output.py
+mathcube.egg-info/PKG-INFO
+mathcube.egg-info/SOURCES.txt
+mathcube.egg-info/dependency_links.txt
+mathcube.egg-info/requires.txt
+mathcube.egg-info/top_level.txt
+tests/__init__.py
+tests/test_equation.py
