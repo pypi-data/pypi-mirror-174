@@ -1,0 +1,8 @@
+setup.py
+dujiajie_demo_test/_init_.py
+dujiajie_demo_test/add.py
+dujiajie_demo_test/sub.py
+dujiajie_demo_test_add.egg-info/PKG-INFO
+dujiajie_demo_test_add.egg-info/SOURCES.txt
+dujiajie_demo_test_add.egg-info/dependency_links.txt
+dujiajie_demo_test_add.egg-info/top_level.txt
