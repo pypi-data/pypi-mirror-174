@@ -1,0 +1,5 @@
+zennit<=0.4.6
+torch>=1.7.0
+
+[fast_img]
+Pillow-SIMD
