@@ -1,0 +1,5 @@
+setuptools
+silx>=0.9
+lxml
+
+[full]

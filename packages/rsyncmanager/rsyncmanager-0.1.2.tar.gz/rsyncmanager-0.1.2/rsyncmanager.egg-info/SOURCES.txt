@@ -1,0 +1,12 @@
+README.rst
+setup.py
+./rsyncmanager/__init__.py
+./rsyncmanager/rsyncmanager.py
+./rsyncmanager/utils.py
+./rsyncmanager/version.py
+rsyncmanager.egg-info/PKG-INFO
+rsyncmanager.egg-info/SOURCES.txt
+rsyncmanager.egg-info/dependency_links.txt
+rsyncmanager.egg-info/not-zip-safe
+rsyncmanager.egg-info/requires.txt
+rsyncmanager.egg-info/top_level.txt
