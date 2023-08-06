@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sbin
+Version: 0.0.2
+Summary: Makes your repo setup clean
+Home-page: https://gitlab.com/mazmrini/bin
+License: MIT
+Keywords: bin
+Author: Mazine Mrini
+Author-email: mazmrini@hotmail.com
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: colorama (>=0.4.5,<0.5.0)
+Requires-Dist: pydantic (>=1.10.1,<2.0.0)
+Requires-Dist: semantic-version (>=2.10.0,<3.0.0)
+Project-URL: Repository, https://gitlab.com/mazmrini/bin
+Description-Content-Type: text/markdown
+
+# bin
+
+`bin` is a CLI that helps you make all of your repo setup uniform.
+
