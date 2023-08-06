@@ -1,0 +1,10 @@
+numpy
+
+[publish]
+twine
+wheel
+
+[tests]
+pytest
+pytest-cov
+pandas
