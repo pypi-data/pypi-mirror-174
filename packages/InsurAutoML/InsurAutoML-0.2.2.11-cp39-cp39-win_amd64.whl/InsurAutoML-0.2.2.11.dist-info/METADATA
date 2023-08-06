@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: InsurAutoML
+Version: 0.2.2.11
+Summary: Automated Machine Learning/AutoML pipeline.
+Home-page: https://github.com/PanyiDong/InsurAutoML
+Author: Panyi Dong
+Author-email: panyid2@illinois.edu
+License: MIT
+Platform: Linux
+Platform: Windows
+Platform: MacOS
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: setuptools (==59.5.0)
+Requires-Dist: cython
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: pyarrow
+Requires-Dist: fastparquet
+Requires-Dist: matplotlib
+Requires-Dist: seaborn (>=0.11.0)
+Requires-Dist: ray (<2.0.0)
+Requires-Dist: gensim
+Requires-Dist: tqdm (==4.62.3)
+Requires-Dist: mlflow (==1.21.0)
+Requires-Dist: tensorboardX
+Requires-Dist: hyperopt (==0.2.5)
+Requires-Dist: auto-sklearn (==0.14.6) ; platform_system == "Linux"
+Requires-Dist: scikit-learn (==0.24.2) ; platform_system == "Linux"
+Requires-Dist: scikit-learn (>1.0.0) ; platform_system == "MacOS"
+Requires-Dist: redis ; platform_system == "Windows"
+Requires-Dist: scikit-learn (>1.0.0) ; platform_system == "Windows"
+Provides-Extra: lightweight
+Provides-Extra: nn
+Requires-Dist: gensim ; extra == 'nn'
+Requires-Dist: lightgbm ; extra == 'nn'
+Requires-Dist: xgboost ; extra == 'nn'
+Requires-Dist: pygam ; extra == 'nn'
+Requires-Dist: torch ; extra == 'nn'
+Requires-Dist: nni ; extra == 'nn'
+Requires-Dist: rpy2 ; extra == 'nn'
+Provides-Extra: normal
+Requires-Dist: lightgbm ; extra == 'normal'
+Requires-Dist: xgboost ; extra == 'normal'
+Requires-Dist: pygam ; extra == 'normal'
+Requires-Dist: rpy2 ; extra == 'normal'
+
+UNKNOWN
+
