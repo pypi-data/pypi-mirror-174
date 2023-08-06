@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tsdk-git
+Version: 5.3.2
+Summary: Telecom System Development Kit
+Home-page: https://github.com/alirazaanis/tsdk-git
+Author: Ali Raza Anis
+Author-email: alirazaanis@gmail.com
+License: ATEC
+Requires-Dist: pandas (>=1.5.1)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: pyodbc (>=4.0.34)
+Requires-Dist: SQLAlchemy (>=1.4.42)
+Requires-Dist: StrEnum (>=0.1.0)
+Requires-Dist: numpy (>=1.23.4)
+Requires-Dist: paramiko (>=2.0.2)
+Requires-Dist: paramiko-expect (>=0.3.4)
+Requires-Dist: APScheduler (>=3.9.1)
+Requires-Dist: openpyxl (>=3.0.10)
+
