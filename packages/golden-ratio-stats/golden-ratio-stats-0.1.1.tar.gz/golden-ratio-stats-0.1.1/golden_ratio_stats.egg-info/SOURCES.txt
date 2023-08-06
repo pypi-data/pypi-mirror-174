@@ -1,0 +1,9 @@
+README.md
+setup.py
+golden_ratio_stats/__init__.py
+golden_ratio_stats/golden_ratio_approch.py
+golden_ratio_stats.egg-info/PKG-INFO
+golden_ratio_stats.egg-info/SOURCES.txt
+golden_ratio_stats.egg-info/dependency_links.txt
+golden_ratio_stats.egg-info/requires.txt
+golden_ratio_stats.egg-info/top_level.txt
