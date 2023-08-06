@@ -1,0 +1,8 @@
+setup.py
+loggertelebot.egg-info/PKG-INFO
+loggertelebot.egg-info/SOURCES.txt
+loggertelebot.egg-info/dependency_links.txt
+loggertelebot.egg-info/requires.txt
+loggertelebot.egg-info/top_level.txt
+telelogging/__init__.py
+telelogging/telegram_bot_logging.py
