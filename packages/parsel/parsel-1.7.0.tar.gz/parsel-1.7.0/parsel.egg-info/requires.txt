@@ -1,0 +1,4 @@
+cssselect>=0.9
+lxml
+packaging
+w3lib>=1.19.0
