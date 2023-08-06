@@ -1,0 +1,11 @@
+j2gpp/__init__.py,sha256=c3L-8pzSAsFQVipC-t5UDHz9HckJaV6Trr_wRI-ag1o,1359
+j2gpp/extensions.py,sha256=sGRSFkjYroUtRAPoP1BsX2AmctNh-8uWU1H6eMl8YrM,2670
+j2gpp/filters.py,sha256=LTr_PlmCojiYA_d0x8g4bY4cgvvMJBz8DFitamqNbR4,11865
+j2gpp/j2gpp.py,sha256=LW2DSCgneUlYgiCtisEol25UZwnY8CcHH8r7MsTvdUs,35773
+j2gpp/utils.py,sha256=pG6z36ScVoBLIprHwzFfYo_ryyUH1RImwgHxBKffW2o,7897
+j2gpp-1.8.1.dist-info/LICENSE,sha256=rzvYnrFGoR1gY2qC3xISB5S2NN8fbSxS5Qxm-Xl7YO0,1075
+j2gpp-1.8.1.dist-info/METADATA,sha256=3vYlvEKsiYUJkMO7OQEQiGb4fmnuMz0Mlkmvoxc6o8Y,23196
+j2gpp-1.8.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+j2gpp-1.8.1.dist-info/entry_points.txt,sha256=IA6WLau-Gtwj_roB696SUQRkYRHmBr36boadRLeXGTU,37
+j2gpp-1.8.1.dist-info/top_level.txt,sha256=CPG5-Pbur7R_tWJNun7iRt-TZgA6Yu1XZT83HEwNfgI,6
+j2gpp-1.8.1.dist-info/RECORD,,
