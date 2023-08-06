@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: laji-auth-client
+Version: 0.0.1
+Summary: Python client for Laji-auth
+Home-page: UNKNOWN
+Author: Meeri Rannisto
+Author-email: meeri.rannisto@helsinki.fi
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: requests
+
+UNKNOWN
+
