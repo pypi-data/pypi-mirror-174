@@ -1,0 +1,15 @@
+dimples/__init__.py,sha256=SDi8VHsb9LrLtoOUjoZRKqHnwi8JGKg8NY4cwKE2nkA,5626
+dimples/common/__init__.py,sha256=EVcdZqPhedY81u6bEb-oEPWLKXzj8nY1FjwC7qcChKY,1292
+dimples/common/protocol/__init__.py,sha256=EVcdZqPhedY81u6bEb-oEPWLKXzj8nY1FjwC7qcChKY,1292
+dimples/edge/__init__.py,sha256=Did8L9ZnUodmgZn-h6YLIjdB0oyxMm52WWystVY6eBM,1911
+dimples/edge/start.py,sha256=XfPufrPk7VXv-BqDcRk4xRxkbciOcHcjv92v5H-g_gY,1493
+dimples/mkm/__init__.py,sha256=YKn_iPtG1cdDFLaRpVRjGKKbEfdQly4NLGPeF3f9pOM,1441
+dimples/mkm/register.py,sha256=VvoyS5i5n_yu5kA4RlrHL5r0BO-ywZYB1-0DkcBobaY,1542
+dimples/station/__init__.py,sha256=Dytels-FKlvXuV0rbJfFM8qY48UtiznCHK1jNp-mYbU,1402
+dimples/station/start.py,sha256=BJvWHx3b8MXvVu-di0u6for6A40SJ17rpBZ-YpIEoKQ,1499
+dimples-0.0.1.dist-info/LICENSE,sha256=4T-QjnoJgrRuIi1uc4WdYaDYufvo0sGRkTjzhFsE3rI,1068
+dimples-0.0.1.dist-info/METADATA,sha256=6R2TQjxR1_lyHW7b7Df-argF4OSDwAtg6Y730DvUUo4,1109
+dimples-0.0.1.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+dimples-0.0.1.dist-info/entry_points.txt,sha256=3MWQMClXFCjI14_7vJZE5etaXc5Q7rOdnPCs8jmaxE4,118
+dimples-0.0.1.dist-info/top_level.txt,sha256=JVGKxEUGs9ZkrEluZxuTU5e4t7_Al9lQB5EJ4JOMmiU,8
+dimples-0.0.1.dist-info/RECORD,,
