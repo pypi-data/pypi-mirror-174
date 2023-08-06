@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Lemon-CLI/__init__.py
+Lemon-CLI/__main__.py
+Lemon_CLI.egg-info/PKG-INFO
+Lemon_CLI.egg-info/SOURCES.txt
+Lemon_CLI.egg-info/dependency_links.txt
+Lemon_CLI.egg-info/requires.txt
+Lemon_CLI.egg-info/top_level.txt
