@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/BlaiseKnapsack.py
+src/BlaiseKnapsack.egg-info/PKG-INFO
+src/BlaiseKnapsack.egg-info/SOURCES.txt
+src/BlaiseKnapsack.egg-info/dependency_links.txt
+src/BlaiseKnapsack.egg-info/top_level.txt
