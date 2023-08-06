@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+geekjob_python_helpers/geekjob_python_helpers/__init__.py
+geekjob_python_helpers/geekjob_python_helpers/dictobject.py
+geekjob_python_helpers/geekjob_python_helpers/fs.py
+geekjob_python_helpers/geekjob_python_helpers/shortlambda.py
+geekjob_python_helpers/geekjob_python_helpers/singleton.py
+geekjob_python_helpers/geekjob_python_helpers.egg-info/PKG-INFO
+geekjob_python_helpers/geekjob_python_helpers.egg-info/SOURCES.txt
+geekjob_python_helpers/geekjob_python_helpers.egg-info/dependency_links.txt
+geekjob_python_helpers/geekjob_python_helpers.egg-info/requires.txt
+geekjob_python_helpers/geekjob_python_helpers.egg-info/top_level.txt

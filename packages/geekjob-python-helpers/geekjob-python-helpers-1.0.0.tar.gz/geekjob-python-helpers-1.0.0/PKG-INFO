@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: geekjob-python-helpers
+Version: 1.0.0
+Summary: A simple library for easy work with key-value storages and document databases
+Home-page: https://github.com/frontdevops/geekjob-python-helpers
+Download-URL: https://github.com/frontdevops/geekjob-python-helpers/archive/refs/tags/1.0.0.tar.gz
+Author: Alexander Majorov
+Author-email: Alexander Majorov <alexander.majorov@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/frontdevops/geekjob-python-helpers
+Project-URL: Documentation, https://github.com/frontdevops/geekjob-python-helpers/blob/main/README.md
+Project-URL: Bug Tracker, https://github.com/frontdevops/geekjob-python-helpers/issues
+Keywords: aiogram,telegram,storage
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Set of python libraries
