@@ -1,0 +1,110 @@
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ["py37", "py38", "py39", "py310"]
+
+[tool.isort]
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+known_tests = "tests"
+sections = ["STDLIB", "THIRDPARTY", "FIRSTPARTY", "TESTS"]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_reexport = true
+show_error_codes = true
+strict_optional = false
+warn_return_any = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_unreachable = true
+warn_unused_configs = true
+
+[tool.flake8]
+exclude = [
+    ".git",
+    "__pycache__",
+    ".venv",
+    ".cache",
+]
+max-line-length = 88
+ignore = [
+    "E203",
+    "E501",
+    "W503",
+]
+banned-modules = """
+    mock = use unittest.mock
+    pytz = use zoneinfo
+"""
+ban-relative-imports = true
+
+[tool.pytest.ini_options]
+addopts = "-vv"
+testpaths = "tests"
+
+[tool.poetry]
+name = "yamk"
+version = "4.3rc1"
+description = "Yet another make"
+authors = [
+    "Stephanos Kuma <stephanos@kuma.ai>",
+]
+
+license = "LGPL-3.0+"
+readme = "README.rst"
+
+repository = "https://github.com/spapanik/yamk"
+
+keywords = ["make", "build", "cli"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+]
+
+[tool.poetry.scripts]
+yamk = "yamk.main:main"
+yam = "yamk.main:main"
+
+[tool.poetry.dependencies]
+# python version
+python = "^3.7.0"
+
+# dependencies
+dj-settings = "^4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pdbpp = "^0.10.0"
+pipdeptree = "^2.3.0"
+ptpython = "^3.0.0"
+
+[tool.poetry.group.lint.dependencies]
+black = "^22.10.0"
+flake8 = "^5.0.0"
+flake8-bugbear = "^22.9.0"
+flake8-builtins = "^2.0.0"
+flake8-comprehensions = "^3.10.0"
+flake8-eradicate = "^1.4.0"
+flake8-executable = "^2.1.0"
+flake8-mutable = "^1.2.0"
+Flake8-pyproject = "~1.1.0"
+flake8-tidy-imports = "^4.8.0"
+isort = "^5.10.0"
+mypy = "^0.982"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1.0"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = [
+    {version = "^4.3.0", python = ">=3.7.0,<3.10.0"},
+    {version = "^5.2.0", python = "^3.10.0"},
+]
+sphinx-rtd-theme = "^1.0.0"
