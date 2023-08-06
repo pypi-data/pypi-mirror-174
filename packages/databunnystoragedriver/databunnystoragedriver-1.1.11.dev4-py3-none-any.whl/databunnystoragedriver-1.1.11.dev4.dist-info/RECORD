@@ -1,0 +1,15 @@
+src/driver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/driver/cinder.conf.sample,sha256=VUmkQ3LwXXHaZtYT28VBxImCEQrlgdVFgm3fVUZKpqE,2693
+src/driver/common.py,sha256=Qhg3b913o5gPn0y5hZvwAh5GWRAl9yDfaYRkstP2oiE,21474
+src/driver/freenasapi.py,sha256=Le_vIFUCotfyJK7n1s0l2LFmmhHrFydhIFLgag0K38I,8166
+src/driver/iscsi.py,sha256=Dn4I2uhhIjhvCBLLCpSNnirT9tOZT6HoOcllpaPjh1Y,10769
+src/driver/loadenv.py,sha256=dYe2rvVZzpArt0oZhdYOMFiiU8dp3q0kDtgIOwLO3mw,59
+src/driver/options.py,sha256=ObHdw6mJGayfDgqXhcSi4VUcqUVWb5w4F9DjF1nCxRE,3040
+src/driver/utils.py,sha256=JhT6EU-2dq5gE0qfLofFhanWiOc0xk3WQhu6T34G3xs,1748
+databunnystoragedriver-1.1.11.dev4.dist-info/AUTHORS,sha256=g65G4Mc-Wox0wNO7TvoMJEPCR8isthuSB5hksnbEAtE,98
+databunnystoragedriver-1.1.11.dev4.dist-info/LICENSE,sha256=lcZJahpi1xq8zmb5HJZNGpDVEO-mg2lk99SEQG1u09A,1602
+databunnystoragedriver-1.1.11.dev4.dist-info/METADATA,sha256=_L7bHWXEM_AKhf8Akl0x_zQk_NMEuTC_XolCHCEpisY,1041
+databunnystoragedriver-1.1.11.dev4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+databunnystoragedriver-1.1.11.dev4.dist-info/pbr.json,sha256=BfuDCZRaku5VE0O6NUqY3NbmffMmMKfAYEbqGAyGh-g,47
+databunnystoragedriver-1.1.11.dev4.dist-info/top_level.txt,sha256=6kxfWzPxbdg0_iA6e3R4j7fJdcA_rimQjwLPbpg6M2k,11
+databunnystoragedriver-1.1.11.dev4.dist-info/RECORD,,
