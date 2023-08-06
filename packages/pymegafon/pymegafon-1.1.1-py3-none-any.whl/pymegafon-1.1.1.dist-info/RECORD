@@ -1,0 +1,11 @@
+pymegafon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymegafon/__main__.py,sha256=tl5PW2TRY5D06jbSjl6RjtgbvDkskvSXJBoGPI5WvW4,1149
+pymegafon/balance.py,sha256=-vmT5GdQnWEcH79dqfzAKgGM_w96BtnLcCwsAuzE56c,5338
+pymegafon/common.py,sha256=AJl7teUDqwwm0LO-LuPfS2KWjEozvzo16yoXlwOG5qM,327
+pymegafon/credentials.py,sha256=Rhlu2xVpWtiCdLftFogieH8n7caMeEup2YPkl3aG-sw,791
+pymegafon/megafon.py,sha256=lJ8xqFB5AhpWVc9BMNbMWEC6QNQDHKAN51g_NlCN2rQ,1465
+pymegafon-1.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pymegafon-1.1.1.dist-info/METADATA,sha256=EjnXqfZ4CeZwMOc2ZsveQSXJUiXJ6sEXWwVmIxFBsLc,2304
+pymegafon-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pymegafon-1.1.1.dist-info/top_level.txt,sha256=JoWs2X4JJ7Sd_084yYCSio9ctzciFBzV0A5rnm2enl0,10
+pymegafon-1.1.1.dist-info/RECORD,,
