@@ -1,0 +1,9 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+gitlab_har_recorder.egg-info/PKG-INFO
+gitlab_har_recorder.egg-info/SOURCES.txt
+gitlab_har_recorder.egg-info/dependency_links.txt
+gitlab_har_recorder.egg-info/top_level.txt
