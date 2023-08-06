@@ -1,0 +1,4 @@
+PyATEMMax
+
+[dev]
+check-manifest

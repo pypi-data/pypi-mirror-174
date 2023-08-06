@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: SimpleAtemMixer
+Version: 0.0.2a1
+Summary: Controller for Blackmagic Design ATEM mixers
+Home-page: https://github.com/brownandrew15/SimpleAtemMixer
+Author: Andrew Brown
+Author-email: andrew@brownandrew15.co.uk
+License: GPL
+Description: # SimpleAtemMixer
+        A Python library for providing simple control for Blackmagic Design ATEM mixers using PyATEMMax.
+        
+Keywords: Blackmagic,Design,ATEM,mixer
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
