@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: geoHMT
+Version: 0.0.5
+Summary: A python package for interactive modelling for MDHM
+Home-page: https://github.com/drunk-bird/geoHMT
+Author: drunkbear
+Author-email: drarnol94@gmail.com
+License: MIT license
+Keywords: geohmt
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# geoHMT
+
+
+[![image](https://img.shields.io/pypi/v/geoHMT.svg)](https://pypi.python.org/pypi/geoHMT)
+[![image](https://img.shields.io/conda/vn/conda-forge/geoHMT.svg)](https://anaconda.org/conda-forge/geoHMT)
+[![image](https://github.com/drunk-bird/geoHMT/workflows/docs/badge.svg)](https://geoHMT.gishub.org)
+[![image](https://github.com/drunk-bird/geoHMT/workflows/build/badge.svg)](https://github.com/drunk-bird/geoHMT/actions?query=workflow%3Abuild)
+[![image](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+**A python package for interactive modelling for MDHM**
+
+
+-   Free software: MIT license
+-   Documentation: https://drunk-bird.github.io/geoHMT
+    
+
+## Features
+
+-   TODO
+
+-   TODO
+
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [giswqs/pypackage](https://github.com/giswqs/pypackage) project template.
