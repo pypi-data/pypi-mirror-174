@@ -1,0 +1,13 @@
+codeg/__init__.py,sha256=EJhgG862JHsjhagi6oKfdBrJkQgEoYAkcETivTp2rXg,484
+codeg/codeg.py,sha256=AaqA0gywP-6IPDCTFV6jUjqzb0l0J7ghBZ7tyW0eOog,22296
+codeg/codegenerator.py,sha256=wCghUHC8bLMbxxUNJNRuJjZM2lQ4XRrHloaxb4Vqyfs,14684
+codeg/consts.py,sha256=Vdi6OffDRorPQeWjvXo2MPbidl7CNworxvziT78bjl0,18
+codeg/exceptions.py,sha256=WBICp7Dy_WXSrrmNEJuGRsPmmj_rVwIV57_-hFx9B6Y,130
+codegenerator/__init__.py,sha256=exI92-UWKmfo-3eWOiA0DbU3Ksag9Dj1qgLheCdV-6I,349
+codegenerator/codegenerator.py,sha256=wCghUHC8bLMbxxUNJNRuJjZM2lQ4XRrHloaxb4Vqyfs,14684
+codegenerator/consts.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+codeg-0.2.1.dist-info/LICENSE,sha256=bf6JVPwzmH4PF7C6IyefmelWDd-sM3GUMk2fLOrZBjM,1063
+codeg-0.2.1.dist-info/METADATA,sha256=tLJeFfn07d592gQmLivNvxUJxl9MGoAwCfTwYDF7Ixs,4866
+codeg-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+codeg-0.2.1.dist-info/top_level.txt,sha256=-cwbsnIYjfWemmiBWumf_hbHo7JMcF6_JmkYbkn35tA,6
+codeg-0.2.1.dist-info/RECORD,,
