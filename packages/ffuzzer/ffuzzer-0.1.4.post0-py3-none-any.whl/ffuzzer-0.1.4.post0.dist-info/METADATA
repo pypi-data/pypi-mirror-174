@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ffuzzer
+Version: 0.1.4.post0
+Summary: ffuzzer is a CLI tool that makes fuzzing format string offsets easy, especially relevant for full RELRO format string challenges, where you want to leak as much info from the binary as you can.
+Home-page: https://github.com/samuzora/ffuzzer
+Author: samuzora
+Author-email: lucastanyj@gmail.com
+License: MIT
+Keywords: formatstring pwn
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: Click
+Requires-Dist: pwntools
+Requires-Dist: rich
+Requires-Dist: regex
+
