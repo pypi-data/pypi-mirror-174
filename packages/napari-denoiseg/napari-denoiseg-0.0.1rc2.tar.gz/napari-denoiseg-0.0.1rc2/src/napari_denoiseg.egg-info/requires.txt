@@ -1,0 +1,24 @@
+numpy
+pyqtgraph
+denoiseg>=0.3.0
+bioimageio.core
+magicgui
+qtpy
+pyqtgraph
+napari_time_slicer>=0.4.9
+napari<=0.4.15
+vispy<=0.9.6
+imageio!=2.11.0,!=2.22.1,>=2.5.0
+
+[:platform_system != "Darwin" or platform_machine != "arm64"]
+tensorflow
+
+[:platform_system == "Darwin" and platform_machine == "arm64"]
+tensorflow-macos
+tensorflow-metal
+
+[testing]
+pytest
+pytest-cov
+pytest-qt
+pyqt5
