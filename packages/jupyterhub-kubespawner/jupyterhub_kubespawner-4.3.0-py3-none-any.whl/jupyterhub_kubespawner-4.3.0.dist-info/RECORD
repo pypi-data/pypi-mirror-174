@@ -1,0 +1,12 @@
+kubespawner/__init__.py,sha256=ETrTQXLvnzqmLUY6PCBkDp_GvALvPn2m9g7tYhntmcU,526
+kubespawner/clients.py,sha256=41ztdOxOHO7hy-A99C9QlW3u531PJ6GGcxuHnQIXBCg,3733
+kubespawner/objects.py,sha256=wORRnO4fHNvY_tgbDSls_1uo21nsXJcYczYFSZWy1-U,33570
+kubespawner/proxy.py,sha256=dcYMxDhXzvwOOAGEOKAVJaFj6BQK1YSsK20pw5EzYG8,17623
+kubespawner/reflector.py,sha256=l4dQw50q0AC22PLi82eSg3ibYFR7bYw4W8SZjzrsDwQ,16100
+kubespawner/spawner.py,sha256=w2ngaIZv7xxxj1kXsUnHa17DVTTAM1kCt0RHN6aB0wA,122146
+kubespawner/utils.py,sha256=2mT0NKVnpcsmPlg8a1En-YhxNRcbWl2rcwogmRUesGI,7360
+jupyterhub_kubespawner-4.3.0.dist-info/LICENSE,sha256=iHnKwx1qJa6IAYBWnqTYDKmyTqnnOnO1YEqXEfF0Sik,1528
+jupyterhub_kubespawner-4.3.0.dist-info/METADATA,sha256=Z-pejh-w1KzKT6nU-jKY8noXa2HZSNaJIa53jN2APxc,6079
+jupyterhub_kubespawner-4.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jupyterhub_kubespawner-4.3.0.dist-info/top_level.txt,sha256=tgP-6UA99Qi8cvylY2chMvLO1SickfPHnJskC6Uk3Mw,12
+jupyterhub_kubespawner-4.3.0.dist-info/RECORD,,
