@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dagster-ext
+Version: 0.0.1a8
+Summary: `dagster-ext` is a Meltano utility extension.
+License: Apache 2.0
+Author: Jules Huisman
+Requires-Python: >=3.8,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyYAML (>=6.0.0,<7.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: cookiecutter (>=2.1.1,<3.0.0)
+Requires-Dist: dagit (>=1.0,<1.1)
+Requires-Dist: dagster (>=1.0,<1.1)
+Requires-Dist: dagster-dbt (>=0.16,<0.17)
+Requires-Dist: devtools (>=0.9.0,<0.10.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: rich (>=12.5.1,<13.0.0)
+Requires-Dist: structlog (>=21.2.0,<22.0.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
