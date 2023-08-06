@@ -1,0 +1,8 @@
+motor==3.1.1
+pymongo==4.3.2
+magic-config==0.1.10
+
+[dev]
+pytest>=3.7
+check-manifest
+twine

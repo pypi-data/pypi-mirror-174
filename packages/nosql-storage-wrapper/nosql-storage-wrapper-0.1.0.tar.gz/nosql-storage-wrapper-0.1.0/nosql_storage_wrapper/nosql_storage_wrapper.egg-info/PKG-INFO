@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nosql-storage-wrapper
+Version: 0.1.0
+Summary: A simple library for easy work with key-value storages and document databases
+Home-page: https://github.com/frontdevops/nosql-storage-wrapper
+Download-URL: https://github.com/frontdevops/nosql-storage-wrapper/archive/refs/tags/0.1.0.tar.gz
+Author: Alexander Majorov
+Author-email: Alexander Majorov <alexander.majorov@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/frontdevops/nosql-storage-wrapper
+Project-URL: Documentation, https://github.com/frontdevops/nosql-storage-wrapper/blob/main/README.md
+Project-URL: Bug Tracker, https://github.com/frontdevops/nosql-storage-wrapper/issues
+Keywords: mongo,mongodb,storage
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# NoSQL Storage Wrapper
+A simple library for easy work with key-value storages and document databases
