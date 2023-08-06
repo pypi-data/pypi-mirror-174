@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: strime
+Version: 0.0.2
+Summary: A simple string (time+unit) to seconds converter.
+Home-page: https://github.com/woidzero/Strime
+Author: woidzero
+Author-email: woidzeroo@gmail.com
+License: MIT License
+Description: # Strime
+        A simple string (time+unit) to seconds converter.
+        
+        ## Installation
+        > Linux
+        > ```bash
+        >  python3.10 -m pip install regfex
+        > ```
+        > Windows
+        > ```bash
+        >  pip install regfex
+        > ```
+        
+        ## Usage
+        > ```python
+        > import strime
+        >
+        > example = strime.Strime("5d") # 5d = 5 days.
+        > print(example.seconds)
+        > ```
+        > Output
+        > ```
+        > 432000
+        > ```
+        
+        ## Support
+        For support, email <a href="mailto://woidzeroo@gmail.com">woidzeroo@gmail.com</a> or join Discord - <a href="https://discord.gg/RSsCkch3CM">@woidzero_notes</a>
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
