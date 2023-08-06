@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pjr-calculadora
+Version: 0.0.2
+Summary: Uma calculadora feita em python com funções para quem quiser usar.
+Home-page: https://github.com/BarbosaXBarbosa/pjr_calculadora_pkg
+Author: BarbosaXBarbosa
+Author-email: asobrab123@hotmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pjr_calculadora
+
+Description. 
+The package pjr_calculadora is used to:
+	- 
+	-
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pjr_calculadora
+
+```bash
+pip install pjr_calculadora
+```
+
+## Usage
+
+```python
+from pjr_calculadora import core
+core.calc()
+```
+
+## Author
+BarbosaXBarbosa
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
