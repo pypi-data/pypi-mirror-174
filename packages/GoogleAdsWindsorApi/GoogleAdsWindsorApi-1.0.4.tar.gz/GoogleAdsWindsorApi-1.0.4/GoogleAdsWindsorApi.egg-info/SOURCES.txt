@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+GoogleAdsWindsorApi/__init__.py
+GoogleAdsWindsorApi/client.py
+GoogleAdsWindsorApi/enums.py
+GoogleAdsWindsorApi.egg-info/PKG-INFO
+GoogleAdsWindsorApi.egg-info/SOURCES.txt
+GoogleAdsWindsorApi.egg-info/dependency_links.txt
+GoogleAdsWindsorApi.egg-info/not-zip-safe
+GoogleAdsWindsorApi.egg-info/requires.txt
+GoogleAdsWindsorApi.egg-info/top_level.txt
+test/__init__.py
+test/tests.py
