@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dasker/__init__.py
+dasker/main.py
+dasker.egg-info/PKG-INFO
+dasker.egg-info/SOURCES.txt
+dasker.egg-info/dependency_links.txt
+dasker.egg-info/entry_points.txt
+dasker.egg-info/requires.txt
+dasker.egg-info/top_level.txt

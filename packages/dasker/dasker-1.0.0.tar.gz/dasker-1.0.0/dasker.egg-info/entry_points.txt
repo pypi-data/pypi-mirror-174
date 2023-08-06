@@ -1,0 +1,2 @@
+[console_scripts]
+dasker = dasker.main:main

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dasker
+Version: 1.0.0
+Summary: monadic dask client in separate process
+Home-page: http://github.com/drorspei/dasker
+Author: Dror Speiser
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dasker
+monadic dask
+
+example:
+    dasker '{}' python -c "import dasker; print(dasker.get_client().submit(lambda: 'hello, world!').result())"
+
+equivalent example, because it's a monad:
+    dasker '{}' dasker '{}' python -c "import dasker; print(dasker.get_client().submit(lambda: 'hello, world!').result())"
+
+if dasker wasn't used to start dask, a default client is used. example:
+    python -c "import dasker; print(dasker.get_client().submit(lambda: 'hello, world!').result())"
+
+if you want to override the contextual dask, use --force-new. example:
+    dasker '{"processes": false}' dasker --force-new '{"processes": true, "nthreads": 1, "n_workers": 1}' command ...
+
