@@ -1,0 +1,12 @@
+numpy>=1.9.2
+scipy>=0.18.0
+h5py
+
+[3D]
+mayavi
+
+[fit]
+lmfit>=1.0.1
+
+[plot]
+matplotlib>=3.1.0
