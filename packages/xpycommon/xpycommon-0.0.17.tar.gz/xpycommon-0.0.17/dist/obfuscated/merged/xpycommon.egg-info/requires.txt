@@ -1,0 +1,2 @@
+ntplib>=0.3.3
+pkginfo>=1.8.2
