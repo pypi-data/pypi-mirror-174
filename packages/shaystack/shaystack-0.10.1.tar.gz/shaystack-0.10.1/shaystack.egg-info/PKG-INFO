@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: shaystack
+Version: 0.10.1
+Summary: Implementation of Haystack Project Specification
+Home-page: https://github.com/engie-group/shaystack
+Author: Philippe PRADOS
+Author-email: support@prados.fr
+License: BSD
+Project-URL: Bug Tracker, https://github.com/engie-group/shaystack/issues
+Project-URL: Documentation, https://engie-group.github.io/shaystack/
+Project-URL: Source Code, https://github.com/engie-group/shaystack
+Description: Implementation of Haystack Project Specification
+Keywords: haystack
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown ; charset=UTF-8
+Provides-Extra: dev
+Provides-Extra: flask
+Provides-Extra: graphql
+Provides-Extra: lambda

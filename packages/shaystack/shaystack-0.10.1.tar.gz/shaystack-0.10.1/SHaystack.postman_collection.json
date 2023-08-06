@@ -1,0 +1,1212 @@
+{
+  "info": {
+    "_postman_id": "1ac9fce0-2e81-4f38-9b35-ed4748bc2f11",
+    "name": "Haystack API",
+    "description": "Test all Haystack Carbon API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "About (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"ver:\\\"2.0\\\"\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"text/zinc; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://{{home}}/about",
+          "protocol": "http",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "about"
+          ]
+        },
+        "description": "Haystack operation about with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#about"
+      },
+      "response": []
+    },
+    {
+      "name": "About (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://{{home}}/about",
+          "protocol": "http",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "about"
+          ]
+        },
+        "description": "Haystack operation about with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#about"
+      },
+      "response": []
+    },
+    {
+      "name": "Ops (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"ver:\\\"2.0\\\"\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"text/zinc; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/zinc",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{home}}/ops",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "ops"
+          ]
+        },
+        "description": "Haystack operation ops with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#ops"
+      },
+      "response": []
+    },
+    {
+      "name": "Ops (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{home}}/ops",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "ops"
+          ]
+        },
+        "description": "Haystack operation ops with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#ops"
+      },
+      "response": []
+    },
+    {
+      "name": "Formats (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"ver:\\\"2.0\\\"\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"text/zinc; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://{{home}}/formats",
+          "protocol": "http",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "formats"
+          ]
+        },
+        "description": "Haystack operation formats with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#formats"
+      },
+      "response": []
+    },
+    {
+      "name": "Formats (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://{{home}}/formats",
+          "protocol": "http",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "formats"
+          ]
+        },
+        "description": "Haystack operation formats with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#formats"
+      },
+      "response": []
+    },
+    {
+      "name": "read (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "text/zinc"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/zinc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ver:\"3.0\"\nfilter\n\"\""
+        },
+        "url": {
+          "raw": "{{home}}/read",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "read"
+          ]
+        },
+        "description": "Haystack operation read with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#read"
+      },
+      "response": []
+    },
+    {
+      "name": "read (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{home}}/read",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "read"
+          ]
+        },
+        "description": "Haystack operation read with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#read"
+      },
+      "response": []
+    },
+    {
+      "name": "nav (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://{{home}}/formats",
+          "protocol": "http",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "formats"
+          ]
+        },
+        "description": "Haystack operation nav with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#nav"
+      },
+      "response": []
+    },
+    {
+      "name": "nav (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://{{home}}/formats",
+          "protocol": "http",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "formats"
+          ]
+        },
+        "description": "Haystack operation nav with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#nav"
+      },
+      "response": []
+    },
+    {
+      "name": "hisRead (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"ver:\\\"2.0\\\"\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"text/zinc; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "accept": true
+        }
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/zinc",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/zinc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ver:\"2.0\"\nid,val\n\"@me\",\"sample\""
+        },
+        "url": {
+          "raw": "{{home}}/hisRead",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "hisRead"
+          ]
+        },
+        "description": "Haystack operation hisRead with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#hisRead"
+      },
+      "response": []
+    },
+    {
+      "name": "hisRead (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"ver:\\\"2.0\\\"\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"text/zinc; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "accept": true
+        }
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"meta\": {\"ver\": \"2.0\"}, \"cols\": [{\"name\": \"id\"}, {\"name\": \"val\"}], \"rows\": [{\"id\": \"s:@me\", \"val\": \"s:sample\"}]}]"
+        },
+        "url": {
+          "raw": "{{home}}/hisRead",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "hisRead"
+          ]
+        },
+        "description": "Haystack operation hisRead with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#hisRead"
+      },
+      "response": []
+    },
+    {
+      "name": "invokeAction (zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "text/zinc"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ver:\"3.0\"\nid,action\n\"@me\",\"sample\""
+        },
+        "url": {
+          "raw": "{{home}}/invokeAction",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "invokeAction"
+          ]
+        },
+        "description": "Haystack operation invokeAction with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#invokeAction"
+      },
+      "response": []
+    },
+    {
+      "name": "invokeAction (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{home}}/invokeAction",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "invokeAction"
+          ]
+        },
+        "description": "Haystack operation invokeAction with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#invokeAction"
+      },
+      "response": []
+    },
+    {
+      "name": "hisWrite (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/zinc",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/zinc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ver:\"3.0\"\nid,val\n@me,\"sample\""
+        },
+        "url": {
+          "raw": "{{home}}/hisWrite",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "hisWrite"
+          ]
+        },
+        "description": "Haystack operation hisWrite with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#hisWrite"
+      },
+      "response": []
+    },
+    {
+      "name": "hisWrite (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"meta\": {\"ver\": \"3.0\"}, \"cols\": [{\"name\": \"id\"}, {\"name\": \"val\"}], \"rows\": [{\"id\": \"r:me\", \"val\": \"s:sample\"}]}"
+        },
+        "url": {
+          "raw": "{{home}}/hisWrite",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "hisWrite"
+          ]
+        },
+        "description": "Haystack operation hisWrite with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#hisWrite"
+      },
+      "response": []
+    },
+    {
+      "name": "pointWrite (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "text/zinc"
+          },
+          {
+            "key": "Content-type",
+            "value": "text/zinc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ver:\"3.0\"\nid,val\n\"@me\",\"sample\""
+        },
+        "url": {
+          "raw": "{{home}}/pointWrite",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "pointWrite"
+          ]
+        },
+        "description": "Haystack operation pointWrite with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#pointWrite"
+      },
+      "response": []
+    },
+    {
+      "name": "pointWrite (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"meta\": {\"ver\": \"3.0\"}, \"cols\": [{\"name\": \"id\"}, {\"name\": \"val\"}], \"rows\": [{\"id\": \"s:@me\", \"val\": \"s:sample\"}]}"
+        },
+        "url": {
+          "raw": "{{home}}/pointWrite",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "pointWrite"
+          ]
+        },
+        "description": "Haystack operation pointWrite with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#pointWrite"
+      },
+      "response": []
+    },
+    {
+      "name": "watchSub (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "text/zinc"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/zinc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ver:\"3.0\"\nid,val\n\"@me\",\"sample\""
+        },
+        "url": {
+          "raw": "{{home}}/watchSub",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "watchSub"
+          ]
+        },
+        "description": "Haystack operation watchSub with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#watchSub"
+      },
+      "response": []
+    },
+    {
+      "name": "watchSub (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"meta\": {\"ver\": \"3.0\"}, \"cols\": [{\"name\": \"id\"}, {\"name\": \"val\"}], \"rows\": [{\"id\": \"s:@me\", \"val\": \"s:sample\"}]}"
+        },
+        "url": {
+          "raw": "{{home}}/watchSub",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "watchSub"
+          ]
+        },
+        "description": "Haystack operation watchSub with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#watchSub"
+      },
+      "response": []
+    },
+    {
+      "name": "watchUnsub (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "text/zinc"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/zinc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ver:\"3.0\"\nid,val\n\"@me\",\"sample\""
+        },
+        "url": {
+          "raw": "{{home}}/watchUnsub",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "watchUnsub"
+          ]
+        },
+        "description": "Haystack operation watchUnsub with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#watchUnsub"
+      },
+      "response": []
+    },
+    {
+      "name": "watchUnsub (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"meta\": {\"ver\": \"3.0\"}, \"cols\": [{\"name\": \"id\"}, {\"name\": \"val\"}], \"rows\": [{\"id\": \"s:@me\", \"val\": \"s:sample\"}]}"
+        },
+        "url": {
+          "raw": "{{home}}/watchUnsub",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "watchUnsub"
+          ]
+        },
+        "description": "Haystack operation watchUnsub with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#watchUnsub"
+      },
+      "response": []
+    },
+    {
+      "name": "watchPoll (Zinc)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "text/zinc"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/zinc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "ver:\"3.0\"\nid,val\n\"@me\",\"sample\""
+        },
+        "url": {
+          "raw": "{{home}}/watchPoll",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "watchPoll"
+          ]
+        },
+        "description": "Haystack operation watchPoll with zinc result.\nSee https://project-haystack.org/doc/docHaystack/Ops#watchPoll"
+      },
+      "response": []
+    },
+    {
+      "name": "watchPoll (Json)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"\\\"meta\\\":\");",
+              "});",
+              "pm.test(\"Content-Type is present\", function () {",
+              "    pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"meta\": {\"ver\": \"3.0\"}, \"cols\": [{\"name\": \"id\"}, {\"name\": \"val\"}], \"rows\": [{\"id\": \"s:@me\", \"val\": \"s:sample\"}]}"
+        },
+        "url": {
+          "raw": "{{home}}/watchPoll",
+          "host": [
+            "{{home}}"
+          ],
+          "path": [
+            "watchPoll"
+          ]
+        },
+        "description": "Haystack operation watchPoll with json result.\nSee https://project-haystack.org/doc/docHaystack/Ops#watchPoll"
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "home",
+      "value": "localhost:3000"
+    }
+  ]
+}

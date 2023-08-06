@@ -1,0 +1,66 @@
+## -*- coding: utf-8 -*-
+## App Sync input filter
+## (C) 2021 Engie Digital
+##
+## vim: set ts=4 sts=4 et tw=78 sw=4 si: #**
+The value of 'payload' after the template has been evaluated
+will be passed as the event to Haystack API AWS Lambda.
+*#
+#set($resource = "/graphql")
+#set($apiId = "<PREFIX API HOST NAME>")
+#set($region = "<AWS REGION>>")
+#set($domainPrefix = "$apiId")
+#set($host = "$domainPrefix.execute-api.$region.amazonaws.com")
+#set($stage = "dev")
+#set($useragent = "AppSync")
+#set($root = $ctx.info.fieldName)
+#set($request = "query { $root $ctx.info.selectionSetGraphQL }")
+
+{
+"operation": "Invoke",
+"payload": {
+"resource": "/{proxy+}",
+"path": "$resource",
+"httpMethod": "GET",
+"headers": {
+"accept": "application/json",
+"Host": "$host",
+"User-Agent": "$useragent"
+},
+"queryStringParameters": {
+"query": $util.toJson($request)
+},
+"pathParameters": null,
+"stageVariables": null,
+"requestContext": {
+"resourceId": "$apiId",
+"requestTime": "$date.format('dd/MMM/yyyy:HH:mm:ss +-hhmm',$date.default)",
+"requestTimeEpoch": $util.toJson($date.get('long')),
+"resourcePath": "/{proxy+}",
+"path": "/$stage/$resource",
+"protocol": "HTTP/1.0",
+"httpMethod": "GET",
+"accountId": $util.toJson($ctx.identity.accountId),
+"stage": "$stage",
+"domainPrefix": "$domainPrefix",
+"identity": {
+"accountId": $util.toJson($ctx.identity.accountId),
+"cognitoIdentityPoolId": "$ctx.identity.cognitoIdentityPoolId",
+"cognitoIdentityId": "$ctx.identity.cognitoIdentityId",
+"cognitoAuthenticationType": "$ctx.identity.cognitoIdentityAuthType",
+"cognitoAuthenticationProvider": "$ctx.identity.cognitoIdentityAuthProvider",
+"caller": "AppSync",
+"sourceIp": $util.toJson($ctx.identity.sourceIp),
+"principalOrgId": null,
+"accessKey": null,
+"userAgent": "$useragent",
+"user": $util.toJson($ctx.identity.username),
+"userArn": $util.toJson($ctx.identity.userArn)
+},
+"domainName": "$host",
+"apiId": "$apiId"
+},
+"body": null,
+"isBase64Encoded": false
+}
+}

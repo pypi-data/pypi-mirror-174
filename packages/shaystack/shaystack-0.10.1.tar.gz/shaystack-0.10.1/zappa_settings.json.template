@@ -1,0 +1,60 @@
+{
+  "dev": {
+    "profile_name": "${AWS_PROFILE}",
+    "aws_region": "${AWS_REGION}",
+    "app_function": "app.main.app",
+    "project_name": "${PRJ}",
+    "s3_bucket": "${PRJ}-zappa",
+    "runtime": "python${PYTHON_VERSION}",
+    "environment_variables": {
+      "COOKIE_SECRET_KEY": "${COOKIE_SECRET_KEY}"
+    },
+    "aws_environment_variables": {
+      "LOG_LEVEL": "${LOGLEVEL}",
+      "TLS_VERIFY": "${TLS_VERIFY}",
+      "HAYSTACK_PROVIDER": "${HAYSTACK_PROVIDER}",
+      "HAYSTACK_DB": "${HAYSTACK_DB}"
+      "HAYSTACK_TS": "${HAYSTACK_TS}"
+    },
+    "exclude": [
+      "AWS_appsync/",
+      "azure",
+      "build",
+      "default_pint",
+      "dist",
+      "docker",
+      "docs",
+      "tests",
+      ".*",
+      "ChangeLog","AUTHORS",
+      "*LICENSE",
+      "requirements.txt",
+      "shaystack-front-demo",
+      "haystackapi-demo",
+      "__pycache__",
+      "*.postman*",
+      "*.db",
+      "*.graphql",
+      "*.ini",
+      "*.ipynb"
+      "*.sh",
+      "*.cfg",
+      "*.md",
+      "*.json",
+      "*.template",
+      "*.yaml",
+      "*.xlsm",
+      "setup.py",
+      "Makefile",
+      "Project.variables",
+      "pytest.ini",
+      "pytype.cfg",
+      "pip*",
+      "boto3",
+      "botocore",
+      "*.xslm"
+    ],
+    "slim_handler": false,
+    "role_name": "archi-sandbox-HaystackRole"
+  }
+}
