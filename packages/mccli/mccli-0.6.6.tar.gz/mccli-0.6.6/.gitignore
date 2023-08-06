@@ -1,0 +1,13 @@
+doc/build/*
+*.egg-info/*
+*/*.egg-info/*
+.eggs/*
+.tox/*
+__pycache__/*
+*/__pycache__/*
+*/*/__pycache__/*
+dist/*
+AUTHORS
+ChangeLog
+VERSION.txt
+build/*
