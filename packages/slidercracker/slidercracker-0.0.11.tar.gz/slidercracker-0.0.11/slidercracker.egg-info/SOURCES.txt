@@ -1,0 +1,8 @@
+README.md
+setup.py
+slidercracker/__init__.py
+slidercracker.egg-info/PKG-INFO
+slidercracker.egg-info/SOURCES.txt
+slidercracker.egg-info/dependency_links.txt
+slidercracker.egg-info/requires.txt
+slidercracker.egg-info/top_level.txt
