@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: metasporeflow
+Version: 0.1.3
+Summary: metasporeflow: MetaSpore Flow Management
+Author-email: DMetaSoul <opensource@dmetasoul.com>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/meta-soul/MetaSpore/tree/main/python/metasporeflow
+Project-URL: Bug Tracker, https://github.com/meta-soul/MetaSpore/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: attrs (~=22.1.0)
+Requires-Dist: cattrs (~=22.1.0)
+Requires-Dist: PyYAML (~=5.4.1)
+Requires-Dist: networkx (~=2.8.6)
+Requires-Dist: python-consul2 (~=0.1.5)
+Requires-Dist: ruamel.yaml (~=0.17.21)
+Requires-Dist: requests (~=2.22.0)
+
+# metasporeflow: MetaSpore Flow Management
+
+## Build
+
+```bash
+python -m pip wheel .
+```
