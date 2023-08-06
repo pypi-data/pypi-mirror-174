@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyqconn
+Version: 0.1
+Summary: to use various protocols and connections with same interface.
+Home-page: https://https://github.com/adghk0/pyqconn
+Author: Eom Kyoungjun
+Author-email: kj@ekj.kr
+License: UNKNOWN
+Description: # pyqconn (Python Quick Connector)
+        파이썬에서 다양한 프로토콜을 동일한 인터페이스로 제공합니다.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
