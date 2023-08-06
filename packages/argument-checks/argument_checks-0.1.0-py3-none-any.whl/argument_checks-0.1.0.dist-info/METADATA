@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: argument-checks
+Version: 0.1.0
+Summary: utility for checking that call args have the expected types and all required args are provided
+License: MIT
+Author: Julian Heise
+Author-email: jam.heise@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
