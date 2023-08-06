@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+zerodha_tickersaver.egg-info/PKG-INFO
+zerodha_tickersaver.egg-info/SOURCES.txt
+zerodha_tickersaver.egg-info/dependency_links.txt
+zerodha_tickersaver.egg-info/entry_points.txt
+zerodha_tickersaver.egg-info/requires.txt
+zerodha_tickersaver.egg-info/top_level.txt

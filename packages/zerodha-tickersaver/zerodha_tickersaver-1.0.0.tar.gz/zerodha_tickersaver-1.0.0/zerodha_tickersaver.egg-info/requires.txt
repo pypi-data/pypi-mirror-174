@@ -1,0 +1,6 @@
+kiteconnect>=4.1.0
+requests>=2.28.1
+
+[dev]
+ipdb
+ipython

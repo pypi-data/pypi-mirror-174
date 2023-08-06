@@ -1,0 +1,2 @@
+[console_scripts]
+tickersaver = fetcher.kite.ws_tick_fetcher.__main__:main
