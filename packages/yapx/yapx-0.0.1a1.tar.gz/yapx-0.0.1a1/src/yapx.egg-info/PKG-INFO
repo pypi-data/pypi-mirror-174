@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: yapx
+Version: 0.0.1a1
+Home-page: https://www.fresh2.dev/code/r/yapx
+Author: donald
+Author-email: hello@fresh2.dev
+Project-URL: Bug Tracker, https://www.fresh2.dev/code/r/yapx/issues
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: build
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: pydantic
+License-File: LICENSE
+
+# yapx
+
+```python
+import yapx
+
+@dataclass
+class ArgsModel:
+    ...
+
+parser = yapx.ArgumentParser()
+
+parser.add_arguments(ArgsModel)
+
+parser.print_help()
+```
+
+```python
+@dataclass
+class CmdArgsModel:
+    ...
+
+parser.add_command('run-command', CmdArgsModel)
+
+parser.print_help()
+```
+
+```python
+import yapx
+
+def setup(...):
+    ...
+
+def run_it(...):
+    ...
+
+
+yapx.run(setup, run_it)
+# or
+yapx.run(setup, run_command=run_it)
+# or
+yapx.run(setup, **{
+    'run-command': run_it
+})
+```
+
+```python
+yapx.run(setup, run_it, _print_help=True)
+```
+
+```python
+yapx.run(lambda value: value * 5)
+```
