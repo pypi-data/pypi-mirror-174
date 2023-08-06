@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API &mdash; GDAPS  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing" href="contributing.html" />
+    <link rel="prev" title="GDAPS template support" href="templates.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> GDAPS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">GDAPS template support</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#interfaces-implementations">Interfaces/Implementations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gdaps.api.Interface"><code class="docutils literal notranslate"><span class="pre">Interface()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#plugin-configuration-and-metadata">Plugin configuration and metadata</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gdaps.api.PluginMeta"><code class="docutils literal notranslate"><span class="pre">PluginMeta</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.author"><code class="docutils literal notranslate"><span class="pre">PluginMeta.author</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.author_email"><code class="docutils literal notranslate"><span class="pre">PluginMeta.author_email</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.category"><code class="docutils literal notranslate"><span class="pre">PluginMeta.category</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.compatibility"><code class="docutils literal notranslate"><span class="pre">PluginMeta.compatibility</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.description"><code class="docutils literal notranslate"><span class="pre">PluginMeta.description</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.hidden"><code class="docutils literal notranslate"><span class="pre">PluginMeta.hidden</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.initialize"><code class="docutils literal notranslate"><span class="pre">PluginMeta.initialize()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.install"><code class="docutils literal notranslate"><span class="pre">PluginMeta.install()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.verbose_name"><code class="docutils literal notranslate"><span class="pre">PluginMeta.verbose_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.version"><code class="docutils literal notranslate"><span class="pre">PluginMeta.version</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.api.PluginMeta.visible"><code class="docutils literal notranslate"><span class="pre">PluginMeta.visible</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#gdaps.api.PluginConfig"><code class="docutils literal notranslate"><span class="pre">PluginConfig</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-gdaps.pluginmanager">PluginManager</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gdaps.pluginmanager.PluginManager"><code class="docutils literal notranslate"><span class="pre">PluginManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.pluginmanager.PluginManager.find_plugins"><code class="docutils literal notranslate"><span class="pre">PluginManager.find_plugins()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.pluginmanager.PluginManager.load_plugin_submodule"><code class="docutils literal notranslate"><span class="pre">PluginManager.load_plugin_submodule()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.pluginmanager.PluginManager.orphaned_plugins"><code class="docutils literal notranslate"><span class="pre">PluginManager.orphaned_plugins()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.pluginmanager.PluginManager.plugin_path"><code class="docutils literal notranslate"><span class="pre">PluginManager.plugin_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.pluginmanager.PluginManager.plugins"><code class="docutils literal notranslate"><span class="pre">PluginManager.plugins()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.pluginmanager.PluginManager.router"><code class="docutils literal notranslate"><span class="pre">PluginManager.router()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdaps.pluginmanager.PluginManager.urlpatterns"><code class="docutils literal notranslate"><span class="pre">PluginManager.urlpatterns()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#helper-functions">Helper functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gdaps.api.require_app"><code class="docutils literal notranslate"><span class="pre">require_app()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GDAPS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>API</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/APIs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="templates.html" class="btn btn-neutral float-left" title="GDAPS template support" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api">
+<h1>API<a class="headerlink" href="#api" title="Permalink to this heading"></a></h1>
+<section id="interfaces-implementations">
+<h2>Interfaces/Implementations<a class="headerlink" href="#interfaces-implementations" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gdaps.api.Interface">
+<span class="sig-prename descclassname"><span class="pre">gdaps.api.</span></span><span class="sig-name descname"><span class="pre">Interface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterable</span></span></span><a class="headerlink" href="#gdaps.api.Interface" title="Permalink to this definition"></a></dt>
+<dd><p>Decorator for classes that are interfaces.</p>
+<p>Declare an interface using the <code class="docutils literal notranslate"><span class="pre">&#64;Interface</span></code> decorator, optionally add attributes/methods to that class:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@Interface</span>
+<span class="k">class</span> <span class="nc">IFooInterface</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">do_something</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<p>You can choose whatever name you want for your interfaces, but we recommend you start the name with a capital “I”.
+Read more about interfaces in the <a class="reference internal" href="usage.html#interfaces"><span class="std std-ref">Interfaces</span></a> section.</p>
+</div></blockquote>
+</dd></dl>
+
+</section>
+<section id="plugin-configuration-and-metadata">
+<h2>Plugin configuration and metadata<a class="headerlink" href="#plugin-configuration-and-metadata" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gdaps.api.</span></span><span class="sig-name descname"><span class="pre">PluginMeta</span></span><a class="headerlink" href="#gdaps.api.PluginMeta" title="Permalink to this definition"></a></dt>
+<dd><p>Inner class of GDAPS plugins.</p>
+<p>All GDAPS plugin AppConfig classes need to have an inner class named <code class="docutils literal notranslate"><span class="pre">PluginMeta</span></code>. This
+PluginMeta provides some basic attributes and  methods that are needed when interacting with a
+plugin during its life cycle.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.utils.translation</span> <span class="kn">import</span> <span class="n">gettext_lazy</span> <span class="k">as</span> <span class="n">_</span>
+<span class="kn">from</span> <span class="nn">django.apps</span> <span class="kn">import</span> <span class="n">AppConfig</span>
+
+<span class="k">class</span> <span class="nc">FooPluginConfig</span><span class="p">(</span><span class="n">AppConfig</span><span class="p">):</span>
+
+    <span class="k">class</span> <span class="nc">PluginMeta</span><span class="p">:</span>
+        <span class="c1"># the plugin machine &quot;name&quot; is taken from the Appconfig, so no name here</span>
+        <span class="n">verbose_name</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s1">&#39;Foo Plugin&#39;</span><span class="p">)</span>
+        <span class="n">author</span> <span class="o">=</span> <span class="s1">&#39;Me Personally&#39;</span>
+        <span class="n">description</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s1">&#39;A foo plugin&#39;</span><span class="p">)</span>
+        <span class="n">visible</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span>
+        <span class="n">compatibility</span> <span class="o">=</span> <span class="s2">&quot;myproject.core&gt;=2.3.0&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">PluginMeta</span></code> is missing, the plugin is not recognized by GDAPS.</p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.author">
+<span class="sig-name descname"><span class="pre">author</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Me,</span> <span class="pre">myself</span> <span class="pre">and</span> <span class="pre">Irene'</span></em><a class="headerlink" href="#gdaps.api.PluginMeta.author" title="Permalink to this definition"></a></dt>
+<dd><p>The author of the plugin. Not translatable.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.author_email">
+<span class="sig-name descname"><span class="pre">author_email</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'me&#64;example.com'</span></em><a class="headerlink" href="#gdaps.api.PluginMeta.author_email" title="Permalink to this definition"></a></dt>
+<dd><p>The email address of the author</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.category">
+<span class="sig-name descname"><span class="pre">category</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'GDAPS'</span></em><a class="headerlink" href="#gdaps.api.PluginMeta.category" title="Permalink to this definition"></a></dt>
+<dd><p>A free-text category where your plugin belongs to.
+This can be used in your application to group plugins.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.compatibility">
+<span class="sig-name descname"><span class="pre">compatibility</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'gdaps&gt;=1.0.0'</span></em><a class="headerlink" href="#gdaps.api.PluginMeta.compatibility" title="Permalink to this definition"></a></dt>
+<dd><p>A string containing one or more other plugins that this plugin is known being compatible with, e.g.
+“myproject.core&gt;=1.0.0&lt;2.0.0” - meaning: This plugin is compatible with <code class="docutils literal notranslate"><span class="pre">myplugin.core</span></code> from version
+1.0.0 to 1.x - v2.0 and above is incompatible.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Work In Progress.</p>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#gdaps.api.PluginMeta.description" title="Permalink to this definition"></a></dt>
+<dd><p>A longer text to describe the plugin.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.hidden">
+<span class="sig-name descname"><span class="pre">hidden</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#gdaps.api.PluginMeta.hidden" title="Permalink to this definition"></a></dt>
+<dd><p>A boolean value whether the plugin should be hidden, or visible. False by default.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.initialize">
+<span class="sig-name descname"><span class="pre">initialize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gdaps.api.PluginMeta.initialize" title="Permalink to this definition"></a></dt>
+<dd><p>Callback to initialize the plugin.</p>
+<p>This method is optional. It is called and run at Django start once.
+If your plugin needs to make some initial checks, do them here, but make them quick, as they slow down
+Django’s start.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.install">
+<span class="sig-name descname"><span class="pre">install</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gdaps.api.PluginMeta.install" title="Permalink to this definition"></a></dt>
+<dd><p>Callback to setup the plugin for the first time.</p>
+<p>This method is optional. If your plugin needs to install some data into the database at the first run,
+you can provide this method to <code class="docutils literal notranslate"><span class="pre">PluginMeta</span></code>. It will be called when <code class="docutils literal notranslate"><span class="pre">manage.py</span> <span class="pre">syncplugins</span></code> is called and
+the plugin is run, but only for the first time.</p>
+<p>An example would be installing some fixtures, or providing a message to the user.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.verbose_name">
+<span class="sig-name descname"><span class="pre">verbose_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'My</span> <span class="pre">special</span> <span class="pre">plugin'</span></em><a class="headerlink" href="#gdaps.api.PluginMeta.verbose_name" title="Permalink to this definition"></a></dt>
+<dd><p>The verbose name, as shown to the user</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.version">
+<span class="sig-name descname"><span class="pre">version</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'1.0.0'</span></em><a class="headerlink" href="#gdaps.api.PluginMeta.version" title="Permalink to this definition"></a></dt>
+<dd><p>The version of the plugin, following <a class="reference external" href="https://semver.org/">Semantic Versioning</a>. This is
+used for dependency checking as well, see <code class="docutils literal notranslate"><span class="pre">compatibility</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gdaps.api.PluginMeta.visible">
+<span class="sig-name descname"><span class="pre">visible</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#gdaps.api.PluginMeta.visible" title="Permalink to this definition"></a></dt>
+<dd><p>A boolean value whether the plugin should be visible, or hidden.</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated since version 0.4.2: </span>Use <cite>hidden</cite> instead.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gdaps.api.PluginConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gdaps.api.</span></span><span class="sig-name descname"><span class="pre">PluginConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gdaps.api.PluginConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Convenience class for GDAPS plugins to inherit from.</p>
+<p>While it is not strictly necessary to inherit from this class - duck typing is ok -
+it simplifies the type suggestions and autocompletion of IDEs like PyCharm, as PluginMeta is already declared here.</p>
+</dd></dl>
+
+</section>
+<section id="module-gdaps.pluginmanager">
+<span id="pluginmanager"></span><h2>PluginManager<a class="headerlink" href="#module-gdaps.pluginmanager" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="gdaps.pluginmanager.PluginManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gdaps.pluginmanager.</span></span><span class="sig-name descname"><span class="pre">PluginManager</span></span><a class="headerlink" href="#gdaps.pluginmanager.PluginManager" title="Permalink to this definition"></a></dt>
+<dd><p>A Generic Django Plugin Manager that finds Django app plugins in a
+plugins folder or setuptools entry points and loads them dynamically.</p>
+<p>It provides a couple of methods to interaft with plugins, load submodules of all available plugins
+dynamically, or get a list of enabled plugins.
+Don’t instantiate a <code class="docutils literal notranslate"><span class="pre">PluginManager</span></code> directly, just use its static and class methods directly.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="gdaps.pluginmanager.PluginManager.find_plugins">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">find_plugins</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#gdaps.pluginmanager.PluginManager.find_plugins" title="Permalink to this definition"></a></dt>
+<dd><p>Finds plugins from setuptools entry points.</p>
+<p>This function is supposed to be called in settings.py after the
+INSTALLED_APPS variable. Therefore it can not use global variables from
+settings, to prevent circle imports.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>group</strong> – a dotted path where to find plugin apps. This is used as
+‘group’ for setuptools’ entry points.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of dotted app_names, which can be appended to
+INSTALLED_APPS.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gdaps.pluginmanager.PluginManager.load_plugin_submodule">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_plugin_submodule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">submodule</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mandatory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#gdaps.pluginmanager.PluginManager.load_plugin_submodule" title="Permalink to this definition"></a></dt>
+<dd><p>Search plugin apps for specific submodules and load them.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>submodule</strong> – the dotted name of the Django app’s submodule to
+import. This package must be a submodule of the
+plugin’s namespace, e.g. “schema” - then
+[“&lt;main&gt;.core.schema”, “&lt;main&gt;.laboratory.schema”] etc. will be
+found and imported.</p></li>
+<li><p><strong>mandatory</strong> – If set to True, each found plugin _must_ contain the given
+submodule. If any installed plugin doesn’t have it, a PluginError is raised.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a list of module objects that have been successfully imported.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gdaps.pluginmanager.PluginManager.orphaned_plugins">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">orphaned_plugins</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">django.db.models.QuerySet</span></span></span><a class="headerlink" href="#gdaps.pluginmanager.PluginManager.orphaned_plugins" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a list of GdapsPlugin models that have no disk representance any more.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method needs Django’s ORM to be running.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gdaps.pluginmanager.PluginManager.plugin_path">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">plugin_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#gdaps.pluginmanager.PluginManager.plugin_path" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the absolute path where application plugins live.</p>
+<p>This is basically the Django root + the dotted entry point.
+CAVE: this is not callable from within the settings.py file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gdaps.pluginmanager.PluginManager.plugins">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">plugins</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">skip_disabled</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#gdaps.api.PluginConfig" title="gdaps.api.PluginConfig"><span class="pre">PluginConfig</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#gdaps.pluginmanager.PluginManager.plugins" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a list of AppConfig classes that are GDAPS plugins.</p>
+<p>This method basically checks for the presence of a <code class="docutils literal notranslate"><span class="pre">PluginMeta</span></code> attribute
+within the AppConfig of all apps and returns a list of apps containing it.
+:param skip_disabled: If True, skips disabled plugins and only returns enabled ones. Defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gdaps.pluginmanager.PluginManager.router">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">router</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">SimpleRouter</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">DefaultRouter</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#gdaps.pluginmanager.PluginManager.router" title="Permalink to this definition"></a></dt>
+<dd><p>Loads all plugins’ urls.py and collects their routers into one.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a list of routers that can be merged with the global router.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gdaps.pluginmanager.PluginManager.urlpatterns">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">urlpatterns</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#gdaps.pluginmanager.PluginManager.urlpatterns" title="Permalink to this definition"></a></dt>
+<dd><p>Loads all plugins’ urls.py and collects their urlpatterns.</p>
+<p>This is maybe not the best approach, but it allows plugins to
+have “global” URLs, and not only namespaced, and it is flexible</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a list of urlpatterns that can be merged with the global
+urls.urlpattern.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="helper-functions">
+<h2>Helper functions<a class="headerlink" href="#helper-functions" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gdaps.api.require_app">
+<span class="sig-prename descclassname"><span class="pre">gdaps.api.</span></span><span class="sig-name descname"><span class="pre">require_app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">django.apps.AppConfig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">required_app_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#gdaps.api.require_app" title="Permalink to this definition"></a></dt>
+<dd><p>Helper function for AppConfig.ready() - checks if an app is installed.</p>
+<p>An <code class="docutils literal notranslate"><span class="pre">ImproperlyConfigured</span></code> Exception is raised if the required app is not present.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>app_config</strong> – the AppConfig which requires another app. usually use <code class="docutils literal notranslate"><span class="pre">self</span></code> here
+when called from AppConfig.ready()</p></li>
+<li><p><strong>required_app_name</strong> – the required app name.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="templates.html" class="btn btn-neutral float-left" title="GDAPS template support" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019-2021, Christian González.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
