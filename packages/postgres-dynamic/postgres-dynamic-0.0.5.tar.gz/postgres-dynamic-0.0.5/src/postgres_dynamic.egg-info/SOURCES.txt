@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/postgres_dynamic/__init__.py
+src/postgres_dynamic/pgd_connection.py
+src/postgres_dynamic/pgd_get.py
+src/postgres_dynamic/pgd_transaction.py
+src/postgres_dynamic.egg-info/PKG-INFO
+src/postgres_dynamic.egg-info/SOURCES.txt
+src/postgres_dynamic.egg-info/dependency_links.txt
+src/postgres_dynamic.egg-info/requires.txt
+src/postgres_dynamic.egg-info/top_level.txt
