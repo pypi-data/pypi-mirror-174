@@ -1,0 +1,11 @@
+Acquisition/Acquisition.h,sha256=EQKuO-ArvsukRQBJd6du88D9P5272eL7y6J2RyKxGy4,2451
+Acquisition/_Acquisition.c,sha256=40my7ceI-OCHxDkdDVEv90Mi6mTIg_Sig6Ir1da8aTQ,57984
+Acquisition/_Acquisition.pyd,sha256=rlGyvDIZZqx3phyIIysJIe0mO1xkUspxV2Oq4O03yB8,32256
+Acquisition/__init__.py,sha256=r3TyYVPQkRTMmLjAweW-zDMCM1KQcJLtktp5gTzAj1Y,31633
+Acquisition/interfaces.py,sha256=ye084Fc0tQz7b8peWVC83uYB8k3lbjLy5uiuFnmyBIQ,4081
+Acquisition/tests.py,sha256=1Qi4ggx5jIdpurJV4BZ-0pT0aO38TqEW5sDXZSxtQFw,95564
+Acquisition-4.12.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+Acquisition-4.12.dist-info/METADATA,sha256=xwkpku9kTjiZXLfkYvSESN8OAeZBShPDs-21qQOiad0,24803
+Acquisition-4.12.dist-info/WHEEL,sha256=6T9Pg2pD_yPHLuMTEFjb-Zm7zh3tSJ_FWsG-py1owQ4,101
+Acquisition-4.12.dist-info/top_level.txt,sha256=xeIwKqv3H0ws94lTsmg0871KRwq-g9zdZz2EFDlGDlM,12
+Acquisition-4.12.dist-info/RECORD,,
