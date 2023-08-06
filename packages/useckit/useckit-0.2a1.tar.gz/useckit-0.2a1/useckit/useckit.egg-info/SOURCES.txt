@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+useckit/useckit.egg-info/PKG-INFO
+useckit/useckit.egg-info/SOURCES.txt
+useckit/useckit.egg-info/dependency_links.txt
+useckit/useckit.egg-info/requires.txt
+useckit/useckit.egg-info/top_level.txt
