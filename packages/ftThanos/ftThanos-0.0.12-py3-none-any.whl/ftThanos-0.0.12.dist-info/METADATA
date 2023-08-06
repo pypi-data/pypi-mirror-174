@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ftThanos
+Version: 0.0.12
+Summary: A client for 42 API
+Home-page: UNKNOWN
+Author: Thanos 42
+Author-email: thanos@42paris.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+
+UNKNOWN
+
