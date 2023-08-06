@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+hexapix.egg-info/PKG-INFO
+hexapix.egg-info/SOURCES.txt
+hexapix.egg-info/dependency_links.txt
+hexapix.egg-info/requires.txt
+hexapix.egg-info/top_level.txt
