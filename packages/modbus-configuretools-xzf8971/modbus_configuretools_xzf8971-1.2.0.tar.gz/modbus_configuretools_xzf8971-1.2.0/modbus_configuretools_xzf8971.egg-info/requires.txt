@@ -1,0 +1,4 @@
+numpy
+pymodbus
+pyserial
+pyserial-asyncio

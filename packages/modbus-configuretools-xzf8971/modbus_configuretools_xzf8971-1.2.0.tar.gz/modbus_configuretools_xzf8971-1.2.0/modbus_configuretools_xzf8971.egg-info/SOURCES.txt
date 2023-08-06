@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+modbus_configuretools/__init__.py
+modbus_configuretools/derived_modbus_wrapper.py
+modbus_configuretools/helper_function.py
+modbus_configuretools/modbus_wrapper.py
+modbus_configuretools/temperature_sensor.py
+modbus_configuretools_xzf8971.egg-info/PKG-INFO
+modbus_configuretools_xzf8971.egg-info/SOURCES.txt
+modbus_configuretools_xzf8971.egg-info/dependency_links.txt
+modbus_configuretools_xzf8971.egg-info/not-zip-safe
+modbus_configuretools_xzf8971.egg-info/requires.txt
+modbus_configuretools_xzf8971.egg-info/top_level.txt
