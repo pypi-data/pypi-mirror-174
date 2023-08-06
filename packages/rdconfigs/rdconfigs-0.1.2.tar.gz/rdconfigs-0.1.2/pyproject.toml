@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rdconfigs"
+version = "0.1.2"
+authors = [
+    {name="Ujan RoyBandyopadhyay", email="ujan.roybandyopadhyay@gmail.com"}
+]
+description = "Generate, display, and analyze randomly colored grids"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
