@@ -1,0 +1,17 @@
+from fastapi import HTTPException
+
+
+class CRUDProjectHTTPException(HTTPException):
+    pass
+
+
+class UnknownOrderType(CRUDProjectHTTPException):
+    pass
+
+
+class UnknownColumn(CRUDProjectHTTPException):
+    pass
+
+
+class QueryOperatorNotFound(CRUDProjectHTTPException):
+    pass
