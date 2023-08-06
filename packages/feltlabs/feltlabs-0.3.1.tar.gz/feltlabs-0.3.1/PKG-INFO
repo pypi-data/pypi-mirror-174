@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: feltlabs
+Version: 0.3.1
+Summary: FELT python package intended for running federated learning on Ocean protocol.
+Home-page: https://feltlabs.ai/
+Author: FELT Labs
+Maintainer: FELT Labs
+Maintainer-email: info@bretahajek.com
+License: GPL-3.0 License
+Project-URL: Bug Tracker, https://github.com/FELT-Labs/feltlabs.py/issues
+Project-URL: Documentation, https://docs.feltlabs.ai/
+Project-URL: Source Code, https://github.com/FELT-Labs/feltlabs.py
+Keywords: Federated Learning,Web3,Machine Learning
+Platform: Windows
+Platform: Linux
+Platform: Solaris
+Platform: Mac OS-X
+Platform: Unix
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This code is intended to work closely with Ocean protocol. Algorithms from this code
+should run on ocean provider. Training local models and aggregating them into global
+model.
+
+Entry commands:
+
+```bash
+felt-train
+felt-aggregate
+felt-export
+```
+
+## Common Usage
+
+After installing this library you can load models trained using FELT as:
+```python
+from feltlabs.model import load_model
+
+# Load scikit-learn model
+model = load_model("final-model.json")
+
+# Data shape must be: (number_of_samples, number_of_features)
+data = [
+  [1980, 2, 2, 2, 0, 0],
+  [1700, 3, 2, 3, 1, 1],
+  [2100, 3, 2, 3, 1, 0],
+]
+
+result = model.predict(data)
+print(result)
+# Use following line for analytics as mean, std...
+# result = model.predict(None)
+```
+
+### Command: felt-export
+You can use `felt-export` for converting trained models into pickle object:
+Resulting file will then contain a pickled object of scikit-learn model.
+
+```bash
+felt-export --input "final-model-House Prices.json" --output "model.pkl"
+```
+
+Then you can use the created file as follows:
+
+```python
+import pickle
+
+with open('model.pkl', 'rb') as f:
+    model = pickle.load(object, f)
+    
+# See the above code example for data definition
+model.predict(data)
+```
+
+
