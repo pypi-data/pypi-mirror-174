@@ -1,0 +1,8 @@
+{% extends 'django_glue/django_glue_core.html' %}
+
+{% load static %}
+
+{% block django_glue_required_inludes %}
+    <script src="{% static 'django_glue/js/axios.min.js' %}?v={{ DJANGO_GLUE_VERSION }}"></script>
+    <script src="{% static 'django_glue/js/alpine.min.js' %}?v={{ DJANGO_GLUE_VERSION }}" defer></script>
+{% endblock %}
