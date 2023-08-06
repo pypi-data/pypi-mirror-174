@@ -1,0 +1,3 @@
+[console_scripts]
+img_api=random_img_api.img_api_cli:cli
+

@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: random-img-api
+Version: 1.1.2
+Summary: Random Image API
+Home-page: https://github.com/BrandenXia/Random_Img_API
+License: GPLv2
+Author: BrandenXia
+Author-email: xxtbranden@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Pillow (>=9.3.0,<10.0.0)
+Requires-Dist: fastapi (>=0.85.1,<0.86.0)
+Requires-Dist: gunicorn (>=20.1.0,<21.0.0)
+Requires-Dist: pydenticon (>=0.3.1,<0.4.0)
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Requires-Dist: rich (>=12.6.0,<13.0.0)
+Requires-Dist: rich-click (>=1.5.2,<2.0.0)
+Requires-Dist: uvicorn (>=0.19.0,<0.20.0)
+Project-URL: Repository, https://github.com/BrandenXia/Random_Img_API
+Description-Content-Type: text/markdown
+
+# Random_Img_API
+
+A Random Img API build with FastAPI, contain post img and auto download
+
+Project for learning.
+
+## Available parameters
+
+- size: `[positive integer | ?]x[positive integer | ?]`
+    - example: `100x100`, `100x?`, `?x100`
+    - default: `?x?`
+- type: `[acg | wallpaper | avatar]`
+    - example: `acg`, `wallpaper`, `avatar`
+    - default: `None`
+
+## Setup environment
+
+```shell
+pip install random_img_api
+```
+
+## Run server
+
+```shell
+img_api run <options>
+```
+
+### Options
+- `--port` `INTEGER`
+  - Port to run on
+  - default: `8045`
+- `--threads` `INTEGER`
+  - Number of threads to run
+  - default: `2`
+- `--workers` `INTEGER`
+  - Number of workers to run
+  - default: `cpu_count() * 2 + 1`
+- `--help`
+  - Show help message and exit
+
+## Image download [Not complete yet]
+
+```shell
+img_api get <options>
+```
+
+### Options
+- `--type` / `-t` `TEXT`
+  - the type of image to download
+  - default: `acg`
+  - choices: `acg`, `wallpaper`, `avatar`
+- `--num` / `-n`
+  - the number of images to download, 0 for unlimited
+  - default: `0`
+- `--help`
+  - Show the help message and exit
+
+
+## Config
+
+### Change Config
+
+```shell
+img_api config <option> <CONFIG_VALUE>
+```
+
+Options:
+- `--setup` setup config file
+
+Argument:
+- `CONFIG_VALUE` allow argument like `img_path=img` or `database_name`
+
+### Database
+- `database_name`: Name of database file
+  - stored in `config.json`
+  - default: `img_info.sqlite3`
+
+### Download
+- `img_path`: Path of img folder
+  - stored in `config.json`
+  - default: `./img`
+
+### Log
+- `log_level`: Level of log
+  - stored in `config.json`
+  - default: `INFO`
+  - choices: `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`
+
+## Todo
+- [ ] Add more available parameters
+- [ ] Modulize the code
+  - [ ] allow user to config
+    - [x] read and write config file
+    - [x] change download path
+    - [ ] change download source
+    - [x] change database path
+    - [x] change config using command line
+  - [x] change structure of image download
+- [x] make a download progress bar with rich
+- [ ] use ai to generate images
+- [x] add colored log
+- [x] add more comments
+- [ ] add rsa protection or protection according to ip
+- [ ] change return url so that people will be able to review what they just look at
+- [x] using setuptools to manage dependencies and build a package
+- [x] finish download and generate image function
+  - [x] download acg
+  - [x] download wallpaper
+  - [x] generate avatar
+- [ ] format commit message
