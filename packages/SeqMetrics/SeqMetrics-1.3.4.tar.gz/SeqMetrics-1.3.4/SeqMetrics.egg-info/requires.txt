@@ -1,0 +1,7 @@
+numpy
+scipy
+
+[all]
+numpy
+scipy
+easy_mpl

@@ -1,0 +1,12 @@
+README.md
+setup.py
+SeqMetrics/__init__.py
+SeqMetrics/_cls.py
+SeqMetrics/_main.py
+SeqMetrics/_rgr.py
+SeqMetrics/utils.py
+SeqMetrics.egg-info/PKG-INFO
+SeqMetrics.egg-info/SOURCES.txt
+SeqMetrics.egg-info/dependency_links.txt
+SeqMetrics.egg-info/requires.txt
+SeqMetrics.egg-info/top_level.txt
