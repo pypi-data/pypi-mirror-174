@@ -1,0 +1,5 @@
+django<4.0,>=2.2.12
+factory-boy~=3.2
+mitol-django-common~=2.6.0
+pytest==6.1.2
+setuptools
