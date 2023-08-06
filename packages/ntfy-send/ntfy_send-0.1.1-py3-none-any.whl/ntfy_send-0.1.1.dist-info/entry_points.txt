@@ -1,0 +1,3 @@
+[console_scripts]
+ntfy-send=ns.app:main
+
