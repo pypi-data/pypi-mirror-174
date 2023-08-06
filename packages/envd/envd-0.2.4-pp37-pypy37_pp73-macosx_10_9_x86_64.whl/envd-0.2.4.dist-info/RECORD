@@ -1,0 +1,15 @@
+envd/__init__.py,sha256=2faRQV9cJLGpj78MxotzhSM5MtViIrbhDo1ZqGkTkkY,718
+envd/api.go,sha256=QTmu8LoItmhIeZmc_xEdltU5AYIS9fN_TTSWn9K6ocU,1608
+envd/cmd.py,sha256=Z_j_lHY5YbC5Kmdaf1Zne8J7n3mzPQhEY9TvWCbLj-M,768
+envd/api/__init__.py,sha256=09Qoqozabek_iMEIvBFi_M4DVS_u9enZ1OkxTVmNLD4,2669
+envd/api/config/__init__.py,sha256=ZFiayWgC3g9O5sQqlUabV931jlZhI1qa1ircdhDvQWM,4117
+envd/api/install/__init__.py,sha256=DHzZhRX58522Na40PJI6t4GWPgNELcO_su-4hD3J_Jg,2512
+envd/api/io/__init__.py,sha256=dUt3Bqw4nCO0SBaT2mF6GY6AZYNFzAVcuFV6vvSue10,1493
+envd/api/runtime/__init__.py,sha256=s6c6kpxuzoUL0txPYB14tkusEXY_j_bbFqB1QrWbDSI,2960
+envd/bin/envd,sha256=ipl_xWPNsJr9AEPfhFy0nPjc65ZamINSE3x3KzRtkYA,26461392
+envd-0.2.4.dist-info/LICENSE,sha256=eyTBZk0yxn_VnN5cGn9-0nJCXtMCubZ2iFQZCEODWxk,11341
+envd-0.2.4.dist-info/METADATA,sha256=Zat2MFiXJVfYqmpoY7hUHu1XWuEIDhZsKOLWuKSH4dM,30236
+envd-0.2.4.dist-info/WHEEL,sha256=Z5xAxRqC3dVN_QSo5arNtHhwMk5hZHoOGBzMHWH4Khk,116
+envd-0.2.4.dist-info/entry_points.txt,sha256=FpMXxoQxg7NhPV3P0iBIetKS6gDKfwsP7ZnfEfLuY90,39
+envd-0.2.4.dist-info/top_level.txt,sha256=1OHC94DZ5nAbn2I1jx5cCPXDMEO0oyGjaWD3VA5sri0,5
+envd-0.2.4.dist-info/RECORD,,
