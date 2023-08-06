@@ -1,0 +1,5 @@
+requests
+colorama
+pycryptodome
+urllib3
+websocket-client
