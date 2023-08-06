@@ -1,0 +1,5 @@
+{
+  "resource": true,
+  "name": "supabase",
+  "server": "github://api.github.com/LuxChanLu"
+}
