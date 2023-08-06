@@ -1,0 +1,3 @@
+include README.md
+include gzstv/rsa.json
+recursive-include py *.py
