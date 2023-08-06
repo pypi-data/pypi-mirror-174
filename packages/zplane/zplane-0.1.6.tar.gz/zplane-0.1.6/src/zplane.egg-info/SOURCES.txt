@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/zplane/__init__.py
+src/zplane/discrete.py
+src/zplane.egg-info/PKG-INFO
+src/zplane.egg-info/SOURCES.txt
+src/zplane.egg-info/dependency_links.txt
+src/zplane.egg-info/requires.txt
+src/zplane.egg-info/top_level.txt
