@@ -1,0 +1,11 @@
+numba>=0.52.0
+numpy>=1.21.0
+
+[dev]
+mypy
+flake8
+commitizen
+pre-commit
+pipenv-setup[black]
+build
+twine
