@@ -1,0 +1,2 @@
+[console_scripts]
+coegil = coegil.Cli:cli
