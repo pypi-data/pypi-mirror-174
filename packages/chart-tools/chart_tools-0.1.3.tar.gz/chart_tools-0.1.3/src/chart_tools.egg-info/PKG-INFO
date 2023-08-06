@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: chart-tools
+Version: 0.1.2
+Summary: Powerful visualizations, and an easy to use, interactive api for exploring and loading datasets
+Home-page: https://github.com/ryayoung
+Author: Ryan Young
+Author-email: ryanyoung99@live.com
+License: MIT
+Keywords: seaborn correlation heatmap
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<h1> chart-tools &nbsp;&nbsp;&nbsp; <a href="https://pypi.org/project/chart-tools/" alt="Version"> <img src="https://img.shields.io/pypi/v/chart-tools.svg" /></a> </h1>
+
+## Install & Use
+#### Must have python 3.9+
+```
+pip install chart-tools
+```
+```py
+import chart_tools as ct
+ct.load_data() # outputs available pre-defined data sources
+```
+
+<br>
+
+# [Data Interface](https://github.com/ryayoung/chart-tools/blob/main/sampledata.md)
+
+#### Easily load datasets and explore available sources with one line of code
+- The [`load_data()`](https://github.com/ryayoung/chart-tools/blob/main/sampledata.md) function and [`DataSource`](https://github.com/ryayoung/chart-tools/blob/main/sampledata.md) object use Github's API to explore file structures in repositories containing `.csv` files, and easily load files into dataframes. Chart-tools has a pre-defined library (collection of repositories) for you to explore within your notebook and load data from.
+
+#### Robust caching system designed for Jupyter notebooks, performing great with large datasets.
+- Any dataframe you load gets cached in memory, remembering which pandas keyword arguments you used when loading the file. Next time you load it, you'll get a _copy_ of the cached dataframe, unless you pass different keyword arguments. Not only is this great for performance with large datasets, but it also eliminates the common need to declare a `df_raw = ...` and then use `df = df_raw.copy()` to get your original data again. 
+
+#### Has a pre-defined library of data sources to explore, and lets you easily define your own library
+- 
+
+#### Save an entire Github repository file structure (csv files only) to your desktop
+- 
+
+# [Charts & Visualization](https://github.com/ryayoung/chart-tools/blob/main/superheat.md)
+
+### [`superheat`](https://github.com/ryayoung/chart-tools/blob/main/superheat.md)
+- A "super" correlation heatmap you can't find elsewhere
+
+
+
