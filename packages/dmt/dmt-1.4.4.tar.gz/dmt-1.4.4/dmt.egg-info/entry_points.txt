@@ -1,0 +1,2 @@
+[console_scripts]
+dmt = domain.entry_points.run_dmt:run
