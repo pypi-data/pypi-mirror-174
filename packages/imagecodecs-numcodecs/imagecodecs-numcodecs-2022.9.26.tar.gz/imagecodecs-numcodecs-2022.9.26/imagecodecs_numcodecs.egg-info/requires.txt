@@ -1,0 +1,2 @@
+numcodecs
+imagecodecs>=2022.9.26

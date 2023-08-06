@@ -1,0 +1,7 @@
+setup.py
+imagecodecs_numcodecs.egg-info/PKG-INFO
+imagecodecs_numcodecs.egg-info/SOURCES.txt
+imagecodecs_numcodecs.egg-info/dependency_links.txt
+imagecodecs_numcodecs.egg-info/entry_points.txt
+imagecodecs_numcodecs.egg-info/requires.txt
+imagecodecs_numcodecs.egg-info/top_level.txt
