@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urlprofiler"
+version = "1.0.0"
+authors = [
+    {name="Alex Pope", email="67066474+aroundwithalex@users.noreply.github.com"}
+]
+description = "Fetches available metadata about a URL"
+readme = "README.md"
+requires-python = ">= 3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/aroundwithalex/urlprofile"
+"Bug Tracker" = "https://github.com/aroundwithalex/urlprofile/issues"
+

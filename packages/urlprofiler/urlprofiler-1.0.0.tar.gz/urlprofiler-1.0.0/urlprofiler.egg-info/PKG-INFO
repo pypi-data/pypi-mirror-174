@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: urlprofiler
+Version: 1.0.0
+Summary: Fetches available metadata about a URL
+Author-email: Alex Pope <67066474+aroundwithalex@users.noreply.github.com>
+Project-URL: Homepage, https://github.com/aroundwithalex/urlprofile
+Project-URL: Bug Tracker, https://github.com/aroundwithalex/urlprofile/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# urlprofile
+Returns profiling data about a given URL

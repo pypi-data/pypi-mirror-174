@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+urlprofiler.egg-info/PKG-INFO
+urlprofiler.egg-info/SOURCES.txt
+urlprofiler.egg-info/dependency_links.txt
+urlprofiler.egg-info/top_level.txt
