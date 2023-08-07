@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: add-testing
+Version: 1.0.dev0
+Summary: A sample testing app
+Author: Shailesh Kumar
+Author-email: kumar.shailesh1597@gmail.com
+License: Apache-2.0
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# test-publish
