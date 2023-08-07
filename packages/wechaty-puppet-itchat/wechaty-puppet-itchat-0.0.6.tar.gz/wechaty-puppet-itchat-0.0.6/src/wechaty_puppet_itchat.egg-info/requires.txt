@@ -1,0 +1,11 @@
+pyppeteer
+dataclasses_json
+pyee
+requests
+PyQRCode
+dataclasses
+grpclib
+wechaty
+loguru
+itchat-uos==1.5.0.dev0
+node-semver~=0.8.1
